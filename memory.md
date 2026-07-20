@@ -26,10 +26,24 @@
   Loss (Mean Squared Error):
   $\mathcal{L} = \frac{1}{2N} \sum (A_2 - Y)^2$
 
+* **Self-Attention Mechanism**
+  Let $X$ be the input sequence matrix, and $W_Q, W_K, W_V$ be the weight matrices for queries, keys, and values.
+  $Q = X W_Q$
+  $K = X W_K$
+  $V = X W_V$
+
+  Scores and Attention Weights:
+  $Scores = \frac{Q K^T}{\sqrt{d_k}}$
+  $AttentionWeights = \text{softmax}(Scores)$
+
+  Output:
+  $Output = AttentionWeights \cdot V$
+
 ## Experimental Summaries
 
 * **Experiment `0001_train_tokenizer` (Success):** Learned a BPE vocabulary of 144 tokens on the baseline AGI dataset. Proves baseline tokenization functionality.
 * **Experiment `0002_train_ffn_component` (Success):** Trained a small 2-layer FFN on a synthetic XOR dataset. The model successfully converged (Loss < 0.001) over 50k epochs using a learning rate of 1.0, proving manual backpropagation formulation is mathematically sound.
+* **Experiment `0003_train_attention_component` (Success):** Implemented and trained a self-attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset, proving mathematical soundness of the attention mechanism and its manual backpropagation.
 
 ## Open Questions & Hypotheses
 

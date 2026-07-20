@@ -64,3 +64,22 @@ As part of our **Phase 1: Foundations and Mathematical Modeling**, we are explor
     ```bash
     python train_ffn_component.py --hidden_size 8 --epochs 20000 --lr 0.5
     ```
+
+## Component Testing: Self-Attention
+
+Building upon our mathematical models, we have implemented a Self-Attention mechanism to test its ability to learn relationships within sequences using pure matrix operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Self-Attention component test:**
+    ```bash
+    python train_attention_component.py
+    ```
+    This script trains a simple Self-Attention layer on a synthetic dataset, manually computing forward and backward passes to verify the underlying mathematics.
+
+    You can adjust hyperparameters such as dimension key and learning rate:
+    ```bash
+    python train_attention_component.py --d_k 4 --epochs 10000 --lr 0.1
+    ```
