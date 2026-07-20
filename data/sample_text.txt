@@ -1,0 +1,19 @@
+Artificial general intelligence (AGI) is a hypothetical type of artificial intelligence (AI) that can perform as well or better than humans on a wide range of cognitive tasks. As opposed to narrow AI, which is designed for specific tasks, AGI would be able to learn and adapt to new situations and environments. AGI is a primary goal of some artificial intelligence research and a common topic in science fiction and futures studies.
+
+The term artificial general intelligence was introduced in 1997 by Mark Gubrud. It was popularized by Shane Legg and Ben Goertzel as they used it as the title of an edited volume of research in 2007.
+
+The timing of AGI's arrival is a subject of active debate among researchers and experts. Some argue that it may be possible in years or decades; others maintain it might take a century or longer, and a minority believe it may never be achieved.
+
+If AGI were to be created, it would have profound implications for humanity. It could potentially solve many of the world's most pressing problems, such as disease, poverty, and climate change. However, it also poses existential risks if it were to act against human interests.
+
+The path to AGI is thought to require breakthroughs in multiple areas of AI, including machine learning, natural language processing, computer vision, and robotics. It may also require new approaches to computing, such as neuromorphic hardware or quantum computing.
+
+Current AI systems, such as large language models, exhibit some general capabilities, but they fall short of true AGI in several key ways. They lack a deep understanding of the world, they struggle with long-term planning and reasoning, and they are often brittle and unpredictable.
+
+Despite the challenges, research towards AGI is accelerating, driven by advances in deep learning, massive increases in computational power, and the availability of vast amounts of data. Organizations such as OpenAI, DeepMind, and Anthropic are leading the effort to develop AGI, with stated goals of ensuring that it benefits all of humanity.
+
+One of the key challenges in developing AGI is defining what it actually means. There is no single, agreed-upon definition of intelligence, and different researchers have different ideas about what an AGI should be able to do. Some focus on human-level performance on a specific set of tasks, while others emphasize the ability to learn and adapt to new situations.
+
+Another major challenge is safety. If an AGI were to be created, it would be extremely powerful, and it is crucial to ensure that its goals are aligned with human values. This is known as the alignment problem, and it is a major area of research in its own right.
+
+Despite the uncertainties, the pursuit of AGI is one of the most exciting and important endeavors in human history. It has the potential to transform our world in ways we can scarcely imagine, and it is crucial that we approach it with a deep sense of responsibility and foresight.

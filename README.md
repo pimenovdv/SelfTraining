@@ -29,3 +29,19 @@ The immediate goal is not to train massive language models blindly. Instead, the
 ## Guiding Philosophy
 
 "Measure twice, cut once." Every major architectural decision must be preceded by theoretical justification and small-scale empirical validation.
+
+## Quick Start: Training the Tokenizer
+
+To demonstrate the foundational approach, this repository includes a simple script to train a Byte-Pair Encoding (BPE) tokenizer from scratch.
+
+1.  **Ensure you have Python 3 installed.**
+2.  **Run the training script:**
+    ```bash
+    python train_bpe.py
+    ```
+    This script will read the sample text data from `data/sample_text.txt`, perform BPE merges, and save the resulting vocabulary and merges to `models/tokenizer/`.
+3.  **Adjusting hyperparameters:**
+    You can customize the tokenizer training using command-line arguments:
+    ```bash
+    python train_bpe.py --data_path "data/sample_text.txt" --num_merges 200 --output_dir "models/my_tokenizer"
+    ```
