@@ -45,3 +45,22 @@ To demonstrate the foundational approach, this repository includes a simple scri
     ```bash
     python train_bpe.py --data_path "data/sample_text.txt" --num_merges 200 --output_dir "models/my_tokenizer"
     ```
+
+## Component Testing: Feed-Forward Network (FFN)
+
+As part of our **Phase 1: Foundations and Mathematical Modeling**, we are exploring individual components of potential AGI architectures. We have implemented a 2-layer Feed-Forward Network to test non-linear transformation hypotheses using purely mathematical operations (via NumPy).
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the FFN component test:**
+    ```bash
+    python train_ffn_component.py
+    ```
+    This script trains a simple FFN on the synthetic XOR dataset. It validates our hypothesis that a 2-layer network can successfully model non-linear boundaries. The script demonstrates manual forward and backward passes to rigorously verify the underlying mathematics.
+
+    You can adjust hyperparameters such as hidden size and learning rate:
+    ```bash
+    python train_ffn_component.py --hidden_size 8 --epochs 20000 --lr 0.5
+    ```
