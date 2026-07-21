@@ -83,3 +83,22 @@ Building upon our mathematical models, we have implemented a Self-Attention mech
     ```bash
     python train_attention_component.py --d_k 4 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Layer Normalization
+
+Building towards a complete architecture, we have implemented Layer Normalization. This component helps stabilize training and is crucial for deep neural networks, tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Layer Normalization component test:**
+    ```bash
+    python train_layernorm_component.py
+    ```
+    This script tests learning the gamma and beta parameters of layer normalization on a synthetic dataset using manual backpropagation.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_layernorm_component.py --epochs 10000 --lr 0.1
+    ```
