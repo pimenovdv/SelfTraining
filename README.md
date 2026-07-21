@@ -159,3 +159,22 @@ As sequence models like Transformers lack recurrent or convolutional structures,
     ```bash
     python train_positional_encoding_component.py --d_model 16 --seq_len 10 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Multi-Head Transformer Block
+
+Building upon individual components, we have integrated Multi-Head Attention, Feed-Forward Networks, and Layer Normalization into a single-layer Transformer Block. This tests the interaction of these components and residual connections using pure mathematical operations, replacing the single-head attention with a more robust multi-head variant.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Multi-Head Transformer Block component test:**
+    ```bash
+    python train_multihead_transformer_block_component.py
+    ```
+    This script tests learning the transformation over a synthetic sequence dataset using manual backpropagation through the entire block.
+
+    You can adjust hyperparameters such as dimension model, number of heads, ffn, epochs, and learning rate:
+    ```bash
+    python train_multihead_transformer_block_component.py --d_model 4 --num_heads 2 --d_ff 8 --epochs 20000 --lr 0.1
+    ```
