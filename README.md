@@ -121,3 +121,22 @@ Building upon individual components, we have integrated Self-Attention, Feed-For
     ```bash
     python train_transformer_block_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 20000 --lr 0.1
     ```
+
+## Component Testing: Positional Encoding
+
+As sequence models like Transformers lack recurrent or convolutional structures, they require explicit information about the order of sequence elements. We have implemented a mathematical formulation of Positional Encoding (using sine and cosine functions) to test its capabilities.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Positional Encoding component test:**
+    ```bash
+    python train_positional_encoding_component.py
+    ```
+    This script generates synthetic positional encodings and trains a simple linear layer via manual backpropagation to extract normalized absolute position indices, validating that the encodings contain linearly separable order information.
+
+    You can adjust hyperparameters such as dimension model, sequence length, epochs, and learning rate:
+    ```bash
+    python train_positional_encoding_component.py --d_model 16 --seq_len 10 --epochs 5000 --lr 0.1
+    ```
