@@ -102,3 +102,22 @@ Building towards a complete architecture, we have implemented Layer Normalizatio
     ```bash
     python train_layernorm_component.py --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Transformer Block
+
+Building upon individual components, we have integrated Self-Attention, Feed-Forward Networks, and Layer Normalization into a single-layer Transformer Block. This tests the interaction of these components and residual connections using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Transformer Block component test:**
+    ```bash
+    python train_transformer_block_component.py
+    ```
+    This script tests learning the transformation over a synthetic sequence dataset using manual backpropagation through the entire block.
+
+    You can adjust hyperparameters such as dimension model, keys, ffn, epochs, and learning rate:
+    ```bash
+    python train_transformer_block_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 20000 --lr 0.1
+    ```
