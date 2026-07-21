@@ -42,6 +42,14 @@
   Output:
   $Output = AttentionWeights \cdot V$
 
+* **Multi-Head Attention**
+  Extending the Self-Attention mechanism to multiple heads:
+  Let $h$ be the number of heads, and $d_k = d_{model} / h$.
+  For each head $i$:
+  $Q_i = X W_Q^{(i)}$, $K_i = X W_K^{(i)}$, $V_i = X W_V^{(i)}$
+  $head_i = \text{softmax}(\frac{Q_i K_i^T}{\sqrt{d_k}}) V_i$
+  $MultiHead(X) = \text{Concat}(head_1, ..., head_h) W_O$
+
 * **Layer Normalization**
   Let $X$ be the input matrix of shape (batch_size, d_model), $\gamma$ be the scale parameter, and $\beta$ be the shift parameter.
   $\mu = \frac{1}{d_{model}} \sum_{i=1}^{d_{model}} X_i$
@@ -56,6 +64,7 @@
 
 ## Experimental Summaries
 
+* **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
 * **Experiment `0001_train_tokenizer` (Success):** Learned a BPE vocabulary of 144 tokens on the baseline AGI dataset. Proves baseline tokenization functionality.
 * **Experiment `0002_train_ffn_component` (Success):** Trained a small 2-layer FFN on a synthetic XOR dataset. The model successfully converged (Loss < 0.001) over 50k epochs using a learning rate of 1.0, proving manual backpropagation formulation is mathematically sound.
 * **Experiment `0003_train_attention_component` (Success):** Implemented and trained a self-attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset, proving mathematical soundness of the attention mechanism and its manual backpropagation.
