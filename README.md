@@ -84,6 +84,25 @@ Building upon our mathematical models, we have implemented a Self-Attention mech
     python train_attention_component.py --d_k 4 --epochs 10000 --lr 0.1
     ```
 
+## Component Testing: Multi-Head Attention
+
+Building upon our initial single-head Self-Attention, we have implemented Multi-Head Attention. This allows the model to jointly attend to information from different representation subspaces at different positions, verified using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Multi-Head Attention component test:**
+    ```bash
+    python train_multihead_attention_component.py
+    ```
+    This script trains a Multi-Head Attention layer on a synthetic dataset, manually computing forward and backward passes for multiple heads.
+
+    You can adjust hyperparameters such as dimension model, number of heads, epochs, and learning rate:
+    ```bash
+    python train_multihead_attention_component.py --d_model 4 --num_heads 2 --epochs 10000 --lr 0.1
+    ```
+
 ## Component Testing: Layer Normalization
 
 Building towards a complete architecture, we have implemented Layer Normalization. This component helps stabilize training and is crucial for deep neural networks, tested here with pure mathematical operations.
