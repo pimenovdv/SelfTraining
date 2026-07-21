@@ -5,7 +5,7 @@
 ## Phase 1: Foundations and Mathematical Modeling (Current)
 
 - [x] Define the core theoretical framework for intelligence modeling.
-- [x] Investigate and mathematically formalize memory and reasoning structures. (Partially complete: verified FFN for reasoning structures, implemented Self-Attention component).
+- [x] Investigate and mathematically formalize memory and reasoning structures. (Verified FFN for reasoning structures, implemented Self-Attention component, and Layer Normalization).
 - [x] Design and conduct initial small-scale experiments to test architectural hypotheses.
 - [ ] Establish rigorous evaluation metrics for component performance.
 
