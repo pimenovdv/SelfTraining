@@ -178,3 +178,22 @@ Building upon individual components, we have integrated Multi-Head Attention, Fe
     ```bash
     python train_multihead_transformer_block_component.py --d_model 4 --num_heads 2 --d_ff 8 --epochs 20000 --lr 0.1
     ```
+
+## Component Testing: Masked Self-Attention
+
+Building upon the self-attention mechanism, we have implemented Masked Self-Attention. This is a crucial foundational building block for autoregressive models (like GPT). It restricts the attention mechanism from "looking ahead" at future tokens using a causal mask, verified using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Masked Self-Attention component test:**
+    ```bash
+    python train_masked_attention_component.py
+    ```
+    This script trains a simple Masked Self-Attention layer on a synthetic dataset, manually computing forward and backward passes.
+
+    You can adjust hyperparameters such as dimension key, epochs, and learning rate:
+    ```bash
+    python train_masked_attention_component.py --d_k 4 --epochs 10000 --lr 0.1
+    ```
