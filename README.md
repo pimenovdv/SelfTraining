@@ -273,3 +273,22 @@ Building upon the basic component research, we have implemented RMSNorm. This co
     ```bash
     python train_rmsnorm_component.py --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: SwiGLU (Swish-Gated Linear Unit)
+
+Building upon our initial components, we have implemented the SwiGLU activation. This component tests the hypothesis that advanced gating mechanisms with non-linear activation functions provide richer representational capacity than standard ReLUs or Sigmoids. It is commonly used in state-of-the-art LLMs.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the SwiGLU component test:**
+    ```bash
+    python train_swiglu_component.py
+    ```
+    This script tests learning the transformation over a synthetic reasoning dataset (XOR) using pure mathematical operations, verifying manual forward and backward passes.
+
+    You can adjust hyperparameters such as hidden size, epochs, and learning rate:
+    ```bash
+    python train_swiglu_component.py --hidden_size 8 --epochs 50000 --lr 1.0
+    ```
