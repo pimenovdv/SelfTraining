@@ -216,3 +216,22 @@ Building upon the self-attention mechanism, we have implemented Cross-Attention.
     ```bash
     python train_cross_attention_component.py --d_k 2 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Decoder Block
+
+Building upon Masked Self-Attention and Cross-Attention, we have integrated them with Feed-Forward Networks and Layer Normalization to form a complete Decoder Block. This is the core component of autoregressive sequence generation models.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Decoder Block component test:**
+    ```bash
+    python train_decoder_block_component.py
+    ```
+    This script tests learning the transformation over synthetic target and source sequences using manual backpropagation through the entire block.
+
+    You can adjust hyperparameters such as dimension model, keys, ffn, epochs, and learning rate:
+    ```bash
+    python train_decoder_block_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 10000 --lr 0.1
+    ```
