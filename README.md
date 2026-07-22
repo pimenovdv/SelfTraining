@@ -235,3 +235,22 @@ Building upon Masked Self-Attention and Cross-Attention, we have integrated them
     ```bash
     python train_decoder_block_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Full Encoder-Decoder Transformer
+
+Building upon all previous components (Encoder blocks and Decoder blocks), we have integrated them into a full end-to-end Encoder-Decoder Transformer architecture. This tests the complete sequence-to-sequence mapping pipeline using pure mathematical operations, verifying that gradients flow correctly through both networks.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Full Encoder-Decoder Transformer component test:**
+    ```bash
+    python train_full_encoder_decoder_component.py
+    ```
+    This script tests learning the transformation from source sequences to target sequences via an end-to-end architecture using manual backpropagation.
+
+    You can adjust hyperparameters such as dimension model, keys, ffn, epochs, and learning rate:
+    ```bash
+    python train_full_encoder_decoder_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 20000 --lr 0.1
+    ```
