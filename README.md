@@ -254,3 +254,22 @@ Building upon all previous components (Encoder blocks and Decoder blocks), we ha
     ```bash
     python train_full_encoder_decoder_component.py --d_model 4 --d_k 2 --d_ff 8 --epochs 20000 --lr 0.1
     ```
+
+## Component Testing: RMSNorm (Root Mean Square Normalization)
+
+Building upon the basic component research, we have implemented RMSNorm. This component tests the hypothesis that removing mean-centering (compared to LayerNorm) still allows the model to learn a stable scale parameter (gamma), while being computationally simpler. It is tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the RMSNorm component test:**
+    ```bash
+    python train_rmsnorm_component.py
+    ```
+    This script tests learning the gamma parameter of RMS normalization on a synthetic dataset using manual backpropagation.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_rmsnorm_component.py --epochs 10000 --lr 0.1
+    ```
