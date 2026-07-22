@@ -292,3 +292,22 @@ Building upon our initial components, we have implemented the SwiGLU activation.
     ```bash
     python train_swiglu_component.py --hidden_size 8 --epochs 50000 --lr 1.0
     ```
+
+## Component Testing: RoPE (Rotary Positional Embeddings)
+
+Building upon our initial basic Positional Encoding, we have implemented Rotary Positional Embeddings. This component tests the hypothesis that injecting positional information into the query and key representations via rotations allows the attention mechanism to better learn relative distances. It is tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the RoPE component test:**
+    ```bash
+    python train_rope_component.py
+    ```
+    This script tests injecting positional information into attention score queries and keys using pure mathematical operations and manual backpropagation.
+
+    You can adjust hyperparameters such as sequence length, dimension model, epochs, and learning rate:
+    ```bash
+    python train_rope_component.py --seq_len 10 --d_model 16 --epochs 5000 --lr 0.1
+    ```
