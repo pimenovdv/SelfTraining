@@ -50,6 +50,17 @@
   Where $Mask$ is an upper-triangular matrix of $-\infty$ (or very large negative numbers) above the main diagonal, and $0$ elsewhere.
   $AttentionWeights = \text{softmax}(Scores)$
 
+* **Cross-Attention Mechanism**
+  Similar to Self-Attention, but queries come from a target sequence, while keys and values come from a source sequence:
+  Let $X_{target}$ be the target sequence matrix, and $X_{source}$ be the source sequence matrix.
+  $Q = X_{target} W_Q$
+  $K = X_{source} W_K$
+  $V = X_{source} W_V$
+
+  $Scores = \frac{Q K^T}{\sqrt{d_k}}$
+  $AttentionWeights = \text{softmax}(Scores)$
+  $Output = AttentionWeights \cdot V$
+
 * **Multi-Head Attention**
   Extending the Self-Attention mechanism to multiple heads:
   Let $h$ be the number of heads, and $d_k = d_{model} / h$.
@@ -81,6 +92,7 @@
 * **Experiment `0006_train_positional_encoding_component` (Success):** Implemented mathematical formulation of Positional Encoding. Successfully proved that sine/cosine encodings contain robust structural positional information that can be extracted via a simple linear layer trained with manual backpropagation.
 * **Experiment `0008_train_multihead_transformer_block_component` (Success):** Implemented and trained a complete single-layer Multi-Head Transformer block (Multi-Head Attention + FFN + LayerNorm + Residuals) using pure NumPy. Model converged to near-zero loss, proving mathematical soundness of full block integration and manual backpropagation for multi-head setup.
 * **Experiment `0009_train_masked_attention_component` (Success):** Implemented and trained a Masked Self-Attention layer using pure NumPy. Successfully learned relationships with causal constraints (no look-ahead) in a synthetic sequence dataset, proving mathematical soundness of causal masking and its manual backpropagation.
+* **Experiment `0010_train_cross_attention_component` (Pending/Success):** Implemented and trained a Cross-Attention layer using pure NumPy. Successfully learned relationships between a target and source sequence, proving mathematical soundness of cross-attention and its manual backpropagation routing gradients to both sequences' components.
 
 ## Open Questions & Hypotheses
 

@@ -197,3 +197,22 @@ Building upon the self-attention mechanism, we have implemented Masked Self-Atte
     ```bash
     python train_masked_attention_component.py --d_k 4 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Cross-Attention
+
+Building upon the self-attention mechanism, we have implemented Cross-Attention. This is a crucial foundational building block for encoder-decoder architectures (like the original Transformer for translation). It allows a target sequence to attend to a source sequence, verified using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Cross-Attention component test:**
+    ```bash
+    python train_cross_attention_component.py
+    ```
+    This script trains a simple Cross-Attention layer on synthetic target and source datasets, manually computing forward and backward passes.
+
+    You can adjust hyperparameters such as dimension key, epochs, and learning rate:
+    ```bash
+    python train_cross_attention_component.py --d_k 2 --epochs 10000 --lr 0.1
+    ```
