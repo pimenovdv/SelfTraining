@@ -17,6 +17,7 @@
 * *(Date: Current)* - Successfully integrated Multi-Head Attention into a full Transformer Block. Validated manual backpropagation across the entire block including the complex reshaping required for multi-head attention and residual connections.
 * *(Date: Current)* - Implemented and verified Masked Self-Attention, testing a lower-triangular causal mask to ensure autoregressive properties. Validated that masked positions yield zero gradients during manual backpropagation.
 * *(Date: Current)* - Formulated and verified RMSNorm mathematically. Confirmed that scaling by root mean square, rather than subtracting mean and scaling by variance, simplifies computation while still learning a stable scale parameter via manual backpropagation.
+* *(Date: Current)* - Successfully implemented and tested Rotary Positional Embeddings (RoPE) mathematically, providing proof that complex rotation mechanisms allow the injection of relative positional information during attention calculation.
 
 ## Mathematical Notebook
 
@@ -88,6 +89,15 @@
   $PE_{(pos, 2i)} = \sin(pos / 10000^{2i/d_{model}})$
   $PE_{(pos, 2i+1)} = \cos(pos / 10000^{2i/d_{model}})$
 
+* **Rotary Positional Embeddings (RoPE)**
+  Let $x_m$ be the embedding at position $m$.
+  RoPE applies a rotation to adjacent pairs of features in the embedding vector.
+  For features at indices $2i$ and $2i+1$:
+  $x_m^{(2i, 2i+1)} = \begin{bmatrix} x_m^{(2i)} \\ x_m^{(2i+1)} \end{bmatrix}$
+  $R_{\Theta,m}^{(2i, 2i+1)} = \begin{bmatrix} \cos(m\theta_i) & -\sin(m\theta_i) \\ \sin(m\theta_i) & \cos(m\theta_i) \end{bmatrix}$
+  where $\theta_i = 10000^{-2i/d_{model}}$
+  $f(x_m, m)^{(2i, 2i+1)} = R_{\Theta,m}^{(2i, 2i+1)} x_m^{(2i, 2i+1)}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -103,6 +113,7 @@
 * **Experiment `0011_train_decoder_block_component` (Success):** Implemented and trained a complete single-layer Decoder block (Masked Attention + Cross-Attention + FFN + LayerNorm + Residuals) using pure NumPy. Model converged to zero loss, proving mathematical soundness of full decoder block integration and manual backpropagation routing gradients back to both target and source representations.
 * **Experiment `0012_train_full_encoder_decoder_component` (Success):** Implemented and trained a full end-to-end Encoder-Decoder Transformer architecture combining the Encoder block and the Decoder block using pure NumPy. The experiment verified backpropagation throughout the entire computational graph linking both the source and target representations, converging to zero loss.
 * **Experiment `0013_train_rmsnorm_component` (Success):** Implemented and trained Root Mean Square Normalization (RMSNorm) using pure NumPy. Successfully learned the scale parameter (gamma) on a synthetic dataset via manual backpropagation, validating that normalization without mean-centering is computationally simpler and mathematically sound.
+* **Experiment `0015_train_rope_component` (Success):** Implemented and trained Rotary Positional Embeddings (RoPE) using pure NumPy. Successfully verified the forward and backward propagation of rotation matrix multiplication on query and key embeddings to inject relative positional information into attention scores.
 
 ## Open Questions & Hypotheses
 
