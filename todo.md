@@ -18,7 +18,7 @@
 
 ## Phase 3: Integration and Capability Emergence
 
-- [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block and Decoder Block combining components).
+- [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block, Decoder Block combining components, and a full end-to-end Encoder-Decoder architecture).
 - [ ] Train medium-scale models to observe emergent capabilities.
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.

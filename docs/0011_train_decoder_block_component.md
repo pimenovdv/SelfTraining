@@ -6,14 +6,14 @@ To implement and train a full Decoder Block component of AGI using pure `numpy`.
 ## Setup
 *   **Script:** `train_decoder_block_component.py`
 *   **Data:** Synthetic target and source sequence datasets.
-*   **Hyperparameters:** `d_model` = 4, `d_k` = 2, `d_ff` = 8, `epochs` = 10, `learning_rate` = 0.1
+*   **Hyperparameters:** `d_model` = 4, `d_k` = 2, `d_ff` = 8, `epochs` = 10000, `learning_rate` = 0.1
 
 ## Execution
 The training script was executed to verify the mathematical formulation of forward and backward passes for the entire decoder block.
 
 ## Results
 *   **Status:** Success.
-*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 10 epochs.
+*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 10000 epochs.
 *   **Predictions:** The final predictions closely approximate the expected target outputs, showing the successful integration of causal self-attention, cross-attention, and non-linear transformations.
 
 ## Observations & Next Steps
