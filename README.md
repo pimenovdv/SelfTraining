@@ -349,3 +349,22 @@ Building upon Multi-Head Attention, we have implemented Grouped-Query Attention.
     ```bash
     python train_gqa_component.py --d_model 4 --num_heads 4 --num_kv_heads 2 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: LoRA (Low-Rank Adaptation)
+
+Building upon our component research, we have implemented Low-Rank Adaptation (LoRA). This component tests the hypothesis that fine-tuning can be made highly parameter-efficient by freezing base weights and learning only small, low-rank matrices that are injected into the computation. It is tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the LoRA component test:**
+    ```bash
+    python train_lora_component.py
+    ```
+    This script tests learning the low-rank adaptation matrices (A and B) while keeping the base weight matrix frozen, over a synthetic dataset, utilizing manual backpropagation to ensure gradients only flow into the adapter matrices.
+
+    You can adjust hyperparameters such as rank, alpha, epochs, and learning rate:
+    ```bash
+    python train_lora_component.py --r 2 --alpha 1.0 --epochs 5000 --lr 0.1
+    ```
