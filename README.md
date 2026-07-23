@@ -311,3 +311,22 @@ Building upon our initial basic Positional Encoding, we have implemented Rotary 
     ```bash
     python train_rope_component.py --seq_len 10 --d_model 16 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Mixture of Experts (MoE)
+
+Building upon the basic FFN component research, we have implemented Mixture of Experts (MoE). This component tests the hypothesis that a router network can successfully learn to distribute inputs across multiple specialized sub-networks (experts) using basic matrix operations and manual backpropagation.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the MoE component test:**
+    ```bash
+    python train_moe_component.py
+    ```
+    This script trains a Mixture of Experts block on a synthetic dataset using pure mathematical operations, verifying manual forward and backward passes.
+
+    You can adjust hyperparameters such as number of experts, hidden size, epochs, and learning rate:
+    ```bash
+    python train_moe_component.py --num_experts 4 --hidden_size 8 --epochs 10000 --lr 0.1
+    ```
