@@ -330,3 +330,22 @@ Building upon the basic FFN component research, we have implemented Mixture of E
     ```bash
     python train_moe_component.py --num_experts 4 --hidden_size 8 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Grouped-Query Attention (GQA)
+
+Building upon Multi-Head Attention, we have implemented Grouped-Query Attention. This component tests the hypothesis that sharing key and value heads across multiple query heads significantly reduces computational and memory overhead during inference while maintaining competitive performance. It is tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GQA component test:**
+    ```bash
+    python train_gqa_component.py
+    ```
+    This script trains a Grouped-Query Attention layer on a synthetic dataset using pure mathematical operations, verifying manual forward and backward passes, including the gradient aggregation for shared heads.
+
+    You can adjust hyperparameters such as dimension model, number of query heads, number of kv heads, epochs, and learning rate:
+    ```bash
+    python train_gqa_component.py --d_model 4 --num_heads 4 --num_kv_heads 2 --epochs 10000 --lr 0.1
+    ```
