@@ -6,14 +6,14 @@ To implement and train a Swish-Gated Linear Unit (SwiGLU) component. This compon
 ## Setup
 *   **Script:** `train_swiglu_component.py`
 *   **Data:** Synthetic XOR dataset.
-*   **Hyperparameters:** `hidden_size` = 8, `epochs` = 100, `learning_rate` = 0.5
+*   **Hyperparameters:** `hidden_size` = 8, `epochs` = 50000, `learning_rate` = 1.0
 
 ## Execution
 The training script was executed to verify the mathematical formulation of forward and backward passes for the SwiGLU activation.
 
 ## Results
 *   **Status:** Success.
-*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 100 epochs.
+*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 50000 epochs.
 *   **Predictions:** The final predictions closely approximate the expected XOR outputs (0 for identical inputs, 1 for different inputs).
 
 ## Observations & Next Steps

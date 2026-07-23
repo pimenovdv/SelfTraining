@@ -22,6 +22,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Grouped-Query Attention (GQA) mathematically, verifying that sharing key and value heads across multiple query heads reduces overhead while gradients can be successfully aggregated via summation back into the shared components during manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Low-Rank Adaptation (LoRA) mathematically. Confirmed that parameter-efficient fine-tuning is viable by freezing base weights and learning only small, low-rank injected matrices via manual backpropagation.
 *   *(Date: Current)* - Established rigorous evaluation metrics (Softmax, Cross-Entropy Loss, Perplexity, Accuracy). Verified their mathematical stability and proper gradient flow via manual backpropagation during combined Softmax-Cross Entropy operation, concluding Phase 1 Foundations.
+*   *(Date: Current)* - Successfully implemented and tested Attention with Linear Biases (ALiBi) mathematically. Confirmed that positional information can be explicitly added as non-learned distance biases prior to softmax, and that backpropagation effectively treats these biases as constants during training.
 
 ## Mathematical Notebook
 
@@ -74,6 +75,12 @@
   $Q_i = X W_Q^{(i)}$, $K_i = X W_K^{(i)}$, $V_i = X W_V^{(i)}$
   $head_i = \text{softmax}(\frac{Q_i K_i^T}{\sqrt{d_k}}) V_i$
   $MultiHead(X) = \text{Concat}(head_1, ..., head_h) W_O$
+
+* **Attention with Linear Biases (ALiBi)**
+  Similar to Multi-Head Attention, but instead of adding positional embeddings to inputs, biases based on distances are added directly to the attention scores.
+  Let $m$ be the head-specific slope, and $i, j$ be query and key indices respectively.
+  $Scores_{i, j} = (Q_i K_j^T) - m |i - j|$
+  *For autoregressive models, this is typically masked with causal constraints, and does not necessarily require the $\frac{1}{\sqrt{d_k}}$ scaling factor, treating the slope subtraction as the core positional injection mechanism. Backpropagation simply routes through this addition.*
 
 * **Grouped-Query Attention (GQA)**
   Extending Multi-Head Attention by sharing key and value heads across groups of query heads.
@@ -132,6 +139,7 @@
 * **Experiment `0015_train_rope_component` (Success):** Implemented and trained Rotary Positional Embeddings (RoPE) using pure NumPy. Successfully verified the forward and backward propagation of rotation matrix multiplication on query and key embeddings to inject relative positional information into attention scores.
 * **Experiment `0016_train_moe_component` (Success):** Implemented and trained Mixture of Experts (MoE) using pure NumPy. Successfully learned a router to distribute inputs to 4 different experts with backpropagation computing correctly over the `einsum` combinations, showing convergence on a mixed function task.
 * **Experiment `0017_train_gqa_component` (Success):** Implemented and trained Grouped-Query Attention (GQA) using pure NumPy. Successfully verified the forward and backward propagation of shared key and value heads across groups of query heads, converging on a sequence task.
+* **Experiment `0020_train_alibi_component` (Success):** Implemented and trained ALiBi (Attention with Linear Biases) using pure NumPy. Successfully verified adding fixed distance-based biases explicitly to attention scores, validating that gradients compute correctly without requiring learnable embeddings.
 
 ## Open Questions & Hypotheses
 
