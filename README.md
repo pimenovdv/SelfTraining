@@ -368,3 +368,22 @@ Building upon our component research, we have implemented Low-Rank Adaptation (L
     ```bash
     python train_lora_component.py --r 2 --alpha 1.0 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Scaling Laws
+
+Building upon our component research, we have implemented a script to study empirical scaling laws. This tests the hypothesis that model performance (loss) scales predictably with the number of parameters following a power law, providing a foundation for predicting resource requirements.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Scaling Laws component test:**
+    ```bash
+    python train_scaling_laws_component.py
+    ```
+    This script trains a Feed-Forward Network on a synthetic dataset across varying hidden layer sizes, performing linear regression to estimate the power-law exponent.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_scaling_laws_component.py --epochs 2000 --lr 0.01
+    ```
