@@ -12,7 +12,7 @@
 ## Phase 2: Component Engineering and Optimization
 
 - [x] Develop optimized implementations of successful theoretical models. (Implemented RMSNorm as an optimized alternative to LayerNorm, SwiGLU for enhanced capacity, RoPE for enhanced positional embeddings, Mixture of Experts for specialized routing, Grouped-Query Attention for optimized attention scaling, and ALiBi for positional bias injection).
-- [ ] Study scaling laws for individual components (e.g., attention, memory retrieval).
+- [x] Study scaling laws for individual components (e.g., attention, memory retrieval).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [ ] Automate the pipeline for training, evaluation, and documentation generation.
 

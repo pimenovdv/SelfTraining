@@ -23,6 +23,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Low-Rank Adaptation (LoRA) mathematically. Confirmed that parameter-efficient fine-tuning is viable by freezing base weights and learning only small, low-rank injected matrices via manual backpropagation.
 *   *(Date: Current)* - Established rigorous evaluation metrics (Softmax, Cross-Entropy Loss, Perplexity, Accuracy). Verified their mathematical stability and proper gradient flow via manual backpropagation during combined Softmax-Cross Entropy operation, concluding Phase 1 Foundations.
 *   *(Date: Current)* - Successfully implemented and tested Attention with Linear Biases (ALiBi) mathematically. Confirmed that positional information can be explicitly added as non-learned distance biases prior to softmax, and that backpropagation effectively treats these biases as constants during training.
+*   *(Date: Current)* - Verified empirical scaling laws on simple Feed-Forward Networks using synthetic datasets. Confirmed that the final loss decreases predictably with an increase in parameter count following a power law $L \approx C N^{-\alpha}$, estimating $\alpha \approx 0.16$.
 
 ## Mathematical Notebook
 
@@ -140,6 +141,7 @@
 * **Experiment `0016_train_moe_component` (Success):** Implemented and trained Mixture of Experts (MoE) using pure NumPy. Successfully learned a router to distribute inputs to 4 different experts with backpropagation computing correctly over the `einsum` combinations, showing convergence on a mixed function task.
 * **Experiment `0017_train_gqa_component` (Success):** Implemented and trained Grouped-Query Attention (GQA) using pure NumPy. Successfully verified the forward and backward propagation of shared key and value heads across groups of query heads, converging on a sequence task.
 * **Experiment `0020_train_alibi_component` (Success):** Implemented and trained ALiBi (Attention with Linear Biases) using pure NumPy. Successfully verified adding fixed distance-based biases explicitly to attention scores, validating that gradients compute correctly without requiring learnable embeddings.
+* **Experiment `0021_train_scaling_laws_component` (Success):** Investigated scaling laws by training Feed-Forward Networks of varying sizes on a synthetic dataset. Verified that loss $L$ scales with the number of parameters $N$ following a predictable power-law relationship $L = C N^{-\alpha}$.
 
 ## Open Questions & Hypotheses
 
