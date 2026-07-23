@@ -19,6 +19,7 @@
 * *(Date: Current)* - Formulated and verified RMSNorm mathematically. Confirmed that scaling by root mean square, rather than subtracting mean and scaling by variance, simplifies computation while still learning a stable scale parameter via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Rotary Positional Embeddings (RoPE) mathematically, providing proof that complex rotation mechanisms allow the injection of relative positional information during attention calculation.
 *   *(Date: Current)* - Successfully implemented and tested Mixture of Experts (MoE) mathematically, verifying that a soft routing mechanism can distribute learning across specialized subnetworks (experts) and accurately route gradients back through both experts and routing weights.
+*   *(Date: Current)* - Successfully implemented and tested Grouped-Query Attention (GQA) mathematically, verifying that sharing key and value heads across multiple query heads reduces overhead while gradients can be successfully aggregated via summation back into the shared components during manual backpropagation.
 
 ## Mathematical Notebook
 
@@ -72,6 +73,18 @@
   $head_i = \text{softmax}(\frac{Q_i K_i^T}{\sqrt{d_k}}) V_i$
   $MultiHead(X) = \text{Concat}(head_1, ..., head_h) W_O$
 
+* **Grouped-Query Attention (GQA)**
+  Extending Multi-Head Attention by sharing key and value heads across groups of query heads.
+  Let $h$ be the number of query heads, and $h_{kv}$ be the number of key/value heads.
+  $g = h / h_{kv}$ is the number of queries sharing each key/value head.
+  For each KV head index $j$ (where $j = 1 \dots h_{kv}$):
+  $K_j = X W_K^{(j)}$, $V_j = X W_V^{(j)}$
+  For each query head index $i$ in group $j$:
+  $Q_i = X W_Q^{(i)}$
+  $head_i = \text{softmax}(\frac{Q_i K_j^T}{\sqrt{d_k}}) V_j$
+  $GQA(X) = \text{Concat}(head_1, ..., head_h) W_O$
+  *During backpropagation, gradients for $K_j$ and $V_j$ are the sum of gradients from all $Q_i$ in its group.*
+
 * **Layer Normalization**
   Let $X$ be the input matrix of shape (batch_size, d_model), $\gamma$ be the scale parameter, and $\beta$ be the shift parameter.
   $\mu = \frac{1}{d_{model}} \sum_{i=1}^{d_{model}} X_i$
@@ -116,6 +129,7 @@
 * **Experiment `0013_train_rmsnorm_component` (Success):** Implemented and trained Root Mean Square Normalization (RMSNorm) using pure NumPy. Successfully learned the scale parameter (gamma) on a synthetic dataset via manual backpropagation, validating that normalization without mean-centering is computationally simpler and mathematically sound.
 * **Experiment `0015_train_rope_component` (Success):** Implemented and trained Rotary Positional Embeddings (RoPE) using pure NumPy. Successfully verified the forward and backward propagation of rotation matrix multiplication on query and key embeddings to inject relative positional information into attention scores.
 * **Experiment `0016_train_moe_component` (Success):** Implemented and trained Mixture of Experts (MoE) using pure NumPy. Successfully learned a router to distribute inputs to 4 different experts with backpropagation computing correctly over the `einsum` combinations, showing convergence on a mixed function task.
+* **Experiment `0017_train_gqa_component` (Success):** Implemented and trained Grouped-Query Attention (GQA) using pure NumPy. Successfully verified the forward and backward propagation of shared key and value heads across groups of query heads, converging on a sequence task.
 
 ## Open Questions & Hypotheses
 
