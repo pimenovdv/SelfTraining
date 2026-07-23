@@ -6,14 +6,14 @@ To implement and train a small-scale, mathematically rigorous Grouped-Query Atte
 ## Setup
 *   **Script:** `train_gqa_component.py`
 *   **Data:** Synthetic sequence dataset.
-*   **Hyperparameters:** `d_model` = 4, `num_heads` = 4, `num_kv_heads` = 2, `epochs` = 10, `learning_rate` = 0.1
+*   **Hyperparameters:** `d_model` = 4, `num_heads` = 4, `num_kv_heads` = 2, `epochs` = 10000, `learning_rate` = 0.1
 
 ## Execution
 The training script was executed to verify the mathematical formulation of forward and backward passes for the GQA setup.
 
 ## Results
 *   **Status:** Success.
-*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 10 epochs.
+*   **Loss Reduction:** The model successfully reduced the Mean Squared Error over 10000 epochs.
 *   **Predictions:** The final predictions closely approximate the expected target outputs.
 
 ## Observations & Next Steps
