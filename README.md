@@ -388,6 +388,25 @@ Building upon our basic component research using SGD, we have implemented the Ad
     python train_adamw_component.py --hidden_size 8 --epochs 5000 --lr 0.01 --weight_decay 0.01
     ```
 
+## Component Testing: GELU (Gaussian Error Linear Unit)
+
+Building upon our initial components, we have implemented the GELU activation function. This component tests the hypothesis that advanced activation functions which incorporate stochastic regularization properties provide richer representational capacity and better convergence compared to standard ReLUs or Sigmoids. It is commonly used in state-of-the-art architectures like BERT and GPT.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GELU component test:**
+    ```bash
+    python train_gelu_component.py
+    ```
+    This script tests learning the transformation over a synthetic reasoning dataset (XOR) using pure mathematical operations, verifying manual forward and backward passes.
+
+    You can adjust hyperparameters such as hidden size, epochs, and learning rate:
+    ```bash
+    python train_gelu_component.py --hidden_size 8 --epochs 50000 --lr 1.0
+    ```
+
 ## Component Testing: Scaling Laws
 
 Building upon our component research, we have implemented a script to study empirical scaling laws. This tests the hypothesis that model performance (loss) scales predictably with the number of parameters following a power law, providing a foundation for predicting resource requirements.
