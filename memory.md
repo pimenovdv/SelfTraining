@@ -26,6 +26,7 @@
 *   *(Date: Current)* - Verified empirical scaling laws on simple Feed-Forward Networks using synthetic datasets. Confirmed that the final loss decreases predictably with an increase in parameter count following a power law $L \approx C N^{-\alpha}$, estimating $\alpha \approx 0.16$.
 *   *(Date: Current)* - Successfully implemented and tested the AdamW Optimizer mathematically. Confirmed that adaptive moment estimation with explicit decoupled weight decay accelerates convergence on a non-linear dataset compared to standard SGD.
 *   *(Date: Current)* - Successfully implemented and tested the GELU activation function mathematically. Confirmed that its non-linear transformation capabilities effectively learn reasoning boundaries via manual backpropagation.
+*   *(Date: Current)* - Successfully implemented and tested Inverted Dropout mathematically. Confirmed that scaling by $(1-p)^{-1}$ during training appropriately preserves expected values during inference, and that dropout masks correctly route gradients during manual backpropagation.
 
 ## Mathematical Notebook
 
@@ -147,6 +148,16 @@
   Parameter update with decoupled weight decay:
   $\theta_t = \theta_{t-1} - \alpha \left( \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon} \right) - \alpha \lambda \theta_{t-1}$
 
+* **Inverted Dropout**
+  Let $x$ be the input activations and $p$ be the drop rate.
+  During training:
+  Generate mask $M \sim \text{Bernoulli}(1-p)$ of same shape as $x$.
+  $\hat{x} = \frac{x \odot M}{1-p}$
+  During inference:
+  $\hat{x} = x$
+  Backward Pass (Training):
+  Given gradient $\nabla \hat{x}$, $\nabla x = \frac{\nabla \hat{x} \odot M}{1-p}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -169,6 +180,7 @@
 * **Experiment `0021_train_scaling_laws_component` (Success):** Investigated scaling laws by training Feed-Forward Networks of varying sizes on a synthetic dataset. Verified that loss $L$ scales with the number of parameters $N$ following a predictable power-law relationship $L = C N^{-\alpha}$.
 * **Experiment `0022_train_adamw_component` (Success):** Implemented and evaluated the AdamW Optimizer on a non-linear dataset using pure NumPy. Successfully verified the mathematical formulation of moment estimates, bias correction, and explicit decoupled weight decay, demonstrating accelerated convergence.
 * **Experiment `0023_train_gelu_component` (Success):** Implemented and trained a Feed-Forward Network using the Gaussian Error Linear Unit (GELU) activation function in pure NumPy. Model successfully converged to learn non-linear boundaries on the XOR problem, verifying the mathematical soundness of its forward pass approximation and manual backpropagation.
+* **Experiment `0024_train_dropout_component` (Success):** Implemented and trained a Feed-Forward Network using Inverted Dropout in pure NumPy. Model successfully learned non-linear boundaries despite random dropping of activations, confirming the mathematical soundness of the mask generation, scaling, and manual backpropagation.
 
 ## Open Questions & Hypotheses
 
