@@ -29,6 +29,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Inverted Dropout mathematically. Confirmed that scaling by $(1-p)^{-1}$ during training appropriately preserves expected values during inference, and that dropout masks correctly route gradients during manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Direct Preference Optimization (DPO) mathematically. Confirmed that policy weights can be aligned to human preferences by directly optimizing the log-ratio of policy and reference probabilities using binary cross-entropy, eliminating the need for a separate reward model.
 *   *(Date: Current)* - Successfully implemented and tested Quantization-Aware Training (QAT) mathematically. Confirmed that 8-bit absolute maximum quantization simulated during the forward pass can successfully be trained using the Straight-Through Estimator (STE) during backpropagation, resolving questions about modeling quantization error.
+*   *(Date: Current)* - Successfully implemented and tested a Variational Autoencoder (VAE) mathematically. Confirmed that the reparameterization trick allows gradients to flow correctly back to the encoder, and that the combined Binary Cross-Entropy (BCE) and Kullback-Leibler (KL) divergence loss correctly maps inputs to a lower-dimensional standard normal latent space while preserving information for reconstruction.
 
 ## Mathematical Notebook
 
@@ -180,6 +181,17 @@
   During backpropagation, we approximate the gradient of the non-differentiable rounding operation as 1.
   $\nabla w \approx \nabla \tilde{w}$
 
+* **Variational Autoencoder (VAE)**
+  Let $X$ be the input data. The encoder outputs mean $\mu$ and log-variance $\log(\sigma^2)$.
+  Reparameterization Trick:
+  $z = \mu + \sigma \odot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)$
+  Reconstruction Loss (BCE for probability inputs):
+  $\mathcal{L}_{recon} = - \mathbb{E}_{q_\phi(z|X)} [\log p_\theta(X|z)]$
+  Kullback-Leibler (KL) Divergence:
+  $D_{KL}(q_\phi(z|X) || p(z)) = -0.5 \sum (1 + \log(\sigma^2) - \mu^2 - \sigma^2)$
+  Total Loss:
+  $\mathcal{L} = \mathcal{L}_{recon} + D_{KL}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -204,7 +216,8 @@
 * **Experiment `0023_train_gelu_component` (Success):** Implemented and trained a Feed-Forward Network using the Gaussian Error Linear Unit (GELU) activation function in pure NumPy. Model successfully converged to learn non-linear boundaries on the XOR problem, verifying the mathematical soundness of its forward pass approximation and manual backpropagation.
 * **Experiment `0024_train_dropout_component` (Success):** Implemented and trained a Feed-Forward Network using Inverted Dropout in pure NumPy. Model successfully learned non-linear boundaries despite random dropping of activations, confirming the mathematical soundness of the mask generation, scaling, and manual backpropagation.
 * **Experiment `0025_train_dpo_component` (Success):** Implemented and trained Direct Preference Optimization (DPO) in pure NumPy. Model successfully aligned policy weights to assign higher probability to chosen sequences over rejected sequences by directly optimizing their log-ratio differences, confirming the mathematical soundness of implicit reward formulation and manual backpropagation.
-* **Experiment `0026_train_quantization_component` (Pending):** Implement and train a model using Quantization-Aware Training (QAT) to verify absmax quantization and the STE for backpropagation.
+* **Experiment `0026_train_quantization_component` (Success):** Implemented and trained a model using Quantization-Aware Training (QAT) in pure NumPy. Model successfully learned to reduce Mean Squared Error over 50000 epochs despite simulated 8-bit absmax quantization noise during training, verifying that the Straight-Through Estimator (STE) effectively allows gradients to update continuous latent weights.
+* **Experiment `0027_train_vae_component` (Success):** Implemented and trained a Variational Autoencoder (VAE) in pure NumPy. Successfully learned to map an identity matrix dataset to a lower-dimensional latent space and reconstruct it, verifying the mathematical soundness of the reparameterization trick and combined BCE + KL divergence manual backpropagation.
 
 ## Open Questions & Hypotheses
 
