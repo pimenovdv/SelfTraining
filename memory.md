@@ -25,6 +25,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Attention with Linear Biases (ALiBi) mathematically. Confirmed that positional information can be explicitly added as non-learned distance biases prior to softmax, and that backpropagation effectively treats these biases as constants during training.
 *   *(Date: Current)* - Verified empirical scaling laws on simple Feed-Forward Networks using synthetic datasets. Confirmed that the final loss decreases predictably with an increase in parameter count following a power law $L \approx C N^{-\alpha}$, estimating $\alpha \approx 0.16$.
 *   *(Date: Current)* - Successfully implemented and tested the AdamW Optimizer mathematically. Confirmed that adaptive moment estimation with explicit decoupled weight decay accelerates convergence on a non-linear dataset compared to standard SGD.
+*   *(Date: Current)* - Successfully implemented and tested the GELU activation function mathematically. Confirmed that its non-linear transformation capabilities effectively learn reasoning boundaries via manual backpropagation.
 
 ## Mathematical Notebook
 
@@ -123,6 +124,16 @@
   where $\theta_i = 10000^{-2i/d_{model}}$
   $f(x_m, m)^{(2i, 2i+1)} = R_{\Theta,m}^{(2i, 2i+1)} x_m^{(2i, 2i+1)}$
 
+* **GELU Activation**
+  Let $x$ be the input. We use the common approximation:
+  $GELU(x) = 0.5 x \left(1 + \tanh\left(\sqrt{\frac{2}{\pi}} (x + 0.044715 x^3)\right)\right)$
+  Let $u = \sqrt{\frac{2}{\pi}} (x + 0.044715 x^3)$ and $y = \tanh(u)$.
+  Then $GELU(x) = 0.5 x (1 + y)$.
+  Derivative:
+  $du = \sqrt{\frac{2}{\pi}} (1 + 3 \cdot 0.044715 x^2)$
+  $dy = (1 - y^2) du$
+  $GELU'(x) = 0.5 (1 + y) + 0.5 x \cdot dy$
+
 * **AdamW Optimizer**
   Let $\theta_t$ be the parameters at step $t$, $g_t = \nabla \mathcal{L}(\theta_{t-1})$ be the gradient.
   Let $\alpha$ be the learning rate, $\lambda$ be the weight decay coefficient, and $\epsilon$ be a small constant for numerical stability.
@@ -157,6 +168,7 @@
 * **Experiment `0020_train_alibi_component` (Success):** Implemented and trained ALiBi (Attention with Linear Biases) using pure NumPy. Successfully verified adding fixed distance-based biases explicitly to attention scores, validating that gradients compute correctly without requiring learnable embeddings.
 * **Experiment `0021_train_scaling_laws_component` (Success):** Investigated scaling laws by training Feed-Forward Networks of varying sizes on a synthetic dataset. Verified that loss $L$ scales with the number of parameters $N$ following a predictable power-law relationship $L = C N^{-\alpha}$.
 * **Experiment `0022_train_adamw_component` (Success):** Implemented and evaluated the AdamW Optimizer on a non-linear dataset using pure NumPy. Successfully verified the mathematical formulation of moment estimates, bias correction, and explicit decoupled weight decay, demonstrating accelerated convergence.
+* **Experiment `0023_train_gelu_component` (Success):** Implemented and trained a Feed-Forward Network using the Gaussian Error Linear Unit (GELU) activation function in pure NumPy. Model successfully converged to learn non-linear boundaries on the XOR problem, verifying the mathematical soundness of its forward pass approximation and manual backpropagation.
 
 ## Open Questions & Hypotheses
 
