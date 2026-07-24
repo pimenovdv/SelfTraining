@@ -27,6 +27,7 @@
 *   *(Date: Current)* - Successfully implemented and tested the AdamW Optimizer mathematically. Confirmed that adaptive moment estimation with explicit decoupled weight decay accelerates convergence on a non-linear dataset compared to standard SGD.
 *   *(Date: Current)* - Successfully implemented and tested the GELU activation function mathematically. Confirmed that its non-linear transformation capabilities effectively learn reasoning boundaries via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Inverted Dropout mathematically. Confirmed that scaling by $(1-p)^{-1}$ during training appropriately preserves expected values during inference, and that dropout masks correctly route gradients during manual backpropagation.
+*   *(Date: Current)* - Successfully implemented and tested Direct Preference Optimization (DPO) mathematically. Confirmed that policy weights can be aligned to human preferences by directly optimizing the log-ratio of policy and reference probabilities using binary cross-entropy, eliminating the need for a separate reward model.
 
 ## Mathematical Notebook
 
@@ -158,6 +159,14 @@
   Backward Pass (Training):
   Given gradient $\nabla \hat{x}$, $\nabla x = \frac{\nabla \hat{x} \odot M}{1-p}$
 
+* **Direct Preference Optimization (DPO)**
+  Let $\pi_\theta$ be the policy model being trained and $\pi_{ref}$ be the frozen reference model. Let $y_w$ be the chosen sequence and $y_l$ be the rejected sequence for a given input $x$. Let $\beta$ be the KL divergence penalty parameter.
+  The implicit reward modeled by the policy is defined as:
+  $r_\theta(x, y) = \beta \log \frac{\pi_\theta(y|x)}{\pi_{ref}(y|x)}$
+  The DPO loss function directly optimizes this implicit reward difference:
+  $\mathcal{L}_{DPO}(\pi_\theta; \pi_{ref}) = - \mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}} \left[ \log \sigma \left( r_\theta(x, y_w) - r_\theta(x, y_l) \right) \right]$
+  $\mathcal{L}_{DPO} = - \log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w|x)}{\pi_{ref}(y_w|x)} - \log \frac{\pi_\theta(y_l|x)}{\pi_{ref}(y_l|x)} \right) \right)$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -181,6 +190,7 @@
 * **Experiment `0022_train_adamw_component` (Success):** Implemented and evaluated the AdamW Optimizer on a non-linear dataset using pure NumPy. Successfully verified the mathematical formulation of moment estimates, bias correction, and explicit decoupled weight decay, demonstrating accelerated convergence.
 * **Experiment `0023_train_gelu_component` (Success):** Implemented and trained a Feed-Forward Network using the Gaussian Error Linear Unit (GELU) activation function in pure NumPy. Model successfully converged to learn non-linear boundaries on the XOR problem, verifying the mathematical soundness of its forward pass approximation and manual backpropagation.
 * **Experiment `0024_train_dropout_component` (Success):** Implemented and trained a Feed-Forward Network using Inverted Dropout in pure NumPy. Model successfully learned non-linear boundaries despite random dropping of activations, confirming the mathematical soundness of the mask generation, scaling, and manual backpropagation.
+* **Experiment `0025_train_dpo_component` (Success):** Implemented and trained Direct Preference Optimization (DPO) in pure NumPy. Model successfully aligned policy weights to assign higher probability to chosen sequences over rejected sequences by directly optimizing their log-ratio differences, confirming the mathematical soundness of implicit reward formulation and manual backpropagation.
 
 ## Open Questions & Hypotheses
 

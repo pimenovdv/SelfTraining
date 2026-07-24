@@ -444,3 +444,22 @@ Building upon our component research, we have implemented Inverted Dropout. This
     ```bash
     python train_dropout_component.py --hidden_size 16 --drop_rate 0.2 --epochs 100000 --lr 1.0
     ```
+
+## Component Testing: Direct Preference Optimization (DPO)
+
+Building upon our component research, we have implemented Direct Preference Optimization (DPO). This component tests the hypothesis that a language model policy can be directly aligned to human preferences by optimizing the log-ratio of policy to reference probabilities, bypassing the need for a separate reward model. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the DPO component test:**
+    ```bash
+    python train_dpo_component.py
+    ```
+    This script trains a simple policy over a synthetic preference dataset using pure mathematical operations, verifying manual forward and backward passes.
+
+    You can adjust hyperparameters such as dimension model, epochs, learning rate, and beta:
+    ```bash
+    python train_dpo_component.py --d_model 4 --epochs 5000 --lr 0.1 --beta 0.1
+    ```
