@@ -24,6 +24,7 @@
 *   *(Date: Current)* - Established rigorous evaluation metrics (Softmax, Cross-Entropy Loss, Perplexity, Accuracy). Verified their mathematical stability and proper gradient flow via manual backpropagation during combined Softmax-Cross Entropy operation, concluding Phase 1 Foundations.
 *   *(Date: Current)* - Successfully implemented and tested Attention with Linear Biases (ALiBi) mathematically. Confirmed that positional information can be explicitly added as non-learned distance biases prior to softmax, and that backpropagation effectively treats these biases as constants during training.
 *   *(Date: Current)* - Verified empirical scaling laws on simple Feed-Forward Networks using synthetic datasets. Confirmed that the final loss decreases predictably with an increase in parameter count following a power law $L \approx C N^{-\alpha}$, estimating $\alpha \approx 0.16$.
+*   *(Date: Current)* - Successfully implemented and tested the AdamW Optimizer mathematically. Confirmed that adaptive moment estimation with explicit decoupled weight decay accelerates convergence on a non-linear dataset compared to standard SGD.
 
 ## Mathematical Notebook
 
@@ -122,6 +123,19 @@
   where $\theta_i = 10000^{-2i/d_{model}}$
   $f(x_m, m)^{(2i, 2i+1)} = R_{\Theta,m}^{(2i, 2i+1)} x_m^{(2i, 2i+1)}$
 
+* **AdamW Optimizer**
+  Let $\theta_t$ be the parameters at step $t$, $g_t = \nabla \mathcal{L}(\theta_{t-1})$ be the gradient.
+  Let $\alpha$ be the learning rate, $\lambda$ be the weight decay coefficient, and $\epsilon$ be a small constant for numerical stability.
+  Let $\beta_1, \beta_2$ be the decay rates for the first and second moments.
+  Moment updates:
+  $m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$
+  $v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2$
+  Bias-corrected estimates:
+  $\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$
+  $\hat{v}_t = \frac{v_t}{1 - \beta_2^t}$
+  Parameter update with decoupled weight decay:
+  $\theta_t = \theta_{t-1} - \alpha \left( \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon} \right) - \alpha \lambda \theta_{t-1}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -142,6 +156,7 @@
 * **Experiment `0017_train_gqa_component` (Success):** Implemented and trained Grouped-Query Attention (GQA) using pure NumPy. Successfully verified the forward and backward propagation of shared key and value heads across groups of query heads, converging on a sequence task.
 * **Experiment `0020_train_alibi_component` (Success):** Implemented and trained ALiBi (Attention with Linear Biases) using pure NumPy. Successfully verified adding fixed distance-based biases explicitly to attention scores, validating that gradients compute correctly without requiring learnable embeddings.
 * **Experiment `0021_train_scaling_laws_component` (Success):** Investigated scaling laws by training Feed-Forward Networks of varying sizes on a synthetic dataset. Verified that loss $L$ scales with the number of parameters $N$ following a predictable power-law relationship $L = C N^{-\alpha}$.
+* **Experiment `0022_train_adamw_component` (Success):** Implemented and evaluated the AdamW Optimizer on a non-linear dataset using pure NumPy. Successfully verified the mathematical formulation of moment estimates, bias correction, and explicit decoupled weight decay, demonstrating accelerated convergence.
 
 ## Open Questions & Hypotheses
 

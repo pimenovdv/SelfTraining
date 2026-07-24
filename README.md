@@ -369,6 +369,25 @@ Building upon our component research, we have implemented Low-Rank Adaptation (L
     python train_lora_component.py --r 2 --alpha 1.0 --epochs 5000 --lr 0.1
     ```
 
+## Component Testing: AdamW Optimizer
+
+Building upon our basic component research using SGD, we have implemented the AdamW Optimizer. This component tests the hypothesis that adaptive moment estimation with decoupled weight decay accelerates convergence on non-linear datasets compared to standard SGD. It is tested here with pure mathematical operations on the XOR problem.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the AdamW Optimizer component test:**
+    ```bash
+    python train_adamw_component.py
+    ```
+    This script tests parameter updates with adaptive learning rates, moment tracking, bias correction, and decoupled weight decay using pure mathematical operations.
+
+    You can adjust hyperparameters such as hidden size, epochs, learning rate, and weight decay:
+    ```bash
+    python train_adamw_component.py --hidden_size 8 --epochs 5000 --lr 0.01 --weight_decay 0.01
+    ```
+
 ## Component Testing: Scaling Laws
 
 Building upon our component research, we have implemented a script to study empirical scaling laws. This tests the hypothesis that model performance (loss) scales predictably with the number of parameters following a power law, providing a foundation for predicting resource requirements.
