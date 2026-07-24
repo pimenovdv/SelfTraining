@@ -425,3 +425,22 @@ Building upon our component research, we have implemented a script to study empi
     ```bash
     python train_scaling_laws_component.py --epochs 2000 --lr 0.01
     ```
+
+## Component Testing: Inverted Dropout
+
+Building upon our component research, we have implemented Inverted Dropout. This component tests the hypothesis that randomly dropping neuron activations during training prevents complex co-adaptations and reduces overfitting. It is verified here using pure mathematical operations, including scaling during the forward pass to maintain expected values during inference.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Inverted Dropout component test:**
+    ```bash
+    python train_dropout_component.py
+    ```
+    This script tests learning a non-linear dataset while randomly zeroing out hidden layer activations during the forward pass and appropriately masking gradients during the backward pass.
+
+    You can adjust hyperparameters such as hidden size, dropout rate, epochs, and learning rate:
+    ```bash
+    python train_dropout_component.py --hidden_size 16 --drop_rate 0.2 --epochs 100000 --lr 1.0
+    ```
