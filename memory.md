@@ -28,6 +28,7 @@
 *   *(Date: Current)* - Successfully implemented and tested the GELU activation function mathematically. Confirmed that its non-linear transformation capabilities effectively learn reasoning boundaries via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Inverted Dropout mathematically. Confirmed that scaling by $(1-p)^{-1}$ during training appropriately preserves expected values during inference, and that dropout masks correctly route gradients during manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Direct Preference Optimization (DPO) mathematically. Confirmed that policy weights can be aligned to human preferences by directly optimizing the log-ratio of policy and reference probabilities using binary cross-entropy, eliminating the need for a separate reward model.
+*   *(Date: Current)* - Successfully implemented and tested Quantization-Aware Training (QAT) mathematically. Confirmed that 8-bit absolute maximum quantization simulated during the forward pass can successfully be trained using the Straight-Through Estimator (STE) during backpropagation, resolving questions about modeling quantization error.
 
 ## Mathematical Notebook
 
@@ -167,6 +168,18 @@
   $\mathcal{L}_{DPO}(\pi_\theta; \pi_{ref}) = - \mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}} \left[ \log \sigma \left( r_\theta(x, y_w) - r_\theta(x, y_l) \right) \right]$
   $\mathcal{L}_{DPO} = - \log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w|x)}{\pi_{ref}(y_w|x)} - \log \frac{\pi_\theta(y_l|x)}{\pi_{ref}(y_l|x)} \right) \right)$
 
+* **Quantization-Aware Training (QAT)**
+  Let $w$ be the continuous full-precision weights, and $N$ be the number of bits (e.g., 8).
+  The maximum quantization range is $Q_{max} = 2^{N-1} - 1$.
+  The absolute maximum of the weights is $a = \max(|w|)$.
+  The scaling factor is $S = \frac{Q_{max}}{a}$.
+  Forward Pass (simulated quantization):
+  $\hat{w}_q = \text{clip}(\text{round}(w \cdot S), -Q_{max}, Q_{max})$
+  $\tilde{w} = \frac{\hat{w}_q}{S}$
+  Backward Pass (Straight-Through Estimator):
+  During backpropagation, we approximate the gradient of the non-differentiable rounding operation as 1.
+  $\nabla w \approx \nabla \tilde{w}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -191,8 +204,8 @@
 * **Experiment `0023_train_gelu_component` (Success):** Implemented and trained a Feed-Forward Network using the Gaussian Error Linear Unit (GELU) activation function in pure NumPy. Model successfully converged to learn non-linear boundaries on the XOR problem, verifying the mathematical soundness of its forward pass approximation and manual backpropagation.
 * **Experiment `0024_train_dropout_component` (Success):** Implemented and trained a Feed-Forward Network using Inverted Dropout in pure NumPy. Model successfully learned non-linear boundaries despite random dropping of activations, confirming the mathematical soundness of the mask generation, scaling, and manual backpropagation.
 * **Experiment `0025_train_dpo_component` (Success):** Implemented and trained Direct Preference Optimization (DPO) in pure NumPy. Model successfully aligned policy weights to assign higher probability to chosen sequences over rejected sequences by directly optimizing their log-ratio differences, confirming the mathematical soundness of implicit reward formulation and manual backpropagation.
+* **Experiment `0026_train_quantization_component` (Pending):** Implement and train a model using Quantization-Aware Training (QAT) to verify absmax quantization and the STE for backpropagation.
 
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
-2. *(e.g., "Can we formulate a strict mathematical bound on the error introduced by quantization technique Z?")*

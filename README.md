@@ -463,3 +463,22 @@ Building upon our component research, we have implemented Direct Preference Opti
     ```bash
     python train_dpo_component.py --d_model 4 --epochs 5000 --lr 0.1 --beta 0.1
     ```
+
+## Component Testing: Quantization-Aware Training (QAT)
+
+Building upon our component research, we have implemented Quantization-Aware Training (QAT). This component tests the hypothesis that models can adapt to the noise introduced by lower-precision weights (like 8-bit integers) during training, maintaining performance while reducing memory footprint. It relies on absolute maximum (absmax) quantization and the Straight-Through Estimator (STE) for backpropagation.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the QAT component test:**
+    ```bash
+    python train_quantization_component.py
+    ```
+    This script tests Quantization-Aware Training on a synthetic dataset by maintaining full-precision weights while simulating 8-bit quantization during the forward pass.
+
+    You can adjust hyperparameters such as hidden size, epochs, and learning rate:
+    ```bash
+    python train_quantization_component.py --hidden_size 8 --epochs 50000 --lr 1.0
+    ```
