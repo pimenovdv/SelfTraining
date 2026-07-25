@@ -268,6 +268,7 @@
 * **Experiment `0029_train_rnn_component` (Success):** Implemented and trained a simple Recurrent Neural Network (Elman RNN) on a sequential XOR dataset using pure NumPy. Successfully learned to retain information over time steps, verifying the mathematical soundness of state propagation and Backpropagation Through Time (BPTT).
 * **Experiment `0030_train_gru_component` (Success):** Implemented and trained a Gated Recurrent Unit (GRU) on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of update and reset gating mechanisms and their manual Backpropagation Through Time (BPTT), showcasing a more robust sequential memory structure.
 * **Experiment `0031_train_lstm_component` (Success):** Implemented and trained a Long Short-Term Memory (LSTM) cell on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of forget, input, and output gating mechanisms, separate cell state routing, and manual Backpropagation Through Time (BPTT), confirming its capability for robust sequential memory retention over time steps.
+* **Experiment `0032_train_ssm_component` (Success):** Implemented and trained a discrete State Space Model (SSM) using pure NumPy. Successfully verified the mathematical soundness of first-order Euler discretization ($\overline{A} \approx I + \Delta A$) and Backpropagation Through Time to learn sequence transitions and timescales.
 
 ## Open Questions & Hypotheses
 
