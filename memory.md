@@ -31,6 +31,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Quantization-Aware Training (QAT) mathematically. Confirmed that 8-bit absolute maximum quantization simulated during the forward pass can successfully be trained using the Straight-Through Estimator (STE) during backpropagation, resolving questions about modeling quantization error.
 *   *(Date: Current)* - Successfully implemented and tested a Variational Autoencoder (VAE) mathematically. Confirmed that the reparameterization trick allows gradients to flow correctly back to the encoder, and that the combined Binary Cross-Entropy (BCE) and Kullback-Leibler (KL) divergence loss correctly maps inputs to a lower-dimensional standard normal latent space while preserving information for reconstruction.
 *   *(Date: Current)* - Successfully implemented and tested Contrastive Learning (InfoNCE) mathematically. Confirmed that a two-tower model mapping different views of a concept to a shared L2-normalized vector space can successfully be trained by maximizing temperature-scaled cosine similarity using manual backpropagation.
+*   *(Date: Current)* - Successfully implemented and tested a simple Recurrent Neural Network (Elman RNN) mathematically. Confirmed that Backpropagation Through Time (BPTT) effectively computes gradients across sequence steps, allowing a hidden state to successfully store delayed reasoning information.
 
 ## Mathematical Notebook
 
@@ -203,6 +204,21 @@
   $\mathcal{L}_{b \to a} = - \frac{1}{N} \sum_{i=1}^N \log \frac{\exp(S_{i,i})}{\sum_{j=1}^N \exp(S_{j,i})}$
   $\mathcal{L} = \frac{\mathcal{L}_{a \to b} + \mathcal{L}_{b \to a}}{2}$
 
+* **Recurrent Neural Network (Elman RNN)**
+  Let $X$ be the sequence input where $x_t$ is the input at time step $t$. Let $h_t$ be the hidden state at time step $t$.
+  Forward Pass:
+  $h_t = \sigma(W_{hx} x_t + W_{hh} h_{t-1} + b_h)$
+  Output (if computed at final step $T$):
+  $y_{pred} = \sigma(W_y h_T + b_y)$
+  Backward Pass (Backpropagation Through Time):
+  $\delta y = (y_{pred} - y) \cdot \sigma'(W_y h_T + b_y)$
+  $\delta h_T = W_y^T \delta y$
+  For $t$ from $T$ down to $1$:
+  $\delta_{tanh} = \delta h_t \cdot \sigma'(W_{hx} x_t + W_{hh} h_{t-1} + b_h)$
+  $\nabla W_{hx} += \delta_{tanh} x_t^T$
+  $\nabla W_{hh} += \delta_{tanh} h_{t-1}^T$
+  $\delta h_{t-1} = W_{hh}^T \delta_{tanh}$
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -230,6 +246,7 @@
 * **Experiment `0026_train_quantization_component` (Success):** Implemented and trained a model using Quantization-Aware Training (QAT) in pure NumPy. Model successfully learned to reduce Mean Squared Error over 50000 epochs despite simulated 8-bit absmax quantization noise during training, verifying that the Straight-Through Estimator (STE) effectively allows gradients to update continuous latent weights.
 * **Experiment `0027_train_vae_component` (Success):** Implemented and trained a Variational Autoencoder (VAE) in pure NumPy. Successfully learned to map an identity matrix dataset to a lower-dimensional latent space and reconstruct it, verifying the mathematical soundness of the reparameterization trick and combined BCE + KL divergence manual backpropagation.
 * **Experiment `0028_train_contrastive_component` (Success):** Implemented and trained a Contrastive Learning model with a two-tower architecture using the InfoNCE loss in pure NumPy. Successfully aligned corresponding input views into a shared representation space, verifying the mathematical soundness of cross-entropy over temperature-scaled similarities and its manual backpropagation.
+* **Experiment `0029_train_rnn_component` (Success):** Implemented and trained a simple Recurrent Neural Network (Elman RNN) on a sequential XOR dataset using pure NumPy. Successfully learned to retain information over time steps, verifying the mathematical soundness of state propagation and Backpropagation Through Time (BPTT).
 
 ## Open Questions & Hypotheses
 
