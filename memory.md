@@ -228,6 +228,16 @@
   Final hidden state: $h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$
   The output is computed from the final step's hidden state. Backpropagation Through Time routes gradients backwards across the sequence, carefully computing partial derivatives through each gating mechanism and candidate state.
 
+* **Long Short-Term Memory (LSTM)**
+  Let $x_t$ be the input, $h_t$ be the hidden state, and $c_t$ be the cell state at time step $t$.
+  Forget gate: $f_t = \sigma(W_f x_t + U_f h_{t-1} + b_f)$
+  Input gate: $i_t = \sigma(W_i x_t + U_i h_{t-1} + b_i)$
+  Candidate cell state: $\tilde{c}_t = \tanh(W_c x_t + U_c h_{t-1} + b_c)$
+  Cell state: $c_t = f_t \odot c_{t-1} + i_t \odot \tilde{c}_t$
+  Output gate: $o_t = \sigma(W_o x_t + U_o h_{t-1} + b_o)$
+  Hidden state: $h_t = o_t \odot \tanh(c_t)$
+  Backpropagation Through Time correctly distributes gradients backwards across both the hidden state and cell state paths.
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -257,6 +267,7 @@
 * **Experiment `0028_train_contrastive_component` (Success):** Implemented and trained a Contrastive Learning model with a two-tower architecture using the InfoNCE loss in pure NumPy. Successfully aligned corresponding input views into a shared representation space, verifying the mathematical soundness of cross-entropy over temperature-scaled similarities and its manual backpropagation.
 * **Experiment `0029_train_rnn_component` (Success):** Implemented and trained a simple Recurrent Neural Network (Elman RNN) on a sequential XOR dataset using pure NumPy. Successfully learned to retain information over time steps, verifying the mathematical soundness of state propagation and Backpropagation Through Time (BPTT).
 * **Experiment `0030_train_gru_component` (Success):** Implemented and trained a Gated Recurrent Unit (GRU) on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of update and reset gating mechanisms and their manual Backpropagation Through Time (BPTT), showcasing a more robust sequential memory structure.
+* **Experiment `0031_train_lstm_component` (Success):** Implemented and trained a Long Short-Term Memory (LSTM) cell on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of forget, input, and output gating mechanisms, separate cell state routing, and manual Backpropagation Through Time (BPTT), confirming its capability for robust sequential memory retention over time steps.
 
 ## Open Questions & Hypotheses
 
