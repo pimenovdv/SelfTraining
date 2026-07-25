@@ -238,6 +238,21 @@
   Hidden state: $h_t = o_t \odot \tanh(c_t)$
   Backpropagation Through Time correctly distributes gradients backwards across both the hidden state and cell state paths.
 
+* **Selective State Space Model (Mamba-like)**
+  Let $x_t$ be the input at time step $t$, and $h_t$ be the hidden state.
+  The continuous parameters $B$, $C$, and step size $\Delta$ are input-dependent:
+  $\Delta_t = \text{softplus}(W_\Delta x_t)$
+  $B_t = W_B x_t$
+  $C_t = W_C x_t$
+  The state transition matrix $A$ remains invariant.
+  Using Euler discretization:
+  $\overline{A}_t = I + \Delta_t A$
+  $\overline{B}_t = \Delta_t B_t$
+  Forward Pass:
+  $h_{t+1} = \overline{A}_t h_t + \overline{B}_t x_t$
+  $y_t = C_t h_{t+1}$
+  This allows the model to selectively retain or forget information at each step based on the input context.
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -269,6 +284,7 @@
 * **Experiment `0030_train_gru_component` (Success):** Implemented and trained a Gated Recurrent Unit (GRU) on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of update and reset gating mechanisms and their manual Backpropagation Through Time (BPTT), showcasing a more robust sequential memory structure.
 * **Experiment `0031_train_lstm_component` (Success):** Implemented and trained a Long Short-Term Memory (LSTM) cell on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of forget, input, and output gating mechanisms, separate cell state routing, and manual Backpropagation Through Time (BPTT), confirming its capability for robust sequential memory retention over time steps.
 * **Experiment `0032_train_ssm_component` (Success):** Implemented and trained a discrete State Space Model (SSM) using pure NumPy. Successfully verified the mathematical soundness of first-order Euler discretization ($\overline{A} \approx I + \Delta A$) and Backpropagation Through Time to learn sequence transitions and timescales.
+* **Experiment `0033_train_selective_ssm_component` (Success):** Implemented and trained a data-dependent Selective State Space Model (SSM) using pure NumPy. Successfully verified the mathematical soundness of input-dependent transitions ($B_t, C_t, \Delta_t$) allowing the model to selectively filter context in sequences, effectively validating the core mechanism of Mamba-style architectures.
 
 ## Open Questions & Hypotheses
 
