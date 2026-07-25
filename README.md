@@ -483,6 +483,25 @@ Building upon our component research, we have implemented Quantization-Aware Tra
     python train_quantization_component.py --hidden_size 8 --epochs 50000 --lr 1.0
     ```
 
+## Component Testing: GRU (Gated Recurrent Unit)
+
+Building upon our simple RNN component, we have implemented a GRU (Gated Recurrent Unit). This component tests the hypothesis that advanced gating mechanisms (update and reset gates) can successfully control the flow of information over time, effectively mitigating the vanishing gradient problem and allowing for robust sequential memory retention. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GRU component test:**
+    ```bash
+    python train_gru_component.py
+    ```
+    This script tests learning a sequential reasoning dataset (XOR across time steps) using pure mathematical operations, verifying manual forward passes through complex gates and Backpropagation Through Time (BPTT).
+
+    You can adjust hyperparameters such as hidden size, epochs, and learning rate:
+    ```bash
+    python train_gru_component.py --hidden_size 16 --epochs 50000 --lr 1.0
+    ```
+
 ## Component Testing: Contrastive Learning (InfoNCE)
 
 Building upon our component research, we have implemented a Contrastive Learning component using the InfoNCE loss. This tests the hypothesis that a dual-encoder (two-tower) model can successfully learn to align representations of paired inputs (different views of the same concept) into a shared continuous vector space while pushing apart un-paired concepts. It utilizes L2 normalized representations and temperature-scaled cosine similarities, all verified here using pure mathematical operations.

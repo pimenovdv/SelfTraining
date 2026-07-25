@@ -32,6 +32,7 @@
 *   *(Date: Current)* - Successfully implemented and tested a Variational Autoencoder (VAE) mathematically. Confirmed that the reparameterization trick allows gradients to flow correctly back to the encoder, and that the combined Binary Cross-Entropy (BCE) and Kullback-Leibler (KL) divergence loss correctly maps inputs to a lower-dimensional standard normal latent space while preserving information for reconstruction.
 *   *(Date: Current)* - Successfully implemented and tested Contrastive Learning (InfoNCE) mathematically. Confirmed that a two-tower model mapping different views of a concept to a shared L2-normalized vector space can successfully be trained by maximizing temperature-scaled cosine similarity using manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a simple Recurrent Neural Network (Elman RNN) mathematically. Confirmed that Backpropagation Through Time (BPTT) effectively computes gradients across sequence steps, allowing a hidden state to successfully store delayed reasoning information.
+*   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
 
@@ -219,6 +220,14 @@
   $\nabla W_{hh} += \delta_{tanh} h_{t-1}^T$
   $\delta h_{t-1} = W_{hh}^T \delta_{tanh}$
 
+* **Gated Recurrent Unit (GRU)**
+  Let $x_t$ be the input and $h_t$ be the hidden state at time step $t$.
+  Update gate: $z_t = \sigma(W_z x_t + U_z h_{t-1} + b_z)$
+  Reset gate: $r_t = \sigma(W_r x_t + U_r h_{t-1} + b_r)$
+  Candidate hidden state: $\tilde{h}_t = \tanh(W_h x_t + U_h (r_t \odot h_{t-1}) + b_h)$
+  Final hidden state: $h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$
+  The output is computed from the final step's hidden state. Backpropagation Through Time routes gradients backwards across the sequence, carefully computing partial derivatives through each gating mechanism and candidate state.
+
 ## Experimental Summaries
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
@@ -247,6 +256,7 @@
 * **Experiment `0027_train_vae_component` (Success):** Implemented and trained a Variational Autoencoder (VAE) in pure NumPy. Successfully learned to map an identity matrix dataset to a lower-dimensional latent space and reconstruct it, verifying the mathematical soundness of the reparameterization trick and combined BCE + KL divergence manual backpropagation.
 * **Experiment `0028_train_contrastive_component` (Success):** Implemented and trained a Contrastive Learning model with a two-tower architecture using the InfoNCE loss in pure NumPy. Successfully aligned corresponding input views into a shared representation space, verifying the mathematical soundness of cross-entropy over temperature-scaled similarities and its manual backpropagation.
 * **Experiment `0029_train_rnn_component` (Success):** Implemented and trained a simple Recurrent Neural Network (Elman RNN) on a sequential XOR dataset using pure NumPy. Successfully learned to retain information over time steps, verifying the mathematical soundness of state propagation and Backpropagation Through Time (BPTT).
+* **Experiment `0030_train_gru_component` (Success):** Implemented and trained a Gated Recurrent Unit (GRU) on a sequential XOR dataset using pure NumPy. Successfully verified the mathematical soundness of update and reset gating mechanisms and their manual Backpropagation Through Time (BPTT), showcasing a more robust sequential memory structure.
 
 ## Open Questions & Hypotheses
 
