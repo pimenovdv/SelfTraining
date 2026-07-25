@@ -482,3 +482,22 @@ Building upon our component research, we have implemented Quantization-Aware Tra
     ```bash
     python train_quantization_component.py --hidden_size 8 --epochs 50000 --lr 1.0
     ```
+
+## Component Testing: Contrastive Learning (InfoNCE)
+
+Building upon our component research, we have implemented a Contrastive Learning component using the InfoNCE loss. This tests the hypothesis that a dual-encoder (two-tower) model can successfully learn to align representations of paired inputs (different views of the same concept) into a shared continuous vector space while pushing apart un-paired concepts. It utilizes L2 normalized representations and temperature-scaled cosine similarities, all verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Contrastive Learning component test:**
+    ```bash
+    python train_contrastive_component.py
+    ```
+    This script tests learning to map paired input domains to a shared representation space via manual forward and backward passes through temperature-scaled cosine similarity logic.
+
+    You can adjust hyperparameters such as output dimension, temperature, epochs, and learning rate:
+    ```bash
+    python train_contrastive_component.py --out_dim 4 --tau 0.1 --epochs 5000 --lr 0.01
+    ```
