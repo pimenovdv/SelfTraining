@@ -13,6 +13,7 @@
 *   *(Date: Current)* - Successfully implemented and tested a Continuous Normalizing Flow via Conditional Flow Matching (CFM) mathematically in pure NumPy. Confirmed that a neural network can learn to predict the constant vector field connecting a base Gaussian distribution to the data distribution, effectively modeling the probability flow ODE via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a Denoising Diffusion Probabilistic Model (DDPM) mathematically in pure NumPy. Confirmed that the reverse process can learn to predict and remove Gaussian noise incrementally, validating the mathematical formulation of the forward diffusion and the reverse step via manual backpropagation on a simple MLP.
 *   *(Date: Current)* - Successfully implemented and tested Linear Attention mathematically. Confirmed that by applying a positive kernel feature map (like ELU + 1) to Queries and Keys, the attention calculation can be reformulated as `\phi(Q) (\phi(K)^T V)`, reducing the computational complexity from O(N^2) to O(N) while correctly computing gradients via manual backpropagation.
+*   *(Date: Current)* - Successfully implemented and tested a Sparse Autoencoder (SAE) mathematically. Confirmed that an overcomplete hidden layer with an L1 penalty can learn to disentangle representations into sparse, interpretable features, validating its mechanism for mechanistic interpretability via manual backpropagation.
 
 * *(Date: 2024-05-24)* - Verified that a simple 2-layer FFN trained with standard backpropagation and a Mean Squared Error loss can effectively learn non-linear reasoning boundaries (such as the XOR problem). Confirms basic matrix algebra is sufficient for this non-linear component of our eventual architecture.
 * *(Date: Current)* - Successfully implemented and tested Layer Normalization mathematically, including learning gamma and beta via manual backpropagation.
@@ -290,7 +291,17 @@
   $y_t = C_t h_{t+1}$
   This allows the model to selectively retain or forget information at each step based on the input context.
 
+* **Sparse Autoencoder (SAE)**
+  Let $x$ be the input data. The encoder maps it to an overcomplete hidden representation $z$:
+  $z = \text{ReLU}(x W_e + b_{enc})$
+  The decoder reconstructs the input:
+  $\hat{x} = z W_d + b_{dec}$
+  The loss combines Mean Squared Error for reconstruction and an L1 penalty for sparsity:
+  $\mathcal{L} = \frac{1}{B \cdot D} \sum (x - \hat{x})^2 + \lambda \frac{1}{B} \sum |z|$
+  Backpropagation correctly routes gradients for both the reconstruction error and the L1 penalty (using the sign of $z$) back through the network.
+
 ## Experimental Summaries
+* **Experiment `0039_train_sae_component` (Success):** Implemented and trained a Sparse Autoencoder (SAE) using pure NumPy. Successfully learned to reconstruct input data while projecting it into a sparse, overcomplete latent representation via an L1 penalty, validating the mathematical formulation and manual backpropagation for mechanistic interpretability.
 * **Experiment `0038_train_flow_matching_component` (Success):** Implemented and trained a Continuous Normalizing Flow using Conditional Flow Matching (CFM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the constant vector field mapping the base distribution to the data distribution, validating the mathematical formulation of the straight-line probability flow ODE and its manual backpropagation.
 * **Experiment `0037_train_ddpm_component` (Success):** Implemented and trained a Denoising Diffusion Probabilistic Model (DDPM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the added noise in the reverse process using a simple MLP and manual backpropagation, validating the mathematical formulation of the diffusion steps and simplified MSE objective.
 * **Experiment `0036_train_retention_component` (Success):** Implemented and trained a Retention Mechanism (from RetNet) using pure NumPy. Successfully verified the mathematical soundness of both its parallel attention-like training formulation and its $O(1)$ recurrent inference formulation without KV-caching, validating its forward pass and manual backpropagation.

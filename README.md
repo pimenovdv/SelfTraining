@@ -558,3 +558,22 @@ Building upon our component research, we have implemented Linear Attention. This
     ```bash
     python train_linear_attention_component.py --d_k 2 --epochs 10000 --lr 0.1
     ```
+
+## Component Testing: Sparse Autoencoder (SAE)
+
+Building upon our component research, we have implemented a Sparse Autoencoder (SAE). This component tests the hypothesis that learning a sparse, overcomplete representation of data can help in mechanistic interpretability by disentangling complex representations into interpretable features. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Sparse Autoencoder component test:**
+    ```bash
+    python train_sae_component.py
+    ```
+    This script tests learning a sparse latent space using an L1 penalty on the hidden activations and Mean Squared Error for reconstruction, utilizing manual backpropagation.
+
+    You can adjust hyperparameters such as hidden dimension, L1 coefficient, epochs, and learning rate:
+    ```bash
+    python train_sae_component.py --d_hidden 64 --l1_coeff 0.1 --epochs 10000 --lr 0.01
+    ```

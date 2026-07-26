@@ -29,6 +29,7 @@ train_retention_component
 train_rmsnorm_component
 train_rnn_component
 train_rope_component
+train_sae_component
 train_scaling_laws_component
 train_selective_ssm_component
 train_ssm_component
