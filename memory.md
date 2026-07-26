@@ -10,6 +10,8 @@
 
 ## Key Insights
 
+*   *(Date: Current)* - Successfully implemented and tested Linear Attention mathematically. Confirmed that by applying a positive kernel feature map (like ELU + 1) to Queries and Keys, the attention calculation can be reformulated as `\phi(Q) (\phi(K)^T V)`, reducing the computational complexity from O(N^2) to O(N) while correctly computing gradients via manual backpropagation.
+
 * *(Date: 2024-05-24)* - Verified that a simple 2-layer FFN trained with standard backpropagation and a Mean Squared Error loss can effectively learn non-linear reasoning boundaries (such as the XOR problem). Confirms basic matrix algebra is sufficient for this non-linear component of our eventual architecture.
 * *(Date: Current)* - Successfully implemented and tested Layer Normalization mathematically, including learning gamma and beta via manual backpropagation.
 * *(Date: Current)* - Successfully integrated components (Attention, FFN, Layer Normalization) into a full Transformer Block. Validated manual backpropagation across the entire block including residual connections.
@@ -35,6 +37,19 @@
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
+
+* **Linear Attention**
+  Standard attention computes $O = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$, which has $O(N^2)$ complexity where $N$ is sequence length.
+  Linear Attention bypasses this by using a kernel feature map $\phi(x)$ (e.g., $\text{ELU}(x) + 1$) to ensure non-negativity.
+  $\phi_Q = \phi(Q)$
+  $\phi_K = \phi(K)$
+  Instead of computing the $N \times N$ attention matrix, we use associativity:
+  $Output_i = \frac{\sum_{j} (\phi_{Q_i} \cdot \phi_{K_j}) V_j}{\sum_{j} (\phi_{Q_i} \cdot \phi_{K_j})}$
+  Vectorized form:
+  $Num = \phi_Q (\phi_K^T V)$  # Complexity $O(N \cdot d_k^2)$
+  $Denom = \phi_Q \sum_{j} \phi_{K_j}^T$
+  $Output = \frac{Num}{Denom}$
+  This effectively reduces sequence dimension complexity from $O(N^2)$ to $O(N)$.
 
 * **Feed-Forward Network (2-Layer)**
   Let $X$ be the input matrix, $W_1, W_2$ be the weight matrices, and $b_1, b_2$ be the bias vectors.
@@ -254,6 +269,8 @@
   This allows the model to selectively retain or forget information at each step based on the input context.
 
 ## Experimental Summaries
+
+* **Experiment `0035_train_linear_attention_component` (Success):** Implemented and trained a Linear Attention component using pure NumPy. Successfully learned relationships in a synthetic sequence dataset while bypassing the $O(N^2)$ softmax attention matrix computation, validating the mathematical formulation of the $\phi(x) = \text{ELU}(x) + 1$ kernel trick and its manual backpropagation.
 
 * **Experiment `0007_train_multihead_attention_component` (Success):** Implemented and trained a Multi-Head Attention layer using pure NumPy. Successfully learned relationships in a synthetic sequence dataset across multiple representation subspaces. Validated complex manual backpropagation.
 * **Experiment `0001_train_tokenizer` (Success):** Learned a BPE vocabulary of 144 tokens on the baseline AGI dataset. Proves baseline tokenization functionality.
