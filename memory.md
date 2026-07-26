@@ -10,6 +10,7 @@
 
 ## Key Insights
 
+*   *(Date: Current)* - Successfully implemented and tested a Denoising Diffusion Probabilistic Model (DDPM) mathematically in pure NumPy. Confirmed that the reverse process can learn to predict and remove Gaussian noise incrementally, validating the mathematical formulation of the forward diffusion and the reverse step via manual backpropagation on a simple MLP.
 *   *(Date: Current)* - Successfully implemented and tested Linear Attention mathematically. Confirmed that by applying a positive kernel feature map (like ELU + 1) to Queries and Keys, the attention calculation can be reformulated as `\phi(Q) (\phi(K)^T V)`, reducing the computational complexity from O(N^2) to O(N) while correctly computing gradients via manual backpropagation.
 
 * *(Date: 2024-05-24)* - Verified that a simple 2-layer FFN trained with standard backpropagation and a Mean Squared Error loss can effectively learn non-linear reasoning boundaries (such as the XOR problem). Confirms basic matrix algebra is sufficient for this non-linear component of our eventual architecture.
@@ -37,6 +38,17 @@
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
+
+* **Denoising Diffusion Probabilistic Model (DDPM)**
+  Let $x_0$ be the original data. The forward process adds noise over $T$ steps according to a variance schedule $\beta_1, \dots, \beta_T$.
+  $q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)$
+  Using the reparameterization trick, we can sample $x_t$ directly from $x_0$:
+  $\alpha_t = 1 - \beta_t$
+  $\bar{\alpha}_t = \prod_{s=1}^t \alpha_s$
+  $x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)$
+  The reverse process learns a model $\epsilon_\theta(x_t, t)$ to predict the noise $\epsilon$ added to $x_0$.
+  The training objective simplifies to:
+  $\mathcal{L} = \mathbb{E}_{t, x_0, \epsilon} \left[ \| \epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, t) \|^2 \right]$
 
 * **Linear Attention**
   Standard attention computes $O = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$, which has $O(N^2)$ complexity where $N$ is sequence length.
@@ -269,6 +281,7 @@
   This allows the model to selectively retain or forget information at each step based on the input context.
 
 ## Experimental Summaries
+* **Experiment `0037_train_ddpm_component` (Success):** Implemented and trained a Denoising Diffusion Probabilistic Model (DDPM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the added noise in the reverse process using a simple MLP and manual backpropagation, validating the mathematical formulation of the diffusion steps and simplified MSE objective.
 * **Experiment `0036_train_retention_component` (Success):** Implemented and trained a Retention Mechanism (from RetNet) using pure NumPy. Successfully verified the mathematical soundness of both its parallel attention-like training formulation and its $O(1)$ recurrent inference formulation without KV-caching, validating its forward pass and manual backpropagation.
 
 * **Experiment `0035_train_linear_attention_component` (Success):** Implemented and trained a Linear Attention component using pure NumPy. Successfully learned relationships in a synthetic sequence dataset while bypassing the $O(N^2)$ softmax attention matrix computation, validating the mathematical formulation of the $\phi(x) = \text{ELU}(x) + 1$ kernel trick and its manual backpropagation.
