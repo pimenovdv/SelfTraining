@@ -3,6 +3,7 @@ train_alibi_component
 train_attention_component
 train_contrastive_component
 train_cross_attention_component
+train_ddpm_component
 train_decoder_block_component
 train_dpo_component
 train_dropout_component
