@@ -539,3 +539,22 @@ Building upon our component research, we have implemented a Kolmogorov-Arnold Ne
     ```bash
     python train_kan_component.py --hidden_dim 4 --grid_size 5 --epochs 50000 --lr 0.1
     ```
+
+## Component Testing: Linear Attention
+
+Building upon our component research, we have implemented Linear Attention. This component tests the hypothesis that by replacing the softmax attention matrix with a kernel feature map (like ELU + 1) to ensure positivity, we can exploit the associativity of matrix multiplication to compute the output as $Q (K^T V)$. This effectively reduces sequence dimension complexity from $O(N^2)$ to $O(N)$, mitigating the bottleneck of standard attention for long sequences.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Linear Attention component test:**
+    ```bash
+    python train_linear_attention_component.py
+    ```
+    This script tests learning a sequence dataset using the $O(N)$ factored matrix multiplications and pure mathematical operations, verifying manual forward and backward passes.
+
+    You can adjust hyperparameters such as dimension of keys, epochs, and learning rate:
+    ```bash
+    python train_linear_attention_component.py --d_k 2 --epochs 10000 --lr 0.1
+    ```
