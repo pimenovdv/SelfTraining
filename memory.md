@@ -10,6 +10,7 @@
 
 ## Key Insights
 
+*   *(Date: Current)* - Successfully implemented and tested a Continuous Normalizing Flow via Conditional Flow Matching (CFM) mathematically in pure NumPy. Confirmed that a neural network can learn to predict the constant vector field connecting a base Gaussian distribution to the data distribution, effectively modeling the probability flow ODE via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a Denoising Diffusion Probabilistic Model (DDPM) mathematically in pure NumPy. Confirmed that the reverse process can learn to predict and remove Gaussian noise incrementally, validating the mathematical formulation of the forward diffusion and the reverse step via manual backpropagation on a simple MLP.
 *   *(Date: Current)* - Successfully implemented and tested Linear Attention mathematically. Confirmed that by applying a positive kernel feature map (like ELU + 1) to Queries and Keys, the attention calculation can be reformulated as `\phi(Q) (\phi(K)^T V)`, reducing the computational complexity from O(N^2) to O(N) while correctly computing gradients via manual backpropagation.
 
@@ -38,6 +39,15 @@
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
+
+* **Conditional Flow Matching (CFM)**
+  Let $x_0 \sim \mathcal{N}(0, I)$ be the base distribution and $x_1 \sim p_{data}$ be the data distribution.
+  The flow path is constructed as a straight line:
+  $x_t = (1 - t) x_0 + t x_1$ for $t \in [0, 1]$.
+  The target vector field is constant for a given sample pair:
+  $u_t(x_t|x_1) = x_1 - x_0$
+  The network $v_\theta(x_t, t)$ learns to match this vector field using the MSE objective:
+  $\mathcal{L}_{CFM} = \mathbb{E}_{t \sim U(0,1), x_0, x_1} \left[ \| v_\theta(x_t, t) - (x_1 - x_0) \|^2 \right]$
 
 * **Denoising Diffusion Probabilistic Model (DDPM)**
   Let $x_0$ be the original data. The forward process adds noise over $T$ steps according to a variance schedule $\beta_1, \dots, \beta_T$.
@@ -281,6 +291,7 @@
   This allows the model to selectively retain or forget information at each step based on the input context.
 
 ## Experimental Summaries
+* **Experiment `0038_train_flow_matching_component` (Success):** Implemented and trained a Continuous Normalizing Flow using Conditional Flow Matching (CFM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the constant vector field mapping the base distribution to the data distribution, validating the mathematical formulation of the straight-line probability flow ODE and its manual backpropagation.
 * **Experiment `0037_train_ddpm_component` (Success):** Implemented and trained a Denoising Diffusion Probabilistic Model (DDPM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the added noise in the reverse process using a simple MLP and manual backpropagation, validating the mathematical formulation of the diffusion steps and simplified MSE objective.
 * **Experiment `0036_train_retention_component` (Success):** Implemented and trained a Retention Mechanism (from RetNet) using pure NumPy. Successfully verified the mathematical soundness of both its parallel attention-like training formulation and its $O(1)$ recurrent inference formulation without KV-caching, validating its forward pass and manual backpropagation.
 

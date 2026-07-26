@@ -10,7 +10,6 @@ train_dpo_component
 train_dropout_component
 train_evaluation_metrics_component
 train_ffn_component
-train_flow_matching_component
 train_full_encoder_decoder_component
 train_gelu_component
 train_gqa_component
