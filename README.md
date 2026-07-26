@@ -520,3 +520,22 @@ Building upon our component research, we have implemented a Contrastive Learning
     ```bash
     python train_contrastive_component.py --out_dim 4 --tau 0.1 --epochs 5000 --lr 0.01
     ```
+
+## Component Testing: Kolmogorov-Arnold Network (KAN)
+
+Building upon our component research, we have implemented a Kolmogorov-Arnold Network (KAN) component. This tests the hypothesis that placing learnable activation functions on edges rather than nodes (verifying the Kolmogorov-Arnold representation theorem) can successfully learn non-linear boundaries. It utilizes Gaussian Radial Basis Functions (RBFs) over grids for the edge functions and is verified using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the KAN component test:**
+    ```bash
+    python train_kan_component.py
+    ```
+    This script tests learning a non-linear dataset (XOR) via manual forward and backward passes using Einstein summation (`einsum`) to handle the multi-dimensional tensor gradients of edge basis functions.
+
+    You can adjust hyperparameters such as hidden dimension, grid size, epochs, and learning rate:
+    ```bash
+    python train_kan_component.py --hidden_dim 4 --grid_size 5 --epochs 50000 --lr 0.1
+    ```
