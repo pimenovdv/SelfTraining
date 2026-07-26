@@ -269,6 +269,7 @@
   This allows the model to selectively retain or forget information at each step based on the input context.
 
 ## Experimental Summaries
+* **Experiment `0036_train_retention_component` (Success):** Implemented and trained a Retention Mechanism (from RetNet) using pure NumPy. Successfully verified the mathematical soundness of both its parallel attention-like training formulation and its $O(1)$ recurrent inference formulation without KV-caching, validating its forward pass and manual backpropagation.
 
 * **Experiment `0035_train_linear_attention_component` (Success):** Implemented and trained a Linear Attention component using pure NumPy. Successfully learned relationships in a synthetic sequence dataset while bypassing the $O(N^2)$ softmax attention matrix computation, validating the mathematical formulation of the $\phi(x) = \text{ELU}(x) + 1$ kernel trick and its manual backpropagation.
 
