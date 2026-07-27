@@ -1,3 +1,4 @@
+train_adaln_component
 train_adamw_component
 train_alibi_component
 train_attention_component

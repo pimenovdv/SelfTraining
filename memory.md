@@ -43,6 +43,17 @@
 
 ## Mathematical Notebook
 
+* **Adaptive Layer Normalization (AdaLN)**
+  Let $X$ be the input sequence and $c$ be a conditioning vector (e.g., timestep or class embedding).
+  Instead of learning static parameters $\gamma$ and $\beta$, AdaLN generates them dynamically via linear projections:
+  $\gamma = c W_\gamma + b_\gamma$
+  $\beta = c W_\beta + b_\beta$
+  Standard normalization is applied:
+  $\mu = \frac{1}{d} \sum X_i, \quad \sigma^2 = \frac{1}{d} \sum (X_i - \mu)^2$
+  $\hat{X} = \frac{X - \mu}{\sqrt{\sigma^2 + \epsilon}}$
+  $Output = \gamma \odot \hat{X} + \beta$
+  During backpropagation, gradients route from the output through $\gamma$ and $\beta$ into the conditioning network weights $W_\gamma$ and $W_\beta$.
+
 * **Reversible Residual Networks (RevNet)**
   A RevNet block operates on a partitioned state $(x_1, x_2)$ allowing constant-memory backpropagation.
   The forward process is given by:
@@ -325,6 +336,7 @@
   Backpropagation correctly routes gradients for both the reconstruction error and the L1 penalty (using the sign of $z$) back through the network.
 
 ## Experimental Summaries
+* **Experiment `0043_train_adaln_component` (Success):** Implemented and trained an Adaptive Layer Normalization (AdaLN) component using pure NumPy. Successfully learned to dynamically predict scale and shift parameters ($\gamma$, $\beta$) from a conditioning input via linear projections, confirming the mathematical soundness and gradient flow through the conditional formulation.
 * **Experiment `0042_train_revnet_component` (Success):** Implemented and trained a Reversible Residual Network block using pure NumPy. Successfully proved the mathematical formulation allowing exact input reconstruction during the backward pass ($O(1)$ intermediate activation storage), verifying that manual backpropagation through the reconstructed states effectively reduces loss.
 * **Experiment `0041_train_grokking_component` (Success):** Implemented and trained a 2-layer MLP on modular addition using pure NumPy to study Grokking. Successfully observed the rapid memorization phase (100% train accuracy, ~0% test accuracy), validating the initial training dynamics on algorithmic datasets prior to delayed generalization.
 * **Experiment `0039_train_sae_component` (Success):** Implemented and trained a Sparse Autoencoder (SAE) using pure NumPy. Successfully learned to reconstruct input data while projecting it into a sparse, overcomplete latent representation via an L1 penalty, validating the mathematical formulation and manual backpropagation for mechanistic interpretability.
