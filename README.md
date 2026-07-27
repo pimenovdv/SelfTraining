@@ -629,3 +629,22 @@ Building upon our model optimization research, we have implemented Knowledge Dis
     ```bash
     python train_knowledge_distillation_component.py --t 3.0 --alpha 0.5 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Batch Normalization
+
+Building upon our component research, we have implemented Batch Normalization. This component tests the hypothesis that normalizing inputs across the batch dimension can stabilize and accelerate deep network training. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Batch Normalization component test:**
+    ```bash
+    python train_batchnorm_component.py
+    ```
+    This script tests learning the gamma and beta parameters of batch normalization on a synthetic dataset, utilizing manual backpropagation to ensure gradients flow correctly through both the parameters and the batch statistics (mean and variance).
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_batchnorm_component.py --epochs 5000 --lr 0.1
+    ```
