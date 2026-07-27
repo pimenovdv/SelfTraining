@@ -43,6 +43,16 @@
 
 ## Mathematical Notebook
 
+* **Reversible Residual Networks (RevNet)**
+  A RevNet block operates on a partitioned state $(x_1, x_2)$ allowing constant-memory backpropagation.
+  The forward process is given by:
+  $y_1 = x_1 + F(x_2)$
+  $y_2 = x_2 + G(y_1)$
+  The exact inverse is computed during the backward pass:
+  $x_2 = y_2 - G(y_1)$
+  $x_1 = y_1 - F(x_2)$
+  This permits exact gradient calculation for intermediate steps without caching activations (excluding the active layer).
+
 * **Conditional Flow Matching (CFM)**
   Let $x_0 \sim \mathcal{N}(0, I)$ be the base distribution and $x_1 \sim p_{data}$ be the data distribution.
   The flow path is constructed as a straight line:
@@ -315,6 +325,7 @@
   Backpropagation correctly routes gradients for both the reconstruction error and the L1 penalty (using the sign of $z$) back through the network.
 
 ## Experimental Summaries
+* **Experiment `0042_train_revnet_component` (Success):** Implemented and trained a Reversible Residual Network block using pure NumPy. Successfully proved the mathematical formulation allowing exact input reconstruction during the backward pass ($O(1)$ intermediate activation storage), verifying that manual backpropagation through the reconstructed states effectively reduces loss.
 * **Experiment `0041_train_grokking_component` (Success):** Implemented and trained a 2-layer MLP on modular addition using pure NumPy to study Grokking. Successfully observed the rapid memorization phase (100% train accuracy, ~0% test accuracy), validating the initial training dynamics on algorithmic datasets prior to delayed generalization.
 * **Experiment `0039_train_sae_component` (Success):** Implemented and trained a Sparse Autoencoder (SAE) using pure NumPy. Successfully learned to reconstruct input data while projecting it into a sparse, overcomplete latent representation via an L1 penalty, validating the mathematical formulation and manual backpropagation for mechanistic interpretability.
 * **Experiment `0040_train_vqvae_component` (Success):** Implemented and trained a Vector Quantized Variational Autoencoder (VQ-VAE) using pure NumPy. Successfully learned to reconstruct input data using discrete latent representations via a codebook. Verified that the Straight-Through Estimator (STE) correctly routes gradients back to the encoder, enabling the learning of categorical latent variables.
