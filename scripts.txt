@@ -18,6 +18,7 @@ train_gqa_component
 train_grokking_component
 train_gru_component
 train_kan_component
+train_knowledge_distillation_component
 train_layernorm_component
 train_linear_attention_component
 train_lora_component
