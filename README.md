@@ -46,6 +46,25 @@ To demonstrate the foundational approach, this repository includes a simple scri
     python train_bpe.py --data_path "data/sample_text.txt" --num_merges 200 --output_dir "models/my_tokenizer"
     ```
 
+## Component Testing: AdaLN (Adaptive Layer Normalization)
+
+Building upon Layer Normalization and generative models, we have implemented Adaptive Layer Normalization (AdaLN). This component tests the hypothesis that normalization parameters (gamma and beta) can be dynamically predicted from a conditioning input (e.g., timestep or class embedding) using linear projections. It is tested here with pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the AdaLN component test:**
+    ```bash
+    python train_adaln_component.py
+    ```
+    This script tests learning the dynamic generation of scale and shift parameters based on a conditioning input to match a target output over a synthetic dataset, utilizing manual backpropagation.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_adaln_component.py --epochs 10000 --lr 0.1
+    ```
+
 ## Component Testing: Feed-Forward Network (FFN)
 
 As part of our **Phase 1: Foundations and Mathematical Modeling**, we are exploring individual components of potential AGI architectures. We have implemented a 2-layer Feed-Forward Network to test non-linear transformation hypotheses using purely mathematical operations (via NumPy).
