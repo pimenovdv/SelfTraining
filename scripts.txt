@@ -28,6 +28,7 @@ train_multihead_transformer_block_component
 train_positional_encoding_component
 train_quantization_component
 train_retention_component
+train_revnet_component
 train_rmsnorm_component
 train_rnn_component
 train_rope_component
