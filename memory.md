@@ -35,6 +35,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Direct Preference Optimization (DPO) mathematically. Confirmed that policy weights can be aligned to human preferences by directly optimizing the log-ratio of policy and reference probabilities using binary cross-entropy, eliminating the need for a separate reward model.
 *   *(Date: Current)* - Successfully implemented and tested Quantization-Aware Training (QAT) mathematically. Confirmed that 8-bit absolute maximum quantization simulated during the forward pass can successfully be trained using the Straight-Through Estimator (STE) during backpropagation, resolving questions about modeling quantization error.
 *   *(Date: Current)* - Successfully implemented and tested a Variational Autoencoder (VAE) mathematically. Confirmed that the reparameterization trick allows gradients to flow correctly back to the encoder, and that the combined Binary Cross-Entropy (BCE) and Kullback-Leibler (KL) divergence loss correctly maps inputs to a lower-dimensional standard normal latent space while preserving information for reconstruction.
+*   *(Date: Current)* - Successfully implemented and tested a Vector Quantized Variational Autoencoder (VQ-VAE) mathematically. Confirmed that discrete representations can be learned via a codebook lookup, using the Straight-Through Estimator (STE) to successfully route gradients from the decoder back to the encoder, effectively ignoring the non-differentiable argmin step during backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Contrastive Learning (InfoNCE) mathematically. Confirmed that a two-tower model mapping different views of a concept to a shared L2-normalized vector space can successfully be trained by maximizing temperature-scaled cosine similarity using manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a simple Recurrent Neural Network (Elman RNN) mathematically. Confirmed that Backpropagation Through Time (BPTT) effectively computes gradients across sequence steps, allowing a hidden state to successfully store delayed reasoning information.
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
@@ -233,6 +234,18 @@
   Total Loss:
   $\mathcal{L} = \mathcal{L}_{recon} + D_{KL}$
 
+* **Vector Quantized Variational Autoencoder (VQ-VAE)**
+  Let $x$ be the input, encoder $E(x) = z_e$, decoder $D(z_q)$, and an embedding space $e \in \mathbb{R}^{K \times D}$ where $K$ is the size of the discrete latent space.
+  Forward pass (Vector Quantization):
+  $z_q = e_k \quad \text{where} \quad k = \text{argmin}_j \|z_e - e_j\|_2$
+  Backward pass (Straight-Through Estimator):
+  $\nabla_{z_e} L \approx \nabla_{z_q} L$ (Gradients are copied directly from decoder input to encoder output).
+  Loss function components:
+  1. Reconstruction Loss: $\mathcal{L}_{recon} = -\log p(x|z_q)$
+  2. Codebook Loss (updates embeddings): $\mathcal{L}_{codebook} = \| \text{sg}[z_e] - e \|_2^2$ (where $\text{sg}$ is stop-gradient)
+  3. Commitment Loss (keeps encoder output close to embeddings): $\mathcal{L}_{commit} = \beta \| z_e - \text{sg}[e] \|_2^2$
+  Total Loss: $\mathcal{L} = \mathcal{L}_{recon} + \mathcal{L}_{codebook} + \mathcal{L}_{commit}$
+
 * **Contrastive Learning (InfoNCE)**
   Let $X_a$ and $X_b$ be inputs from two different domains (views), and $f_\theta, g_\phi$ be their respective encoder towers.
   $z_a = \frac{f_\theta(X_a)}{||f_\theta(X_a)||_2}, \quad z_b = \frac{g_\phi(X_b)}{||g_\phi(X_b)||_2}$
@@ -302,6 +315,7 @@
 
 ## Experimental Summaries
 * **Experiment `0039_train_sae_component` (Success):** Implemented and trained a Sparse Autoencoder (SAE) using pure NumPy. Successfully learned to reconstruct input data while projecting it into a sparse, overcomplete latent representation via an L1 penalty, validating the mathematical formulation and manual backpropagation for mechanistic interpretability.
+* **Experiment `0040_train_vqvae_component` (Success):** Implemented and trained a Vector Quantized Variational Autoencoder (VQ-VAE) using pure NumPy. Successfully learned to reconstruct input data using discrete latent representations via a codebook. Verified that the Straight-Through Estimator (STE) correctly routes gradients back to the encoder, enabling the learning of categorical latent variables.
 * **Experiment `0038_train_flow_matching_component` (Success):** Implemented and trained a Continuous Normalizing Flow using Conditional Flow Matching (CFM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the constant vector field mapping the base distribution to the data distribution, validating the mathematical formulation of the straight-line probability flow ODE and its manual backpropagation.
 * **Experiment `0037_train_ddpm_component` (Success):** Implemented and trained a Denoising Diffusion Probabilistic Model (DDPM) on a synthetic 2D dataset using pure NumPy. Successfully learned to predict the added noise in the reverse process using a simple MLP and manual backpropagation, validating the mathematical formulation of the diffusion steps and simplified MSE objective.
 * **Experiment `0036_train_retention_component` (Success):** Implemented and trained a Retention Mechanism (from RetNet) using pure NumPy. Successfully verified the mathematical soundness of both its parallel attention-like training formulation and its $O(1)$ recurrent inference formulation without KV-caching, validating its forward pass and manual backpropagation.
