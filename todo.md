@@ -23,6 +23,7 @@
 - [x] Develop memory-efficient continuous architectures. (Implemented Reversible Residual Networks (RevNet) to allow $O(1)$ memory backpropagation).
 - [x] Develop dynamically conditioned normalization. (Implemented Adaptive Layer Normalization (AdaLN) to allow scaling and shifting based on conditioning inputs).
 - [x] Study scaling laws for individual components (e.g., attention, memory retrieval).
+- [x] Develop knowledge distillation methodologies mathematically. (Implemented and verified transferring knowledge from a Teacher MLP to a Student MLP using KL Divergence and Temperature scaling).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [ ] Automate the pipeline for training, evaluation, and documentation generation.
 

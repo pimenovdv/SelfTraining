@@ -610,3 +610,22 @@ Building upon our generative model research, we have implemented a Vector Quanti
     python train_vqvae_component.py
     ```
     This script tests a mathematical model of VQ-VAE in pure NumPy, testing discrete representation learning using a codebook and the Straight-Through Estimator (STE) for backpropagation.
+
+## Component Testing: Knowledge Distillation
+
+Building upon our model optimization research, we have implemented Knowledge Distillation (KD). This component tests the hypothesis that a smaller, faster "student" model can achieve comparable performance by learning to match the softened probability distribution of a larger, more capable "teacher" model via KL Divergence, in addition to standard hard-label training. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Knowledge Distillation component test:**
+    ```bash
+    python train_knowledge_distillation_component.py
+    ```
+    This script trains a larger teacher model and then transfers its knowledge (softened using temperature) to a smaller student model, verifying manual forward passes and custom gradient combinations for KL Divergence and Cross-Entropy.
+
+    You can adjust hyperparameters such as temperature, distillation weight (alpha), epochs, and learning rate:
+    ```bash
+    python train_knowledge_distillation_component.py --t 3.0 --alpha 0.5 --epochs 5000 --lr 0.1
+    ```

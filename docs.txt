@@ -1,4 +1,5 @@
 0043_train_adaln_component
+0044_train_knowledge_distillation_component
 train_adamw_component
 train_alibi_component
 train_attention_component
