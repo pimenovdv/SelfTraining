@@ -2,6 +2,7 @@ train_adaln_component
 train_adamw_component
 train_alibi_component
 train_attention_component
+train_batchnorm_component
 train_bpe
 train_contrastive_component
 train_cross_attention_component
