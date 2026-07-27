@@ -577,3 +577,17 @@ Building upon our component research, we have implemented a Sparse Autoencoder (
     ```bash
     python train_sae_component.py --d_hidden 64 --l1_coeff 0.1 --epochs 10000 --lr 0.01
     ```
+
+## Component Testing: Vector Quantized Variational Autoencoder (VQ-VAE)
+
+Building upon our generative model research, we have implemented a Vector Quantized Variational Autoencoder (VQ-VAE). This component tests the hypothesis that a discrete representation of continuous latent spaces through vector quantization using a codebook can effectively model discrete modalities like categorical features, using the Straight-Through Estimator (STE) for backpropagation.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the VQ-VAE component test:**
+    ```bash
+    python train_vqvae_component.py
+    ```
+    This script tests a mathematical model of VQ-VAE in pure NumPy, testing discrete representation learning using a codebook and the Straight-Through Estimator (STE) for backpropagation.
