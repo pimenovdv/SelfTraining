@@ -17,6 +17,7 @@ train_full_encoder_decoder_component
 train_gelu_component
 train_gqa_component
 train_grokking_component
+train_groupnorm_component
 train_gru_component
 train_kan_component
 train_knowledge_distillation_component

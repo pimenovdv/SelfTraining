@@ -648,3 +648,22 @@ Building upon our component research, we have implemented Batch Normalization. T
     ```bash
     python train_batchnorm_component.py --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Group Normalization
+
+Building upon our component research, we have implemented Group Normalization. This component tests the hypothesis that dividing channels into groups and computing mean and variance within those groups provides stable normalization for small batch sizes (where Batch Normalization struggles). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Group Normalization component test:**
+    ```bash
+    python train_groupnorm_component.py
+    ```
+    This script tests learning the gamma and beta parameters per channel on a synthetic dataset, utilizing manual backpropagation to ensure gradients flow correctly through both the parameters and the reshaped group statistics.
+
+    You can adjust hyperparameters such as number of groups, features, epochs, and learning rate:
+    ```bash
+    python train_groupnorm_component.py --num_groups 2 --num_features 8 --epochs 5000 --lr 0.1
+    ```

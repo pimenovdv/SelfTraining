@@ -10,6 +10,7 @@
 
 ## Key Insights
 * *(Date: Current)* - Successfully implemented and tested Batch Normalization mathematically. Confirmed that normalizing across the batch dimension and learning scale/shift parameters accelerates convergence and effectively routes gradients back through mean and variance calculations via manual backpropagation.
+* *(Date: Current)* - Successfully implemented and tested Group Normalization mathematically. Confirmed that dividing channels into groups and normalizing within those groups allows stable normalization independent of batch size, correctly routing gradients through reshaped features via manual backpropagation.
 
 * *(Date: Current)* - Explored Grokking on a modular addition task mathematically in pure NumPy. Confirmed that standard cross-entropy and gradient descent initially memorize the algorithmic dataset by overfitting spurious patterns (reaching 100% train accuracy while test accuracy remains at random chance), forming the necessary pre-condition for the later structural representation generalization phase.
 
@@ -52,6 +53,16 @@
   $\hat{x}_i = \frac{x_i - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}$
   $Output_i = \gamma \hat{x}_i + \beta$
   During backpropagation, gradients route back through the scale ($\gamma$) and shift ($\beta$) parameters, and also through the normalization process which requires computing partial derivatives with respect to the batch variance and mean.
+
+* **Group Normalization**
+  Let $X$ be the input matrix of shape (batch_size, num_features) where num_features is the number of channels $C$.
+  Channels are divided into $G$ groups, each of size $D = C/G$. The features are reshaped to (batch_size, $G$, $D$).
+  $\mu_g = \frac{1}{D} \sum_{i=1}^D x_{g,i}$ (group mean)
+  $\sigma_g^2 = \frac{1}{D} \sum_{i=1}^D (x_{g,i} - \mu_g)^2$ (group variance)
+  $\hat{x}_{g,i} = \frac{x_{g,i} - \mu_g}{\sqrt{\sigma_g^2 + \epsilon}}$ (normalized value)
+  The normalized features are reshaped back to (batch_size, $C$) and scaled by channel-wise parameters.
+  $Output_c = \gamma_c \hat{x}_c + \beta_c$
+  During backpropagation, gradients route back through $\gamma$ and $\beta$, and through the reshaped variance and mean calculations within each group.
 
 * **Adaptive Layer Normalization (AdaLN)**
   Let $X$ be the input sequence and $c$ be a conditioning vector (e.g., timestep or class embedding).
@@ -346,6 +357,7 @@
   Backpropagation correctly routes gradients for both the reconstruction error and the L1 penalty (using the sign of $z$) back through the network.
 
 ## Experimental Summaries
+* **Experiment `0046_train_groupnorm_component` (Success):** Implemented and trained a Group Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs after dividing channels into groups, validating the mathematical soundness of reshaping features for grouped statistics and manually backpropagating gradients through the grouped groups.
 * **Experiment `0045_train_batchnorm_component` (Success):** Implemented and trained a Batch Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs across the batch dimension, validating the mathematical soundness of normalization parameter updates and the complex manual backpropagation through batch statistics.
 * **Experiment `0043_train_adaln_component` (Success):** Implemented and trained an Adaptive Layer Normalization (AdaLN) component using pure NumPy. Successfully learned to dynamically predict scale and shift parameters ($\gamma$, $\beta$) from a conditioning input via linear projections, confirming the mathematical soundness and gradient flow through the conditional formulation.
 * **Experiment `0042_train_revnet_component` (Success):** Implemented and trained a Reversible Residual Network block using pure NumPy. Successfully proved the mathematical formulation allowing exact input reconstruction during the backward pass ($O(1)$ intermediate activation storage), verifying that manual backpropagation through the reconstructed states effectively reduces loss.
