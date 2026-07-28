@@ -686,3 +686,22 @@ Building upon our component research, we have implemented Highway Networks. This
     ```bash
     python train_highway_component.py --dim 16 --epochs 10000 --lr 0.05
     ```
+
+## Component Testing: gMLP (Gated MLP)
+
+Building upon our component research into self-attention alternatives, we have implemented the gMLP (Gated MLP) component. This tests the hypothesis that spatial and sequential dependencies can be effectively modeled without attention mechanisms by using a Spatial Gating Unit (SGU) that combines element-wise multiplication with a linear sequence projection. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the gMLP component test:**
+    ```bash
+    python train_gmlp_component.py
+    ```
+    This script tests learning a spatial transformation over a sequence using manual backpropagation to ensure gradients flow correctly through the element-wise gating operation and the sequence-wise spatial projection.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_gmlp_component.py --epochs 10000 --lr 0.01
+    ```

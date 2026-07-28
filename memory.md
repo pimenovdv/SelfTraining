@@ -366,7 +366,21 @@
   $Y = U + \text{MLP}_{channel}(\text{LayerNorm}(U))$
   During backpropagation, gradients route correctly through both transposed dimensions for the token mixing MLP and standard dimensions for the channel mixing MLP.
 
+* **gMLP (Gated MLP)**
+  Let $X \in \mathbb{R}^{N \times d}$ be the input matrix.
+  The gMLP block utilizes a Spatial Gating Unit (SGU) to model spatial dependencies:
+  $Z = X U$ (Linear projection where $U \in \mathbb{R}^{d \times 2d_{hidden}}$)
+  $Z_{act} = \text{ReLU}(Z)$
+  Split $Z_{act}$ into $Z_1$ and $Z_2$ along the hidden dimension.
+  Spatial projection across sequence length $N$:
+  $\tilde{Z}_2 = W Z_2 + b$ (where $W \in \mathbb{R}^{N \times N}$)
+  Gating mechanism:
+  $S = Z_1 \odot \tilde{Z}_2$
+  $Y = S V$ (Output projection where $V \in \mathbb{R}^{d_{hidden} \times d}$)
+  During backpropagation, gradients effectively flow through the element-wise gating operation and the sequence-wise spatial projection using tensor contractions.
+
 ## Experimental Summaries
+* **Experiment `0049_train_gmlp_component` (Success):** Implemented and trained a gMLP (Gated MLP) component using pure NumPy. Successfully verified its ability to model spatial/sequential dependencies without attention mechanisms by employing a Spatial Gating Unit (SGU) that combines element-wise multiplication with sequence-wise linear projection, validating its manual backpropagation across spatial and channel dimensions.
 * **Experiment `0048_train_mlpmixer_component` (Success):** Implemented and trained an MLP-Mixer block using pure NumPy. Successfully verified the sequence-learning capabilities of alternating Token-mixing MLPs and Channel-mixing MLPs, validating its mathematical soundness as an alternative to self-attention via complex manual backpropagation through transposed sequences.
 * **Experiment `0046_train_groupnorm_component` (Success):** Implemented and trained a Group Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs after dividing channels into groups, validating the mathematical soundness of reshaping features for grouped statistics and manually backpropagating gradients through the grouped groups.
 * **Experiment `0045_train_batchnorm_component` (Success):** Implemented and trained a Batch Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs across the batch dimension, validating the mathematical soundness of normalization parameter updates and the complex manual backpropagation through batch statistics.
