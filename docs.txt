@@ -6,6 +6,7 @@
 0048_train_mlpmixer_component
 0049_train_gmlp_component
 0050_train_hypernetwork_component
+0051_train_hopfield_component
 train_adamw_component
 train_alibi_component
 train_attention_component
