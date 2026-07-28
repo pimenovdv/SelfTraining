@@ -3,6 +3,7 @@
 0045_train_batchnorm_component
 0046_train_groupnorm_component
 0047_train_highway_component
+0048_train_mlpmixer_component
 train_adamw_component
 train_alibi_component
 train_attention_component
