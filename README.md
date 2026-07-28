@@ -724,3 +724,22 @@ Building upon our component research, we have implemented a Hypernetwork compone
     ```bash
     python train_hypernetwork_component.py --epochs 5000 --lr 0.01
     ```
+
+## Component Testing: Hopfield Network
+
+Building upon our memory and representation research, we have implemented a Hopfield Network component. This component tests the hypothesis that a fully connected recurrent neural network with symmetric weights can act as an associative memory system, storing and retrieving patterns using energy minimization via pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Hopfield Network component test:**
+    ```bash
+    python train_hopfield_component.py
+    ```
+    This script tests associative memory retrieval from noisy patterns using Hebbian learning for weight generation and asynchronous state updates for energy minimization.
+
+    You can adjust hyperparameters such as pattern size, number of patterns, and noise level:
+    ```bash
+    python train_hopfield_component.py --pattern_size 100 --num_patterns 5 --noise_level 0.2
+    ```
