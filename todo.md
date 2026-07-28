@@ -26,6 +26,7 @@
 - [x] Develop dynamically conditioned normalization. (Implemented Adaptive Layer Normalization (AdaLN) to allow scaling and shifting based on conditioning inputs).
 - [x] Study scaling laws for individual components (e.g., attention, memory retrieval).
 - [x] Develop knowledge distillation methodologies mathematically. (Implemented and verified transferring knowledge from a Teacher MLP to a Student MLP using KL Divergence and Temperature scaling).
+- [x] Develop methods to mitigate vanishing gradients in deep architectures. (Implemented and verified Highway Networks with transform and carry gating mechanisms).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [ ] Automate the pipeline for training, evaluation, and documentation generation.
 

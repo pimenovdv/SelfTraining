@@ -667,3 +667,22 @@ Building upon our component research, we have implemented Group Normalization. T
     ```bash
     python train_groupnorm_component.py --num_groups 2 --num_features 8 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: Highway Network
+
+Building upon our component research, we have implemented Highway Networks. This component tests the hypothesis that allowing representations to pass unimpeded through gating mechanisms mitigates the vanishing gradient problem in very deep networks, acting as a precursor to residual connections. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Highway Network component test:**
+    ```bash
+    python train_highway_component.py
+    ```
+    This script tests learning the transform and carry gates on a synthetic dataset, utilizing manual backpropagation to ensure gradients flow correctly through both the transformation block and the gating mechanism.
+
+    You can adjust hyperparameters such as dimension, epochs, and learning rate:
+    ```bash
+    python train_highway_component.py --dim 16 --epochs 10000 --lr 0.05
+    ```
