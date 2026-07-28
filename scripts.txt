@@ -27,6 +27,7 @@ train_linear_attention_component
 train_lora_component
 train_lstm_component
 train_masked_attention_component
+train_mlpmixer_component
 train_moe_component
 train_multihead_attention_component
 train_multihead_transformer_block_component

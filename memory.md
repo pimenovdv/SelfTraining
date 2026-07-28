@@ -9,6 +9,7 @@
 * Phase 1: Foundations and Mathematical Modeling. Currently investigating core AGI architecture components, focusing on mathematical formulation and testing hypotheses on small-scale/synthetic datasets. Specifically targeting non-linear transformation capabilities of basic Feed-Forward Networks (FFNs), Self-Attention mechanisms, and Layer Normalization.
 
 ## Key Insights
+* *(Date: Current)* - Successfully implemented and tested an MLP-Mixer block mathematically in pure NumPy. Confirmed that a sequence of Token-mixing MLPs (operating across the sequence dimension on transposed features) and Channel-mixing MLPs (operating across the channel dimension) can effectively model sequences without attention mechanisms, routing gradients correctly through transpose operations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Batch Normalization mathematically. Confirmed that normalizing across the batch dimension and learning scale/shift parameters accelerates convergence and effectively routes gradients back through mean and variance calculations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Group Normalization mathematically. Confirmed that dividing channels into groups and normalizing within those groups allows stable normalization independent of batch size, correctly routing gradients through reshaped features via manual backpropagation.
 
@@ -356,7 +357,17 @@
   $\mathcal{L} = \frac{1}{B \cdot D} \sum (x - \hat{x})^2 + \lambda \frac{1}{B} \sum |z|$
   Backpropagation correctly routes gradients for both the reconstruction error and the L1 penalty (using the sign of $z$) back through the network.
 
+* **MLP-Mixer**
+  Let $X \in \mathbb{R}^{S \times C}$ be the input sequence matrix where $S$ is sequence length and $C$ is channels.
+  The MLP-Mixer block applies two operations with skip connections:
+  1. Token Mixing (operates on columns):
+  $U = X + \text{MLP}_{token}(\text{LayerNorm}(X)^T)^T$
+  2. Channel Mixing (operates on rows):
+  $Y = U + \text{MLP}_{channel}(\text{LayerNorm}(U))$
+  During backpropagation, gradients route correctly through both transposed dimensions for the token mixing MLP and standard dimensions for the channel mixing MLP.
+
 ## Experimental Summaries
+* **Experiment `0048_train_mlpmixer_component` (Success):** Implemented and trained an MLP-Mixer block using pure NumPy. Successfully verified the sequence-learning capabilities of alternating Token-mixing MLPs and Channel-mixing MLPs, validating its mathematical soundness as an alternative to self-attention via complex manual backpropagation through transposed sequences.
 * **Experiment `0046_train_groupnorm_component` (Success):** Implemented and trained a Group Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs after dividing channels into groups, validating the mathematical soundness of reshaping features for grouped statistics and manually backpropagating gradients through the grouped groups.
 * **Experiment `0045_train_batchnorm_component` (Success):** Implemented and trained a Batch Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs across the batch dimension, validating the mathematical soundness of normalization parameter updates and the complex manual backpropagation through batch statistics.
 * **Experiment `0043_train_adaln_component` (Success):** Implemented and trained an Adaptive Layer Normalization (AdaLN) component using pure NumPy. Successfully learned to dynamically predict scale and shift parameters ($\gamma$, $\beta$) from a conditioning input via linear projections, confirming the mathematical soundness and gradient flow through the conditional formulation.
