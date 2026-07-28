@@ -21,6 +21,7 @@ train_grokking_component
 train_groupnorm_component
 train_gru_component
 train_highway_component
+train_hypernetwork_component
 train_kan_component
 train_knowledge_distillation_component
 train_layernorm_component

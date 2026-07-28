@@ -705,3 +705,22 @@ Building upon our component research into self-attention alternatives, we have i
     ```bash
     python train_gmlp_component.py --epochs 10000 --lr 0.01
     ```
+
+## Component Testing: Hypernetwork
+
+Building upon our component research, we have implemented a Hypernetwork component. This tests the hypothesis that dynamic weight generation—where a secondary network generates weights for a primary network conditioned on some context—can successfully learn context-dependent functional mappings. It is verified here using pure mathematical operations and batch-wise tensor contractions.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Hypernetwork component test:**
+    ```bash
+    python train_hypernetwork_component.py
+    ```
+    This script tests learning a dynamic mapping by explicitly providing context vectors and mapping inputs through dynamically generated weights, verifying manual backpropagation through the context-conditioned matrices.
+
+    You can adjust hyperparameters such as epochs and learning rate:
+    ```bash
+    python train_hypernetwork_component.py --epochs 5000 --lr 0.01
+    ```
