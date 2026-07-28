@@ -28,6 +28,7 @@
 - [x] Develop knowledge distillation methodologies mathematically. (Implemented and verified transferring knowledge from a Teacher MLP to a Student MLP using KL Divergence and Temperature scaling).
 - [x] Develop methods to mitigate vanishing gradients in deep architectures. (Implemented and verified Highway Networks with transform and carry gating mechanisms).
 - [x] Develop alternatives to self-attention for sequence modeling mathematically. (Implemented and verified MLP-Mixer combining Token-mixing and Channel-mixing MLPs).
+- [x] Develop alternatives to self-attention for sequence modeling mathematically. (Implemented and verified gMLP utilizing a Spatial Gating Unit for modeling spatial dependencies).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [ ] Automate the pipeline for training, evaluation, and documentation generation.
 
