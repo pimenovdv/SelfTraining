@@ -762,3 +762,22 @@ Building upon our generative model research, we have implemented a Generative Ad
     ```bash
     python train_gan_component.py --epochs 10000 --batch_size 128 --lr_d 0.01 --lr_g 0.01 --hidden_dim 16
     ```
+
+## Component Testing: Graph Convolutional Network (GCN)
+
+Building upon our component research, we have implemented a Graph Convolutional Network (GCN) component. This component tests the hypothesis that graph structures can be effectively integrated into neural networks by propagating node features through a normalized adjacency matrix. It is verified here using pure mathematical operations on a synthetic graph dataset.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GCN component test:**
+    ```bash
+    python train_gcn_component.py
+    ```
+    This script tests the message-passing mechanism by co-training node representations to predict community labels on a synthetic graph.
+
+    You can adjust hyperparameters such as epochs, learning rate, and hidden dimension:
+    ```bash
+    python train_gcn_component.py --epochs 1000 --lr 0.1 --hidden_dim 16 --num_nodes 100 --num_features 16
+    ```

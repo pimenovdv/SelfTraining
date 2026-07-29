@@ -15,6 +15,7 @@ train_ffn_component
 train_flow_matching_component
 train_full_encoder_decoder_component
 train_gan_component
+train_gcn_component
 train_gelu_component
 train_gmlp_component
 train_gqa_component
