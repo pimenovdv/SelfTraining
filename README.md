@@ -781,3 +781,22 @@ Building upon our component research, we have implemented a Graph Convolutional 
     ```bash
     python train_gcn_component.py --epochs 1000 --lr 0.1 --hidden_dim 16 --num_nodes 100 --num_features 16
     ```
+
+## Component Testing: Restricted Boltzmann Machine (RBM)
+
+Building upon our generative model research, we have implemented a Restricted Boltzmann Machine (RBM) component. This component tests the hypothesis that an energy-based model with bipartite connections can learn to represent the underlying probability distribution of a dataset using Contrastive Divergence (CD-1) for efficient training. It is verified here using pure mathematical operations on a synthetic binary dataset.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the RBM component test:**
+    ```bash
+    python train_rbm_component.py
+    ```
+    This script tests the unsupervised learning capabilities by training the RBM to reconstruct synthetic binary patterns, utilizing CD-1 for manual parameter updates.
+
+    You can adjust hyperparameters such as epochs, learning rate, and hidden units:
+    ```bash
+    python train_rbm_component.py --epochs 1000 --lr 0.1 --num_hidden 4
+    ```

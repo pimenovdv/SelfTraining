@@ -397,6 +397,16 @@
   $Y = S V$ (Output projection where $V \in \mathbb{R}^{d_{hidden} \times d}$)
   During backpropagation, gradients effectively flow through the element-wise gating operation and the sequence-wise spatial projection using tensor contractions.
 
+* **Restricted Boltzmann Machine (RBM)**
+  An RBM is a bipartite generative model with visible units $v$ and hidden units $h$.
+  The joint distribution is defined by the energy function:
+  $E(v, h) = -v^T W h - b_v^T v - b_h^T h$
+  The conditional probabilities for Gibbs sampling are given by:
+  $P(h_j = 1 | v) = \sigma(W_{\cdot j}^T v + b_{h, j})$
+  $P(v_i = 1 | h) = \sigma(W_{i \cdot} h + b_{v, i})$
+  During training, weights are updated using Contrastive Divergence (CD-k), typically CD-1:
+  $\Delta W \propto \langle v h^T \rangle_{data} - \langle v h^T \rangle_{recon}$
+
 ## Experimental Summaries
 * **Experiment `0053_train_gcn_component` (Success):** Implemented and trained a Graph Convolutional Network (GCN) using pure NumPy. Successfully verified the mathematical formulation of graph convolutions by propagating information across nodes via a normalized adjacency matrix and manual backpropagation, achieving high accuracy on a synthetic graph dataset.
 * **Experiment `0052_train_gan_component` (Success):** Implemented and trained a Generative Adversarial Network (GAN) using pure NumPy. Successfully verified the adversarial minimax mathematical formulation by co-training a Generator to match a 1D Gaussian distribution and a Discriminator to distinguish real from fake samples, utilizing manual backpropagation.
@@ -450,6 +460,7 @@
 * **Experiment `0047_train_highway_component` (Success):** Implemented and trained a Highway Network component using pure NumPy. Successfully verified the gating mechanism (transform and carry gates) allowing representations to conditionally pass through unhindered, verifying its computational structure and manual backpropagation as a viable method to mitigate the vanishing gradient problem in deep architectures.
 * **Experiment `0050_train_hypernetwork_component` (Success):** Implemented and trained a Hypernetwork component using pure NumPy. Successfully learned to dynamically generate weights and biases for a primary network conditioned on contextual inputs, verifying the structural tensor contractions (`einsum`) and manual backpropagation of gradients through the generated parameters back to the hypernetwork.
 * **Experiment `0051_train_hopfield_component` (Partial Success):** Implemented and evaluated a Hopfield Network component using pure NumPy. Successfully learned a symmetric weight matrix via Hebbian learning and verified the mathematical soundness of energy minimization during asynchronous updates to retrieve stored patterns.
+* **Experiment `0054_train_rbm_component` (Success):** Implemented and evaluated a Restricted Boltzmann Machine (RBM) component using pure NumPy. Successfully learned to model the distribution of a synthetic binary dataset and verified the mathematical soundness of the energy-based model and manual parameter updates using Contrastive Divergence (CD-1).
 
 ## Open Questions & Hypotheses
 
