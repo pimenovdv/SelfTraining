@@ -17,6 +17,7 @@
 * *(Date: Current)* - Explored Grokking on a modular addition task mathematically in pure NumPy. Confirmed that standard cross-entropy and gradient descent initially memorize the algorithmic dataset by overfitting spurious patterns (reaching 100% train accuracy while test accuracy remains at random chance), forming the necessary pre-condition for the later structural representation generalization phase.
 
 * *(Date: Current)* - Successfully implemented and tested an Echo State Network (ESN) mathematically in pure NumPy. Confirmed that a fixed, random recurrent reservoir effectively projects temporal dynamics into a high-dimensional state space, allowing a simple linear readout trained via Ridge Regression to successfully predict a chaotic Mackey-Glass time series, validating Reservoir Computing principles.
+* *(Date: Current)* - Successfully implemented and tested a Bayesian Neural Network (BNN) mathematically in pure NumPy. Confirmed that modeling weights as probability distributions via the reparameterization trick allows optimization of the Evidence Lower Bound (ELBO), effectively balancing predictive accuracy (NLL) with uncertainty estimation (KL divergence) using Bayes by Backprop.
 *   *(Date: Current)* - Successfully implemented and tested a Continuous Normalizing Flow via Conditional Flow Matching (CFM) mathematically in pure NumPy. Confirmed that a neural network can learn to predict the constant vector field connecting a base Gaussian distribution to the data distribution, effectively modeling the probability flow ODE via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a Denoising Diffusion Probabilistic Model (DDPM) mathematically in pure NumPy. Confirmed that the reverse process can learn to predict and remove Gaussian noise incrementally, validating the mathematical formulation of the forward diffusion and the reverse step via manual backpropagation on a simple MLP.
 *   *(Date: Current)* - Successfully implemented and tested Linear Attention mathematically. Confirmed that by applying a positive kernel feature map (like ELU + 1) to Queries and Keys, the attention calculation can be reformulated as `\phi(Q) (\phi(K)^T V)`, reducing the computational complexity from O(N^2) to O(N) while correctly computing gradients via manual backpropagation.
@@ -398,6 +399,17 @@
   $Y = S V$ (Output projection where $V \in \mathbb{R}^{d_{hidden} \times d}$)
   During backpropagation, gradients effectively flow through the element-wise gating operation and the sequence-wise spatial projection using tensor contractions.
 
+* **Bayesian Neural Network (Bayes by Backprop)**
+  Let $w$ be the weights of a neural network modeled as a probability distribution $q(w|\theta)$, where $\theta = (\mu, \rho)$.
+  To ensure strictly positive variance, we parameterize standard deviation as $\sigma = \text{softplus}(\rho) = \log(1 + \exp(\rho))$.
+  The Reparameterization Trick is used to sample weights differentiably:
+  $w = \mu + \sigma \odot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)$
+  The objective is to minimize the negative Evidence Lower Bound (ELBO):
+  $\mathcal{L}(\theta) = \text{KL}[q(w|\theta) || P(w)] - \mathbb{E}_{q(w|\theta)}[\log P(\mathcal{D}|w)]$
+  Assuming a standard normal prior $P(w) = \mathcal{N}(0, I)$, the analytical KL divergence is:
+  $\text{KL} = 0.5 \sum (\mu^2 + \sigma^2 - 1 - 2\log(\sigma))$
+  During backpropagation, gradients of the ELBO with respect to $\mu$ and $\rho$ are computed directly.
+
 * **Restricted Boltzmann Machine (RBM)**
   An RBM is a bipartite generative model with visible units $v$ and hidden units $h$.
   The joint distribution is defined by the energy function:
@@ -462,6 +474,7 @@
 * **Experiment `0050_train_hypernetwork_component` (Success):** Implemented and trained a Hypernetwork component using pure NumPy. Successfully learned to dynamically generate weights and biases for a primary network conditioned on contextual inputs, verifying the structural tensor contractions (`einsum`) and manual backpropagation of gradients through the generated parameters back to the hypernetwork.
 * **Experiment `0051_train_hopfield_component` (Partial Success):** Implemented and evaluated a Hopfield Network component using pure NumPy. Successfully learned a symmetric weight matrix via Hebbian learning and verified the mathematical soundness of energy minimization during asynchronous updates to retrieve stored patterns.
 * **Experiment `0054_train_rbm_component` (Success):** Implemented and evaluated a Restricted Boltzmann Machine (RBM) component using pure NumPy. Successfully learned to model the distribution of a synthetic binary dataset and verified the mathematical soundness of the energy-based model and manual parameter updates using Contrastive Divergence (CD-1).
+* **Experiment `0056_train_bnn_component` (Success):** Implemented and evaluated a Bayesian Neural Network (BNN) component using pure NumPy. Successfully verified the mathematical soundness of the Bayes by Backprop algorithm, learning parameter distributions via the reparameterization trick and optimizing the Evidence Lower Bound (ELBO) on a non-linear reasoning task.
 
 ## Open Questions & Hypotheses
 
