@@ -743,3 +743,22 @@ Building upon our memory and representation research, we have implemented a Hopf
     ```bash
     python train_hopfield_component.py --pattern_size 100 --num_patterns 5 --noise_level 0.2
     ```
+
+## Component Testing: Generative Adversarial Network (GAN)
+
+Building upon our generative model research, we have implemented a Generative Adversarial Network (GAN) component. This component tests the hypothesis that a Generator network can learn to approximate a target distribution by engaging in a minimax game against a Discriminator network, without explicit density estimation. It is verified here using pure mathematical operations on a 1D Gaussian dataset.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GAN component test:**
+    ```bash
+    python train_gan_component.py
+    ```
+    This script tests the adversarial dynamics by co-training a Generator to map random noise to a target distribution (Mean=4.0, Std=1.2) and a Discriminator to distinguish real from fake samples.
+
+    You can adjust hyperparameters such as epochs, learning rate for generator and discriminator, and hidden dimension:
+    ```bash
+    python train_gan_component.py --epochs 10000 --batch_size 128 --lr_d 0.01 --lr_g 0.01 --hidden_dim 16
+    ```
