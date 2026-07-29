@@ -819,3 +819,22 @@ Building upon our recurrent and dynamic state models, we have implemented an Ech
     ```bash
     python train_esn_component.py --reservoir_size 500 --spectral_radius 1.25 --seq_len 2000
     ```
+
+## Component Testing: Bayesian Neural Network (BNN)
+
+Building upon our component research into probability and uncertainty estimation, we have implemented a Bayesian Neural Network (BNN). This component tests the hypothesis that weights can be modeled as probability distributions (using the reparameterization trick) and learned via the Bayes by Backprop algorithm to optimize the Evidence Lower Bound (ELBO). This allows the network to estimate uncertainty in its predictions. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the BNN component test:**
+    ```bash
+    python train_bnn_component.py
+    ```
+    This script tests learning a non-linear dataset (XOR) while balancing predictive accuracy (NLL) with parameter uncertainty (KL divergence) via manual backpropagation.
+
+    You can adjust hyperparameters such as epochs, learning rate, and KL weight:
+    ```bash
+    python train_bnn_component.py --epochs 25000 --lr 0.5 --kl_weight 0.001
+    ```

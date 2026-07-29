@@ -33,6 +33,7 @@
 - [x] Develop alternatives to self-attention for sequence modeling mathematically. (Implemented and verified MLP-Mixer combining Token-mixing and Channel-mixing MLPs).
 - [x] Develop alternatives to self-attention for sequence modeling mathematically. (Implemented and verified gMLP utilizing a Spatial Gating Unit for modeling spatial dependencies).
 - [x] Explore Reservoir Computing and dynamic state projection mathematically. (Implemented and verified Echo State Network (ESN) with Ridge Regression readout on a chaotic time series).
+- [x] Explore probabilistic uncertainty estimation in networks mathematically. (Implemented and verified Bayesian Neural Network (BNN) with Bayes by Backprop to optimize the ELBO).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [x] Develop dynamic weight generation methodologies mathematically. (Implemented and verified Hypernetwork component for generating context-conditioned primary network weights).
 - [ ] Automate the pipeline for training, evaluation, and documentation generation.
