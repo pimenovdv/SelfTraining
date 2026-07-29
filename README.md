@@ -838,3 +838,22 @@ Building upon our component research into probability and uncertainty estimation
     ```bash
     python train_bnn_component.py --epochs 25000 --lr 0.5 --kl_weight 0.001
     ```
+
+## Component Testing: Neural ODE
+
+Building upon our component research into continuous models, we have implemented a Neural Ordinary Differential Equation (Neural ODE) component. This component tests the hypothesis that hidden states can be evolved continuously with depth by parameterized dynamics, solved via numerical integration (e.g., Euler's method). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Neural ODE component test:**
+    ```bash
+    python train_neural_ode_component.py
+    ```
+    This script tests continuous-depth modeling by training a network dynamics function to classify a non-linear dataset, utilizing manual backpropagation through the numerical ODE solver.
+
+    You can adjust hyperparameters such as epochs, learning rate, and solver steps:
+    ```bash
+    python train_neural_ode_component.py --epochs 5000 --lr 0.1 --steps 10
+    ```
