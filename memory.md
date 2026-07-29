@@ -47,6 +47,13 @@
 
 ## Mathematical Notebook
 
+* **Generative Adversarial Network (GAN)**
+  Let $G$ be the generator mapping a prior noise distribution $p_z(z)$ to the data space, and $D$ be the discriminator estimating the probability that a sample came from the true data distribution $p_{data}(x)$ rather than $G$.
+  The two models are trained simultaneously in a two-player minimax game with value function $V(G, D)$:
+  $\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))]$
+  In practice, to avoid vanishing gradients early in training for the generator, $G$ maximizes $\log(D(G(z)))$ instead of minimizing $\log(1 - D(G(z)))$.
+  During backpropagation, gradients for $D$ flow from its output based on real/fake labels, and gradients for $G$ flow from $D$'s output back through $D$ (with $D$'s weights frozen) into $G$'s parameters.
+
 * **Batch Normalization**
   Let $X$ be the input matrix of shape (batch_size, num_features).
   $\mu_B = \frac{1}{m} \sum_{i=1}^m x_i$ (batch mean)
@@ -380,6 +387,7 @@
   During backpropagation, gradients effectively flow through the element-wise gating operation and the sequence-wise spatial projection using tensor contractions.
 
 ## Experimental Summaries
+* **Experiment `0052_train_gan_component` (Success):** Implemented and trained a Generative Adversarial Network (GAN) using pure NumPy. Successfully verified the adversarial minimax mathematical formulation by co-training a Generator to match a 1D Gaussian distribution and a Discriminator to distinguish real from fake samples, utilizing manual backpropagation.
 * **Experiment `0049_train_gmlp_component` (Success):** Implemented and trained a gMLP (Gated MLP) component using pure NumPy. Successfully verified its ability to model spatial/sequential dependencies without attention mechanisms by employing a Spatial Gating Unit (SGU) that combines element-wise multiplication with sequence-wise linear projection, validating its manual backpropagation across spatial and channel dimensions.
 * **Experiment `0048_train_mlpmixer_component` (Success):** Implemented and trained an MLP-Mixer block using pure NumPy. Successfully verified the sequence-learning capabilities of alternating Token-mixing MLPs and Channel-mixing MLPs, validating its mathematical soundness as an alternative to self-attention via complex manual backpropagation through transposed sequences.
 * **Experiment `0046_train_groupnorm_component` (Success):** Implemented and trained a Group Normalization component using pure NumPy. Successfully learned to scale and shift normalized inputs after dividing channels into groups, validating the mathematical soundness of reshaping features for grouped statistics and manually backpropagating gradients through the grouped groups.
