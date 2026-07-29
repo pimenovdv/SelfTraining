@@ -10,6 +10,7 @@ train_ddpm_component
 train_decoder_block_component
 train_dpo_component
 train_dropout_component
+train_esn_component
 train_evaluation_metrics_component
 train_ffn_component
 train_flow_matching_component

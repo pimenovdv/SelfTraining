@@ -10,6 +10,7 @@
 0052_train_gan_component
 0053_train_gcn_component
 0054_train_rbm_component
+0055_train_esn_component
 train_adamw_component
 train_alibi_component
 train_attention_component

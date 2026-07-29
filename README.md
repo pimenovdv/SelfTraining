@@ -800,3 +800,22 @@ Building upon our generative model research, we have implemented a Restricted Bo
     ```bash
     python train_rbm_component.py --epochs 1000 --lr 0.1 --num_hidden 4
     ```
+
+## Component Testing: Echo State Network (ESN)
+
+Building upon our recurrent and dynamic state models, we have implemented an Echo State Network (ESN). This component tests Reservoir Computing principles by utilizing a fixed, random recurrent reservoir to project sequential data into a high-dimensional state space, while only the linear readout layer is trained via Ridge Regression. It is verified here using pure mathematical operations on a chaotic time-series prediction task (Mackey-Glass).
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the ESN component test:**
+    ```bash
+    python train_esn_component.py
+    ```
+    This script tests the continuous time-series prediction capabilities by training the ESN to forecast the chaotic Mackey-Glass sequence.
+
+    You can adjust hyperparameters such as reservoir size, spectral radius, and sequence length:
+    ```bash
+    python train_esn_component.py --reservoir_size 500 --spectral_radius 1.25 --seq_len 2000
+    ```
