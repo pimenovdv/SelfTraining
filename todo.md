@@ -5,7 +5,7 @@
 ## Phase 1: Foundations and Mathematical Modeling (Current)
 
 - [x] Define the core theoretical framework for intelligence modeling.
-- [x] Investigate and mathematically formalize memory and reasoning structures. (Verified FFN for reasoning structures, implemented Self-Attention, Multi-Head Attention, Layer Normalization, Masked Attention, Cross-Attention, sequential RNN state memory, GRU gating mechanisms, LSTM cell states and gating mechanisms, continuous State Space Model (SSM) discretizations, and Hopfield Network associative memory).
+- [x] Investigate and mathematically formalize memory and reasoning structures. (Verified FFN for reasoning structures, implemented Self-Attention, Multi-Head Attention, Layer Normalization, Masked Attention, Cross-Attention, sequential RNN state memory, GRU gating mechanisms, LSTM cell states and gating mechanisms, continuous State Space Model (SSM) discretizations, Hopfield Network associative memory, and End-To-End Memory Network).
 - [x] Design and conduct initial small-scale experiments to test architectural hypotheses.
 - [x] Establish rigorous evaluation metrics for component performance.
 
