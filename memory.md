@@ -476,6 +476,7 @@
 * **Experiment `0054_train_rbm_component` (Success):** Implemented and evaluated a Restricted Boltzmann Machine (RBM) component using pure NumPy. Successfully learned to model the distribution of a synthetic binary dataset and verified the mathematical soundness of the energy-based model and manual parameter updates using Contrastive Divergence (CD-1).
 * **Experiment `0056_train_bnn_component` (Success):** Implemented and evaluated a Bayesian Neural Network (BNN) component using pure NumPy. Successfully verified the mathematical soundness of the Bayes by Backprop algorithm, learning parameter distributions via the reparameterization trick and optimizing the Evidence Lower Bound (ELBO) on a non-linear reasoning task.
 * **Experiment `0057_train_neural_ode_component` (Success):** Implemented and evaluated a Neural ODE component using pure NumPy. Successfully verified continuous-depth modeling by evolving hidden states via Euler numerical integration and manual backpropagation on a non-linear dataset.
+* **Experiment `0058_train_snn_component` (Success):** Implemented and evaluated a Spiking Neural Network (SNN) component with Leaky Integrate-and-Fire neurons using pure NumPy. Successfully verified surrogate gradient backpropagation to learn non-linear decision boundaries through discrete spiking time steps.
 
 ## Open Questions & Hypotheses
 
