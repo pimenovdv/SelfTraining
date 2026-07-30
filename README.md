@@ -876,3 +876,22 @@ Building upon our component research, we have implemented a Spiking Neural Netwo
     ```bash
     python train_snn_component.py --epochs 2000 --lr 5.0 --hidden_dim 32 --seq_len 10
     ```
+
+## Component Testing: Graph Attention Network (GAT)
+
+Building upon our graph and attention research, we have implemented a Graph Attention Network (GAT) component. This component tests the hypothesis that node representations can be improved by assigning different importance (attention weights) to different neighbors during the aggregation step, rather than treating all neighbors equally (as in GCN). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the GAT component test:**
+    ```bash
+    python train_gat_component.py
+    ```
+    This script tests the masked attention mechanism by co-training node representations to predict community labels on a synthetic graph exhibiting homophily, utilizing manual backpropagation.
+
+    You can adjust hyperparameters such as epochs, learning rate, and hidden dimension:
+    ```bash
+    python train_gat_component.py --epochs 2000 --lr 0.05 --hidden_dim 8
+    ```
