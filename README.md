@@ -914,3 +914,22 @@ Building upon our component research, we have implemented an End-To-End Memory N
     ```bash
     python train_memory_network_component.py --d 8 --epochs 5000 --lr 0.1
     ```
+
+## Component Testing: REINFORCE (Policy Gradient)
+
+Building upon our foundational modeling research, we have implemented the REINFORCE algorithm component. This component tests the hypothesis that a neural network can learn an optimal policy to maximize expected returns in an environment by performing gradient ascent on the log probabilities of sampled actions scaled by their rewards, using a baseline to reduce variance. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the REINFORCE component test:**
+    ```bash
+    python train_reinforce_component.py
+    ```
+    This script tests a simple agent navigating a 1D grid environment, validating the mathematical formulation of the policy gradient objective and manual backpropagation.
+
+    You can adjust hyperparameters such as hidden dimension, epochs, learning rate, and discount factor (gamma):
+    ```bash
+    python train_reinforce_component.py --hidden_dim 16 --epochs 1000 --lr 0.05 --gamma 0.99
+    ```

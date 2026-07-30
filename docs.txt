@@ -15,6 +15,7 @@
 0058_train_snn_component
 0059_train_gat_component
 0060_train_memory_network_component
+0061_train_reinforce_component
 train_adamw_component
 train_alibi_component
 train_attention_component
