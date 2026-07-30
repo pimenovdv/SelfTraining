@@ -952,3 +952,22 @@ Building upon the REINFORCE algorithm, we have implemented an Actor-Critic archi
     ```bash
     python train_actor_critic_component.py --hidden_dim 16 --epochs 2000 --lr 0.01 --gamma 0.99
     ```
+
+## Component Testing: Proximal Policy Optimization (PPO)
+
+Building upon the Actor-Critic algorithm, we have implemented Proximal Policy Optimization (PPO). This component tests the hypothesis that clipping the surrogate objective prevents destructively large policy shifts during gradient ascent, thereby stabilizing the training process and allowing for multiple update epochs per rollout. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the PPO component test:**
+    ```bash
+    python train_ppo_component.py
+    ```
+    This script trains an agent in a simple 1D grid environment, validating the mathematical formulation of the clipped surrogate objective, multiple epoch updates, and manual backpropagation for multi-head networks.
+
+    You can adjust hyperparameters such as hidden dimension, epochs, learning rate, discount factor (gamma), and clipping epsilon:
+    ```bash
+    python train_ppo_component.py --hidden_dim 16 --epochs 2000 --lr 0.01 --gamma 0.99 --epsilon 0.2
+    ```
