@@ -857,3 +857,22 @@ Building upon our component research into continuous models, we have implemented
     ```bash
     python train_neural_ode_component.py --epochs 5000 --lr 0.1 --steps 10
     ```
+
+## Component Testing: Spiking Neural Network (SNN)
+
+Building upon our component research, we have implemented a Spiking Neural Network (SNN) utilizing Leaky Integrate-and-Fire (LIF) neurons. This component tests the hypothesis that energy-efficient event-based biological processing dynamics can be effectively modeled and trained using Backpropagation Through Time combined with Surrogate Gradients (to address the non-differentiability of the discrete spike function). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the SNN component test:**
+    ```bash
+    python train_snn_component.py
+    ```
+    This script tests sequential spike dynamics and temporal representations on the XOR dataset by encoding it across sequential steps and using a fast sigmoid surrogate function for manual backpropagation.
+
+    You can adjust hyperparameters such as epochs, learning rate, and sequence length (T):
+    ```bash
+    python train_snn_component.py --epochs 2000 --lr 5.0 --hidden_dim 32 --seq_len 10
+    ```
