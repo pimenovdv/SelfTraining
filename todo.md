@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore reinforcement learning foundational algorithms mathematically. (Implemented and verified REINFORCE policy gradient).
 - [x] Explore and implement graph-based models mathematically. (Implemented and verified Graph Convolutional Network - GCN, and Graph Attention Network - GAT).
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Batch Normalization for stabilizing and accelerating deep network training).
 - [x] Develop grouped feature normalization. (Implemented Group Normalization as an alternative to Batch Normalization for small batch sizes).

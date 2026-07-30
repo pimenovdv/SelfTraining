@@ -44,6 +44,7 @@
 *   *(Date: Current)* - Successfully implemented and tested Inverted Dropout mathematically. Confirmed that scaling by $(1-p)^{-1}$ during training appropriately preserves expected values during inference, and that dropout masks correctly route gradients during manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Direct Preference Optimization (DPO) mathematically. Confirmed that policy weights can be aligned to human preferences by directly optimizing the log-ratio of policy and reference probabilities using binary cross-entropy, eliminating the need for a separate reward model.
 *   *(Date: Current)* - Successfully implemented and tested Quantization-Aware Training (QAT) mathematically. Confirmed that 8-bit absolute maximum quantization simulated during the forward pass can successfully be trained using the Straight-Through Estimator (STE) during backpropagation, resolving questions about modeling quantization error.
+*   *(Date: Current)* - Successfully implemented and tested the REINFORCE policy gradient algorithm mathematically. Confirmed that optimizing expected returns via gradient ascent on the log probability of sampled actions (scaled by a baseline-adjusted return) allows a policy network to learn effective behaviors via manual backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested a Variational Autoencoder (VAE) mathematically. Confirmed that the reparameterization trick allows gradients to flow correctly back to the encoder, and that the combined Binary Cross-Entropy (BCE) and Kullback-Leibler (KL) divergence loss correctly maps inputs to a lower-dimensional standard normal latent space while preserving information for reconstruction.
 *   *(Date: Current)* - Successfully implemented and tested a Vector Quantized Variational Autoencoder (VQ-VAE) mathematically. Confirmed that discrete representations can be learned via a codebook lookup, using the Straight-Through Estimator (STE) to successfully route gradients from the decoder back to the encoder, effectively ignoring the non-differentiable argmin step during backpropagation.
 *   *(Date: Current)* - Successfully implemented and tested Contrastive Learning (InfoNCE) mathematically. Confirmed that a two-tower model mapping different views of a concept to a shared L2-normalized vector space can successfully be trained by maximizing temperature-scaled cosine similarity using manual backpropagation.
@@ -446,7 +447,19 @@
   $\hat{a} = \text{softmax}(W(o + u))$
   Backpropagation properly routes through $W$, the combination sum, the probability calculation, and into embeddings $A$, $C$, and $B$.
 
+* **REINFORCE (Policy Gradient)**
+  Let $\pi_\theta(a|s)$ be a parameterized stochastic policy.
+  The goal is to maximize the expected return:
+  $J(\theta) = \mathbb{E}_{\pi_\theta} \left[ \sum_{t=0}^T \gamma^t R_t \right]$
+  The policy gradient theorem gives the gradient:
+  $\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta} \left[ \sum_{t=0}^T \nabla_\theta \log \pi_\theta(a_t | s_t) G_t \right]$
+  where $G_t = \sum_{k=t}^T \gamma^{k-t} R_k$ is the return from step $t$.
+  To reduce variance, a baseline $b(s_t)$ can be subtracted from the return:
+  $\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^T \nabla_\theta \log \pi_\theta(a_t^{(i)} | s_t^{(i)}) (G_t^{(i)} - b)$
+  During training, manual backpropagation computes this gradient and updates weights via gradient ascent to increase the likelihood of actions leading to higher returns.
+
 ## Experimental Summaries
+* **Experiment `0061_train_reinforce_component` (Success):** Implemented and evaluated the REINFORCE policy gradient algorithm using pure NumPy. Successfully verified the mathematical formulation of maximizing expected returns via gradient ascent on the log probability of actions scaled by standardized returns, learning to navigate a simple grid environment via manual backpropagation.
 * **Experiment `0060_train_memory_network_component` (Success):** Implemented and evaluated an End-To-End Memory Network (MemN2N) component using pure NumPy. Successfully learned to route reasoning paths by applying soft attention over stored facts to correctly answer queries, verifying the complex routing of gradients through multiple memory and query embedding matrices.
 * **Experiment `0059_train_gat_component` (Success):** Implemented and trained a Graph Attention Network (GAT) using pure NumPy. Successfully verified the mathematical formulation of masked self-attention over graphs, achieving successful convergence on a node classification task while manually backpropagating through the attention and feature aggregation steps.
 * **Experiment `0053_train_gcn_component` (Success):** Implemented and trained a Graph Convolutional Network (GCN) using pure NumPy. Successfully verified the mathematical formulation of graph convolutions by propagating information across nodes via a normalized adjacency matrix and manual backpropagation, achieving high accuracy on a synthetic graph dataset.
