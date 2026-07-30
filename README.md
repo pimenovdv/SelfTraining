@@ -933,3 +933,22 @@ Building upon our foundational modeling research, we have implemented the REINFO
     ```bash
     python train_reinforce_component.py --hidden_dim 16 --epochs 1000 --lr 0.05 --gamma 0.99
     ```
+
+## Component Testing: Actor-Critic (RL)
+
+Building upon the REINFORCE algorithm, we have implemented an Actor-Critic architecture. This component tests the hypothesis that learning a value function (the Critic) simultaneously with the policy (the Actor) allows the use of Temporal Difference (TD) errors to reduce variance during policy updates. This enables online, step-by-step learning rather than waiting for episode completion. It is verified here using pure mathematical operations through a shared hidden layer.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Actor-Critic component test:**
+    ```bash
+    python train_actor_critic_component.py
+    ```
+    This script trains an agent in a simple 1D grid environment, validating the mathematical formulation of TD errors, policy gradient ascent, and manual backpropagation for multi-head networks.
+
+    You can adjust hyperparameters such as hidden dimension, epochs, learning rate, and discount factor (gamma):
+    ```bash
+    python train_actor_critic_component.py --hidden_dim 16 --epochs 2000 --lr 0.01 --gamma 0.99
+    ```

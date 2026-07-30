@@ -458,7 +458,18 @@
   $\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^T \nabla_\theta \log \pi_\theta(a_t^{(i)} | s_t^{(i)}) (G_t^{(i)} - b)$
   During training, manual backpropagation computes this gradient and updates weights via gradient ascent to increase the likelihood of actions leading to higher returns.
 
+* **Actor-Critic (RL)**
+  Let $\pi_\theta(a|s)$ be the policy (Actor) and $V_w(s)$ be the value function (Critic).
+  The Critic is trained to minimize the Temporal Difference (TD) error:
+  $\delta_t = R_t + \gamma V_w(s_{t+1}) - V_w(s_t)$
+  The Critic loss is $\mathcal{L}_V = \frac{1}{2} \delta_t^2$, leading to the gradient descent update:
+  $w \leftarrow w + \alpha_w \delta_t \nabla_w V_w(s_t)$
+  The Actor uses the TD error as a baseline-adjusted return for policy gradient ascent:
+  $\theta \leftarrow \theta + \alpha_\theta \nabla_\theta \log \pi_\theta(a_t | s_t) \delta_t$
+  During training with a shared hidden layer, gradients from both the actor's log-probability scaling and the critic's TD error minimization flow backwards through the shared representation.
+
 ## Experimental Summaries
+* **Experiment `0062_train_actor_critic_component` (Success):** Implemented and evaluated an Actor-Critic architecture using pure NumPy. Successfully verified the mathematical formulation of simultaneous policy gradient ascent and value function regression utilizing Temporal Difference (TD) errors, allowing stable online learning through manual backpropagation on a shared hidden layer.
 * **Experiment `0061_train_reinforce_component` (Success):** Implemented and evaluated the REINFORCE policy gradient algorithm using pure NumPy. Successfully verified the mathematical formulation of maximizing expected returns via gradient ascent on the log probability of actions scaled by standardized returns, learning to navigate a simple grid environment via manual backpropagation.
 * **Experiment `0060_train_memory_network_component` (Success):** Implemented and evaluated an End-To-End Memory Network (MemN2N) component using pure NumPy. Successfully learned to route reasoning paths by applying soft attention over stored facts to correctly answer queries, verifying the complex routing of gradients through multiple memory and query embedding matrices.
 * **Experiment `0059_train_gat_component` (Success):** Implemented and trained a Graph Attention Network (GAT) using pure NumPy. Successfully verified the mathematical formulation of masked self-attention over graphs, achieving successful convergence on a node classification task while manually backpropagating through the attention and feature aggregation steps.
