@@ -43,6 +43,7 @@ train_multihead_attention_component
 train_multihead_transformer_block_component
 train_neural_ode_component
 train_positional_encoding_component
+train_ppo_component
 train_quantization_component
 train_rbm_component
 train_reinforce_component
