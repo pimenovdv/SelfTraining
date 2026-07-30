@@ -9,6 +9,7 @@
 * Phase 1: Foundations and Mathematical Modeling. Currently investigating core AGI architecture components, focusing on mathematical formulation and testing hypotheses on small-scale/synthetic datasets. Specifically targeting non-linear transformation capabilities of basic Feed-Forward Networks (FFNs), Self-Attention mechanisms, and Layer Normalization.
 
 ## Key Insights
+* *(Date: Current)* - Successfully implemented and tested a Graph Attention Network (GAT) component mathematically in pure NumPy. Confirmed that computing masked attention scores across neighbors based on concatenated and linearly transformed node features successfully updates representations, effectively modeling graph structure and validating its manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested a Graph Convolutional Network (GCN) component mathematically in pure NumPy. Confirmed that normalizing the adjacency matrix and passing features through it effectively propagates information across nodes, validating its forward pass and manual backpropagation on a synthetic graph dataset.
 * *(Date: Current)* - Successfully implemented and tested an MLP-Mixer block mathematically in pure NumPy. Confirmed that a sequence of Token-mixing MLPs (operating across the sequence dimension on transposed features) and Channel-mixing MLPs (operating across the channel dimension) can effectively model sequences without attention mechanisms, routing gradients correctly through transpose operations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Batch Normalization mathematically. Confirmed that normalizing across the batch dimension and learning scale/shift parameters accelerates convergence and effectively routes gradients back through mean and variance calculations via manual backpropagation.
@@ -49,6 +50,17 @@
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
+
+* **Graph Attention Network (GAT)**
+  Let $X$ be the input feature matrix and $A$ be the adjacency matrix (with self-loops $A_{i,i}=1$).
+  A shared linear transformation, parameterized by a weight matrix $W$, is applied to every node: $Z = X W$.
+  Self-attention mechanism computes attention coefficients:
+  $e_{ij} = \text{LeakyReLU}(a^T [Z_i || Z_j])$ where $||$ is concatenation and $a$ is the attention weight vector.
+  Masked attention ensures we only compute $e_{ij}$ for nodes $j$ in the neighborhood of $i$ (where $A_{ij} > 0$):
+  $\alpha_{ij} = \text{softmax}_j(e_{ij}) = \frac{\exp(\text{LeakyReLU}(a^T [Z_i || Z_j]))}{\sum_{k \in \mathcal{N}_i} \exp(\text{LeakyReLU}(a^T [Z_i || Z_k]))}$
+  The node features are updated as a linear combination of their neighbors' features:
+  $H_i = \sigma\left(\sum_{j \in \mathcal{N}_i} \alpha_{ij} Z_j\right)$
+  During backpropagation, gradients route correctly backwards through the masked softmax attention and the concatenated feature vectors.
 
 * **Graph Convolutional Network (GCN)**
   Let $X$ be the input feature matrix, $A$ be the adjacency matrix, and $I$ be the identity matrix.
@@ -421,6 +433,7 @@
   $\Delta W \propto \langle v h^T \rangle_{data} - \langle v h^T \rangle_{recon}$
 
 ## Experimental Summaries
+* **Experiment `0059_train_gat_component` (Success):** Implemented and trained a Graph Attention Network (GAT) using pure NumPy. Successfully verified the mathematical formulation of masked self-attention over graphs, achieving successful convergence on a node classification task while manually backpropagating through the attention and feature aggregation steps.
 * **Experiment `0053_train_gcn_component` (Success):** Implemented and trained a Graph Convolutional Network (GCN) using pure NumPy. Successfully verified the mathematical formulation of graph convolutions by propagating information across nodes via a normalized adjacency matrix and manual backpropagation, achieving high accuracy on a synthetic graph dataset.
 * **Experiment `0052_train_gan_component` (Success):** Implemented and trained a Generative Adversarial Network (GAN) using pure NumPy. Successfully verified the adversarial minimax mathematical formulation by co-training a Generator to match a 1D Gaussian distribution and a Discriminator to distinguish real from fake samples, utilizing manual backpropagation.
 * **Experiment `0049_train_gmlp_component` (Success):** Implemented and trained a gMLP (Gated MLP) component using pure NumPy. Successfully verified its ability to model spatial/sequential dependencies without attention mechanisms by employing a Spatial Gating Unit (SGU) that combines element-wise multiplication with sequence-wise linear projection, validating its manual backpropagation across spatial and channel dimensions.
