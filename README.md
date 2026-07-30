@@ -895,3 +895,22 @@ Building upon our graph and attention research, we have implemented a Graph Atte
     ```bash
     python train_gat_component.py --epochs 2000 --lr 0.05 --hidden_dim 8
     ```
+
+## Component Testing: End-To-End Memory Network (MemN2N)
+
+Building upon our component research, we have implemented an End-To-End Memory Network. This component tests the hypothesis that a network can learn to answer queries by explicitly storing facts in a memory structure, computing soft attention over those memories, and routing the retrieved information to generate an answer. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the Memory Network component test:**
+    ```bash
+    python train_memory_network_component.py
+    ```
+    This script tests learning to reason over synthetic question-answering facts by manually backpropagating through the memory embeddings (A, C), query embeddings (B), and output transformations.
+
+    You can adjust hyperparameters such as dimension, epochs, and learning rate:
+    ```bash
+    python train_memory_network_component.py --d 8 --epochs 5000 --lr 0.1
+    ```

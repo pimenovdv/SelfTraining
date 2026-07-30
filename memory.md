@@ -9,6 +9,7 @@
 * Phase 1: Foundations and Mathematical Modeling. Currently investigating core AGI architecture components, focusing on mathematical formulation and testing hypotheses on small-scale/synthetic datasets. Specifically targeting non-linear transformation capabilities of basic Feed-Forward Networks (FFNs), Self-Attention mechanisms, and Layer Normalization.
 
 ## Key Insights
+* *(Date: Current)* - Successfully implemented and tested an End-To-End Memory Network (MemN2N) component mathematically in pure NumPy. Confirmed that computing soft attention over explicit memory representations using a query vector effectively routes necessary facts to generate accurate answers, successfully verifying its manual backpropagation through memory embeddings.
 * *(Date: Current)* - Successfully implemented and tested a Graph Attention Network (GAT) component mathematically in pure NumPy. Confirmed that computing masked attention scores across neighbors based on concatenated and linearly transformed node features successfully updates representations, effectively modeling graph structure and validating its manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested a Graph Convolutional Network (GCN) component mathematically in pure NumPy. Confirmed that normalizing the adjacency matrix and passing features through it effectively propagates information across nodes, validating its forward pass and manual backpropagation on a synthetic graph dataset.
 * *(Date: Current)* - Successfully implemented and tested an MLP-Mixer block mathematically in pure NumPy. Confirmed that a sequence of Token-mixing MLPs (operating across the sequence dimension on transposed features) and Channel-mixing MLPs (operating across the channel dimension) can effectively model sequences without attention mechanisms, routing gradients correctly through transpose operations via manual backpropagation.
@@ -432,7 +433,21 @@
   During training, weights are updated using Contrastive Divergence (CD-k), typically CD-1:
   $\Delta W \propto \langle v h^T \rangle_{data} - \langle v h^T \rangle_{recon}$
 
+* **End-To-End Memory Network (MemN2N)**
+  Let $x_i$ be facts in memory and $q$ be the query.
+  Input memory representation: $m_i = A x_i$
+  Output memory representation: $c_i = C x_i$
+  Query embedding: $u = B q$
+  Match query to memory to compute attention probabilities:
+  $p_i = \text{softmax}(u^T m_i)$
+  Compute output vector by summing over output memories weighted by probabilities:
+  $o = \sum p_i c_i$
+  Predict final answer based on combined output and query:
+  $\hat{a} = \text{softmax}(W(o + u))$
+  Backpropagation properly routes through $W$, the combination sum, the probability calculation, and into embeddings $A$, $C$, and $B$.
+
 ## Experimental Summaries
+* **Experiment `0060_train_memory_network_component` (Success):** Implemented and evaluated an End-To-End Memory Network (MemN2N) component using pure NumPy. Successfully learned to route reasoning paths by applying soft attention over stored facts to correctly answer queries, verifying the complex routing of gradients through multiple memory and query embedding matrices.
 * **Experiment `0059_train_gat_component` (Success):** Implemented and trained a Graph Attention Network (GAT) using pure NumPy. Successfully verified the mathematical formulation of masked self-attention over graphs, achieving successful convergence on a node classification task while manually backpropagating through the attention and feature aggregation steps.
 * **Experiment `0053_train_gcn_component` (Success):** Implemented and trained a Graph Convolutional Network (GCN) using pure NumPy. Successfully verified the mathematical formulation of graph convolutions by propagating information across nodes via a normalized adjacency matrix and manual backpropagation, achieving high accuracy on a synthetic graph dataset.
 * **Experiment `0052_train_gan_component` (Success):** Implemented and trained a Generative Adversarial Network (GAN) using pure NumPy. Successfully verified the adversarial minimax mathematical formulation by co-training a Generator to match a 1D Gaussian distribution and a Discriminator to distinguish real from fake samples, utilizing manual backpropagation.
