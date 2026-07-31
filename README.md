@@ -990,3 +990,22 @@ Building upon the Q-learning algorithm, we have implemented a Deep Q-Network (DQ
     ```bash
     python train_dqn_component.py --hidden_dim 16 --epochs 1000 --lr 0.01 --batch_size 32
     ```
+
+## Component Testing: Model-Agnostic Meta-Learning (MAML)
+
+Building upon our component research, we have implemented a First-Order Model-Agnostic Meta-Learning (MAML) component. This component tests the hypothesis that a model can learn an internal representation (initialization parameters) that is broadly suitable for many tasks, enabling rapid adaptation to new, unseen tasks with only a few gradient steps (few-shot learning). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the MAML component test:**
+    ```bash
+    python train_maml_component.py
+    ```
+    This script tests learning a meta-initialization for a family of sine wave regression tasks, validating the mathematical formulation of inner and outer loop optimization, and manual backpropagation.
+
+    You can adjust hyperparameters such as meta batch size, epochs, and inner/outer learning rates:
+    ```bash
+    python train_maml_component.py --epochs 1000 --meta_batch_size 16 --inner_lr 0.01 --outer_lr 0.001
+    ```

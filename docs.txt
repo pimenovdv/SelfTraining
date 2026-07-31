@@ -19,6 +19,7 @@
 0062_train_actor_critic_component
 0063_train_ppo_component
 0064_train_dqn_component
+0065_train_maml_component
 train_adamw_component
 train_alibi_component
 train_attention_component
