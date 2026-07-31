@@ -22,6 +22,7 @@
 0065_train_maml_component
 0066_train_tcn_component
 0067_train_ewc_component
+0068_train_ctrnn_component
 train_adamw_component
 train_alibi_component
 train_attention_component

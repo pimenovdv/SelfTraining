@@ -11,10 +11,8 @@ Implement and train a Bayesian Neural Network (BNN) component mathematically in 
 - Tested on the XOR dataset across 25000 epochs.
 
 ## Results
-- Final ELBO Loss: 0.2101
+- Final ELBO Loss: 0.2028
 - The model successfully learned the XOR mapping while maintaining probabilistic weight distributions, validating the mathematical formulation of Bayes by Backprop and manual gradient updates for $\mu$ and $\rho$.
 
 ## Conclusion
 The Bayesian Neural Network formulation is mathematically sound. The successful manual backpropagation of the ELBO objective effectively balances predictive accuracy with parameter uncertainty, establishing a foundation for probabilistic reasoning components.
-
-**Script:** `train_bnn_component.py`

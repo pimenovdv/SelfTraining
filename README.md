@@ -1042,3 +1042,17 @@ Building upon our component research, we have implemented an Elastic Weight Cons
     python train_ewc_component.py
     ```
     This script tests the model on two sequential linear regression tasks, verifying the mathematical formulation of the empirical Fisher Information Matrix and the EWC penalty application to prevent forgetting of the first task.
+
+## Component Testing: Continuous-Time Recurrent Neural Network (CTRNN)
+
+Building upon our recurrent models, we have implemented a Continuous-Time Recurrent Neural Network (CTRNN). This component tests the hypothesis that neural dynamics can be modeled continuously using differential equations governed by time constants, allowing the network to adapt to different timescales. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the CTRNN component test:**
+    ```bash
+    python train_ctrnn_component.py
+    ```
+    This script tests continuous-time sequence modeling on a moving average task, validating Euler integration and Backpropagation Through Time.
