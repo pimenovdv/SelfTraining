@@ -1028,3 +1028,17 @@ Building upon our component research, we have implemented a Temporal Convolution
     ```bash
     python train_tcn_component.py --epochs 1000 --lr 0.01 --levels 3 --hidden_dim 8
     ```
+
+## Component Testing: Elastic Weight Consolidation (EWC)
+
+Building upon our component research, we have implemented an Elastic Weight Consolidation (EWC) component. This component tests continual learning capabilities by mitigating catastrophic forgetting across sequential tasks using the Fisher Information Matrix as a proxy for parameter importance. It is verified here using pure mathematical operations and manual backpropagation.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the EWC component test:**
+    ```bash
+    python train_ewc_component.py
+    ```
+    This script tests the model on two sequential linear regression tasks, verifying the mathematical formulation of the empirical Fisher Information Matrix and the EWC penalty application to prevent forgetting of the first task.
