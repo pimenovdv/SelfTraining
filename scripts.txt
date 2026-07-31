@@ -36,6 +36,7 @@ train_layernorm_component
 train_linear_attention_component
 train_lora_component
 train_lstm_component
+train_maml_component
 train_masked_attention_component
 train_memory_network_component
 train_mlpmixer_component
