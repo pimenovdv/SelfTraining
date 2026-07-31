@@ -17,7 +17,3 @@ Implemented Elastic Weight Consolidation (EWC) to mitigate catastrophic forgetti
 - Task 2 Error after EWC: 1.651312
 
 EWC significantly reduced catastrophic forgetting on Task 1 while allowing adequate learning on Task 2.
-
-- **Status:** Success
-
-**Script:** `train_ewc_component.py`

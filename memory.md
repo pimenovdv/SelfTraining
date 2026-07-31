@@ -546,6 +546,8 @@
 * **Experiment `0065_train_maml_component` (Success):** Implemented and evaluated a First-Order Model-Agnostic Meta-Learning (MAML) component using pure NumPy. Successfully verified the mathematical formulation of inner loop task adaptation and outer loop meta-initialization updates via manual backpropagation.
 * **Experiment `0066_train_tcn_component` (Success):** Implemented and evaluated a Temporal Convolutional Network (TCN) component using pure NumPy. Successfully verified causal dilated convolutions and residual connections for sequence modeling, calculating gradients via manual backpropagation.
 
+* **Experiment `0068_train_ctrnn_component` (Success):** Implemented and evaluated a Continuous-Time Recurrent Neural Network (CTRNN) component using pure NumPy. Successfully learned a continuous moving average dynamic over sequential data, confirming the mathematical formulation of continuous state evolution using Euler integration and Backpropagation Through Time (BPTT).
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
