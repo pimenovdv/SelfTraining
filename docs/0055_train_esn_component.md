@@ -26,3 +26,5 @@ An Echo State Network uses a fixed, randomly connected recurrent reservoir and o
 
 ## Conclusion
 The Echo State Network successfully predicted the chaotic time series. The fixed random reservoir effectively projected the input history into a high-dimensional state space, allowing the linear readout layer to accurately model the complex dynamics, validating the Reservoir Computing approach.
+
+**Script:** `train_esn_component.py`
