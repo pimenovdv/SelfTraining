@@ -543,6 +543,7 @@
 * **Experiment `0058_train_snn_component` (Success):** Implemented and evaluated a Spiking Neural Network (SNN) component with Leaky Integrate-and-Fire neurons using pure NumPy. Successfully verified surrogate gradient backpropagation to learn non-linear decision boundaries through discrete spiking time steps.
 * **Experiment `0064_train_dqn_component` (Success):** Implemented and evaluated a Deep Q-Network (DQN) component using pure NumPy. Successfully verified the mathematical formulation of Q-values calculation, experience replay, target networks, and manual backpropagation for deep reinforcement learning.
 * **Experiment `0065_train_maml_component` (Success):** Implemented and evaluated a First-Order Model-Agnostic Meta-Learning (MAML) component using pure NumPy. Successfully verified the mathematical formulation of inner loop task adaptation and outer loop meta-initialization updates via manual backpropagation.
+* **Experiment `0066_train_tcn_component` (Success):** Implemented and evaluated a Temporal Convolutional Network (TCN) component using pure NumPy. Successfully verified causal dilated convolutions and residual connections for sequence modeling, calculating gradients via manual backpropagation.
 
 ## Open Questions & Hypotheses
 

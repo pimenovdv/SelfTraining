@@ -12,7 +12,7 @@ Implement and train a Neural Ordinary Differential Equation (Neural ODE) compone
 - Tested on the XOR dataset across 5000 epochs.
 
 ## Results
-- Final BCE Loss: 0.0007
+- Final BCE Loss: 0.0009
 - The model successfully learned the XOR mapping by evolving the hidden state continuously through the ODE solver, validating the mathematical formulation of continuous-depth networks and manual gradient integration.
 
 ## Conclusion
