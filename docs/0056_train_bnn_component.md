@@ -16,3 +16,5 @@ Implement and train a Bayesian Neural Network (BNN) component mathematically in 
 
 ## Conclusion
 The Bayesian Neural Network formulation is mathematically sound. The successful manual backpropagation of the ELBO objective effectively balances predictive accuracy with parameter uncertainty, establishing a foundation for probabilistic reasoning components.
+
+**Script:** `train_bnn_component.py`

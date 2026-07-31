@@ -23,3 +23,5 @@ The model was trained on a synthetic dataset where the context $z$ dictates the 
 - **Final Loss:** 0.002049
 
 The loss converged successfully, proving the mathematical formulation and manual backpropagation derivations for dynamic weight generation are correct.
+
+**Script:** `train_hypernetwork_component.py`

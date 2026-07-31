@@ -17,3 +17,5 @@ Implement and train a Neural Ordinary Differential Equation (Neural ODE) compone
 
 ## Conclusion
 The Neural ODE formulation is mathematically sound. The successful manual backpropagation through the numerical solver validates its capability to model continuous transformations, establishing a foundation for continuous-time models.
+
+**Script:** `train_neural_ode_component.py`
