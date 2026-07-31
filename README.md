@@ -1009,3 +1009,22 @@ Building upon our component research, we have implemented a First-Order Model-Ag
     ```bash
     python train_maml_component.py --epochs 1000 --meta_batch_size 16 --inner_lr 0.01 --outer_lr 0.001
     ```
+
+## Component Testing: Temporal Convolutional Network (TCN)
+
+Building upon our component research, we have implemented a Temporal Convolutional Network (TCN) component. This component tests sequence modeling capabilities using causal dilated convolutions, providing an alternative to RNNs with stable gradients and larger receptive fields. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the TCN component test:**
+    ```bash
+    python train_tcn_component.py
+    ```
+    This script tests the model on a synthetic sequence delay task, validating the mathematical formulation of causal dilated convolutions, residual blocks, and manual backpropagation over time.
+
+    You can adjust hyperparameters such as epochs, learning rate, levels (depth), and hidden dimension:
+    ```bash
+    python train_tcn_component.py --epochs 1000 --lr 0.01 --levels 3 --hidden_dim 8
+    ```

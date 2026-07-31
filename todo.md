@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore sequence modeling alternatives with causal dilated convolutions. (Implemented and verified Temporal Convolutional Network - TCN).
 - [x] Explore reinforcement learning foundational algorithms mathematically. (Implemented and verified REINFORCE policy gradient).
 - [x] Explore Actor-Critic reinforcement learning mathematically. (Implemented and verified an Actor-Critic architecture with Temporal Difference learning).
 - [x] Explore advanced reinforcement learning mathematically. (Implemented and verified Proximal Policy Optimization - PPO with clipped surrogate objective).
