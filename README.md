@@ -971,3 +971,22 @@ Building upon the Actor-Critic algorithm, we have implemented Proximal Policy Op
     ```bash
     python train_ppo_component.py --hidden_dim 16 --epochs 2000 --lr 0.01 --gamma 0.99 --epsilon 0.2
     ```
+
+## Component Testing: Deep Q-Network (DQN)
+
+Building upon the Q-learning algorithm, we have implemented a Deep Q-Network (DQN). This component tests the hypothesis that Q-learning can be stabilized using deep neural networks by introducing experience replay (to break temporal correlations) and a target network (to provide stable TD targets). It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the DQN component test:**
+    ```bash
+    python train_dqn_component.py
+    ```
+    This script trains an agent in a simple 1D grid environment, validating the mathematical formulation of Q-values calculation, experience replay, target networks, and manual backpropagation.
+
+    You can adjust hyperparameters such as hidden dimension, epochs, learning rate, and batch size:
+    ```bash
+    python train_dqn_component.py --hidden_dim 16 --epochs 1000 --lr 0.01 --batch_size 32
+    ```
