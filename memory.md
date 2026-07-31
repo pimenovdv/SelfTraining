@@ -458,6 +458,16 @@
   $\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^T \nabla_\theta \log \pi_\theta(a_t^{(i)} | s_t^{(i)}) (G_t^{(i)} - b)$
   During training, manual backpropagation computes this gradient and updates weights via gradient ascent to increase the likelihood of actions leading to higher returns.
 
+* **Deep Q-Network (DQN)**
+  Let $Q(s, a; \theta)$ be the Q-network with parameters $\theta$ and $Q(s, a; \theta^-)$ be the target network with parameters $\theta^-$.
+  Experiences $(s_t, a_t, r_t, s_{t+1}, done)$ are stored in a replay buffer.
+  A mini-batch is sampled uniformly from the buffer.
+  The Temporal Difference (TD) target for step $i$ is calculated as:
+  $y_i = \begin{cases} r_i & \text{if done} \\ r_i + \gamma \max_{a'} Q(s_{i+1}, a'; \theta^-) & \text{otherwise} \end{cases}$
+  The loss function is the Mean Squared Error between the predicted Q-value and the target:
+  $L(\theta) = \frac{1}{N} \sum_{i} (y_i - Q(s_i, a_i; \theta))^2$
+  During training, the target network parameters $\theta^-$ are updated to match $\theta$ periodically. Backpropagation routes gradients back through the Q-network solely for the chosen actions.
+
 * **Actor-Critic (RL)**
   Let $\pi_\theta(a|s)$ be the policy (Actor) and $V_w(s)$ be the value function (Critic).
   The Critic is trained to minimize the Temporal Difference (TD) error:
@@ -469,6 +479,7 @@
   During training with a shared hidden layer, gradients from both the actor's log-probability scaling and the critic's TD error minimization flow backwards through the shared representation.
 
 ## Experimental Summaries
+* **Experiment `0064_train_dqn_component` (Success):** Implemented and evaluated a Deep Q-Network (DQN) using pure NumPy. Successfully verified the mathematical formulation of Q-learning stabilized by experience replay and target networks, learning to navigate a simple grid environment via manual backpropagation.
 * **Experiment `0063_train_ppo_component` (Success):** Implemented and verified Proximal Policy Optimization (PPO) using pure NumPy. Successfully learned an optimal policy via a clipped surrogate objective with multiple epochs per rollout, validating gradient-based optimization of policy ratios.
 * **Experiment `0062_train_actor_critic_component` (Success):** Implemented and evaluated an Actor-Critic architecture using pure NumPy. Successfully verified the mathematical formulation of simultaneous policy gradient ascent and value function regression utilizing Temporal Difference (TD) errors, allowing stable online learning through manual backpropagation on a shared hidden layer.
 * **Experiment `0061_train_reinforce_component` (Success):** Implemented and evaluated the REINFORCE policy gradient algorithm using pure NumPy. Successfully verified the mathematical formulation of maximizing expected returns via gradient ascent on the log probability of actions scaled by standardized returns, learning to navigate a simple grid environment via manual backpropagation.
