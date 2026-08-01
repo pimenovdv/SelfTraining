@@ -25,5 +25,3 @@ $\mathcal{L} = \mathbb{E}_{t, x_0, \epsilon} \left[ \| \epsilon - \epsilon_\thet
 
 ## Conclusion
 The model successfully learned to predict the noise added during the forward diffusion process, confirming the mathematical soundness of the DDPM formulation and manual backpropagation for the reverse process.
-
-**Script:** `train_ddpm_component.py`

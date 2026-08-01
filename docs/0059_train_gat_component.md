@@ -24,5 +24,3 @@ To implement and verify a Graph Attention Network (GAT) component mathematically
 
 ## Conclusion
 The GAT component successfully learned to classify nodes by attending to their neighbors. The manual backpropagation correctly distributed gradients through the masked attention weights and the concatenated feature vectors, validating the mathematical formulation of graph attention.
-
-**Script:** `train_gat_component.py`

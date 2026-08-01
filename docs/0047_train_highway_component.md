@@ -21,5 +21,3 @@ The model was trained on a synthetic dataset to match a target non-linear transf
 - **Final Loss:** 0.003156
 
 The loss converged successfully, proving the mathematical formulation and the manual backpropagation derivations are correct.
-
-**Script:** `train_highway_component.py`

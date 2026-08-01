@@ -32,5 +32,3 @@ These are routed back through the decoder and encoder via the chain rule.
 
 ## Conclusion
 The model successfully learned to reconstruct the input data while maintaining a sparse latent representation, verifying the mathematical soundness of the SAE formulation and its manual backpropagation.
-
-**Script:** `train_sae_component.py`

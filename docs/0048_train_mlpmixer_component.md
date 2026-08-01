@@ -24,5 +24,3 @@ The model was trained on a synthetic dataset to match a target non-linear transf
 - **Final Loss:** 0.010256
 
 The loss converged successfully, proving the mathematical formulation and the manual backpropagation derivations are correct for the full MLP-Mixer architecture.
-
-**Script:** `train_mlpmixer_component.py`
