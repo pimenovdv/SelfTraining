@@ -34,3 +34,6 @@ The `numpy` implementation successfully trained on synthetic data. The loss decr
 
 ## Conclusion
 RevNets offer a powerful architectural paradigm for memory-efficient training of deep networks. This experiment validates the core reversible mechanism, which can be extended to deeper networks and more complex residual functions.
+
+
+**Script:** `train_revnet_component.py`

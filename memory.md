@@ -555,6 +555,8 @@
 * **Experiment `0069_train_feedback_alignment_component` (Success):** Implemented and evaluated a Random Feedback Alignment (FA) component using pure NumPy. Successfully learned non-linear boundaries by propagating errors backward through fixed random weight matrices instead of symmetric transposed forward weights, verifying its computational viability as a biologically plausible learning mechanism.
 * **Experiment `0070_train_dfa_component` (Success):** Implemented and evaluated a Direct Feedback Alignment (DFA) component using pure NumPy. Successfully learned non-linear boundaries by propagating the output error directly to each hidden layer via fixed random matrices, validating the feasibility of parallel weight updates across layers.
 
+* **Experiment `0071_train_elm_component` (Success):** Implemented and evaluated an Extreme Learning Machine (ELM) component using pure NumPy. Successfully learned non-linear boundaries through rapid one-shot analytical learning by solving for output weights via the Moore-Penrose pseudoinverse of random hidden features, bypassing iterative backpropagation entirely.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*

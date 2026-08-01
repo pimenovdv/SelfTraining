@@ -1084,3 +1084,17 @@ Building upon our component research, we have implemented a Direct Feedback Alig
     python train_dfa_component.py
     ```
     This script tests learning non-linear boundaries, confirming that directly projecting output errors via random matrices to hidden layers provides a sufficient learning signal.
+
+## Component Testing: Extreme Learning Machine (ELM)
+
+Building upon our component research, we have implemented an Extreme Learning Machine (ELM). This component explores non-iterative learning by fixing random input weights and analytically solving for output weights using the Moore-Penrose pseudoinverse, allowing for exceptionally fast one-shot learning of non-linear representations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the ELM component test:**
+    ```bash
+    python train_elm_component.py
+    ```
+    This script tests rapid one-shot analytical learning, confirming that solving the pseudoinverse of random hidden features provides a sufficient learning mechanism without backpropagation.

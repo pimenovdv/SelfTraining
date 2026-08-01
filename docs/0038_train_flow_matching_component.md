@@ -25,3 +25,6 @@ $\mathcal{L} = \mathbb{E}_{t \sim U(0,1), x_0, x_1} \left[ \| v_\theta(x_t, t) -
 
 ## Conclusion
 The model successfully learned to predict the target vector field mapping the base distribution to the data distribution, verifying the mathematical soundness of Conditional Flow Matching and its manual backpropagation.
+
+
+**Script:** `train_flow_matching_component.py`

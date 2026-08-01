@@ -68,3 +68,4 @@
 0068_train_ctrnn_component
 0069_train_feedback_alignment_component
 0070_train_dfa_component
+0071_train_elm_component
