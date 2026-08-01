@@ -1098,3 +1098,17 @@ Building upon our component research, we have implemented an Extreme Learning Ma
     python train_elm_component.py
     ```
     This script tests rapid one-shot analytical learning, confirming that solving the pseudoinverse of random hidden features provides a sufficient learning mechanism without backpropagation.
+
+## Component Testing: Radial Basis Function (RBF) Network
+
+Building upon our component research, we have implemented a Radial Basis Function (RBF) Network. This component tests the hypothesis that non-linear functions can be effectively approximated using a superposition of localized basis functions (Gaussians), optimizing their centroids, widths, and output weights. It is verified here using pure mathematical operations and manual backpropagation.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the RBF Network component test:**
+    ```bash
+    python train_rbf_component.py
+    ```
+    This script tests learning non-linear boundaries, confirming that backpropagation can successfully tune the localized Gaussian basis functions.
