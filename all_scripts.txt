@@ -17,6 +17,7 @@ train_dropout_component
 train_esn_component
 train_evaluation_metrics_component
 train_ewc_component
+train_feedback_alignment_component
 train_ffn_component
 train_flow_matching_component
 train_full_encoder_decoder_component

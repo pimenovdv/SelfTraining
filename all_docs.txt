@@ -66,3 +66,4 @@
 0066_train_tcn_component
 0067_train_ewc_component
 0068_train_ctrnn_component
+0069_train_feedback_alignment_component

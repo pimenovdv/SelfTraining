@@ -1056,3 +1056,17 @@ Building upon our recurrent models, we have implemented a Continuous-Time Recurr
     python train_ctrnn_component.py
     ```
     This script tests continuous-time sequence modeling on a moving average task, validating Euler integration and Backpropagation Through Time.
+
+## Component Testing: Random Feedback Alignment (FA)
+
+Building upon our component research, we have implemented a Random Feedback Alignment component. This component tests the hypothesis that gradients can still provide a useful learning signal even when passing through fixed random matrices, aligning the forward weights to make the random backward weights effective, thereby avoiding the need for symmetric weight transport. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the FA component test:**
+    ```bash
+    python train_feedback_alignment_component.py
+    ```
+    This script tests learning non-linear boundaries using fixed random matrices for backward error propagation.
