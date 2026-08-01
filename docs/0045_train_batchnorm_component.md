@@ -25,3 +25,6 @@ The model was trained on a synthetic dataset to match a target affine transforma
 - **Final Loss:** 0.000000
 
 The loss converged successfully, proving the mathematical formulation and the manual backpropagation derivations are correct.
+
+
+**Script:** `train_batchnorm_component.py`

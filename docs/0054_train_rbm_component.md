@@ -25,3 +25,6 @@ An RBM is an energy-based generative model with bipartite connections between vi
 
 ## Conclusion
 The RBM successfully learned the underlying binary patterns in the synthetic dataset using CD-1. The reconstruction error decreased steadily, verifying the mathematical formulation of the energy-based model and the manual parameter updates through contrastive divergence.
+
+
+**Script:** `train_rbm_component.py`

@@ -25,3 +25,6 @@ The model was trained on a synthetic sequence dataset to match a target spatial 
 - **Final Loss:** 0.028302
 
 The loss converged successfully, proving the mathematical formulation and the manual backpropagation derivations for the gMLP spatial gating mechanism are correct.
+
+
+**Script:** `train_gmlp_component.py`
