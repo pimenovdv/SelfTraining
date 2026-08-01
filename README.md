@@ -1070,3 +1070,17 @@ Building upon our component research, we have implemented a Random Feedback Alig
     python train_feedback_alignment_component.py
     ```
     This script tests learning non-linear boundaries using fixed random matrices for backward error propagation.
+
+## Component Testing: Direct Feedback Alignment (DFA)
+
+Building upon our component research, we have implemented a Direct Feedback Alignment component. This component explores biologically plausible learning rules by propagating the output error directly to each hidden layer using fixed random matrices, bypassing the backward pass through subsequent hidden layers entirely. This allows for parallel weight updates across layers. It is verified here using pure mathematical operations.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the DFA component test:**
+    ```bash
+    python train_dfa_component.py
+    ```
+    This script tests learning non-linear boundaries, confirming that directly projecting output errors via random matrices to hidden layers provides a sufficient learning signal.
