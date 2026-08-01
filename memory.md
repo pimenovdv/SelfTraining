@@ -557,6 +557,8 @@
 
 * **Experiment `0071_train_elm_component` (Success):** Implemented and evaluated an Extreme Learning Machine (ELM) component using pure NumPy. Successfully learned non-linear boundaries through rapid one-shot analytical learning by solving for output weights via the Moore-Penrose pseudoinverse of random hidden features, bypassing iterative backpropagation entirely.
 
+* **Experiment `0072_train_rbf_component` (Success):** Implemented and evaluated a Radial Basis Function (RBF) Network component using pure NumPy. Successfully learned non-linear boundaries using localized Gaussian basis functions, validating the optimization of centroids, widths, and output weights via manual backpropagation.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
