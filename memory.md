@@ -553,6 +553,7 @@
 
 * **Experiment `0068_train_ctrnn_component` (Success):** Implemented and evaluated a Continuous-Time Recurrent Neural Network (CTRNN) component using pure NumPy. Successfully learned a continuous moving average dynamic over sequential data, confirming the mathematical formulation of continuous state evolution using Euler integration and Backpropagation Through Time (BPTT).
 * **Experiment `0069_train_feedback_alignment_component` (Success):** Implemented and evaluated a Random Feedback Alignment (FA) component using pure NumPy. Successfully learned non-linear boundaries by propagating errors backward through fixed random weight matrices instead of symmetric transposed forward weights, verifying its computational viability as a biologically plausible learning mechanism.
+* **Experiment `0070_train_dfa_component` (Success):** Implemented and evaluated a Direct Feedback Alignment (DFA) component using pure NumPy. Successfully learned non-linear boundaries by propagating the output error directly to each hidden layer via fixed random matrices, validating the feasibility of parallel weight updates across layers.
 
 ## Open Questions & Hypotheses
 

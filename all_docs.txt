@@ -67,3 +67,4 @@
 0067_train_ewc_component
 0068_train_ctrnn_component
 0069_train_feedback_alignment_component
+0070_train_dfa_component
