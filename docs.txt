@@ -70,3 +70,4 @@
 0070_train_dfa_component
 0071_train_elm_component
 0072_train_rbf_component
+0073_train_som_component

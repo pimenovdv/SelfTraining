@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore topological representation learning mathematically. (Implemented and verified Self-Organizing Map - SOM).
 - [x] Explore continuous-time recurrent dynamics mathematically. (Implemented and verified Continuous-Time Recurrent Neural Network - CTRNN).
 - [x] Explore biologically plausible learning rules mathematically (Feedback Alignment, Direct Feedback Alignment).
 - [x] Explore sequence modeling alternatives with causal dilated convolutions. (Implemented and verified Temporal Convolutional Network - TCN).

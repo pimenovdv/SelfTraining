@@ -1112,3 +1112,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
     python train_rbf_component.py
     ```
     This script tests learning non-linear boundaries, confirming that backpropagation can successfully tune the localized Gaussian basis functions.
+## Component Testing: Self-Organizing Map (SOM)
+
+**Script:** `train_som_component.py`
+**Description:** Evaluates a Self-Organizing Map (SOM) using competitive learning to map high-dimensional input points into a lower-dimensional topological grid.
