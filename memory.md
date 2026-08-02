@@ -561,6 +561,8 @@
 
 * **Experiment `0073_train_som_component` (Success):** Implemented and evaluated a Self-Organizing Map (SOM) component using pure NumPy. Successfully learned unsupervised topological representation of data onto a 2D grid using competitive learning.
 
+* **Experiment `0074_train_nca_component` (Success):** Implemented and evaluated a Neural Cellular Automata (NCA) component using pure NumPy. Successfully learned to iteratively grow a target pattern from a single seed pixel, confirming self-organizing pattern generation.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
