@@ -1128,3 +1128,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ntm_component.py`
 **Description:** Evaluates a Neural Turing Machine (NTM) component, verifying content-based addressing and differentiable read/write memory operations.
+## Component Testing: Skip-Gram
+
+**Script:** `train_skipgram_component.py`
+**Description:** Evaluates a Skip-Gram component with Negative Sampling, learning semantic word representations by modeling context relationships via manual backpropagation.
