@@ -559,6 +559,8 @@
 
 * **Experiment `0072_train_rbf_component` (Success):** Implemented and evaluated a Radial Basis Function (RBF) Network component using pure NumPy. Successfully learned non-linear boundaries using localized Gaussian basis functions, validating the optimization of centroids, widths, and output weights via manual backpropagation.
 
+* **Experiment `0073_train_som_component` (Success):** Implemented and evaluated a Self-Organizing Map (SOM) component using pure NumPy. Successfully learned unsupervised topological representation of data onto a 2D grid using competitive learning.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
