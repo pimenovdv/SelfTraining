@@ -1120,3 +1120,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_nca_component.py`
 **Description:** Evaluates a Neural Cellular Automata (NCA) component to 'grow' a predefined target pattern from a single seed pixel using localized, iterative cell updates via a shared MLP and Sobel filters.
+## Component Testing: Liquid Time-Constant (LTC) Network
+
+**Script:** `train_ltc_component.py`
+**Description:** Evaluates a Liquid Time-Constant (LTC) Network component dynamically adapting its continuous-time ODE dynamics based on input.
