@@ -1124,3 +1124,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ltc_component.py`
 **Description:** Evaluates a Liquid Time-Constant (LTC) Network component dynamically adapting its continuous-time ODE dynamics based on input.
+## Component Testing: Neural Turing Machine (NTM)
+
+**Script:** `train_ntm_component.py`
+**Description:** Evaluates a Neural Turing Machine (NTM) component, verifying content-based addressing and differentiable read/write memory operations.

@@ -564,6 +564,7 @@
 * **Experiment `0074_train_nca_component` (Success):** Implemented and evaluated a Neural Cellular Automata (NCA) component using pure NumPy. Successfully learned to iteratively grow a target pattern from a single seed pixel, confirming self-organizing pattern generation.
 
 * **Experiment `0075_train_ltc_component` (Success):** Implemented and evaluated a Liquid Time-Constant (LTC) Network component using pure NumPy. Successfully verified dynamically adapting continuous-time continuous-depth dynamics by varying the time constant based on input, optimizing via manual backpropagation.
+* **Experiment `0076_train_ntm_component` (Success):** Implemented and evaluated a Neural Turing Machine (NTM) component using pure NumPy. Successfully verified the mathematical formulation of content-based memory addressing and differentiable read/write operations via manual backpropagation.
 
 ## Open Questions & Hypotheses
 

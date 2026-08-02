@@ -128,6 +128,9 @@ doc_content = f"""# Experiment 0038: Conditional Flow Matching (CFM) Component
 ## Objective
 Implement and verify a Continuous Normalizing Flow using Conditional Flow Matching (CFM) in pure NumPy. The goal is to mathematically model the straight-line probability flow ODE from a base Gaussian distribution to the data distribution, and train a neural network to predict the target vector field using manual backpropagation.
 
+## Setup
+*   **Script:** `train_flow_matching_component.py`
+
 ## Mathematical Formulation
 
 ### Forward Path
