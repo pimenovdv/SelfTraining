@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore representation learning via word embeddings mathematically. (Implemented and verified Skip-Gram with Negative Sampling).
 - [x] Explore differentiable external memory structures mathematically. (Implemented and verified Neural Turing Machine - NTM with content-based addressing and differentiable read/write).
 - [x] Explore topological representation learning mathematically. (Implemented and verified Self-Organizing Map - SOM).
 - [x] Explore liquid time-constant dynamics mathematically. (Implemented and verified Liquid Time-Constant Network - LTC).

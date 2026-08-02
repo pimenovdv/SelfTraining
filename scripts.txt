@@ -66,6 +66,7 @@ train_rope_component
 train_sae_component
 train_scaling_laws_component
 train_selective_ssm_component
+train_skipgram_component
 train_snn_component
 train_som_component
 train_ssm_component

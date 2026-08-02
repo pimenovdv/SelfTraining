@@ -9,6 +9,7 @@
 * Phase 1: Foundations and Mathematical Modeling. Currently investigating core AGI architecture components, focusing on mathematical formulation and testing hypotheses on small-scale/synthetic datasets. Specifically targeting non-linear transformation capabilities of basic Feed-Forward Networks (FFNs), Self-Attention mechanisms, and Layer Normalization.
 
 ## Key Insights
+* *(Date: Current)* - Successfully implemented and tested a Skip-Gram component with Negative Sampling mathematically in pure NumPy. Confirmed that maximizing the dot product of target-context embeddings while minimizing target-negative embeddings successfully clusters semantically similar representations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested an End-To-End Memory Network (MemN2N) component mathematically in pure NumPy. Confirmed that computing soft attention over explicit memory representations using a query vector effectively routes necessary facts to generate accurate answers, successfully verifying its manual backpropagation through memory embeddings.
 * *(Date: Current)* - Successfully implemented and tested a Graph Attention Network (GAT) component mathematically in pure NumPy. Confirmed that computing masked attention scores across neighbors based on concatenated and linearly transformed node features successfully updates representations, effectively modeling graph structure and validating its manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested a Graph Convolutional Network (GCN) component mathematically in pure NumPy. Confirmed that normalizing the adjacency matrix and passing features through it effectively propagates information across nodes, validating its forward pass and manual backpropagation on a synthetic graph dataset.
@@ -53,6 +54,12 @@
 *   *(Date: Current)* - Successfully implemented and tested a Gated Recurrent Unit (GRU) mathematically. Confirmed that explicitly modeling information flow via update and reset gates mitigates vanishing gradients and allows for more robust sequential memory retention via manual derivation of BPTT.
 
 ## Mathematical Notebook
+
+* **Skip-Gram (Negative Sampling)**
+  Let $v_c$ be the target word embedding and $u_o$ be the context word embedding.
+  The objective is to maximize $P(o|c) = \sigma(u_o^T v_c)$ for true contexts, and minimize $P(w|c) = \sigma(u_w^T v_c)$ for $k$ negative samples.
+  Loss: $L = - \log \sigma(u_o^T v_c) - \sum_{i=1}^k \log \sigma(-u_{w_i}^T v_c)$.
+  During backpropagation, gradients route backward to update the embedding matrices for both context and target vocabularies.
 
 * **Graph Attention Network (GAT)**
   Let $X$ be the input feature matrix and $A$ be the adjacency matrix (with self-loops $A_{i,i}=1$).
@@ -480,6 +487,7 @@
   During training with a shared hidden layer, gradients from both the actor's log-probability scaling and the critic's TD error minimization flow backwards through the shared representation.
 
 ## Experimental Summaries
+* **Experiment `0077_train_skipgram_component` (Success):** Implemented and evaluated a Skip-Gram component using pure NumPy. Successfully learned semantic word clusters by optimizing context and target embeddings using Negative Sampling and manual backpropagation.
 * **Experiment `0064_train_dqn_component` (Success):** Implemented and evaluated a Deep Q-Network (DQN) using pure NumPy. Successfully verified the mathematical formulation of Q-learning stabilized by experience replay and target networks, learning to navigate a simple grid environment via manual backpropagation.
 * **Experiment `0063_train_ppo_component` (Success):** Implemented and verified Proximal Policy Optimization (PPO) using pure NumPy. Successfully learned an optimal policy via a clipped surrogate objective with multiple epochs per rollout, validating gradient-based optimization of policy ratios.
 * **Experiment `0062_train_actor_critic_component` (Success):** Implemented and evaluated an Actor-Critic architecture using pure NumPy. Successfully verified the mathematical formulation of simultaneous policy gradient ascent and value function regression utilizing Temporal Difference (TD) errors, allowing stable online learning through manual backpropagation on a shared hidden layer.
