@@ -1132,3 +1132,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_skipgram_component.py`
 **Description:** Evaluates a Skip-Gram component with Negative Sampling, learning semantic word representations by modeling context relationships via manual backpropagation.
+## Component Testing: Continuous Bag of Words (CBOW)
+
+**Script:** `train_cbow_component.py`
+**Description:** Evaluates a Continuous Bag of Words (CBOW) component, verifying that word representations can be learned by predicting a target word from the average of its context word embeddings, utilizing manual backpropagation.
