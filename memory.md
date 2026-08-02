@@ -563,6 +563,8 @@
 
 * **Experiment `0074_train_nca_component` (Success):** Implemented and evaluated a Neural Cellular Automata (NCA) component using pure NumPy. Successfully learned to iteratively grow a target pattern from a single seed pixel, confirming self-organizing pattern generation.
 
+* **Experiment `0075_train_ltc_component` (Success):** Implemented and evaluated a Liquid Time-Constant (LTC) Network component using pure NumPy. Successfully verified dynamically adapting continuous-time continuous-depth dynamics by varying the time constant based on input, optimizing via manual backpropagation.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*

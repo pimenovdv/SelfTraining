@@ -1,4 +1,4 @@
-0001_train_tokenizer
+0001_train_bpe
 0002_train_ffn_component
 0003_train_attention_component
 0004_train_layernorm_component
@@ -72,3 +72,4 @@
 0072_train_rbf_component
 0073_train_som_component
 0074_train_nca_component
+0075_train_ltc_component
