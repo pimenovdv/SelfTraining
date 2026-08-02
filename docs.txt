@@ -73,3 +73,4 @@
 0073_train_som_component
 0074_train_nca_component
 0075_train_ltc_component
+0076_train_ntm_component

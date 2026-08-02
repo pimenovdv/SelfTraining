@@ -3,6 +3,9 @@
 ## Objective
 Implement and verify a Continuous Normalizing Flow using Conditional Flow Matching (CFM) in pure NumPy. The goal is to mathematically model the straight-line probability flow ODE from a base Gaussian distribution to the data distribution, and train a neural network to predict the target vector field using manual backpropagation.
 
+## Setup
+*   **Script:** `train_flow_matching_component.py`
+
 ## Mathematical Formulation
 
 ### Forward Path
@@ -25,6 +28,3 @@ $\mathcal{L} = \mathbb{E}_{t \sim U(0,1), x_0, x_1} \left[ \| v_\theta(x_t, t) -
 
 ## Conclusion
 The model successfully learned to predict the target vector field mapping the base distribution to the data distribution, verifying the mathematical soundness of Conditional Flow Matching and its manual backpropagation.
-
-
-**Script:** `train_flow_matching_component.py`
