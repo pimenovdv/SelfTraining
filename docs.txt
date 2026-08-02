@@ -71,3 +71,4 @@
 0071_train_elm_component
 0072_train_rbf_component
 0073_train_som_component
+0074_train_nca_component

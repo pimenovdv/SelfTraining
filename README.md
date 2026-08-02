@@ -1116,3 +1116,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_som_component.py`
 **Description:** Evaluates a Self-Organizing Map (SOM) using competitive learning to map high-dimensional input points into a lower-dimensional topological grid.
+## Component Testing: Neural Cellular Automata (NCA)
+
+**Script:** `train_nca_component.py`
+**Description:** Evaluates a Neural Cellular Automata (NCA) component to 'grow' a predefined target pattern from a single seed pixel using localized, iterative cell updates via a shared MLP and Sobel filters.
