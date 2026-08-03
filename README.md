@@ -1136,3 +1136,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_cbow_component.py`
 **Description:** Evaluates a Continuous Bag of Words (CBOW) component, verifying that word representations can be learned by predicting a target word from the average of its context word embeddings, utilizing manual backpropagation.
+## Component Testing: Gumbel-Softmax
+
+**Script:** `train_gumbel_softmax_component.py`
+**Description:** Evaluates a Gumbel-Softmax component, verifying differentiable discrete sampling from a categorical distribution using the reparameterization trick with Gumbel noise and temperature annealing via manual backpropagation.

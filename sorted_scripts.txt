@@ -15,6 +15,7 @@ train_full_encoder_decoder_component
 train_gelu_component
 train_gqa_component
 train_gru_component
+train_gumbel_softmax_component
 train_layernorm_component
 train_lora_component
 train_lstm_component

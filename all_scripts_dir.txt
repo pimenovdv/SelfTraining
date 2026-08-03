@@ -33,6 +33,7 @@ train_gqa_component
 train_grokking_component
 train_groupnorm_component
 train_gru_component
+train_gumbel_softmax_component
 train_highway_component
 train_hopfield_component
 train_hypernetwork_component
