@@ -1148,3 +1148,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_fnet_component.py`
 **Description:** Evaluates an FNet block component using pure NumPy. This component tests replacing standard self-attention with a parameter-free 2D Fourier Transform for mixing over sequence and hidden dimensions, maintaining sequence modeling capabilities while avoiding attention overhead.
+## Component Testing: Predictive Coding Network (PCN)
+
+**Script:** `train_pcn_component.py`
+**Description:** Evaluates a Predictive Coding Network (PCN) component, verifying a biologically plausible alternative to backpropagation that relies on local learning rules and iterative inference to minimize prediction errors without calculating a global backward pass.

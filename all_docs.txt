@@ -79,3 +79,4 @@
 0079_train_gumbel_softmax_component
 0080_train_perceiver_component
 0081_train_fnet_component
+0082_train_pcn_component
