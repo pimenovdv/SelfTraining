@@ -1140,3 +1140,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_gumbel_softmax_component.py`
 **Description:** Evaluates a Gumbel-Softmax component, verifying differentiable discrete sampling from a categorical distribution using the reparameterization trick with Gumbel noise and temperature annealing via manual backpropagation.
+## Component Testing: Perceiver Bottleneck
+
+**Script:** `train_perceiver_component.py`
+**Description:** Evaluates a Perceiver Bottleneck component, verifying that cross-attention with trainable latents can reduce sequence modeling complexity to $O(N \cdot M)$.
