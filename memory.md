@@ -599,3 +599,9 @@
 - **Action:** Implemented a PCN component in `train_pcn_component.py` using NumPy, tested on a Sine wave regression dataset.
 - **Outcome:** The model successfully converged (Final MSE: ~0.0009), demonstrating that local Hebbian-like updates on prediction errors are sufficient for learning.
 - **Next Steps:** Investigate scaling this local learning rule to deeper architectures or comparing its sample efficiency directly against equivalent models trained with standard backpropagation.
+
+### Experiment 0083: Capsule Network (Dynamic Routing)
+- **Hypothesis:** We can preserve hierarchical spatial relationships and part-whole representations by replacing scalar neurons with vector capsules and replacing max-pooling with dynamic routing by agreement.
+- **Action:** Implemented a Capsule Network component in `train_capsule_network_component.py` demonstrating dynamic routing between primary and routing capsules using pure NumPy.
+- **Outcome:** The dynamic routing algorithm successfully converged, routing inputs to the correct higher-level capsules based on agreement.
+- **Next Steps:** Investigate integrating capsule layers with convolutional front-ends to evaluate on structured visual reasoning tasks.

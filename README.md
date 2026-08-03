@@ -1152,3 +1152,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_pcn_component.py`
 **Description:** Evaluates a Predictive Coding Network (PCN) component, verifying a biologically plausible alternative to backpropagation that relies on local learning rules and iterative inference to minimize prediction errors without calculating a global backward pass.
+## Component Testing: Capsule Network
+
+**Script:** `train_capsule_network_component.py`
+**Description:** Evaluates a Capsule Network component, verifying the dynamic routing by agreement mechanism to preserve part-whole relationships between hierarchical vector capsules.

@@ -2,6 +2,7 @@ train_adamw_component
 train_alibi_component
 train_attention_component
 train_bpe
+train_capsule_network_component
 train_cbow_component
 train_contrastive_component
 train_cross_attention_component
