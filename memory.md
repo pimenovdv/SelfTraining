@@ -579,3 +579,9 @@
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
+
+### Experiment 0080: Perceiver Bottleneck
+- **Hypothesis:** We can reduce the $O(N^2)$ complexity of standard self-attention to $O(N \cdot M)$ (where $M$ is the number of trainable latents and $N$ is sequence length) by using cross-attention where the latents act as queries and the input sequence acts as keys and values.
+- **Action:** Implemented a Perceiver Bottleneck component in `train_perceiver_component.py` with manual backpropagation.
+- **Outcome:** The model successfully converged (Final Loss: ~0.000283), learning to summarize a sequence into a fixed-size latent representation.
+- **Next Steps:** Consider applying this mechanism to multimodal inputs or very long sequences to exploit the reduced complexity.

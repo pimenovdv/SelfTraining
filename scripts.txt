@@ -54,6 +54,7 @@ train_multihead_transformer_block_component
 train_nca_component
 train_neural_ode_component
 train_ntm_component
+train_perceiver_component
 train_positional_encoding_component
 train_ppo_component
 train_quantization_component

@@ -77,3 +77,4 @@
 0077_train_skipgram_component
 0078_train_cbow_component
 0079_train_gumbel_softmax_component
+0080_train_perceiver_component
