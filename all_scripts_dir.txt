@@ -23,6 +23,7 @@ train_ewc_component
 train_feedback_alignment_component
 train_ffn_component
 train_flow_matching_component
+train_fnet_component
 train_full_encoder_decoder_component
 train_gan_component
 train_gat_component

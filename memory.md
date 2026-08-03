@@ -576,6 +576,8 @@
 * **Experiment `0075_train_ltc_component` (Success):** Implemented and evaluated a Liquid Time-Constant (LTC) Network component using pure NumPy. Successfully verified dynamically adapting continuous-time continuous-depth dynamics by varying the time constant based on input, optimizing via manual backpropagation.
 * **Experiment `0076_train_ntm_component` (Success):** Implemented and evaluated a Neural Turing Machine (NTM) component using pure NumPy. Successfully verified the mathematical formulation of content-based memory addressing and differentiable read/write operations via manual backpropagation.
 
+* **Experiment `0081_train_fnet_component` (Success):** Implemented and evaluated an FNet block component using pure NumPy. Successfully learned sequence relationships by replacing self-attention with a parameter-free 2D Fourier Transform for mixing over sequence and hidden dimensions.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
@@ -585,3 +587,9 @@
 - **Action:** Implemented a Perceiver Bottleneck component in `train_perceiver_component.py` with manual backpropagation.
 - **Outcome:** The model successfully converged (Final Loss: ~0.000283), learning to summarize a sequence into a fixed-size latent representation.
 - **Next Steps:** Consider applying this mechanism to multimodal inputs or very long sequences to exploit the reduced complexity.
+
+### Experiment 0081: FNet Block
+- **Hypothesis:** We can replace the computationally expensive self-attention mechanism with a parameter-free 2D Fast Fourier Transform (FFT) along the sequence and hidden dimensions, maintaining the ability to mix tokens effectively while significantly improving efficiency.
+- **Action:** Implemented an FNet Block component in `train_fnet_component.py` using NumPy`s FFT and evaluated it on a sequence inversion task with manual backpropagation.
+- **Outcome:** The model successfully converged (Final Loss: ~0.258), learning sequence relationships without attention parameters.
+- **Next Steps:** Consider integrating the FNet block into larger encoder structures to compare performance against standard Transformer blocks on more complex tasks.
