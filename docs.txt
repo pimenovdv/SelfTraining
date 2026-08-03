@@ -81,3 +81,4 @@
 0081_train_fnet_component
 0082_train_pcn_component
 0083_train_capsule_network_component
+0084_train_deepsets_component

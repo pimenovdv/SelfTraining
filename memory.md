@@ -605,3 +605,9 @@
 - **Action:** Implemented a Capsule Network component in `train_capsule_network_component.py` demonstrating dynamic routing between primary and routing capsules using pure NumPy.
 - **Outcome:** The dynamic routing algorithm successfully converged, routing inputs to the correct higher-level capsules based on agreement.
 - **Next Steps:** Investigate integrating capsule layers with convolutional front-ends to evaluate on structured visual reasoning tasks.
+
+### Experiment 0084: Deep Sets (Permutation Invariant Networks)
+- **Hypothesis:** We can process unordered sets by applying an independent transformation to each element and aggregating them with a symmetric function (e.g., sum pooling).
+- **Action:** Implemented a Deep Sets component in `train_deepsets_component.py` using pure NumPy to classify sets based on sum thresholding.
+- **Outcome:** The model successfully learned permutation-invariant features and converged on the set classification task.
+- **Next Steps:** Consider exploring point cloud processing or multi-agent environments using set-based representations.

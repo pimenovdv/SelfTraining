@@ -1156,3 +1156,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_capsule_network_component.py`
 **Description:** Evaluates a Capsule Network component, verifying the dynamic routing by agreement mechanism to preserve part-whole relationships between hierarchical vector capsules.
+## Component Testing: Deep Sets
+
+**Script:** `train_deepsets_component.py`
+**Description:** Evaluates a Deep Sets component, verifying its ability to process unordered sets by applying permutation-invariant transformations using element-wise processing and pooling operations.
