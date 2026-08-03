@@ -6,6 +6,7 @@ train_attention_component
 train_batchnorm_component
 train_bnn_component
 train_bpe
+train_capsule_network_component
 train_cbow_component
 train_contrastive_component
 train_cross_attention_component

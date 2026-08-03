@@ -80,3 +80,4 @@
 0080_train_perceiver_component
 0081_train_fnet_component
 0082_train_pcn_component
+0083_train_capsule_network_component
