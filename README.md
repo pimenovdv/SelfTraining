@@ -1144,3 +1144,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_perceiver_component.py`
 **Description:** Evaluates a Perceiver Bottleneck component, verifying that cross-attention with trainable latents can reduce sequence modeling complexity to $O(N \cdot M)$.
+## Component Testing: FNet Block
+
+**Script:** `train_fnet_component.py`
+**Description:** Evaluates an FNet block component using pure NumPy. This component tests replacing standard self-attention with a parameter-free 2D Fourier Transform for mixing over sequence and hidden dimensions, maintaining sequence modeling capabilities while avoiding attention overhead.

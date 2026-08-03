@@ -78,3 +78,4 @@
 0078_train_cbow_component
 0079_train_gumbel_softmax_component
 0080_train_perceiver_component
+0081_train_fnet_component
