@@ -593,3 +593,9 @@
 - **Action:** Implemented an FNet Block component in `train_fnet_component.py` using NumPy`s FFT and evaluated it on a sequence inversion task with manual backpropagation.
 - **Outcome:** The model successfully converged (Final Loss: ~0.258), learning sequence relationships without attention parameters.
 - **Next Steps:** Consider integrating the FNet block into larger encoder structures to compare performance against standard Transformer blocks on more complex tasks.
+
+### Experiment 0082: Predictive Coding Network (PCN)
+- **Hypothesis:** We can learn complex non-linear representations using a biologically plausible local learning rule instead of global backpropagation, by performing iterative inference to minimize local prediction errors and updating weights based on these settled states.
+- **Action:** Implemented a PCN component in `train_pcn_component.py` using NumPy, tested on a Sine wave regression dataset.
+- **Outcome:** The model successfully converged (Final MSE: ~0.0009), demonstrating that local Hebbian-like updates on prediction errors are sufficient for learning.
+- **Next Steps:** Investigate scaling this local learning rule to deeper architectures or comparing its sample efficiency directly against equivalent models trained with standard backpropagation.
