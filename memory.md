@@ -638,3 +638,9 @@
 - **Action:** Implemented Decoupled Neural Interfaces in `train_dni_component.py` using NumPy.
 - **Outcome:** The network converged successfully using synthetic gradients on local layer updates.
 - **Next Steps:** Evaluate the scaling characteristics of synthetic gradients on deeper architectures or recurrent models where BPTT locking is severe.
+
+### Experiment 0090: Mixture Density Network (MDN)
+- **Hypothesis:** We can model multi-modal conditional probability distributions $p(y|x)$ by outputting the parameters (mixing coefficients, means, and variances) of a Gaussian Mixture Model from a neural network.
+- **Action:** Implemented a Mixture Density Network in `train_mdn_component.py` using NumPy.
+- **Outcome:** The network successfully minimized the Negative Log-Likelihood, learning the mapping for an inverse kinematics toy problem where one input corresponds to multiple possible outputs.
+- **Next Steps:** Explore MDNs for sequence modeling or advanced reinforcement learning environments requiring multi-modal continuous action spaces.
