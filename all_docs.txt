@@ -86,3 +86,4 @@
 0086_train_weight_normalization_component
 0087_train_ebm_component
 0088_train_dni_component
+0089_train_es_component

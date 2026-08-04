@@ -13,6 +13,7 @@ train_dni_component
 train_dpo_component
 train_dropout_component
 train_ebm_component
+train_es_component
 train_evaluation_metrics_component
 train_ffn_component
 train_fnet_component

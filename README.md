@@ -1176,3 +1176,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_dni_component.py`
 **Description:** Evaluates Decoupled Neural Interfaces (DNI) using Synthetic Gradients, verifying that layers can be updated asynchronously by predicting their own error gradients, enabling decoupled backward passes without locking.
+## Component Testing: Evolution Strategies (ES)
+
+**Script:** `train_es_component.py`
+**Description:** Evaluates an Evolution Strategies (ES) component, verifying gradient-free black-box optimization of neural network weights using stochastic parameter perturbations and fitness-based updates, successfully learning a non-linear regression mapping without backpropagation.
