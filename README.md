@@ -1160,3 +1160,11 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_deepsets_component.py`
 **Description:** Evaluates a Deep Sets component, verifying its ability to process unordered sets by applying permutation-invariant transformations using element-wise processing and pooling operations.
+## Component Testing: Spectral Normalization
+
+**Script:** `train_spectral_normalization_component.py`
+**Description:** Evaluates a Spectral Normalization component, verifying that applying power iteration to constrain the Lipschitz constant allows for stable forward and backward passes.
+## Component Testing: Weight Normalization
+
+**Script:** `train_weight_normalization_component.py`
+**Description:** Evaluates a Weight Normalization component, verifying that decoupling the weight length from its direction using reparameterization allows for stable gradients and successful convergence.

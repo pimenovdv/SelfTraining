@@ -611,3 +611,15 @@
 - **Action:** Implemented a Deep Sets component in `train_deepsets_component.py` using pure NumPy to classify sets based on sum thresholding.
 - **Outcome:** The model successfully learned permutation-invariant features and converged on the set classification task.
 - **Next Steps:** Consider exploring point cloud processing or multi-agent environments using set-based representations.
+
+### Experiment 0085: Spectral Normalization
+- **Hypothesis:** We can enforce Lipschitz continuity in linear layers without computationally expensive regularizations by using power iterations to divide weight matrices by their largest singular value.
+- **Action:** Implemented a Spectral Normalization component in `train_spectral_normalization_component.py` using NumPy.
+- **Outcome:** The network converged successfully on a binary classification task.
+- **Next Steps:** Evaluate its impact on stabilizing Generative Adversarial Networks (GANs).
+
+### Experiment 0086: Weight Normalization
+- **Hypothesis:** Decoupling the length of weight vectors from their direction accelerates convergence and is suitable for tasks where batch statistics are unavailable or noisy.
+- **Action:** Implemented a Weight Normalization component in `train_weight_normalization_component.py` using NumPy.
+- **Outcome:** The network converged successfully and rapidly on a binary classification task.
+- **Next Steps:** Compare convergence speed directly against Batch Normalization and RMSNorm in deeper architectures.

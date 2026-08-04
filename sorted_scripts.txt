@@ -36,7 +36,9 @@ train_rope_component
 train_scaling_laws_component
 train_selective_ssm_component
 train_skipgram_component
+train_spectral_normalization_component
 train_ssm_component
 train_swiglu_component
 train_transformer_block_component
 train_vae_component
+train_weight_normalization_component

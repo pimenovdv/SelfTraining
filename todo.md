@@ -27,6 +27,7 @@
 - [x] Explore and implement graph-based models mathematically. (Implemented and verified Graph Convolutional Network - GCN, and Graph Attention Network - GAT).
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Batch Normalization for stabilizing and accelerating deep network training).
 - [x] Develop grouped feature normalization. (Implemented Group Normalization as an alternative to Batch Normalization for small batch sizes).
+- [x] Develop optimized implementations of successful theoretical models. (Implemented Spectral Normalization using power iteration for Lipschitz continuity, and Weight Normalization for decoupling weight length from direction).
 - [x] Investigate generalization dynamics (Grokking) and structural representation learning mathematically. (Implemented Grokking MLP for modular arithmetic to observe memorization vs generalization phases).
 
 - [x] Explore and implement generative models mathematically. (Implemented and verified Denoising Diffusion Probabilistic Model (DDPM) reverse process).
