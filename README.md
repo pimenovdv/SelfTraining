@@ -1180,3 +1180,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_es_component.py`
 **Description:** Evaluates an Evolution Strategies (ES) component, verifying gradient-free black-box optimization of neural network weights using stochastic parameter perturbations and fitness-based updates, successfully learning a non-linear regression mapping without backpropagation.
+## Component Testing: Mixture Density Network (MDN)
+
+**Script:** `train_mdn_component.py`
+**Description:** Evaluates a Mixture Density Network (MDN) component, verifying that it can learn multi-modal conditional probability distributions by parameterizing a Gaussian Mixture Model, successfully minimizing Negative Log-Likelihood on a toy inverse kinematics problem.
