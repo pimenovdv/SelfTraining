@@ -17,6 +17,7 @@
 * *(Date: Current)* - Successfully implemented and tested an MLP-Mixer block mathematically in pure NumPy. Confirmed that a sequence of Token-mixing MLPs (operating across the sequence dimension on transposed features) and Channel-mixing MLPs (operating across the channel dimension) can effectively model sequences without attention mechanisms, routing gradients correctly through transpose operations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Batch Normalization mathematically. Confirmed that normalizing across the batch dimension and learning scale/shift parameters accelerates convergence and effectively routes gradients back through mean and variance calculations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Group Normalization mathematically. Confirmed that dividing channels into groups and normalizing within those groups allows stable normalization independent of batch size, correctly routing gradients through reshaped features via manual backpropagation.
+* *(Date: Current)* - Successfully implemented and tested an Energy-Based Model (EBM) mathematically in pure NumPy. Confirmed that using Contrastive Divergence alongside Langevin Dynamics effectively learns an energy surface that models a continuous target distribution.
 
 * *(Date: Current)* - Explored Grokking on a modular addition task mathematically in pure NumPy. Confirmed that standard cross-entropy and gradient descent initially memorize the algorithmic dataset by overfitting spurious patterns (reaching 100% train accuracy while test accuracy remains at random chance), forming the necessary pre-condition for the later structural representation generalization phase.
 * *(Date: Current)* - Successfully implemented and tested Elastic Weight Consolidation (EWC) mathematically. Confirmed that computing the Fisher Information Matrix to approximate parameter importance and applying a targeted L2 penalty allows the model to learn a sequential task while significantly mitigating catastrophic forgetting of a previous task, verified via manual backpropagation.
@@ -623,3 +624,9 @@
 - **Action:** Implemented a Weight Normalization component in `train_weight_normalization_component.py` using NumPy.
 - **Outcome:** The network converged successfully and rapidly on a binary classification task.
 - **Next Steps:** Compare convergence speed directly against Batch Normalization and RMSNorm in deeper architectures.
+
+### Experiment 0087: Energy-Based Model (EBM)
+- **Hypothesis:** We can learn an implicit probability distribution by parameterizing an energy function mapping inputs to scalars, and using gradient-based Langevin dynamics to sample from it.
+- **Action:** Implemented an Energy-Based Model in `train_ebm_component.py` using NumPy.
+- **Outcome:** The network successfully converged, lowering the energy of data samples relative to noise samples drawn via Langevin dynamics.
+- **Next Steps:** Explore applying EBMs to continuous control and reinforcement learning settings.

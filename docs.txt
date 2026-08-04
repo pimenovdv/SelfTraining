@@ -84,3 +84,4 @@
 0084_train_deepsets_component
 0085_train_spectral_normalization_component
 0086_train_weight_normalization_component
+0087_train_ebm_component
