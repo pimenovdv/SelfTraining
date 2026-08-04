@@ -1172,3 +1172,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ebm_component.py`
 **Description:** Evaluates an Energy-Based Model component, verifying that it can learn an implicit probability distribution over continuous data by minimizing the energy of real samples and maximizing the energy of negative samples generated via Langevin Dynamics.
+## Component Testing: Decoupled Neural Interfaces (DNI)
+
+**Script:** `train_dni_component.py`
+**Description:** Evaluates Decoupled Neural Interfaces (DNI) using Synthetic Gradients, verifying that layers can be updated asynchronously by predicting their own error gradients, enabling decoupled backward passes without locking.
