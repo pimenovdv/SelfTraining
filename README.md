@@ -1168,3 +1168,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_weight_normalization_component.py`
 **Description:** Evaluates a Weight Normalization component, verifying that decoupling the weight length from its direction using reparameterization allows for stable gradients and successful convergence.
+## Component Testing: Energy-Based Model (EBM)
+
+**Script:** `train_ebm_component.py`
+**Description:** Evaluates an Energy-Based Model component, verifying that it can learn an implicit probability distribution over continuous data by minimizing the energy of real samples and maximizing the energy of negative samples generated via Langevin Dynamics.

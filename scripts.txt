@@ -18,6 +18,7 @@ train_dfa_component
 train_dpo_component
 train_dqn_component
 train_dropout_component
+train_ebm_component
 train_elm_component
 train_esn_component
 train_evaluation_metrics_component
