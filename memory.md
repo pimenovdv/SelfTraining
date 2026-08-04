@@ -18,6 +18,7 @@
 * *(Date: Current)* - Successfully implemented and tested Batch Normalization mathematically. Confirmed that normalizing across the batch dimension and learning scale/shift parameters accelerates convergence and effectively routes gradients back through mean and variance calculations via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested Group Normalization mathematically. Confirmed that dividing channels into groups and normalizing within those groups allows stable normalization independent of batch size, correctly routing gradients through reshaped features via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested an Energy-Based Model (EBM) mathematically in pure NumPy. Confirmed that using Contrastive Divergence alongside Langevin Dynamics effectively learns an energy surface that models a continuous target distribution.
+* *(Date: Current)* - Successfully implemented and tested Decoupled Neural Interfaces (DNI) mathematically in pure NumPy. Confirmed that using auxiliary networks to predict synthetic gradients allows layers to update asynchronously, bypassing standard backpropagation locks.
 
 * *(Date: Current)* - Explored Grokking on a modular addition task mathematically in pure NumPy. Confirmed that standard cross-entropy and gradient descent initially memorize the algorithmic dataset by overfitting spurious patterns (reaching 100% train accuracy while test accuracy remains at random chance), forming the necessary pre-condition for the later structural representation generalization phase.
 * *(Date: Current)* - Successfully implemented and tested Elastic Weight Consolidation (EWC) mathematically. Confirmed that computing the Fisher Information Matrix to approximate parameter importance and applying a targeted L2 penalty allows the model to learn a sequential task while significantly mitigating catastrophic forgetting of a previous task, verified via manual backpropagation.
@@ -630,3 +631,9 @@
 - **Action:** Implemented an Energy-Based Model in `train_ebm_component.py` using NumPy.
 - **Outcome:** The network successfully converged, lowering the energy of data samples relative to noise samples drawn via Langevin dynamics.
 - **Next Steps:** Explore applying EBMs to continuous control and reinforcement learning settings.
+
+### Experiment 0088: Decoupled Neural Interfaces (DNI)
+- **Hypothesis:** We can decouple layers during backpropagation by using auxiliary networks to predict synthetic gradients, enabling asynchronous training updates.
+- **Action:** Implemented Decoupled Neural Interfaces in `train_dni_component.py` using NumPy.
+- **Outcome:** The network converged successfully using synthetic gradients on local layer updates.
+- **Next Steps:** Evaluate the scaling characteristics of synthetic gradients on deeper architectures or recurrent models where BPTT locking is severe.

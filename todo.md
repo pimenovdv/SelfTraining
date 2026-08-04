@@ -29,6 +29,7 @@
 - [x] Develop grouped feature normalization. (Implemented Group Normalization as an alternative to Batch Normalization for small batch sizes).
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Spectral Normalization using power iteration for Lipschitz continuity, and Weight Normalization for decoupling weight length from direction).
 - [x] Investigate generalization dynamics (Grokking) and structural representation learning mathematically. (Implemented Grokking MLP for modular arithmetic to observe memorization vs generalization phases).
+- [x] Explore decoupled neural updates mathematically. (Implemented and verified Decoupled Neural Interfaces (DNI) with Synthetic Gradients).
 
 - [x] Explore and implement generative models mathematically. (Implemented and verified Denoising Diffusion Probabilistic Model (DDPM) reverse process).
 - [x] Explore and implement discrete generative representation models mathematically. (Implemented and verified VQ-VAE with Straight-Through Estimator).
