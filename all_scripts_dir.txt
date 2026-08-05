@@ -1,3 +1,4 @@
+./train_nade_component.py
 train_actor_critic_component
 train_adaln_component
 train_adamw_component

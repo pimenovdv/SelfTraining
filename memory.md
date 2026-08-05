@@ -650,3 +650,9 @@
 - **Action:** Implemented a RealNVP Normalizing Flow in `train_realnvp_component.py` using NumPy.
 - **Outcome:** The network successfully minimized the Negative Log-Likelihood on a 2D dataset, transforming it to match an isotropic Gaussian.
 - **Next Steps:** Explore applying invertible architectures and normalizing flows to high-dimensional generation tasks (e.g., images) or as expressive prior distributions for VAEs.
+
+### Experiment 0092: Neural Autoregressive Distribution Estimator (NADE)
+- **Hypothesis:** We can model the exact joint probability distribution of high-dimensional binary data by factoring it into a product of conditional distributions, sharing weights across these conditionals for efficiency.
+- **Action:** Implemented a Neural Autoregressive Distribution Estimator (NADE) in `train_nade_component.py` using NumPy.
+- **Outcome:** The network successfully minimized the Negative Log-Likelihood on a synthetic sequential binary dataset, learning the conditional probabilities.
+- **Next Steps:** Explore applying autoregressive models to more complex sequential generation tasks or combining them with other generative frameworks.
