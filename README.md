@@ -1184,3 +1184,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_mdn_component.py`
 **Description:** Evaluates a Mixture Density Network (MDN) component, verifying that it can learn multi-modal conditional probability distributions by parameterizing a Gaussian Mixture Model, successfully minimizing Negative Log-Likelihood on a toy inverse kinematics problem.
+## Component Testing: RealNVP
+
+**Script:** `train_realnvp_component.py`
+**Description:** Evaluates a RealNVP Normalizing Flow component, verifying its ability to model complex distributions by transforming simple base distributions using invertible affine coupling layers.

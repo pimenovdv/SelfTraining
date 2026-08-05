@@ -88,3 +88,4 @@
 0088_train_dni_component
 0089_train_es_component
 0090_train_mdn_component
+0091_train_realnvp_component
