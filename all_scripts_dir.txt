@@ -1,4 +1,6 @@
+./train_dae_component.py
 ./train_nade_component.py
+./train_siren_component.py
 train_actor_critic_component
 train_adaln_component
 train_adamw_component
@@ -90,4 +92,3 @@ train_transformer_block_component
 train_vae_component
 train_vqvae_component
 train_weight_normalization_component
-./train_dae_component.py
