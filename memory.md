@@ -669,3 +669,9 @@
 - **Action:** Implemented a Conditional Neural Process in `train_cnp_component.py` using NumPy.
 - **Outcome:** The network successfully minimized Negative Log-Likelihood on a family of sine waves, learning to infer the underlying function from a few context points.
 - **Next Steps:** Explore applying CNPs or their attention-based variants (NPs, ANPs) to time-series forecasting or complex meta-learning tasks.
+
+### Experiment 0096: SimSiam (Simple Siamese Networks)
+- **Hypothesis:** We can learn meaningful representations without contrastive learning (negative pairs) or moving average momentum encoders by using a Siamese architecture with a predictor network on one branch and a stop-gradient operation on the other to prevent collapse.
+- **Action:** Implemented SimSiam in `train_simsiam_component.py` using pure NumPy, including the encoder, predictor, and cosine similarity loss.
+- **Outcome:** The network successfully minimized the negative cosine similarity between differently augmented views of the same data, confirming that representations were learned without collapsing into trivial constant solutions.
+- **Next Steps:** Explore applying self-supervised non-contrastive methods to larger-scale image or sequence data to pretrain robust, generalizable encoders.

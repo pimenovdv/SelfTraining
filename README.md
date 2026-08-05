@@ -1204,3 +1204,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_cnp_component.py`
 **Description:** Evaluates a Conditional Neural Process (CNP) component, verifying its ability to model distributions over functions (meta-learning) by processing context points into a global representation and predicting parameters of target distributions for a family of sine waves via manual backpropagation.
+## Component Testing: SimSiam (Simple Siamese Networks)
+
+**Script:** `train_simsiam_component.py`
+**Description:** Evaluates a SimSiam component for non-contrastive self-supervised representation learning, verifying its ability to prevent representation collapse using a stop-gradient operation and a predictor network without requiring negative pairs, optimized via manual backpropagation.
