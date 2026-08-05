@@ -1192,3 +1192,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_nade_component.py`
 **Description:** Evaluates a Neural Autoregressive Distribution Estimator (NADE), verifying its ability to model the joint probability distribution of binary data by factoring it into a product of conditional distributions, optimizing exact likelihood via backpropagation.
+## Component Testing: Denoising Autoencoder (DAE)
+
+**Script:** `train_dae_component.py`
+**Description:** Evaluates a Denoising Autoencoder (DAE) component, verifying that it can learn robust representations by reconstructing original data from artificially corrupted (noisy) inputs using manual backpropagation.
