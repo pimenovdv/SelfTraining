@@ -663,3 +663,9 @@
 - **Action:** Implemented a Sinusoidal Representation Network (SIREN) in `train_siren_component.py` using pure NumPy.
 - **Outcome:** The network successfully fit a high-frequency 1D composite signal ($y = \sin(10x) + \cos(25x)$) with very low error using manual backpropagation.
 - **Next Steps:** Explore applying implicit neural representations (like SIREN) to higher-dimensional signals such as images or audio, or incorporating them into larger generative architectures.
+
+### Experiment 0095: Conditional Neural Process (CNP)
+- **Hypothesis:** We can model a distribution over functions and perform few-shot regression by encoding context points into a global representation and decoding it along with target inputs to predict output distributions.
+- **Action:** Implemented a Conditional Neural Process in `train_cnp_component.py` using NumPy.
+- **Outcome:** The network successfully minimized Negative Log-Likelihood on a family of sine waves, learning to infer the underlying function from a few context points.
+- **Next Steps:** Explore applying CNPs or their attention-based variants (NPs, ANPs) to time-series forecasting or complex meta-learning tasks.

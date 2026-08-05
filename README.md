@@ -1200,3 +1200,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_siren_component.py`
 **Description:** Evaluates a Sinusoidal Representation Network (SIREN) component, verifying its ability to model complex, high-frequency continuous implicit representations using sine activation functions and a specialized initialization scheme via manual backpropagation.
+## Component Testing: Conditional Neural Process (CNP)
+
+**Script:** `train_cnp_component.py`
+**Description:** Evaluates a Conditional Neural Process (CNP) component, verifying its ability to model distributions over functions (meta-learning) by processing context points into a global representation and predicting parameters of target distributions for a family of sine waves via manual backpropagation.
