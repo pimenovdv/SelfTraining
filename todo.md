@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore invertible generative modeling mathematically. (Implemented and verified RealNVP Normalizing Flow).
 - [x] Explore permutation-invariant architectures mathematically. (Implemented and verified Deep Sets component).
 - [x] Explore structural representation learning mathematically. (Implemented and verified Capsule Network with dynamic routing).
 - [x] Explore biologically plausible alternatives to backpropagation mathematically. (Implemented and verified Predictive Coding Network - PCN using local iterative inference and Hebbian learning).

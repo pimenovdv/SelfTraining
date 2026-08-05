@@ -644,3 +644,9 @@
 - **Action:** Implemented a Mixture Density Network in `train_mdn_component.py` using NumPy.
 - **Outcome:** The network successfully minimized the Negative Log-Likelihood, learning the mapping for an inverse kinematics toy problem where one input corresponds to multiple possible outputs.
 - **Next Steps:** Explore MDNs for sequence modeling or advanced reinforcement learning environments requiring multi-modal continuous action spaces.
+
+### Experiment 0091: RealNVP Normalizing Flow
+- **Hypothesis:** We can model complex, high-dimensional probability distributions exactly by applying a series of invertible, learnable transformations (a normalizing flow) to a simple base distribution like a Gaussian.
+- **Action:** Implemented a RealNVP Normalizing Flow in `train_realnvp_component.py` using NumPy.
+- **Outcome:** The network successfully minimized the Negative Log-Likelihood on a 2D dataset, transforming it to match an isotropic Gaussian.
+- **Next Steps:** Explore applying invertible architectures and normalizing flows to high-dimensional generation tasks (e.g., images) or as expressive prior distributions for VAEs.
