@@ -18,6 +18,7 @@
 - [x] Explore biologically plausible alternatives to backpropagation mathematically. (Implemented and verified Predictive Coding Network - PCN using local iterative inference and Hebbian learning).
 - [x] Explore differentiable discrete sampling mathematically. (Implemented and verified Gumbel-Softmax estimator).
 - [x] Explore representation learning via word embeddings mathematically. (Implemented and verified Skip-Gram with Negative Sampling).
+- [x] Explore non-contrastive self-supervised representation learning mathematically. (Implemented and verified SimSiam utilizing stop-gradient to prevent representation collapse).
 - [x] Explore differentiable external memory structures mathematically. (Implemented and verified Neural Turing Machine - NTM with content-based addressing and differentiable read/write).
 - [x] Explore topological representation learning mathematically. (Implemented and verified Self-Organizing Map - SOM).
 - [x] Explore liquid time-constant dynamics mathematically. (Implemented and verified Liquid Time-Constant Network - LTC).
