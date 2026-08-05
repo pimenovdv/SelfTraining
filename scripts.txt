@@ -58,6 +58,7 @@ train_mlpmixer_component
 train_moe_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
+train_nade_component
 train_nca_component
 train_neural_ode_component
 train_ntm_component

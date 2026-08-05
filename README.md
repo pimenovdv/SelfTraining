@@ -1188,3 +1188,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_realnvp_component.py`
 **Description:** Evaluates a RealNVP Normalizing Flow component, verifying its ability to model complex distributions by transforming simple base distributions using invertible affine coupling layers.
+## Component Testing: Neural Autoregressive Distribution Estimator (NADE)
+
+**Script:** `train_nade_component.py`
+**Description:** Evaluates a Neural Autoregressive Distribution Estimator (NADE), verifying its ability to model the joint probability distribution of binary data by factoring it into a product of conditional distributions, optimizing exact likelihood via backpropagation.

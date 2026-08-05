@@ -37,6 +37,7 @@
 - [x] Explore and implement adversarial generative models mathematically. (Implemented and verified Generative Adversarial Network - GAN).
 - [x] Explore and implement energy-based generative models mathematically. (Implemented and verified Restricted Boltzmann Machine - RBM using Contrastive Divergence).
 - [x] Explore and implement continuous energy-based generative models mathematically. (Implemented and verified Energy-Based Model - EBM using Langevin Dynamics).
+- [x] Explore and implement autoregressive generative models mathematically. (Implemented and verified Neural Autoregressive Distribution Estimator - NADE).
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Linear Attention using ELU+1 feature map to reduce $O(N^2)$ complexity to $O(N)$).
 
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Retention mechanism bridging Transformer parallelization with RNN $O(1)$ recurrent inference).
