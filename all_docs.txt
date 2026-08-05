@@ -90,3 +90,4 @@
 0090_train_mdn_component
 0091_train_realnvp_component
 docs/0092_train_nade_component.md
+docs/0093_train_dae_component.md

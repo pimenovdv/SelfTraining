@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore robust representation learning mathematically. (Implemented and verified Denoising Autoencoder - DAE reconstructing data from noisy inputs).
 - [x] Explore invertible generative modeling mathematically. (Implemented and verified RealNVP Normalizing Flow).
 - [x] Explore permutation-invariant architectures mathematically. (Implemented and verified Deep Sets component).
 - [x] Explore structural representation learning mathematically. (Implemented and verified Capsule Network with dynamic routing).
