@@ -657,3 +657,9 @@
 - **Action:** Implemented a Neural Autoregressive Distribution Estimator (NADE) in `train_nade_component.py` using NumPy.
 - **Outcome:** The network successfully minimized the Negative Log-Likelihood on a synthetic sequential binary dataset, learning the conditional probabilities.
 - **Next Steps:** Explore applying autoregressive models to more complex sequential generation tasks or combining them with other generative frameworks.
+
+### Experiment 0094: Sinusoidal Representation Network (SIREN)
+- **Hypothesis:** Neural networks with periodic activation functions (sine) and a specific initialization scheme can effectively model complex natural signals and their derivatives, overcoming the spectral bias of standard MLPs.
+- **Action:** Implemented a Sinusoidal Representation Network (SIREN) in `train_siren_component.py` using pure NumPy.
+- **Outcome:** The network successfully fit a high-frequency 1D composite signal ($y = \sin(10x) + \cos(25x)$) with very low error using manual backpropagation.
+- **Next Steps:** Explore applying implicit neural representations (like SIREN) to higher-dimensional signals such as images or audio, or incorporating them into larger generative architectures.

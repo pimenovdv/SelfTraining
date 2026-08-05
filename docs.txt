@@ -91,3 +91,4 @@
 0091_train_realnvp_component
 0092_train_nade_component
 0093_train_dae_component
+0094_train_siren_component

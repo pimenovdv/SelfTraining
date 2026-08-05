@@ -91,3 +91,4 @@
 0091_train_realnvp_component
 docs/0092_train_nade_component.md
 docs/0093_train_dae_component.md
+docs/0094_train_siren_component.md

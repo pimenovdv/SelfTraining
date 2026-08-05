@@ -1196,3 +1196,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_dae_component.py`
 **Description:** Evaluates a Denoising Autoencoder (DAE) component, verifying that it can learn robust representations by reconstructing original data from artificially corrupted (noisy) inputs using manual backpropagation.
+## Component Testing: Sinusoidal Representation Networks (SIREN)
+
+**Script:** `train_siren_component.py`
+**Description:** Evaluates a Sinusoidal Representation Network (SIREN) component, verifying its ability to model complex, high-frequency continuous implicit representations using sine activation functions and a specialized initialization scheme via manual backpropagation.
