@@ -94,5 +94,6 @@ train_swiglu_component
 train_tcn_component
 train_transformer_block_component
 train_vae_component
+train_vit_component
 train_vqvae_component
 train_weight_normalization_component

@@ -1,6 +1,12 @@
+./train_cnp_component.py
 ./train_dae_component.py
+./train_flow_matching_component.py
+./train_icm_component.py
+./train_mae_component.py
 ./train_nade_component.py
+./train_simsiam_component.py
 ./train_siren_component.py
+./train_vit_component.py
 train_actor_critic_component
 train_adaln_component
 train_adamw_component
@@ -92,8 +98,3 @@ train_transformer_block_component
 train_vae_component
 train_vqvae_component
 train_weight_normalization_component
-./train_cnp_component.py
-./train_simsiam_component.py
-./train_icm_component.py
-./train_flow_matching_component.py
-./train_mae_component.py

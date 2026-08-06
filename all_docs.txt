@@ -97,3 +97,4 @@ docs/0096_train_simsiam_component.md
 docs/0097_train_icm_component.md
 docs/0098_train_flow_matching_component.md
 docs/0099_train_mae_component.md
+docs/0100_train_vit_component.md

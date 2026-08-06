@@ -1222,3 +1222,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_mae_component.py`
 **Description:** Evaluates a Masked Autoencoder (MAE) component for self-supervised representation learning, verifying its ability to reconstruct original data from heavily masked inputs using an asymmetric encoder-decoder architecture via manual backpropagation.
+
+## Component Testing: Vision Transformer (ViT)
+
+**Script:** `train_vit_component.py`
+**Description:** Evaluates a Vision Transformer (ViT) component, verifying its ability to model spatial dependencies by treating images as sequences of non-overlapping patches, prepending a learnable class token, and processing them through multi-head self-attention via manual backpropagation.
