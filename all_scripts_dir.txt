@@ -95,3 +95,4 @@ train_weight_normalization_component
 ./train_cnp_component.py
 ./train_simsiam_component.py
 ./train_icm_component.py
+./train_flow_matching_component.py
