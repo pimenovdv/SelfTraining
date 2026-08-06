@@ -682,3 +682,9 @@
 - **Action:** Implemented Flow Matching (Continuous Normalizing Flow) in `train_flow_matching_component.py` using pure NumPy with an Adam Optimizer.
 - **Outcome:** The network successfully minimized the vector field matching loss. Euler integration of the learned vector field accurately transported base Gaussian samples into a target distribution forming a 2D ring of 8 Gaussians.
 - **Next Steps:** Explore optimal transport variants of Flow Matching or integrate the flow into generation tasks in higher dimensions.
+
+### Experiment 0099: Masked Autoencoder (MAE)
+- **Hypothesis:** We can learn robust representations of data by masking a significant portion of the input and training a network to reconstruct the missing parts using an asymmetric encoder-decoder architecture.
+- **Action:** Implemented Masked Autoencoder in `train_mae_component.py` using pure NumPy.
+- **Outcome:** The network successfully minimized the MSE loss, effectively learning to reconstruct the masked portions of the input sequences using pure mathematical operations.
+- **Next Steps:** Explore applying self-supervised masked modeling to larger-scale image (ViT) or sequence data to pretrain robust, generalizable encoders.
