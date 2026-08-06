@@ -1232,3 +1232,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_barlow_twins_component.py`
 **Description:** Evaluates a Barlow Twins component for non-contrastive self-supervised representation learning, verifying its ability to prevent representation collapse by driving the cross-correlation matrix between representations of distorted versions of a sample to the identity matrix via manual backpropagation.
+
+## Component Testing: Hebbian Learning (Oja's Rule)
+
+**Script:** `train_hebbian_component.py`
+**Description:** Evaluates a Hebbian Learning component using Oja's rule, verifying its ability to extract the first principal component of input data using a biologically plausible, gradient-free learning rule.
