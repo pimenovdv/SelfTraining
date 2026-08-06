@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore intrinsic motivation and curiosity-driven exploration mathematically. (Implemented and verified Intrinsic Curiosity Module - ICM).
 - [x] Explore robust representation learning mathematically. (Implemented and verified Denoising Autoencoder - DAE reconstructing data from noisy inputs).
 - [x] Explore continuous implicit representations mathematically. (Implemented and verified Sinusoidal Representation Network - SIREN for modeling complex high-frequency signals).
 - [x] Explore invertible generative modeling mathematically. (Implemented and verified RealNVP Normalizing Flow).

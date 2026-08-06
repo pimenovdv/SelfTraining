@@ -94,3 +94,4 @@ train_vqvae_component
 train_weight_normalization_component
 train_cnp_component
 train_simsiam_component
+train_icm_component
