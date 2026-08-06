@@ -1,3 +1,4 @@
+./train_barlow_twins_component.py
 ./train_cnp_component.py
 ./train_dae_component.py
 ./train_flow_matching_component.py

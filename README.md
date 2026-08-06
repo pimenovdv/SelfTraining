@@ -1227,3 +1227,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_vit_component.py`
 **Description:** Evaluates a Vision Transformer (ViT) component, verifying its ability to model spatial dependencies by treating images as sequences of non-overlapping patches, prepending a learnable class token, and processing them through multi-head self-attention via manual backpropagation.
+
+## Component Testing: Barlow Twins
+
+**Script:** `train_barlow_twins_component.py`
+**Description:** Evaluates a Barlow Twins component for non-contrastive self-supervised representation learning, verifying its ability to prevent representation collapse by driving the cross-correlation matrix between representations of distorted versions of a sample to the identity matrix via manual backpropagation.
