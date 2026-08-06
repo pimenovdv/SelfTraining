@@ -45,6 +45,7 @@ train_gumbel_softmax_component
 train_highway_component
 train_hopfield_component
 train_hypernetwork_component
+train_icm_component
 train_kan_component
 train_knowledge_distillation_component
 train_layernorm_component

@@ -94,3 +94,4 @@
 0094_train_siren_component
 0095_train_cnp_component
 0096_train_simsiam_component
+0097_train_icm_component
