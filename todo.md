@@ -73,6 +73,8 @@
 
 - [x] Explore self-organizing pattern generation mathematically. (Implemented and verified Neural Cellular Automata (NCA) growing a pattern from a seed).
 
+- [x] Explore continuous normalizing flows via vector field regression mathematically. (Implemented and verified Flow Matching).
+
 ## Phase 3: Integration and Capability Emergence
 
 - [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block, Decoder Block combining components, and a full end-to-end Encoder-Decoder architecture).

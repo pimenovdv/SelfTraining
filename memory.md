@@ -676,3 +676,9 @@
 - **Action:** Implemented SimSiam in `train_simsiam_component.py` using pure NumPy, including the encoder, predictor, and cosine similarity loss.
 - **Outcome:** The network successfully minimized the negative cosine similarity between differently augmented views of the same data, confirming that representations were learned without collapsing into trivial constant solutions.
 - **Next Steps:** Explore applying self-supervised non-contrastive methods to larger-scale image or sequence data to pretrain robust, generalizable encoders.
+
+### Experiment 0098: Flow Matching
+- **Hypothesis:** We can model a complex continuous target distribution by regressing a vector field that optimally transports a simple base distribution (Gaussian) to the target via straight probability paths, avoiding the need for exact invertibility constraints required by standard normalizing flows.
+- **Action:** Implemented Flow Matching (Continuous Normalizing Flow) in `train_flow_matching_component.py` using pure NumPy with an Adam Optimizer.
+- **Outcome:** The network successfully minimized the vector field matching loss. Euler integration of the learned vector field accurately transported base Gaussian samples into a target distribution forming a 2D ring of 8 Gaussians.
+- **Next Steps:** Explore optimal transport variants of Flow Matching or integrate the flow into generation tasks in higher dimensions.

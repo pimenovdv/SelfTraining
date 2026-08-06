@@ -1212,3 +1212,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_icm_component.py`
 **Description:** Evaluates an Intrinsic Curiosity Module (ICM) component, verifying its ability to encourage exploration by generating intrinsic reward through predicting the next state feature representation (forward model) and learning action-conditioned representations (inverse model) via manual backpropagation.
+
+## Component Testing: Flow Matching
+
+**Script:** `train_flow_matching_component.py`
+**Description:** Evaluates a Flow Matching component for continuous normalizing flows, verifying its ability to model complex target distributions by regressing a vector field that transports a standard normal distribution via straight probability paths, and sampling from the learned flow using Euler integration via manual backpropagation.
