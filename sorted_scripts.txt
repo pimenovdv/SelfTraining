@@ -53,6 +53,7 @@ train_linear_attention_component
 train_lora_component
 train_lstm_component
 train_ltc_component
+train_mae_component
 train_maml_component
 train_masked_attention_component
 train_mdn_component

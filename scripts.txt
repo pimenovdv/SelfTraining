@@ -96,3 +96,4 @@ train_cnp_component
 train_simsiam_component
 train_icm_component
 train_flow_matching_component
+train_mae_component

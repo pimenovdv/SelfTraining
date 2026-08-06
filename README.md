@@ -1217,3 +1217,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_flow_matching_component.py`
 **Description:** Evaluates a Flow Matching component for continuous normalizing flows, verifying its ability to model complex target distributions by regressing a vector field that transports a standard normal distribution via straight probability paths, and sampling from the learned flow using Euler integration via manual backpropagation.
+
+## Component Testing: Masked Autoencoder (MAE)
+
+**Script:** `train_mae_component.py`
+**Description:** Evaluates a Masked Autoencoder (MAE) component for self-supervised representation learning, verifying its ability to reconstruct original data from heavily masked inputs using an asymmetric encoder-decoder architecture via manual backpropagation.
