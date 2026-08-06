@@ -689,3 +689,9 @@
 - **Action:** Implemented Masked Autoencoder in `train_mae_component.py` using pure NumPy.
 - **Outcome:** The network successfully minimized the MSE loss, effectively learning to reconstruct the masked portions of the input sequences using pure mathematical operations.
 - **Next Steps:** Explore applying self-supervised masked modeling to larger-scale image (ViT) or sequence data to pretrain robust, generalizable encoders.
+
+### Experiment 0101: Barlow Twins
+- **Hypothesis:** We can learn meaningful representations without contrastive learning (negative pairs) or asymmetric momentum encoders by applying a redundancy-reduction objective that drives the cross-correlation matrix between representations of distorted sample versions towards the identity matrix.
+- **Action:** Implemented a Barlow Twins component in `train_barlow_twins_component.py` using pure NumPy, including the manual backpropagation of the cross-correlation loss.
+- **Outcome:** The network successfully minimized the objective, reducing redundancy across feature dimensions and avoiding representation collapse.
+- **Next Steps:** Evaluate the sample efficiency and representation robustness of Barlow Twins against other non-contrastive methods like SimSiam on more complex datasets.

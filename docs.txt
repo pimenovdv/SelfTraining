@@ -98,3 +98,4 @@
 0098_train_flow_matching_component
 0099_train_mae_component
 0100_train_vit_component
+0101_train_barlow_twins_component
