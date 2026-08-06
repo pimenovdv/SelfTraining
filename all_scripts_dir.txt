@@ -99,3 +99,4 @@ train_transformer_block_component
 train_vae_component
 train_vqvae_component
 train_weight_normalization_component
+./train_hebbian_component.py

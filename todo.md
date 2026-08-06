@@ -84,6 +84,7 @@
 - [x] Develop mathematical models for preference alignment and safety. (Implemented and verified Direct Preference Optimization - DPO).
 - [x] Explore continual learning and mitigate catastrophic forgetting mathematically. (Implemented and verified Elastic Weight Consolidation (EWC) using the Fisher Information Matrix to anchor parameters across sequential tasks).
 - [x] Investigate non-iterative, analytical learning methods for rapid representation acquisition. (Implemented and verified Extreme Learning Machine (ELM) solving output weights via pseudoinverse).
+- [x] Explore unsupervised, biologically plausible learning rules mathematically. (Implemented and verified Hebbian Learning using Oja's rule for stable principal component extraction).
 - [ ] Train medium-scale models to observe emergent capabilities.
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.

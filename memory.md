@@ -695,3 +695,9 @@
 - **Action:** Implemented a Barlow Twins component in `train_barlow_twins_component.py` using pure NumPy, including the manual backpropagation of the cross-correlation loss.
 - **Outcome:** The network successfully minimized the objective, reducing redundancy across feature dimensions and avoiding representation collapse.
 - **Next Steps:** Evaluate the sample efficiency and representation robustness of Barlow Twins against other non-contrastive methods like SimSiam on more complex datasets.
+
+### Experiment 0102: Hebbian Learning (Oja's Rule)
+- **Hypothesis:** We can extract the principal component of a dataset without backpropagation by using Oja's rule, a stable, biologically plausible Hebbian learning mechanism that balances correlation-based synaptic growth with weight decay.
+- **Action:** Implemented Hebbian learning with Oja's rule in `train_hebbian_component.py` using pure NumPy.
+- **Outcome:** The network successfully updated its weights to match the theoretical first principal component of the synthetic dataset, verifying the mathematical equivalence between Hebbian plasticity and PCA.
+- **Next Steps:** Explore applying Generalized Hebbian Algorithms to extract multiple principal components or integrate Hebbian rules within competitive learning architectures.

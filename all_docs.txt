@@ -99,3 +99,4 @@ docs/0098_train_flow_matching_component.md
 docs/0099_train_mae_component.md
 docs/0100_train_vit_component.md
 docs/0101_train_barlow_twins_component.md
+docs/0102_train_hebbian_component.md
