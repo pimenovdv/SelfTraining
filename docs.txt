@@ -97,3 +97,4 @@
 0097_train_icm_component
 0098_train_flow_matching_component
 0099_train_mae_component
+0100_train_vit_component
