@@ -724,3 +724,9 @@
 - **Action**: Implemented an Orthogonal RNN component (`train_orthogonal_rnn_component.py`) utilizing the Cayley transform $W = (I - A)(I + A)^{-1}$ with a skew-symmetric matrix $A = V - V^T$ parameterized by unconstrained matrix $V$.
 - **Outcome**: The component trained successfully on a sequential task, demonstrating stable gradients compared to standard RNNs.
 - **Next Steps**: Compare with unitary RNNs or implement more advanced parameterization for recurrent architectures.
+
+### Experiment 0110: Joint Embedding Predictive Architecture (JEPA)
+- **Hypothesis:** We can learn semantic representations by predicting the representation of a target signal from a context signal and a condition/action, utilizing a stop-gradient EMA target encoder to prevent collapse.
+- **Action:** Implemented a JEPA component in `train_jepa_component.py` using pure NumPy, including an online encoder, an EMA target encoder, and a predictor network.
+- **Outcome:** The model successfully minimized the prediction loss without representation collapse.
+- **Next Steps:** Explore applying predictive representation learning to video sequences or hierarchical abstract planning models.

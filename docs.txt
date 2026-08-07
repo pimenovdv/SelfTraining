@@ -104,3 +104,4 @@
 0104_train_wgan_component
 0105_train_byol_component
 0109_train_orthogonal_rnn_component
+0110_train_jepa_component

@@ -81,6 +81,8 @@
 - [x] Explore unsupervised representation learning for non-Gaussian signals mathematically. (Implemented and verified Independent Component Analysis - ICA using FastICA algorithm).
 - [x] Explore non-contrastive self-supervised learning with momentum networks mathematically. (Implemented and verified Bootstrap Your Own Latent - BYOL component).
 
+- [x] Explore predictive representation architectures mathematically. (Implemented and verified Joint Embedding Predictive Architecture - JEPA).
+
 ## Phase 3: Integration and Capability Emergence
 
 - [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block, Decoder Block combining components, and a full end-to-end Encoder-Decoder architecture).

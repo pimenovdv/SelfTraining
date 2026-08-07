@@ -1256,3 +1256,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 ### Orthogonal RNN Component (`train_orthogonal_rnn_component.py`)
 - **Mathematical Basis**: Orthogonal RNNs parameterize the hidden-to-hidden weight matrix to remain orthogonal, preventing gradients from vanishing or exploding over long sequences. We use the Cayley transform $W = (I - A)(I + A)^{-1}$ with a skew-symmetric matrix $A = V - V^T$ parameterized by unconstrained matrix $V$.
 - **Verification**: The component successfully trains on a sequential cumulative sum task, maintaining stable gradient norms during backpropagation.
+
+## Component Testing: Joint Embedding Predictive Architecture (JEPA)
+
+**Script:** `train_jepa_component.py`
+**Description:** Evaluates a Joint Embedding Predictive Architecture (JEPA) component, verifying its ability to learn self-supervised representations by predicting the representation of a target (encoded via an EMA stop-gradient network) from a context and condition using manual backpropagation.
