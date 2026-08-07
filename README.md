@@ -1242,3 +1242,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ica_component.py`
 **Description:** Evaluates an Independent Component Analysis (ICA) component using the FastICA algorithm, verifying its ability to perform blind source separation and recover underlying non-Gaussian signals from linear mixtures via negentropy maximization.
+
+## Component Testing: Wasserstein Generative Adversarial Network (WGAN)
+
+**Script:** `train_wgan_component.py`
+**Description:** Evaluates a Wasserstein GAN (WGAN) component, verifying its ability to generate data approximating a target distribution by optimizing the Earth Mover's distance using a critic and weight clipping via manual backpropagation.

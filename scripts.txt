@@ -31,7 +31,6 @@ train_ewc_component
 train_feedback_alignment_component
 train_ffn_component
 train_flow_matching_component
-train_flow_matching_component
 train_fnet_component
 train_full_encoder_decoder_component
 train_gan_component
@@ -101,3 +100,4 @@ train_vae_component
 train_vit_component
 train_vqvae_component
 train_weight_normalization_component
+train_wgan_component
