@@ -105,3 +105,4 @@ docs/0104_train_wgan_component.md
 docs/0105_train_byol_component.md
 docs/0109_train_orthogonal_rnn_component.md
 docs/0110_train_jepa_component.md
+docs/0111_train_lmu_component.md

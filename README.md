@@ -1261,3 +1261,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_jepa_component.py`
 **Description:** Evaluates a Joint Embedding Predictive Architecture (JEPA) component, verifying its ability to learn self-supervised representations by predicting the representation of a target (encoded via an EMA stop-gradient network) from a context and condition using manual backpropagation.
+
+## Component Testing: Legendre Memory Unit (LMU)
+
+**Script:** `train_lmu_component.py`
+**Description:** Evaluates a Legendre Memory Unit (LMU) component, verifying its ability to model continuous-time representation via analytically derived orthogonal Legendre polynomials, maintaining stable gradients for long-range sequence modeling via manual backpropagation.
