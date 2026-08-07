@@ -100,3 +100,4 @@
 0100_train_vit_component
 0101_train_barlow_twins_component
 0102_train_hebbian_component
+0103_train_ica_component
