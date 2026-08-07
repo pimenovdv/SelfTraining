@@ -1237,3 +1237,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_hebbian_component.py`
 **Description:** Evaluates a Hebbian Learning component using Oja's rule, verifying its ability to extract the first principal component of input data using a biologically plausible, gradient-free learning rule.
+
+## Component Testing: Independent Component Analysis (ICA)
+
+**Script:** `train_ica_component.py`
+**Description:** Evaluates an Independent Component Analysis (ICA) component using the FastICA algorithm, verifying its ability to perform blind source separation and recover underlying non-Gaussian signals from linear mixtures via negentropy maximization.

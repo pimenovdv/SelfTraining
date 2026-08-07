@@ -701,3 +701,8 @@
 - **Action:** Implemented Hebbian learning with Oja's rule in `train_hebbian_component.py` using pure NumPy.
 - **Outcome:** The network successfully updated its weights to match the theoretical first principal component of the synthetic dataset, verifying the mathematical equivalence between Hebbian plasticity and PCA.
 - **Next Steps:** Explore applying Generalized Hebbian Algorithms to extract multiple principal components or integrate Hebbian rules within competitive learning architectures.
+
+### Independent Component Analysis (ICA)
+- **Concept:** Unsupervised blind source separation for non-Gaussian signals.
+- **Action:** Implemented FastICA with fixed-point iteration and negentropy maximization.
+- **Outcome:** Successfully recovered original mixed signals with high correlation, validating its representation learning capabilities.
