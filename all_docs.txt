@@ -101,3 +101,4 @@ docs/0100_train_vit_component.md
 docs/0101_train_barlow_twins_component.md
 docs/0102_train_hebbian_component.md
 docs/0103_train_ica_component.md
+docs/0104_train_wgan_component.md

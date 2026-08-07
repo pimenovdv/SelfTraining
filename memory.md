@@ -706,3 +706,9 @@
 - **Concept:** Unsupervised blind source separation for non-Gaussian signals.
 - **Action:** Implemented FastICA with fixed-point iteration and negentropy maximization.
 - **Outcome:** Successfully recovered original mixed signals with high correlation, validating its representation learning capabilities.
+
+### Experiment 0104: Wasserstein GAN (WGAN)
+- **Hypothesis:** We can mitigate training instability and mode collapse in standard GANs by optimizing the Earth Mover's (Wasserstein-1) distance, replacing the discriminator with a critic (removing the sigmoid activation) and enforcing a Lipschitz constraint via weight clipping.
+- **Action:** Implemented a WGAN component in `train_wgan_component.py` using pure NumPy, including RMSProp optimization and manual backpropagation.
+- **Outcome:** The generator successfully approximated the target 1D Gaussian distribution, demonstrating smoother convergence of the W-distance compared to Jensen-Shannon divergence.
+- **Next Steps:** Explore more advanced Lipschitz enforcement mechanisms, such as WGAN with Gradient Penalty (WGAN-GP).
