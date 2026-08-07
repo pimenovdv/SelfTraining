@@ -712,3 +712,9 @@
 - **Action:** Implemented a WGAN component in `train_wgan_component.py` using pure NumPy, including RMSProp optimization and manual backpropagation.
 - **Outcome:** The generator successfully approximated the target 1D Gaussian distribution, demonstrating smoother convergence of the W-distance compared to Jensen-Shannon divergence.
 - **Next Steps:** Explore more advanced Lipschitz enforcement mechanisms, such as WGAN with Gradient Penalty (WGAN-GP).
+
+### Experiment 0105: Bootstrap Your Own Latent (BYOL)
+- **Hypothesis:** We can learn self-supervised representations without contrastive negative pairs and without avoiding collapse via explicit regularizations by using two interacting networks (online and target), where the target network is updated via an exponential moving average (EMA) of the online network.
+- **Action:** Implemented a BYOL component in `train_byol_component.py` using pure NumPy, including the manual backpropagation of the normalized L2 prediction loss.
+- **Outcome:** The network successfully minimized the objective between the online network's prediction and target network's projection on augmented views, indicating successful representation learning without collapse.
+- **Next Steps:** Compare BYOL's representation quality to contrastive (InfoNCE) and other non-contrastive methods (Barlow Twins, SimSiam).

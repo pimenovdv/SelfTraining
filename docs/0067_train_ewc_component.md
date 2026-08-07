@@ -1,4 +1,5 @@
 # 0067_train_ewc_component
+**Script:** `train_ewc_component.py`
 
 ## Status
 Success

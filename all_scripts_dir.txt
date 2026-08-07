@@ -7,6 +7,7 @@
 ./train_batchnorm_component.py
 ./train_bnn_component.py
 ./train_bpe.py
+./train_byol_component.py
 ./train_capsule_network_component.py
 ./train_cbow_component.py
 ./train_cnp_component.py

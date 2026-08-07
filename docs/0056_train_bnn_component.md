@@ -1,4 +1,5 @@
 # Experiment: 0056_train_bnn_component
+**Script:** `train_bnn_component.py`
 Status: Success
 
 ## Objective

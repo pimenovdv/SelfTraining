@@ -1247,3 +1247,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_wgan_component.py`
 **Description:** Evaluates a Wasserstein GAN (WGAN) component, verifying its ability to generate data approximating a target distribution by optimizing the Earth Mover's distance using a critic and weight clipping via manual backpropagation.
+
+## Component Testing: Bootstrap Your Own Latent (BYOL)
+
+**Script:** `train_byol_component.py`
+**Description:** Evaluates a Bootstrap Your Own Latent (BYOL) component, verifying its ability to learn self-supervised representations without contrastive negative pairs by minimizing the prediction error between online and target networks using an exponential moving average (EMA) momentum update via manual backpropagation.
