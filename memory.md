@@ -718,3 +718,9 @@
 - **Action:** Implemented a BYOL component in `train_byol_component.py` using pure NumPy, including the manual backpropagation of the normalized L2 prediction loss.
 - **Outcome:** The network successfully minimized the objective between the online network's prediction and target network's projection on augmented views, indicating successful representation learning without collapse.
 - **Next Steps:** Compare BYOL's representation quality to contrastive (InfoNCE) and other non-contrastive methods (Barlow Twins, SimSiam).
+
+### Experiment 0109: Orthogonal RNN
+- **Concept**: Preserving gradient norms over long sequences by constraining the hidden weight matrix to be orthogonal.
+- **Action**: Implemented an Orthogonal RNN component (`train_orthogonal_rnn_component.py`) utilizing the Cayley transform $W = (I - A)(I + A)^{-1}$ with a skew-symmetric matrix $A = V - V^T$ parameterized by unconstrained matrix $V$.
+- **Outcome**: The component trained successfully on a sequential task, demonstrating stable gradients compared to standard RNNs.
+- **Next Steps**: Compare with unitary RNNs or implement more advanced parameterization for recurrent architectures.

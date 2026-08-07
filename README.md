@@ -1252,3 +1252,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_byol_component.py`
 **Description:** Evaluates a Bootstrap Your Own Latent (BYOL) component, verifying its ability to learn self-supervised representations without contrastive negative pairs by minimizing the prediction error between online and target networks using an exponential moving average (EMA) momentum update via manual backpropagation.
+
+### Orthogonal RNN Component (`train_orthogonal_rnn_component.py`)
+- **Mathematical Basis**: Orthogonal RNNs parameterize the hidden-to-hidden weight matrix to remain orthogonal, preventing gradients from vanishing or exploding over long sequences. We use the Cayley transform $W = (I - A)(I + A)^{-1}$ with a skew-symmetric matrix $A = V - V^T$ parameterized by unconstrained matrix $V$.
+- **Verification**: The component successfully trains on a sequential cumulative sum task, maintaining stable gradient norms during backpropagation.
