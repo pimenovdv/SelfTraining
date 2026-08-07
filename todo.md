@@ -79,6 +79,7 @@
 - [x] Explore Vision Transformer tokenization mathematically. (Implemented and verified Vision Transformer - ViT parsing images as patches and processing via self-attention).
 
 - [x] Explore unsupervised representation learning for non-Gaussian signals mathematically. (Implemented and verified Independent Component Analysis - ICA using FastICA algorithm).
+- [x] Explore non-contrastive self-supervised learning with momentum networks mathematically. (Implemented and verified Bootstrap Your Own Latent - BYOL component).
 
 ## Phase 3: Integration and Capability Emergence
 

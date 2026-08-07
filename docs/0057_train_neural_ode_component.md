@@ -1,4 +1,5 @@
 # Experiment: 0057_train_neural_ode_component
+**Script:** `train_neural_ode_component.py`
 Status: Success
 
 ## Objective
