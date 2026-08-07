@@ -730,3 +730,7 @@
 - **Action:** Implemented a JEPA component in `train_jepa_component.py` using pure NumPy, including an online encoder, an EMA target encoder, and a predictor network.
 - **Outcome:** The model successfully minimized the prediction loss without representation collapse.
 - **Next Steps:** Explore applying predictive representation learning to video sequences or hierarchical abstract planning models.
+
+## LMU Component Integration
+- Implemented and successfully trained a Legendre Memory Unit (LMU).
+- The LMU utilizes fixed continuous-time matrices (A and B) derived from Legendre polynomials to create a state space model resilient to vanishing gradients over long sequences.
