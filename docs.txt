@@ -103,3 +103,4 @@
 0103_train_ica_component
 0104_train_wgan_component
 0105_train_byol_component
+0109_train_orthogonal_rnn_component

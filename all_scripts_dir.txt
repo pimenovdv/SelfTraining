@@ -70,6 +70,7 @@
 ./train_nca_component.py
 ./train_neural_ode_component.py
 ./train_ntm_component.py
+./train_orthogonal_rnn_component.py
 ./train_pcn_component.py
 ./train_perceiver_component.py
 ./train_positional_encoding_component.py

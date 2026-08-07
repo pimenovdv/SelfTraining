@@ -70,6 +70,7 @@ train_nade_component
 train_nca_component
 train_neural_ode_component
 train_ntm_component
+train_orthogonal_rnn_component
 train_pcn_component
 train_perceiver_component
 train_positional_encoding_component
