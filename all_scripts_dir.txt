@@ -99,6 +99,7 @@
 ./train_spectral_normalization_component.py
 ./train_ssm_component.py
 ./train_swiglu_component.py
+./train_target_propagation_component.py
 ./train_tcn_component.py
 ./train_transformer_block_component.py
 ./train_vae_component.py

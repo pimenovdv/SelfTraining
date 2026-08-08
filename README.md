@@ -1271,3 +1271,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_gflownet_component.py`
 **Description:** Evaluates a GFlowNet agent learning to generate compositional objects with probabilities proportional to a reward function, utilizing manual backpropagation on the Trajectory Balance loss.
+
+## Component Testing: Difference Target Propagation (DTP)
+
+**Script:** `train_target_propagation_component.py`
+**Description:** Evaluates a Difference Target Propagation (DTP) component, verifying a biologically plausible alternative to backpropagation that trains neural networks without requiring symmetric weight matrices or continuous gradients, by using autoencoders to propagate target activations rather than gradients.
