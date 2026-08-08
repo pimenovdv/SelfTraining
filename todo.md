@@ -87,6 +87,8 @@
 
 ## Phase 3: Integration and Capability Emergence
 
+- [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).
+
 - [x] Explore continuous deterministic policy gradients mathematically. (Implemented and verified Deep Deterministic Policy Gradient - DDPG component for continuous action spaces).
 
 - [x] Explore biologically plausible credit assignment mathematically. (Implemented and verified Difference Target Propagation - DTP using local inverse models).
