@@ -1266,3 +1266,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_lmu_component.py`
 **Description:** Evaluates a Legendre Memory Unit (LMU) component, verifying its ability to model continuous-time representation via analytically derived orthogonal Legendre polynomials, maintaining stable gradients for long-range sequence modeling via manual backpropagation.
+
+## Component Testing: Generative Flow Network (GFlowNet)
+
+**Script:** `train_gflownet_component.py`
+**Description:** Evaluates a GFlowNet agent learning to generate compositional objects with probabilities proportional to a reward function, utilizing manual backpropagation on the Trajectory Balance loss.

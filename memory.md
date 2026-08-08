@@ -24,6 +24,7 @@
 * *(Date: Current)* - Successfully implemented and tested an Energy-Based Model (EBM) mathematically in pure NumPy. Confirmed that using Contrastive Divergence alongside Langevin Dynamics effectively learns an energy surface that models a continuous target distribution.
 * *(Date: Current)* - Successfully implemented and tested Decoupled Neural Interfaces (DNI) mathematically in pure NumPy. Confirmed that using auxiliary networks to predict synthetic gradients allows layers to update asynchronously, bypassing standard backpropagation locks.
 
+* *(Date: Current)* - Successfully implemented and tested a Generative Flow Network (GFlowNet) mathematically in pure NumPy. Confirmed that optimizing the Trajectory Balance loss successfully learns a policy that generates objects (paths) with probabilities proportional to a given reward, while correctly estimating the log partition function via manual backpropagation.
 * *(Date: Current)* - Explored Grokking on a modular addition task mathematically in pure NumPy. Confirmed that standard cross-entropy and gradient descent initially memorize the algorithmic dataset by overfitting spurious patterns (reaching 100% train accuracy while test accuracy remains at random chance), forming the necessary pre-condition for the later structural representation generalization phase.
 * *(Date: Current)* - Successfully implemented and tested Elastic Weight Consolidation (EWC) mathematically. Confirmed that computing the Fisher Information Matrix to approximate parameter importance and applying a targeted L2 penalty allows the model to learn a sequential task while significantly mitigating catastrophic forgetting of a previous task, verified via manual backpropagation.
 
@@ -493,7 +494,26 @@
   $\theta \leftarrow \theta + \alpha_\theta \nabla_\theta \log \pi_\theta(a_t | s_t) \delta_t$
   During training with a shared hidden layer, gradients from both the actor's log-probability scaling and the critic's TD error minimization flow backwards through the shared representation.
 
+* **Generative Flow Network (GFlowNet)**
+  Let $s$ be a state and $a$ be an action. The forward policy is $P_F(s_{t+1}|s_t)$.
+  Let $P_B(s_t|s_{t+1})$ be the backward policy (often uniform or fixed).
+  A trajectory $\tau = (s_0, s_1, \dots, s_n)$ has forward probability $P_F(\tau) = \prod P_F(s_{t+1}|s_t)$ and backward probability $P_B(\tau) = \prod P_B(s_t|s_{t+1})$.
+  The Trajectory Balance (TB) loss introduces a learnable parameter $Z$ (partition function):
+  $\mathcal{L}_{TB}(\tau) = (\log Z + \sum \log P_F(s_{t+1}|s_t) - \log R(x) - \sum \log P_B(s_t|s_{t+1}))^2$
+  where $R(x)$ is the reward of the terminal state $x = s_n$.
+  During backpropagation, gradients route back through the TB loss to update both the policy weights predicting $P_F$ and the $\log Z$ parameter.
+
+* **Generative Flow Network (GFlowNet)**
+  Let $s$ be a state and $a$ be an action. The forward policy is $P_F(s_{t+1}|s_t)$.
+  Let $P_B(s_t|s_{t+1})$ be the backward policy (often uniform or fixed).
+  A trajectory $\tau = (s_0, s_1, \dots, s_n)$ has forward probability $P_F(\tau) = \prod P_F(s_{t+1}|s_t)$ and backward probability $P_B(\tau) = \prod P_B(s_t|s_{t+1})$.
+  The Trajectory Balance (TB) loss introduces a learnable parameter $Z$ (partition function):
+  $\mathcal{L}_{TB}(\tau) = (\log Z + \sum \log P_F(s_{t+1}|s_t) - \log R(x) - \sum \log P_B(s_t|s_{t+1}))^2$
+  where $R(x)$ is the reward of the terminal state $x = s_n$.
+  During backpropagation, gradients route back through the TB loss to update both the policy weights predicting $P_F$ and the $\log Z$ parameter.
+
 ## Experimental Summaries
+* **Experiment `0106_train_gflownet_component` (Success):** Implemented and evaluated a Generative Flow Network (GFlowNet) using pure NumPy. Successfully learned to generate trajectories with probabilities proportional to terminal rewards by optimizing the Trajectory Balance loss via manual backpropagation, accurately learning the log partition function.
 * **Experiment `0077_train_skipgram_component` (Success):** Implemented and evaluated a Skip-Gram component using pure NumPy. Successfully learned semantic word clusters by optimizing context and target embeddings using Negative Sampling and manual backpropagation.
 * **Experiment `0078_train_cbow_component` (Success):** Implemented and evaluated a Continuous Bag of Words (CBOW) component using pure NumPy. Successfully learned semantic word clusters by predicting a target word from the average of its context word embeddings using manual backpropagation.
 * **Experiment `0064_train_dqn_component` (Success):** Implemented and evaluated a Deep Q-Network (DQN) using pure NumPy. Successfully verified the mathematical formulation of Q-learning stabilized by experience replay and target networks, learning to navigate a simple grid environment via manual backpropagation.
