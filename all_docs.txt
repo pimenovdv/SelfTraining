@@ -109,3 +109,4 @@ docs/0110_train_jepa_component.md
 docs/0111_train_lmu_component.md
 docs/0112_train_target_propagation_component.md
 docs/0113_train_vib_component.md
+docs/0114_train_ddpg_component.md

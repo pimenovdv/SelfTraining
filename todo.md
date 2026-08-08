@@ -87,6 +87,8 @@
 
 ## Phase 3: Integration and Capability Emergence
 
+- [x] Explore continuous deterministic policy gradients mathematically. (Implemented and verified Deep Deterministic Policy Gradient - DDPG component for continuous action spaces).
+
 - [x] Explore biologically plausible credit assignment mathematically. (Implemented and verified Difference Target Propagation - DTP using local inverse models).
 
 - [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block, Decoder Block combining components, and a full end-to-end Encoder-Decoder architecture).

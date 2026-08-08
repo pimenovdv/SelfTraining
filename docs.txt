@@ -109,3 +109,4 @@
 0111_train_lmu_component
 0112_train_target_propagation_component
 0113_train_vib_component
+0114_train_ddpg_component
