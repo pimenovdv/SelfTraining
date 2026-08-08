@@ -754,3 +754,9 @@
 ## LMU Component Integration
 - Implemented and successfully trained a Legendre Memory Unit (LMU).
 - The LMU utilizes fixed continuous-time matrices (A and B) derived from Legendre polynomials to create a state space model resilient to vanishing gradients over long sequences.
+
+### Experiment 0112: Difference Target Propagation (DTP)
+- **Hypothesis:** We can assign credit in deep architectures without backpropagation by using local inverse models to propagate target activations.
+- **Action:** Implemented a DTP component in `train_target_propagation_component.py` using pure NumPy, training a 3-layer network with local forward updates and backward target propagation.
+- **Outcome:** The model successfully fit a non-linear continuous mapping task without propagating gradients through hidden layers.
+- **Next Steps:** Compare DTP with other biologically plausible credit assignment methods like Predictive Coding or Feedback Alignment.
