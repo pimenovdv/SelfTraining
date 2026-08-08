@@ -760,3 +760,9 @@
 - **Action:** Implemented a DTP component in `train_target_propagation_component.py` using pure NumPy, training a 3-layer network with local forward updates and backward target propagation.
 - **Outcome:** The model successfully fit a non-linear continuous mapping task without propagating gradients through hidden layers.
 - **Next Steps:** Compare DTP with other biologically plausible credit assignment methods like Predictive Coding or Feedback Alignment.
+
+### Experiment 0113: Variational Information Bottleneck (VIB)
+- **Hypothesis:** We can learn robust representations by constraining the mutual information between the input and the latent space, forcing the network to ignore noise and focus on predictive features.
+- **Action:** Implemented a Deep Variational Information Bottleneck component (`train_vib_component.py`) mathematically in pure NumPy, using the reparameterization trick and ELBO optimization balancing classification accuracy with KL divergence from a standard normal prior.
+- **Outcome:** The model successfully filtered out noise features and maintained high predictive accuracy on the target classification task, learning a compact latent representation.
+- **Next Steps:** Consider exploring conditional or disentangled representation learning frameworks.
