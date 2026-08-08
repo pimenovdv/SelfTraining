@@ -766,3 +766,7 @@
 - **Action:** Implemented a Deep Variational Information Bottleneck component (`train_vib_component.py`) mathematically in pure NumPy, using the reparameterization trick and ELBO optimization balancing classification accuracy with KL divergence from a standard normal prior.
 - **Outcome:** The model successfully filtered out noise features and maintained high predictive accuracy on the target classification task, learning a compact latent representation.
 - **Next Steps:** Consider exploring conditional or disentangled representation learning frameworks.
+
+### Deep Deterministic Policy Gradient (DDPG) Component (`train_ddpg_component.py`)
+- **Mathematical Basis**: DDPG uses an actor-critic architecture for continuous action spaces. The critic learns the Q-function using the Bellman equation, and the actor updates its deterministic policy in the direction of the gradient of the Q-function with respect to the action: $\nabla_{\theta^\mu} J \approx \mathbb{E} [\nabla_a Q(s, a|\theta^Q)|_{a=\mu(s)} \nabla_{\theta^\mu} \mu(s|\theta^\mu)]$.
+- **Verification**: The component successfully learned to navigate a continuous 1D environment using manual backpropagation and Ornstein-Uhlenbeck noise for exploration.

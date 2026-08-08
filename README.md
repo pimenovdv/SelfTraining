@@ -1281,3 +1281,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_vib_component.py`
 **Description:** Evaluates a Deep Variational Information Bottleneck (VIB) component, verifying its ability to learn robust, compressed representations by balancing mutual information and predictive accuracy via manual backpropagation of the ELBO.
+
+## Component Testing: Deep Deterministic Policy Gradient (DDPG)
+
+**Script:** `train_ddpg_component.py`
+**Description:** Evaluates a Deep Deterministic Policy Gradient (DDPG) component for continuous action spaces, verifying its ability to learn an actor-critic architecture utilizing the deterministic policy gradient theorem and manual backpropagation for gradient flow.
