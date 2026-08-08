@@ -111,3 +111,4 @@
 0113_train_vib_component
 0114_train_ddpg_component
 0115_train_lottery_ticket_component
+0116_train_sam_component
