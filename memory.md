@@ -776,3 +776,9 @@
 - **Action:** Implemented Iterative Magnitude Pruning (IMP) in `train_lottery_ticket_component.py`. The script trains a dense MLP, prunes the lowest magnitude weights, rewinds the remaining weights to their original initialization, and retrains the sparse network.
 - **Outcome:** The sparse subnetwork (at ~67% sparsity) successfully retrained to near original accuracy from its initial weights, validating the existence of winning tickets.
 - **Next Steps:** Consider integrating IMP into larger, more complex components to observe if sparse, trainable subnetworks emerge consistently across architectures.
+
+### Experiment 0116: Sharpness-Aware Minimization (SAM)
+- **Hypothesis:** We can improve generalization by explicitly penalizing the sharpness of the loss landscape. By computing gradients at weight values perturbed in the direction of the local loss gradient, we optimize for a flat minima.
+- **Action:** Implemented Sharpness-Aware Minimization in `train_sam_component.py` mathematically in pure NumPy, using a two-step forward-backward process to compute the perturbation $\epsilon$ and then the final update gradient.
+- **Outcome:** The model successfully converged on the non-linear classification task, confirming the mathematical implementation of the adversarial weight perturbation and sharpness-aware update.
+- **Next Steps:** Evaluate the empirical generalization benefits of SAM compared to standard optimizers on more complex tasks.

@@ -1291,3 +1291,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_lottery_ticket_component.py`
 **Description:** Evaluates the Lottery Ticket Hypothesis, demonstrating that dense randomly-initialized networks contain sparse subnetworks (winning tickets) that, when trained in isolation from their original initializations, can match the test accuracy of the original network.
+
+## Component Testing: Sharpness-Aware Minimization (SAM)
+
+**Script:** `train_sam_component.py`
+**Description:** Evaluates a Sharpness-Aware Minimization (SAM) component, verifying its ability to explicitly penalize loss sharpness by perturbing weights in the direction of maximum loss locally before computing the final gradient update.

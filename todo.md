@@ -99,6 +99,7 @@
 - [x] Investigate non-iterative, analytical learning methods for rapid representation acquisition. (Implemented and verified Extreme Learning Machine (ELM) solving output weights via pseudoinverse).
 - [x] Explore unsupervised, biologically plausible learning rules mathematically. (Implemented and verified Hebbian Learning using Oja's rule for stable principal component extraction).
 - [x] Explore generative policies proportional to reward mathematically. (Implemented and verified GFlowNet with Trajectory Balance loss).
+- [x] Explore Sharpness-Aware Minimization mathematically. (Implemented and verified SAM to explicitly penalize loss sharpness during optimization).
 - [ ] Train medium-scale models to observe emergent capabilities.
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.

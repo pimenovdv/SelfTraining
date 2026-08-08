@@ -91,6 +91,7 @@
 ./train_rnn_component.py
 ./train_rope_component.py
 ./train_sae_component.py
+./train_sam_component.py
 ./train_scaling_laws_component.py
 ./train_selective_ssm_component.py
 ./train_simsiam_component.py
