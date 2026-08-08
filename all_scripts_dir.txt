@@ -103,6 +103,7 @@
 ./train_tcn_component.py
 ./train_transformer_block_component.py
 ./train_vae_component.py
+./train_vib_component.py
 ./train_vit_component.py
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py

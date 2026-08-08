@@ -1276,3 +1276,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_target_propagation_component.py`
 **Description:** Evaluates a Difference Target Propagation (DTP) component, verifying a biologically plausible alternative to backpropagation that trains neural networks without requiring symmetric weight matrices or continuous gradients, by using autoencoders to propagate target activations rather than gradients.
+
+## Component Testing: Variational Information Bottleneck (VIB)
+
+**Script:** `train_vib_component.py`
+**Description:** Evaluates a Deep Variational Information Bottleneck (VIB) component, verifying its ability to learn robust, compressed representations by balancing mutual information and predictive accuracy via manual backpropagation of the ELBO.
