@@ -59,6 +59,7 @@
 ./train_linear_attention_component.py
 ./train_lmu_component.py
 ./train_lora_component.py
+./train_lottery_ticket_component.py
 ./train_lstm_component.py
 ./train_ltc_component.py
 ./train_mae_component.py

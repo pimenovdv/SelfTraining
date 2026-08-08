@@ -770,3 +770,9 @@
 ### Deep Deterministic Policy Gradient (DDPG) Component (`train_ddpg_component.py`)
 - **Mathematical Basis**: DDPG uses an actor-critic architecture for continuous action spaces. The critic learns the Q-function using the Bellman equation, and the actor updates its deterministic policy in the direction of the gradient of the Q-function with respect to the action: $\nabla_{\theta^\mu} J \approx \mathbb{E} [\nabla_a Q(s, a|\theta^Q)|_{a=\mu(s)} \nabla_{\theta^\mu} \mu(s|\theta^\mu)]$.
 - **Verification**: The component successfully learned to navigate a continuous 1D environment using manual backpropagation and Ornstein-Uhlenbeck noise for exploration.
+
+### Experiment 0115: Lottery Ticket Hypothesis (IMP)
+- **Hypothesis:** Dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations.
+- **Action:** Implemented Iterative Magnitude Pruning (IMP) in `train_lottery_ticket_component.py`. The script trains a dense MLP, prunes the lowest magnitude weights, rewinds the remaining weights to their original initialization, and retrains the sparse network.
+- **Outcome:** The sparse subnetwork (at ~67% sparsity) successfully retrained to near original accuracy from its initial weights, validating the existence of winning tickets.
+- **Next Steps:** Consider integrating IMP into larger, more complex components to observe if sparse, trainable subnetworks emerge consistently across architectures.

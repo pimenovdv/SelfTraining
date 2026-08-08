@@ -1286,3 +1286,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ddpg_component.py`
 **Description:** Evaluates a Deep Deterministic Policy Gradient (DDPG) component for continuous action spaces, verifying its ability to learn an actor-critic architecture utilizing the deterministic policy gradient theorem and manual backpropagation for gradient flow.
+
+## Component Testing: Lottery Ticket Hypothesis (IMP)
+
+**Script:** `train_lottery_ticket_component.py`
+**Description:** Evaluates the Lottery Ticket Hypothesis, demonstrating that dense randomly-initialized networks contain sparse subnetworks (winning tickets) that, when trained in isolation from their original initializations, can match the test accuracy of the original network.
