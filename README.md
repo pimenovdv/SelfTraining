@@ -1316,3 +1316,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_sparsemax_component.py`
 **Description:** Evaluates a Sparsemax component, verifying its ability to project logits onto the probability simplex, yielding exactly sparse probability distributions via Euclidean projection, and testing its manual backpropagation mechanism routing gradients only through the non-zero support set.
+
+## Component Testing: Contrastive Predictive Coding (CPC)
+
+**Script:** `train_cpc_component.py`
+**Description:** Evaluates Contrastive Predictive Coding (CPC), verifying its ability to learn representations by predicting future latent states autoregressively using the InfoNCE loss.

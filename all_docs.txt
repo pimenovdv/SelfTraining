@@ -117,3 +117,4 @@ docs/0118_train_darts_component.md
 docs/0119_train_protonet_component.md
 docs/0120_train_fgsm_component.md
 docs/0121_train_sparsemax_component.md
+docs/0122_train_cpc_component.md

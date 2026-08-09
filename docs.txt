@@ -117,3 +117,4 @@
 0119_train_protonet_component
 0120_train_fgsm_component
 0121_train_sparsemax_component
+0122_train_cpc_component
