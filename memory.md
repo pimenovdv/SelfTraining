@@ -793,3 +793,9 @@
 - **Action:** Implemented DARTS in `train_darts_component.py` purely mathematically, specifying candidate operations (Linear, ReLU, Sigmoid, Zero) and using a bi-level optimization scheme.
 - **Outcome:** The model successfully converged and correctly assigned the highest probability weight to the true underlying operation (ReLU) generating the data, validating the continuous relaxation approach for architecture search.
 - **Next Steps:** Consider integrating DARTS into larger modular networks to automatically search for optimal sub-components.
+
+### Experiment 0119: Prototypical Networks (ProtoNet)
+- **Hypothesis:** A neural network can learn to perform few-shot classification by mapping examples into a metric space where instances of a given class cluster around a single prototype representation (the mean of the support set embeddings).
+- **Action:** Implemented ProtoNet in `train_protonet_component.py` mathematically in pure NumPy, using Euclidean distance to class prototypes and manual backpropagation on the episodic training loss.
+- **Outcome:** The ProtoNet successfully learned a metric embedding to classify new query points, achieving high accuracy on the synthetic few-shot episodes.
+- **Next Steps:** Consider testing the component on more complex datasets or comparing it with other meta-learning approaches such as MAML.
