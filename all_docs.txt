@@ -112,3 +112,4 @@ docs/0113_train_vib_component.md
 docs/0114_train_ddpg_component.md
 docs/0115_train_lottery_ticket_component.md
 docs/0116_train_sam_component.md
+docs/0117_train_ff_component.md
