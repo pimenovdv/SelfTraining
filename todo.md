@@ -72,6 +72,7 @@
 - [x] Explore alternatives to backpropagation mathematically. (Implemented and verified Forward-Forward algorithm using local goodness metrics).
 - [x] Explore Differentiable Architecture Search (DARTS) mathematically. (Implemented and verified continuous relaxation of architecture representation).
 - [x] Explore metric-based few-shot meta-learning mathematically. (Implemented and verified Prototypical Networks - ProtoNet computing Euclidean distance to class prototypes).
+- [x] Explore sparse probability distributions mathematically. (Implemented and verified Sparsemax component via Euclidean projection onto the probability simplex).
 - [ ] Create a modular, extensible codebase for integrating various AI subsystems.
 - [x] Develop dynamic weight generation methodologies mathematically. (Implemented and verified Hypernetwork component for generating context-conditioned primary network weights).
 - [x] Explore Meta-Learning mathematically. (Implemented and verified First-Order Model-Agnostic Meta-Learning - MAML).
