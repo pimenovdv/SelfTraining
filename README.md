@@ -1306,3 +1306,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_protonet_component.py`
 **Description:** Evaluates a Prototypical Networks (ProtoNet) component, verifying its ability to perform few-shot classification by learning a metric embedding space where query points are classified based on Euclidean distance to class prototypes, utilizing manual backpropagation on the episodic loss.
+
+## Component Testing: Fast Gradient Sign Method (FGSM)
+
+**Script:** `train_fgsm_component.py`
+**Description:** Evaluates the Fast Gradient Sign Method (FGSM) for generating adversarial examples and training robust models via Adversarial Training. Demonstrates mathematically that alternating optimization on clean and adversarial inputs increases network robustness against gradient-based perturbations.

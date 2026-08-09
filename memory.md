@@ -799,3 +799,9 @@
 - **Action:** Implemented ProtoNet in `train_protonet_component.py` mathematically in pure NumPy, using Euclidean distance to class prototypes and manual backpropagation on the episodic training loss.
 - **Outcome:** The ProtoNet successfully learned a metric embedding to classify new query points, achieving high accuracy on the synthetic few-shot episodes.
 - **Next Steps:** Consider testing the component on more complex datasets or comparing it with other meta-learning approaches such as MAML.
+
+### Experiment 0120: Fast Gradient Sign Method (FGSM)
+- **Hypothesis:** Neural networks are highly vulnerable to small perturbations aligned with the loss gradient. Adversarial training on these dynamically generated examples can improve robustness.
+- **Action:** Implemented the FGSM attack and adversarial training in `train_fgsm_component.py` mathematically in pure NumPy, testing on an MLP with alternating clean and adversarial updates.
+- **Outcome:** The robust model showed a significant improvement in accuracy on adversarial examples compared to a standard model, verifying the capability of adversarial training to induce robustness.
+- **Next Steps:** Explore more advanced attacks like PGD or certified robustness methods.
