@@ -113,3 +113,4 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
+train_protonet_component

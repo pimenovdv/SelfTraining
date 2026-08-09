@@ -1301,3 +1301,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_darts_component.py`
 **Description:** Evaluates a DARTS component to verify its ability to search for optimal architectural operations by continuously relaxing the discrete search space and using a bi-level gradient descent optimization scheme.
+
+## Component Testing: Prototypical Networks (ProtoNet)
+
+**Script:** `train_protonet_component.py`
+**Description:** Evaluates a Prototypical Networks (ProtoNet) component, verifying its ability to perform few-shot classification by learning a metric embedding space where query points are classified based on Euclidean distance to class prototypes, utilizing manual backpropagation on the episodic loss.
