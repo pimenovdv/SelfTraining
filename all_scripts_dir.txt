@@ -15,6 +15,7 @@
 ./train_cross_attention_component.py
 ./train_ctrnn_component.py
 ./train_dae_component.py
+./train_darts_component.py
 ./train_ddpg_component.py
 ./train_ddpm_component.py
 ./train_decoder_block_component.py

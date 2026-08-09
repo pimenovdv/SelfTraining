@@ -15,6 +15,7 @@ train_contrastive_component
 train_cross_attention_component
 train_ctrnn_component
 train_dae_component
+train_darts_component
 train_ddpg_component
 train_ddpm_component
 train_decoder_block_component

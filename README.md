@@ -1296,3 +1296,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_sam_component.py`
 **Description:** Evaluates a Sharpness-Aware Minimization (SAM) component, verifying its ability to explicitly penalize loss sharpness by perturbing weights in the direction of maximum loss locally before computing the final gradient update.
+
+## Component Testing: Differentiable Architecture Search (DARTS)
+
+**Script:** `train_darts_component.py`
+**Description:** Evaluates a DARTS component to verify its ability to search for optimal architectural operations by continuously relaxing the discrete search space and using a bi-level gradient descent optimization scheme.
