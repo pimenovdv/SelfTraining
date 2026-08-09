@@ -782,3 +782,8 @@
 - **Action:** Implemented Sharpness-Aware Minimization in `train_sam_component.py` mathematically in pure NumPy, using a two-step forward-backward process to compute the perturbation $\epsilon$ and then the final update gradient.
 - **Outcome:** The model successfully converged on the non-linear classification task, confirming the mathematical implementation of the adversarial weight perturbation and sharpness-aware update.
 - **Next Steps:** Evaluate the empirical generalization benefits of SAM compared to standard optimizers on more complex tasks.
+
+### Experiment 0117: Forward-Forward Algorithm
+- **Component:** Forward-Forward Layer
+- **Purpose:** Investigate mathematically justified alternatives to backpropagation.
+- **Insights:** Successfully implemented a gradient-free (across layers) learning method by maximizing 'goodness' (sum of squared activations) for positive samples and minimizing it for negative samples locally within each layer, proving its viability for simple classification tasks without deep credit assignment paths.
