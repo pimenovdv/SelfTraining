@@ -1311,3 +1311,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_fgsm_component.py`
 **Description:** Evaluates the Fast Gradient Sign Method (FGSM) for generating adversarial examples and training robust models via Adversarial Training. Demonstrates mathematically that alternating optimization on clean and adversarial inputs increases network robustness against gradient-based perturbations.
+
+## Component Testing: Sparsemax
+
+**Script:** `train_sparsemax_component.py`
+**Description:** Evaluates a Sparsemax component, verifying its ability to project logits onto the probability simplex, yielding exactly sparse probability distributions via Euclidean projection, and testing its manual backpropagation mechanism routing gradients only through the non-zero support set.

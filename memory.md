@@ -805,3 +805,9 @@
 - **Action:** Implemented the FGSM attack and adversarial training in `train_fgsm_component.py` mathematically in pure NumPy, testing on an MLP with alternating clean and adversarial updates.
 - **Outcome:** The robust model showed a significant improvement in accuracy on adversarial examples compared to a standard model, verifying the capability of adversarial training to induce robustness.
 - **Next Steps:** Explore more advanced attacks like PGD or certified robustness methods.
+
+### Experiment 0121: Sparsemax Component
+- **Hypothesis:** We can compute exactly sparse probability distributions by using Euclidean projection onto the probability simplex instead of softmax, providing a useful mechanism for sparse attention or discrete latent selections.
+- **Action:** Implemented Sparsemax mathematically in pure NumPy in `train_sparsemax_component.py`, calculating the sorting-based threshold and passing gradients correctly through the non-zero support set.
+- **Outcome:** The model converged successfully and generated exact zeros in the output probabilities, validating the thresholding and masking logic in both forward and backward passes.
+- **Next Steps:** Consider replacing Softmax with Sparsemax in Attention layers to evaluate sparse attention mechanisms.
