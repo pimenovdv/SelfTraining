@@ -12,6 +12,7 @@ train_capsule_network_component
 train_cbow_component
 train_cnp_component
 train_contrastive_component
+train_cpc_component
 train_cross_attention_component
 train_ctrnn_component
 train_dae_component

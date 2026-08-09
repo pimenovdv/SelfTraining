@@ -11,8 +11,8 @@ To implement and train a Flow Matching component for continuous normalizing flow
 *   **Integration:** Euler integration with 100 steps from $t=0$ to $t=1$.
 
 ## Results
-*   **Final Loss:** 3.9517
-*   **Generated Sample Mean Radius:** 2.9826 (Expected ~3.0)
+*   **Final Loss:** 2.7044
+*   **Generated Sample Mean Radius:** 2.9839 (Expected ~3.0)
 *   **Success:** True
 
 ## Conclusion

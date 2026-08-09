@@ -12,6 +12,7 @@ train_capsule_network_component
 train_cbow_component
 train_cnp_component
 train_contrastive_component
+train_cpc_component
 train_cross_attention_component
 train_ctrnn_component
 train_dae_component
@@ -103,6 +104,7 @@ train_siren_component
 train_skipgram_component
 train_snn_component
 train_som_component
+train_sparsemax_component
 train_spectral_normalization_component
 train_ssm_component
 train_swiglu_component
@@ -115,4 +117,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_sparsemax_component

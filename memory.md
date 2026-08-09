@@ -811,3 +811,9 @@
 - **Action:** Implemented Sparsemax mathematically in pure NumPy in `train_sparsemax_component.py`, calculating the sorting-based threshold and passing gradients correctly through the non-zero support set.
 - **Outcome:** The model converged successfully and generated exact zeros in the output probabilities, validating the thresholding and masking logic in both forward and backward passes.
 - **Next Steps:** Consider replacing Softmax with Sparsemax in Attention layers to evaluate sparse attention mechanisms.
+
+### Experiment 0122: Contrastive Predictive Coding (CPC)
+- **Hypothesis:** By predicting future representations in latent space autoregressively, the model can learn useful data representations without needing to reconstruct high-dimensional inputs.
+- **Action:** Implemented CPC in `train_cpc_component.py` mathematically in pure NumPy, using an RNN context network and InfoNCE loss across a batch of sequences.
+- **Outcome:** The model successfully converged and minimized the InfoNCE loss, effectively distinguishing true future latent states from negative samples.
+- **Next Steps:** Evaluate the learned representations by training a linear classifier on top of them for downstream tasks.
