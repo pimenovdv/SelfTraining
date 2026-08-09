@@ -787,3 +787,9 @@
 - **Component:** Forward-Forward Layer
 - **Purpose:** Investigate mathematically justified alternatives to backpropagation.
 - **Insights:** Successfully implemented a gradient-free (across layers) learning method by maximizing 'goodness' (sum of squared activations) for positive samples and minimizing it for negative samples locally within each layer, proving its viability for simple classification tasks without deep credit assignment paths.
+
+### Experiment 0118: Differentiable Architecture Search (DARTS)
+- **Hypothesis:** We can identify an optimal neural network architecture efficiently by relaxing the discrete search space to be continuous and jointly optimizing both architecture parameters and weights using gradient descent.
+- **Action:** Implemented DARTS in `train_darts_component.py` purely mathematically, specifying candidate operations (Linear, ReLU, Sigmoid, Zero) and using a bi-level optimization scheme.
+- **Outcome:** The model successfully converged and correctly assigned the highest probability weight to the true underlying operation (ReLU) generating the data, validating the continuous relaxation approach for architecture search.
+- **Next Steps:** Consider integrating DARTS into larger modular networks to automatically search for optimal sub-components.
