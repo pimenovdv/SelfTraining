@@ -34,6 +34,7 @@ train_ewc_component
 train_feedback_alignment_component
 train_ff_component
 train_ffn_component
+train_fgsm_component
 train_flow_matching_component
 train_fnet_component
 train_full_encoder_decoder_component

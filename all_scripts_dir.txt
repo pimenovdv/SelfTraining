@@ -34,6 +34,7 @@
 ./train_feedback_alignment_component.py
 ./train_ff_component.py
 ./train_ffn_component.py
+./train_fgsm_component.py
 ./train_flow_matching_component.py
 ./train_fnet_component.py
 ./train_full_encoder_decoder_component.py
@@ -82,6 +83,7 @@
 ./train_perceiver_component.py
 ./train_positional_encoding_component.py
 ./train_ppo_component.py
+./train_protonet_component.py
 ./train_quantization_component.py
 ./train_rbf_component.py
 ./train_rbm_component.py
@@ -113,4 +115,3 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
-./train_protonet_component.py

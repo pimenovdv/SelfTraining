@@ -88,6 +88,8 @@
 
 - [x] Explore predictive representation architectures mathematically. (Implemented and verified Joint Embedding Predictive Architecture - JEPA).
 
+- [x] Explore adversarial robustness mathematically. (Implemented and verified Fast Gradient Sign Method - FGSM to generate adversarial examples and train robust models).
+
 ## Phase 3: Integration and Capability Emergence
 
 - [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).

@@ -34,6 +34,7 @@ train_ewc_component
 train_feedback_alignment_component
 train_ff_component
 train_ffn_component
+train_fgsm_component
 train_flow_matching_component
 train_fnet_component
 train_full_encoder_decoder_component
@@ -82,6 +83,7 @@ train_pcn_component
 train_perceiver_component
 train_positional_encoding_component
 train_ppo_component
+train_protonet_component
 train_quantization_component
 train_rbf_component
 train_rbm_component
@@ -113,4 +115,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_protonet_component
