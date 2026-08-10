@@ -1,3 +1,4 @@
+train_act_component
 train_actor_critic_component
 train_adaln_component
 train_adamw_component
