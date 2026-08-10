@@ -121,3 +121,4 @@ docs/0122_train_cpc_component.md
 docs/0123_train_continuous_hopfield_component.md
 docs/0124_train_nalu_component.md
 docs/0125_train_act_component.md
+docs/0126_train_mcts_component.md

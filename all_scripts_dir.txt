@@ -120,3 +120,4 @@
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
 ./train_act_component.py
+./train_mcts_component.py

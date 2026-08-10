@@ -1272,6 +1272,11 @@ Building upon our component research, we have implemented a Radial Basis Functio
 **Script:** `train_gflownet_component.py`
 **Description:** Evaluates a GFlowNet agent learning to generate compositional objects with probabilities proportional to a reward function, utilizing manual backpropagation on the Trajectory Balance loss.
 
+## Component Testing: Monte Carlo Tree Search (MCTS)
+
+**Script:** `train_mcts_component.py`
+**Description:** Evaluates an MCTS agent combined with a neural network evaluating policy and value, simulating core elements of AlphaZero-style planning via manual backpropagation.
+
 ## Component Testing: Difference Target Propagation (DTP)
 
 **Script:** `train_target_propagation_component.py`
