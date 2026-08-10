@@ -1,3 +1,4 @@
+train_act_component
 train_actor_critic_component
 train_adaln_component
 train_adamw_component
@@ -70,6 +71,7 @@ train_ltc_component
 train_mae_component
 train_maml_component
 train_masked_attention_component
+train_mcts_component
 train_mdn_component
 train_memory_network_component
 train_mlpmixer_component
@@ -92,6 +94,7 @@ train_rbf_component
 train_rbm_component
 train_realnvp_component
 train_reinforce_component
+train_relational_network_component
 train_retention_component
 train_revnet_component
 train_rmsnorm_component
@@ -119,5 +122,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_act_component
-train_mcts_component

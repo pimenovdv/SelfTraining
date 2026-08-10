@@ -1,3 +1,4 @@
+./train_act_component.py
 ./train_actor_critic_component.py
 ./train_adaln_component.py
 ./train_adamw_component.py
@@ -70,6 +71,7 @@
 ./train_mae_component.py
 ./train_maml_component.py
 ./train_masked_attention_component.py
+./train_mcts_component.py
 ./train_mdn_component.py
 ./train_memory_network_component.py
 ./train_mlpmixer_component.py
@@ -92,6 +94,7 @@
 ./train_rbm_component.py
 ./train_realnvp_component.py
 ./train_reinforce_component.py
+./train_relational_network_component.py
 ./train_retention_component.py
 ./train_revnet_component.py
 ./train_rmsnorm_component.py
@@ -119,5 +122,3 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
-./train_act_component.py
-./train_mcts_component.py
