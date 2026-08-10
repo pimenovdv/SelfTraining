@@ -829,3 +829,9 @@
 - **Action:** Implemented NALU in `train_nalu_component.py` mathematically in pure NumPy, using manual backpropagation to pass gradients through both the linear and log-space paths.
 - **Outcome:** The model successfully converged on a multiplicative task, demonstrating that the gate learned to route the signal through the log-space multiplicative path effectively.
 - **Next Steps:** Evaluate the model's ability to extrapolate on numbers significantly larger than those seen during training compared to standard MLPs.
+
+### Experiment 0125: Adaptive Computation Time (ACT)
+- **Hypothesis:** By introducing a ponder cost and a differentiable halting mechanism, the network can learn to use fewer computation steps when possible, while retaining the capacity to process inputs more deeply if required by the task, fully supported by exact manual gradients.
+- **Action:** Implemented ACT in `train_act_component.py` mathematically in pure NumPy, using manual backpropagation to pass gradients through the dynamic computation graph, including the ponder probabilities and weights.
+- **Outcome:** The model successfully converged, demonstrating the balance between task performance and ponder cost.
+- **Next Steps:** Evaluate the model's ability to extrapolate on tasks requiring more computation steps for out-of-distribution inputs.

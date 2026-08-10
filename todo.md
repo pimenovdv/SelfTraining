@@ -10,6 +10,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore dynamic computation depth and ponder mechanisms mathematically. (Implemented and verified Adaptive Computation Time - ACT).
 - [x] Explore masked autoencoding for self-supervised representation learning mathematically. (Implemented and verified Masked Autoencoder - MAE with asymmetric encoder-decoder).
 - [x] Explore intrinsic motivation and curiosity-driven exploration mathematically. (Implemented and verified Intrinsic Curiosity Module - ICM).
 - [x] Explore robust representation learning mathematically. (Implemented and verified Denoising Autoencoder - DAE reconstructing data from noisy inputs).

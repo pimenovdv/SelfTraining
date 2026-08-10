@@ -1331,3 +1331,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_nalu_component.py`
 **Description:** Evaluates a Neural Arithmetic Logic Unit (NALU) component mathematically in pure NumPy, testing its ability to interpolate between an additive and a multiplicative path via a learned gate to represent numerical relationships.
+
+## Component Testing: Adaptive Computation Time (ACT)
+
+**Script:** `train_act_component.py`
+**Description:** Evaluates an Adaptive Computation Time (ACT) component mathematically in pure NumPy, testing its ability to dynamically allocate computation steps per input by iteratively updating a hidden state and computing a halting probability, minimizing a ponder cost alongside the task loss.
