@@ -122,3 +122,4 @@
 0124_train_nalu_component
 0125_train_act_component
 0126_train_mcts_component
+0127_train_relational_network_component

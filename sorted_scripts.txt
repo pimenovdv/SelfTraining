@@ -94,6 +94,7 @@ train_rbf_component
 train_rbm_component
 train_realnvp_component
 train_reinforce_component
+train_relational_network_component
 train_retention_component
 train_revnet_component
 train_rmsnorm_component

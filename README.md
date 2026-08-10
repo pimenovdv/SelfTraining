@@ -1341,3 +1341,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_act_component.py`
 **Description:** Evaluates an Adaptive Computation Time (ACT) component mathematically in pure NumPy, testing its ability to dynamically allocate computation steps per input by iteratively updating a hidden state and computing a halting probability, minimizing a ponder cost alongside the task loss.
+
+## Component Testing: Relational Network (RN)
+
+**Script:** `train_relational_network_component.py`
+**Description:** Evaluates a Relational Network (RN) component mathematically in pure NumPy, testing its explicit reasoning capabilities across all pairs of objects within an input set and applying permutation-invariant sum-pooling.

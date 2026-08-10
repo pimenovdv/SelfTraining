@@ -841,3 +841,9 @@
 - **Action:** Implemented MCTS in `train_mcts_component.py` mathematically in pure NumPy, using manual backpropagation to update the policy and value networks.
 - **Outcome:** The model successfully converged and learned to navigate the gridworld environment to the goal state.
 - **Next Steps:** Explore applying MCTS to more complex reinforcement learning and planning tasks.
+
+### Experiment 0127: Relational Network (RN)
+- **Hypothesis:** By applying a multi-layer perceptron to all pairs of objects in an input set and summing the results, a network can explicitly learn relational properties between the objects invariant to their order.
+- **Action:** Implemented a Relational Network in `train_relational_network_component.py` mathematically in pure NumPy, using manual backpropagation to route gradients correctly through the permutation-invariant sum operation to the pairwise function.
+- **Outcome:** The model successfully converged on a relational task.
+- **Next Steps:** Evaluate the model on more complex visual reasoning tasks using extracted object embeddings.
