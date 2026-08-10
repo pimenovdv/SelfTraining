@@ -123,3 +123,4 @@ docs/0124_train_nalu_component.md
 docs/0125_train_act_component.md
 docs/0126_train_mcts_component.md
 docs/0127_train_relational_network_component.md
+docs/0128_train_pointer_network_component.md

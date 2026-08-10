@@ -1346,3 +1346,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_relational_network_component.py`
 **Description:** Evaluates a Relational Network (RN) component mathematically in pure NumPy, testing its explicit reasoning capabilities across all pairs of objects within an input set and applying permutation-invariant sum-pooling.
+
+## Component Testing: Pointer Network Component
+
+**Script:** `train_pointer_network_component.py`
+**Description:** Evaluates a Pointer Network component mathematically in pure NumPy, testing its ability to solve combinatorial tasks by learning to point to elements of the input sequence directly using an attention mechanism over the encoder states.

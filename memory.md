@@ -847,3 +847,9 @@
 - **Action:** Implemented a Relational Network in `train_relational_network_component.py` mathematically in pure NumPy, using manual backpropagation to route gradients correctly through the permutation-invariant sum operation to the pairwise function.
 - **Outcome:** The model successfully converged on a relational task.
 - **Next Steps:** Evaluate the model on more complex visual reasoning tasks using extracted object embeddings.
+
+### Experiment 0128: Pointer Network Component
+- **Hypothesis:** By modifying the attention mechanism to output probabilities directly over the input sequence rather than blending encoder states, a neural network can successfully learn to point to input elements, enabling it to solve algorithmic tasks like sorting.
+- **Action:** Implemented a Pointer Network in `train_pointer_network_component.py` mathematically in pure NumPy, using manual backpropagation to route gradients correctly through the attention mechanisms pointing to encoder states.
+- **Outcome:** The model successfully converged on a sequence sorting task, demonstrating that the attention weights effectively learned to point to the correct input element.
+- **Next Steps:** Evaluate the Pointer Network on combinatorial optimization problems like the Traveling Salesperson Problem (TSP).
