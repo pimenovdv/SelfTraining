@@ -77,6 +77,7 @@
 ./train_multihead_attention_component.py
 ./train_multihead_transformer_block_component.py
 ./train_nade_component.py
+./train_nalu_component.py
 ./train_nca_component.py
 ./train_neural_ode_component.py
 ./train_ntm_component.py

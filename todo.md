@@ -92,6 +92,8 @@
 
 - [x] Explore adversarial robustness mathematically. (Implemented and verified Fast Gradient Sign Method - FGSM to generate adversarial examples and train robust models).
 
+- [x] Explore arithmetic reasoning and systematic generalization mathematically. (Implemented and verified Neural Arithmetic Logic Unit - NALU).
+
 ## Phase 3: Integration and Capability Emergence
 
 - [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).

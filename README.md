@@ -1326,3 +1326,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_continuous_hopfield_component.py`
 **Description:** Evaluates a Continuous Hopfield Network component mathematically in pure NumPy, testing its ability to retrieve continuous target patterns from noisy initializations by iteratively minimizing a log-sum-exp energy function, demonstrating exponential memory capacity and the connection to self-attention.
+
+## Component Testing: Neural Arithmetic Logic Unit (NALU)
+
+**Script:** `train_nalu_component.py`
+**Description:** Evaluates a Neural Arithmetic Logic Unit (NALU) component mathematically in pure NumPy, testing its ability to interpolate between an additive and a multiplicative path via a learned gate to represent numerical relationships.

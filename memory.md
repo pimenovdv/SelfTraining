@@ -823,3 +823,9 @@
 - **Action:** Implemented the Continuous (Modern) Hopfield Network mathematically in pure NumPy in `train_continuous_hopfield_component.py`, updating continuous state vectors to minimize the log-sum-exp energy function.
 - **Outcome:** The network successfully retrieved target continuous patterns from noisy initializations, systematically decreasing the energy function to convergence.
 - **Next Steps:** Evaluate the connection of this component to Transformer self-attention layers in a unified architecture.
+
+### Experiment 0124: Neural Arithmetic Logic Unit (NALU)
+- **Hypothesis:** By combining an additive accumulator and a multiplicative path controlled by a learned gate, a neural network can learn arithmetic operations that generalize systematically to numerical values outside the training distribution.
+- **Action:** Implemented NALU in `train_nalu_component.py` mathematically in pure NumPy, using manual backpropagation to pass gradients through both the linear and log-space paths.
+- **Outcome:** The model successfully converged on a multiplicative task, demonstrating that the gate learned to route the signal through the log-space multiplicative path effectively.
+- **Next Steps:** Evaluate the model's ability to extrapolate on numbers significantly larger than those seen during training compared to standard MLPs.
