@@ -835,3 +835,9 @@
 - **Action:** Implemented ACT in `train_act_component.py` mathematically in pure NumPy, using manual backpropagation to pass gradients through the dynamic computation graph, including the ponder probabilities and weights.
 - **Outcome:** The model successfully converged, demonstrating the balance between task performance and ponder cost.
 - **Next Steps:** Evaluate the model's ability to extrapolate on tasks requiring more computation steps for out-of-distribution inputs.
+
+### Experiment 0126: Monte Carlo Tree Search (MCTS)
+- **Hypothesis:** By combining Monte Carlo Tree Search (MCTS) with a neural network evaluating policy and value, the model can iteratively improve its policy through self-play and search.
+- **Action:** Implemented MCTS in `train_mcts_component.py` mathematically in pure NumPy, using manual backpropagation to update the policy and value networks.
+- **Outcome:** The model successfully converged and learned to navigate the gridworld environment to the goal state.
+- **Next Steps:** Explore applying MCTS to more complex reinforcement learning and planning tasks.
