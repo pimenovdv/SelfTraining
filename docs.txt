@@ -119,3 +119,4 @@
 0121_train_sparsemax_component
 0122_train_cpc_component
 0123_train_continuous_hopfield_component
+0124_train_nalu_component
