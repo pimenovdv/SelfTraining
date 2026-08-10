@@ -1321,3 +1321,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_cpc_component.py`
 **Description:** Evaluates Contrastive Predictive Coding (CPC), verifying its ability to learn representations by predicting future latent states autoregressively using the InfoNCE loss.
+
+## Component Testing: Continuous Hopfield Network
+
+**Script:** `train_continuous_hopfield_component.py`
+**Description:** Evaluates a Continuous Hopfield Network component mathematically in pure NumPy, testing its ability to retrieve continuous target patterns from noisy initializations by iteratively minimizing a log-sum-exp energy function, demonstrating exponential memory capacity and the connection to self-attention.

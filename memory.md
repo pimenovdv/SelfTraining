@@ -817,3 +817,9 @@
 - **Action:** Implemented CPC in `train_cpc_component.py` mathematically in pure NumPy, using an RNN context network and InfoNCE loss across a batch of sequences.
 - **Outcome:** The model successfully converged and minimized the InfoNCE loss, effectively distinguishing true future latent states from negative samples.
 - **Next Steps:** Evaluate the learned representations by training a linear classifier on top of them for downstream tasks.
+
+### Experiment 0123: Continuous Hopfield Network
+- **Hypothesis:** By generalizing the classic binary Hopfield network to continuous states and using an exponential interaction function (log-sum-exp energy), we can drastically increase memory capacity and bridge associative memory with self-attention.
+- **Action:** Implemented the Continuous (Modern) Hopfield Network mathematically in pure NumPy in `train_continuous_hopfield_component.py`, updating continuous state vectors to minimize the log-sum-exp energy function.
+- **Outcome:** The network successfully retrieved target continuous patterns from noisy initializations, systematically decreasing the energy function to convergence.
+- **Next Steps:** Evaluate the connection of this component to Transformer self-attention layers in a unified architecture.

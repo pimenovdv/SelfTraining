@@ -118,3 +118,4 @@ docs/0119_train_protonet_component.md
 docs/0120_train_fgsm_component.md
 docs/0121_train_sparsemax_component.md
 docs/0122_train_cpc_component.md
+docs/0123_train_continuous_hopfield_component.md

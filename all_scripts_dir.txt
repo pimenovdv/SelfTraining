@@ -11,6 +11,7 @@
 ./train_capsule_network_component.py
 ./train_cbow_component.py
 ./train_cnp_component.py
+./train_continuous_hopfield_component.py
 ./train_contrastive_component.py
 ./train_cpc_component.py
 ./train_cross_attention_component.py
