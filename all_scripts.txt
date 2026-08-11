@@ -101,6 +101,7 @@ train_revnet_component
 train_rmsnorm_component
 train_rnn_component
 train_rope_component
+train_sac_component.py
 train_sae_component
 train_sam_component
 train_scaling_laws_component
@@ -116,6 +117,7 @@ train_ssm_component
 train_swiglu_component
 train_target_propagation_component
 train_tcn_component
+train_td3_component
 train_transformer_block_component
 train_vae_component
 train_vib_component
@@ -123,4 +125,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_td3_component

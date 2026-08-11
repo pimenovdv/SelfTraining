@@ -81,7 +81,6 @@ train_multihead_transformer_block_component
 train_nade_component
 train_nalu_component
 train_nca_component
-train_nerf_component
 train_neural_ode_component
 train_ntm_component
 train_orthogonal_rnn_component
@@ -102,6 +101,7 @@ train_revnet_component
 train_rmsnorm_component
 train_rnn_component
 train_rope_component
+train_sac_component.py
 train_sae_component
 train_sam_component
 train_scaling_laws_component
