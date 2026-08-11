@@ -81,6 +81,7 @@ train_multihead_transformer_block_component
 train_nade_component
 train_nalu_component
 train_nca_component
+train_nerf_component
 train_neural_ode_component
 train_ntm_component
 train_orthogonal_rnn_component

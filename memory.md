@@ -859,3 +859,9 @@
 - **Action:** Implemented TD3 in `train_td3_component.py` mathematically in pure NumPy, using manual backpropagation and twin critics.
 - **Outcome:** The model successfully converged on a continuous control task.
 - **Next Steps:** Evaluate the model on more complex robotic control environments.
+
+### Experiment 0130: Neural Radiance Field (NeRF)
+- **Hypothesis:** By mapping spatial coordinates with positional encoding to density and color using an MLP, a model can represent and render continuous 3D scenes via volume rendering equations.
+- **Action:** Implemented NeRF in `train_nerf_component.py` mathematically in pure NumPy, using manual backpropagation through the volumetric rendering discrete approximation.
+- **Outcome:** The model successfully overfit a single ray to render a target color.
+- **Next Steps:** Evaluate the model on multi-view 3D scene reconstruction tasks.

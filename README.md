@@ -1356,3 +1356,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_td3_component.py`
 **Description:** Evaluates a Twin Delayed DDPG (TD3) component mathematically in pure NumPy, testing its ability to mitigate overestimation bias in continuous control through clipped double Q-learning and delayed updates.
+
+## Component Testing: Neural Radiance Field (NeRF)
+
+**Script:** `train_nerf_component.py`
+**Description:** Evaluates a Neural Radiance Field (NeRF) component mathematically in pure NumPy, testing its ability to represent continuous 3D scenes by mapping spatial coordinates with positional encoding to density and color, and rendering them using volume rendering equations.
