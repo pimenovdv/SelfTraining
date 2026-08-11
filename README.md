@@ -1366,3 +1366,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_sac_component.py`
 **Description:** Evaluates a Soft Actor-Critic (SAC) component mathematically in pure NumPy, testing its ability to optimize a stochastic policy in an off-policy manner using maximum entropy reinforcement learning to encourage exploration and stability.
+
+## Component Testing: Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+
+**Script:** `train_cmaes_component.py`
+**Description:** Evaluates a CMA-ES component mathematically in pure NumPy, testing its ability to optimize parameters without gradients by dynamically adapting a multivariate normal distribution's mean and covariance matrix based on sample fitness.
