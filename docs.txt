@@ -128,3 +128,4 @@
 0130_train_nerf_component
 0131_train_sac_component
 0132_train_cmaes_component
+0133_train_decision_transformer_component

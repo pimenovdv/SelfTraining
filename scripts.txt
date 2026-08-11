@@ -127,3 +127,4 @@ train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
 train_cmaes_component
+train_decision_transformer_component
