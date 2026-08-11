@@ -877,3 +877,9 @@
 - **Action:** Implemented CMA-ES in `train_cmaes_component.py` mathematically in pure NumPy, updating the mean, covariance matrix, and step size rules to optimize a test function.
 - **Outcome:** The model successfully converged on the objective function, adapting its search distribution effectively.
 - **Next Steps:** Apply CMA-ES to optimize hyper-parameters or network architectures where backpropagation is not applicable.
+
+### Experiment 0133: Decision Transformer
+- **Hypothesis:** By framing offline reinforcement learning as a sequence modeling problem over state, action, and return-to-go tokens, a transformer architecture with causal self-attention can learn an expert policy directly from offline trajectories.
+- **Action:** Implemented a Decision Transformer in `train_decision_transformer_component.py` mathematically in pure NumPy, using causal self-attention and manual backpropagation on the action prediction MSE loss. Gradient clipping was applied to stabilize training.
+- **Outcome:** The model successfully converged on the offline dataset, accurately reproducing the expert policy.
+- **Next Steps:** Evaluate the model on more complex offline RL benchmarks with discrete actions.

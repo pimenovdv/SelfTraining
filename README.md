@@ -1371,3 +1371,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_cmaes_component.py`
 **Description:** Evaluates a CMA-ES component mathematically in pure NumPy, testing its ability to optimize parameters without gradients by dynamically adapting a multivariate normal distribution's mean and covariance matrix based on sample fitness.
+
+## Component Testing: Decision Transformer
+
+**Script:** `train_decision_transformer_component.py`
+**Description:** Evaluates a Decision Transformer component mathematically in pure NumPy, testing its ability to solve offline reinforcement learning by modeling sequences of states, actions, and returns-to-go using causal self-attention, successfully learning an expert policy via sequence modeling and manual backpropagation.

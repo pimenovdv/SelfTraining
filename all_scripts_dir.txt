@@ -11,6 +11,7 @@
 ./train_byol_component.py
 ./train_capsule_network_component.py
 ./train_cbow_component.py
+./train_cmaes_component.py
 ./train_cnp_component.py
 ./train_continuous_hopfield_component.py
 ./train_contrastive_component.py
@@ -21,6 +22,7 @@
 ./train_darts_component.py
 ./train_ddpg_component.py
 ./train_ddpm_component.py
+./train_decision_transformer_component.py
 ./train_decoder_block_component.py
 ./train_deepsets_component.py
 ./train_dfa_component.py
@@ -81,6 +83,7 @@
 ./train_nade_component.py
 ./train_nalu_component.py
 ./train_nca_component.py
+./train_nerf_component.py
 ./train_neural_ode_component.py
 ./train_ntm_component.py
 ./train_orthogonal_rnn_component.py
@@ -101,6 +104,7 @@
 ./train_rmsnorm_component.py
 ./train_rnn_component.py
 ./train_rope_component.py
+./train_sac_component.py
 ./train_sae_component.py
 ./train_sam_component.py
 ./train_scaling_laws_component.py
@@ -124,5 +128,3 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
-train_sac_component.py
-./train_cmaes_component.py

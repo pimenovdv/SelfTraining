@@ -128,3 +128,4 @@ docs/0129_train_td3_component.md
 docs/0130_train_nerf_component.md
 docs/0131_train_sac_component.md
 docs/0132_train_cmaes_component.md
+docs/0133_train_decision_transformer_component.md
