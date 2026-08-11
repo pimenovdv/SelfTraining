@@ -871,3 +871,9 @@
 - **Action:** Implemented Soft Actor-Critic in `train_sac_component.py` mathematically in pure NumPy, using manual backpropagation, twin critics, and the reparameterization trick for a stochastic Gaussian policy.
 - **Outcome:** The model successfully converged on a continuous control task.
 - **Next Steps:** Evaluate the model on continuous control tasks with sparse rewards and compare with deterministic policy gradient methods.
+
+### Experiment 0132: Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+- **Hypothesis:** By dynamically adapting a multivariate normal distribution based on the fitness of drawn samples, an evolutionary strategy can optimize complex, non-differentiable objectives more efficiently than standard random search.
+- **Action:** Implemented CMA-ES in `train_cmaes_component.py` mathematically in pure NumPy, updating the mean, covariance matrix, and step size rules to optimize a test function.
+- **Outcome:** The model successfully converged on the objective function, adapting its search distribution effectively.
+- **Next Steps:** Apply CMA-ES to optimize hyper-parameters or network architectures where backpropagation is not applicable.

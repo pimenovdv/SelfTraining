@@ -98,6 +98,8 @@
 
 ## Phase 3: Integration and Capability Emergence
 
+- [x] Explore advanced gradient-free optimization strategies mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy - CMA-ES).
+
 - [x] Explore pointer mechanisms for sequence tasks mathematically. (Implemented and verified Pointer Network for predicting sequence order via input attention).
 
 - [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).
