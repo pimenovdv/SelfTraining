@@ -11,6 +11,7 @@ train_bpe
 train_byol_component
 train_capsule_network_component
 train_cbow_component
+train_cmaes_component
 train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component
@@ -21,6 +22,7 @@ train_dae_component
 train_darts_component
 train_ddpg_component
 train_ddpm_component
+train_decision_transformer_component
 train_decoder_block_component
 train_deepsets_component
 train_dfa_component
@@ -60,6 +62,7 @@ train_ica_component
 train_icm_component
 train_jepa_component
 train_kan_component
+train_kmeans_component
 train_knowledge_distillation_component
 train_layernorm_component
 train_linear_attention_component
@@ -126,5 +129,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_cmaes_component
-train_decision_transformer_component

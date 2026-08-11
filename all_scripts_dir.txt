@@ -62,6 +62,7 @@
 ./train_icm_component.py
 ./train_jepa_component.py
 ./train_kan_component.py
+./train_kmeans_component.py
 ./train_knowledge_distillation_component.py
 ./train_layernorm_component.py
 ./train_linear_attention_component.py

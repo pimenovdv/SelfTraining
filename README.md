@@ -1376,3 +1376,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_decision_transformer_component.py`
 **Description:** Evaluates a Decision Transformer component mathematically in pure NumPy, testing its ability to solve offline reinforcement learning by modeling sequences of states, actions, and returns-to-go using causal self-attention, successfully learning an expert policy via sequence modeling and manual backpropagation.
+
+## Component Testing: K-Means Clustering
+
+**Script:** `train_kmeans_component.py`
+**Description:** Evaluates a K-Means clustering component mathematically in pure NumPy, testing its ability to partition data points into clusters by iteratively updating centroids to minimize the within-cluster sum of squared distances.
