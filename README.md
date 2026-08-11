@@ -1351,3 +1351,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_pointer_network_component.py`
 **Description:** Evaluates a Pointer Network component mathematically in pure NumPy, testing its ability to solve combinatorial tasks by learning to point to elements of the input sequence directly using an attention mechanism over the encoder states.
+
+## Component Testing: Twin Delayed DDPG (TD3)
+
+**Script:** `train_td3_component.py`
+**Description:** Evaluates a Twin Delayed DDPG (TD3) component mathematically in pure NumPy, testing its ability to mitigate overestimation bias in continuous control through clipped double Q-learning and delayed updates.
