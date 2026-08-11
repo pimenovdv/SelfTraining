@@ -116,6 +116,7 @@
 - [x] Explore planning and lookahead using self-play mathematically. (Implemented and verified Monte Carlo Tree Search (MCTS) combined with a policy/value network).
 - [x] Explore Sharpness-Aware Minimization mathematically. (Implemented and verified SAM to explicitly penalize loss sharpness during optimization).
 - [x] Explore continuous deterministic policy gradients with delayed updates and clipped double Q-learning mathematically. (Implemented and verified Twin Delayed DDPG - TD3).
+- [x] Explore continuous 3D representations and neural rendering mathematically. (Implemented and verified Neural Radiance Fields - NeRF using positional encoding and volumetric rendering).
 - [ ] Train medium-scale models to observe emergent capabilities.
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.
