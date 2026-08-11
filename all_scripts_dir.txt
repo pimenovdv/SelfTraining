@@ -86,6 +86,7 @@
 ./train_orthogonal_rnn_component.py
 ./train_pcn_component.py
 ./train_perceiver_component.py
+./train_pointer_network_component.py
 ./train_positional_encoding_component.py
 ./train_ppo_component.py
 ./train_protonet_component.py
@@ -115,6 +116,7 @@
 ./train_swiglu_component.py
 ./train_target_propagation_component.py
 ./train_tcn_component.py
+./train_td3_component.py
 ./train_transformer_block_component.py
 ./train_vae_component.py
 ./train_vib_component.py
@@ -122,5 +124,4 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
-./train_pointer_network_component.py
-./train_td3_component.py
+train_sac_component.py

@@ -865,3 +865,9 @@
 - **Action:** Implemented NeRF in `train_nerf_component.py` mathematically in pure NumPy, using manual backpropagation through the volumetric rendering discrete approximation.
 - **Outcome:** The model successfully overfit a single ray to render a target color.
 - **Next Steps:** Evaluate the model on multi-view 3D scene reconstruction tasks.
+
+### Experiment 0131: Soft Actor-Critic (SAC)
+- **Hypothesis:** By maximizing an objective that includes both expected return and entropy, an off-policy actor-critic algorithm can achieve robust, sample-efficient learning in continuous action spaces while avoiding premature convergence.
+- **Action:** Implemented Soft Actor-Critic in `train_sac_component.py` mathematically in pure NumPy, using manual backpropagation, twin critics, and the reparameterization trick for a stochastic Gaussian policy.
+- **Outcome:** The model successfully converged on a continuous control task.
+- **Next Steps:** Evaluate the model on continuous control tasks with sparse rewards and compare with deterministic policy gradient methods.

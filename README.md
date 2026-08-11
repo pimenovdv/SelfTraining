@@ -1361,3 +1361,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_nerf_component.py`
 **Description:** Evaluates a Neural Radiance Field (NeRF) component mathematically in pure NumPy, testing its ability to represent continuous 3D scenes by mapping spatial coordinates with positional encoding to density and color, and rendering them using volume rendering equations.
+
+## Component Testing: Soft Actor-Critic (SAC)
+
+**Script:** `train_sac_component.py`
+**Description:** Evaluates a Soft Actor-Critic (SAC) component mathematically in pure NumPy, testing its ability to optimize a stochastic policy in an off-policy manner using maximum entropy reinforcement learning to encourage exploration and stability.
