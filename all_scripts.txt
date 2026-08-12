@@ -131,3 +131,4 @@ train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
 train_gmm_component
+train_dbscan_component

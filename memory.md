@@ -889,3 +889,9 @@
 - **Action:** Implemented GMM in `train_gmm_component.py` mathematically in pure NumPy, using EM to alternate between calculating component responsibilities (E-step) and updating distribution parameters (M-step).
 - **Outcome:** The implementation successfully clustered synthetic 2D data, maximizing the log-likelihood and recovering the parameters of the underlying Gaussian components.
 - **Next Steps:** Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes.
+
+### Experiment 0137: Density-Based Spatial Clustering (DBSCAN)
+- **Hypothesis:** Density-Based Spatial Clustering of Applications with Noise (DBSCAN) can effectively identify clusters of arbitrary, non-convex shapes by grouping together closely packed points, while explicitly handling outliers as noise.
+- **Action:** Implemented DBSCAN in `train_dbscan_component.py` mathematically in pure NumPy, using density-reachability from core points based on $L_2$ norm.
+- **Outcome:** The implementation successfully clustered synthetic non-convex data ("two moons"), correctly separating the structures and isolating noise, where K-Means would fail.
+- **Next Steps:** Explore hierarchical density-based clustering (HDBSCAN) to alleviate the sensitivity to the distance hyperparameter.

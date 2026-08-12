@@ -132,3 +132,4 @@
 0134_train_kmeans_component
 0135_train_selu_component
 0136_train_gmm_component
+0137_train_dbscan_component
