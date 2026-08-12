@@ -88,6 +88,7 @@ train_nalu_component.py
 train_nca_component.py
 train_nerf_component.py
 train_neural_ode_component.py
+train_nmf_component
 train_ntm_component.py
 train_orthogonal_rnn_component.py
 train_pca_component.py

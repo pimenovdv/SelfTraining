@@ -88,6 +88,7 @@ train_nalu_component
 train_nca_component
 train_nerf_component
 train_neural_ode_component
+train_nmf_component
 train_ntm_component
 train_orthogonal_rnn_component
 train_pca_component
