@@ -1381,3 +1381,69 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_kmeans_component.py`
 **Description:** Evaluates a K-Means clustering component mathematically in pure NumPy, testing its ability to partition data points into clusters by iteratively updating centroids to minimize the within-cluster sum of squared distances.
+
+
+## Component Testing: Revnet
+
+**Script:** `train_revnet_component.py`
+**Description:** Evaluates a Revnet component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Evaluation Metrics
+
+**Script:** `train_evaluation_metrics_component.py`
+**Description:** Evaluates a Evaluation Metrics component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Selective SSM
+
+**Script:** `train_selective_ssm_component.py`
+**Description:** Evaluates a Selective SSM component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: MLP-Mixer
+
+**Script:** `train_mlpmixer_component.py`
+**Description:** Evaluates a MLP-Mixer component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Alibi
+
+**Script:** `train_alibi_component.py`
+**Description:** Evaluates a Alibi component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: DDPM
+
+**Script:** `train_ddpm_component.py`
+**Description:** Evaluates a DDPM component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Retention
+
+**Script:** `train_retention_component.py`
+**Description:** Evaluates a Retention component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: VAE
+
+**Script:** `train_vae_component.py`
+**Description:** Evaluates a VAE component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: State Space Model (SSM)
+
+**Script:** `train_ssm_component.py`
+**Description:** Evaluates a State Space Model (SSM) component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Grokking
+
+**Script:** `train_grokking_component.py`
+**Description:** Evaluates a Grokking component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Feed Forward
+
+**Script:** `train_ff_component.py`
+**Description:** Evaluates a Feed Forward component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: LSTM
+
+**Script:** `train_lstm_component.py`
+**Description:** Evaluates a LSTM component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: RNN
+
+**Script:** `train_rnn_component.py`
+**Description:** Evaluates a RNN component, verifying its logic mathematically in pure NumPy.
