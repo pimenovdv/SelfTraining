@@ -133,3 +133,4 @@
 0136_train_gmm_component
 0137_train_dbscan_component
 0138_train_pca_component
+0139_train_nmf_component

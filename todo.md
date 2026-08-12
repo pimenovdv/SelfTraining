@@ -130,6 +130,7 @@
 - [ ] Refine the architecture based on empirical results from integrated systems.
 
 - [x] Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes. (Implemented and verified DBSCAN mathematically clustering non-convex two-moons data by identifying dense core points and isolating noise).
+- [x] Explore non-negative representation learning mathematically. (Implemented and verified Non-negative Matrix Factorization - NMF using multiplicative update rules).
 
 ## Phase 4: Scaling to AGI
 

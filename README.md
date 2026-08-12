@@ -1467,3 +1467,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_pca_component.py`
 **Description:** Evaluates a Principal Component Analysis (PCA) component mathematically in pure NumPy, testing its ability to perform dimensionality reduction by finding orthogonal directions of maximum variance in the data via eigendecomposition of the covariance matrix.
+
+## Component Testing: Non-negative Matrix Factorization (NMF)
+
+**Script:** `train_nmf_component.py`
+**Description:** Evaluates a Non-negative Matrix Factorization (NMF) component mathematically in pure NumPy, testing its ability to factorize non-negative data into lower-rank non-negative matrices using multiplicative update rules.
