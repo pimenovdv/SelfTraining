@@ -883,3 +883,9 @@
 - **Action:** Implemented a Decision Transformer in `train_decision_transformer_component.py` mathematically in pure NumPy, using causal self-attention and manual backpropagation on the action prediction MSE loss. Gradient clipping was applied to stabilize training.
 - **Outcome:** The model successfully converged on the offline dataset, accurately reproducing the expert policy.
 - **Next Steps:** Evaluate the model on more complex offline RL benchmarks with discrete actions.
+
+### Experiment 0136: Gaussian Mixture Models (GMM)
+- **Hypothesis:** By employing Expectation-Maximization (EM), a model can iteratively learn the parameters (means, covariances, and weights) of multiple Gaussian distributions to model complex data distributions and perform soft clustering.
+- **Action:** Implemented GMM in `train_gmm_component.py` mathematically in pure NumPy, using EM to alternate between calculating component responsibilities (E-step) and updating distribution parameters (M-step).
+- **Outcome:** The implementation successfully clustered synthetic 2D data, maximizing the log-likelihood and recovering the parameters of the underlying Gaussian components.
+- **Next Steps:** Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes.

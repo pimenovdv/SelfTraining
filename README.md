@@ -1452,3 +1452,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_selu_component.py`
 **Description:** Evaluates a Scaled Exponential Linear Unit (SELU) component mathematically in pure NumPy, testing its ability to induce self-normalization in deep networks, maintaining a mean of 0 and variance of 1 across layers.
+
+## Component Testing: Gaussian Mixture Models (GMM)
+
+**Script:** `train_gmm_component.py`
+**Description:** Evaluates a Gaussian Mixture Model (GMM) component mathematically in pure NumPy, testing its ability to perform soft clustering and density estimation via the Expectation-Maximization (EM) algorithm, iteratively updating component responsibilities and distribution parameters.

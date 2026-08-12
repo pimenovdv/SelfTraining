@@ -1,0 +1,133 @@
+train bpe
+train ffn component
+train attention component
+train layernorm component
+train transformer block component
+train positional encoding component
+train multihead attention component
+train multihead transformer block component
+train masked attention component
+train cross attention component
+train decoder block component
+train full encoder decoder component
+train rmsnorm component
+train swiglu component
+train rope component
+train moe component
+train gqa component
+train lora component
+train evaluation metrics component
+train alibi component
+train scaling laws component
+train adamw component
+train gelu component
+train dropout component
+train dpo component
+train quantization component
+train vae component
+train contrastive component
+train rnn component
+train gru component
+train lstm component
+train ssm component
+train selective ssm component
+train kan component
+train linear attention component
+train retention component
+train ddpm component
+train flow matching component
+train sae component
+train vqvae component
+train grokking component
+train revnet component
+train adaln component
+train knowledge distillation component
+train batchnorm component
+train groupnorm component
+train highway component
+train mlpmixer component
+train gmlp component
+train hypernetwork component
+train hopfield component
+train gan component
+train gcn component
+train rbm component
+train esn component
+train bnn component
+train neural ode component
+train snn component
+train gat component
+train memory network component
+train reinforce component
+train actor critic component
+train ppo component
+train dqn component
+train maml component
+train tcn component
+train ewc component
+train ctrnn component
+train feedback alignment component
+train dfa component
+train elm component
+train rbf component
+train som component
+train nca component
+train ltc component
+train ntm component
+train skipgram component
+train cbow component
+train gumbel softmax component
+train perceiver component
+train fnet component
+train pcn component
+train capsule network component
+train deepsets component
+train spectral normalization component
+train weight normalization component
+train ebm component
+train dni component
+train es component
+train mdn component
+train realnvp component
+train nade component
+train dae component
+train siren component
+train cnp component
+train simsiam component
+train icm component
+train flow matching component
+train mae component
+train vit component
+train barlow twins component
+train hebbian component
+train ica component
+train wgan component
+train byol component
+train gflownet component
+train orthogonal rnn component
+train jepa component
+train lmu component
+train target propagation component
+train vib component
+train ddpg component
+train lottery ticket component
+train sam component
+train ff component
+train darts component
+train protonet component
+train fgsm component
+train sparsemax component
+train cpc component
+train continuous hopfield component
+train nalu component
+train act component
+train mcts component
+train relational network component
+train pointer network component
+train td3 component
+train nerf component
+train sac component
+train cmaes component
+train decision transformer component
+train kmeans component
+train selu component

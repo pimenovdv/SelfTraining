@@ -49,6 +49,7 @@ train_gcn_component
 train_gelu_component
 train_gflownet_component
 train_gmlp_component
+train_gmm_component
 train_gqa_component
 train_grokking_component
 train_groupnorm_component
