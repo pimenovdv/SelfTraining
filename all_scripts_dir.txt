@@ -130,3 +130,4 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
+./train_gmm_component.py

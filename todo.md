@@ -102,7 +102,7 @@
 
 - [x] Explore pointer mechanisms for sequence tasks mathematically. (Implemented and verified Pointer Network for predicting sequence order via input attention).
 
-- [x] Explore unsupervised clustering mathematically. (Implemented and verified K-Means clustering algorithm).
+- [x] Explore unsupervised clustering mathematically. (Implemented and verified K-Means clustering algorithm, and extended to soft assignments via Gaussian Mixture Models - GMM).
 
 - [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).
 

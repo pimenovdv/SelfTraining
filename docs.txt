@@ -131,3 +131,4 @@
 0133_train_decision_transformer_component
 0134_train_kmeans_component
 0135_train_selu_component
+0136_train_gmm_component
