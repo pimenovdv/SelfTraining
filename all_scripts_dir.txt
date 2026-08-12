@@ -20,6 +20,7 @@
 ./train_ctrnn_component.py
 ./train_dae_component.py
 ./train_darts_component.py
+./train_dbscan_component.py
 ./train_ddpg_component.py
 ./train_ddpm_component.py
 ./train_decision_transformer_component.py
@@ -49,6 +50,7 @@
 ./train_gelu_component.py
 ./train_gflownet_component.py
 ./train_gmlp_component.py
+./train_gmm_component.py
 ./train_gqa_component.py
 ./train_grokking_component.py
 ./train_groupnorm_component.py
@@ -88,6 +90,7 @@
 ./train_neural_ode_component.py
 ./train_ntm_component.py
 ./train_orthogonal_rnn_component.py
+./train_pca_component.py
 ./train_pcn_component.py
 ./train_perceiver_component.py
 ./train_pointer_network_component.py
@@ -130,5 +133,3 @@
 ./train_vqvae_component.py
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
-./train_gmm_component.py
-./train_dbscan_component.py

@@ -90,6 +90,7 @@ train_nerf_component
 train_neural_ode_component
 train_ntm_component
 train_orthogonal_rnn_component
+train_pca_component
 train_pcn_component
 train_perceiver_component
 train_pointer_network_component

@@ -95,7 +95,6 @@
 0095_train_cnp_component
 0096_train_simsiam_component
 0097_train_icm_component
-0098_train_flow_matching_component
 0099_train_mae_component
 0100_train_vit_component
 0101_train_barlow_twins_component
@@ -133,3 +132,4 @@
 0135_train_selu_component
 0136_train_gmm_component
 0137_train_dbscan_component
+0138_train_pca_component
