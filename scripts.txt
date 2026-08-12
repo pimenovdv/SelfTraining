@@ -20,6 +20,7 @@ train_cross_attention_component
 train_ctrnn_component
 train_dae_component
 train_darts_component
+train_dbscan_component
 train_ddpg_component
 train_ddpm_component
 train_decision_transformer_component
@@ -49,6 +50,7 @@ train_gcn_component
 train_gelu_component
 train_gflownet_component
 train_gmlp_component
+train_gmm_component
 train_gqa_component
 train_grokking_component
 train_groupnorm_component
@@ -88,6 +90,7 @@ train_nerf_component
 train_neural_ode_component
 train_ntm_component
 train_orthogonal_rnn_component
+train_pca_component
 train_pcn_component
 train_perceiver_component
 train_pointer_network_component
@@ -130,5 +133,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_gmm_component
-train_dbscan_component

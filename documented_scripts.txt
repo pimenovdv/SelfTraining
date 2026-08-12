@@ -95,7 +95,6 @@ train siren component
 train cnp component
 train simsiam component
 train icm component
-train flow matching component
 train mae component
 train vit component
 train barlow twins component
@@ -131,3 +130,6 @@ train cmaes component
 train decision transformer component
 train kmeans component
 train selu component
+train gmm component
+train dbscan component
+train pca component

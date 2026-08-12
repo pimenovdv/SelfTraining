@@ -1462,3 +1462,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_dbscan_component.py`
 **Description:** Evaluates a DBSCAN component mathematically in pure NumPy, testing its ability to identify non-convex clusters and isolate noise based on local density metrics.
+
+## Component Testing: Principal Component Analysis (PCA)
+
+**Script:** `train_pca_component.py`
+**Description:** Evaluates a Principal Component Analysis (PCA) component mathematically in pure NumPy, testing its ability to perform dimensionality reduction by finding orthogonal directions of maximum variance in the data via eigendecomposition of the covariance matrix.
