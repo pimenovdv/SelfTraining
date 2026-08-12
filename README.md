@@ -1447,3 +1447,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_rnn_component.py`
 **Description:** Evaluates a RNN component, verifying its logic mathematically in pure NumPy.
+
+## Component Testing: Scaled Exponential Linear Unit (SELU)
+
+**Script:** `train_selu_component.py`
+**Description:** Evaluates a Scaled Exponential Linear Unit (SELU) component mathematically in pure NumPy, testing its ability to induce self-normalization in deep networks, maintaining a mean of 0 and variance of 1 across layers.

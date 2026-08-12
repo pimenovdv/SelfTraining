@@ -130,3 +130,4 @@ docs/0131_train_sac_component.md
 docs/0132_train_cmaes_component.md
 docs/0133_train_decision_transformer_component.md
 docs/0134_train_kmeans_component.md
+docs/0135_train_selu_component.md

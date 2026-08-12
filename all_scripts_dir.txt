@@ -110,6 +110,7 @@
 ./train_sam_component.py
 ./train_scaling_laws_component.py
 ./train_selective_ssm_component.py
+./train_selu_component.py
 ./train_simsiam_component.py
 ./train_siren_component.py
 ./train_skipgram_component.py

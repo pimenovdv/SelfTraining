@@ -123,6 +123,7 @@
 - [x] Explore continuous deterministic policy gradients with delayed updates and clipped double Q-learning mathematically. (Implemented and verified Twin Delayed DDPG - TD3).
 - [x] Explore continuous 3D representations and neural rendering mathematically. (Implemented and verified Neural Radiance Fields - NeRF using positional encoding and volumetric rendering).
 - [x] Explore offline reinforcement learning via sequence modeling mathematically. (Implemented and verified Decision Transformer modeling state-action-return sequences).
+- [x] Explore self-normalizing neural networks mathematically. (Implemented and verified Scaled Exponential Linear Unit - SELU component).
 - [ ] Train medium-scale models to observe emergent capabilities.
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.
