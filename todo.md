@@ -128,6 +128,8 @@
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.
 
+- [x] Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes. (Implemented and verified DBSCAN mathematically clustering non-convex two-moons data by identifying dense core points and isolating noise).
+
 ## Phase 4: Scaling to AGI
 
 - [ ] Secure infrastructure for large-scale training.

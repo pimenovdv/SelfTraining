@@ -1457,3 +1457,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_gmm_component.py`
 **Description:** Evaluates a Gaussian Mixture Model (GMM) component mathematically in pure NumPy, testing its ability to perform soft clustering and density estimation via the Expectation-Maximization (EM) algorithm, iteratively updating component responsibilities and distribution parameters.
+
+## Component Testing: DBSCAN
+
+**Script:** `train_dbscan_component.py`
+**Description:** Evaluates a DBSCAN component mathematically in pure NumPy, testing its ability to identify non-convex clusters and isolate noise based on local density metrics.

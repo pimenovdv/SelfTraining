@@ -131,3 +131,4 @@
 ./train_weight_normalization_component.py
 ./train_wgan_component.py
 ./train_gmm_component.py
+./train_dbscan_component.py
