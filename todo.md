@@ -149,3 +149,4 @@
 - [ ] Transition operational control to the aligned ASI system.
 
 - [x] Explore state estimation and linear quadratic Gaussian control mathematically. (Implemented and verified Kalman Filter estimating hidden states from noisy observations recursively).
+- [x] Explore Bayesian Optimization mathematically. (Implemented and verified Bayesian Optimization component using Gaussian Process and Expected Improvement).

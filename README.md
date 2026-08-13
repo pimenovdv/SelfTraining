@@ -1498,3 +1498,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_kalman_filter_component.py`
 **Description:** Evaluates a Kalman Filter component mathematically in pure NumPy, testing its ability to estimate the true state of a linear dynamic system from a series of noisy measurements by recursively applying prediction and update steps.
+
+## Component Testing: Bayesian Optimization
+
+**Script:** `train_bayesian_optimization_component.py`
+**Description:** Evaluates a Bayesian Optimization component mathematically in pure NumPy, testing its ability to find the global maximum of a non-convex 1D function efficiently by fitting a Gaussian Process and maximizing the Expected Improvement acquisition function.

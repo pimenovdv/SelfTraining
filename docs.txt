@@ -139,3 +139,4 @@
 0142_train_gaussian_process_component
 0143_train_hmm_component
 0144_train_kalman_filter_component
+0145_train_bayesian_optimization_component
