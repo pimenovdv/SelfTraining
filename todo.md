@@ -133,6 +133,8 @@
 - [x] Explore non-negative representation learning mathematically. (Implemented and verified Non-negative Matrix Factorization - NMF using multiplicative update rules).
 - [x] Explore structure-preserving dimensionality reduction mathematically. (Implemented and verified t-Distributed Stochastic Neighbor Embedding - t-SNE using Student-t distribution and KL divergence minimization).
 
+- [x] Explore non-parametric probabilistic modeling mathematically. (Implemented and verified Gaussian Process Regression - GPR providing exact inference and predictive uncertainties via RBF kernel).
+
 ## Phase 4: Scaling to AGI
 
 - [ ] Secure infrastructure for large-scale training.
