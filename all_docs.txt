@@ -134,3 +134,4 @@ docs/0136_train_gmm_component.md
 docs/0137_train_dbscan_component.md
 docs/0138_train_pca_component.md
 docs/0139_train_nmf_component.md
+docs/0140_train_tsne_component.md

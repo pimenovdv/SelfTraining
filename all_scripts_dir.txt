@@ -128,6 +128,7 @@
 ./train_tcn_component.py
 ./train_td3_component.py
 ./train_transformer_block_component.py
+./train_tsne_component.py
 ./train_vae_component.py
 ./train_vib_component.py
 ./train_vit_component.py

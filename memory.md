@@ -9,6 +9,7 @@
 * Phase 1: Foundations and Mathematical Modeling. Currently investigating core AGI architecture components, focusing on mathematical formulation and testing hypotheses on small-scale/synthetic datasets. Specifically targeting non-linear transformation capabilities of basic Feed-Forward Networks (FFNs), Self-Attention mechanisms, and Layer Normalization.
 
 ## Key Insights
+* *(Date: Current)* - Successfully implemented and tested a t-Distributed Stochastic Neighbor Embedding (t-SNE) component mathematically in pure NumPy. Confirmed that by converting high-dimensional Euclidean distances into conditional probabilities representing similarities, and minimizing the Kullback-Leibler divergence with a Student-t distribution in the lower-dimensional space, the model effectively learns structure-preserving dimensionality reduction using gradient descent with momentum and early exaggeration.
 * *(Date: Current)* - Successfully implemented and tested an Intrinsic Curiosity Module (ICM) mathematically in pure NumPy. Confirmed that generating intrinsic reward based on forward model prediction error, while learning action-conditioned state representations via an inverse model, effectively encourages exploration without relying on extrinsic rewards via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested a Denoising Autoencoder (DAE) component mathematically in pure NumPy. Confirmed that by forcing the model to reconstruct clean data from noise-corrupted inputs, it learns robust, foundational representations rather than simply copying the input via manual backpropagation.
 * *(Date: Current)* - Successfully implemented and tested an Evolution Strategies (ES) component mathematically in pure NumPy. Confirmed that black-box optimization via stochastic parameter perturbation and fitness-weighted updates effectively learns non-linear representations without calculating analytical gradients (backpropagation).
@@ -155,6 +156,19 @@
   The reverse process learns a model $\epsilon_\theta(x_t, t)$ to predict the noise $\epsilon$ added to $x_0$.
   The training objective simplifies to:
   $\mathcal{L} = \mathbb{E}_{t, x_0, \epsilon} \left[ \| \epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, t) \|^2 \right]$
+
+* **t-Distributed Stochastic Neighbor Embedding (t-SNE)**
+  Let $X$ be the high-dimensional data points. We compute pairwise affinities:
+  $p_{j|i} = \frac{\exp(-||x_i - x_j||^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-||x_i - x_k||^2 / 2\sigma_i^2)}$
+  The joint probabilities are symmetric:
+  $p_{ij} = \frac{p_{j|i} + p_{i|j}}{2N}$
+  Let $Y$ be the low-dimensional map points. We use a Student-t distribution with one degree of freedom to measure similarities in the embedded space, alleviating the crowding problem:
+  $q_{ij} = \frac{(1 + ||y_i - y_j||^2)^{-1}}{\sum_{k \neq l} (1 + ||y_k - y_l||^2)^{-1}}$
+  The objective is to minimize the Kullback-Leibler divergence:
+  $C = KL(P || Q) = \sum_{i} \sum_{j} p_{ij} \log \frac{p_{ij}}{q_{ij}}$
+  The gradient is computed as:
+  $\frac{\partial C}{\partial y_i} = 4 \sum_j (p_{ij} - q_{ij})(y_i - y_j)(1 + ||y_i - y_j||^2)^{-1}$
+  During optimization, gradient descent with momentum and early exaggeration (multiplying $p_{ij}$ by a constant early in training) is used to find the optimal $Y$.
 
 * **Linear Attention**
   Standard attention computes $O = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$, which has $O(N^2)$ complexity where $N$ is sequence length.
@@ -889,6 +903,12 @@
 - **Action:** Implemented GMM in `train_gmm_component.py` mathematically in pure NumPy, using EM to alternate between calculating component responsibilities (E-step) and updating distribution parameters (M-step).
 - **Outcome:** The implementation successfully clustered synthetic 2D data, maximizing the log-likelihood and recovering the parameters of the underlying Gaussian components.
 - **Next Steps:** Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes.
+
+### Experiment 0140: t-Distributed Stochastic Neighbor Embedding (t-SNE)
+- **Hypothesis:** By converting high-dimensional Euclidean distances into conditional probabilities that represent similarities, and minimizing the Kullback-Leibler divergence with a Student-t distribution in the low-dimensional space, a model can perform structure-preserving dimensionality reduction, effectively handling non-linear manifolds and the crowding problem.
+- **Action:** Implemented t-SNE in `train_tsne_component.py` mathematically in pure NumPy, using a binary search for perplexity, Student-t distribution for the embedded space, and gradient descent with momentum and early exaggeration.
+- **Outcome:** The implementation successfully reduced the dimensionality of two separated 10D Gaussian clusters into 2D, preserving their separation and minimizing the KL divergence.
+- **Next Steps:** Evaluate t-SNE on larger, more complex real-world datasets (like MNIST) to visualize higher-order structural relationships.
 
 ### Experiment 0137: Density-Based Spatial Clustering (DBSCAN)
 - **Hypothesis:** Density-Based Spatial Clustering of Applications with Noise (DBSCAN) can effectively identify clusters of arbitrary, non-convex shapes by grouping together closely packed points, while explicitly handling outliers as noise.
