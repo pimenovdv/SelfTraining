@@ -147,3 +147,5 @@
 - [ ] Implement self-improvement and self-correction loops within the AGI architecture.
 - [ ] Monitor capability takeoff and ensure alignment mechanisms hold under recursive self-improvement.
 - [ ] Transition operational control to the aligned ASI system.
+
+- [x] Explore state estimation and linear quadratic Gaussian control mathematically. (Implemented and verified Kalman Filter estimating hidden states from noisy observations recursively).

@@ -1493,3 +1493,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_hmm_component.py`
 **Description:** Evaluates a Hidden Markov Model (HMM) component mathematically in pure NumPy, testing its ability to infer hidden states from a sequence of observations using the Expectation-Maximization (EM) algorithm (Baum-Welch algorithm).
+
+## Component Testing: Kalman Filter
+
+**Script:** `train_kalman_filter_component.py`
+**Description:** Evaluates a Kalman Filter component mathematically in pure NumPy, testing its ability to estimate the true state of a linear dynamic system from a series of noisy measurements by recursively applying prediction and update steps.

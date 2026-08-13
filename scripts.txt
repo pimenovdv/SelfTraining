@@ -46,6 +46,7 @@ train_fnet_component
 train_full_encoder_decoder_component
 train_gan_component
 train_gat_component
+train_gaussian_process_component
 train_gcn_component
 train_gelu_component
 train_gflownet_component
@@ -63,6 +64,7 @@ train_hypernetwork_component
 train_ica_component
 train_icm_component
 train_jepa_component
+train_kalman_filter_component
 train_kan_component
 train_kmeans_component
 train_knowledge_distillation_component
@@ -136,4 +138,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_gaussian_process_component
