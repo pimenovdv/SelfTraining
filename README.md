@@ -1487,3 +1487,9 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_gaussian_process_component.py`
 **Description:** Evaluates a Gaussian Process Regression (GPR) component mathematically in pure NumPy, testing its ability to perform non-parametric probabilistic regression using an RBF kernel and Cholesky decomposition to output predictive means and standard deviations (uncertainties).
+
+
+## Component Testing: Hidden Markov Model (HMM)
+
+**Script:** `train_hmm_component.py`
+**Description:** Evaluates a Hidden Markov Model (HMM) component mathematically in pure NumPy, testing its ability to infer hidden states from a sequence of observations using the Expectation-Maximization (EM) algorithm (Baum-Welch algorithm).
