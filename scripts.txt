@@ -128,6 +128,7 @@ train_target_propagation_component
 train_tcn_component
 train_td3_component
 train_transformer_block_component
+train_tsne_component
 train_vae_component
 train_vib_component
 train_vit_component

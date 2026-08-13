@@ -1472,3 +1472,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_nmf_component.py`
 **Description:** Evaluates a Non-negative Matrix Factorization (NMF) component mathematically in pure NumPy, testing its ability to factorize non-negative data into lower-rank non-negative matrices using multiplicative update rules.
+
+## Component Testing: t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+**Script:** `train_tsne_component.py`
+**Description:** Evaluates a t-SNE component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by converting high-dimensional Euclidean distances into conditional probabilities and minimizing the Kullback-Leibler divergence with a Student-t distribution in the low-dimensional space.
