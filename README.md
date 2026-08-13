@@ -1482,3 +1482,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_spectral_clustering_component.py`
 **Description:** Evaluates a Spectral Clustering component mathematically in pure NumPy, testing its ability to cluster non-convex shapes like the Two Moons dataset using an RBF affinity matrix and normalized graph Laplacian.
+
+## Component Testing: Gaussian Process Regression (GPR)
+
+**Script:** `train_gaussian_process_component.py`
+**Description:** Evaluates a Gaussian Process Regression (GPR) component mathematically in pure NumPy, testing its ability to perform non-parametric probabilistic regression using an RBF kernel and Cholesky decomposition to output predictive means and standard deviations (uncertainties).
