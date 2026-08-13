@@ -6,6 +6,7 @@
 ./train_attention_component.py
 ./train_barlow_twins_component.py
 ./train_batchnorm_component.py
+./train_bayesian_optimization_component.py
 ./train_bnn_component.py
 ./train_bpe.py
 ./train_byol_component.py
