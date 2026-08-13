@@ -135,3 +135,4 @@
 0138_train_pca_component
 0139_train_nmf_component
 0140_train_tsne_component
+0141_train_spectral_clustering_component

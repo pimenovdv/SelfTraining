@@ -121,6 +121,7 @@ train_skipgram_component
 train_snn_component
 train_som_component
 train_sparsemax_component
+train_spectral_clustering_component
 train_spectral_normalization_component
 train_ssm_component
 train_swiglu_component
