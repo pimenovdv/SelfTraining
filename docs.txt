@@ -137,3 +137,4 @@
 0140_train_tsne_component
 0141_train_spectral_clustering_component
 0142_train_gaussian_process_component
+0143_train_hmm_component
