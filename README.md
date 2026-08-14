@@ -1509,3 +1509,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_dictionary_learning_component.py`
 **Description:** Evaluates a Dictionary Learning component mathematically in pure NumPy, testing its ability to learn a dictionary that provides sparse representations of synthetic data using an alternating optimization scheme with FISTA.
+
+## Component Testing: Particle Swarm Optimization (PSO)
+
+**Script:** `train_pso_component.py`
+**Description:** Evaluates a Particle Swarm Optimization (PSO) component mathematically in pure NumPy, testing its ability to find the global minimum of the non-convex Rastrigin function using a population of particles that adjust their trajectories based on cognitive and social intelligence.
