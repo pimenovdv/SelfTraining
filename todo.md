@@ -150,3 +150,6 @@
 
 - [x] Explore state estimation and linear quadratic Gaussian control mathematically. (Implemented and verified Kalman Filter estimating hidden states from noisy observations recursively).
 - [x] Explore Bayesian Optimization mathematically. (Implemented and verified Bayesian Optimization component using Gaussian Process and Expected Improvement).
+
+
+- [x] Explore dictionary learning and sparse coding mathematically. (Implemented and verified Dictionary Learning with FISTA for sparse representations).
