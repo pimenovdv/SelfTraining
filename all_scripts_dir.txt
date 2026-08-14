@@ -28,6 +28,7 @@
 ./train_decoder_block_component.py
 ./train_deepsets_component.py
 ./train_dfa_component.py
+./train_dictionary_learning_component.py
 ./train_dni_component.py
 ./train_dpo_component.py
 ./train_dqn_component.py

@@ -1503,3 +1503,9 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_bayesian_optimization_component.py`
 **Description:** Evaluates a Bayesian Optimization component mathematically in pure NumPy, testing its ability to find the global maximum of a non-convex 1D function efficiently by fitting a Gaussian Process and maximizing the Expected Improvement acquisition function.
+
+
+## Component Testing: Dictionary Learning
+
+**Script:** `train_dictionary_learning_component.py`
+**Description:** Evaluates a Dictionary Learning component mathematically in pure NumPy, testing its ability to learn a dictionary that provides sparse representations of synthetic data using an alternating optimization scheme with FISTA.

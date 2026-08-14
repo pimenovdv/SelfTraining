@@ -28,6 +28,7 @@ train_decision_transformer_component
 train_decoder_block_component
 train_deepsets_component
 train_dfa_component
+train_dictionary_learning_component
 train_dni_component
 train_dpo_component
 train_dqn_component
