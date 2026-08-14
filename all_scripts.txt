@@ -103,6 +103,7 @@ train_pointer_network_component
 train_positional_encoding_component
 train_ppo_component
 train_protonet_component
+train_pso_component
 train_quantization_component
 train_rbf_component
 train_rbm_component

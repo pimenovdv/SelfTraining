@@ -140,3 +140,4 @@ docs/0142_train_gaussian_process_component.md
 docs/0144_train_kalman_filter_component.md
 docs/0145_train_bayesian_optimization_component.md
 docs/0146_train_dictionary_learning_component.md
+docs/0147_train_pso_component.md
