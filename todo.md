@@ -156,3 +156,6 @@
 - [x] Explore Particle Swarm Optimization mathematically. (Implemented and verified Particle Swarm Optimization - PSO component optimizing non-convex functions).
 - [x] Explore Simulated Annealing mathematically. (Implemented and verified Simulated Annealing for function minimization)
 - [x] Explore Cross-Entropy Method mathematically. (Implemented and verified Cross-Entropy Method for function minimization)
+- [x] Explore Tabular Q-Learning mathematically. (Implemented and verified Q-Learning finding optimal policy via Bellman equation)
+- [x] Explore SARSA mathematically. (Implemented and verified SARSA on-policy learning)
+- [x] Explore Support Vector Machines mathematically. (Implemented and verified linear SVM with hinge loss and subgradient descent)

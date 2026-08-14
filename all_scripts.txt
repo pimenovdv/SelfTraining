@@ -105,6 +105,7 @@ train_positional_encoding_component
 train_ppo_component
 train_protonet_component
 train_pso_component
+train_q_learning_component
 train_quantization_component
 train_rbf_component
 train_rbm_component
@@ -119,6 +120,7 @@ train_rope_component
 train_sac_component
 train_sae_component
 train_sam_component
+train_sarsa_component
 train_scaling_laws_component
 train_selective_ssm_component
 train_selu_component
@@ -132,6 +134,7 @@ train_sparsemax_component
 train_spectral_clustering_component
 train_spectral_normalization_component
 train_ssm_component
+train_svm_component
 train_swiglu_component
 train_target_propagation_component
 train_tcn_component
