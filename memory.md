@@ -921,3 +921,21 @@
 - **Action:** Implemented Bayesian Optimization in `train_bayesian_optimization_component.py` mathematically in pure NumPy, using a Gaussian Process to model the objective and maximizing Expected Improvement to sample new points.
 - **Outcome:** The implementation efficiently found a near-optimal maximum of the complex non-convex function $f(x) = x \sin(x)$ within the bounds.
 - **Next Steps:** Integrate Bayesian Optimization for hyperparameter tuning of other components within the repository.
+
+### Experiment 0150: Tabular Q-Learning Component
+- **Hypothesis:** By iteratively updating an action-value function using the Bellman equation and an off-policy temporal difference learning rule, an agent can learn an optimal policy to navigate a Markov Decision Process without a model of the environment dynamics.
+- **Action:** Implemented Tabular Q-Learning in `train_q_learning_component.py` mathematically in pure NumPy, using an epsilon-greedy strategy for exploration and exploiting the maximum Q-value for temporal difference updates.
+- **Outcome:** The agent successfully converged, learning an optimal policy to navigate a 4x4 GridWorld environment to the goal state in the minimum number of steps.
+- **Next Steps:** Evaluate Q-learning scaled with deep neural networks (DQN) for complex, high-dimensional state spaces.
+
+### Experiment 0151: SARSA Component
+- **Hypothesis:** By iteratively updating an action-value function using the Bellman equation and an on-policy temporal difference learning rule based on the actual action chosen by the behavior policy, an agent can learn a safer policy compared to Q-learning.
+- **Action:** Implemented SARSA in `train_sarsa_component.py` mathematically in pure NumPy, applying the temporal difference update utilizing the specific next action selected by the epsilon-greedy policy.
+- **Outcome:** The agent successfully learned to navigate the GridWorld environment to the goal state, correctly evaluating the policy it was currently executing.
+- **Next Steps:** Compare SARSA and Q-learning in an environment with high penalty states adjacent to the optimal path (e.g., Cliff Walking) to observe risk-averse vs risk-seeking behavior.
+
+### Experiment 0152: Support Vector Machine (SVM) Component
+- **Hypothesis:** By optimizing a hinge loss function using subgradient descent, a linear Support Vector Machine can discover a robust decision boundary that maximizes the margin between different classes of a linearly separable dataset.
+- **Action:** Implemented a linear Support Vector Machine in `train_svm_component.py` mathematically in pure NumPy, optimizing the weights and bias via subgradient descent on the regularized hinge loss objective.
+- **Outcome:** The implementation correctly converged, achieving 100% accuracy and perfectly separating the distinct linear clusters.
+- **Next Steps:** Extend the model to incorporate non-linear kernel functions (e.g., Radial Basis Function - RBF, Polynomial) to handle non-linearly separable datasets via the kernel trick.

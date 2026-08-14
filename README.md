@@ -1514,3 +1514,23 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_pso_component.py`
 **Description:** Evaluates a Particle Swarm Optimization (PSO) component mathematically in pure NumPy, testing its ability to find the global minimum of the non-convex Rastrigin function using a population of particles that adjust their trajectories based on cognitive and social intelligence.
+
+## Component Testing: Cross-Entropy Method (CEM)
+
+**Script:** `train_cem_component.py`
+**Description:** Evaluates a Cross-Entropy Method (CEM) component mathematically in pure NumPy, testing its ability to solve a continuous control problem by maintaining a parameterized probability distribution over action sequences and iteratively updating the distribution's mean and covariance matrix based on sample fitness.
+
+## Component Testing: Tabular Q-Learning
+
+**Script:** `train_q_learning_component.py`
+**Description:** Evaluates a Tabular Q-Learning component mathematically in pure NumPy, testing its ability to find an optimal policy in a GridWorld environment using an off-policy temporal difference control algorithm to iteratively approximate the Bellman equation.
+
+## Component Testing: SARSA
+
+**Script:** `train_sarsa_component.py`
+**Description:** Evaluates a SARSA component mathematically in pure NumPy, testing its ability to find an optimal policy in a GridWorld environment using an on-policy temporal difference control algorithm that updates state-action values based on the specific actions taken by the epsilon-greedy policy.
+
+## Component Testing: Support Vector Machine (SVM)
+
+**Script:** `train_svm_component.py`
+**Description:** Evaluates a linear Support Vector Machine component mathematically in pure NumPy, testing its ability to learn a maximum margin decision boundary for a linearly separable dataset by optimizing the hinge loss with subgradient descent.

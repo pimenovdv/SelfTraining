@@ -144,3 +144,6 @@
 0147_train_pso_component
 0148_train_simulated_annealing_component
 0149_train_cem_component
+0150_train_q_learning_component
+0151_train_sarsa_component
+0152_train_svm_component

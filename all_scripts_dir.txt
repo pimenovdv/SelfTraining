@@ -104,6 +104,7 @@
 ./train_ppo_component.py
 ./train_protonet_component.py
 ./train_pso_component.py
+./train_q_learning_component.py
 ./train_quantization_component.py
 ./train_rbf_component.py
 ./train_rbm_component.py
@@ -118,6 +119,7 @@
 ./train_sac_component.py
 ./train_sae_component.py
 ./train_sam_component.py
+./train_sarsa_component.py
 ./train_scaling_laws_component.py
 ./train_selective_ssm_component.py
 ./train_selu_component.py
@@ -131,6 +133,7 @@
 ./train_spectral_clustering_component.py
 ./train_spectral_normalization_component.py
 ./train_ssm_component.py
+./train_svm_component.py
 ./train_swiglu_component.py
 ./train_target_propagation_component.py
 ./train_tcn_component.py
