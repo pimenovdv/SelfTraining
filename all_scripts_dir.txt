@@ -12,6 +12,7 @@
 ./train_byol_component.py
 ./train_capsule_network_component.py
 ./train_cbow_component.py
+./train_cem_component.py
 ./train_cmaes_component.py
 ./train_cnp_component.py
 ./train_continuous_hopfield_component.py
@@ -121,6 +122,7 @@
 ./train_selective_ssm_component.py
 ./train_selu_component.py
 ./train_simsiam_component.py
+./train_simulated_annealing_component.py
 ./train_siren_component.py
 ./train_skipgram_component.py
 ./train_snn_component.py

@@ -12,6 +12,7 @@ train_bpe
 train_byol_component
 train_capsule_network_component
 train_cbow_component
+train_cem_component
 train_cmaes_component
 train_cnp_component
 train_continuous_hopfield_component
@@ -122,6 +123,7 @@ train_scaling_laws_component
 train_selective_ssm_component
 train_selu_component
 train_simsiam_component
+train_simulated_annealing_component
 train_siren_component
 train_skipgram_component
 train_snn_component

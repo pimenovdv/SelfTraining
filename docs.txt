@@ -142,3 +142,5 @@
 0145_train_bayesian_optimization_component
 0146_train_dictionary_learning_component
 0147_train_pso_component
+0148_train_simulated_annealing_component
+0149_train_cem_component
