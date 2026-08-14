@@ -915,3 +915,9 @@
 - **Action:** Implemented DBSCAN in `train_dbscan_component.py` mathematically in pure NumPy, using density-reachability from core points based on $L_2$ norm.
 - **Outcome:** The implementation successfully clustered synthetic non-convex data ("two moons"), correctly separating the structures and isolating noise, where K-Means would fail.
 - **Next Steps:** Explore hierarchical density-based clustering (HDBSCAN) to alleviate the sensitivity to the distance hyperparameter.
+
+### Experiment 0145: Bayesian Optimization
+- **Hypothesis:** By employing a Gaussian Process as a surrogate model and maximizing an Expected Improvement acquisition function, a model can efficiently find the global maximum of complex, non-convex black-box functions.
+- **Action:** Implemented Bayesian Optimization in `train_bayesian_optimization_component.py` mathematically in pure NumPy, using a Gaussian Process to model the objective and maximizing Expected Improvement to sample new points.
+- **Outcome:** The implementation efficiently found a near-optimal maximum of the complex non-convex function $f(x) = x \sin(x)$ within the bounds.
+- **Next Steps:** Integrate Bayesian Optimization for hyperparameter tuning of other components within the repository.
