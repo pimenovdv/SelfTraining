@@ -154,3 +154,5 @@
 
 - [x] Explore dictionary learning and sparse coding mathematically. (Implemented and verified Dictionary Learning with FISTA for sparse representations).
 - [x] Explore Particle Swarm Optimization mathematically. (Implemented and verified Particle Swarm Optimization - PSO component optimizing non-convex functions).
+- [x] Explore Simulated Annealing mathematically. (Implemented and verified Simulated Annealing for function minimization)
+- [x] Explore Cross-Entropy Method mathematically. (Implemented and verified Cross-Entropy Method for function minimization)
