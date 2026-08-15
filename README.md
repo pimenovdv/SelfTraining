@@ -1539,3 +1539,27 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_knn_component.py`
 **Description:** Evaluates a K-Nearest Neighbors component mathematically in pure NumPy, testing its ability to classify samples based on the majority vote of their $k$-nearest neighbors in the feature space using Euclidean distance, effectively handling non-linear decision boundaries without explicit distributional assumptions.
+
+## Component Testing: Simulated Annealing
+**Script:** `train_simulated_annealing_component.py`
+**Description:** Evaluates a Simulated Annealing component mathematically in pure NumPy for function minimization, testing it on the Rosenbrock function.
+
+## Component Testing: Linear Discriminant Analysis (LDA)
+**Script:** `train_lda_component.py`
+**Description:** Evaluates a Linear Discriminant Analysis (LDA) component mathematically in pure NumPy, finding axes that maximize the separation between multiple classes.
+
+## Component Testing: Gaussian Naive Bayes
+**Script:** `train_naive_bayes_component.py`
+**Description:** Evaluates a Gaussian Naive Bayes component mathematically in pure NumPy, using Bayes' theorem with a conditional independence assumption.
+
+## Component Testing: Logistic Regression
+**Script:** `train_logistic_regression_component.py`
+**Description:** Evaluates a Logistic Regression component mathematically in pure NumPy for binary classification.
+
+## Component Testing: Decision Tree
+**Script:** `train_decision_tree_component.py`
+**Description:** Evaluates a Decision Tree classifier mathematically in pure NumPy by recursively splitting the feature space based on Information Gain.
+
+## Component Testing: Random Forest
+**Script:** `train_random_forest_component.py`
+**Description:** Evaluates a Random Forest classifier mathematically in pure NumPy using an ensemble of decision trees trained on bootstrap samples.

@@ -26,6 +26,7 @@ train_dbscan_component
 train_ddpg_component
 train_ddpm_component
 train_decision_transformer_component
+train_decision_tree_component
 train_decoder_block_component
 train_deepsets_component
 train_dfa_component
@@ -76,6 +77,7 @@ train_layernorm_component
 train_lda_component
 train_linear_attention_component
 train_lmu_component
+train_logistic_regression_component
 train_lora_component
 train_lottery_ticket_component
 train_lstm_component
@@ -109,6 +111,7 @@ train_protonet_component
 train_pso_component
 train_q_learning_component
 train_quantization_component
+train_random_forest_component
 train_rbf_component
 train_rbm_component
 train_realnvp_component

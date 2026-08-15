@@ -162,3 +162,7 @@
 - [x] Explore supervised dimensionality reduction mathematically. (Implemented and verified Linear Discriminant Analysis - LDA finding axes that maximize class separation).
 - [x] Explore non-parametric classification mathematically. (Implemented and verified K-Nearest Neighbors - KNN classifying based on majority vote of nearest neighbors).
 - [x] Explore probabilistic classification mathematically. (Implemented and verified Gaussian Naive Bayes using Bayes' theorem with conditional independence assumption).
+
+- [x] Explore linear classification mathematically. (Implemented and verified Logistic Regression with binary cross-entropy and gradient descent).
+- [x] Explore non-parametric decision models mathematically. (Implemented and verified Decision Tree classifier splitting on Gini impurity).
+- [x] Explore ensemble learning mathematically. (Implemented and verified Random Forest using bootstrap aggregation and random feature subsets).
