@@ -73,6 +73,7 @@ train_kan_component
 train_kmeans_component
 train_knowledge_distillation_component
 train_layernorm_component
+train_lda_component
 train_linear_attention_component
 train_lmu_component
 train_lora_component

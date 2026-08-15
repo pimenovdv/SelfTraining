@@ -159,3 +159,4 @@
 - [x] Explore Tabular Q-Learning mathematically. (Implemented and verified Q-Learning finding optimal policy via Bellman equation)
 - [x] Explore SARSA mathematically. (Implemented and verified SARSA on-policy learning)
 - [x] Explore Support Vector Machines mathematically. (Implemented and verified linear SVM with hinge loss and subgradient descent)
+- [x] Explore supervised dimensionality reduction mathematically. (Implemented and verified Linear Discriminant Analysis - LDA finding axes that maximize class separation).

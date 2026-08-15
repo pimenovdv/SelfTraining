@@ -72,6 +72,7 @@
 ./train_kmeans_component.py
 ./train_knowledge_distillation_component.py
 ./train_layernorm_component.py
+./train_lda_component.py
 ./train_linear_attention_component.py
 ./train_lmu_component.py
 ./train_lora_component.py

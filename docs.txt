@@ -147,3 +147,4 @@
 0150_train_q_learning_component
 0151_train_sarsa_component
 0152_train_svm_component
+0153_train_lda_component
