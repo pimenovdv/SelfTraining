@@ -160,3 +160,4 @@
 - [x] Explore SARSA mathematically. (Implemented and verified SARSA on-policy learning)
 - [x] Explore Support Vector Machines mathematically. (Implemented and verified linear SVM with hinge loss and subgradient descent)
 - [x] Explore supervised dimensionality reduction mathematically. (Implemented and verified Linear Discriminant Analysis - LDA finding axes that maximize class separation).
+- [x] Explore non-parametric classification mathematically. (Implemented and verified K-Nearest Neighbors - KNN classifying based on majority vote of nearest neighbors).

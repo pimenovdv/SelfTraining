@@ -1534,3 +1534,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_svm_component.py`
 **Description:** Evaluates a linear Support Vector Machine component mathematically in pure NumPy, testing its ability to learn a maximum margin decision boundary for a linearly separable dataset by optimizing the hinge loss with subgradient descent.
+
+## Component Testing: K-Nearest Neighbors (KNN)
+
+**Script:** `train_knn_component.py`
+**Description:** Evaluates a K-Nearest Neighbors component mathematically in pure NumPy, testing its ability to classify samples based on the majority vote of their $k$-nearest neighbors in the feature space using Euclidean distance, effectively handling non-linear decision boundaries without explicit distributional assumptions.

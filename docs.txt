@@ -148,3 +148,4 @@
 0151_train_sarsa_component
 0152_train_svm_component
 0153_train_lda_component
+0154_train_knn_component
