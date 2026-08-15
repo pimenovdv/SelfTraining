@@ -4,6 +4,7 @@ docs/0151_train_sarsa_component.md
 docs/0152_train_svm_component.md
 docs/0153_train_lda_component.md
 docs/0154_train_knn_component.md
+docs/0155_train_naive_bayes_component.md
 train_act_component
 train_actor_critic_component
 train_adaln_component

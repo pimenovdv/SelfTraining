@@ -91,6 +91,7 @@ train_moe_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_nade_component
+train_naive_bayes_component
 train_nalu_component
 train_nca_component
 train_nerf_component
