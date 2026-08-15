@@ -939,3 +939,9 @@
 - **Action:** Implemented a linear Support Vector Machine in `train_svm_component.py` mathematically in pure NumPy, optimizing the weights and bias via subgradient descent on the regularized hinge loss objective.
 - **Outcome:** The implementation correctly converged, achieving 100% accuracy and perfectly separating the distinct linear clusters.
 - **Next Steps:** Extend the model to incorporate non-linear kernel functions (e.g., Radial Basis Function - RBF, Polynomial) to handle non-linearly separable datasets via the kernel trick.
+
+### Experiment 0154: K-Nearest Neighbors (KNN)
+- **Hypothesis:** By classifying a given sample based on the majority vote of its $k$-nearest neighbors in the feature space using a distance metric, a non-parametric model can effectively learn non-linear decision boundaries for classification tasks without making explicit assumptions about the underlying data distribution.
+- **Action:** Implemented K-Nearest Neighbors in `train_knn_component.py` mathematically in pure NumPy, using Euclidean distance to compute similarities between training points and test samples, and applying a majority voting scheme for classification.
+- **Outcome:** The implementation successfully classified a synthetic linearly separable dataset, achieving a high accuracy of 100.00% and correctly distinguishing between the two Gaussian clusters. The KNN algorithm effectively generalized the distance-based classification logic.
+- **Next Steps:** Evaluate KNN on multi-class datasets and explore alternative distance metrics such as Manhattan or Minkowski distances, as well as distance-weighted voting strategies to account for the varying influences of closer vs. further neighbors.
