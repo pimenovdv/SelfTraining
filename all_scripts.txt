@@ -1,0 +1,3 @@
+train_decision_tree_component
+train_logistic_regression_component
+train_random_forest_component
