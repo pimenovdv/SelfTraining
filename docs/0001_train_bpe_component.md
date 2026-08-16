@@ -4,14 +4,14 @@
 To implement and train a simple Byte-Pair Encoding (BPE) tokenizer from scratch. This serves as a foundational exercise to understand tokenization, a core component of modern language models, before attempting any large-scale integration.
 
 ## Setup
-*   **Script:** `train_bpe.py`
+*   **Script:** `train_bpe_component.py`
 *   **Data:** A small sample text corpus about Artificial General Intelligence located in `data/sample_text.txt`.
 *   **Hyperparameters:** `num_merges` set to 100.
 
 ## Execution
 The training script was executed successfully:
 ```bash
-python train_bpe.py
+python train_bpe_component.py
 ```
 
 ## Results
