@@ -1,5 +1,6 @@
 train_act_component
 train_actor_critic_component
+train_adaboost_component
 train_adaln_component
 train_adamw_component
 train_alibi_component
@@ -8,7 +9,7 @@ train_barlow_twins_component
 train_batchnorm_component
 train_bayesian_optimization_component
 train_bnn_component
-train_bpe
+train_bpe_component
 train_byol_component
 train_capsule_network_component
 train_cbow_component

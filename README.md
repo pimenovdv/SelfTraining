@@ -37,13 +37,13 @@ To demonstrate the foundational approach, this repository includes a simple scri
 1.  **Ensure you have Python 3 installed.**
 2.  **Run the training script:**
     ```bash
-    python train_bpe.py
+    python train_bpe_component.py
     ```
     This script will read the sample text data from `data/sample_text.txt`, perform BPE merges, and save the resulting vocabulary and merges to `models/tokenizer/`.
 3.  **Adjusting hyperparameters:**
     You can customize the tokenizer training using command-line arguments:
     ```bash
-    python train_bpe.py --data_path "data/sample_text.txt" --num_merges 200 --output_dir "models/my_tokenizer"
+    python train_bpe_component.py --data_path "data/sample_text.txt" --num_merges 200 --output_dir "models/my_tokenizer"
     ```
 
 ## Component Testing: AdaLN (Adaptive Layer Normalization)
@@ -1563,3 +1563,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 ## Component Testing: Random Forest
 **Script:** `train_random_forest_component.py`
 **Description:** Evaluates a Random Forest classifier mathematically in pure NumPy using an ensemble of decision trees trained on bootstrap samples.
+
+## Component Testing: AdaBoost
+**Script:** `train_adaboost_component.py`
+**Description:** Evaluates an AdaBoost classifier mathematically in pure NumPy using decision stumps and iterative weighting.

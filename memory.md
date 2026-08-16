@@ -951,3 +951,27 @@
 - **Action:** Implemented Gaussian Naive Bayes in `train_naive_bayes_component.py` mathematically in pure NumPy. The implementation computes the priors from the class frequencies and models the likelihood of each feature for each class as a Gaussian distribution by estimating the mean and variance from the training data.
 - **Outcome:** The implementation successfully classified a synthetic dataset consisting of three distinct Gaussian clusters. The model achieved a high accuracy of 96.67% on the held-out test set, demonstrating its ability to accurately model the class-conditional distributions.
 - **Next Steps:** Evaluate Naive Bayes on high-dimensional text classification tasks using a Multinomial or Bernoulli variant to handle discrete word counts or binary occurrence features.
+
+### Experiment 0156: Logistic Regression Component
+- **Hypothesis:** By optimizing a binary cross-entropy loss function using gradient descent, a Logistic Regression model can effectively learn a linear decision boundary to separate binary classes, outputting probabilities using the sigmoid function.
+- **Action:** Implemented Logistic Regression mathematically in pure NumPy, computing predictions via the sigmoid function and updating weights using gradient descent on the log-loss.
+- **Outcome:** The model successfully converged, learning the correct decision boundary and classifying the binary dataset with high accuracy.
+- **Next Steps:** Extend the model to multi-class classification using Softmax regression (multinomial logistic regression) and test on multi-class datasets.
+
+### Experiment 0157: Decision Tree Component
+- **Hypothesis:** By recursively splitting the feature space based on threshold values that maximize Information Gain (derived from Gini Impurity), a Decision Tree can learn non-linear decision boundaries for classification tasks without requiring feature scaling or distributional assumptions.
+- **Action:** Implemented a Decision Tree mathematically in pure NumPy, using recursive splitting and Information Gain based on Gini Impurity.
+- **Outcome:** The implementation successfully classified a synthetic binary dataset, achieving a high accuracy, verifying the splitting logic and recursive tree building.
+- **Next Steps:** Extend the model to regression tasks (Regression Trees) and implement pruning techniques to prevent overfitting on noisy datasets.
+
+### Experiment 0158: Random Forest Component
+- **Hypothesis:** By training an ensemble of Decision Trees on bootstrap samples of the dataset and selecting random feature subsets for each split, a Random Forest can significantly reduce the variance and overfitting typically associated with individual decision trees.
+- **Action:** Implemented a Random Forest mathematically in pure NumPy, constructing an ensemble of decision trees using bagging and random feature selection, and using majority voting for final predictions.
+- **Outcome:** The implementation successfully classified a synthetic binary dataset using an ensemble of trees, achieving a high accuracy and verifying the bootstrapping and majority voting logic.
+- **Next Steps:** Evaluate the Random Forest on higher-dimensional datasets with correlated features and compare its robustness to noise against a single Decision Tree.
+
+### Experiment 0159: AdaBoost Component
+- **Hypothesis:** By iteratively training weak classifiers on a dataset where misclassified samples are assigned higher weights, an ensemble model (AdaBoost) can combine these weak models into a strong classifier capable of learning complex non-linear decision boundaries.
+- **Action:** Implemented AdaBoost in `train_adaboost_component.py` mathematically in pure NumPy, using decision stumps as weak learners and iteratively updating sample weights based on classification errors.
+- **Outcome:** The implementation successfully classified a synthetic binary dataset, achieving a high accuracy of 82.50%, demonstrating the effective boosting of weak learners.
+- **Next Steps:** Extend AdaBoost to handle multi-class classification problems (e.g., using SAMME or SAMME.R algorithms) and compare its robustness against Random Forests.

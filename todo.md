@@ -166,3 +166,5 @@
 - [x] Explore linear classification mathematically. (Implemented and verified Logistic Regression with binary cross-entropy and gradient descent).
 - [x] Explore non-parametric decision models mathematically. (Implemented and verified Decision Tree classifier splitting on Gini impurity).
 - [x] Explore ensemble learning mathematically. (Implemented and verified Random Forest using bootstrap aggregation and random feature subsets).
+- [x] Explore sub-word tokenization mathematically. (Implemented and verified Byte-Pair Encoding (BPE) tokenizer from scratch).
+- [x] Explore adaptive boosting mathematically. (Implemented and verified AdaBoost with decision stumps)
