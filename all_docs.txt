@@ -155,3 +155,4 @@ docs/0157_train_decision_tree_component.md
 docs/0158_train_random_forest_component.md
 docs/0159_train_adaboost_component.md
 docs/0160_train_gradient_boosting_component.md
+docs/0166_train_ridge_regression_component.md

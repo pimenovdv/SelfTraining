@@ -126,6 +126,7 @@ train_reinforce_component.py
 train_relational_network_component.py
 train_retention_component.py
 train_revnet_component.py
+train_ridge_regression_component
 train_rmsnorm_component.py
 train_rnn_component.py
 train_rope_component.py
