@@ -988,3 +988,9 @@
 - **Action:** Implemented a Lasso Regression model mathematically in pure NumPy using subgradient descent.
 - **Outcome:** The implementation successfully recovered the weights for a synthetic dataset and reduced the weight of an irrelevant feature to near zero.
 - **Next Steps:** Extend the model to incorporate Elastic Net (combining L1 and L2 penalties).
+
+### Experiment 0168: Elastic Net Regression Component
+- **Hypothesis:** By combining L1 and L2 regularization penalties, an Elastic Net Regression model can effectively perform feature selection like Lasso while maintaining the regularization properties of Ridge regression, preventing overfitting in datasets with highly correlated features.
+- **Action:** Implemented an Elastic Net Regression model mathematically in pure NumPy using subgradient descent, incorporating both `alpha * l1_ratio` for the L1 penalty and `alpha * (1 - l1_ratio)` for the L2 penalty.
+- **Outcome:** The implementation successfully recovered the weights for a synthetic dataset, balancing between sparsity and magnitude penalization.
+- **Next Steps:** Explore tree-based regression models for non-linear relationships.

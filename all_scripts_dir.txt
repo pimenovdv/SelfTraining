@@ -1,6 +1,7 @@
 ./train_bayesian_optimization_component.py
 ./train_decision_tree_component.py
 ./train_dictionary_learning_component.py
+./train_elastic_net_component.py
 ./train_gaussian_process_component.py
 ./train_gradient_boosting_component.py
 ./train_hmm_component.py

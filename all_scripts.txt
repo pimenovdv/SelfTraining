@@ -39,6 +39,7 @@ train_dpo_component.py
 train_dqn_component.py
 train_dropout_component.py
 train_ebm_component.py
+train_elastic_net_component
 train_elm_component.py
 train_es_component.py
 train_esn_component.py
