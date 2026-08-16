@@ -982,3 +982,9 @@
 - Formulated a Gradient Boosting Regressor using Decision Stumps as weak learners to iteratively minimize Mean Squared Error.
 - Tested the implementation mathematically on a noisy sine wave regression task, successfully minimizing error below the threshold.
 - Authored script `train_gradient_boosting_component.py` and generated documentation `docs/0160_train_gradient_boosting_component.md`.
+
+### Experiment 0167: Lasso Regression Component
+- **Hypothesis:** By optimizing a Mean Squared Error objective with an L1 regularization penalty via subgradient descent, a Lasso Regression model can effectively perform feature selection by driving the weights of irrelevant features to exactly zero.
+- **Action:** Implemented a Lasso Regression model mathematically in pure NumPy using subgradient descent.
+- **Outcome:** The implementation successfully recovered the weights for a synthetic dataset and reduced the weight of an irrelevant feature to near zero.
+- **Next Steps:** Extend the model to incorporate Elastic Net (combining L1 and L2 penalties).
