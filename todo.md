@@ -168,3 +168,4 @@
 - [x] Explore ensemble learning mathematically. (Implemented and verified Random Forest using bootstrap aggregation and random feature subsets).
 - [x] Explore sub-word tokenization mathematically. (Implemented and verified Byte-Pair Encoding (BPE) tokenizer from scratch).
 - [x] Explore adaptive boosting mathematically. (Implemented and verified AdaBoost with decision stumps)
+- [x] Explore gradient boosting mathematically. (Implemented and verified Gradient Boosting Regressor using decision stumps on a noisy sine wave).

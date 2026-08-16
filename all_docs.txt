@@ -154,3 +154,4 @@ docs/0156_train_logistic_regression_component.md
 docs/0157_train_decision_tree_component.md
 docs/0158_train_random_forest_component.md
 docs/0159_train_adaboost_component.md
+docs/0160_train_gradient_boosting_component.md

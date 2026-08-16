@@ -154,3 +154,4 @@
 0157_train_decision_tree_component
 0158_train_random_forest_component
 0159_train_adaboost_component
+0160_train_gradient_boosting_component

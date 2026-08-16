@@ -975,3 +975,10 @@
 - **Action:** Implemented AdaBoost in `train_adaboost_component.py` mathematically in pure NumPy, using decision stumps as weak learners and iteratively updating sample weights based on classification errors.
 - **Outcome:** The implementation successfully classified a synthetic binary dataset, achieving a high accuracy of 82.50%, demonstrating the effective boosting of weak learners.
 - **Next Steps:** Extend AdaBoost to handle multi-class classification problems (e.g., using SAMME or SAMME.R algorithms) and compare its robustness against Random Forests.
+
+
+### Exploration of Gradient Boosting Regression
+- Investigated the concept of Gradient Boosting.
+- Formulated a Gradient Boosting Regressor using Decision Stumps as weak learners to iteratively minimize Mean Squared Error.
+- Tested the implementation mathematically on a noisy sine wave regression task, successfully minimizing error below the threshold.
+- Authored script `train_gradient_boosting_component.py` and generated documentation `docs/0160_train_gradient_boosting_component.md`.
