@@ -6,5 +6,6 @@
 ./train_hmm_component.py
 ./train_logistic_regression_component.py
 ./train_random_forest_component.py
+./train_ridge_regression_component.py
 ./train_spectral_clustering_component.py
 ./train_tsne_component.py

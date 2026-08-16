@@ -1560,3 +1560,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_dictionary_learning_component.py`
 **Description:** Evaluates a Dictionary Learning component mathematically in pure NumPy, testing its ability to learn a dictionary that provides sparse representations of synthetic data using an alternating optimization scheme with FISTA.
+
+## Component Testing: Ridge Regression
+
+**Script:** `train_ridge_regression_component.py`
+**Description:** Evaluates a Ridge Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using the closed-form solution with an L2 penalty to prevent overfitting.

@@ -169,3 +169,4 @@
 - [x] Explore sub-word tokenization mathematically. (Implemented and verified Byte-Pair Encoding (BPE) tokenizer from scratch).
 - [x] Explore adaptive boosting mathematically. (Implemented and verified AdaBoost with decision stumps)
 - [x] Explore gradient boosting mathematically. (Implemented and verified Gradient Boosting Regressor using decision stumps on a noisy sine wave).
+- [x] Explore regularized linear regression mathematically. (Implemented and verified Ridge Regression with L2 penalty).
