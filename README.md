@@ -1570,3 +1570,7 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_lasso_regression_component.py`
 **Description:** Evaluates a Lasso Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using subgradient descent with an L1 penalty to encourage sparse weights and feature selection.
+## Component Testing: Elastic Net Regression
+
+**Script:** `train_elastic_net_component.py`
+**Description:** Evaluates an Elastic Net Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using subgradient descent with a combination of L1 and L2 penalties to encourage sparse weights and prevent overfitting simultaneously.
