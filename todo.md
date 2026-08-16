@@ -170,3 +170,4 @@
 - [x] Explore adaptive boosting mathematically. (Implemented and verified AdaBoost with decision stumps)
 - [x] Explore gradient boosting mathematically. (Implemented and verified Gradient Boosting Regressor using decision stumps on a noisy sine wave).
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Ridge Regression with L2 penalty).
+- [x] Explore regularized linear regression mathematically. (Implemented and verified Lasso Regression with L1 penalty).

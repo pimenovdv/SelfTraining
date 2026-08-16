@@ -1565,3 +1565,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_ridge_regression_component.py`
 **Description:** Evaluates a Ridge Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using the closed-form solution with an L2 penalty to prevent overfitting.
+
+## Component Testing: Lasso Regression
+
+**Script:** `train_lasso_regression_component.py`
+**Description:** Evaluates a Lasso Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using subgradient descent with an L1 penalty to encourage sparse weights and feature selection.
