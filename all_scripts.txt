@@ -7,6 +7,7 @@ train_alibi_component.py
 train_attention_component.py
 train_barlow_twins_component.py
 train_batchnorm_component.py
+train_bayesian_optimization_component
 train_bayesian_optimization_component.py
 train_bnn_component.py
 train_bpe_component.py
@@ -31,6 +32,7 @@ train_decision_tree_component.py
 train_decoder_block_component.py
 train_deepsets_component.py
 train_dfa_component.py
+train_dictionary_learning_component
 train_dictionary_learning_component.py
 train_dni_component.py
 train_dpo_component.py
@@ -51,6 +53,7 @@ train_fnet_component.py
 train_full_encoder_decoder_component.py
 train_gan_component.py
 train_gat_component.py
+train_gaussian_process_component
 train_gaussian_process_component.py
 train_gcn_component.py
 train_gelu_component.py
@@ -64,6 +67,7 @@ train_gru_component.py
 train_gumbel_softmax_component.py
 train_hebbian_component.py
 train_highway_component.py
+train_hmm_component
 train_hmm_component.py
 train_hopfield_component.py
 train_hypernetwork_component.py
@@ -138,6 +142,7 @@ train_skipgram_component.py
 train_snn_component.py
 train_som_component.py
 train_sparsemax_component.py
+train_spectral_clustering_component
 train_spectral_clustering_component.py
 train_spectral_normalization_component.py
 train_ssm_component.py
@@ -147,6 +152,7 @@ train_target_propagation_component.py
 train_tcn_component.py
 train_td3_component.py
 train_transformer_block_component.py
+train_tsne_component
 train_tsne_component.py
 train_vae_component.py
 train_vib_component.py

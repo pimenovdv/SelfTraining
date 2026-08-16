@@ -1473,43 +1473,6 @@ Building upon our component research, we have implemented a Radial Basis Functio
 **Script:** `train_nmf_component.py`
 **Description:** Evaluates a Non-negative Matrix Factorization (NMF) component mathematically in pure NumPy, testing its ability to factorize non-negative data into lower-rank non-negative matrices using multiplicative update rules.
 
-## Component Testing: t-Distributed Stochastic Neighbor Embedding (t-SNE)
-
-**Script:** `train_tsne_component.py`
-**Description:** Evaluates a t-SNE component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by converting high-dimensional Euclidean distances into conditional probabilities and minimizing the Kullback-Leibler divergence with a Student-t distribution in the low-dimensional space.
-
-## Component Testing: Spectral Clustering
-
-**Script:** `train_spectral_clustering_component.py`
-**Description:** Evaluates a Spectral Clustering component mathematically in pure NumPy, testing its ability to cluster non-convex shapes like the Two Moons dataset using an RBF affinity matrix and normalized graph Laplacian.
-
-## Component Testing: Gaussian Process Regression (GPR)
-
-**Script:** `train_gaussian_process_component.py`
-**Description:** Evaluates a Gaussian Process Regression (GPR) component mathematically in pure NumPy, testing its ability to perform non-parametric probabilistic regression using an RBF kernel and Cholesky decomposition to output predictive means and standard deviations (uncertainties).
-
-
-## Component Testing: Hidden Markov Model (HMM)
-
-**Script:** `train_hmm_component.py`
-**Description:** Evaluates a Hidden Markov Model (HMM) component mathematically in pure NumPy, testing its ability to infer hidden states from a sequence of observations using the Expectation-Maximization (EM) algorithm (Baum-Welch algorithm).
-
-## Component Testing: Kalman Filter
-
-**Script:** `train_kalman_filter_component.py`
-**Description:** Evaluates a Kalman Filter component mathematically in pure NumPy, testing its ability to estimate the true state of a linear dynamic system from a series of noisy measurements by recursively applying prediction and update steps.
-
-## Component Testing: Bayesian Optimization
-
-**Script:** `train_bayesian_optimization_component.py`
-**Description:** Evaluates a Bayesian Optimization component mathematically in pure NumPy, testing its ability to find the global maximum of a non-convex 1D function efficiently by fitting a Gaussian Process and maximizing the Expected Improvement acquisition function.
-
-
-## Component Testing: Dictionary Learning
-
-**Script:** `train_dictionary_learning_component.py`
-**Description:** Evaluates a Dictionary Learning component mathematically in pure NumPy, testing its ability to learn a dictionary that provides sparse representations of synthetic data using an alternating optimization scheme with FISTA.
-
 ## Component Testing: Particle Swarm Optimization (PSO)
 
 **Script:** `train_pso_component.py`
@@ -1567,3 +1530,33 @@ Building upon our component research, we have implemented a Radial Basis Functio
 ## Component Testing: AdaBoost
 **Script:** `train_adaboost_component.py`
 **Description:** Evaluates an AdaBoost classifier mathematically in pure NumPy using decision stumps and iterative weighting.
+
+## Component Testing: t-Distributed Stochastic Neighbor Embedding (t-SNE)
+
+**Script:** `train_tsne_component.py`
+**Description:** Evaluates a t-SNE component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by converting high-dimensional Euclidean distances into conditional probabilities and minimizing the Kullback-Leibler divergence with a Student-t distribution in the low-dimensional space.
+
+## Component Testing: Spectral Clustering
+
+**Script:** `train_spectral_clustering_component.py`
+**Description:** Evaluates a Spectral Clustering component mathematically in pure NumPy, testing its ability to cluster non-convex shapes like the Two Moons dataset using an RBF affinity matrix and normalized graph Laplacian.
+
+## Component Testing: Gaussian Process Regression (GPR)
+
+**Script:** `train_gaussian_process_component.py`
+**Description:** Evaluates a Gaussian Process Regression (GPR) component mathematically in pure NumPy, testing its ability to perform non-parametric probabilistic regression using an RBF kernel and Cholesky decomposition to output predictive means and standard deviations (uncertainties).
+
+## Component Testing: Hidden Markov Model (HMM)
+
+**Script:** `train_hmm_component.py`
+**Description:** Evaluates a Hidden Markov Model (HMM) component mathematically in pure NumPy, testing its ability to infer hidden states from a sequence of observations using the Expectation-Maximization (EM) algorithm (Baum-Welch algorithm).
+
+## Component Testing: Bayesian Optimization
+
+**Script:** `train_bayesian_optimization_component.py`
+**Description:** Evaluates a Bayesian Optimization component mathematically in pure NumPy, testing its ability to find the global maximum of a non-convex 1D function efficiently by fitting a Gaussian Process and maximizing the Expected Improvement acquisition function.
+
+## Component Testing: Dictionary Learning
+
+**Script:** `train_dictionary_learning_component.py`
+**Description:** Evaluates a Dictionary Learning component mathematically in pure NumPy, testing its ability to learn a dictionary that provides sparse representations of synthetic data using an alternating optimization scheme with FISTA.
