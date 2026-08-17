@@ -1007,3 +1007,9 @@
 - **Action:** Implemented a Random Forest Regressor mathematically in pure NumPy, using an ensemble of decision trees with bootstrap aggregation and random feature selection.
 - **Outcome:** The implementation successfully fit the non-linear dataset and achieved lower test Mean Squared Error compared to a single decision tree, verifying its variance reduction properties.
 - **Next Steps:** Explore advanced boosting regression models such as XGBoost or LightGBM equivalents mathematically.
+
+### Experiment 0171: XGBoost Regression Component
+- **Hypothesis:** By employing a second-order Taylor expansion to approximate the loss function and using L2 regularization on leaf weights, an XGBoost Regressor can effectively and robustly minimize the objective function and prevent overfitting on non-linear data.
+- **Action:** Implemented an XGBoost Regressor mathematically in pure NumPy, calculating gradients and hessians for Mean Squared Error and iteratively adding trees.
+- **Outcome:** The model successfully fit a noisy non-linear dataset (sine wave) achieving a low MSE, verifying the gradient boosting mechanism.
+- **Next Steps:** Consider adding LightGBM optimizations such as Gradient-based One-Side Sampling (GOSS).

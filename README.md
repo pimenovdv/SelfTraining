@@ -1584,3 +1584,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_random_forest_regression_component.py`
 **Description:** Evaluates a Random Forest Regressor mathematically in pure NumPy, testing its ability to reduce variance and overfitting compared to a single decision tree on non-linear regression tasks using bootstrap aggregation and random feature subsets.
+
+## Component Testing: XGBoost Regression
+
+**Script:** `train_xgboost_component.py`
+**Description:** Evaluates an XGBoost Regressor mathematically in pure NumPy, testing its ability to reduce variance and bias by iteratively training regression trees on the gradients and hessians of the objective function, with L2 regularization to prevent overfitting.
