@@ -28,6 +28,7 @@ train_ddpg_component
 train_ddpm_component
 train_decision_transformer_component
 train_decision_tree_component
+train_decision_tree_regression_component.py
 train_decoder_block_component
 train_deepsets_component
 train_dfa_component
@@ -117,6 +118,7 @@ train_pso_component
 train_q_learning_component
 train_quantization_component
 train_random_forest_component
+train_random_forest_regression_component.py
 train_rbf_component
 train_rbm_component
 train_realnvp_component
@@ -158,4 +160,3 @@ train_vit_component
 train_vqvae_component
 train_weight_normalization_component
 train_wgan_component
-train_decision_tree_regression_component.py

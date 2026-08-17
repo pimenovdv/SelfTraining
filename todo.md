@@ -173,3 +173,4 @@
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Lasso Regression with L1 penalty).
 
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Elastic Net combining L1 and L2 penalties).
+- [x] Explore ensemble regression mathematically. (Implemented and verified Random Forest Regression reducing variance on non-linear data).
