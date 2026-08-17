@@ -7,6 +7,7 @@ train_alibi_component
 train_attention_component
 train_barlow_twins_component
 train_batchnorm_component
+train_bayesian_linear_regression_component.py
 train_bayesian_optimization_component
 train_bnn_component
 train_bpe_component
@@ -148,6 +149,7 @@ train_spectral_clustering_component
 train_spectral_normalization_component
 train_ssm_component
 train_svm_component
+train_svr_component.py
 train_swiglu_component
 train_target_propagation_component
 train_tcn_component
