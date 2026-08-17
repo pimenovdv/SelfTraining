@@ -175,3 +175,5 @@
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Elastic Net combining L1 and L2 penalties).
 - [x] Explore ensemble regression mathematically. (Implemented and verified Random Forest Regression reducing variance on non-linear data).
 - [x] Explore advanced gradient boosting regression mathematically. (Implemented and verified XGBoost Regressor using second-order approximation).
+- [x] Explore robust regression mathematically. (Implemented and verified Support Vector Regression using subgradient descent and epsilon-insensitive loss).
+- [x] Explore probabilistic regression mathematically. (Implemented and verified Bayesian Linear Regression computing full posterior distributions over weights).
