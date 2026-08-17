@@ -72,6 +72,7 @@ train_hopfield_component.py
 train_hypernetwork_component.py
 train_ica_component.py
 train_icm_component.py
+train_isomap_component
 train_jepa_component.py
 train_kalman_filter_component.py
 train_kan_component.py
@@ -82,6 +83,7 @@ train_lasso_regression_component.py
 train_layernorm_component.py
 train_lda_component.py
 train_linear_attention_component.py
+train_lle_component
 train_lmu_component.py
 train_logistic_regression_component.py
 train_lora_component.py

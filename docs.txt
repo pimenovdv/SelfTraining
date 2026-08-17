@@ -161,3 +161,5 @@
 0169_train_decision_tree_regression_component
 0170_train_random_forest_regression_component
 0171_train_xgboost_component
+0172_train_isomap_component
+0173_train_lle_component

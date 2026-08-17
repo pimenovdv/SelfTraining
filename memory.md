@@ -1013,3 +1013,5 @@
 - **Action:** Implemented an XGBoost Regressor mathematically in pure NumPy, calculating gradients and hessians for Mean Squared Error and iteratively adding trees.
 - **Outcome:** The model successfully fit a noisy non-linear dataset (sine wave) achieving a low MSE, verifying the gradient boosting mechanism.
 - **Next Steps:** Consider adding LightGBM optimizations such as Gradient-based One-Side Sampling (GOSS).
+* *(Date: Current)* - Successfully implemented and tested Isomap mathematically. Confirmed that computing shortest paths on a neighborhood graph and applying MDS effectively unwraps a non-linear manifold into a lower-dimensional embedding.
+* *(Date: Current)* - Successfully implemented and tested Locally Linear Embedding (LLE) mathematically. Confirmed that finding linear reconstruction weights from neighbors and computing a low-dimensional embedding preserves local manifold structure.
