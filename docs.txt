@@ -163,3 +163,4 @@
 0171_train_xgboost_component
 0172_train_svr_component
 0173_train_bayesian_linear_regression_component
+0174_automated_training_pipeline
