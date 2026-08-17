@@ -1001,3 +1001,9 @@
 - **Action:** Implemented a Decision Tree Regressor mathematically in pure NumPy. The model recursively finds splits that maximize the difference between the variance of the parent node and the weighted variance of the child nodes. Tested the implementation on a synthetic noisy sine wave dataset.
 - **Outcome:** The model successfully fit the non-linear dataset. Achieved a low Mean Squared Error (MSE), indicating that the recursive splitting logic and leaf value calculation (mean of target values) correctly approximated the underlying function.
 - **Next Steps:** Extend the model to an ensemble by implementing a Random Forest Regressor to improve generalization and reduce variance.
+
+### Experiment 0170: Random Forest Regression Component
+- **Hypothesis:** By training an ensemble of Decision Trees on bootstrap samples of the dataset and selecting random feature subsets for each split, a Random Forest Regressor can significantly reduce the variance and overfitting typically associated with individual decision trees, leading to lower Mean Squared Error on non-linear regression tasks on unseen data.
+- **Action:** Implemented a Random Forest Regressor mathematically in pure NumPy, using an ensemble of decision trees with bootstrap aggregation and random feature selection.
+- **Outcome:** The implementation successfully fit the non-linear dataset and achieved lower test Mean Squared Error compared to a single decision tree, verifying its variance reduction properties.
+- **Next Steps:** Explore advanced boosting regression models such as XGBoost or LightGBM equivalents mathematically.

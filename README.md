@@ -1579,3 +1579,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_decision_tree_regression_component.py`
 **Description:** Evaluates a Decision Tree Regressor mathematically in pure NumPy, recursively splitting the feature space to maximize variance reduction for non-linear regression.
+
+## Component Testing: Random Forest Regression
+
+**Script:** `train_random_forest_regression_component.py`
+**Description:** Evaluates a Random Forest Regressor mathematically in pure NumPy, testing its ability to reduce variance and overfitting compared to a single decision tree on non-linear regression tasks using bootstrap aggregation and random feature subsets.
