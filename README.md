@@ -1574,3 +1574,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_elastic_net_component.py`
 **Description:** Evaluates an Elastic Net Regression component mathematically in pure NumPy, testing its ability to perform regularized linear regression using subgradient descent with a combination of L1 and L2 penalties to encourage sparse weights and prevent overfitting simultaneously.
+
+## Component Testing: Decision Tree Regression
+
+**Script:** `train_decision_tree_regression_component.py`
+**Description:** Evaluates a Decision Tree Regressor mathematically in pure NumPy, recursively splitting the feature space to maximize variance reduction for non-linear regression.

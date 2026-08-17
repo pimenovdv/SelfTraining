@@ -11,3 +11,4 @@
 ./train_ridge_regression_component.py
 ./train_spectral_clustering_component.py
 ./train_tsne_component.py
+./train_decision_tree_regression_component.py
