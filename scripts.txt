@@ -137,6 +137,7 @@ train_sac_component
 train_sae_component
 train_sam_component
 train_sarsa_component
+train_scaling_law_projection_component
 train_scaling_laws_component
 train_selective_ssm_component
 train_selu_component

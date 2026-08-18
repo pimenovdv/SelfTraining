@@ -15,6 +15,7 @@
 ./train_random_forest_component.py
 ./train_random_forest_regression_component.py
 ./train_ridge_regression_component.py
+./train_scaling_law_projection_component.py
 ./train_spectral_clustering_component.py
 ./train_svr_component.py
 ./train_tsne_component.py
