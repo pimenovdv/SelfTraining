@@ -99,6 +99,7 @@ train_mlpmixer_component.py
 train_moe_component.py
 train_multihead_attention_component.py
 train_multihead_transformer_block_component.py
+train_multimodal_component.py
 train_nade_component.py
 train_naive_bayes_component.py
 train_nalu_component.py
