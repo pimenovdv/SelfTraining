@@ -126,8 +126,8 @@
 - [x] Explore offline reinforcement learning via sequence modeling mathematically. (Implemented and verified Decision Transformer modeling state-action-return sequences).
 - [x] Explore self-normalizing neural networks mathematically. (Implemented and verified Scaled Exponential Linear Unit - SELU component).
 - [x] Train medium-scale models to observe emergent capabilities. (Implemented and verified training a medium-scale MLP on a 10-bit parity task).
-- [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
-- [ ] Refine the architecture based on empirical results from integrated systems.
+- [x] Analyze failure modes, alignment issues, and out-of-distribution generalization. (Implemented and verified Out-of-Distribution Detection via Mahalanobis Distance for generalization analysis).
+- [x] Refine the architecture based on empirical results from integrated systems. (Implemented and verified Neural Architecture Search (NAS) for automated architecture refinement).
 
 - [x] Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes. (Implemented and verified DBSCAN and Spectral Clustering mathematically clustering non-convex two-moons data).
 - [x] Explore non-negative representation learning mathematically. (Implemented and verified Non-negative Matrix Factorization - NMF using multiplicative update rules).
