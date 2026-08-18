@@ -168,3 +168,4 @@
 0176_train_ood_detection_component
 0177_train_neural_architecture_search_component
 0178_train_scaling_law_projection_component
+0179_train_multimodal_component

@@ -1589,3 +1589,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 
 **Script:** `train_xgboost_component.py`
 **Description:** Evaluates an XGBoost Regressor mathematically in pure NumPy, testing its ability to reduce variance and bias by iteratively training regression trees on the gradients and hessians of the objective function, with L2 regularization to prevent overfitting.
+
+## Component Testing: Multimodal Training
+
+**Script:** `train_multimodal_component.py`
+**Description:** Evaluates a Multimodal training component mathematically in pure NumPy, testing its ability to align different modalities (e.g., vision and language) into a shared representation space using a contrastive loss similar to CLIP, pushing matching pairs closer together and pulling non-matching pairs apart.
