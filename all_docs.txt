@@ -169,3 +169,4 @@ docs/0176_train_ood_detection_component.md
 docs/0177_train_neural_architecture_search_component.md
 docs/0178_train_scaling_law_projection_component.md
 docs/0179_train_multimodal_component.md
+docs/0180_train_self_correction_component.md

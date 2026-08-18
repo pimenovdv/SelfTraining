@@ -141,6 +141,7 @@ train_sarsa_component
 train_scaling_law_projection_component
 train_scaling_laws_component
 train_selective_ssm_component
+train_self_correction_component
 train_selu_component
 train_simsiam_component
 train_simulated_annealing_component
