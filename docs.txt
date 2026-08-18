@@ -167,3 +167,4 @@
 0175_train_medium_scale_model_component
 0176_train_ood_detection_component
 0177_train_neural_architecture_search_component
+0178_train_scaling_law_projection_component
