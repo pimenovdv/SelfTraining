@@ -164,3 +164,4 @@
 0172_train_svr_component
 0173_train_bayesian_linear_regression_component
 0174_automated_training_pipeline
+0175_train_medium_scale_model_component

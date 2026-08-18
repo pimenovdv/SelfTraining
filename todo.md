@@ -125,7 +125,7 @@
 - [x] Explore continuous 3D representations and neural rendering mathematically. (Implemented and verified Neural Radiance Fields - NeRF using positional encoding and volumetric rendering).
 - [x] Explore offline reinforcement learning via sequence modeling mathematically. (Implemented and verified Decision Transformer modeling state-action-return sequences).
 - [x] Explore self-normalizing neural networks mathematically. (Implemented and verified Scaled Exponential Linear Unit - SELU component).
-- [ ] Train medium-scale models to observe emergent capabilities.
+- [x] Train medium-scale models to observe emergent capabilities. (Implemented and verified training a medium-scale MLP on a 10-bit parity task).
 - [ ] Analyze failure modes, alignment issues, and out-of-distribution generalization.
 - [ ] Refine the architecture based on empirical results from integrated systems.
 

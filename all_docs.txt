@@ -164,3 +164,4 @@ docs/0171_train_xgboost_component.md
 docs/0172_train_svr_component.md
 docs/0173_train_bayesian_linear_regression_component.md
 docs/0174_automated_training_pipeline.md
+docs/0175_train_medium_scale_model_component.md
