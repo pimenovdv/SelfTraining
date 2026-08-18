@@ -3,6 +3,7 @@
 ./train_decision_tree_component.py
 ./train_decision_tree_regression_component.py
 ./train_dictionary_learning_component.py
+./train_distributed_infrastructure_component.py
 ./train_elastic_net_component.py
 ./train_gaussian_process_component.py
 ./train_gradient_boosting_component.py
@@ -13,9 +14,12 @@
 ./train_multimodal_component.py
 ./train_neural_architecture_search_component.py
 ./train_ood_detection_component.py
+./train_operational_control_transition_component.py
 ./train_random_forest_component.py
 ./train_random_forest_regression_component.py
+./train_recursive_self_improvement_component.py
 ./train_ridge_regression_component.py
+./train_safety_alignment_component.py
 ./train_scaling_law_projection_component.py
 ./train_self_correction_component.py
 ./train_spectral_clustering_component.py

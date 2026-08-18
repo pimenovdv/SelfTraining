@@ -34,6 +34,7 @@ train_decoder_block_component.py
 train_deepsets_component.py
 train_dfa_component.py
 train_dictionary_learning_component.py
+train_distributed_infrastructure_component
 train_dni_component.py
 train_dpo_component.py
 train_dqn_component.py
@@ -111,6 +112,7 @@ train_neural_ode_component.py
 train_nmf_component.py
 train_ntm_component.py
 train_ood_detection_component
+train_operational_control_transition_component
 train_orthogonal_rnn_component.py
 train_pca_component.py
 train_pcn_component.py
@@ -127,6 +129,7 @@ train_random_forest_regression_component
 train_rbf_component.py
 train_rbm_component.py
 train_realnvp_component.py
+train_recursive_self_improvement_component
 train_reinforce_component.py
 train_relational_network_component.py
 train_retention_component.py
@@ -137,6 +140,7 @@ train_rnn_component.py
 train_rope_component.py
 train_sac_component.py
 train_sae_component.py
+train_safety_alignment_component
 train_sam_component.py
 train_sarsa_component.py
 train_scaling_law_projection_component
