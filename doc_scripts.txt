@@ -104,9 +104,11 @@ train_naive_bayes_component.py
 train_nalu_component.py
 train_nca_component.py
 train_nerf_component.py
+train_neural_architecture_search_component.py
 train_neural_ode_component.py
 train_nmf_component.py
 train_ntm_component.py
+train_ood_detection_component.py
 train_orthogonal_rnn_component.py
 train_pca_component.py
 train_pcn_component.py

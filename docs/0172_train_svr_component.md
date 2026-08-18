@@ -31,3 +31,4 @@ The implementation was successfully tested on a synthetic 1D dataset ($y = 3x + 
 
 ## Conclusion
 The linear Support Vector Regression implementation with subgradient descent successfully fits linear data with noise while ignoring errors within the $\epsilon$-tube. This primal approach provides a simple, gradient-based way to understand and utilize the principles of support vector machines for regression.
+**Script:** `train_svr_component.py`

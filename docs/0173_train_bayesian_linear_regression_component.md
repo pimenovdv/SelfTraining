@@ -35,3 +35,4 @@ The implementation was successfully tested on a synthetic dataset ($y = 2 + 3x +
 
 ## Conclusion
 The Bayesian Linear Regression implementation successfully performs posterior inference, recovering the true underlying parameters while providing accurate predictive uncertainties. This foundation is essential for building more complex probabilistic models and for decision-making under uncertainty.
+**Script:** `train_bayesian_linear_regression_component.py`
