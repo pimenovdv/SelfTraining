@@ -71,6 +71,7 @@ train_hebbian_component.py
 train_highway_component.py
 train_hmm_component.py
 train_hopfield_component.py
+train_hrl_component.py
 train_hypernetwork_component.py
 train_ica_component.py
 train_icm_component.py

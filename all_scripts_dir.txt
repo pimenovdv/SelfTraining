@@ -9,6 +9,7 @@
 ./train_gaussian_process_component.py
 ./train_gradient_boosting_component.py
 ./train_hmm_component.py
+./train_hrl_component.py
 ./train_lasso_regression_component.py
 ./train_logistic_regression_component.py
 ./train_medium_scale_model_component.py
