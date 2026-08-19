@@ -174,3 +174,4 @@ docs/0181_train_distributed_infrastructure_component.md
 docs/0182_train_safety_alignment_component.md
 docs/0183_train_operational_control_transition_component.md
 docs/0184_train_recursive_self_improvement_component.md
+docs/0185_train_agi_asi_component.md

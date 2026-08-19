@@ -3,6 +3,7 @@ train_actor_critic_component.py
 train_adaboost_component.py
 train_adaln_component.py
 train_adamw_component.py
+train_agi_asi_component.py
 train_alibi_component.py
 train_attention_component.py
 train_barlow_twins_component.py

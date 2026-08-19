@@ -3,6 +3,7 @@ train_actor_critic_component
 train_adaboost_component
 train_adaln_component
 train_adamw_component
+train_agi_asi_component
 train_alibi_component
 train_attention_component
 train_barlow_twins_component
