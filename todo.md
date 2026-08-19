@@ -177,3 +177,5 @@
 - [x] Explore advanced gradient boosting regression mathematically. (Implemented and verified XGBoost Regressor using second-order approximation).
 - [x] Explore robust regression mathematically. (Implemented and verified Support Vector Regression using subgradient descent and epsilon-insensitive loss).
 - [x] Explore probabilistic regression mathematically. (Implemented and verified Bayesian Linear Regression computing full posterior distributions over weights).
+
+- [x] Explore hierarchical decision-making mathematically. (Implement and verify Hierarchical Reinforcement Learning - HRL).
