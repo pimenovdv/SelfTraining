@@ -1,5 +1,7 @@
 # Component: Ridge Regression
 
+**Status:** Success
+
 ## Objective
 To evaluate a Ridge Regression component mathematically in pure NumPy, testing its ability to perform linear regression with L2 regularization to prevent overfitting and handle multicollinearity.
 

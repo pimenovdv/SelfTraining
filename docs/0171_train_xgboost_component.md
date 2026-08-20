@@ -12,3 +12,4 @@ The component was executed successfully on a noisy sine wave dataset.
 - The model effectively fit the non-linear relationship.
 
 **Script:** `train_xgboost_component.py`
+**Status:** Success

@@ -1,5 +1,7 @@
 # Non-negative Matrix Factorization (NMF) Component Testing
 
+**Status:** Success
+
 ## Objective
 To mathematically evaluate Non-negative Matrix Factorization (NMF) using pure NumPy, verifying its ability to factorize a non-negative data matrix into two lower-rank non-negative matrices.
 

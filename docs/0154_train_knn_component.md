@@ -13,3 +13,4 @@ The implementation successfully classified a synthetic linearly separable datase
 Evaluate KNN on multi-class datasets and explore alternative distance metrics such as Manhattan or Minkowski distances, as well as distance-weighted voting strategies to account for the varying influences of closer vs. further neighbors.
 
 **Script:** `train_knn_component.py`
+**Status:** Success

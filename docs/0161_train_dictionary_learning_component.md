@@ -1,5 +1,7 @@
 # Dictionary Learning Component
 
+**Status:** Success
+
 ## Objective
 Implement and evaluate a Dictionary Learning component to learn sparse representations of data using alternating optimization.
 

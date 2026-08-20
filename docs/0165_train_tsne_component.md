@@ -1,5 +1,7 @@
 # t-SNE Component
 
+**Status:** Success
+
 ## Objective
 Implement and evaluate a t-Distributed Stochastic Neighbor Embedding (t-SNE) component to reduce the dimensionality of data for visualization.
 

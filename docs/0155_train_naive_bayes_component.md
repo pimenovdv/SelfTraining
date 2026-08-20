@@ -1,5 +1,7 @@
 # Experiment 0155: Gaussian Naive Bayes Component
 
+**Status:** Success
+
 ## Hypothesis
 By applying Bayes' theorem with the "naive" assumption of conditional independence between features given the class label, a probabilistic classifier can effectively and efficiently categorize continuous data using a Gaussian distribution to model the likelihood of each feature.
 

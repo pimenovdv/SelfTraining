@@ -21,3 +21,4 @@ Loss at end of training: 0.0085
 
 Sample predictions demonstrated exact zeros, verifying the sparsity property of Sparsemax.
 **Script:** `train_sparsemax_component.py`
+**Status:** Success
