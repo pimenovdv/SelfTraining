@@ -1599,3 +1599,8 @@ Building upon our component research, we have implemented a Radial Basis Functio
 To start the overarching AGI/ASI training process mathematically, run the following script:
     python3 train_agi_asi_component.py
 This script evaluates the meta-learning component mathematically using NumPy to approximate the final training phase.
+
+## Component Testing: Chinchilla Optimality Scaling
+
+**Script:** `train_chinchilla_optimality_component.py`
+**Description:** Evaluates a Chinchilla Optimality Scaling component mathematically in pure NumPy, testing its ability to determine the optimal allocation of a given compute budget between parameter count and dataset size (D ~ 20N) to minimize the loss according to empirical scaling laws.
