@@ -176,3 +176,4 @@ docs/0183_train_operational_control_transition_component.md
 docs/0184_train_recursive_self_improvement_component.md
 docs/0185_train_agi_asi_component.md
 docs/0186_train_hrl_component.md
+docs/0187_train_mds_component.md

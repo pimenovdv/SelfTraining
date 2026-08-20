@@ -179,3 +179,4 @@
 - [x] Explore probabilistic regression mathematically. (Implemented and verified Bayesian Linear Regression computing full posterior distributions over weights).
 
 - [x] Explore hierarchical decision-making mathematically. (Implement and verify Hierarchical Reinforcement Learning - HRL).
+- [x] Explore classical multidimensional scaling mathematically. (Implemented and verified Multidimensional Scaling - MDS preserving pairwise distances).
