@@ -1,5 +1,7 @@
 # Gaussian Process Component
 
+**Status:** Success
+
 ## Objective
 Implement and evaluate a Gaussian Process Regression component from scratch in NumPy to provide robust predictive distributions with uncertainty estimates.
 

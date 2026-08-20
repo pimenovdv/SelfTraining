@@ -1,6 +1,8 @@
 # Simulated Annealing Component
 
 **Script:** `train_simulated_annealing_component.py`
+**Status:** Success
+
 
 ## Overview
 This script implements Simulated Annealing mathematically in pure NumPy for function minimization, testing it on the Rosenbrock function.

@@ -1,6 +1,8 @@
 # Fast Gradient Sign Method (FGSM) Component Experiment
 
 **Script:** `train_fgsm_component.py`
+**Status:** Success
+
 
 ## Concept
 Adversarial examples are inputs to machine learning models that an attacker has intentionally designed to cause the model to make a mistake. The Fast Gradient Sign Method (FGSM) generates adversarial examples by taking a small step in the direction of the gradient of the loss with respect to the input: $x_{adv} = x + \epsilon \cdot \text{sign}(\nabla_x L(x, y; \theta))$. Adversarial training involves augmenting the training data with these adversarial examples to improve model robustness.

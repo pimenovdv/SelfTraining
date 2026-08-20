@@ -1,6 +1,8 @@
 # Experiment 0084: Deep Sets Component Training
 
 **Script:** `train_deepsets_component.py`
+**Status:** Success
+
 
 ## Objective
 Evaluate a Deep Sets component utilizing element-wise $\phi$ network and a symmetric aggregation function followed by a $\rho$ network, ensuring permutation invariance.

@@ -1,5 +1,7 @@
 # Spectral Clustering Component
 
+**Status:** Success
+
 ## Objective
 Implement and evaluate a Spectral Clustering component to partition data that is not linearly separable.
 

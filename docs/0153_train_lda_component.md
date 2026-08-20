@@ -1,6 +1,8 @@
 # Linear Discriminant Analysis (LDA) Component
 
 **Script:** `train_lda_component.py`
+**Status:** Success
+
 
 ## Overview
 Linear Discriminant Analysis (LDA) is a supervised dimensionality reduction and classification algorithm. While Principal Component Analysis (PCA) finds the directions of maximum variance regardless of class labels, LDA aims to find the axes that maximize the separation between multiple classes. It is widely used in pattern recognition and machine learning for projecting features into a lower dimensional space, which can prevent overfitting and reduce computational costs.

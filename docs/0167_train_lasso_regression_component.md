@@ -1,5 +1,7 @@
 # Component: Lasso Regression
 
+**Status:** Success
+
 ## Objective
 To evaluate a Lasso Regression component mathematically in pure NumPy, testing its ability to perform linear regression with L1 regularization to prevent overfitting and encourage sparse weights.
 

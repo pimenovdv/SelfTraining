@@ -1,6 +1,8 @@
 # Decision Tree Component
 
 **Script:** `train_decision_tree_component.py`
+**Status:** Success
+
 
 ## Overview
 Evaluates a Decision Tree classifier mathematically in pure NumPy.
