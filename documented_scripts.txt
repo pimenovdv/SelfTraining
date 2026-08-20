@@ -97,6 +97,7 @@ train_maml_component
 train_masked_attention_component
 train_mcts_component
 train_mdn_component.py
+train_mds_component.py
 train_medium_scale_model_component.py
 train_memory_network_component
 train_mlpmixer_component
