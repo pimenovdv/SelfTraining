@@ -180,3 +180,4 @@
 
 - [x] Explore hierarchical decision-making mathematically. (Implement and verify Hierarchical Reinforcement Learning - HRL).
 - [x] Explore classical multidimensional scaling mathematically. (Implemented and verified Multidimensional Scaling - MDS preserving pairwise distances).
+- [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Locally Linear Embedding - LLE preserving local neighborhoods).
