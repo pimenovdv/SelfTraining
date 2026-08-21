@@ -180,3 +180,4 @@ docs/0187_train_mds_component.md
 docs/0189_train_chinchilla_optimality_component.md
 docs/0190_train_lle_component.md
 docs/0191_train_hdbscan_component.md
+docs/0192_train_isomap_component.md

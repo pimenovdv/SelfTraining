@@ -180,3 +180,4 @@
 0189_train_chinchilla_optimality_component
 0190_train_lle_component
 0191_train_hdbscan_component
+0192_train_isomap_component
