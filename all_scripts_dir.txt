@@ -12,6 +12,7 @@
 ./train_hmm_component.py
 ./train_hrl_component.py
 ./train_lasso_regression_component.py
+./train_lle_component.py
 ./train_logistic_regression_component.py
 ./train_mds_component.py
 ./train_medium_scale_model_component.py
