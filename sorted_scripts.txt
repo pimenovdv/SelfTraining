@@ -1,3 +1,9 @@
+test_ebm
+test_ff
+test_fgsm
+test_ltc
+test_mcts
+test_nca
 train_act_component
 train_actor_critic_component
 train_adaboost_component

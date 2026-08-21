@@ -181,3 +181,9 @@ docs/0189_train_chinchilla_optimality_component.md
 docs/0190_train_lle_component.md
 docs/0191_train_hdbscan_component.md
 docs/0192_train_isomap_component.md
+docs/0193_test_ebm.md
+docs/0194_test_ff.md
+docs/0195_test_fgsm.md
+docs/0196_test_ltc.md
+docs/0197_test_mcts.md
+docs/0198_test_nca.md
