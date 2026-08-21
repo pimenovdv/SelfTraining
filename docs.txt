@@ -181,3 +181,9 @@
 0190_train_lle_component
 0191_train_hdbscan_component
 0192_train_isomap_component
+0193_test_ebm
+0194_test_ff
+0195_test_fgsm
+0196_test_ltc
+0197_test_mcts
+0198_test_nca

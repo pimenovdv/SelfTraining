@@ -1,3 +1,9 @@
+./test_ebm.py
+./test_ff.py
+./test_fgsm.py
+./test_ltc.py
+./test_mcts.py
+./test_nca.py
 ./train_agi_asi_component.py
 ./train_bayesian_linear_regression_component.py
 ./train_bayesian_optimization_component.py
