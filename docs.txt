@@ -179,3 +179,4 @@
 0187_train_mds_component
 0189_train_chinchilla_optimality_component
 0190_train_lle_component
+0191_train_hdbscan_component

@@ -69,6 +69,7 @@ train_grokking_component.py
 train_groupnorm_component.py
 train_gru_component.py
 train_gumbel_softmax_component.py
+train_hdbscan_component
 train_hebbian_component.py
 train_highway_component.py
 train_hmm_component.py
