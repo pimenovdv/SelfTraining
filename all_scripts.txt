@@ -56,6 +56,7 @@ train_es_component.py
 train_esn_component.py
 train_evaluation_metrics_component.py
 train_ewc_component.py
+train_fasttext_component
 train_feedback_alignment_component.py
 train_ff_component.py
 train_ffn_component.py
