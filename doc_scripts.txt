@@ -2,6 +2,7 @@ test_ebm.py
 test_ff.py
 test_fgsm.py
 test_ltc.py
+test_ltc_full.py
 test_mcts.py
 test_nca.py
 train_act_component.py
@@ -14,6 +15,7 @@ train_alibi_component.py
 train_attention_component.py
 train_barlow_twins_component.py
 train_batchnorm_component.py
+train_bayesian_linear_regression_component.py
 train_bayesian_optimization_component.py
 train_bnn_component.py
 train_bpe_component.py
@@ -137,6 +139,7 @@ train_pso_component.py
 train_q_learning_component.py
 train_quantization_component.py
 train_random_forest_component.py
+train_random_forest_regression_component.py
 train_rbf_component.py
 train_rbm_component.py
 train_realnvp_component.py
@@ -170,6 +173,7 @@ train_spectral_clustering_component.py
 train_spectral_normalization_component.py
 train_ssm_component.py
 train_svm_component.py
+train_svr_component.py
 train_swiglu_component.py
 train_target_propagation_component.py
 train_tcn_component.py
@@ -182,3 +186,4 @@ train_vit_component.py
 train_vqvae_component.py
 train_weight_normalization_component.py
 train_wgan_component.py
+train_xgboost_component.py
