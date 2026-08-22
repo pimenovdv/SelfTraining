@@ -196,3 +196,4 @@ docs/0205_test_mcts.md
 docs/0206_test_nca.md
 docs/0207_train_kernel_pca_component.md
 docs/0215_train_cca_component.md
+docs/0216_train_fasttext_component.md
