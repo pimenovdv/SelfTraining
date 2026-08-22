@@ -182,3 +182,4 @@
 - [x] Explore classical multidimensional scaling mathematically. (Implemented and verified Multidimensional Scaling - MDS preserving pairwise distances).
 - [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Locally Linear Embedding - LLE preserving local neighborhoods).
 - [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Isomap preserving geodesic distances).
+- [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA using an RBF kernel).

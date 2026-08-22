@@ -89,6 +89,7 @@ train_isomap_component
 train_jepa_component.py
 train_kalman_filter_component.py
 train_kan_component.py
+train_kernel_pca_component
 train_kmeans_component.py
 train_knn_component.py
 train_knowledge_distillation_component.py
