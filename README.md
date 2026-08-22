@@ -1595,6 +1595,11 @@ Building upon our component research, we have implemented a Radial Basis Functio
 **Script:** `train_multimodal_component.py`
 **Description:** Evaluates a Multimodal training component mathematically in pure NumPy, testing its ability to align different modalities (e.g., vision and language) into a shared representation space using a contrastive loss similar to CLIP, pushing matching pairs closer together and pulling non-matching pairs apart.
 
+## Component Testing: Canonical Correlation Analysis (CCA)
+
+**Script:** `train_cca_component.py`
+**Description:** Evaluates a Canonical Correlation Analysis (CCA) component mathematically in pure NumPy, testing its ability to find linear projections that maximize the cross-covariance between two multimodal variable sets, learning a shared representation space.
+
 ## Full Model Training Process
 To start the overarching AGI/ASI training process mathematically, run the following script:
     python3 train_agi_asi_component.py

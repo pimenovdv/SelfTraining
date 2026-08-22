@@ -195,3 +195,4 @@
 0205_test_mcts
 0206_test_nca
 0207_train_kernel_pca_component
+0215_train_cca_component

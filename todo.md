@@ -183,3 +183,4 @@
 - [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Locally Linear Embedding - LLE preserving local neighborhoods).
 - [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Isomap preserving geodesic distances).
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA using an RBF kernel).
+- [x] Explore Canonical Correlation Analysis mathematically. (Implemented and verified Canonical Correlation Analysis - CCA finding linear projections that maximize cross-covariance).

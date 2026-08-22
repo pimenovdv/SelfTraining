@@ -22,6 +22,7 @@ train_bpe_component.py
 train_byol_component.py
 train_capsule_network_component.py
 train_cbow_component.py
+train_cca_component
 train_cem_component.py
 train_chinchilla_optimality_component
 train_cmaes_component.py
