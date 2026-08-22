@@ -187,3 +187,10 @@
 0196_test_ltc
 0197_test_mcts
 0198_test_nca
+0200_test_ebm
+0201_test_ff
+0202_test_fgsm
+0203_test_ltc
+0204_test_ltc_full
+0205_test_mcts
+0206_test_nca

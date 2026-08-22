@@ -187,3 +187,10 @@ docs/0195_test_fgsm.md
 docs/0196_test_ltc.md
 docs/0197_test_mcts.md
 docs/0198_test_nca.md
+docs/0200_test_ebm.md
+docs/0201_test_ff.md
+docs/0202_test_fgsm.md
+docs/0203_test_ltc.md
+docs/0204_test_ltc_full.md
+docs/0205_test_mcts.md
+docs/0206_test_nca.md

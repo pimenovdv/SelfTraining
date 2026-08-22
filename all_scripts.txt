@@ -2,6 +2,7 @@ test_ebm
 test_ff
 test_fgsm
 test_ltc
+test_ltc_full
 test_mcts
 test_nca
 train_act_component.py
