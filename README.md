@@ -1618,3 +1618,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_mean_shift_component.py`
 **Description:** Evaluates a Mean Shift Clustering component mathematically in pure NumPy, testing its ability to non-parametrically find clusters and determine the number of clusters by shifting points towards regions of higher density based on an RBF kernel.
+
+## Component Testing: K-Medoids Clustering
+
+**Script:** `train_kmedoids_component.py`
+**Description:** Evaluates a K-Medoids Clustering component mathematically in pure NumPy, testing its ability to partition data into clusters by minimizing the distance between points and their assigned medoids (representative points from the dataset).
