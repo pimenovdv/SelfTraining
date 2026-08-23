@@ -1049,3 +1049,9 @@
 - **Action:** Implemented a Label Propagation component mathematically in pure NumPy, using an RBF kernel affinity matrix and iterative transition matrix multiplication. Tested the implementation on a synthetic two-cluster dataset with most labels hidden.
 - **Outcome:** The implementation successfully propagated the labels across the clusters, achieving 100.00% accuracy, verifying the semi-supervised learning mathematical mechanism.
 - **Next Steps:** Evaluate on larger datasets and explore variations like Label Spreading which incorporate graph regularization.
+
+### Experiment 0221: Isolation Forest Component
+- **Hypothesis:** By building an ensemble of isolation trees using random feature selection and random split values, anomalies can be effectively isolated since they require fewer splits (shorter path lengths) to be separated from the rest of the data.
+- **Action:** Implemented an Isolation Forest in `train_isolation_forest_component.py` mathematically in pure NumPy, using recursive binary splitting and evaluating mean path lengths for anomaly scoring.
+- **Outcome:** The model successfully identified anomalies, which received significantly higher anomaly scores (shorter average path lengths) compared to the normal data points.
+- **Next Steps:** Evaluate the model on higher-dimensional datasets with more complex anomaly structures.

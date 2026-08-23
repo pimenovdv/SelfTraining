@@ -1628,3 +1628,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_label_propagation_component.py`
 **Description:** Evaluates a Label Propagation component mathematically in pure NumPy, testing its ability to propagate labels from a small set of labeled data to unlabeled data using an affinity graph and an iterative transition matrix approach.
+
+## Component Testing: Isolation Forest
+
+**Script:** `train_isolation_forest_component.py`
+**Description:** Evaluates an Isolation Forest component mathematically in pure NumPy, testing its ability to identify anomalies by isolating them in random trees, utilizing the principle that anomalies require shorter path lengths to be isolated.

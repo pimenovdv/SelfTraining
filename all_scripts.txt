@@ -88,6 +88,7 @@ train_hrl_component
 train_hypernetwork_component.py
 train_ica_component.py
 train_icm_component.py
+train_isolation_forest_component
 train_isomap_component
 train_jepa_component.py
 train_kalman_filter_component.py
