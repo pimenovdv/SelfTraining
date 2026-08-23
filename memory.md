@@ -1043,3 +1043,9 @@
 - **Outcome:** The implementation successfully clustered the dataset with 100.00% accuracy, verifying the bottom-up hierarchical clustering mathematical mechanism.
 - **Next Steps:** Evaluate on datasets with varying densities and explore other linkage criteria like complete and average linkage.
 - **Mean Shift Component**: Evaluates a Mean Shift Clustering component mathematically in pure NumPy, testing its ability to iteratively find density maxima using an RBF kernel.
+
+### Experiment 0220: Label Propagation Component
+- **Hypothesis:** By constructing an affinity graph and iteratively propagating labels from a small set of labeled data points to a larger set of unlabeled data points, a semi-supervised Label Propagation model can effectively classify the entire dataset using the underlying manifold structure.
+- **Action:** Implemented a Label Propagation component mathematically in pure NumPy, using an RBF kernel affinity matrix and iterative transition matrix multiplication. Tested the implementation on a synthetic two-cluster dataset with most labels hidden.
+- **Outcome:** The implementation successfully propagated the labels across the clusters, achieving 100.00% accuracy, verifying the semi-supervised learning mathematical mechanism.
+- **Next Steps:** Evaluate on larger datasets and explore variations like Label Spreading which incorporate graph regularization.

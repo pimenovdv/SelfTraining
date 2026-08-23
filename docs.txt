@@ -200,3 +200,4 @@
 0217_train_agglomerative_clustering_component
 0218_train_mean_shift_component
 0219_train_kmedoids_component
+0220_train_label_propagation_component
