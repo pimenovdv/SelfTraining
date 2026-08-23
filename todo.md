@@ -192,3 +192,7 @@
 - [x] Explore semi-supervised learning mathematically. (Implemented and verified Label Propagation using an RBF affinity graph to propagate labels).
 
 - [x] Explore anomaly detection mathematically. (Implemented and verified Isolation Forest isolating anomalies via random feature splitting and path lengths).
+
+- [x] Explore generative models with conditional priors mathematically. (Implemented and verified Conditional Variational Autoencoder - CVAE with conditional generation).
+- [x] Explore latent variable modeling mathematically. (Implemented and verified Factor Analysis using the Expectation-Maximization algorithm).
+- [x] Explore probabilistic continuous dimensionality reduction mathematically. (Implemented and verified Probabilistic PCA using EM).

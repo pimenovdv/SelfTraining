@@ -202,3 +202,6 @@
 0219_train_kmedoids_component
 0220_train_label_propagation_component
 0221_train_isolation_forest_component
+0222_train_cvae_component
+0224_train_probabilistic_pca_component
+0225_train_factor_analysis_component

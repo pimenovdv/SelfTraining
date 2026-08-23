@@ -33,6 +33,7 @@ train_contrastive_component.py
 train_cpc_component.py
 train_cross_attention_component.py
 train_ctrnn_component.py
+train_cvae_component.py
 train_dae_component.py
 train_darts_component.py
 train_dbscan_component.py
@@ -57,6 +58,7 @@ train_es_component.py
 train_esn_component.py
 train_evaluation_metrics_component.py
 train_ewc_component.py
+train_factor_analysis_component.py
 train_fasttext_component.py
 train_feedback_alignment_component.py
 train_ff_component.py
@@ -142,6 +144,7 @@ train_perceiver_component.py
 train_pointer_network_component.py
 train_positional_encoding_component.py
 train_ppo_component.py
+train_probabilistic_pca_component.py
 train_protonet_component.py
 train_pso_component.py
 train_q_learning_component.py
