@@ -197,3 +197,4 @@
 0207_train_kernel_pca_component
 0215_train_cca_component
 0216_train_fasttext_component
+0217_train_agglomerative_clustering_component

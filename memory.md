@@ -1036,3 +1036,9 @@
 - **Action:** Implemented a Canonical Correlation Analysis (CCA) component mathematically in pure NumPy, using eigenvalue decomposition on the cross-covariance matrices. Tested the implementation on a synthetic multimodal dataset with an underlying shared latent variable.
 - **Outcome:** The implementation successfully found projections yielding high canonical correlation (0.9967) between the views, verifying the mathematical mechanism for finding maximally correlated subspaces.
 - **Next Steps:** Evaluate on real-world multimodal representation learning benchmarks and explore non-linear variants like Kernel CCA.
+
+### Experiment 0217: Agglomerative Clustering Component
+- **Hypothesis:** By iteratively merging the closest pairs of clusters based on a specified linkage criterion (e.g., single linkage), Agglomerative Clustering can effectively group non-convex or well-separated data without pre-specifying the number of clusters.
+- **Action:** Implemented an Agglomerative Clustering component mathematically in pure NumPy, using single linkage based on pairwise Euclidean distances. Tested the implementation on a synthetic dataset with two well-separated clusters.
+- **Outcome:** The implementation successfully clustered the dataset with 100.00% accuracy, verifying the bottom-up hierarchical clustering mathematical mechanism.
+- **Next Steps:** Evaluate on datasets with varying densities and explore other linkage criteria like complete and average linkage.
