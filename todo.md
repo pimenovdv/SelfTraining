@@ -188,3 +188,4 @@
 
 - [x] Explore hierarchical clustering mathematically. (Implemented and verified Agglomerative Clustering using single linkage to merge clusters bottom-up).
 - [x] Explore centroid-based clustering mathematically. (Implemented and verified Mean Shift clustering iteratively updating centroids using a Gaussian RBF kernel).
+- [x] Explore medoid-based clustering mathematically. (Implemented and verified K-Medoids clustering algorithm in pure NumPy, minimizing intra-cluster distances to actual data points).
