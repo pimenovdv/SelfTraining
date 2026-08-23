@@ -201,3 +201,4 @@
 0218_train_mean_shift_component
 0219_train_kmedoids_component
 0220_train_label_propagation_component
+0221_train_isolation_forest_component

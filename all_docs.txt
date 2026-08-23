@@ -201,3 +201,4 @@ docs/0217_train_agglomerative_clustering_component.md
 docs/0218_train_mean_shift_component.md
 docs/0219_train_kmedoids_component.md
 docs/0220_train_label_propagation_component.md
+docs/0221_train_isolation_forest_component.md
