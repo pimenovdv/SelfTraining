@@ -187,3 +187,4 @@
 - [x] Explore representation learning via subwords mathematically. (Implemented and verified FastText).
 
 - [x] Explore hierarchical clustering mathematically. (Implemented and verified Agglomerative Clustering using single linkage to merge clusters bottom-up).
+- [x] Explore centroid-based clustering mathematically. (Implemented and verified Mean Shift clustering iteratively updating centroids using a Gaussian RBF kernel).
