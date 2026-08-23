@@ -11,11 +11,13 @@
 ./train_bayesian_optimization_component.py
 ./train_cca_component.py
 ./train_chinchilla_optimality_component.py
+./train_cvae_component.py
 ./train_decision_tree_component.py
 ./train_decision_tree_regression_component.py
 ./train_dictionary_learning_component.py
 ./train_distributed_infrastructure_component.py
 ./train_elastic_net_component.py
+./train_factor_analysis_component.py
 ./train_fasttext_component.py
 ./train_gaussian_process_component.py
 ./train_gradient_boosting_component.py
@@ -37,6 +39,7 @@
 ./train_neural_architecture_search_component.py
 ./train_ood_detection_component.py
 ./train_operational_control_transition_component.py
+./train_probabilistic_pca_component.py
 ./train_random_forest_component.py
 ./train_random_forest_regression_component.py
 ./train_recursive_self_improvement_component.py

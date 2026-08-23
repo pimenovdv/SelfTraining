@@ -202,3 +202,6 @@ docs/0218_train_mean_shift_component.md
 docs/0219_train_kmedoids_component.md
 docs/0220_train_label_propagation_component.md
 docs/0221_train_isolation_forest_component.md
+docs/0222_train_cvae_component.md
+docs/0224_train_probabilistic_pca_component.md
+docs/0225_train_factor_analysis_component.md
