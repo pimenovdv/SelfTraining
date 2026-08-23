@@ -185,3 +185,5 @@
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA using an RBF kernel).
 - [x] Explore Canonical Correlation Analysis mathematically. (Implemented and verified Canonical Correlation Analysis - CCA finding linear projections that maximize cross-covariance).
 - [x] Explore representation learning via subwords mathematically. (Implemented and verified FastText).
+
+- [x] Explore hierarchical clustering mathematically. (Implemented and verified Agglomerative Clustering using single linkage to merge clusters bottom-up).

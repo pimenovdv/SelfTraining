@@ -1609,3 +1609,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_chinchilla_optimality_component.py`
 **Description:** Evaluates a Chinchilla Optimality Scaling component mathematically in pure NumPy, testing its ability to determine the optimal allocation of a given compute budget between parameter count and dataset size (D ~ 20N) to minimize the loss according to empirical scaling laws.
+
+## Component Testing: Agglomerative Clustering
+
+**Script:** `train_agglomerative_clustering_component.py`
+**Description:** Evaluates an Agglomerative Clustering component mathematically in pure NumPy, testing its ability to perform bottom-up hierarchical clustering by iteratively merging the closest clusters based on a single linkage criterion using pairwise Euclidean distances.
