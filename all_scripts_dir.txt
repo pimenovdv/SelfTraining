@@ -25,6 +25,7 @@
 ./train_isomap_component.py
 ./train_kernel_pca_component.py
 ./train_kmedoids_component.py
+./train_label_propagation_component.py
 ./train_lasso_regression_component.py
 ./train_lle_component.py
 ./train_logistic_regression_component.py
