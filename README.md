@@ -1614,3 +1614,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_agglomerative_clustering_component.py`
 **Description:** Evaluates an Agglomerative Clustering component mathematically in pure NumPy, testing its ability to perform bottom-up hierarchical clustering by iteratively merging the closest clusters based on a single linkage criterion using pairwise Euclidean distances.
+## Component Testing: Mean Shift Clustering
+
+**Script:** `train_mean_shift_component.py`
+**Description:** Evaluates a Mean Shift Clustering component mathematically in pure NumPy, testing its ability to non-parametrically find clusters and determine the number of clusters by shifting points towards regions of higher density based on an RBF kernel.

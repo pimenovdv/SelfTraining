@@ -198,3 +198,4 @@ docs/0207_train_kernel_pca_component.md
 docs/0215_train_cca_component.md
 docs/0216_train_fasttext_component.md
 docs/0217_train_agglomerative_clustering_component.md
+docs/0218_train_mean_shift_component.md

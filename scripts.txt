@@ -112,6 +112,7 @@ train_masked_attention_component
 train_mcts_component
 train_mdn_component
 train_mds_component
+train_mean_shift_component
 train_medium_scale_model_component
 train_memory_network_component
 train_mlpmixer_component
