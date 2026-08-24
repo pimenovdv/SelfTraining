@@ -176,6 +176,7 @@ train_scaling_laws_component.py
 train_selective_ssm_component.py
 train_self_correction_component
 train_selu_component.py
+train_sfa_component
 train_simsiam_component.py
 train_simulated_annealing_component.py
 train_siren_component.py

@@ -1644,3 +1644,4 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Script:** `train_qda_component.py`
 **Description:** Evaluates a Quadratic Discriminant Analysis (QDA) component mathematically in pure NumPy, testing its ability to classify instances by calculating class-specific priors, means, and covariances.
 **Description:** Evaluates a Kernel Density Estimation (KDE) component mathematically in pure NumPy, testing its ability to estimate the probability density function of continuous data distributions using Gaussian kernels.
+- **Slow Feature Analysis (SFA)**: Extracts slowly varying temporal features from rapidly varying signals.
