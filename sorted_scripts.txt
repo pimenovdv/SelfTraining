@@ -148,6 +148,7 @@ train_probabilistic_pca_component
 train_protonet_component
 train_pso_component
 train_q_learning_component
+train_qda_component
 train_quantization_component
 train_random_forest_component
 train_random_forest_regression_component

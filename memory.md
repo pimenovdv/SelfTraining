@@ -1060,3 +1060,9 @@
 - **Action:** Implemented a Partial Least Squares Regression component mathematically in pure NumPy, using the NIPALS algorithm to iteratively extract orthogonal latent variables and their loadings.
 - **Outcome:** The implementation successfully computed the latent components, verifying the mathematical mechanism for dimensionality reduction and regression on multivariate data.
 - **Next Steps:** Evaluate on datasets with severe multicollinearity and compare predictive performance against Ridge regression and standard OLS.
+
+### Experiment 0227: Quadratic Discriminant Analysis (QDA) Component
+- **Hypothesis:** By calculating class-specific priors, means, and covariance matrices, Quadratic Discriminant Analysis can effectively classify instances by computing the likelihood of the instance belonging to each class, accounting for different variances across classes.
+- **Action:** Implemented a Quadratic Discriminant Analysis component mathematically in pure NumPy, using maximum likelihood estimates for priors, means, and covariances. Tested the implementation on a synthetic dataset with two classes having different covariances.
+- **Outcome:** The implementation successfully classified the dataset, verifying the probabilistic classification mathematical mechanism.
+- **Next Steps:** Evaluate on datasets with more complex class distributions and compare predictive performance against Linear Discriminant Analysis and Naive Bayes.

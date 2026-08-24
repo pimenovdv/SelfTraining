@@ -1638,3 +1638,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_pls_component.py`
 **Description:** Evaluates a Partial Least Squares (PLS) Regression component mathematically in pure NumPy, testing its ability to model relationships between multiple input features and target variables by finding latent components that maximize their covariance using the NIPALS algorithm.
+
+## Component Testing: Quadratic Discriminant Analysis (QDA)
+
+**Script:** `train_qda_component.py`
+**Description:** Evaluates a Quadratic Discriminant Analysis (QDA) component mathematically in pure NumPy, testing its ability to classify instances by calculating class-specific priors, means, and covariances.
