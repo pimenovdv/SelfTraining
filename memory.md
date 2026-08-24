@@ -1055,3 +1055,8 @@
 - **Action:** Implemented an Isolation Forest in `train_isolation_forest_component.py` mathematically in pure NumPy, using recursive binary splitting and evaluating mean path lengths for anomaly scoring.
 - **Outcome:** The model successfully identified anomalies, which received significantly higher anomaly scores (shorter average path lengths) compared to the normal data points.
 - **Next Steps:** Evaluate the model on higher-dimensional datasets with more complex anomaly structures.
+### Experiment 0226: Partial Least Squares (PLS) Component
+- **Hypothesis:** By finding latent variables that maximize the covariance between independent (X) and dependent (Y) variable sets, Partial Least Squares can effectively perform regression even when predictors are highly collinear or outnumber observations.
+- **Action:** Implemented a Partial Least Squares Regression component mathematically in pure NumPy, using the NIPALS algorithm to iteratively extract orthogonal latent variables and their loadings.
+- **Outcome:** The implementation successfully computed the latent components, verifying the mathematical mechanism for dimensionality reduction and regression on multivariate data.
+- **Next Steps:** Evaluate on datasets with severe multicollinearity and compare predictive performance against Ridge regression and standard OLS.

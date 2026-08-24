@@ -205,3 +205,4 @@ docs/0221_train_isolation_forest_component.md
 docs/0222_train_cvae_component.md
 docs/0224_train_probabilistic_pca_component.md
 docs/0225_train_factor_analysis_component.md
+docs/0226_train_pls_component.md

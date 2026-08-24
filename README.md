@@ -1633,3 +1633,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_isolation_forest_component.py`
 **Description:** Evaluates an Isolation Forest component mathematically in pure NumPy, testing its ability to identify anomalies by isolating them in random trees, utilizing the principle that anomalies require shorter path lengths to be isolated.
+
+## Component Testing: Partial Least Squares (PLS) Regression
+
+**Script:** `train_pls_component.py`
+**Description:** Evaluates a Partial Least Squares (PLS) Regression component mathematically in pure NumPy, testing its ability to model relationships between multiple input features and target variables by finding latent components that maximize their covariance using the NIPALS algorithm.
