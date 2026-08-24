@@ -140,6 +140,7 @@ train_orthogonal_rnn_component
 train_pca_component
 train_pcn_component
 train_perceiver_component
+train_pls_component
 train_pointer_network_component
 train_positional_encoding_component
 train_ppo_component

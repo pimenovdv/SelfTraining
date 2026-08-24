@@ -196,3 +196,4 @@
 - [x] Explore generative models with conditional priors mathematically. (Implemented and verified Conditional Variational Autoencoder - CVAE with conditional generation).
 - [x] Explore latent variable modeling mathematically. (Implemented and verified Factor Analysis using the Expectation-Maximization algorithm).
 - [x] Explore probabilistic continuous dimensionality reduction mathematically. (Implemented and verified Probabilistic PCA using EM).
+- [x] Explore partial least squares mathematically. (Implemented and verified Partial Least Squares - PLS Regression finding latent variables modeling covariance between independent and dependent variables).
