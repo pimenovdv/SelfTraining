@@ -203,3 +203,7 @@
 - [x] Explore non-parametric probabilistic density estimation mathematically. (Implemented and verified Kernel Density Estimation - KDE estimating probability density function using a Gaussian kernel).
 - [x] Explore temporal feature extraction mathematically. (Implemented and verified Slow Feature Analysis - SFA extracting slowly varying features from a rapidly varying signal).
 - [x] Explore Deep Belief Networks mathematically. (Implemented and verified Deep Belief Networks using stacked RBMs greedily trained layer-by-layer with CD-1).
+
+- [x] Explore exploration-exploitation trade-offs mathematically. (Implemented and verified Upper Confidence Bound (UCB) for multi-armed bandits).
+- [x] Explore maximally expressive graph neural networks mathematically. (Implemented and verified Graph Isomorphism Network (GIN) layer).
+- [x] Explore soft clustering techniques mathematically. (Implemented and verified Fuzzy C-Means clustering).
