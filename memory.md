@@ -1066,3 +1066,9 @@
 - **Action:** Implemented a Quadratic Discriminant Analysis component mathematically in pure NumPy, using maximum likelihood estimates for priors, means, and covariances. Tested the implementation on a synthetic dataset with two classes having different covariances.
 - **Outcome:** The implementation successfully classified the dataset, verifying the probabilistic classification mathematical mechanism.
 - **Next Steps:** Evaluate on datasets with more complex class distributions and compare predictive performance against Linear Discriminant Analysis and Naive Bayes.
+
+### Experiment 0228: Kernel Density Estimation (KDE) Component
+- **Hypothesis:** By placing a continuous kernel function (like a Gaussian) at each data point and averaging them, Kernel Density Estimation can effectively model the underlying continuous probability density function of an unknown data distribution.
+- **Action:** Implemented a Kernel Density Estimation component mathematically in pure NumPy, using a Gaussian kernel with a specified bandwidth. Tested the implementation on synthetic bimodal data.
+- **Outcome:** The implementation successfully estimated higher densities at the true modes and lower densities in the valleys, verifying the mathematical mechanism for continuous density estimation.
+- **Next Steps:** Evaluate with different kernel functions (Epanechnikov, Tophat) and implement automatic bandwidth selection techniques like Silverman's rule of thumb.

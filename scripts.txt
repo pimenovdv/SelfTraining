@@ -94,6 +94,7 @@ train_isomap_component
 train_jepa_component
 train_kalman_filter_component
 train_kan_component
+train_kde_component
 train_kernel_pca_component
 train_kmeans_component
 train_kmedoids_component

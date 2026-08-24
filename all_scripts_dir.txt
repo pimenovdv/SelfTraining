@@ -26,6 +26,7 @@
 ./train_hrl_component.py
 ./train_isolation_forest_component.py
 ./train_isomap_component.py
+./train_kde_component.py
 ./train_kernel_pca_component.py
 ./train_kmedoids_component.py
 ./train_label_propagation_component.py

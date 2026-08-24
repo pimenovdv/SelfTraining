@@ -199,3 +199,5 @@
 - [x] Explore partial least squares mathematically. (Implemented and verified Partial Least Squares - PLS Regression finding latent variables modeling covariance between independent and dependent variables).
 
 - [x] Explore quadratic classification mathematically. (Implemented and verified Quadratic Discriminant Analysis - QDA finding class-specific covariances for classification).
+
+- [x] Explore non-parametric probabilistic density estimation mathematically. (Implemented and verified Kernel Density Estimation - KDE estimating probability density function using a Gaussian kernel).
