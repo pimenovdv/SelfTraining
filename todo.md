@@ -201,3 +201,4 @@
 - [x] Explore quadratic classification mathematically. (Implemented and verified Quadratic Discriminant Analysis - QDA finding class-specific covariances for classification).
 
 - [x] Explore non-parametric probabilistic density estimation mathematically. (Implemented and verified Kernel Density Estimation - KDE estimating probability density function using a Gaussian kernel).
+- [x] Explore temporal feature extraction mathematically. (Implemented and verified Slow Feature Analysis - SFA extracting slowly varying features from a rapidly varying signal).
