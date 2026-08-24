@@ -68,6 +68,7 @@ train_fgsm_component
 train_flow_matching_component
 train_fnet_component
 train_full_encoder_decoder_component
+train_fuzzy_c_means_component
 train_gan_component
 train_gat_component
 train_gaussian_process_component
@@ -78,6 +79,7 @@ train_gmlp_component
 train_gmm_component
 train_gqa_component
 train_gradient_boosting_component
+train_graph_isomorphism_network_component
 train_grokking_component
 train_groupnorm_component
 train_gru_component
@@ -195,6 +197,7 @@ train_tcn_component
 train_td3_component
 train_transformer_block_component
 train_tsne_component
+train_upper_confidence_bound_component
 train_vae_component
 train_vib_component
 train_vit_component

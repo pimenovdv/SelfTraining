@@ -1079,3 +1079,20 @@
 - **Action:** Implemented a Deep Belief Network (DBN) component mathematically in pure NumPy, consisting of stacked RBMs. Tested the implementation on a synthetic binary dataset to confirm greedy layer-wise training convergence.
 - **Outcome:** The implementation successfully reduced the reconstruction error progressively across the layers, verifying the mathematical mechanism of unsupervised greedy layer-wise learning.
 - **Next Steps:** Evaluate the fine-tuning of the entire network using backpropagation or the Wake-Sleep algorithm.
+### Experiment 0231: Upper Confidence Bound (UCB) Component
+- **Hypothesis:** By balancing exploration and exploitation using an upper confidence bound that increases for less frequently chosen actions, a UCB agent can effectively solve the multi-armed bandit problem and maximize cumulative reward.
+- **Action:** Implemented a Upper Confidence Bound component mathematically in pure NumPy, testing it on a synthetic multi-armed bandit problem.
+- **Outcome:** The implementation successfully favored the optimal action while sufficiently exploring sub-optimal ones, verifying the UCB mathematical mechanism.
+- **Next Steps:** Evaluate in contextual bandit settings and compare against Thompson Sampling.
+
+### Experiment 0232: Graph Isomorphism Network (GIN) Component
+- **Hypothesis:** By using an injective aggregation function (summation with a learnable epsilon) and a multi-layer perceptron (MLP), a Graph Isomorphism Network can achieve maximum discriminative power among graph neural networks, capable of distinguishing different graph structures.
+- **Action:** Implemented a Graph Isomorphism Network layer mathematically in pure NumPy, testing its forward pass on a synthetic graph.
+- **Outcome:** The implementation successfully computed node representations, verifying the mathematical mechanism of injective neighbor aggregation.
+- **Next Steps:** Evaluate on graph classification benchmarks to confirm its theoretical expressive power.
+
+### Experiment 0233: Fuzzy C-Means (FCM) Component
+- **Hypothesis:** By assigning soft probabilities (membership degrees) to each data point for belonging to multiple clusters, Fuzzy C-Means can more effectively cluster data with overlapping boundaries or ambiguities compared to hard clustering methods like K-Means.
+- **Action:** Implemented a Fuzzy C-Means clustering component mathematically in pure NumPy, updating cluster centers based on weighted memberships and iterating until convergence. Tested on a synthetic dataset.
+- **Outcome:** The implementation successfully partitioned the data and assigned membership values, verifying the mathematical mechanism of fuzzy clustering.
+- **Next Steps:** Evaluate on datasets with highly overlapping clusters and tune the fuzzifier parameter (m) for optimal separation.

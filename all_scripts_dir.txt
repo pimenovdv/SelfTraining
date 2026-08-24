@@ -20,8 +20,10 @@
 ./train_elastic_net_component.py
 ./train_factor_analysis_component.py
 ./train_fasttext_component.py
+./train_fuzzy_c_means_component.py
 ./train_gaussian_process_component.py
 ./train_gradient_boosting_component.py
+./train_graph_isomorphism_network_component.py
 ./train_hdbscan_component.py
 ./train_hmm_component.py
 ./train_hrl_component.py
@@ -55,4 +57,5 @@
 ./train_spectral_clustering_component.py
 ./train_svr_component.py
 ./train_tsne_component.py
+./train_upper_confidence_bound_component.py
 ./train_xgboost_component.py

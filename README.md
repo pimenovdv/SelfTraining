@@ -1650,3 +1650,15 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_dbn_component.py`
 **Description:** Evaluates a Deep Belief Network (DBN) component mathematically in pure NumPy, testing its ability to learn hierarchical features by greedily training stacked Restricted Boltzmann Machines (RBMs) layer-by-layer using Contrastive Divergence (CD-1).
+
+## Component Testing: Upper Confidence Bound (UCB)
+**Script:** `train_upper_confidence_bound_component.py`
+**Description:** Evaluates an Upper Confidence Bound (UCB) component mathematically in pure NumPy, testing its ability to solve the multi-armed bandit problem by balancing exploration and exploitation using an optimistic value estimate based on action selection frequency.
+
+## Component Testing: Graph Isomorphism Network (GIN)
+**Script:** `train_graph_isomorphism_network_component.py`
+**Description:** Evaluates a Graph Isomorphism Network (GIN) component mathematically in pure NumPy, testing its ability to achieve maximum expressive power for graph representation by using an injective aggregation function (summation with epsilon) and MLPs.
+
+## Component Testing: Fuzzy C-Means (FCM)
+**Script:** `train_fuzzy_c_means_component.py`
+**Description:** Evaluates a Fuzzy C-Means clustering component mathematically in pure NumPy, testing its ability to assign soft membership probabilities to data points across multiple clusters, accommodating overlapping cluster boundaries.

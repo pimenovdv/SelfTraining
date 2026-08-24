@@ -210,3 +210,6 @@ docs/0227_train_qda_component.md
 docs/0228_train_kde_component.md
 docs/0229_train_sfa_component.md
 docs/0230_train_dbn_component.md
+docs/0231_train_upper_confidence_bound_component.md
+docs/0232_train_graph_isomorphism_network_component.md
+docs/0233_train_fuzzy_c_means_component.md
