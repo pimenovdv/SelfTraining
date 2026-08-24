@@ -1645,3 +1645,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Description:** Evaluates a Quadratic Discriminant Analysis (QDA) component mathematically in pure NumPy, testing its ability to classify instances by calculating class-specific priors, means, and covariances.
 **Description:** Evaluates a Kernel Density Estimation (KDE) component mathematically in pure NumPy, testing its ability to estimate the probability density function of continuous data distributions using Gaussian kernels.
 - **Slow Feature Analysis (SFA)**: Extracts slowly varying temporal features from rapidly varying signals.
+
+## Component Testing: Deep Belief Network (DBN)
+
+**Script:** `train_dbn_component.py`
+**Description:** Evaluates a Deep Belief Network (DBN) component mathematically in pure NumPy, testing its ability to learn hierarchical features by greedily training stacked Restricted Boltzmann Machines (RBMs) layer-by-layer using Contrastive Divergence (CD-1).

@@ -209,3 +209,4 @@
 0227_train_qda_component
 0228_train_kde_component
 0229_train_sfa_component
+0230_train_dbn_component
