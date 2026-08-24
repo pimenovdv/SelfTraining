@@ -36,6 +36,7 @@ train_ctrnn_component
 train_cvae_component
 train_dae_component
 train_darts_component
+train_dbn_component
 train_dbscan_component
 train_ddpg_component
 train_ddpm_component

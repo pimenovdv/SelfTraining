@@ -36,6 +36,7 @@ train_ctrnn_component.py
 train_cvae_component
 train_dae_component.py
 train_darts_component.py
+train_dbn_component
 train_dbscan_component.py
 train_ddpg_component.py
 train_ddpm_component.py
