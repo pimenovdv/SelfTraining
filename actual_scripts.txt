@@ -100,6 +100,7 @@ train_kalman_filter_component
 train_kan_component
 train_kde_component.py
 train_kernel_pca_component.py
+train_kernel_ridge_regression_component.py
 train_kmeans_component
 train_kmedoids_component.py
 train_knn_component
@@ -111,6 +112,7 @@ train_lda_component
 train_linear_attention_component
 train_lle_component.py
 train_lmu_component
+train_local_outlier_factor_component.py
 train_logistic_regression_component
 train_lora_component
 train_lottery_ticket_component
