@@ -215,3 +215,4 @@
 0233_train_fuzzy_c_means_component
 0234_train_kernel_ridge_regression_component
 0235_train_local_outlier_factor_component
+0236_train_cae_component

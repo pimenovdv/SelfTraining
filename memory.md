@@ -1108,3 +1108,4 @@
 - **Action:** Implemented a Local Outlier Factor component mathematically in pure NumPy, computing k-distances, reachability distances, and local outlier factors. Tested on synthetic data with clustered normal points and distant outliers.
 - **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
+- Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
