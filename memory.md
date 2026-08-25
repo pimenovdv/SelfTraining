@@ -1109,3 +1109,9 @@
 - **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
 - Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
+
+### Experiment 0237: Markov Chain Monte Carlo (MCMC) Component
+- **Hypothesis:** By employing the Metropolis-Hastings algorithm, we can efficiently draw samples from complex, unnormalized target probability distributions, which is fundamental for Bayesian inference in AGI.
+- **Action:** Implemented an MCMC component mathematically in pure NumPy, using a Gaussian proposal distribution to sample from a bimodal Gaussian mixture target.
+- **Outcome:** The implementation successfully sampled from the target distribution, yielding a sample mean and variance consistent with the true theoretical moments.
+- **Next Steps:** Evaluate Gibbs Sampling and Hamiltonian Monte Carlo (HMC) for higher-dimensional probabilistic models.
