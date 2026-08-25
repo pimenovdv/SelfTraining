@@ -1109,3 +1109,6 @@
 - **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
 - Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
+
+## Siamese Network and Contrastive Loss
+- We successfully implemented a Siamese Network with contrastive loss, learning metric embeddings to differentiate similar from dissimilar inputs based purely on mathematical fundamentals without leveraging deep learning libraries.

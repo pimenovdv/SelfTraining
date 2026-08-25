@@ -183,6 +183,7 @@ train_selective_ssm_component
 train_self_correction_component.py
 train_selu_component
 train_sfa_component.py
+train_siamese_network_component.py
 train_simsiam_component
 train_simulated_annealing_component.py
 train_siren_component

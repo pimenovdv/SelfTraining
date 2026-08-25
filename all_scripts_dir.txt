@@ -57,6 +57,7 @@
 ./train_scaling_law_projection_component.py
 ./train_self_correction_component.py
 ./train_sfa_component.py
+./train_siamese_network_component.py
 ./train_spectral_clustering_component.py
 ./train_svr_component.py
 ./train_tsne_component.py
