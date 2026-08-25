@@ -1672,3 +1672,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_local_outlier_factor_component.py`
 **Description:** Evaluates a Local Outlier Factor (LOF) component mathematically in pure NumPy, testing its ability to identify anomalies by computing the local reachability density of data points and comparing them to their k-nearest neighbors.
+
+## Component Testing: Contractive Autoencoder (CAE)
+
+**Script:** `train_cae_component.py`
+**Description:** Evaluates a Contractive Autoencoder (CAE) component mathematically in pure NumPy, testing its ability to learn robust representations by penalizing the Frobenius norm of the Jacobian of hidden representations with respect to inputs, minimizing sensitivity to small perturbations.

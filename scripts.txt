@@ -21,6 +21,7 @@ train_bayesian_optimization_component
 train_bnn_component
 train_bpe_component
 train_byol_component
+train_cae_component
 train_capsule_network_component
 train_cbow_component
 train_cca_component

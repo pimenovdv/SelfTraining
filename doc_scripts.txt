@@ -21,6 +21,7 @@ train_bayesian_optimization_component.py
 train_bnn_component.py
 train_bpe_component.py
 train_byol_component.py
+train_cae_component.py
 train_capsule_network_component.py
 train_cbow_component.py
 train_cca_component.py
