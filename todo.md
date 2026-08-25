@@ -207,3 +207,7 @@
 - [x] Explore exploration-exploitation trade-offs mathematically. (Implemented and verified Upper Confidence Bound (UCB) for multi-armed bandits).
 - [x] Explore maximally expressive graph neural networks mathematically. (Implemented and verified Graph Isomorphism Network (GIN) layer).
 - [x] Explore soft clustering techniques mathematically. (Implemented and verified Fuzzy C-Means clustering).
+
+- [x] Explore non-linear regularized regression mathematically. (Implemented and verified Kernel Ridge Regression learning non-linear relationships using the dual formulation and RBF kernel).
+
+- [x] Explore density-based outlier detection mathematically. (Implemented and verified Local Outlier Factor identifying anomalies by comparing local densities).

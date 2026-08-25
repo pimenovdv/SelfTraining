@@ -1096,3 +1096,15 @@
 - **Action:** Implemented a Fuzzy C-Means clustering component mathematically in pure NumPy, updating cluster centers based on weighted memberships and iterating until convergence. Tested on a synthetic dataset.
 - **Outcome:** The implementation successfully partitioned the data and assigned membership values, verifying the mathematical mechanism of fuzzy clustering.
 - **Next Steps:** Evaluate on datasets with highly overlapping clusters and tune the fuzzifier parameter (m) for optimal separation.
+
+### Experiment 0234: Kernel Ridge Regression Component
+- **Hypothesis:** By applying the kernel trick to ridge regression and solving it in the dual space, the model can effectively perform regularized non-linear regression, mapping the input features to an infinite-dimensional feature space.
+- **Action:** Implemented a Kernel Ridge Regression component mathematically in pure NumPy, using an RBF kernel and solving the dual formulation linearly. Tested the implementation on a noisy sine wave dataset.
+- **Outcome:** The implementation successfully learned the underlying non-linear pattern while ignoring most noise, verifying the mathematical mechanism of kernel methods and L2 regularization in dual form.
+- **Next Steps:** Evaluate on complex non-linear regression benchmarks and explore other kernels like Polynomial and Sigmoid.
+
+### Experiment 0235: Local Outlier Factor (LOF) Component
+- **Hypothesis:** By comparing the local reachability density of a data point to the densities of its k-nearest neighbors, anomalies can be effectively identified as points that have significantly lower densities than their neighbors.
+- **Action:** Implemented a Local Outlier Factor component mathematically in pure NumPy, computing k-distances, reachability distances, and local outlier factors. Tested on synthetic data with clustered normal points and distant outliers.
+- **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
+- **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.

@@ -1662,3 +1662,13 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Fuzzy C-Means (FCM)
 **Script:** `train_fuzzy_c_means_component.py`
 **Description:** Evaluates a Fuzzy C-Means clustering component mathematically in pure NumPy, testing its ability to assign soft membership probabilities to data points across multiple clusters, accommodating overlapping cluster boundaries.
+
+## Component Testing: Kernel Ridge Regression
+
+**Script:** `train_kernel_ridge_regression_component.py`
+**Description:** Evaluates a Kernel Ridge Regression component mathematically in pure NumPy, testing its ability to perform non-linear regression by projecting data into a high-dimensional feature space using the RBF kernel trick and solving the regularized optimization problem in dual form.
+
+## Component Testing: Local Outlier Factor (LOF)
+
+**Script:** `train_local_outlier_factor_component.py`
+**Description:** Evaluates a Local Outlier Factor (LOF) component mathematically in pure NumPy, testing its ability to identify anomalies by computing the local reachability density of data points and comparing them to their k-nearest neighbors.
