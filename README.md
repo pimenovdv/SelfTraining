@@ -1677,3 +1677,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_cae_component.py`
 **Description:** Evaluates a Contractive Autoencoder (CAE) component mathematically in pure NumPy, testing its ability to learn robust representations by penalizing the Frobenius norm of the Jacobian of hidden representations with respect to inputs, minimizing sensitivity to small perturbations.
+
+## Component Testing: Markov Chain Monte Carlo (MCMC)
+
+**Script:** `train_mcmc_component.py`
+**Description:** Evaluates a Markov Chain Monte Carlo (MCMC) component mathematically in pure NumPy, testing its ability to sample from a complex, bimodal target distribution using the Metropolis-Hastings algorithm.

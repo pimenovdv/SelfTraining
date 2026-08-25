@@ -3,6 +3,7 @@
 *This document outlines the strategic roadmap for achieving Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI). The plan progresses from fundamental mathematical research to large-scale system integration.*
 
 ## Phase 1: Foundations and Mathematical Modeling (Current)
+- [x] Explore Markov Chain Monte Carlo (MCMC) sampling mathematically. (Implemented and verified Metropolis-Hastings for sampling from a bimodal target distribution).
 
 - [x] Define the core theoretical framework for intelligence modeling.
 - [x] Investigate and mathematically formalize memory and reasoning structures. (Verified FFN for reasoning structures, implemented Self-Attention, Multi-Head Attention, Layer Normalization, Masked Attention, Cross-Attention, sequential RNN state memory, GRU gating mechanisms, LSTM cell states and gating mechanisms, continuous State Space Model (SSM) discretizations, Hopfield Network associative memory, and End-To-End Memory Network).
