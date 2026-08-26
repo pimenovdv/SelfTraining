@@ -143,6 +143,7 @@ train_nmf_component
 train_ntm_component
 train_ood_detection_component
 train_operational_control_transition_component
+train_optimal_transport_component
 train_orthogonal_rnn_component
 train_pca_component
 train_pcn_component
