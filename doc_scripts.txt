@@ -145,6 +145,7 @@ train_ntm_component.py
 train_ood_detection_component.py
 train_operational_control_transition_component.py
 train_orthogonal_rnn_component.py
+train_particle_filter_component.py
 train_pca_component.py
 train_pcn_component.py
 train_perceiver_component.py
