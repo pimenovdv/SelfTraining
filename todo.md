@@ -212,3 +212,4 @@
 
 - [x] Explore density-based outlier detection mathematically. (Implemented and verified Local Outlier Factor identifying anomalies by comparing local densities).
 - [x] Explore contractive representation learning mathematically. (Implemented and verified Contractive Autoencoder - CAE).
+- [x] Explore sequence labeling mathematically. (Implemented and verified Linear Chain Conditional Random Field - CRF).
