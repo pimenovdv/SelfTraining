@@ -122,6 +122,7 @@ train_ltc_component.py
 train_mae_component.py
 train_maml_component.py
 train_masked_attention_component.py
+train_mcmc_component.py
 train_mcts_component.py
 train_mdn_component.py
 train_mds_component.py

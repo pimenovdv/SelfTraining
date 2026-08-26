@@ -121,6 +121,7 @@ train_ltc_component
 train_mae_component
 train_maml_component
 train_masked_attention_component
+train_mcmc_component
 train_mcts_component
 train_mdn_component
 train_mds_component
