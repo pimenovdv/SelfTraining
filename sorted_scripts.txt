@@ -32,6 +32,7 @@ train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component
 train_cpc_component
+train_crf_component
 train_cross_attention_component
 train_ctrnn_component
 train_cvae_component
