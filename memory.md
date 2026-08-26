@@ -1109,3 +1109,9 @@
 - **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
 - Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
+
+### Experiment 0237: Affinity Propagation Component
+- **Hypothesis:** By iteratively passing responsibility and availability messages between data points, Affinity Propagation can effectively identify exemplars and form clusters without requiring the number of clusters to be specified a priori.
+- **Action:** Implemented an Affinity Propagation clustering component mathematically in pure NumPy, updating Responsibility (R) and Availability (A) matrices iteratively. Tested on a synthetic dataset.
+- **Outcome:** The implementation successfully identified exemplars and partitioned the data, verifying the mathematical mechanism of message-passing clustering.
+- **Next Steps:** Evaluate on datasets with varying preferences and damping factors to control the number of clusters and ensure convergence.

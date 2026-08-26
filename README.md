@@ -1677,3 +1677,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_cae_component.py`
 **Description:** Evaluates a Contractive Autoencoder (CAE) component mathematically in pure NumPy, testing its ability to learn robust representations by penalizing the Frobenius norm of the Jacobian of hidden representations with respect to inputs, minimizing sensitivity to small perturbations.
+
+## Component Testing: Affinity Propagation Clustering
+
+**Script:** `train_affinity_propagation_component.py`
+**Description:** Evaluates an Affinity Propagation clustering component mathematically in pure NumPy, testing its ability to identify exemplars and cluster data by iteratively exchanging responsibility and availability messages between data points.
