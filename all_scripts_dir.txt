@@ -12,6 +12,7 @@
 ./train_cae_component.py
 ./train_cca_component.py
 ./train_chinchilla_optimality_component.py
+./train_crf_component.py
 ./train_cvae_component.py
 ./train_dbn_component.py
 ./train_decision_tree_component.py
