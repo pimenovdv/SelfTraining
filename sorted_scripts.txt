@@ -144,6 +144,7 @@ train_ntm_component
 train_ood_detection_component
 train_operational_control_transition_component
 train_orthogonal_rnn_component
+train_particle_filter_component
 train_pca_component
 train_pcn_component
 train_perceiver_component

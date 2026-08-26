@@ -1109,3 +1109,9 @@
 - **Outcome:** The implementation successfully assigned significantly higher LOF scores to the outliers compared to normal points, verifying the mathematical mechanism of local density-based anomaly detection.
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
 - Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
+
+### Experiment 0237: Particle Filter Component
+- **Hypothesis:** By representing the posterior distribution of hidden states with a set of weighted random samples (particles), a Particle Filter can effectively track non-linear and non-Gaussian dynamical systems where traditional Kalman Filters fail.
+- **Action:** Implemented a Particle Filter (Sequential Monte Carlo) component mathematically in pure NumPy, using importance sampling and systematic resampling. Tested the implementation on a standard highly non-linear benchmark problem.
+- **Outcome:** The implementation successfully tracked the hidden state with a low Mean Squared Error, verifying the mathematical mechanism of sequential Monte Carlo state estimation.
+- **Next Steps:** Evaluate on multi-dimensional tracking problems and explore other resampling schemes like stratified or residual resampling.

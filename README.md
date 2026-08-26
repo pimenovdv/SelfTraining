@@ -1677,3 +1677,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_cae_component.py`
 **Description:** Evaluates a Contractive Autoencoder (CAE) component mathematically in pure NumPy, testing its ability to learn robust representations by penalizing the Frobenius norm of the Jacobian of hidden representations with respect to inputs, minimizing sensitivity to small perturbations.
+
+## Component Testing: Particle Filter
+
+**Script:** `train_particle_filter_component.py`
+**Description:** Evaluates a Particle Filter (Sequential Monte Carlo) component mathematically in pure NumPy, testing its ability to track the hidden state of a non-linear, non-Gaussian dynamical system using importance sampling and resampling.
