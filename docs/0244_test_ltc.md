@@ -1,4 +1,4 @@
-# Experiment 0242: Liquid Time-Constant Test
+# Experiment 0244: Liquid Time-Constant Test
 
 ## Objective
 Verify the learning capabilities of a basic Liquid Time-Constant (LTC) network component.

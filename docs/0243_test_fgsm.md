@@ -1,4 +1,4 @@
-# Experiment 0241: Fast Gradient Sign Method Test
+# Experiment 0243: Fast Gradient Sign Method Test
 
 ## Objective
 Verify the vulnerability of standard models to FGSM adversarial attacks and the effectiveness of adversarial training.

@@ -1,4 +1,4 @@
-# Experiment 0245: Neural Cellular Automata Test
+# Experiment 0247: Neural Cellular Automata Test
 
 ## Objective
 Verify the learning capabilities of the Neural Cellular Automata (NCA) component in modifying grid states.

@@ -1,4 +1,4 @@
-# Experiment 0243: Full Liquid Time-Constant Test
+# Experiment 0245: Full Liquid Time-Constant Test
 
 ## Objective
 Verify the learning capabilities of a complete Liquid Time-Constant (LTC) Network including temporal dependencies and BPTT.

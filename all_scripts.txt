@@ -32,6 +32,7 @@ train_cnp_component.py
 train_continuous_hopfield_component.py
 train_contrastive_component.py
 train_cpc_component.py
+train_crf_component.py
 train_cross_attention_component.py
 train_ctrnn_component.py
 train_cvae_component

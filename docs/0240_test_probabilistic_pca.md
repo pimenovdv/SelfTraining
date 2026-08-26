@@ -1,4 +1,4 @@
-# Experiment 0246: Probabilistic PCA Test
+# Experiment 0240: Probabilistic PCA Test
 
 ## Objective
 Verify the latent variable inference and parameter estimation of the Probabilistic PCA component using the EM algorithm.

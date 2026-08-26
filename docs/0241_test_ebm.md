@@ -1,4 +1,4 @@
-# Experiment 0238: Energy-Based Model Test
+# Experiment 0241: Energy-Based Model Test
 
 ## Objective
 Verify the energy minimization process of the EBM component using Langevin dynamics.

@@ -1,4 +1,4 @@
-# Experiment 0240: Forward-Forward Algorithm Test
+# Experiment 0242: Forward-Forward Algorithm Test
 
 ## Objective
 Verify the local learning capabilities of the Forward-Forward algorithm without backpropagation.

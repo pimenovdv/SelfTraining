@@ -1,4 +1,4 @@
-# Experiment 0244: Monte Carlo Tree Search Test
+# Experiment 0246: Monte Carlo Tree Search Test
 
 ## Objective
 Verify the simulation and backpropagation capabilities of the Monte Carlo Tree Search component.

@@ -1,4 +1,4 @@
-# Experiment 0237: Conditional Variational Autoencoder Test
+# Experiment 0238: Conditional Variational Autoencoder Test
 
 ## Objective
 Verify the conditional generation capabilities of the CVAE component mathematically.
