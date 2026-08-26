@@ -99,6 +99,8 @@
 
 ## Phase 3: Integration and Capability Emergence
 
+- [x] Explore sequence tagging mathematically. (Implemented and verified Conditional Random Field - CRF using the forward-backward algorithm for exact inference).
+
 - [x] Explore advanced gradient-free optimization strategies mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy - CMA-ES).
 
 - [x] Explore pointer mechanisms for sequence tasks mathematically. (Implemented and verified Pointer Network for predicting sequence order via input attention).
