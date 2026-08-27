@@ -1702,3 +1702,4 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_mcmc_component.py`
 **Description:** Evaluates a Markov Chain Monte Carlo (MCMC) component mathematically in pure NumPy, testing its ability to sample from a complex target distribution using the Metropolis-Hastings algorithm and accurately estimate theoretical distribution statistics.
+- **Advantage Actor-Critic (A2C):** Implemented an on-policy RL algorithm that combines a parameterized policy (actor) and a value function (critic) using an advantage estimate to reduce variance.
