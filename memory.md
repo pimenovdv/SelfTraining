@@ -1116,3 +1116,4 @@
 - **Outcome:** The implementation successfully learned the emission and transition potentials, correctly computing gradients using expected counts from the marginals, verifying the mathematical mechanism.
 - **Next Steps:** Evaluate on real sequence tagging tasks like Named Entity Recognition or Part-of-Speech tagging and explore linear-chain approximations for longer sequences.
 - [x] GraphSAGE implemented for neighbor sampling GNN approaches
+- Implemented Particle Filter component (Sequential Monte Carlo) for non-linear state estimation.
