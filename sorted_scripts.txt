@@ -82,6 +82,7 @@ train_gmm_component
 train_gqa_component
 train_gradient_boosting_component
 train_graph_isomorphism_network_component
+train_graphsage_component
 train_grokking_component
 train_groupnorm_component
 train_gru_component
