@@ -218,3 +218,4 @@ docs/0235_train_local_outlier_factor_component.md
 docs/0236_train_cae_component.md
 docs/0237_train_crf_component.md
 docs/0240_train_graphsage_component.md
+docs/0241_train_particle_filter_component.md

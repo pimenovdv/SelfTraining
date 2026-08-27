@@ -215,3 +215,4 @@
 - [x] Explore density-based outlier detection mathematically. (Implemented and verified Local Outlier Factor identifying anomalies by comparing local densities).
 - [x] Explore contractive representation learning mathematically. (Implemented and verified Contractive Autoencoder - CAE).
 - [x] Explore structural representation learning mathematically with GraphSAGE. (Implemented and verified GraphSAGE).
+- [x] Explore state estimation and non-linear tracking mathematically. (Implemented and verified Particle Filter using Sequential Monte Carlo).
