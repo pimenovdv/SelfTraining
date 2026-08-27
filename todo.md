@@ -221,3 +221,4 @@
 - [x] Explore sparse principal component analysis mathematically. (Implemented and verified Sparse PCA using L1-regularized power iteration).
 - [x] Explore tensor decomposition mathematically. (Implemented and verified CP Decomposition via simulated Alternating Least Squares).
 - [x] Explore tensor decomposition mathematically. (Implemented and verified Tucker Decomposition via simulated Higher-Order Orthogonal Iteration).
+- [x] Explore Markov Chain Monte Carlo mathematically. (Implemented and verified Metropolis-Hastings MCMC sampling from a mixture distribution).
