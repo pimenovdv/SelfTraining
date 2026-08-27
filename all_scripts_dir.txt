@@ -12,6 +12,7 @@
 ./train_cae_component.py
 ./train_cca_component.py
 ./train_chinchilla_optimality_component.py
+./train_cp_decomposition_component.py
 ./train_crf_component.py
 ./train_cvae_component.py
 ./train_dbn_component.py
@@ -61,9 +62,11 @@
 ./train_scaling_law_projection_component.py
 ./train_self_correction_component.py
 ./train_sfa_component.py
+./train_sparse_pca_component.py
 ./train_spectral_clustering_component.py
 ./train_svr_component.py
 ./train_tsne_component.py
+./train_tucker_decomposition_component.py
 ./train_upper_confidence_bound_component.py
 ./train_value_iter_component.py
 ./train_xgboost_component.py

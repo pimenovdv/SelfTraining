@@ -1129,3 +1129,6 @@
 - **Action:** Implemented Policy Iteration mathematically in pure NumPy, consisting of iterative policy evaluation and greedy policy improvement, tested on a synthetic gridworld environment.
 - **Outcome:** The implementation successfully converged to the optimal policy, verifying the mathematical mechanism of alternating evaluation and improvement steps.
 - **Next Steps:** Evaluate in environments with stochastic transitions and compare computational efficiency with Value Iteration.
+- **Sparse PCA**: Explored sparse principal component analysis using L1-regularized power iteration.
+- **CP Decomposition**: Explored CANDECOMP/PARAFAC tensor decomposition via simulated ALS.
+- **Tucker Decomposition**: Explored Tucker tensor decomposition (HOSVD) via simulated HOOI.

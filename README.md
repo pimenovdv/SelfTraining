@@ -1694,3 +1694,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_policy_iteration_component.py`
 **Description:** Evaluates a Policy Iteration component mathematically in pure NumPy, testing its ability to find the optimal policy for a Markov Decision Process by alternating between iterative policy evaluation and greedy policy improvement.
+- **Sparse PCA**: Explored sparse principal component analysis using L1-regularized power iteration.
+- **CP Decomposition**: Explored CANDECOMP/PARAFAC tensor decomposition via simulated ALS.
+- **Tucker Decomposition**: Explored Tucker tensor decomposition (HOSVD) via simulated HOOI.
