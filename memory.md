@@ -1133,3 +1133,4 @@
 - **CP Decomposition**: Explored CANDECOMP/PARAFAC tensor decomposition via simulated ALS.
 - **Tucker Decomposition**: Explored Tucker tensor decomposition (HOSVD) via simulated HOOI.
 - **MCMC**: Explored Markov Chain Monte Carlo via the Metropolis-Hastings algorithm, confirming robust theoretical mean and variance estimation for a complex Gaussian mixture target probability density function.
+- Implemented and verified Advantage Actor-Critic - A2C using shared features mathematically.

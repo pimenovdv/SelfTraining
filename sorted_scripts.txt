@@ -5,6 +5,7 @@ test_ltc
 test_ltc_full
 test_mcts
 test_nca
+train_a2c_component
 train_act_component
 train_actor_critic_component
 train_adaboost_component
