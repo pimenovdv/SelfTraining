@@ -217,3 +217,7 @@
 - [x] Explore structural representation learning mathematically with GraphSAGE. (Implemented and verified GraphSAGE).
 - [x] Explore state estimation and non-linear tracking mathematically. (Implemented and verified Particle Filter using Sequential Monte Carlo).
 - [x] Explore Markov Decision Processes mathematically. (Implement Value Iteration and Policy Iteration). (Implemented and verified Value Iteration and Policy Iteration finding optimal policies via Bellman equations).
+
+- [x] Explore sparse principal component analysis mathematically. (Implemented and verified Sparse PCA using L1-regularized power iteration).
+- [x] Explore tensor decomposition mathematically. (Implemented and verified CP Decomposition via simulated Alternating Least Squares).
+- [x] Explore tensor decomposition mathematically. (Implemented and verified Tucker Decomposition via simulated Higher-Order Orthogonal Iteration).

@@ -31,6 +31,7 @@ train_cmaes_component
 train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component
+train_cp_decomposition_component.py
 train_cpc_component
 train_crf_component.py
 train_cross_attention_component
@@ -193,6 +194,7 @@ train_siren_component
 train_skipgram_component
 train_snn_component
 train_som_component
+train_sparse_pca_component.py
 train_sparsemax_component
 train_spectral_clustering_component.py
 train_spectral_normalization_component
@@ -205,6 +207,7 @@ train_tcn_component
 train_td3_component
 train_transformer_block_component
 train_tsne_component.py
+train_tucker_decomposition_component.py
 train_upper_confidence_bound_component.py
 train_vae_component
 train_value_iter_component.py
