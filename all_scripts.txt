@@ -82,6 +82,7 @@ train_gmm_component.py
 train_gqa_component.py
 train_gradient_boosting_component.py
 train_graph_isomorphism_network_component
+train_graphsage_component
 train_grokking_component.py
 train_groupnorm_component.py
 train_gru_component.py

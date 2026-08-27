@@ -1115,3 +1115,4 @@
 - **Action:** Implemented a Conditional Random Field component mathematically in pure NumPy, using the forward-backward algorithm to compute node and edge marginals for exact inference and gradient computation. Tested on a synthetic sequence dataset.
 - **Outcome:** The implementation successfully learned the emission and transition potentials, correctly computing gradients using expected counts from the marginals, verifying the mathematical mechanism.
 - **Next Steps:** Evaluate on real sequence tagging tasks like Named Entity Recognition or Part-of-Speech tagging and explore linear-chain approximations for longer sequences.
+- [x] GraphSAGE implemented for neighbor sampling GNN approaches

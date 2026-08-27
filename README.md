@@ -1682,3 +1682,4 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_crf_component.py`
 **Description:** Evaluates a Conditional Random Field (CRF) component mathematically in pure NumPy, testing its ability to model sequence tagging tasks using the forward-backward algorithm to compute exact marginals and gradients for transition and emission potentials.
+## GraphSAGE added for GNN experiments
