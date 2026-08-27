@@ -152,6 +152,7 @@ train_pcn_component
 train_perceiver_component
 train_pls_component
 train_pointer_network_component
+train_policy_iteration_component
 train_positional_encoding_component
 train_ppo_component
 train_probabilistic_pca_component
@@ -205,6 +206,7 @@ train_transformer_block_component
 train_tsne_component
 train_upper_confidence_bound_component
 train_vae_component
+train_value_iter_component
 train_vib_component
 train_vit_component
 train_vqvae_component

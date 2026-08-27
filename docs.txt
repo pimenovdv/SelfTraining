@@ -219,3 +219,5 @@
 0237_train_crf_component
 0240_train_graphsage_component
 0241_train_particle_filter_component
+0242_train_value_iter_component
+0243_train_policy_iteration_component

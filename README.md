@@ -1684,3 +1684,13 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Description:** Evaluates a Conditional Random Field (CRF) component mathematically in pure NumPy, testing its ability to model sequence tagging tasks using the forward-backward algorithm to compute exact marginals and gradients for transition and emission potentials.
 ## GraphSAGE added for GNN experiments
 - Particle Filter component added to the system.
+
+## Component Testing: Value Iteration
+
+**Script:** `train_value_iter_component.py`
+**Description:** Evaluates a Value Iteration component mathematically in pure NumPy, testing its ability to find the optimal value function and extract the optimal policy for a Markov Decision Process by repeatedly applying the Bellman optimality update.
+
+## Component Testing: Policy Iteration
+
+**Script:** `train_policy_iteration_component.py`
+**Description:** Evaluates a Policy Iteration component mathematically in pure NumPy, testing its ability to find the optimal policy for a Markov Decision Process by alternating between iterative policy evaluation and greedy policy improvement.

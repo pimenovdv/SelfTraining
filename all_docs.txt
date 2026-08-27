@@ -219,3 +219,5 @@ docs/0236_train_cae_component.md
 docs/0237_train_crf_component.md
 docs/0240_train_graphsage_component.md
 docs/0241_train_particle_filter_component.md
+docs/0242_train_value_iter_component.md
+docs/0243_train_policy_iteration_component.md
