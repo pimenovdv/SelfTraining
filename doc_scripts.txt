@@ -10,7 +10,6 @@ train_actor_critic_component.py
 train_adaboost_component.py
 train_adaln_component.py
 train_adamw_component.py
-train_affinity_propagation_component.py
 train_agglomerative_clustering_component.py
 train_agi_asi_component.py
 train_alibi_component.py

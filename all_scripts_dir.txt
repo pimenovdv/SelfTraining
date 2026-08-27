@@ -5,7 +5,6 @@
 ./test_ltc_full.py
 ./test_mcts.py
 ./test_nca.py
-./train_affinity_propagation_component.py
 ./train_agglomerative_clustering_component.py
 ./train_agi_asi_component.py
 ./train_bayesian_linear_regression_component.py

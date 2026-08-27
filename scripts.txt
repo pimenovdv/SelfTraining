@@ -10,7 +10,6 @@ train_actor_critic_component
 train_adaboost_component
 train_adaln_component
 train_adamw_component
-train_affinity_propagation_component
 train_agglomerative_clustering_component
 train_agi_asi_component
 train_alibi_component
