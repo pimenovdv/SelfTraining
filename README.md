@@ -1697,3 +1697,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 - **Sparse PCA**: Explored sparse principal component analysis using L1-regularized power iteration.
 - **CP Decomposition**: Explored CANDECOMP/PARAFAC tensor decomposition via simulated ALS.
 - **Tucker Decomposition**: Explored Tucker tensor decomposition (HOSVD) via simulated HOOI.
+
+## Component Testing: Markov Chain Monte Carlo (MCMC)
+
+**Script:** `train_mcmc_component.py`
+**Description:** Evaluates a Markov Chain Monte Carlo (MCMC) component mathematically in pure NumPy, testing its ability to sample from a complex target distribution using the Metropolis-Hastings algorithm and accurately estimate theoretical distribution statistics.

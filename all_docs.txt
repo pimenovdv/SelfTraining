@@ -224,3 +224,4 @@ docs/0243_train_policy_iteration_component.md
 docs/0244_train_tucker_decomposition_component.md
 docs/0245_train_sparse_pca_component.md
 docs/0246_train_cp_decomposition_component.md
+docs/0247_train_mcmc_component.md

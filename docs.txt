@@ -224,3 +224,4 @@
 0244_train_tucker_decomposition_component
 0245_train_sparse_pca_component
 0246_train_cp_decomposition_component
+0247_train_mcmc_component
