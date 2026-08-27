@@ -153,6 +153,7 @@ train_pcn_component.py
 train_perceiver_component.py
 train_pls_component.py
 train_pointer_network_component.py
+train_policy_iteration_component.py
 train_positional_encoding_component.py
 train_ppo_component.py
 train_probabilistic_pca_component.py
@@ -206,6 +207,7 @@ train_transformer_block_component.py
 train_tsne_component.py
 train_upper_confidence_bound_component.py
 train_vae_component.py
+train_value_iter_component.py
 train_vib_component.py
 train_vit_component.py
 train_vqvae_component.py

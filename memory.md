@@ -1117,3 +1117,15 @@
 - **Next Steps:** Evaluate on real sequence tagging tasks like Named Entity Recognition or Part-of-Speech tagging and explore linear-chain approximations for longer sequences.
 - [x] GraphSAGE implemented for neighbor sampling GNN approaches
 - Implemented Particle Filter component (Sequential Monte Carlo) for non-linear state estimation.
+
+### Experiment 0242: Value Iteration Component
+- **Hypothesis:** By iteratively updating the value function using the Bellman optimality equation, the algorithm can converge to the optimal value function and extract the optimal policy for a given Markov Decision Process.
+- **Action:** Implemented Value Iteration mathematically in pure NumPy and tested it on a simple gridworld environment.
+- **Outcome:** The implementation successfully converged and found the optimal policy, verifying the mathematical mechanism of Value Iteration.
+- **Next Steps:** Evaluate on larger state spaces and compare with reinforcement learning approaches like Q-Learning.
+
+### Experiment 0243: Policy Iteration Component
+- **Hypothesis:** By alternating between policy evaluation and policy improvement steps, Policy Iteration can converge to the optimal policy, potentially in fewer iterations than Value Iteration.
+- **Action:** Implemented Policy Iteration mathematically in pure NumPy, consisting of iterative policy evaluation and greedy policy improvement, tested on a synthetic gridworld environment.
+- **Outcome:** The implementation successfully converged to the optimal policy, verifying the mathematical mechanism of alternating evaluation and improvement steps.
+- **Next Steps:** Evaluate in environments with stochastic transitions and compare computational efficiency with Value Iteration.

@@ -216,3 +216,4 @@
 - [x] Explore contractive representation learning mathematically. (Implemented and verified Contractive Autoencoder - CAE).
 - [x] Explore structural representation learning mathematically with GraphSAGE. (Implemented and verified GraphSAGE).
 - [x] Explore state estimation and non-linear tracking mathematically. (Implemented and verified Particle Filter using Sequential Monte Carlo).
+- [x] Explore Markov Decision Processes mathematically. (Implement Value Iteration and Policy Iteration). (Implemented and verified Value Iteration and Policy Iteration finding optimal policies via Bellman equations).
