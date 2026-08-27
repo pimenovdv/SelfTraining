@@ -1682,3 +1682,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_mcmc_component.py`
 **Description:** Evaluates a Markov Chain Monte Carlo (MCMC) component mathematically in pure NumPy, testing its ability to draw samples from a complex target distribution (e.g., a mixture of Gaussians) using the Metropolis-Hastings algorithm.
+## Component Testing: Conditional Random Field (CRF)
+
+**Script:** `train_crf_component.py`
+**Description:** Evaluates a Conditional Random Field (CRF) component mathematically in pure NumPy, testing its ability to model sequence tagging tasks using the forward-backward algorithm to compute exact marginals and gradients for transition and emission potentials.

@@ -1,0 +1,6 @@
+I need to resolve a merge conflict with the main branch.
+
+1. I will merge `origin/main` into my current branch.
+2. The main conflict is that another component (CRF) used sequence numbers 0237 in the `docs` folder. So my `docs/0237_train_mcmc_component.md` needs to be renamed to `docs/0240_train_mcmc_component.md` (0238 and 0239 were taken by tests in the new main).
+3. I will resolve conflicts in `docs.txt`, `all_docs.txt`, `memory.md`, and `README.md` by combining the new content from main with my MCMC content, ensuring my sequence numbers are updated to 0240.
+4. Verify the merge by running tests and checks.

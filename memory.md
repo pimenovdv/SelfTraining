@@ -1110,8 +1110,13 @@
 - **Next Steps:** Evaluate on complex real-world datasets with varying local densities and explore optimization techniques for neighbor search.
 - Contractive Autoencoder (CAE) mathematically verified with Frobenius norm regularization on Jacobian of hidden representations.
 
-### Experiment 0237: Markov Chain Monte Carlo (MCMC) Component
+### Experiment 0240: Markov Chain Monte Carlo (MCMC) Component
 - **Hypothesis:** By employing the Metropolis-Hastings algorithm with a symmetric proposal distribution, the generated sequence of samples will asymptotically converge to the target probability distribution.
 - **Action:** Implemented a Markov Chain Monte Carlo (MCMC) component mathematically in pure NumPy, testing its ability to sample from a bimodal Gaussian mixture distribution.
 - **Outcome:** The implementation successfully generated samples matching the theoretical expected mean and variance, verifying the mathematical mechanism of MCMC sampling.
 - **Next Steps:** Evaluate on higher-dimensional spaces and explore other MCMC variants like Gibbs Sampling and Hamiltonian Monte Carlo.
+### Experiment 0237: Conditional Random Field (CRF) Component
+- **Hypothesis:** By modeling the conditional probability of a label sequence given an input sequence using undirected graphical models, a CRF can effectively learn to tag sequences while considering dependencies between neighboring labels.
+- **Action:** Implemented a Conditional Random Field component mathematically in pure NumPy, using the forward-backward algorithm to compute node and edge marginals for exact inference and gradient computation. Tested on a synthetic sequence dataset.
+- **Outcome:** The implementation successfully learned the emission and transition potentials, correctly computing gradients using expected counts from the marginals, verifying the mathematical mechanism.
+- **Next Steps:** Evaluate on real sequence tagging tasks like Named Entity Recognition or Part-of-Speech tagging and explore linear-chain approximations for longer sequences.

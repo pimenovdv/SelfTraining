@@ -216,4 +216,5 @@ docs/0233_train_fuzzy_c_means_component.md
 docs/0234_train_kernel_ridge_regression_component.md
 docs/0235_train_local_outlier_factor_component.md
 docs/0236_train_cae_component.md
-docs/0237_train_mcmc_component.md
+docs/0240_train_mcmc_component.md
+docs/0237_train_crf_component.md
