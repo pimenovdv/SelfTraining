@@ -11,6 +11,7 @@
 ./train_agi_asi_component.py
 ./train_bayesian_linear_regression_component.py
 ./train_bayesian_optimization_component.py
+./train_beta_vae_component.py
 ./train_cae_component.py
 ./train_cca_component.py
 ./train_chinchilla_optimality_component.py
