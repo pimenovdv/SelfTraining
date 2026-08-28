@@ -1711,3 +1711,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Script:** `train_differential_evolution_component.py`
 **Description:** Evaluates a Differential Evolution component, verifying gradient-free black-box optimization over continuous functions using scaled vector differences, successfully finding the global minimum of a multi-modal test function without backpropagation.
 - **Gaussian Process Regression (GPR):** Implemented for non-parametric Bayesian modeling and uncertainty estimation over functions.
+## Component Testing: Ant Colony Optimization
+
+**Script:** `train_aco_component.py`
+**Description:** Evaluates an Ant Colony Optimization component mathematically in pure NumPy, testing its ability to solve the Traveling Salesperson Problem (TSP) using swarm intelligence principles, pheromone updates, and heuristic information.

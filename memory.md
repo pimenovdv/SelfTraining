@@ -1145,3 +1145,8 @@
 - **Outcome:** The algorithm successfully minimized the 5-dimensional Rastrigin function, effectively demonstrating its capability for global optimization over a multi-modal landscape.
 - **Next Steps:** Evaluate its effectiveness in tuning neural network architectures or hyperparameter optimization compared to CMA-ES.
 - Implemented and verified Gaussian Process Regression (GPR) for non-parametric Bayesian modeling.
+### Experiment 0252: Ant Colony Optimization Component
+- **Hypothesis:** By simulating the behavior of artificial ants updating pheromone trails on a graph, the algorithm can effectively navigate the search space to find near-optimal shortest paths for the Traveling Salesperson Problem (TSP).
+- **Action:** Implemented Ant Colony Optimization in `train_aco_component.py` mathematically in pure NumPy, using heuristic distances and pheromone evaporation on a 15-city TSP instance.
+- **Outcome:** The implementation successfully found a short tour length, demonstrating the capability of swarm intelligence for combinatorial optimization.
+- **Next Steps:** Evaluate its applicability for routing problems or dynamic network optimization in comparison to other metaheuristics.

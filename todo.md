@@ -226,3 +226,4 @@
 - [x] Explore Genetic Algorithms mathematically. (Implemented and verified Genetic Algorithm component optimizing the Rastrigin function).
 - [x] Explore gradient-free global optimization mathematically. (Implemented and verified Differential Evolution for continuous function minimization).
 - [x] Explore non-parametric Bayesian regression mathematically. (Implemented and verified Gaussian Process Regression - GPR for modeling distributions over functions).
+- [x] Explore swarm intelligence mathematically. (Implemented and verified Ant Colony Optimization for combinatorial optimization).
