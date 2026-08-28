@@ -1707,3 +1707,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_genetic_algorithm_component.py`
 **Description:** Evaluates a Genetic Algorithm component mathematically in pure NumPy, testing its ability to find the global minimum of a non-convex function (Rastrigin) using population-based search mechanisms like selection, crossover, and mutation without requiring gradients.
+## Component Testing: Differential Evolution (DE)
+**Script:** `train_differential_evolution_component.py`
+**Description:** Evaluates a Differential Evolution component, verifying gradient-free black-box optimization over continuous functions using scaled vector differences, successfully finding the global minimum of a multi-modal test function without backpropagation.
