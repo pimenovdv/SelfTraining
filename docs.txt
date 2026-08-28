@@ -231,3 +231,4 @@
 0251_train_gpr_component
 0252_train_aco_component
 0253_train_beta_vae_component
+0254_train_glove_component
