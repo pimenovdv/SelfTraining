@@ -83,6 +83,7 @@ train_genetic_algorithm_component
 train_gflownet_component.py
 train_gmlp_component.py
 train_gmm_component.py
+train_gpr_component
 train_gqa_component.py
 train_gradient_boosting_component.py
 train_graph_isomorphism_network_component
