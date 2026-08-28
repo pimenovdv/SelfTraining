@@ -227,3 +227,4 @@ docs/0246_train_cp_decomposition_component.md
 docs/0247_train_mcmc_component.md
 docs/0248_train_a2c_component.md
 docs/0249_train_genetic_algorithm_component.md
+docs/0250_train_differential_evolution_component.md

@@ -1139,3 +1139,8 @@
 - **Action:** Implemented a Genetic Algorithm in `train_genetic_algorithm_component.py` mathematically in pure NumPy, using tournament selection, blend crossover, and Gaussian mutation to minimize the non-convex Rastrigin function.
 - **Outcome:** The implementation successfully converged on the global minimum of the 2D Rastrigin function, demonstrating robust gradient-free optimization.
 - **Next Steps:** Evaluate the integration of Genetic Algorithms for hyperparameter optimization and Neural Architecture Search (Neuroevolution).
+### Experiment 0250: Differential Evolution Component
+- **Hypothesis:** By perturbing a population of candidate solutions with scaled differences between other population members, Differential Evolution can efficiently optimize continuous, non-differentiable objectives without relying on analytical gradients.
+- **Action:** Implemented Differential Evolution in `train_differential_evolution_component.py` in pure NumPy.
+- **Outcome:** The algorithm successfully minimized the 5-dimensional Rastrigin function, effectively demonstrating its capability for global optimization over a multi-modal landscape.
+- **Next Steps:** Evaluate its effectiveness in tuning neural network architectures or hyperparameter optimization compared to CMA-ES.

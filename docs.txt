@@ -227,3 +227,4 @@
 0247_train_mcmc_component
 0248_train_a2c_component
 0249_train_genetic_algorithm_component
+0250_train_differential_evolution_component
