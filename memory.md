@@ -1150,3 +1150,5 @@
 - **Action:** Implemented Ant Colony Optimization in `train_aco_component.py` mathematically in pure NumPy, using heuristic distances and pheromone evaporation on a 15-city TSP instance.
 - **Outcome:** The implementation successfully found a short tour length, demonstrating the capability of swarm intelligence for combinatorial optimization.
 - **Next Steps:** Evaluate its applicability for routing problems or dynamic network optimization in comparison to other metaheuristics.
+## Beta-VAE Exploration
+Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure NumPy version to verify disentanglement capabilities where beta parameter penalizes Kullback-Leibler divergence.
