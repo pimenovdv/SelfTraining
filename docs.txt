@@ -229,3 +229,4 @@
 0249_train_genetic_algorithm_component
 0250_train_differential_evolution_component
 0251_train_gpr_component
+0252_train_aco_component

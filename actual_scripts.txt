@@ -6,6 +6,7 @@ test_ltc_full.py
 test_mcts.py
 test_nca.py
 train_a2c_component.py
+train_aco_component.py
 train_act_component
 train_actor_critic_component
 train_adaboost_component
