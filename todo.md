@@ -223,3 +223,4 @@
 - [x] Explore tensor decomposition mathematically. (Implemented and verified Tucker Decomposition via simulated Higher-Order Orthogonal Iteration).
 - [x] Explore Markov Chain Monte Carlo mathematically. (Implemented and verified Metropolis-Hastings MCMC sampling from a mixture distribution).
 - [x] Explore Actor-Critic methods mathematically. (Implemented and verified Advantage Actor-Critic - A2C using shared features).
+- [x] Explore Genetic Algorithms mathematically. (Implemented and verified Genetic Algorithm component optimizing the Rastrigin function).

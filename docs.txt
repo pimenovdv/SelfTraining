@@ -226,3 +226,4 @@
 0246_train_cp_decomposition_component
 0247_train_mcmc_component
 0248_train_a2c_component
+0249_train_genetic_algorithm_component
