@@ -228,3 +228,4 @@ docs/0247_train_mcmc_component.md
 docs/0248_train_a2c_component.md
 docs/0249_train_genetic_algorithm_component.md
 docs/0250_train_differential_evolution_component.md
+docs/0251_train_gpr_component.md

@@ -1710,3 +1710,4 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Differential Evolution (DE)
 **Script:** `train_differential_evolution_component.py`
 **Description:** Evaluates a Differential Evolution component, verifying gradient-free black-box optimization over continuous functions using scaled vector differences, successfully finding the global minimum of a multi-modal test function without backpropagation.
+- **Gaussian Process Regression (GPR):** Implemented for non-parametric Bayesian modeling and uncertainty estimation over functions.
