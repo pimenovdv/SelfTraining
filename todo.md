@@ -228,3 +228,4 @@
 - [x] Explore non-parametric Bayesian regression mathematically. (Implemented and verified Gaussian Process Regression - GPR for modeling distributions over functions).
 - [x] Explore swarm intelligence mathematically. (Implemented and verified Ant Colony Optimization for combinatorial optimization).
 - [x] Explore disentangled representation learning mathematically. (Implemented and verified Beta-VAE).
+- [x] Explore global word co-occurrence representation mathematically. (Implemented and verified GloVe).

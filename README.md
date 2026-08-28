@@ -1716,3 +1716,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Script:** `train_aco_component.py`
 **Description:** Evaluates an Ant Colony Optimization component mathematically in pure NumPy, testing its ability to solve the Traveling Salesperson Problem (TSP) using swarm intelligence principles, pheromone updates, and heuristic information.
 - Disentangled Continuous Representations (Beta-VAE)
+## Component Testing: GloVe
+
+**Script:** `train_glove_component.py`
+**Description:** Evaluates a GloVe component mathematically in pure NumPy, testing its ability to learn word embeddings by explicitly factorizing a word co-occurrence matrix using a weighted least squares objective.

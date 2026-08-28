@@ -30,6 +30,7 @@
 ./train_fuzzy_c_means_component.py
 ./train_gaussian_process_component.py
 ./train_genetic_algorithm_component.py
+./train_glove_component.py
 ./train_gpr_component.py
 ./train_gradient_boosting_component.py
 ./train_graph_isomorphism_network_component.py

@@ -1152,3 +1152,4 @@
 - **Next Steps:** Evaluate its applicability for routing problems or dynamic network optimization in comparison to other metaheuristics.
 ## Beta-VAE Exploration
 Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure NumPy version to verify disentanglement capabilities where beta parameter penalizes Kullback-Leibler divergence.
+- **GloVe**: Verified that GloVe can effectively learn word representations by factorizing a co-occurrence matrix with a weighted least squares objective, explicitly capturing global corpus statistics.

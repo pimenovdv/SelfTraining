@@ -83,6 +83,7 @@ train_gcn_component
 train_gelu_component
 train_genetic_algorithm_component.py
 train_gflownet_component
+train_glove_component.py
 train_gmlp_component
 train_gmm_component
 train_gpr_component.py
