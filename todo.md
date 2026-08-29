@@ -236,3 +236,5 @@
 - [x] Explore Differentiable Neural Computers mathematically. (Implemented and verified DNC learning to store and retrieve representations from memory.)
 - [x] Explore NEAT algorithm mathematically. (Implemented and verified NeuroEvolution of Augmenting Topologies.)
 - [x] Explore CMA-ES algorithm mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy.)
+
+- [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA finding non-linear principal components using the kernel trick).

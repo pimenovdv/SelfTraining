@@ -239,3 +239,4 @@ docs/0258_train_thompson_sampling_component.md
 docs/0259_train_neat_component.md
 docs/0260_train_dnc_component.md
 docs/0261_train_cma_es_component.md
+docs/0262_train_kpca_component.md

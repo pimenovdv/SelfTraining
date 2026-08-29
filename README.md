@@ -1738,3 +1738,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 - Train DNC component.
 - Train NEAT component.
 - Train CMA-ES component.
+
+## Component Testing: Kernel PCA
+**Script:** `train_kpca_component.py`
+**Description:** Evaluates a Kernel PCA component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by projecting data into a high-dimensional feature space using the RBF kernel trick and finding the principal components in that space.
