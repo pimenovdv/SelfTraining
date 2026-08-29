@@ -1153,3 +1153,4 @@
 ## Beta-VAE Exploration
 Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure NumPy version to verify disentanglement capabilities where beta parameter penalizes Kullback-Leibler divergence.
 - **GloVe**: Verified that GloVe can effectively learn word representations by factorizing a co-occurrence matrix with a weighted least squares objective, explicitly capturing global corpus statistics.
+- Implemented Latent Semantic Analysis (LSA) component mathematically, applying SVD to a TF-IDF matrix to learn latent document and word representations.

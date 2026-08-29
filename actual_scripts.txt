@@ -127,6 +127,7 @@ train_local_outlier_factor_component.py
 train_logistic_regression_component
 train_lora_component
 train_lottery_ticket_component
+train_lsa_component.py
 train_lstm_component
 train_ltc_component
 train_mae_component
