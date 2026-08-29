@@ -233,3 +233,4 @@
 0253_train_beta_vae_component
 0254_train_glove_component
 0255_train_lsa_component
+0256_train_laplacian_eigenmaps_component

@@ -117,6 +117,7 @@ train_kmedoids_component.py
 train_knn_component.py
 train_knowledge_distillation_component
 train_label_propagation_component.py
+train_laplacian_eigenmaps_component.py
 train_lasso_regression_component.py
 train_layernorm_component
 train_lda_component.py

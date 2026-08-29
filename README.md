@@ -1725,3 +1725,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_lsa_component.py`
 **Description:** Evaluates a Latent Semantic Analysis (LSA) component mathematically in pure NumPy, testing its ability to extract latent topics and relationships between words and documents by applying Singular Value Decomposition (SVD) to a term-frequency inverse-document-frequency (TF-IDF) matrix.
+## Component Testing: Laplacian Eigenmaps
+
+**Script:** `train_laplacian_eigenmaps_component.py`
+**Description:** Evaluates a Laplacian Eigenmaps component mathematically in pure NumPy, testing its ability to map data into a lower-dimensional space while optimally preserving local neighbor relations by solving a generalized eigenvalue problem on the graph Laplacian.

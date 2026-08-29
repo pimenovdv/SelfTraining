@@ -233,3 +233,4 @@ docs/0252_train_aco_component.md
 docs/0253_train_beta_vae_component.md
 docs/0254_train_glove_component.md
 docs/0255_train_lsa_component.md
+docs/0256_train_laplacian_eigenmaps_component.md

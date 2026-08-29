@@ -116,6 +116,7 @@ train_kmedoids_component
 train_knn_component
 train_knowledge_distillation_component
 train_label_propagation_component
+train_laplacian_eigenmaps_component
 train_lasso_regression_component
 train_layernorm_component
 train_lda_component
