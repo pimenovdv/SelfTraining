@@ -236,3 +236,6 @@ docs/0255_train_lsa_component.md
 docs/0256_train_laplacian_eigenmaps_component.md
 docs/0257_train_se_block_component.md
 docs/0258_train_thompson_sampling_component.md
+docs/0259_train_neat_component.md
+docs/0260_train_dnc_component.md
+docs/0261_train_cma_es_component.md

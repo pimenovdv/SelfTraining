@@ -1161,3 +1161,6 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented Thompson Sampling mathematically in pure NumPy, using Beta distributions as conjugate priors for Bernoulli rewards. Tested on a 3-arm bandit problem.
 - **Outcome:** The implementation successfully converged to selecting the optimal arm most frequently, verifying the probabilistic exploration mechanism.
 - **Next Steps:** Evaluate in contextual bandit settings and compare against UCB.
+- Implemented DNC component.
+- Implemented NEAT component.
+- Implemented CMA-ES component.

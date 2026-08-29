@@ -233,3 +233,6 @@
 - [x] Explore spectral dimensionality reduction mathematically. (Implemented and verified Laplacian Eigenmaps preserving local geometry).
 - [x] Explore channel attention mathematically. (Implemented and verified Squeeze-and-Excitation block mathematically).
 - [x] Explore Bayesian multi-armed bandits mathematically. (Implemented and verified Thompson Sampling balancing exploration and exploitation using Beta distribution priors).
+- [x] Explore Differentiable Neural Computers mathematically. (Implemented and verified DNC learning to store and retrieve representations from memory.)
+- [x] Explore NEAT algorithm mathematically. (Implemented and verified NeuroEvolution of Augmenting Topologies.)
+- [x] Explore CMA-ES algorithm mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy.)

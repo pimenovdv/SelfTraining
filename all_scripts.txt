@@ -30,6 +30,7 @@ train_cbow_component.py
 train_cca_component
 train_cem_component.py
 train_chinchilla_optimality_component
+train_cma_es_component
 train_cmaes_component.py
 train_cnp_component.py
 train_continuous_hopfield_component.py
@@ -55,6 +56,7 @@ train_dfa_component.py
 train_dictionary_learning_component.py
 train_differential_evolution_component
 train_distributed_infrastructure_component
+train_dnc_component
 train_dni_component.py
 train_dpo_component.py
 train_dqn_component.py
@@ -150,6 +152,7 @@ train_nade_component.py
 train_naive_bayes_component.py
 train_nalu_component.py
 train_nca_component.py
+train_neat_component
 train_nerf_component.py
 train_neural_architecture_search_component
 train_neural_ode_component.py

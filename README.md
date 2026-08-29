@@ -1735,3 +1735,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Script:** `train_se_block_component.py`
 **Description:** Evaluates a Squeeze-and-Excitation (SE) block component mathematically in pure NumPy, testing its ability to recalibrate channel-wise feature responses by explicitly modeling interdependencies between channels.
 - **Thompson Sampling**: Explored Bayesian multi-armed bandits, balancing exploration and exploitation using Beta distribution priors mathematically.
+- Train DNC component.
+- Train NEAT component.
+- Train CMA-ES component.
