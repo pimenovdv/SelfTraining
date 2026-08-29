@@ -30,6 +30,7 @@ train_cbow_component
 train_cca_component
 train_cem_component
 train_chinchilla_optimality_component
+train_cma_es_component
 train_cmaes_component
 train_cnp_component
 train_continuous_hopfield_component
@@ -55,6 +56,7 @@ train_dfa_component
 train_dictionary_learning_component
 train_differential_evolution_component
 train_distributed_infrastructure_component
+train_dnc_component
 train_dni_component
 train_dpo_component
 train_dqn_component
@@ -149,6 +151,7 @@ train_nade_component
 train_naive_bayes_component
 train_nalu_component
 train_nca_component
+train_neat_component
 train_nerf_component
 train_neural_architecture_search_component
 train_neural_ode_component

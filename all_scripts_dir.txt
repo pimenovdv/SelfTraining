@@ -15,6 +15,7 @@
 ./train_cae_component.py
 ./train_cca_component.py
 ./train_chinchilla_optimality_component.py
+./train_cma_es_component.py
 ./train_cp_decomposition_component.py
 ./train_crf_component.py
 ./train_cvae_component.py
@@ -24,6 +25,7 @@
 ./train_dictionary_learning_component.py
 ./train_differential_evolution_component.py
 ./train_distributed_infrastructure_component.py
+./train_dnc_component.py
 ./train_elastic_net_component.py
 ./train_factor_analysis_component.py
 ./train_fasttext_component.py
@@ -56,6 +58,7 @@
 ./train_mean_shift_component.py
 ./train_medium_scale_model_component.py
 ./train_multimodal_component.py
+./train_neat_component.py
 ./train_neural_architecture_search_component.py
 ./train_ood_detection_component.py
 ./train_operational_control_transition_component.py
