@@ -232,3 +232,4 @@
 - [x] Explore topic modeling and text embeddings mathematically. (Implemented and verified Latent Semantic Analysis - LSA via SVD on TF-IDF matrix).
 - [x] Explore spectral dimensionality reduction mathematically. (Implemented and verified Laplacian Eigenmaps preserving local geometry).
 - [x] Explore channel attention mathematically. (Implemented and verified Squeeze-and-Excitation block mathematically).
+- [x] Explore Bayesian multi-armed bandits mathematically. (Implemented and verified Thompson Sampling balancing exploration and exploitation using Beta distribution priors).

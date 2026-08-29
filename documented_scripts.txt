@@ -216,6 +216,7 @@ train_swiglu_component
 train_target_propagation_component
 train_tcn_component
 train_td3_component
+train_thompson_sampling_component.py
 train_transformer_block_component
 train_tsne_component.py
 train_tucker_decomposition_component.py
