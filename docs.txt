@@ -235,3 +235,4 @@
 0255_train_lsa_component
 0256_train_laplacian_eigenmaps_component
 0257_train_se_block_component
+0258_train_thompson_sampling_component
