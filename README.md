@@ -1720,3 +1720,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_glove_component.py`
 **Description:** Evaluates a GloVe component mathematically in pure NumPy, testing its ability to learn word embeddings by explicitly factorizing a word co-occurrence matrix using a weighted least squares objective.
+
+## Component Testing: Latent Semantic Analysis (LSA)
+
+**Script:** `train_lsa_component.py`
+**Description:** Evaluates a Latent Semantic Analysis (LSA) component mathematically in pure NumPy, testing its ability to extract latent topics and relationships between words and documents by applying Singular Value Decomposition (SVD) to a term-frequency inverse-document-frequency (TF-IDF) matrix.
