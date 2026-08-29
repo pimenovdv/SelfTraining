@@ -230,3 +230,4 @@
 - [x] Explore disentangled representation learning mathematically. (Implemented and verified Beta-VAE).
 - [x] Explore global word co-occurrence representation mathematically. (Implemented and verified GloVe).
 - [x] Explore topic modeling and text embeddings mathematically. (Implemented and verified Latent Semantic Analysis - LSA via SVD on TF-IDF matrix).
+- [x] Explore spectral dimensionality reduction mathematically. (Implemented and verified Laplacian Eigenmaps preserving local geometry).
