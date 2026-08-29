@@ -1164,3 +1164,9 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented DNC component.
 - Implemented NEAT component.
 - Implemented CMA-ES component.
+
+### Experiment 0262: Kernel PCA Component
+- **Hypothesis:** By applying the kernel trick to Principal Component Analysis (PCA), the algorithm can effectively perform non-linear dimensionality reduction, capturing complex structures in the data that standard PCA cannot.
+- **Action:** Implemented Kernel PCA mathematically in pure NumPy, using an RBF kernel, computing and centering the kernel matrix, and solving the eigenvalue problem. Tested on a synthetic concentric circles dataset.
+- **Outcome:** The implementation successfully unrolled the non-linear dataset, making it linearly separable in the principal component space, verifying the mathematical mechanism of kernel methods for dimensionality reduction.
+- **Next Steps:** Evaluate on other non-linear datasets and compare with other techniques like t-SNE and UMAP.
