@@ -238,3 +238,4 @@
 - [x] Explore CMA-ES algorithm mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy.)
 
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA finding non-linear principal components using the kernel trick).
+- [x] Explore contextual multi-armed bandits mathematically. (Implemented and verified LinUCB for contextual bandit problems).

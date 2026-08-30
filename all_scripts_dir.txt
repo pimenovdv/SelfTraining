@@ -50,6 +50,7 @@
 ./train_label_propagation_component.py
 ./train_laplacian_eigenmaps_component.py
 ./train_lasso_regression_component.py
+./train_linucb_component.py
 ./train_lle_component.py
 ./train_local_outlier_factor_component.py
 ./train_logistic_regression_component.py
