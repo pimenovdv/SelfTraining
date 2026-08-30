@@ -1759,3 +1759,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Tsetlin Machine
 **Script:** `train_tsetlin_machine_component.py`
 **Description:** Evaluates a Tsetlin Machine component mathematically in pure NumPy, testing its ability to solve the non-linear XOR problem by learning propositional logic clauses using Tsetlin Automata and Type I/II feedback.
+
+## Component Testing: Affinity Propagation
+**Script:** train_affinity_propagation_component.py
+**Description:** Implemented and verified Affinity Propagation clustering algorithm by modeling data points as a network that exchanges messages until high-quality exemplars and clusters emerge.

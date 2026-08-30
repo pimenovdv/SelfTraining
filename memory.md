@@ -1179,3 +1179,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 
 - **Siamese Network**: Explored distance metric learning mathematically using Triplet Loss, enabling zero-shot and few-shot classification capabilities by embedding inputs into a shared metric space.
 - **Tsetlin Machine**: Explored learning propositional logic clauses with finite state machines.
+- Affinity Propagation clustering implemented.
