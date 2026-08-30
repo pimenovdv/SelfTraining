@@ -1746,3 +1746,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LinUCB
 **Script:** `train_linucb_component.py`
 **Description:** Evaluates a contextual multi-armed bandit component mathematically using LinUCB, testing its ability to estimate expected rewards from contexts and minimizing regret over time.
+
+## Component Testing: Matrix Factorization
+**Script:** train_matrix_factorization_component.py
+**Description:** Implemented Matrix Factorization mathematically for collaborative filtering using Stochastic Gradient Descent to learn latent factor representations for recommendation systems.
