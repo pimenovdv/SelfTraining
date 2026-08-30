@@ -1171,3 +1171,8 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Outcome:** The implementation successfully unrolled the non-linear dataset, making it linearly separable in the principal component space, verifying the mathematical mechanism of kernel methods for dimensionality reduction.
 - **Next Steps:** Evaluate on other non-linear datasets and compare with other techniques like t-SNE and UMAP.
 - Implemented and verified LinUCB for contextual bandit problems.
+### Experiment 0264: Matrix Factorization Component
+- **Hypothesis:** By decomposing a sparse user-item interaction matrix into two lower-dimensional matrices representing latent user preferences and item features, we can effectively predict missing values (ratings) using Stochastic Gradient Descent.
+- **Action:** Implemented Matrix Factorization mathematically in pure NumPy, incorporating global, user, and item biases. Tested on a small synthetic sparse rating matrix.
+- **Outcome:** The model successfully converged, reducing the Mean Squared Error over iterations and correctly reconstructing known ratings while predicting plausible values for missing entries.
+- **Next Steps:** Evaluate on real-world datasets like MovieLens and implement Alternating Least Squares (ALS) for comparison.

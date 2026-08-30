@@ -239,3 +239,4 @@
 
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA finding non-linear principal components using the kernel trick).
 - [x] Explore contextual multi-armed bandits mathematically. (Implemented and verified LinUCB for contextual bandit problems).
+- [x] Explore collaborative filtering mathematically. (Implemented and verified Matrix Factorization using Stochastic Gradient Descent).
