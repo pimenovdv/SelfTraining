@@ -84,6 +84,7 @@
 ./train_spectral_clustering_component.py
 ./train_svr_component.py
 ./train_thompson_sampling_component.py
+./train_tsetlin_machine_component.py
 ./train_tsne_component.py
 ./train_tucker_decomposition_component.py
 ./train_upper_confidence_bound_component.py

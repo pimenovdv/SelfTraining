@@ -1178,3 +1178,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Next Steps:** Evaluate on real-world datasets like MovieLens and implement Alternating Least Squares (ALS) for comparison.
 
 - **Siamese Network**: Explored distance metric learning mathematically using Triplet Loss, enabling zero-shot and few-shot classification capabilities by embedding inputs into a shared metric space.
+- **Tsetlin Machine**: Explored learning propositional logic clauses with finite state machines.
