@@ -1176,3 +1176,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented Matrix Factorization mathematically in pure NumPy, incorporating global, user, and item biases. Tested on a small synthetic sparse rating matrix.
 - **Outcome:** The model successfully converged, reducing the Mean Squared Error over iterations and correctly reconstructing known ratings while predicting plausible values for missing entries.
 - **Next Steps:** Evaluate on real-world datasets like MovieLens and implement Alternating Least Squares (ALS) for comparison.
+
+- **Siamese Network**: Explored distance metric learning mathematically using Triplet Loss, enabling zero-shot and few-shot classification capabilities by embedding inputs into a shared metric space.
