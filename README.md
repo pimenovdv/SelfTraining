@@ -1750,3 +1750,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Matrix Factorization
 **Script:** train_matrix_factorization_component.py
 **Description:** Implemented Matrix Factorization mathematically for collaborative filtering using Stochastic Gradient Descent to learn latent factor representations for recommendation systems.
+
+## Component Testing: Siamese Network
+
+**Script:** `train_siamese_network_component.py`
+**Description:** Evaluates a Siamese Network mathematically in pure NumPy, testing its ability to learn a distance metric embedding space using Triplet Loss, mapping similar inputs closer together and dissimilar inputs further apart.
