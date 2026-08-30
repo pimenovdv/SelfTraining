@@ -224,6 +224,7 @@ train_tcn_component
 train_td3_component
 train_thompson_sampling_component
 train_transformer_block_component
+train_tsetlin_machine_component
 train_tsne_component
 train_tucker_decomposition_component
 train_upper_confidence_bound_component

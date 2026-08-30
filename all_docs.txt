@@ -243,3 +243,4 @@ docs/0262_train_kpca_component.md
 docs/0263_train_linucb_component.md
 docs/0264_train_matrix_factorization_component.md
 docs/0266_train_siamese_network_component.md
+docs/0268_train_tsetlin_machine_component.md

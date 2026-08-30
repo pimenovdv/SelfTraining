@@ -1755,3 +1755,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_siamese_network_component.py`
 **Description:** Evaluates a Siamese Network mathematically in pure NumPy, testing its ability to learn a distance metric embedding space using Triplet Loss, mapping similar inputs closer together and dissimilar inputs further apart.
+
+## Component Testing: Tsetlin Machine
+**Script:** `train_tsetlin_machine_component.py`
+**Description:** Evaluates a Tsetlin Machine component mathematically in pure NumPy, testing its ability to solve the non-linear XOR problem by learning propositional logic clauses using Tsetlin Automata and Type I/II feedback.

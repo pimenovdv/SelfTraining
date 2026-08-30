@@ -241,3 +241,4 @@
 - [x] Explore contextual multi-armed bandits mathematically. (Implemented and verified LinUCB for contextual bandit problems).
 - [x] Explore collaborative filtering mathematically. (Implemented and verified Matrix Factorization using Stochastic Gradient Descent).
 - [x] Explore distance metric learning mathematically. (Implemented and verified Siamese Network with Triplet Loss).
+- [x] Explore logic-based machine learning mathematically. (Implemented and verified Tsetlin Machine).
