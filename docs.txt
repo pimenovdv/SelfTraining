@@ -240,3 +240,4 @@
 0260_train_dnc_component
 0261_train_cma_es_component
 0262_train_kpca_component
+0263_train_linucb_component

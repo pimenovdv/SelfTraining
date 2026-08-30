@@ -125,6 +125,7 @@ train_lasso_regression_component.py
 train_layernorm_component
 train_lda_component.py
 train_linear_attention_component
+train_linucb_component.py
 train_lle_component.py
 train_lmu_component
 train_local_outlier_factor_component.py

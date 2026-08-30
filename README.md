@@ -1742,3 +1742,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Kernel PCA
 **Script:** `train_kpca_component.py`
 **Description:** Evaluates a Kernel PCA component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by projecting data into a high-dimensional feature space using the RBF kernel trick and finding the principal components in that space.
+
+## Component Testing: LinUCB
+**Script:** `train_linucb_component.py`
+**Description:** Evaluates a contextual multi-armed bandit component mathematically using LinUCB, testing its ability to estimate expected rewards from contexts and minimizing regret over time.
