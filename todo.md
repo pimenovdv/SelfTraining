@@ -245,3 +245,7 @@
 - [x] Explore message-passing clustering mathematically. (Implemented and verified Affinity Propagation clustering).
 - [x] Explore topic modeling mathematically using Latent Dirichlet Allocation (LDA) via Gibbs Sampling. (Implemented and verified LDA Topic Model).
 - [x] Explore self-supervised learning mathematically. (Implemented and verified SimCLR for contrastive representation learning).
+
+- [x] Explore reservoir computing mathematically. (Implemented and verified Echo State Network using a sparse, randomly connected reservoir with a trained linear readout).
+- [x] Explore associative memory mathematically. (Implemented and verified Hopfield Network learning pattern representations via Hebbian learning and recalling them through asynchronous updates).
+- [x] Explore pairwise feature interactions mathematically. (Implemented and verified Factorization Machine for collaborative filtering, modeling sparse data using latent vectors for feature interactions).

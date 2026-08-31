@@ -1190,3 +1190,21 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 ### Self-Supervised Learning (SimCLR)
 - Explored contrastive learning using NT-Xent loss.
 - Implemented projection heads and normalized cosine similarity matrix logic.
+
+### Experiment 0272: Echo State Network Component
+- **Hypothesis:** By employing a fixed, randomly connected recurrent reservoir with a carefully tuned spectral radius, a simple linear readout layer can be trained to effectively model and predict time-series dynamics without the need to backpropagate gradients through time.
+- **Action:** Implemented an Echo State Network (ESN) mathematically in pure NumPy, initializing a sparse reservoir and training the output weights using Ridge Regression.
+- **Outcome:** The implementation successfully learned to predict the next step in a composite sine wave time series with a test MSE close to zero, verifying the mathematical mechanism of reservoir computing.
+- **Next Steps:** Explore applying ESNs to more chaotic time-series data or integrate them with deeper readout layers.
+
+### Experiment 0273: Hopfield Network Component
+- **Hypothesis:** By applying the Hebbian learning rule to store patterns in a fully connected recurrent neural network with symmetric weights, the network can act as an associative memory system, successfully recalling a complete pattern from a partial or corrupted input through asynchronous energy minimization.
+- **Action:** Implemented a discrete Hopfield Network mathematically in pure NumPy, storing synthetic 5x5 binary image patterns and evaluating its ability to recall them from corrupted versions.
+- **Outcome:** The network successfully recalled the original target pattern from its corrupted input, verifying the associative memory properties and energy convergence of the Hopfield model.
+- **Next Steps:** Evaluate the capacity limits of the network and explore continuous Hopfield formulations.
+
+### Experiment 0274: Factorization Machine Component
+- **Hypothesis:** By factoring the interaction weights between features into lower-dimensional latent vectors, the model can effectively capture pairwise interactions even in highly sparse datasets, enabling robust collaborative filtering and prediction capabilities.
+- **Action:** Implemented a Factorization Machine mathematically in pure NumPy, using Stochastic Gradient Descent to optimize global bias, linear weights, and latent feature vectors on a small synthetic interaction dataset.
+- **Outcome:** The implementation successfully learned the underlying user-item interactions, minimizing cross-entropy loss and accurately predicting the synthetic target labels, validating the mathematical mechanism of factored interactions.
+- **Next Steps:** Evaluate the model on larger, real-world sparse datasets like MovieLens or integrate deep learning extensions (DeepFM).

@@ -27,8 +27,10 @@
 ./train_differential_evolution_component.py
 ./train_distributed_infrastructure_component.py
 ./train_dnc_component.py
+./train_echo_state_network_component.py
 ./train_elastic_net_component.py
 ./train_factor_analysis_component.py
+./train_factorization_machine_component.py
 ./train_fasttext_component.py
 ./train_fuzzy_c_means_component.py
 ./train_gaussian_process_component.py
@@ -40,6 +42,7 @@
 ./train_graphsage_component.py
 ./train_hdbscan_component.py
 ./train_hmm_component.py
+./train_hopfield_network_component.py
 ./train_hrl_component.py
 ./train_isolation_forest_component.py
 ./train_isomap_component.py
