@@ -1791,3 +1791,16 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: NCF
 **Script:** train_ncf_component.py
 **Description:** Implemented and tested a Neural Collaborative Filtering model using PyTorch, capturing complex non-linear patterns of user-item interactions via GMF and MLP layers.
+
+## Component Testing: PageRank
+**Script:** train_pagerank_component.py
+**Description:** As part of our exploration into node centrality and link analysis, we have implemented PageRank mathematically to evaluate the stationary distribution over network nodes.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the PageRank component test:**
+    ```bash
+    python3 train_pagerank_component.py
+    ```

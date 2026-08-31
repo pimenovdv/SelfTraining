@@ -72,6 +72,7 @@
 ./train_neural_architecture_search_component.py
 ./train_ood_detection_component.py
 ./train_operational_control_transition_component.py
+./train_pagerank_component.py
 ./train_particle_filter_component.py
 ./train_pls_component.py
 ./train_policy_iteration_component.py
