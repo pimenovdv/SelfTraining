@@ -139,6 +139,7 @@ train_lottery_ticket_component
 train_lsa_component
 train_lstm_component
 train_ltc_component
+train_made_component
 train_mae_component
 train_maml_component
 train_masked_attention_component

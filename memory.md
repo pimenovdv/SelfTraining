@@ -1208,3 +1208,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented a Factorization Machine mathematically in pure NumPy, using Stochastic Gradient Descent to optimize global bias, linear weights, and latent feature vectors on a small synthetic interaction dataset.
 - **Outcome:** The implementation successfully learned the underlying user-item interactions, minimizing cross-entropy loss and accurately predicting the synthetic target labels, validating the mathematical mechanism of factored interactions.
 - **Next Steps:** Evaluate the model on larger, real-world sparse datasets like MovieLens or integrate deep learning extensions (DeepFM).
+- Implemented and verified MADE (Masked Autoencoder for Distribution Estimation) for auto-regressive density estimation.
