@@ -244,3 +244,4 @@
 - [x] Explore logic-based machine learning mathematically. (Implemented and verified Tsetlin Machine).
 - [x] Explore message-passing clustering mathematically. (Implemented and verified Affinity Propagation clustering).
 - [x] Explore topic modeling mathematically using Latent Dirichlet Allocation (LDA) via Gibbs Sampling. (Implemented and verified LDA Topic Model).
+- [x] Explore self-supervised learning mathematically. (Implemented and verified SimCLR for contrastive representation learning).
