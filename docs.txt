@@ -252,3 +252,4 @@
 0274_train_factorization_machine_component
 0275_train_made_component
 0276_train_ncf_component
+0277_train_pagerank_component
