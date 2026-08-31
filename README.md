@@ -1783,3 +1783,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Factorization Machine
 **Script:** `train_factorization_machine_component.py`
 **Description:** Evaluates a Factorization Machine component mathematically in pure NumPy, testing its ability to model pairwise interactions in sparse data by factoring interaction weights into latent vectors, optimized using Stochastic Gradient Descent.
+
+## Component Testing: MADE
+**Script:** train_made_component.py
+**Description:** Implements and verifies MADE (Masked Autoencoder for Distribution Estimation) for auto-regressive density estimation.

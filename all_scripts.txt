@@ -140,6 +140,7 @@ train_lottery_ticket_component.py
 train_lsa_component
 train_lstm_component.py
 train_ltc_component.py
+train_made_component
 train_mae_component.py
 train_maml_component.py
 train_masked_attention_component.py
