@@ -245,3 +245,4 @@
 0266_train_siamese_network_component
 0268_train_tsetlin_machine_component
 0269_train_affinity_propagation_component
+0270_train_lda_topic_model_component

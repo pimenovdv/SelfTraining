@@ -1763,3 +1763,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Affinity Propagation
 **Script:** train_affinity_propagation_component.py
 **Description:** Implemented and verified Affinity Propagation clustering algorithm by modeling data points as a network that exchanges messages until high-quality exemplars and clusters emerge.
+
+## Component Testing: LDA Topic Model
+**Script:** `train_lda_topic_model_component.py`
+**Description:** Evaluates a Latent Dirichlet Allocation (LDA) Topic Model mathematically in pure NumPy, testing its ability to discover latent thematic structures in documents using Gibbs Sampling for iterative word-topic assignment based on Dirichlet priors.
