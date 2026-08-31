@@ -243,3 +243,4 @@
 - [x] Explore distance metric learning mathematically. (Implemented and verified Siamese Network with Triplet Loss).
 - [x] Explore logic-based machine learning mathematically. (Implemented and verified Tsetlin Machine).
 - [x] Explore message-passing clustering mathematically. (Implemented and verified Affinity Propagation clustering).
+- [x] Explore topic modeling mathematically using Latent Dirichlet Allocation (LDA) via Gibbs Sampling. (Implemented and verified LDA Topic Model).
