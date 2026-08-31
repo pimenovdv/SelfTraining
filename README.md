@@ -1771,3 +1771,15 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SimCLR
 **Script:** train_simclr_component.py
 **Description:** Implemented SimCLR for self-supervised contrastive learning using the NT-Xent loss.
+
+## Component Testing: Echo State Network (ESN)
+**Script:** `train_echo_state_network_component.py`
+**Description:** Evaluates an Echo State Network (ESN) component mathematically in pure NumPy, testing its ability to forecast time-series data using a fixed, randomly initialized recurrent reservoir and a trainable linear readout layer optimized via Ridge Regression.
+
+## Component Testing: Hopfield Network
+**Script:** `train_hopfield_network_component.py`
+**Description:** Evaluates a discrete Hopfield Network component mathematically in pure NumPy, testing its ability to function as an associative memory system by storing patterns using Hebbian learning and recalling them from corrupted inputs via asynchronous updates.
+
+## Component Testing: Factorization Machine
+**Script:** `train_factorization_machine_component.py`
+**Description:** Evaluates a Factorization Machine component mathematically in pure NumPy, testing its ability to model pairwise interactions in sparse data by factoring interaction weights into latent vectors, optimized using Stochastic Gradient Descent.

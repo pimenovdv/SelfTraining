@@ -63,6 +63,7 @@ train_dpo_component.py
 train_dqn_component.py
 train_dropout_component.py
 train_ebm_component.py
+train_echo_state_network_component
 train_elastic_net_component.py
 train_elm_component.py
 train_es_component.py
@@ -70,6 +71,7 @@ train_esn_component.py
 train_evaluation_metrics_component.py
 train_ewc_component.py
 train_factor_analysis_component
+train_factorization_machine_component
 train_fasttext_component
 train_feedback_alignment_component.py
 train_ff_component.py
@@ -103,6 +105,7 @@ train_hebbian_component.py
 train_highway_component.py
 train_hmm_component.py
 train_hopfield_component.py
+train_hopfield_network_component
 train_hrl_component
 train_hypernetwork_component.py
 train_ica_component.py
