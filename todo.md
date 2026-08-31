@@ -250,3 +250,4 @@
 - [x] Explore associative memory mathematically. (Implemented and verified Hopfield Network learning pattern representations via Hebbian learning and recalling them through asynchronous updates).
 - [x] Explore pairwise feature interactions mathematically. (Implemented and verified Factorization Machine for collaborative filtering, modeling sparse data using latent vectors for feature interactions).
 - [x] Explore auto-regressive density estimation mathematically. (Implemented and verified MADE - Masked Autoencoder for Distribution Estimation).
+- [x] Explore neural collaborative filtering models for recommendation tasks mathematically. (Implemented and verified Neural Collaborative Filtering model).
