@@ -246,3 +246,4 @@ docs/0266_train_siamese_network_component.md
 docs/0268_train_tsetlin_machine_component.md
 docs/0269_train_affinity_propagation_component.md
 docs/0270_train_lda_topic_model_component.md
+docs/0271_train_simclr_component.md

@@ -1767,3 +1767,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LDA Topic Model
 **Script:** `train_lda_topic_model_component.py`
 **Description:** Evaluates a Latent Dirichlet Allocation (LDA) Topic Model mathematically in pure NumPy, testing its ability to discover latent thematic structures in documents using Gibbs Sampling for iterative word-topic assignment based on Dirichlet priors.
+
+## Component Testing: SimCLR
+**Script:** train_simclr_component.py
+**Description:** Implemented SimCLR for self-supervised contrastive learning using the NT-Xent loss.

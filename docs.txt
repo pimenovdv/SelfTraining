@@ -246,3 +246,4 @@
 0268_train_tsetlin_machine_component
 0269_train_affinity_propagation_component
 0270_train_lda_topic_model_component
+0271_train_simclr_component

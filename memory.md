@@ -1186,3 +1186,7 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented a Latent Dirichlet Allocation (LDA) Topic Model mathematically in pure NumPy, using Gibbs Sampling to update word-topic assignments. Tested on a small synthetic document-term matrix.
 - **Outcome:** The implementation successfully separated the documents into two distinct latent topics based on word co-occurrences, verifying the probabilistic mechanism of topic discovery.
 - **Next Steps:** Evaluate on a larger real-world text corpus (e.g., news articles) and implement Variational Inference as an alternative to Gibbs Sampling.
+
+### Self-Supervised Learning (SimCLR)
+- Explored contrastive learning using NT-Xent loss.
+- Implemented projection heads and normalized cosine similarity matrix logic.
