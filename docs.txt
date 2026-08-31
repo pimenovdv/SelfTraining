@@ -251,3 +251,4 @@
 0273_train_hopfield_network_component
 0274_train_factorization_machine_component
 0275_train_made_component
+0276_train_ncf_component

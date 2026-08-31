@@ -1209,3 +1209,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Outcome:** The implementation successfully learned the underlying user-item interactions, minimizing cross-entropy loss and accurately predicting the synthetic target labels, validating the mathematical mechanism of factored interactions.
 - **Next Steps:** Evaluate the model on larger, real-world sparse datasets like MovieLens or integrate deep learning extensions (DeepFM).
 - Implemented and verified MADE (Masked Autoencoder for Distribution Estimation) for auto-regressive density estimation.
+- Neural Collaborative Filtering (NCF) has been successfully implemented and verified in `train_ncf_component.py`. The model leverages embeddings, Generalized Matrix Factorization (GMF) and Multi-Layer Perceptrons (MLPs) to effectively learn non-linear patterns of user-item interactions.

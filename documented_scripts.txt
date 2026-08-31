@@ -161,6 +161,7 @@ train_nade_component
 train_naive_bayes_component.py
 train_nalu_component
 train_nca_component
+train_ncf_component.py
 train_neat_component.py
 train_nerf_component
 train_neural_architecture_search_component.py

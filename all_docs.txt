@@ -251,3 +251,4 @@ docs/0272_train_echo_state_network_component.md
 docs/0273_train_hopfield_network_component.md
 docs/0274_train_factorization_machine_component.md
 docs/0275_train_made_component.md
+docs/0276_train_ncf_component.md

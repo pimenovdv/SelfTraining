@@ -1787,3 +1787,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: MADE
 **Script:** train_made_component.py
 **Description:** Implements and verifies MADE (Masked Autoencoder for Distribution Estimation) for auto-regressive density estimation.
+
+## Component Testing: NCF
+**Script:** train_ncf_component.py
+**Description:** Implemented and tested a Neural Collaborative Filtering model using PyTorch, capturing complex non-linear patterns of user-item interactions via GMF and MLP layers.
