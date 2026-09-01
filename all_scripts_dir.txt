@@ -41,6 +41,7 @@
 ./train_graph_isomorphism_network_component.py
 ./train_graphsage_component.py
 ./train_hdbscan_component.py
+./train_hits_component.py
 ./train_hmm_component.py
 ./train_hopfield_network_component.py
 ./train_hrl_component.py

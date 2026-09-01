@@ -103,6 +103,7 @@ train_gumbel_softmax_component
 train_hdbscan_component
 train_hebbian_component
 train_highway_component
+train_hits_component
 train_hopfield_component
 train_hopfield_network_component
 train_hrl_component

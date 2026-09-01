@@ -1211,3 +1211,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented and verified MADE (Masked Autoencoder for Distribution Estimation) for auto-regressive density estimation.
 - Neural Collaborative Filtering (NCF) has been successfully implemented and verified in `train_ncf_component.py`. The model leverages embeddings, Generalized Matrix Factorization (GMF) and Multi-Layer Perceptrons (MLPs) to effectively learn non-linear patterns of user-item interactions.
 * PageRank Component: mathematically models node centrality by simulating random walks with teleportation.
+- Implemented and mathematically verified HITS algorithm.

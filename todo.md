@@ -252,3 +252,4 @@
 - [x] Explore auto-regressive density estimation mathematically. (Implemented and verified MADE - Masked Autoencoder for Distribution Estimation).
 - [x] Explore neural collaborative filtering models for recommendation tasks mathematically. (Implemented and verified Neural Collaborative Filtering model).
 - [x] Explore link analysis and node ranking mathematically. (Implemented and verified PageRank for estimating node importance in a directed graph).
+- [x] Explore link analysis and node ranking mathematically. (Implemented and verified HITS algorithm for estimating hub and authority scores in a directed graph).

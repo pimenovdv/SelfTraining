@@ -253,3 +253,16 @@
 0275_train_made_component
 0276_train_ncf_component
 0277_train_pagerank_component
+0278_train_hits_component
+0279_test_cvae.md
+0280_test_ebm.md
+0281_test_factor_analysis.md
+0282_test_ff.md
+0283_test_fgsm.md
+0284_test_kpca.md
+0285_test_ltc.md
+0286_test_ltc_full.md
+0287_test_mcts.md
+0288_test_nca.md
+0289_test_probabilistic_pca.md
+0290_test_siamese.md
