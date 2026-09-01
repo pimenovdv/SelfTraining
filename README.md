@@ -1834,3 +1834,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Bayesian Ridge Regression
 **Script:** train_bayesian_ridge_component.py
 **Description:** Trains a Bayesian Ridge Regression model, which estimates not only the model weights but also their uncertainties via a probabilistic formulation, returning both predictions and standard deviations.
+
+## Component Testing: Reptile Meta-Learning
+**Script:** train_reptile_component.py
+**Description:** Evaluates a Reptile meta-learning component mathematically in pure NumPy, testing its ability to find optimal initialization weights across a family of sine-wave regression tasks by accumulating inner-loop parameter differences instead of full second-order derivatives.
