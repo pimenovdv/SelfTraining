@@ -198,6 +198,7 @@ train_realnvp_component
 train_recursive_self_improvement_component.py
 train_reinforce_component
 train_relational_network_component
+train_reptile_component.py
 train_retention_component
 train_revnet_component
 train_ridge_regression_component.py
