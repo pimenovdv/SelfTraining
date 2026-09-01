@@ -1804,3 +1804,16 @@ This script evaluates the meta-learning component mathematically using NumPy to 
     ```bash
     python3 train_pagerank_component.py
     ```
+
+## Component Testing: HITS
+**Script:** train_hits_component.py
+**Description:** As part of our exploration into link analysis and node ranking, we have implemented the HITS algorithm mathematically to estimate hub and authority scores in a directed network.
+
+1.  **Ensure you have NumPy installed:**
+    ```bash
+    pip install numpy
+    ```
+2.  **Run the HITS component test:**
+    ```bash
+    python3 train_hits_component.py
+    ```
