@@ -1830,3 +1830,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_lsh_component.py`
 **Description:** Evaluates a Locality Sensitive Hashing component mathematically in pure NumPy, testing its ability to group similar items into buckets using random projections, accelerating approximate nearest neighbor search based on cosine similarity.
+
+## Component Testing: Bayesian Ridge Regression
+**Script:** train_bayesian_ridge_component.py
+**Description:** Trains a Bayesian Ridge Regression model, which estimates not only the model weights but also their uncertainties via a probabilistic formulation, returning both predictions and standard deviations.
