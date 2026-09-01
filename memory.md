@@ -1220,3 +1220,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Updated the dictionary weights to minimize reconstruction error while enforcing an L1 penalty on the codes.
 - Trained on synthetic sparse signal data, reducing reconstruction loss steadily over 20 epochs.
 **Outcome:** Successfully trained. The reconstruction loss decreased consistently, verifying the mathematical formulation and optimization logic.
+- Implemented and verified Robust PCA using the Alternating Direction Method of Multipliers (ADMM) mathematically in pure NumPy, testing its ability to decompose a data matrix into low-rank and sparse components.

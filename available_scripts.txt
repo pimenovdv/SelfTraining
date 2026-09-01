@@ -201,6 +201,7 @@ train_revnet_component
 train_ridge_regression_component.py
 train_rmsnorm_component
 train_rnn_component
+train_robust_pca_component.py
 train_rope_component
 train_sac_component
 train_sae_component

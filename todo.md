@@ -254,3 +254,4 @@
 - [x] Explore link analysis and node ranking mathematically. (Implemented and verified PageRank for estimating node importance in a directed graph).
 - [x] Explore link analysis and node ranking mathematically. (Implemented and verified HITS algorithm for estimating hub and authority scores in a directed graph).
 - [x] Explore sparse coding mathematically. (Implemented and verified Sparse Coding finding sparse representations via ISTA-like gradient descent).
+- [x] Explore sparse low-rank decomposition mathematically. (Implemented and verified Robust PCA using ADMM).
