@@ -255,3 +255,4 @@
 - [x] Explore link analysis and node ranking mathematically. (Implemented and verified HITS algorithm for estimating hub and authority scores in a directed graph).
 - [x] Explore sparse coding mathematically. (Implemented and verified Sparse Coding finding sparse representations via ISTA-like gradient descent).
 - [x] Explore sparse low-rank decomposition mathematically. (Implemented and verified Robust PCA using ADMM).
+- [x] Explore locality sensitive hashing mathematically. (Implemented and verified Locality Sensitive Hashing - LSH using Random Projections for cosine similarity).

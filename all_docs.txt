@@ -268,3 +268,4 @@ docs/0277_train_pagerank_component.md
 docs/0278_train_hits_component.md
 docs/0291_train_sparse_coding_component.md
 docs/0292_train_robust_pca_component.md
+docs/0293_train_lsh_component.md

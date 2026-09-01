@@ -1825,3 +1825,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Robust PCA
 **Script:** train_robust_pca_component.py
 **Description:** Implemented Robust Principal Component Analysis (Robust PCA) mathematically to decompose a matrix into a low-rank and sparse component using the Alternating Direction Method of Multipliers (ADMM).
+
+## Component Testing: Locality Sensitive Hashing (LSH)
+
+**Script:** `train_lsh_component.py`
+**Description:** Evaluates a Locality Sensitive Hashing component mathematically in pure NumPy, testing its ability to group similar items into buckets using random projections, accelerating approximate nearest neighbor search based on cosine similarity.
