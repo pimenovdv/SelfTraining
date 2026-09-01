@@ -268,3 +268,4 @@
 0290_test_siamese.md
 0291_train_sparse_coding_component
 0292_train_robust_pca_component
+0293_train_lsh_component
