@@ -83,6 +83,7 @@
 ./train_random_forest_regression_component.py
 ./train_recursive_self_improvement_component.py
 ./train_ridge_regression_component.py
+./train_robust_pca_component.py
 ./train_safety_alignment_component.py
 ./train_scaling_law_projection_component.py
 ./train_se_block_component.py

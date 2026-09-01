@@ -1821,3 +1821,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Sparse Coding
 **Script:** train_sparse_coding_component.py
 **Description:** Implements Sparse Coding to learn an overcomplete dictionary and sparse representations using ISTA-like inference and gradient descent updates, verifying sparse feature extraction properties.
+
+## Component Testing: Robust PCA
+**Script:** train_robust_pca_component.py
+**Description:** Implemented Robust Principal Component Analysis (Robust PCA) mathematically to decompose a matrix into a low-rank and sparse component using the Alternating Direction Method of Multipliers (ADMM).
