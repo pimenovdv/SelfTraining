@@ -1222,3 +1222,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 **Outcome:** Successfully trained. The reconstruction loss decreased consistently, verifying the mathematical formulation and optimization logic.
 - Implemented and verified Robust PCA using the Alternating Direction Method of Multipliers (ADMM) mathematically in pure NumPy, testing its ability to decompose a data matrix into low-rank and sparse components.
 - Implemented and verified Locality Sensitive Hashing (LSH) for approximate nearest neighbor search using random projections.
+
+- Implemented `train_bayesian_ridge_component.py` to demonstrate Bayesian Ridge Regression, fitting data robustly and quantifying uncertainty in predictions. Documented the process and updated the component tracking in README and todo.md.
