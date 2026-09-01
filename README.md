@@ -1817,3 +1817,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
     ```bash
     python3 train_hits_component.py
     ```
+
+## Component Testing: Sparse Coding
+**Script:** train_sparse_coding_component.py
+**Description:** Implements Sparse Coding to learn an overcomplete dictionary and sparse representations using ISTA-like inference and gradient descent updates, verifying sparse feature extraction properties.

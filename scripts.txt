@@ -221,6 +221,7 @@ train_siren_component
 train_skipgram_component
 train_snn_component
 train_som_component
+train_sparse_coding_component
 train_sparse_pca_component
 train_sparsemax_component
 train_spectral_clustering_component

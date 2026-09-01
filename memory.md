@@ -1212,3 +1212,11 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Neural Collaborative Filtering (NCF) has been successfully implemented and verified in `train_ncf_component.py`. The model leverages embeddings, Generalized Matrix Factorization (GMF) and Multi-Layer Perceptrons (MLPs) to effectively learn non-linear patterns of user-item interactions.
 * PageRank Component: mathematically models node centrality by simulating random walks with teleportation.
 - Implemented and mathematically verified HITS algorithm.
+## Experiment 0291: Sparse Coding Component
+**Objective:** Implement and verify a Sparse Coding model to learn overcomplete dictionaries and sparse representations of data.
+**Implementation Details:**
+- Created a dictionary parameterized as a weight matrix.
+- Implemented an ISTA-like gradient descent loop to infer sparse codes dynamically for each batch.
+- Updated the dictionary weights to minimize reconstruction error while enforcing an L1 penalty on the codes.
+- Trained on synthetic sparse signal data, reducing reconstruction loss steadily over 20 epochs.
+**Outcome:** Successfully trained. The reconstruction loss decreased consistently, verifying the mathematical formulation and optimization logic.
