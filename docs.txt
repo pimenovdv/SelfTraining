@@ -266,3 +266,4 @@
 0288_test_nca.md
 0289_test_probabilistic_pca.md
 0290_test_siamese.md
+0291_train_sparse_coding_component
