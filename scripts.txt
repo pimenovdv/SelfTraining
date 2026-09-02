@@ -81,6 +81,7 @@ train_ffn_component
 train_fgsm_component
 train_flow_matching_component
 train_fnet_component
+train_fourier_neural_operator_component
 train_full_encoder_decoder_component
 train_fuzzy_c_means_component
 train_gan_component
