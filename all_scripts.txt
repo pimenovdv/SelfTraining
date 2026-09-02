@@ -173,6 +173,7 @@ train_neural_architecture_search_component
 train_neural_ode_component.py
 train_nmf_component.py
 train_ntm_component.py
+train_omp_component
 train_ood_detection_component
 train_operational_control_transition_component
 train_orthogonal_rnn_component.py

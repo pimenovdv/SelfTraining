@@ -1236,3 +1236,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Next Steps:** Evaluate the model's performance on real-world datasets with complex non-linear trends and compare against Kernel Ridge Regression.
 
 - Implemented and verified the Singular Value Decomposition (SVD) component for dimensionality reduction.
+
+- Implemented and verified Orthogonal Matching Pursuit (OMP) component for sparse signal recovery.

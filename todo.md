@@ -265,3 +265,5 @@
 - [x] Explore non-linear regression using piecewise polynomials mathematically. (Implemented and verified Spline Regression using cubic basis functions).
 
 - [x] Implement and test Singular Value Decomposition (SVD) component.
+
+- [x] Implement and test Orthogonal Matching Pursuit (OMP) component.

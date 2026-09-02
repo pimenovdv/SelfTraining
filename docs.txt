@@ -275,3 +275,4 @@
 0297_train_fourier_neural_operator_component
 0298_train_spline_regression_component
 0299_train_svd_component
+0300_train_omp_component
