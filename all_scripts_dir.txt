@@ -63,6 +63,7 @@
 ./train_lle_component.py
 ./train_local_outlier_factor_component.py
 ./train_logistic_regression_component.py
+./train_lpp_component.py
 ./train_lsa_component.py
 ./train_lsh_component.py
 ./train_made_component.py
@@ -90,6 +91,7 @@
 ./train_reptile_component.py
 ./train_ridge_regression_component.py
 ./train_robust_pca_component.py
+./train_rvm_component.py
 ./train_safety_alignment_component.py
 ./train_scaling_law_projection_component.py
 ./train_se_block_component.py

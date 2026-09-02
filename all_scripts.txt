@@ -141,6 +141,7 @@ train_local_outlier_factor_component
 train_logistic_regression_component.py
 train_lora_component.py
 train_lottery_ticket_component.py
+train_lpp_component
 train_lsa_component
 train_lsh_component
 train_lstm_component.py
@@ -209,6 +210,7 @@ train_rmsnorm_component.py
 train_rnn_component.py
 train_robust_pca_component
 train_rope_component.py
+train_rvm_component
 train_sac_component.py
 train_sae_component.py
 train_safety_alignment_component

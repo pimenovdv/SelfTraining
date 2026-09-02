@@ -276,3 +276,5 @@ docs/0297_train_fourier_neural_operator_component.md
 docs/0298_train_spline_regression_component.md
 docs/0299_train_svd_component.md
 docs/0300_train_omp_component.md
+docs/0301_train_lpp_component.md
+docs/0302_train_rvm_component.md

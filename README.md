@@ -1858,3 +1858,11 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Orthogonal Matching Pursuit (OMP)
 **Script:** `train_omp_component.py`
 **Description:** Evaluates an Orthogonal Matching Pursuit (OMP) component mathematically in pure NumPy, testing its ability to recover sparse representations by greedily selecting dictionary atoms that most correlate with the current residual, updating coefficients via orthogonal projection.
+
+## Component Testing: Locality Preserving Projections
+**Script:** train_lpp_component.py
+**Description:** Train a Locality Preserving Projections (LPP) component mathematically to perform linear dimensionality reduction while optimally preserving the local neighborhood structure of the original data points using a k-nearest neighbor graph.
+
+## Component Testing: Relevance Vector Machine
+**Script:** train_rvm_component.py
+**Description:** Train a Relevance Vector Machine (RVM) component mathematically to perform sparse Bayesian learning, identifying a highly sparse set of relevance vectors that form the decision boundary without the rigid margin-based constraints of SVMs.
