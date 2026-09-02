@@ -271,3 +271,4 @@
 0293_train_lsh_component
 0294_train_bayesian_ridge_component
 0295_train_reptile_component
+0296_train_cgan_component

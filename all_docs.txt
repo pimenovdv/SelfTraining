@@ -271,3 +271,4 @@ docs/0292_train_robust_pca_component.md
 docs/0293_train_lsh_component.md
 docs/0294_train_bayesian_ridge_component.md
 docs/0295_train_reptile_component.md
+docs/0296_train_cgan_component.md

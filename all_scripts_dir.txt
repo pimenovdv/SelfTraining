@@ -16,6 +16,7 @@
 ./train_beta_vae_component.py
 ./train_cae_component.py
 ./train_cca_component.py
+./train_cgan_component.py
 ./train_chinchilla_optimality_component.py
 ./train_cma_es_component.py
 ./train_cp_decomposition_component.py
