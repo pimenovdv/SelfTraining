@@ -272,3 +272,4 @@
 0294_train_bayesian_ridge_component
 0295_train_reptile_component
 0296_train_cgan_component
+0297_train_fourier_neural_operator_component

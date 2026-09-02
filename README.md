@@ -1842,3 +1842,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Conditional Generative Adversarial Network
 **Script:** train_cgan_component.py
 **Description:** Implemented and verified Conditional Generative Adversarial Network (CGAN) training for 1D conditional Gaussian generation.
+
+## Component Testing: Fourier Neural Operator (FNO)
+**Script:** train_fourier_neural_operator_component.py
+**Description:** Implements a 1D Fourier Neural Operator to learn mappings between continuous functions, typically used as neural PDE solvers.

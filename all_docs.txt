@@ -272,3 +272,4 @@ docs/0293_train_lsh_component.md
 docs/0294_train_bayesian_ridge_component.md
 docs/0295_train_reptile_component.md
 docs/0296_train_cgan_component.md
+docs/0297_train_fourier_neural_operator_component.md

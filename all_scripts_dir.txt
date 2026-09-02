@@ -34,6 +34,7 @@
 ./train_factor_analysis_component.py
 ./train_factorization_machine_component.py
 ./train_fasttext_component.py
+./train_fourier_neural_operator_component.py
 ./train_fuzzy_c_means_component.py
 ./train_gaussian_process_component.py
 ./train_genetic_algorithm_component.py
