@@ -235,6 +235,7 @@ train_spectral_clustering_component.py
 train_spectral_normalization_component.py
 train_spline_regression_component.py
 train_ssm_component.py
+train_svd_component.py
 train_svm_component.py
 train_svr_component.py
 train_swiglu_component.py

@@ -234,6 +234,7 @@ train_spectral_clustering_component
 train_spectral_normalization_component
 train_spline_regression_component
 train_ssm_component
+train_svd_component
 train_svm_component
 train_svr_component
 train_swiglu_component

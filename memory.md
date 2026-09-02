@@ -1234,3 +1234,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented Cubic Spline Regression mathematically in pure NumPy, using explicit basis functions (1, x, x^2, x^3, max(0, x - k)^3) and solving for weights via regularized least squares on synthetic sine wave data.
 - **Outcome:** The model successfully fit the non-linear data, achieving a very low mean squared error, validating the mathematical mechanism of natural cubic splines.
 - **Next Steps:** Evaluate the model's performance on real-world datasets with complex non-linear trends and compare against Kernel Ridge Regression.
+
+- Implemented and verified the Singular Value Decomposition (SVD) component for dimensionality reduction.
