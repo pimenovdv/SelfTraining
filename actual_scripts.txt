@@ -233,6 +233,7 @@ train_sparse_pca_component.py
 train_sparsemax_component
 train_spectral_clustering_component
 train_spectral_normalization_component
+train_spline_regression_component.py
 train_ssm_component
 train_svm_component
 train_svr_component.py

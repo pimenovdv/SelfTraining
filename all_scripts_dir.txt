@@ -99,6 +99,7 @@
 ./train_sparse_coding_component.py
 ./train_sparse_pca_component.py
 ./train_spectral_clustering_component.py
+./train_spline_regression_component.py
 ./train_svr_component.py
 ./train_thompson_sampling_component.py
 ./train_tsetlin_machine_component.py

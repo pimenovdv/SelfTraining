@@ -1228,3 +1228,9 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Conditional Generative Adversarial Network (CGAN): Successfully trained on 1D Gaussian class conditional data.
 
 - Successfully implemented and tested the Fourier Neural Operator component.
+
+### Experiment 0298: Spline Regression Component
+- **Hypothesis:** By fitting piecewise polynomial functions constrained to be continuous and smooth at specified knots, spline regression can effectively model complex non-linear relationships in data that global polynomial regression might overfit or underfit.
+- **Action:** Implemented Cubic Spline Regression mathematically in pure NumPy, using explicit basis functions (1, x, x^2, x^3, max(0, x - k)^3) and solving for weights via regularized least squares on synthetic sine wave data.
+- **Outcome:** The model successfully fit the non-linear data, achieving a very low mean squared error, validating the mathematical mechanism of natural cubic splines.
+- **Next Steps:** Evaluate the model's performance on real-world datasets with complex non-linear trends and compare against Kernel Ridge Regression.
