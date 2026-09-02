@@ -1854,3 +1854,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Singular Value Decomposition
 **Script:** train_svd_component.py
 **Description:** Train a singular value decomposition (SVD) component on synthetic data.
+
+## Component Testing: Orthogonal Matching Pursuit (OMP)
+**Script:** `train_omp_component.py`
+**Description:** Evaluates an Orthogonal Matching Pursuit (OMP) component mathematically in pure NumPy, testing its ability to recover sparse representations by greedily selecting dictionary atoms that most correlate with the current residual, updating coefficients via orthogonal projection.
