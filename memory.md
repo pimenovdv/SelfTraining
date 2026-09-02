@@ -1238,3 +1238,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented and verified the Singular Value Decomposition (SVD) component for dimensionality reduction.
 
 - Implemented and verified Orthogonal Matching Pursuit (OMP) component for sparse signal recovery.
+- Implemented Locality Preserving Projections (LPP), a linear dimensionality reduction method that optimally preserves the local neighborhood structure of the data set. LPP models the manifold locally, projecting to a lower dimension such that nearby points on the manifold stay close together in the projected space.
+- Implemented Relevance Vector Machine (RVM), a probabilistic formulation identical to SVM but leading to much sparser models. RVM avoids the need to set the regularization parameter by introducing automatic relevance determination (ARD) via sparse Bayesian learning over the kernel weights.

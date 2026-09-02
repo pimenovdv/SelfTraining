@@ -276,3 +276,5 @@
 0298_train_spline_regression_component
 0299_train_svd_component
 0300_train_omp_component
+0301_train_lpp_component
+0302_train_rvm_component

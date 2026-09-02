@@ -140,6 +140,7 @@ train_local_outlier_factor_component
 train_logistic_regression_component
 train_lora_component
 train_lottery_ticket_component
+train_lpp_component
 train_lsa_component
 train_lsh_component
 train_lstm_component
@@ -208,6 +209,7 @@ train_rmsnorm_component
 train_rnn_component
 train_robust_pca_component
 train_rope_component
+train_rvm_component
 train_sac_component
 train_sae_component
 train_safety_alignment_component
