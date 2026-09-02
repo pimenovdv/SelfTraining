@@ -259,3 +259,4 @@
 
 - [x] Implement and verify `train_bayesian_ridge_component.py`
 - [x] Explore first-order meta-learning algorithm mathematically. (Implemented and verified Reptile algorithm for few-shot learning).
+- [x] Explore generative adversarial networks with conditions mathematically. (Implemented and verified Conditional Generative Adversarial Network - CGAN).

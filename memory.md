@@ -1225,3 +1225,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 
 - Implemented `train_bayesian_ridge_component.py` to demonstrate Bayesian Ridge Regression, fitting data robustly and quantifying uncertainty in predictions. Documented the process and updated the component tracking in README and todo.md.
 * Implemented the Reptile algorithm in `train_reptile_component.py` which discovers generalized initialization weights for sine-wave tasks using just first-order gradients.
+- Conditional Generative Adversarial Network (CGAN): Successfully trained on 1D Gaussian class conditional data.

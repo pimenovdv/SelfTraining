@@ -31,6 +31,7 @@ train_capsule_network_component
 train_cbow_component
 train_cca_component.py
 train_cem_component.py
+train_cgan_component.py
 train_chinchilla_optimality_component.py
 train_cma_es_component.py
 train_cmaes_component
