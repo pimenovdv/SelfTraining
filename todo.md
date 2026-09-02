@@ -262,3 +262,4 @@
 - [x] Explore generative adversarial networks with conditions mathematically. (Implemented and verified Conditional Generative Adversarial Network - CGAN).
 
 - [x] Implement and verify train_fourier_neural_operator_component.py
+- [x] Explore non-linear regression using piecewise polynomials mathematically. (Implemented and verified Spline Regression using cubic basis functions).

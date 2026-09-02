@@ -1846,3 +1846,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Fourier Neural Operator (FNO)
 **Script:** train_fourier_neural_operator_component.py
 **Description:** Implements a 1D Fourier Neural Operator to learn mappings between continuous functions, typically used as neural PDE solvers.
+
+## Component Testing: Spline Regression
+**Script:** train_spline_regression_component.py
+**Description:** Explores non-linear regression mathematically by implementing cubic spline regression with explicit basis functions and knots using ordinary least squares in pure NumPy.
