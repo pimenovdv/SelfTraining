@@ -1850,3 +1850,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Spline Regression
 **Script:** train_spline_regression_component.py
 **Description:** Explores non-linear regression mathematically by implementing cubic spline regression with explicit basis functions and knots using ordinary least squares in pure NumPy.
+
+## Component Testing: Singular Value Decomposition
+**Script:** train_svd_component.py
+**Description:** Train a singular value decomposition (SVD) component on synthetic data.
