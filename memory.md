@@ -1245,3 +1245,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented `train_bayesian_network_component.py` to demonstrate a Bayesian Network (Naive Bayes structure), modeling probabilistic relationships and performing inference on synthetic binary classification data. Documented the process and updated the component tracking in README and todo.md.
 - **Graph Autoencoder (GAE)**: Explored Graph Autoencoder using GCN as encoder and inner product decoder for reconstructing adjacency matrix.
 - Successfully trained a Simple Diffusion Model component (`train_diffusion_model_component.py`) focusing on non-equilibrium thermodynamics mapping to data distributions. It achieved low loss on the continuous time formulation [0,1].
+- Explored Wasserstein Autoencoder (WAE) using MMD with Inverse Multi-Quadratic Kernel to enforce a prior on the latent space.

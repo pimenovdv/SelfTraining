@@ -261,6 +261,7 @@ train_value_iter_component.py
 train_vib_component.py
 train_vit_component.py
 train_vqvae_component.py
+train_wae_component.py
 train_weight_normalization_component.py
 train_wgan_component.py
 train_xgboost_component.py
