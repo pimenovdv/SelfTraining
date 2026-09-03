@@ -20,6 +20,7 @@ train_attention_component
 train_barlow_twins_component
 train_batchnorm_component
 train_bayesian_linear_regression_component.py
+train_bayesian_network_component.py
 train_bayesian_optimization_component
 train_bayesian_ridge_component.py
 train_beta_vae_component.py

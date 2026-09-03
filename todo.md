@@ -272,3 +272,4 @@
 - [x] Explore prototype-based classification mathematically. (Implemented and verified Learning Vector Quantization - LVQ finding class prototypes).
 
 - [x] Explore non-parametric regression mathematically. (Implemented and verified Nadaraya-Watson Kernel Regression predicting continuous targets using distance-weighted averaging).
+- [x] Implement and verify `train_bayesian_network_component.py`
