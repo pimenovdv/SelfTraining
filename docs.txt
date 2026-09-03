@@ -279,3 +279,4 @@
 0301_train_lpp_component
 0302_train_rvm_component
 0303_train_lvq_component
+0304_train_kernel_regression_component

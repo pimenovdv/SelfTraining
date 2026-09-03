@@ -121,6 +121,7 @@ train_kalman_filter_component
 train_kan_component
 train_kde_component.py
 train_kernel_pca_component.py
+train_kernel_regression_component.py
 train_kernel_ridge_regression_component.py
 train_kmeans_component
 train_kmedoids_component.py
