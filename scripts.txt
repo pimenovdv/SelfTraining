@@ -120,6 +120,7 @@ train_kalman_filter_component
 train_kan_component
 train_kde_component
 train_kernel_pca_component
+train_kernel_regression_component
 train_kernel_ridge_regression_component
 train_kmeans_component
 train_kmedoids_component

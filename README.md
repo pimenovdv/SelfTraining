@@ -1871,3 +1871,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_lvq_component.py`
 **Description:** Evaluates a Learning Vector Quantization (LVQ) component mathematically in pure NumPy, testing its ability to learn class-specific prototypes and classify based on the nearest prototype.
+
+## Component Testing: Nadaraya-Watson Kernel Regression
+**Script:** train_kernel_regression_component.py
+**Description:** Train a Nadaraya-Watson Kernel Regression component mathematically to perform non-parametric non-linear regression, estimating continuous targets as a distance-weighted average of training samples using a Gaussian RBF kernel.
