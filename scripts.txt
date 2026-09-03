@@ -59,6 +59,7 @@ train_deepsets_component
 train_dfa_component
 train_dictionary_learning_component
 train_differential_evolution_component
+train_diffusion_model_component
 train_distributed_infrastructure_component
 train_dnc_component
 train_dni_component

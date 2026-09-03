@@ -1884,3 +1884,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_gae_component.py`
 **Description:** Evaluates a Graph Autoencoder (GAE) component mathematically in pure NumPy, testing its ability to encode graph node features and topology into a lower-dimensional space and then decode them to reconstruct the original adjacency matrix via binary cross-entropy loss.
+
+## Component Testing: Simple Diffusion Model
+**Script:** `train_diffusion_model_component.py`
+**Description:** Train a Simple Diffusion Model mathematically to perform score matching on a forward continuous-time noising process, learning to map from a prior normal distribution to the simple 2D target data distribution (circle).
