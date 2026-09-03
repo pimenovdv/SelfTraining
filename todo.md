@@ -274,3 +274,4 @@
 - [x] Explore non-parametric regression mathematically. (Implemented and verified Nadaraya-Watson Kernel Regression predicting continuous targets using distance-weighted averaging).
 - [x] Implement and verify `train_bayesian_network_component.py`
 - [x] Explore structural representation learning mathematically. (Implemented and verified Graph Autoencoder - GAE reconstructing adjacency matrix).
+- [x] Train and document Simple Diffusion Model component mathematically.

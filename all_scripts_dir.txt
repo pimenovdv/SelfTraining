@@ -28,6 +28,7 @@
 ./train_decision_tree_regression_component.py
 ./train_dictionary_learning_component.py
 ./train_differential_evolution_component.py
+./train_diffusion_model_component.py
 ./train_distributed_infrastructure_component.py
 ./train_dnc_component.py
 ./train_echo_state_network_component.py
