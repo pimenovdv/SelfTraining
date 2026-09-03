@@ -1875,3 +1875,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Nadaraya-Watson Kernel Regression
 **Script:** train_kernel_regression_component.py
 **Description:** Train a Nadaraya-Watson Kernel Regression component mathematically to perform non-parametric non-linear regression, estimating continuous targets as a distance-weighted average of training samples using a Gaussian RBF kernel.
+
+## Component Testing: Bayesian Network
+**Script:** train_bayesian_network_component.py
+**Description:** Implements a simple Bayesian Network (Naive Bayes structure) to model probabilistic dependencies between variables, compute likelihoods, and perform conditional inference on synthetic data.

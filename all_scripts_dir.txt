@@ -11,6 +11,7 @@
 ./train_agglomerative_clustering_component.py
 ./train_agi_asi_component.py
 ./train_bayesian_linear_regression_component.py
+./train_bayesian_network_component.py
 ./train_bayesian_optimization_component.py
 ./train_bayesian_ridge_component.py
 ./train_beta_vae_component.py
