@@ -281,3 +281,4 @@ docs/0302_train_rvm_component.md
 docs/0303_train_lvq_component.md
 docs/0304_train_kernel_regression_component.md
 docs/0305_train_bayesian_network_component.md
+docs/0306_train_gae_component.md

@@ -1879,3 +1879,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Bayesian Network
 **Script:** train_bayesian_network_component.py
 **Description:** Implements a simple Bayesian Network (Naive Bayes structure) to model probabilistic dependencies between variables, compute likelihoods, and perform conditional inference on synthetic data.
+
+## Component Testing: Graph Autoencoder (GAE)
+
+**Script:** `train_gae_component.py`
+**Description:** Evaluates a Graph Autoencoder (GAE) component mathematically in pure NumPy, testing its ability to encode graph node features and topology into a lower-dimensional space and then decode them to reconstruct the original adjacency matrix via binary cross-entropy loss.

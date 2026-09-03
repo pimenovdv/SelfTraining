@@ -85,6 +85,7 @@ train_fnet_component.py
 train_fourier_neural_operator_component
 train_full_encoder_decoder_component.py
 train_fuzzy_c_means_component
+train_gae_component
 train_gan_component.py
 train_gat_component.py
 train_gaussian_process_component.py
