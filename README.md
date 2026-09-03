@@ -1888,3 +1888,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Simple Diffusion Model
 **Script:** `train_diffusion_model_component.py`
 **Description:** Train a Simple Diffusion Model mathematically to perform score matching on a forward continuous-time noising process, learning to map from a prior normal distribution to the simple 2D target data distribution (circle).
+
+## Component Testing: Wasserstein Autoencoder (WAE)
+**Script:** `train_wae_component.py`
+**Description:** Implemented and verified Wasserstein Autoencoder - WAE with MMD.

@@ -283,3 +283,4 @@
 0305_train_bayesian_network_component
 0306_train_gae_component
 0307_train_diffusion_model_component
+0308_train_wae_component

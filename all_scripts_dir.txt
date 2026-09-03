@@ -116,4 +116,5 @@
 ./train_tucker_decomposition_component.py
 ./train_upper_confidence_bound_component.py
 ./train_value_iter_component.py
+./train_wae_component.py
 ./train_xgboost_component.py
