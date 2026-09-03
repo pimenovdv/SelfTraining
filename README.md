@@ -1866,3 +1866,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Relevance Vector Machine
 **Script:** train_rvm_component.py
 **Description:** Train a Relevance Vector Machine (RVM) component mathematically to perform sparse Bayesian learning, identifying a highly sparse set of relevance vectors that form the decision boundary without the rigid margin-based constraints of SVMs.
+
+## Component Testing: Learning Vector Quantization (LVQ)
+
+**Script:** `train_lvq_component.py`
+**Description:** Evaluates a Learning Vector Quantization (LVQ) component mathematically in pure NumPy, testing its ability to learn class-specific prototypes and classify based on the nearest prototype.
