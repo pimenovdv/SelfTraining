@@ -269,3 +269,4 @@
 - [x] Implement and test Orthogonal Matching Pursuit (OMP) component.
 - [x] Implement and test Locality Preserving Projections (LPP) component.
 - [x] Implement and test Relevance Vector Machine (RVM) component.
+- [x] Explore prototype-based classification mathematically. (Implemented and verified Learning Vector Quantization - LVQ finding class prototypes).

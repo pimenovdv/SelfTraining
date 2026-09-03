@@ -66,6 +66,7 @@
 ./train_lpp_component.py
 ./train_lsa_component.py
 ./train_lsh_component.py
+./train_lvq_component.py
 ./train_made_component.py
 ./train_matrix_factorization_component.py
 ./train_mcmc_component.py

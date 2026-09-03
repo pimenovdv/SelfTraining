@@ -278,3 +278,4 @@
 0300_train_omp_component
 0301_train_lpp_component
 0302_train_rvm_component
+0303_train_lvq_component
