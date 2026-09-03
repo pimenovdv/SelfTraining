@@ -37,6 +37,7 @@
 ./train_fasttext_component.py
 ./train_fourier_neural_operator_component.py
 ./train_fuzzy_c_means_component.py
+./train_gae_component.py
 ./train_gaussian_process_component.py
 ./train_genetic_algorithm_component.py
 ./train_glove_component.py
