@@ -1,1 +1,2 @@
 train_perceptron_component
+train_rbf_network_component

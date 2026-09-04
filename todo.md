@@ -279,3 +279,4 @@
 - [x] Implement and verify train_fno_component.py
 - [x] Implement and verify `train_linear_regression_component.py`
 - [x] Explore linear classification mathematically. (Implemented and verified single-layer Perceptron).
+- [x] Explore Radial Basis Function Networks mathematically. (Implemented and verified RBF Network).

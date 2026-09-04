@@ -1,1 +1,2 @@
 train_perceptron_component.py
+train_rbf_network_component.py

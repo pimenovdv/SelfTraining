@@ -1927,3 +1927,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Perceptron
 **Script:** `train_perceptron_component.py`
 **Description:** Evaluates a single-layer perceptron component mathematically in pure NumPy, testing its ability to learn a linearly separable decision boundary via manual backpropagation.
+
+## Component Testing: RBF Network
+**Script:** `train_rbf_network_component.py`
+**Description:** Explores and implements a Radial Basis Function (RBF) Network for nonlinear representation learning.
