@@ -276,3 +276,4 @@
 - [x] Explore structural representation learning mathematically. (Implemented and verified Graph Autoencoder - GAE reconstructing adjacency matrix).
 - [x] Train and document Simple Diffusion Model component mathematically.
 - [x] Explore generative models with optimal transport mathematically. (Implemented and verified Wasserstein Autoencoder - WAE with MMD).
+- [x] Implement and verify train_fno_component.py
