@@ -286,3 +286,4 @@
 0308_train_wae_component
 0309_train_fno_component
 0313_train_linear_regression_component
+0314_train_perceptron_component

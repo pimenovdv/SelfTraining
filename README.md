@@ -1923,3 +1923,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Linear Regression
 **Script:** train_linear_regression_component.py
 **Description:** Train a Linear Regression component mathematically to find the best fit line using the Normal Equation.
+
+## Component Testing: Perceptron
+**Script:** `train_perceptron_component.py`
+**Description:** Evaluates a single-layer perceptron component mathematically in pure NumPy, testing its ability to learn a linearly separable decision boundary via manual backpropagation.
