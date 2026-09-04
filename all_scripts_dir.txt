@@ -20,6 +20,7 @@
 ./train_cgan_component.py
 ./train_chinchilla_optimality_component.py
 ./train_cma_es_component.py
+./train_cnn_component.py
 ./train_cp_decomposition_component.py
 ./train_crf_component.py
 ./train_cvae_component.py

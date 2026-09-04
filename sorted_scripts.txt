@@ -36,6 +36,7 @@ train_cgan_component
 train_chinchilla_optimality_component
 train_cma_es_component
 train_cmaes_component
+train_cnn_component
 train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component

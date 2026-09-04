@@ -1250,3 +1250,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented `train_linear_regression_component.py` to demonstrate Linear Regression using the Normal Equation. Documented the process and updated the component tracking in README and todo.md.
 - Explored linear classification mathematically. Implemented and verified single-layer Perceptron.
 - Implemented `train_rbf_network_component.py` to demonstrate Radial Basis Function Networks. Documented the process and updated the component tracking in README and todo.md.
+
+- Investigated and implemented Convolutional Neural Network (CNN) component covering 2D convolution and max pooling operations using explicit forward and backward calculations in NumPy.

@@ -1931,3 +1931,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: RBF Network
 **Script:** `train_rbf_network_component.py`
 **Description:** Explores and implements a Radial Basis Function (RBF) Network for nonlinear representation learning.
+
+## Component Testing: Convolutional Neural Network (CNN)
+**Script:** `train_cnn_component.py`
+**Description:** Evaluates a Convolutional Neural Network component mathematically in pure NumPy, testing its ability to perform 2D convolution and max pooling with explicit forward and backward passes.
