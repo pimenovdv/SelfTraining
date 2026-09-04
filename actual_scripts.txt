@@ -190,6 +190,7 @@ train_particle_filter_component.py
 train_pca_component
 train_pcn_component
 train_perceiver_component
+train_perceptron_component.py
 train_pls_component.py
 train_pointer_network_component
 train_policy_iteration_component.py

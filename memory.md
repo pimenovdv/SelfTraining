@@ -1248,3 +1248,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Explored Wasserstein Autoencoder (WAE) using MMD with Inverse Multi-Quadratic Kernel to enforce a prior on the latent space.
 - Successfully implemented and verified train_fno_component.py
 - Implemented `train_linear_regression_component.py` to demonstrate Linear Regression using the Normal Equation. Documented the process and updated the component tracking in README and todo.md.
+- Explored linear classification mathematically. Implemented and verified single-layer Perceptron.
