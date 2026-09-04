@@ -205,6 +205,7 @@ train_quantization_component
 train_random_forest_component.py
 train_random_forest_regression_component.py
 train_rbf_component
+train_rbf_network_component.py
 train_rbm_component
 train_realnvp_component
 train_recursive_self_improvement_component.py

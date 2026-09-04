@@ -287,3 +287,4 @@
 0309_train_fno_component
 0313_train_linear_regression_component
 0314_train_perceptron_component
+0315_train_rbf_network_component
