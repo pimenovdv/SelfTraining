@@ -284,3 +284,4 @@ docs/0305_train_bayesian_network_component.md
 docs/0306_train_gae_component.md
 docs/0307_train_diffusion_model_component.md
 docs/0308_train_wae_component.md
+docs/0309_train_fno_component.md

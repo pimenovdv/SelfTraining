@@ -83,6 +83,7 @@ train_ffn_component.py
 train_fgsm_component.py
 train_flow_matching_component.py
 train_fnet_component.py
+train_fno_component
 train_fourier_neural_operator_component
 train_full_encoder_decoder_component.py
 train_fuzzy_c_means_component

@@ -1892,3 +1892,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Wasserstein Autoencoder (WAE)
 **Script:** `train_wae_component.py`
 **Description:** Implemented and verified Wasserstein Autoencoder - WAE with MMD.
+
+## Component Testing: train_fno_component
+**Script:** train_fno_component.py
+**Description:** Implements a 1D Fourier Neural Operator (FNO) for learning operators, testing mapping between functional spaces rather than finite-dimensional vectors, verifying capability of operator learning methodologies.

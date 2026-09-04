@@ -284,3 +284,4 @@
 0306_train_gae_component
 0307_train_diffusion_model_component
 0308_train_wae_component
+0309_train_fno_component
