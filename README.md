@@ -1896,3 +1896,27 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: train_fno_component
 **Script:** train_fno_component.py
 **Description:** Implements a 1D Fourier Neural Operator (FNO) for learning operators, testing mapping between functional spaces rather than finite-dimensional vectors, verifying capability of operator learning methodologies.
+
+## Component Testing: Extreme Learning Machine (ELM)
+**Script:** `train_elm_component.py`
+**Description:** Implemented and evaluated an Extreme Learning Machine (ELM) component using pure NumPy. This component verifies the mathematical hypothesis that randomly initializing hidden layer weights and analytically solving for the output weights using the Moore-Penrose pseudoinverse can provide rapid, one-shot learning of non-linear boundaries without iterative backpropagation.
+
+## Component Testing: Independent Component Analysis (ICA)
+**Script:** `train_ica_component.py`
+**Description:** Implement and verify Independent Component Analysis (ICA) in pure NumPy using the FastICA algorithm. This explores unsupervised representation learning for separating linearly mixed, non-Gaussian source signals (blind source separation), modeling the cocktail party problem.
+
+## Component Testing: Hidden Markov Model (HMM)
+**Script:** `train_hmm_component.py`
+**Description:** Evaluates a Hidden Markov Model (HMM) component mathematically in pure NumPy, testing its ability to estimate hidden state transition and observation emission probabilities given only a sequence of observations using the Baum-Welch (Expectation-Maximization) algorithm.
+
+## Component Testing: AdaBoost
+**Script:** `train_adaboost_component.py`
+**Description:** Evaluates an AdaBoost component mathematically in pure NumPy, testing its ability to combine weak learners (Decision Stumps) into a strong classifier by sequentially updating sample weights based on classification errors.
+
+## Component Testing: Bayesian Neural Network (BNN)
+**Script:** `train_bnn_component.py`
+**Description:** Implement and train a Bayesian Neural Network (BNN) component mathematically in pure NumPy using the Bayes by Backprop algorithm to learn a non-linear dataset (XOR) while estimating uncertainty.
+
+## Component Testing: Gaussian Mixture Model (GMM)
+**Script:** `train_gmm_component.py`
+**Description:** Evaluates a Gaussian Mixture Model (GMM) component mathematically in pure NumPy, testing its ability to estimate the parameters of a mixture of multiple Gaussian distributions using the Expectation-Maximization (EM) algorithm.
