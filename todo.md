@@ -277,3 +277,4 @@
 - [x] Train and document Simple Diffusion Model component mathematically.
 - [x] Explore generative models with optimal transport mathematically. (Implemented and verified Wasserstein Autoencoder - WAE with MMD).
 - [x] Implement and verify train_fno_component.py
+- [x] Implement and verify `train_linear_regression_component.py`

@@ -139,6 +139,7 @@ train_layernorm_component
 train_lda_component.py
 train_lda_topic_model_component.py
 train_linear_attention_component
+train_linear_regression_component.py
 train_linucb_component.py
 train_lle_component.py
 train_lmu_component

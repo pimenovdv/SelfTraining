@@ -1920,3 +1920,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Gaussian Mixture Model (GMM)
 **Script:** `train_gmm_component.py`
 **Description:** Evaluates a Gaussian Mixture Model (GMM) component mathematically in pure NumPy, testing its ability to estimate the parameters of a mixture of multiple Gaussian distributions using the Expectation-Maximization (EM) algorithm.
+## Component Testing: Linear Regression
+**Script:** train_linear_regression_component.py
+**Description:** Train a Linear Regression component mathematically to find the best fit line using the Normal Equation.
