@@ -293,3 +293,4 @@
 0318_train_oja_rule_component
 0319_train_maxout_component
 0320_train_hierarchical_clustering_component
+0321_train_cnf_component

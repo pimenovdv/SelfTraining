@@ -1261,3 +1261,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Action:** Implemented Hierarchical Clustering mathematically in pure NumPy, testing its ability to form clusters from distinct synthetic groups.
 - **Outcome:** The implementation successfully partitioned the data points into the correct target clusters, assigning consistent labels across members of the same group.
 - **Next Steps:** Evaluate on datasets with non-globular cluster shapes and implement alternative linkage criteria (e.g., complete linkage, Ward's method).
+- Implemented and verified Continuous Normalizing Flow (CNF) component
