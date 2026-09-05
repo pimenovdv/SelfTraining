@@ -285,3 +285,4 @@
 
 - [x] Explore learnable piecewise linear activations mathematically. (Implemented and verified Maxout Network).
 - [x] Explore agglomerative clustering mathematically. (Implemented and verified Hierarchical Clustering using single linkage to merge clusters based on minimum inter-cluster distances).
+- [x] Explore continuous normalizing flow for generative modeling mathematically. (Implemented and verified Continuous Normalizing Flow - CNF).

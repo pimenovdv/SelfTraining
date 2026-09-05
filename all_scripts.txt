@@ -1,3 +1,4 @@
+train_cnf_component
 train_cnn_component
 train_hierarchical_clustering_component
 train_maxout_component

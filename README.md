@@ -1951,3 +1951,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Hierarchical Clustering
 **Script:** train_hierarchical_clustering_component.py
 **Description:** Evaluates a Hierarchical Clustering component mathematically in pure NumPy, testing its ability to group data points through an agglomerative single-linkage approach without predefined centroids.
+## Component Testing: Continuous Normalizing Flow
+**Script:** train_cnf_component.py
+**Description:** Verified mathematical implementation of Continuous Normalizing Flow for generative modeling.
