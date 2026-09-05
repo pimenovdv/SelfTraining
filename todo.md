@@ -284,3 +284,4 @@
 - [x] Explore Hebbian Learning mathematically. (Implemented and verified Oja's Rule finding principal components).
 
 - [x] Explore learnable piecewise linear activations mathematically. (Implemented and verified Maxout Network).
+- [x] Explore agglomerative clustering mathematically. (Implemented and verified Hierarchical Clustering using single linkage to merge clusters based on minimum inter-cluster distances).

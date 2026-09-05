@@ -1947,3 +1947,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Maxout Network
 **Script:** `train_maxout_component.py`
 **Description:** Evaluates a Maxout Network component mathematically in pure NumPy, testing its ability to learn a piecewise linear activation function by taking the maximum over multiple linear projections.
+
+## Component Testing: Hierarchical Clustering
+**Script:** train_hierarchical_clustering_component.py
+**Description:** Evaluates a Hierarchical Clustering component mathematically in pure NumPy, testing its ability to group data points through an agglomerative single-linkage approach without predefined centroids.
