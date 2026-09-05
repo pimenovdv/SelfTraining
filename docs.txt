@@ -289,3 +289,4 @@
 0314_train_perceptron_component
 0315_train_rbf_network_component
 0316_train_cnn_component
+0317_train_poisson_regression_component

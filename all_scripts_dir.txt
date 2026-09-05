@@ -91,6 +91,7 @@
 ./train_particle_filter_component.py
 ./train_perceptron_component.py
 ./train_pls_component.py
+./train_poisson_regression_component.py
 ./train_policy_iteration_component.py
 ./train_probabilistic_pca_component.py
 ./train_qda_component.py
