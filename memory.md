@@ -1262,3 +1262,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Outcome:** The implementation successfully partitioned the data points into the correct target clusters, assigning consistent labels across members of the same group.
 - **Next Steps:** Evaluate on datasets with non-globular cluster shapes and implement alternative linkage criteria (e.g., complete linkage, Ward's method).
 - Implemented and verified Continuous Normalizing Flow (CNF) component
+Implemented Highway Network, demonstrating depth routing and gating mechanisms.

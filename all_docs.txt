@@ -294,3 +294,4 @@ docs/0318_train_oja_rule_component.md
 docs/0319_train_maxout_component.md
 docs/0320_train_hierarchical_clustering_component.md
 docs/0321_train_cnf_component.md
+docs/0322_train_highway_network_component.md
