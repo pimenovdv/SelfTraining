@@ -1254,3 +1254,5 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Investigated and implemented Convolutional Neural Network (CNN) component covering 2D convolution and max pooling operations using explicit forward and backward calculations in NumPy.
 - **Poisson Regression Component**: Explored probabilistic regression mathematically by modeling count data with a Poisson distribution, minimizing the negative log-likelihood using gradient descent.
 - Successfully explored Hebbian Learning mathematically and implemented Oja's Rule component.
+
+- Verified the mathematical feasibility of Maxout Networks using pure NumPy. The model successfully converges on the XOR problem by learning piecewise linear activation functions.

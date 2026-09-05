@@ -158,6 +158,7 @@ train_mae_component
 train_maml_component
 train_masked_attention_component
 train_matrix_factorization_component
+train_maxout_component
 train_mcmc_component
 train_mcts_component
 train_mdn_component

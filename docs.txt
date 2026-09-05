@@ -291,3 +291,4 @@
 0316_train_cnn_component
 0317_train_poisson_regression_component
 0318_train_oja_rule_component
+0319_train_maxout_component
