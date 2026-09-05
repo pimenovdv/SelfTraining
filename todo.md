@@ -282,3 +282,5 @@
 - [x] Explore Radial Basis Function Networks mathematically. (Implemented and verified RBF Network).
 - [x] Explore generalized linear models for count data mathematically. (Implemented and verified Poisson Regression).
 - [x] Explore Hebbian Learning mathematically. (Implemented and verified Oja's Rule finding principal components).
+
+- [x] Explore learnable piecewise linear activations mathematically. (Implemented and verified Maxout Network).

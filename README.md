@@ -1943,3 +1943,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Hebbian Learning (Oja's Rule)
 **Script:** train_oja_rule_component.py
 **Description:** Explores unsupervised representation learning using Oja's rule, a variant of Hebbian learning that introduces a normalization term to prevent weights from growing indefinitely. It inherently performs Principal Component Analysis (PCA) by finding the leading principal components of the input data.
+
+## Component Testing: Maxout Network
+**Script:** `train_maxout_component.py`
+**Description:** Evaluates a Maxout Network component mathematically in pure NumPy, testing its ability to learn a piecewise linear activation function by taking the maximum over multiple linear projections.

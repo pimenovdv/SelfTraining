@@ -1,4 +1,5 @@
 train_cnn_component.py
+train_maxout_component.py
 train_oja_rule_component.py
 train_perceptron_component.py
 train_poisson_regression_component.py
