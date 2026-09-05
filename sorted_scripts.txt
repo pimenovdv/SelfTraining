@@ -110,6 +110,7 @@ train_gru_component
 train_gumbel_softmax_component
 train_hdbscan_component
 train_hebbian_component
+train_hierarchical_clustering_component
 train_highway_component
 train_hits_component
 train_hopfield_component

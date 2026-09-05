@@ -292,3 +292,4 @@ docs/0316_train_cnn_component.md
 docs/0317_train_poisson_regression_component.md
 docs/0318_train_oja_rule_component.md
 docs/0319_train_maxout_component.md
+docs/0320_train_hierarchical_clustering_component.md

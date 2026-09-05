@@ -1256,3 +1256,8 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Successfully explored Hebbian Learning mathematically and implemented Oja's Rule component.
 
 - Verified the mathematical feasibility of Maxout Networks using pure NumPy. The model successfully converges on the XOR problem by learning piecewise linear activation functions.
+### Experiment 0320: Hierarchical Clustering Component
+- **Hypothesis:** By iteratively merging the closest clusters based on pairwise distances (single linkage), agglomerative hierarchical clustering can discover underlying groupings without requiring an a priori definition of centroids.
+- **Action:** Implemented Hierarchical Clustering mathematically in pure NumPy, testing its ability to form clusters from distinct synthetic groups.
+- **Outcome:** The implementation successfully partitioned the data points into the correct target clusters, assigning consistent labels across members of the same group.
+- **Next Steps:** Evaluate on datasets with non-globular cluster shapes and implement alternative linkage criteria (e.g., complete linkage, Ward's method).
