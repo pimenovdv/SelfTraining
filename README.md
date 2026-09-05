@@ -1939,3 +1939,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Poisson Regression
 **Script:** `train_poisson_regression_component.py`
 **Description:** Train a Poisson regression component mathematically to perform non-linear regression on count data, modeling the conditional mean as an exponential function of a linear combination of features.
+
+## Component Testing: Hebbian Learning (Oja's Rule)
+**Script:** train_oja_rule_component.py
+**Description:** Explores unsupervised representation learning using Oja's rule, a variant of Hebbian learning that introduces a normalization term to prevent weights from growing indefinitely. It inherently performs Principal Component Analysis (PCA) by finding the leading principal components of the input data.
