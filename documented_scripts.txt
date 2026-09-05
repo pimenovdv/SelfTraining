@@ -113,6 +113,7 @@ train_hdbscan_component.py
 train_hebbian_component
 train_hierarchical_clustering_component.py
 train_highway_component
+train_highway_network_component.py
 train_hits_component.py
 train_hmm_component.py
 train_hopfield_component

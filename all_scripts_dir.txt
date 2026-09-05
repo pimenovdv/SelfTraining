@@ -51,6 +51,7 @@
 ./train_graphsage_component.py
 ./train_hdbscan_component.py
 ./train_hierarchical_clustering_component.py
+./train_highway_network_component.py
 ./train_hits_component.py
 ./train_hmm_component.py
 ./train_hopfield_network_component.py

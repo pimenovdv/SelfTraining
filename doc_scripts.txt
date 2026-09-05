@@ -1,6 +1,7 @@
 train_cnf_component.py
 train_cnn_component.py
 train_hierarchical_clustering_component.py
+train_highway_network_component.py
 train_maxout_component.py
 train_oja_rule_component.py
 train_perceptron_component.py
