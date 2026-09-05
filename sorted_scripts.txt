@@ -193,6 +193,7 @@ train_perceiver_component
 train_perceptron_component
 train_pls_component
 train_pointer_network_component
+train_poisson_regression_component
 train_policy_iteration_component
 train_positional_encoding_component
 train_ppo_component

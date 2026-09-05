@@ -1252,3 +1252,4 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - Implemented `train_rbf_network_component.py` to demonstrate Radial Basis Function Networks. Documented the process and updated the component tracking in README and todo.md.
 
 - Investigated and implemented Convolutional Neural Network (CNN) component covering 2D convolution and max pooling operations using explicit forward and backward calculations in NumPy.
+- **Poisson Regression Component**: Explored probabilistic regression mathematically by modeling count data with a Poisson distribution, minimizing the negative log-likelihood using gradient descent.

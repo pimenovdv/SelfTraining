@@ -1935,3 +1935,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Convolutional Neural Network (CNN)
 **Script:** `train_cnn_component.py`
 **Description:** Evaluates a Convolutional Neural Network component mathematically in pure NumPy, testing its ability to perform 2D convolution and max pooling with explicit forward and backward passes.
+
+## Component Testing: Poisson Regression
+**Script:** `train_poisson_regression_component.py`
+**Description:** Train a Poisson regression component mathematically to perform non-linear regression on count data, modeling the conditional mean as an exponential function of a linear combination of features.

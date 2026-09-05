@@ -289,3 +289,4 @@ docs/0313_train_linear_regression_component.md
 docs/0314_train_perceptron_component.md
 docs/0315_train_rbf_network_component.md
 docs/0316_train_cnn_component.md
+docs/0317_train_poisson_regression_component.md
