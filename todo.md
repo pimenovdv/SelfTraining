@@ -291,3 +291,4 @@
 - [x] Explore robust linear regression mathematically. (Implemented and verified Huber Regression handling outliers gracefully).
 - [x] Implement and verify `train_softplus_component.py`
 - [x] Implement and verify `train_leaky_relu_component.py`
+- [x] Implement and verify train_elu_component.py

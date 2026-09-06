@@ -35,6 +35,7 @@
 ./train_dnc_component.py
 ./train_echo_state_network_component.py
 ./train_elastic_net_component.py
+./train_elu_component.py
 ./train_factor_analysis_component.py
 ./train_factorization_machine_component.py
 ./train_fasttext_component.py

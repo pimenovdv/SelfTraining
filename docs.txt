@@ -299,3 +299,4 @@
 0324_train_huber_regression_component
 0325_train_softplus_component
 0326_train_leaky_relu_component
+0327_train_elu_component
