@@ -258,6 +258,7 @@ train_svd_component.py
 train_svm_component
 train_svr_component.py
 train_swiglu_component
+train_swish_component.py
 train_target_propagation_component
 train_tcn_component
 train_td3_component

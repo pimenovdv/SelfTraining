@@ -1263,3 +1263,9 @@ Explored Disentangled Variational Autoencoders (Beta-VAE). Implemented a pure Nu
 - **Next Steps:** Evaluate on datasets with non-globular cluster shapes and implement alternative linkage criteria (e.g., complete linkage, Ward's method).
 - Implemented and verified Continuous Normalizing Flow (CNF) component
 Implemented Highway Network, demonstrating depth routing and gating mechanisms.
+
+### Experiment 0323: Swish Activation Component
+- **Hypothesis:** By employing the Swish activation function (x * sigmoid(x)), the network can benefit from a smooth, non-monotonic gradient landscape, potentially accelerating convergence compared to standard ReLUs on non-linear tasks.
+- **Action:** Implemented a Swish Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Swish.
+- **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
