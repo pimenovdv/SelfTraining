@@ -1958,3 +1958,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Highway Network
 **Script:** train_highway_network_component.py
 **Description:** Implemented Highway Network, using learned gating to dynamically route information through deep layers, mitigating vanishing gradients.
+
+## Component Testing: Swish Activation
+**Script:** `train_swish_component.py`
+**Description:** Evaluates a Swish Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a smooth, non-monotonic gradient flow.

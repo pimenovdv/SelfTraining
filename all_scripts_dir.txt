@@ -121,6 +121,7 @@
 ./train_spline_regression_component.py
 ./train_svd_component.py
 ./train_svr_component.py
+./train_swish_component.py
 ./train_thompson_sampling_component.py
 ./train_tsetlin_machine_component.py
 ./train_tsne_component.py

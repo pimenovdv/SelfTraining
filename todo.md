@@ -287,3 +287,4 @@
 - [x] Explore agglomerative clustering mathematically. (Implemented and verified Hierarchical Clustering using single linkage to merge clusters based on minimum inter-cluster distances).
 - [x] Explore continuous normalizing flow for generative modeling mathematically. (Implemented and verified Continuous Normalizing Flow - CNF).
 - [x] Explore deep gating mechanisms mathematically. (Implemented and verified Highway Network using learned gating to combine non-linear transforms and skip connections).
+- [x] Implement and verify `train_swish_component.py`
