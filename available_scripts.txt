@@ -247,6 +247,7 @@ train_simulated_annealing_component.py
 train_siren_component
 train_skipgram_component
 train_snn_component
+train_softplus_component.py
 train_som_component
 train_sparse_coding_component.py
 train_sparse_pca_component.py

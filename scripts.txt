@@ -246,6 +246,7 @@ train_simulated_annealing_component
 train_siren_component
 train_skipgram_component
 train_snn_component
+train_softplus_component
 train_som_component
 train_sparse_coding_component
 train_sparse_pca_component

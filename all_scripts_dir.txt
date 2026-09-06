@@ -116,6 +116,7 @@
 ./train_sfa_component.py
 ./train_siamese_network_component.py
 ./train_simclr_component.py
+./train_softplus_component.py
 ./train_sparse_coding_component.py
 ./train_sparse_pca_component.py
 ./train_spectral_clustering_component.py

@@ -289,3 +289,4 @@
 - [x] Explore deep gating mechanisms mathematically. (Implemented and verified Highway Network using learned gating to combine non-linear transforms and skip connections).
 - [x] Implement and verify `train_swish_component.py`
 - [x] Explore robust linear regression mathematically. (Implemented and verified Huber Regression handling outliers gracefully).
+- [x] Implement and verify `train_softplus_component.py`

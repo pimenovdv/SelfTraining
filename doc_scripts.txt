@@ -8,4 +8,5 @@ train_oja_rule_component.py
 train_perceptron_component.py
 train_poisson_regression_component.py
 train_rbf_network_component.py
+train_softplus_component.py
 train_swish_component.py

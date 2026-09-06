@@ -297,3 +297,4 @@ docs/0321_train_cnf_component.md
 docs/0322_train_highway_network_component.md
 docs/0323_train_swish_component.md
 docs/0324_train_huber_regression_component.md
+docs/0325_train_softplus_component.md
