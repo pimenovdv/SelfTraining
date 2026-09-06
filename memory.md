@@ -1285,3 +1285,4 @@ Implemented Highway Network, demonstrating depth routing and gating mechanisms.
 - **Action:** Implemented an ELU Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of ELU.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
+Implemented the Mish activation function mathematically, a self-regularized non-monotonic activation function.

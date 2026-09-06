@@ -87,6 +87,7 @@
 ./train_mds_component.py
 ./train_mean_shift_component.py
 ./train_medium_scale_model_component.py
+./train_mish_component.py
 ./train_multimodal_component.py
 ./train_ncf_component.py
 ./train_neat_component.py
