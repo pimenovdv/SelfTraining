@@ -299,3 +299,4 @@ docs/0323_train_swish_component.md
 docs/0324_train_huber_regression_component.md
 docs/0325_train_softplus_component.md
 docs/0326_train_leaky_relu_component.md
+docs/0327_train_elu_component.md

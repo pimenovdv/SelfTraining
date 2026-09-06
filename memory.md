@@ -1280,3 +1280,8 @@ Implemented Highway Network, demonstrating depth routing and gating mechanisms.
 - **Action:** Implemented a Leaky ReLU Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Leaky ReLU.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
+### Experiment 0327: ELU Activation Component
+- **Hypothesis:** By employing the ELU activation function, the network can benefit from a non-zero gradient for negative inputs and bounded output, mitigating the dying ReLU problem and maintaining robustness to noise.
+- **Action:** Implemented an ELU Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of ELU.
+- **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.

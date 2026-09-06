@@ -1974,3 +1974,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Leaky ReLU Activation
 **Script:** `train_leaky_relu_component.py`
 **Description:** Evaluates a Leaky ReLU Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a non-zero gradient for negative inputs.
+
+## Component Testing: ELU Activation
+**Script:** train_elu_component.py
+**Description:** Evaluates an ELU Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a smooth, non-monotonic gradient flow.
