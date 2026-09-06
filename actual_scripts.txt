@@ -173,6 +173,7 @@ train_mds_component.py
 train_mean_shift_component.py
 train_medium_scale_model_component.py
 train_memory_network_component
+train_mish_component.py
 train_mlpmixer_component
 train_moe_component
 train_multihead_attention_component
