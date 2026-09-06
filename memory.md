@@ -1275,3 +1275,8 @@ Implemented Highway Network, demonstrating depth routing and gating mechanisms.
 - **Action:** Implemented a Softplus Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Softplus.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
+### Experiment 0326: Leaky ReLU Activation Component
+- **Hypothesis:** By employing the Leaky ReLU activation function (x > 0 ? x : alpha * x), the network can benefit from a non-zero gradient for negative inputs, potentially mitigating the "dying ReLU" problem and accelerating convergence on non-linear tasks.
+- **Action:** Implemented a Leaky ReLU Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Leaky ReLU.
+- **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
