@@ -1962,3 +1962,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Swish Activation
 **Script:** `train_swish_component.py`
 **Description:** Evaluates a Swish Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a smooth, non-monotonic gradient flow.
+## Component Testing: Huber Regression
+
+**Script:** `train_huber_regression_component.py`
+**Description:** Evaluates a Huber Regression component mathematically in pure NumPy, testing its ability to perform robust linear regression by using a loss function that is quadratic for small errors and linear for large errors (outliers), mitigating the impact of anomalous data points.

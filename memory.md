@@ -1269,3 +1269,4 @@ Implemented Highway Network, demonstrating depth routing and gating mechanisms.
 - **Action:** Implemented a Swish Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Swish.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
+- Implemented `train_huber_regression_component.py` to demonstrate Huber Regression, effectively performing robust regression in the presence of outliers by using the Huber loss. Documented the process and updated the component tracking in README and todo.md.

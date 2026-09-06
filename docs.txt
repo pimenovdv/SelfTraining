@@ -296,3 +296,4 @@
 0321_train_cnf_component
 0322_train_highway_network_component
 0323_train_swish_component
+0324_train_huber_regression_component

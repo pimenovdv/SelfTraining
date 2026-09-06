@@ -118,6 +118,7 @@ train_hits_component
 train_hopfield_component
 train_hopfield_network_component
 train_hrl_component
+train_huber_regression_component
 train_hypernetwork_component
 train_ica_component
 train_icm_component
