@@ -1970,3 +1970,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Softplus Activation
 **Script:** `train_softplus_component.py`
 **Description:** Evaluates a Softplus Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a smooth gradient flow.
+
+## Component Testing: Leaky ReLU Activation
+**Script:** `train_leaky_relu_component.py`
+**Description:** Evaluates a Leaky ReLU Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by maintaining a non-zero gradient for negative inputs.
