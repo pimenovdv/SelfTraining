@@ -1270,3 +1270,8 @@ Implemented Highway Network, demonstrating depth routing and gating mechanisms.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Swish.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
 - Implemented `train_huber_regression_component.py` to demonstrate Huber Regression, effectively performing robust regression in the presence of outliers by using the Huber loss. Documented the process and updated the component tracking in README and todo.md.
+### Experiment 0325: Softplus Activation Component
+- **Hypothesis:** By employing the Softplus activation function (log(1 + exp(x))), the network can benefit from a smooth, non-monotonic gradient landscape, potentially accelerating convergence compared to standard ReLUs on non-linear tasks.
+- **Action:** Implemented a Softplus Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Softplus.
+- **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
