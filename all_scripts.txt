@@ -2,6 +2,7 @@ train_cnf_component
 train_cnn_component
 train_hierarchical_clustering_component
 train_highway_network_component
+train_huber_regression_component
 train_maxout_component
 train_oja_rule_component
 train_perceptron_component
