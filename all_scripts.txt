@@ -10,6 +10,7 @@ train_mish_component
 train_oja_rule_component
 train_perceptron_component
 train_poisson_regression_component
+train_prelu_component
 train_rbf_network_component
 train_softplus_component
 train_swish_component

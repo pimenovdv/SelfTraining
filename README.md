@@ -1982,3 +1982,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Mish
 **Script:** train_mish_component.py
 **Description:** Implemented the Mish activation function mathematically, a self-regularized non-monotonic activation function.
+
+## Component Testing: PReLU Activation
+**Script:** train_prelu_component.py
+**Description:** Evaluates a PReLU Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by learning the slope of the negative segment dynamically during training.
