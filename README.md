@@ -1986,3 +1986,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: PReLU Activation
 **Script:** train_prelu_component.py
 **Description:** Evaluates a PReLU Activation component mathematically in pure NumPy, testing its ability to model non-linear boundaries by learning the slope of the negative segment dynamically during training.
+
+## Component Testing: RMSprop Optimizer
+**Script:** train_rmsprop_component.py
+**Description:** Evaluates an RMSprop Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates based on a moving average of squared gradients to improve convergence speed and stability.

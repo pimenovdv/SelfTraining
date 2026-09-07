@@ -302,3 +302,4 @@
 0327_train_elu_component
 0328_train_mish_component
 0329_train_prelu_component
+0330_train_rmsprop_component

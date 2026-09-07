@@ -1291,3 +1291,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a PReLU Activation component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping and customized alpha values, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of PReLU.
 - **Next Steps:** Evaluate the activation on deeper networks or more complex reasoning tasks.
+### Experiment 0330: RMSprop Optimizer Component
+- **Hypothesis:** By employing the RMSprop optimizer, the network can adaptively scale learning rates for each parameter based on a moving average of recent squared gradients, improving convergence over standard SGD.
+- **Action:** Implemented an RMSprop Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Mean Squared Error loss and accurately predicting the target labels, validating the mathematical mechanism of RMSprop.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
