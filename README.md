@@ -1994,3 +1994,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Adagrad Optimizer
 **Script:** `train_adagrad_component.py`
 **Description:** Evaluates an Adagrad Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates based on accumulated squared gradients.
+
+## Component Testing: Adam Optimizer
+**Script:** train_adam_component.py
+**Description:** By employing the Adam optimizer, the network can adaptively scale learning rates for each parameter based on both a moving average of recent squared gradients and historical gradients, improving convergence over standard SGD. Implemented an Adam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.

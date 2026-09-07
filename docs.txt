@@ -304,3 +304,4 @@
 0329_train_prelu_component
 0330_train_rmsprop_component
 0331_train_adagrad_component
+0332_train_adam_component
