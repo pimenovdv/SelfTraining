@@ -1296,3 +1296,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an RMSprop Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Mean Squared Error loss and accurately predicting the target labels, validating the mathematical mechanism of RMSprop.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0331: Adagrad Optimizer Component
+- **Hypothesis:** By employing the Adagrad optimizer, the network can adaptively scale learning rates for each parameter based on historical gradients, effectively reducing the learning rate for frequently occurring features.
+- **Action:** Implemented an Adagrad Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, validating the mathematical mechanism of Adagrad.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sparse datasets.
