@@ -1,4 +1,5 @@
 train_adagrad_component
+train_adam_component
 train_cnf_component
 train_cnn_component
 train_elu_component
