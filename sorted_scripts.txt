@@ -185,6 +185,7 @@ train_nade_component
 train_naive_bayes_component
 train_nalu_component
 train_nca_component
+train_nce_component
 train_ncf_component
 train_neat_component
 train_nerf_component

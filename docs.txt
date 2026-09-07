@@ -306,3 +306,4 @@
 0331_train_adagrad_component
 0332_train_adam_component
 0333_train_adadelta_component
+0334_train_nce_component
