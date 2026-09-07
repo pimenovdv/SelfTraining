@@ -302,3 +302,4 @@ docs/0326_train_leaky_relu_component.md
 docs/0327_train_elu_component.md
 docs/0328_train_mish_component.md
 docs/0329_train_prelu_component.md
+docs/0330_train_rmsprop_component.md
