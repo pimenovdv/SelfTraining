@@ -305,3 +305,4 @@ docs/0329_train_prelu_component.md
 docs/0330_train_rmsprop_component.md
 docs/0331_train_adagrad_component.md
 docs/0332_train_adam_component.md
+docs/0333_train_adadelta_component.md

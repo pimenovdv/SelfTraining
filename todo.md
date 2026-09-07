@@ -297,3 +297,4 @@
 - [x] Implement and verify train_rmsprop_component.py
 - [x] Implement and verify train_adagrad_component.py
 - [x] Implement and verify train_adam_component.py
+- [x] Implement and verify train_adadelta_component.py

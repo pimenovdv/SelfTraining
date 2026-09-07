@@ -10,6 +10,7 @@ train_aco_component
 train_act_component
 train_actor_critic_component
 train_adaboost_component
+train_adadelta_component
 train_adagrad_component
 train_adaln_component
 train_adam_component
