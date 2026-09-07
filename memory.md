@@ -1302,3 +1302,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned the XOR mapping, validating the mathematical mechanism of Adagrad.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sparse datasets.
 - Implemented and verified `train_adam_component.py`
+### Experiment 0333: Adadelta Optimizer Component
+- **Hypothesis:** By employing the Adadelta optimizer, the network can adaptively scale learning rates without requiring a manual base learning rate, using moving averages of both squared gradients and squared parameter updates.
+- **Action:** Implemented an Adadelta Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adadelta.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
