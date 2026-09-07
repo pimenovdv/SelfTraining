@@ -10,6 +10,7 @@ train_huber_regression_component.py
 train_leaky_relu_component.py
 train_maxout_component.py
 train_mish_component.py
+train_nce_component.py
 train_oja_rule_component.py
 train_perceptron_component.py
 train_poisson_regression_component.py

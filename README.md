@@ -2002,3 +2002,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Adadelta Optimizer
 **Script:** `train_adadelta_component.py`
 **Description:** Evaluates an Adadelta Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates without a predefined global learning rate by tracking both gradients and updates.
+
+## Component Testing: Noise Contrastive Estimation
+**Script:** `train_nce_component.py`
+**Description:** Evaluates a Noise Contrastive Estimation (NCE) component mathematically in PyTorch, testing its ability to efficiently learn representations by contrasting target instances against noise samples without computing the full softmax.

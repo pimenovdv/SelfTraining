@@ -1307,3 +1307,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Adadelta Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adadelta.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0334: Noise Contrastive Estimation (NCE) Component
+- **Hypothesis:** By employing Noise Contrastive Estimation, the network can efficiently learn word embeddings by training a binary classifier to discriminate between true context words and randomly sampled noise words, avoiding the computation of the full softmax denominator.
+- **Action:** Implemented an NCE component mathematically in PyTorch, training an embedding layer by contrasting target instances against noise samples.
+- **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
+- **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.

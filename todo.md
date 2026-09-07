@@ -298,3 +298,4 @@
 - [x] Implement and verify train_adagrad_component.py
 - [x] Implement and verify train_adam_component.py
 - [x] Implement and verify train_adadelta_component.py
+- [x] Explore Noise Contrastive Estimation (NCE) mathematically. (Implemented and verified NCE for learning embeddings).
