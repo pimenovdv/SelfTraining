@@ -293,3 +293,4 @@
 - [x] Implement and verify `train_leaky_relu_component.py`
 - [x] Implement and verify train_elu_component.py
 - [x] Implement and verify train_mish_component.py
+- [x] Implement and verify train_prelu_component.py
