@@ -1313,3 +1313,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
 - Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.
+### Experiment 0336: UMAP Component
+- **Hypothesis:** By computing a local fuzzy simplicial set and optimizing the cross-entropy of low-dimensional representations using gradient descent, the network can perform non-linear dimensionality reduction.
+- **Action:** Implemented a UMAP component mathematically in pure NumPy, applying a mathematical UMAP component to synthetic clustered points.
+- **Outcome:** The implementation successfully reduced the dimensionality, validating the mathematical mechanism of UMAP.
+- **Next Steps:** Evaluate the dimensionality reduction on larger datasets.

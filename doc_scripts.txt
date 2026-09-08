@@ -20,3 +20,4 @@ train_rbf_network_component.py
 train_rmsprop_component.py
 train_softplus_component.py
 train_swish_component.py
+train_umap_component.py

@@ -279,6 +279,7 @@ train_transformer_block_component
 train_tsetlin_machine_component.py
 train_tsne_component
 train_tucker_decomposition_component.py
+train_umap_component.py
 train_upper_confidence_bound_component.py
 train_vae_component
 train_value_iter_component.py

@@ -2010,3 +2010,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Layer Normalization
 **Script:** `train_layer_norm_component.py`
 **Description:** Evaluates a Layer Normalization component mathematically in PyTorch, testing its ability to standardize activations independently for each sample, which stabilizes learning across varied sequence lengths or mini-batch sizes.
+## Component Testing: UMAP
+
+**Script:** `train_umap_component.py`
+**Description:** Evaluates a Uniform Manifold Approximation and Projection (UMAP) component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by computing a local fuzzy simplicial set and optimizing the cross-entropy of low-dimensional representations using gradient descent.

@@ -300,3 +300,4 @@
 - [x] Implement and verify train_adadelta_component.py
 - [x] Explore Noise Contrastive Estimation (NCE) mathematically. (Implemented and verified NCE for learning embeddings).
 - [x] Explore Layer Normalization mathematically. (Implemented and verified Layer Normalization).
+- [x] Experiment 0336: UMAP dimensionality reduction component.

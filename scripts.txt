@@ -278,6 +278,7 @@ train_transformer_block_component
 train_tsetlin_machine_component
 train_tsne_component
 train_tucker_decomposition_component
+train_umap_component
 train_upper_confidence_bound_component
 train_vae_component
 train_value_iter_component
