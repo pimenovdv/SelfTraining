@@ -2006,3 +2006,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Noise Contrastive Estimation
 **Script:** `train_nce_component.py`
 **Description:** Evaluates a Noise Contrastive Estimation (NCE) component mathematically in PyTorch, testing its ability to efficiently learn representations by contrasting target instances against noise samples without computing the full softmax.
+
+## Component Testing: Layer Normalization
+**Script:** `train_layer_norm_component.py`
+**Description:** Evaluates a Layer Normalization component mathematically in PyTorch, testing its ability to standardize activations independently for each sample, which stabilizes learning across varied sequence lengths or mini-batch sizes.
