@@ -1312,3 +1312,4 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an NCE component mathematically in PyTorch, training an embedding layer by contrasting target instances against noise samples.
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
+- Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.

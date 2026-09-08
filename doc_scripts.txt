@@ -7,6 +7,7 @@ train_elu_component.py
 train_hierarchical_clustering_component.py
 train_highway_network_component.py
 train_huber_regression_component.py
+train_layer_norm_component.py
 train_leaky_relu_component.py
 train_maxout_component.py
 train_mish_component.py
