@@ -2010,3 +2010,11 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Layer Normalization
 **Script:** `train_layer_norm_component.py`
 **Description:** Evaluates a Layer Normalization component mathematically in PyTorch, testing its ability to standardize activations independently for each sample, which stabilizes learning across varied sequence lengths or mini-batch sizes.
+
+## Component Testing: Nadam Optimizer
+**Script:** `train_nadam_component.py`
+**Description:** Evaluates a Nadam Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates based on Nesterov momentum and accumulated squared gradients.
+
+## Component Testing: Adamax Optimizer
+**Script:** `train_adamax_component.py`
+**Description:** Evaluates an Adamax Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates based on the infinity norm of past gradients.

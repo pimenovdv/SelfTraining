@@ -1313,3 +1313,13 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
 - Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.
+### Experiment 0336: Nadam Optimizer Component
+- **Hypothesis:** By employing the Nadam optimizer, the network can adaptively scale learning rates for each parameter based on both a moving average of recent squared gradients and historical gradients with Nesterov momentum, improving convergence over standard SGD.
+- **Action:** Implemented a Nadam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Nadam.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0337: Adamax Optimizer Component
+- **Hypothesis:** By employing the Adamax optimizer, the network can adaptively scale learning rates for each parameter based on both a moving average of recent gradients and the infinity norm of historical gradients, improving convergence over standard SGD.
+- **Action:** Implemented an Adamax Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adamax.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.

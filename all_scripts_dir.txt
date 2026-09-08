@@ -10,6 +10,7 @@
 ./train_adadelta_component.py
 ./train_adagrad_component.py
 ./train_adam_component.py
+./train_adamax_component.py
 ./train_affinity_propagation_component.py
 ./train_agglomerative_clustering_component.py
 ./train_agi_asi_component.py
@@ -93,6 +94,7 @@
 ./train_medium_scale_model_component.py
 ./train_mish_component.py
 ./train_multimodal_component.py
+./train_nadam_component.py
 ./train_nce_component.py
 ./train_ncf_component.py
 ./train_neat_component.py

@@ -14,6 +14,7 @@ train_adadelta_component.py
 train_adagrad_component.py
 train_adaln_component
 train_adam_component.py
+train_adamax_component.py
 train_adamw_component
 train_affinity_propagation_component.py
 train_agglomerative_clustering_component.py
@@ -183,6 +184,7 @@ train_moe_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component.py
+train_nadam_component.py
 train_nade_component
 train_naive_bayes_component
 train_nalu_component

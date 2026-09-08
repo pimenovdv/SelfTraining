@@ -14,6 +14,7 @@ train_adadelta_component
 train_adagrad_component
 train_adaln_component
 train_adam_component
+train_adamax_component
 train_adamw_component
 train_affinity_propagation_component
 train_agglomerative_clustering_component
@@ -182,6 +183,7 @@ train_moe_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component
+train_nadam_component
 train_nade_component
 train_naive_bayes_component
 train_nalu_component
