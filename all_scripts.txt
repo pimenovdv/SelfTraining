@@ -7,6 +7,7 @@ train_elu_component
 train_hierarchical_clustering_component
 train_highway_network_component
 train_huber_regression_component
+train_instance_norm_component
 train_layer_norm_component
 train_leaky_relu_component
 train_maxout_component

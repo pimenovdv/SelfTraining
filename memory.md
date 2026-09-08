@@ -1313,3 +1313,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
 - Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.
+### Experiment 0336: Instance Normalization Component
+- **Hypothesis:** By employing Instance Normalization, the network can standardise each activation map for each instance and channel, making it robust against contrast differences and suitable for tasks like style transfer.
+- **Action:** Implemented an Instance Normalization component mathematically in pure NumPy, simulating standardisation across spatial dimensions.
+- **Outcome:** The implementation correctly normalised standard deviation to 1 and mean to 0 per instance and channel, validating the mathematical mechanism of Instance Normalization.
+- **Next Steps:** Evaluate the component in generative tasks.
