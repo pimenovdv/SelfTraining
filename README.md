@@ -2014,3 +2014,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Instance Normalization
 **Script:** `train_instance_norm_component.py`
 **Description:** Implemented Instance Normalization, which performs normalization on each channel in each training example, rather than over the batch. This approach is highly effective in generative tasks like style transfer. The test confirms correct per-channel and per-instance zero-mean, unit-variance properties.
+
+## Component Testing: Adamax Optimizer Component
+**Script:** train_adamax_component.py
+**Description:** Implemented an Adamax Optimizer component mathematically in pure NumPy.

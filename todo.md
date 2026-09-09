@@ -301,3 +301,4 @@
 - [x] Explore Noise Contrastive Estimation (NCE) mathematically. (Implemented and verified NCE for learning embeddings).
 - [x] Explore Layer Normalization mathematically. (Implemented and verified Layer Normalization).
 - [x] Explore Instance Normalization mathematically. (Implemented and verified Instance Normalization).
+- [x] Implement and verify train_adamax_component.py
