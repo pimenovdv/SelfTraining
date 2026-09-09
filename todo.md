@@ -300,5 +300,6 @@
 - [x] Implement and verify train_adadelta_component.py
 - [x] Explore Noise Contrastive Estimation (NCE) mathematically. (Implemented and verified NCE for learning embeddings).
 - [x] Explore Layer Normalization mathematically. (Implemented and verified Layer Normalization).
+- [x] Implement and verify train_adamax_component.py
 - [x] Explore Local Response Normalization mathematically. (Implemented and verified Local Response Normalization - LRN).
 - [x] Explore Instance Normalization mathematically. (Implemented and verified Instance Normalization).

@@ -310,3 +310,4 @@
 0335_train_layer_norm_component
 0336_train_lrn_component
 0337_train_instance_norm_component
+0338_train_adamax_component
