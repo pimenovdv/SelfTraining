@@ -1313,8 +1313,15 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
 - Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.
+
 ### Experiment 0336: Lion Optimizer Component
 - **Hypothesis:** By employing the Lion optimizer, the network can be optimized efficiently utilizing EvoLved Sign Momentum.
 - **Action:** Implemented a Lion Optimizer component mathematically in PyTorch, training a linear model on a synthetic regression dataset.
 - **Outcome:** The implementation successfully learned the regression mapping, minimizing the loss, validating the mathematical mechanism of Lion.
+
+### Experiment 0337: Adamax Optimizer Component
+- **Hypothesis:** By employing the Adamax optimizer, a variant of Adam based on the infinity norm, the network can achieve stable parameter updates, particularly useful for sparse updates and models with embeddings.
+- **Action:** Implemented an Adamax Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adamax.
+
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
