@@ -263,6 +263,7 @@
 
 - [x] Implement and verify train_fourier_neural_operator_component.py
 - [x] Explore non-linear regression using piecewise polynomials mathematically. (Implemented and verified Spline Regression using cubic basis functions).
+- [x] Explore non-linear relationships using polynomial expansion mathematically. (Implemented and verified Polynomial Regression).
 
 - [x] Implement and test Singular Value Decomposition (SVD) component.
 
