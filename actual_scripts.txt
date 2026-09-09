@@ -211,6 +211,7 @@ train_pls_component.py
 train_pointer_network_component
 train_poisson_regression_component.py
 train_policy_iteration_component.py
+train_polynomial_regression_component.py
 train_positional_encoding_component
 train_ppo_component
 train_prelu_component.py

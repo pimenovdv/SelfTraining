@@ -2017,3 +2017,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Quantile Regression
 **Script:** `train_quantile_regression_component.py`
 **Description:** Evaluates a Quantile Regression component mathematically in pure NumPy, testing its ability to estimate the conditional quantiles of a response variable using the pinball loss.
+## Component Testing: Polynomial Regression
+
+**Script:** `train_polynomial_regression_component.py`
+**Description:** Evaluates a Polynomial Regression component mathematically in pure NumPy, testing its ability to model non-linear relationships by applying a linear regression algorithm to a polynomial expansion of the input features.

@@ -618,6 +618,12 @@
 
 * **Experiment `0081_train_fnet_component` (Success):** Implemented and evaluated an FNet block component using pure NumPy. Successfully learned sequence relationships by replacing self-attention with a parameter-free 2D Fourier Transform for mixing over sequence and hidden dimensions.
 
+### Experiment 0338: Polynomial Regression Component
+- **Hypothesis:** By employing a polynomial expansion of the input features, a linear regression model can effectively learn non-linear relationships in data using the standard gradient descent update rules on the expanded feature space.
+- **Action:** Implemented Polynomial Regression in `train_polynomial_regression_component.py` mathematically in pure NumPy, using a feature expansion up to degree 2 and optimizing weights using gradient descent on the Mean Squared Error loss.
+- **Outcome:** The implementation successfully fit a noisy synthetic quadratic function, minimizing the MSE and accurately approximating the true weights of the polynomial.
+- **Next Steps:** Evaluate higher degree polynomials and explore the trade-off between bias and variance, potentially introducing regularization to prevent overfitting on higher degrees.
+
 ## Open Questions & Hypotheses
 
 1. *(e.g., "Does scaling the depth of the network linearly correlate with reasoning capability on dataset Y?")*
