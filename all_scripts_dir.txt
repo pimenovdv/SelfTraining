@@ -6,6 +6,7 @@
 ./test_mcts.py
 ./test_nca.py
 ./train_a2c_component.py
+./train_a3c_component.py
 ./train_aco_component.py
 ./train_adadelta_component.py
 ./train_adagrad_component.py

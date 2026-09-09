@@ -1313,3 +1313,6 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to differentiate targets from noise, minimizing the negative log likelihood, validating the mathematical mechanism of NCE.
 - **Next Steps:** Evaluate NCE on larger vocabularies or sequence modeling tasks.
 - Implemented `train_layer_norm_component.py` to demonstrate Layer Normalization, stabilizing network training by standardizing activations across features. Documented the process and updated the component tracking in README and todo.md.
+
+## A3C Component
+Implemented an Asynchronous Advantage Actor-Critic (A3C) component (`train_a3c_component.py`) that uses a shared base network to independently calculate actor policy logits and critic state values. Tested with synthetic state data to verify tensor dimensions. The automated pipeline successfully documented it in `docs/0336_train_a3c_component.md`.
