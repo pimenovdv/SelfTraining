@@ -14,6 +14,7 @@ train_adadelta_component
 train_adagrad_component
 train_adaln_component
 train_adam_component
+train_adamax_component
 train_adamw_component
 train_affinity_propagation_component
 train_agglomerative_clustering_component
