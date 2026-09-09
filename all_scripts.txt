@@ -9,6 +9,7 @@ train_highway_network_component
 train_huber_regression_component
 train_layer_norm_component
 train_leaky_relu_component
+train_lion_optimizer_component
 train_maxout_component
 train_mish_component
 train_nce_component

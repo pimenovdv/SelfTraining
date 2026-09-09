@@ -2010,3 +2010,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Layer Normalization
 **Script:** `train_layer_norm_component.py`
 **Description:** Evaluates a Layer Normalization component mathematically in PyTorch, testing its ability to standardize activations independently for each sample, which stabilizes learning across varied sequence lengths or mini-batch sizes.
+
+## Component Testing: Lion Optimizer
+**Script:** `train_lion_optimizer_component.py`
+**Description:** Evaluates a Lion Optimizer component mathematically in PyTorch, testing its ability to optimize using EvoLved Sign Momentum.
