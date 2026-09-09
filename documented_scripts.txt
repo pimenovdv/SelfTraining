@@ -20,6 +20,7 @@ train_agglomerative_clustering_component.py
 train_agi_asi_component.py
 train_alibi_component
 train_attention_component
+train_autoencoder_component.py
 train_barlow_twins_component
 train_batchnorm_component
 train_bayesian_linear_regression_component.py

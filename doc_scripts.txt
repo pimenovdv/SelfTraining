@@ -1,6 +1,7 @@
 train_adadelta_component.py
 train_adagrad_component.py
 train_adam_component.py
+train_autoencoder_component.py
 train_cnf_component.py
 train_cnn_component.py
 train_elu_component.py
