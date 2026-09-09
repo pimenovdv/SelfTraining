@@ -2014,3 +2014,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Autoencoder
 **Script:** `train_autoencoder_component.py`
 **Description:** Evaluates a standard Autoencoder component mathematically in pure NumPy, testing its ability to learn a lower-dimensional representation of synthetic data and reconstruct the original input via an encoder-decoder architecture.
+## Component Testing: Adamax Optimizer Component
+**Script:** train_adamax_component.py
+**Description:** Implemented an Adamax Optimizer component mathematically in pure NumPy.

@@ -302,3 +302,4 @@
 - [x] Explore Layer Normalization mathematically. (Implemented and verified Layer Normalization).
 
 - [x] Explore unsupervised representation learning mathematically. (Implemented and verified Autoencoder for dimensionality reduction and reconstruction).
+- [x] Implement and verify train_adamax_component.py
