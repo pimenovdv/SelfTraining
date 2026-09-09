@@ -309,3 +309,4 @@
 0334_train_nce_component
 0335_train_layer_norm_component
 0336_train_adamax_component
+0337_train_quantile_regression_component
