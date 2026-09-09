@@ -61,6 +61,7 @@
 ./train_hopfield_network_component.py
 ./train_hrl_component.py
 ./train_huber_regression_component.py
+./train_instance_norm_component.py
 ./train_isolation_forest_component.py
 ./train_isomap_component.py
 ./train_kde_component.py
@@ -81,6 +82,7 @@
 ./train_local_outlier_factor_component.py
 ./train_logistic_regression_component.py
 ./train_lpp_component.py
+./train_lrn_component.py
 ./train_lsa_component.py
 ./train_lsh_component.py
 ./train_lvq_component.py

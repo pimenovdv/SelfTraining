@@ -127,6 +127,7 @@ train_huber_regression_component.py
 train_hypernetwork_component
 train_ica_component
 train_icm_component
+train_instance_norm_component.py
 train_isolation_forest_component.py
 train_isomap_component.py
 train_jepa_component
@@ -159,6 +160,7 @@ train_logistic_regression_component.py
 train_lora_component
 train_lottery_ticket_component
 train_lpp_component.py
+train_lrn_component.py
 train_lsa_component.py
 train_lsh_component.py
 train_lstm_component
