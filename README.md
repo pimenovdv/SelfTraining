@@ -2011,6 +2011,10 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 **Script:** `train_layer_norm_component.py`
 **Description:** Evaluates a Layer Normalization component mathematically in PyTorch, testing its ability to standardize activations independently for each sample, which stabilizes learning across varied sequence lengths or mini-batch sizes.
 
+## Component Testing: Adamax Optimizer Component
+**Script:** train_adamax_component.py
+**Description:** Implemented an Adamax Optimizer component mathematically in pure NumPy.
+
 ## Component Testing: Asynchronous Advantage Actor-Critic (A3C)
 **Script:** `train_a3c_component.py`
 **Description:** Evaluates an Asynchronous Advantage Actor-Critic (A3C) component mathematically in PyTorch, testing a basic actor-critic network outputting policy logits and value predictions given an input state.

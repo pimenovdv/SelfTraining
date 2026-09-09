@@ -308,4 +308,5 @@ docs/0332_train_adam_component.md
 docs/0333_train_adadelta_component.md
 docs/0334_train_nce_component.md
 docs/0335_train_layer_norm_component.md
-docs/0336_train_a3c_component.md
+docs/0336_train_adamax_component.md
+docs/0337_train_a3c_component.md
