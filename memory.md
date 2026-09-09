@@ -1318,3 +1318,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Adamax Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adamax.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0337: Quantile Regression Component
+- **Hypothesis:** By employing Quantile Regression with the pinball loss, the network can estimate conditional quantiles of the response variable, providing a more comprehensive view of the relationship between variables than mean regression, especially under heteroscedasticity.
+- **Action:** Implemented a Quantile Regression component mathematically in pure NumPy, training a linear model on synthetic data with heteroscedastic noise.
+- **Outcome:** The implementation successfully learned to estimate the 90th percentile, minimizing the pinball loss, validating the mathematical mechanism of Quantile Regression.
+- **Next Steps:** Evaluate the model on non-linear datasets or deep neural networks.

@@ -111,6 +111,7 @@
 ./train_prelu_component.py
 ./train_probabilistic_pca_component.py
 ./train_qda_component.py
+./train_quantile_regression_component.py
 ./train_random_forest_component.py
 ./train_random_forest_regression_component.py
 ./train_rbf_network_component.py
