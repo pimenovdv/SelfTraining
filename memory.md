@@ -1335,3 +1335,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Nadam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Mean Squared Error loss and accurately predicting the target labels, validating the mathematical mechanism of Nadam.
 - **Next Steps:** Evaluate the optimizer on deeper networks or more complex reasoning tasks.
+### Experiment 0343: Label Smoothing Component
+- **Hypothesis:** By applying Label Smoothing, replacing one-hot target labels with a uniform distribution over all labels multiplied by a smoothing factor, the network can be prevented from becoming overconfident, which acts as a form of regularization and improves generalization.
+- **Action:** Implemented a Label Smoothing component mathematically in pure NumPy, training a linear model on synthetic data using cross-entropy loss with soft targets and manual backpropagation.
+- **Outcome:** The implementation successfully learned to minimize the loss while keeping predictions softer compared to standard cross-entropy, validating the mathematical mechanism of Label Smoothing.
+- **Next Steps:** Evaluate the technique in conjunction with more complex architectures such as Transformers.

@@ -304,3 +304,4 @@
 - [x] Implement and verify train_adamax_component.py
 - [x] Implement and verify train_quantile_regression_component.py
 - [x] Implement and verify train_nadam_component.py
+- [x] Explore regularization mathematically. (Implemented and verified Label Smoothing preventing overconfidence via soft target distributions).

@@ -2028,3 +2028,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Nadam Optimizer
 **Script:** `train_nadam_component.py`
 **Description:** Evaluates a Nadam Optimizer component mathematically in pure NumPy, testing its ability to improve convergence speed and reliability by combining Adam's adaptive learning rates with Nesterov accelerated momentum.
+
+## Component Testing: Label Smoothing
+**Script:** `train_label_smoothing_component.py`
+**Description:** Evaluates a Label Smoothing component mathematically in pure NumPy, testing its ability to prevent overconfidence and improve generalization by replacing hard one-hot target labels with soft targets distributed across all classes, optimizing via cross-entropy and manual backpropagation.
