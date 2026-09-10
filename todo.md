@@ -303,3 +303,4 @@
 - [x] Explore Layer Normalization mathematically. (Implemented and verified Layer Normalization).
 - [x] Implement and verify train_adamax_component.py
 - [x] Implement and verify train_quantile_regression_component.py
+- [x] Implement and verify train_nadam_component.py

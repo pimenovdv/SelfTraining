@@ -96,6 +96,7 @@
 ./train_mish_component.py
 ./train_momentum_component.py
 ./train_multimodal_component.py
+./train_nadam_component.py
 ./train_nce_component.py
 ./train_ncf_component.py
 ./train_neat_component.py

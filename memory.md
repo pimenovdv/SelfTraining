@@ -1330,3 +1330,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Outcome:** The implementation successfully learned to estimate the 90th percentile, minimizing the pinball loss, validating the mathematical mechanism of Quantile Regression.
 - **Next Steps:** Evaluate the model on non-linear datasets or deep neural networks.
 * *(Date: Current)* - Successfully implemented and tested a Temporal Difference (TD(0)) Learning component mathematically in pure NumPy. Confirmed that updating state value estimates iteratively towards the sum of observed reward and discounted next state value successfully converges to true expected returns on a Random Walk task, validating the bootstrapping mechanism.
+### Experiment 0342: Nadam Optimizer Component
+- **Hypothesis:** By employing the Nadam optimizer (Adam with Nesterov momentum), the network can benefit from Adam's adaptive learning rates alongside Nesterov's lookahead momentum, which can lead to faster and more reliable convergence than standard Adam.
+- **Action:** Implemented a Nadam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Mean Squared Error loss and accurately predicting the target labels, validating the mathematical mechanism of Nadam.
+- **Next Steps:** Evaluate the optimizer on deeper networks or more complex reasoning tasks.
