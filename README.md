@@ -2021,3 +2021,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 **Script:** `train_polynomial_regression_component.py`
 **Description:** Evaluates a Polynomial Regression component mathematically in pure NumPy, testing its ability to model non-linear relationships by applying a linear regression algorithm to a polynomial expansion of the input features.
+
+## Component Testing: Momentum Optimizer
+**Script:** `train_momentum_component.py`
+**Description:** Evaluates a Momentum Optimizer component mathematically in pure NumPy, testing its ability to accelerate gradient descent in the relevant direction and dampen oscillations.

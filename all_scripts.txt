@@ -13,6 +13,7 @@ train_leaky_relu_component
 train_liquid_state_machine_component
 train_maxout_component
 train_mish_component
+train_momentum_component
 train_nce_component
 train_oja_rule_component
 train_perceptron_component
