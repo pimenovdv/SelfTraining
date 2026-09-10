@@ -1340,3 +1340,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Label Smoothing component mathematically in pure NumPy, training a linear model on synthetic data using cross-entropy loss with soft targets and manual backpropagation.
 - **Outcome:** The implementation successfully learned to minimize the loss while keeping predictions softer compared to standard cross-entropy, validating the mathematical mechanism of Label Smoothing.
 - **Next Steps:** Evaluate the technique in conjunction with more complex architectures such as Transformers.
+### Experiment 0344: Dynamic Mode Decomposition (DMD) Component
+- **Hypothesis:** By employing Dynamic Mode Decomposition, complex non-linear dynamical systems can be approximated by reduced-order linear models, successfully isolating spatio-temporal features and associated eigenfrequencies.
+- **Action:** Implemented a Dynamic Mode Decomposition (DMD) component mathematically in pure NumPy, evaluating it on synthetically generated spatio-temporal wave dynamics data.
+- **Outcome:** The implementation successfully captured the inherent dynamics of the data, isolating the correct continuous-time eigenfrequencies (imaginary parts close to 2 and 3) from the time-shifted data matrices, validating the mathematical mechanism of DMD.
+- **Next Steps:** Evaluate DMD for dimensionality reduction and predictive modeling on more complex or fluid dynamics datasets.

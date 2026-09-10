@@ -4,6 +4,7 @@ train_adam_component
 train_adamax_component
 train_cnf_component
 train_cnn_component
+train_dmd_component
 train_elu_component
 train_hierarchical_clustering_component
 train_highway_network_component

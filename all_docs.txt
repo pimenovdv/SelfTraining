@@ -316,3 +316,4 @@ docs/0340_train_momentum_component.md
 docs/0341_train_td_learning_component.md
 docs/0342_train_nadam_component.md
 docs/0343_train_label_smoothing_component.md
+docs/0344_train_dmd_component.md
