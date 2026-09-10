@@ -2025,3 +2025,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Momentum Optimizer
 **Script:** `train_momentum_component.py`
 **Description:** Evaluates a Momentum Optimizer component mathematically in pure NumPy, testing its ability to accelerate gradient descent in the relevant direction and dampen oscillations.
+## Component Testing: Nadam Optimizer
+**Script:** `train_nadam_component.py`
+**Description:** Evaluates a Nadam Optimizer component mathematically in pure NumPy, testing its ability to improve convergence speed and reliability by combining Adam's adaptive learning rates with Nesterov accelerated momentum.
