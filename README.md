@@ -2032,3 +2032,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Label Smoothing
 **Script:** `train_label_smoothing_component.py`
 **Description:** Evaluates a Label Smoothing component mathematically in pure NumPy, testing its ability to prevent overconfidence and improve generalization by replacing hard one-hot target labels with soft targets distributed across all classes, optimizing via cross-entropy and manual backpropagation.
+
+## Component Testing: Dynamic Mode Decomposition
+**Script:** `train_dmd_component.py`
+**Description:** Evaluates a Dynamic Mode Decomposition (DMD) component mathematically in pure NumPy, testing its ability to model underlying dynamics by decomposing spatio-temporal data into dynamic modes and identifying primary continuous-time eigenfrequencies from state transitions.

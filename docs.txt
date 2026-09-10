@@ -316,3 +316,4 @@
 0341_train_td_learning_component
 0342_train_nadam_component
 0343_train_label_smoothing_component
+0344_train_dmd_component
