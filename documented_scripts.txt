@@ -182,6 +182,7 @@ train_memory_network_component
 train_mish_component.py
 train_mlpmixer_component
 train_moe_component
+train_momentum_component.py
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component.py

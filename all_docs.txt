@@ -312,3 +312,4 @@ docs/0336_train_adamax_component.md
 docs/0337_train_quantile_regression_component.md
 docs/0338_train_polynomial_regression_component.md
 docs/0339_train_liquid_state_machine_component.md
+docs/0340_train_momentum_component.md
