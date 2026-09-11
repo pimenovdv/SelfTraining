@@ -2044,3 +2044,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: BCM Rule (Bienenstock-Cooper-Munro)
 **Script:** `train_bcm_component.py`
 **Description:** Evaluates the BCM learning rule mathematically in pure NumPy, testing its ability to implement synaptic plasticity with a sliding threshold.
+
+## Component Testing: Nesterov Momentum Optimizer
+**Script:** `train_nesterov_momentum_component.py`
+**Description:** Evaluates a Nesterov Accelerated Gradient (NAG) Optimizer component mathematically in pure NumPy, testing its ability to accelerate convergence by computing gradients at a lookahead position based on the current momentum.
