@@ -318,3 +318,4 @@ docs/0342_train_nadam_component.md
 docs/0343_train_label_smoothing_component.md
 docs/0344_train_dmd_component.md
 docs/0345_train_trpo_component.md
+docs/0346_train_bcm_component.md

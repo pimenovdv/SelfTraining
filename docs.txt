@@ -318,3 +318,4 @@
 0343_train_label_smoothing_component
 0344_train_dmd_component
 0345_train_trpo_component
+0346_train_bcm_component
