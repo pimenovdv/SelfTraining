@@ -305,3 +305,4 @@
 - [x] Implement and verify train_quantile_regression_component.py
 - [x] Implement and verify train_nadam_component.py
 - [x] Explore regularization mathematically. (Implemented and verified Label Smoothing preventing overconfidence via soft target distributions).
+- [x] Explore Nesterov Accelerated Gradient mathematically. (Implemented and verified Nesterov Momentum Optimizer for lookahead momentum-based optimization).

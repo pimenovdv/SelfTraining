@@ -103,6 +103,7 @@
 ./train_nce_component.py
 ./train_ncf_component.py
 ./train_neat_component.py
+./train_nesterov_momentum_component.py
 ./train_neural_architecture_search_component.py
 ./train_oja_rule_component.py
 ./train_omp_component.py
