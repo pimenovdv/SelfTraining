@@ -2048,3 +2048,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Nesterov Momentum Optimizer
 **Script:** `train_nesterov_momentum_component.py`
 **Description:** Evaluates a Nesterov Accelerated Gradient (NAG) Optimizer component mathematically in pure NumPy, testing its ability to accelerate convergence by computing gradients at a lookahead position based on the current momentum.
+
+## Component Testing: AdaBelief Optimizer
+**Script:** `train_adabelief_component.py`
+**Description:** Evaluates an AdaBelief Optimizer component mathematically in pure NumPy, testing its ability to adapt learning rates according to the variance of the prediction error, leading to fast convergence like Adam but with better generalization.

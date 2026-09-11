@@ -1,3 +1,4 @@
+train_adabelief_component
 train_adadelta_component
 train_adagrad_component
 train_adam_component
