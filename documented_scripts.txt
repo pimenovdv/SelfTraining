@@ -285,6 +285,7 @@ train_td3_component
 train_td_learning_component.py
 train_thompson_sampling_component.py
 train_transformer_block_component
+train_trpo_component.py
 train_tsetlin_machine_component.py
 train_tsne_component.py
 train_tucker_decomposition_component.py

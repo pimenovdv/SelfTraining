@@ -2036,3 +2036,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Dynamic Mode Decomposition
 **Script:** `train_dmd_component.py`
 **Description:** Evaluates a Dynamic Mode Decomposition (DMD) component mathematically in pure NumPy, testing its ability to model underlying dynamics by decomposing spatio-temporal data into dynamic modes and identifying primary continuous-time eigenfrequencies from state transitions.
+
+## Component Testing: TRPO
+**Script:** `train_trpo_component.py`
+**Description:** Evaluates the mathematical core of Trust Region Policy Optimization (TRPO), specifically the conjugate gradient method for natural gradient descent and backtracking line search to satisfy a surrogate KL divergence constraint.
