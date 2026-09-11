@@ -1354,3 +1354,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an AdaBelief Optimizer component mathematically in pure NumPy, evaluating it on a simple quadratic optimization surface.
 - **Outcome:** Success. The optimizer quickly converged to the global minimum, confirming the mechanism of AdaBelief's variance adaptation.
 - **Next Steps:** Evaluate the optimizer on deeper networks or complex datasets.
+### Experiment 0349: Lion Optimizer Component
+- **Hypothesis:** By employing the Lion (EvoLved Sign Momentum) optimizer, the network can adaptively optimize weights using the sign of momentum, offering potentially better memory efficiency and performance than Adam on certain tasks.
+- **Action:** Implemented a Lion Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Lion.
+- **Next Steps:** Evaluate the optimizer on deeper networks or more complex reasoning tasks.

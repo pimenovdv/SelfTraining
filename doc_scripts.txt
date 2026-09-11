@@ -14,6 +14,7 @@ train_huber_regression_component.py
 train_label_smoothing_component.py
 train_layer_norm_component.py
 train_leaky_relu_component.py
+train_lion_component.py
 train_liquid_state_machine_component.py
 train_maxout_component.py
 train_mish_component.py

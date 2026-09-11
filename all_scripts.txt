@@ -14,6 +14,7 @@ train_huber_regression_component
 train_label_smoothing_component
 train_layer_norm_component
 train_leaky_relu_component
+train_lion_component
 train_liquid_state_machine_component
 train_maxout_component
 train_mish_component
