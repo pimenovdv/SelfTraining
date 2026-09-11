@@ -29,3 +29,4 @@ train_rmsprop_component.py
 train_softplus_component.py
 train_swish_component.py
 train_td_learning_component.py
+train_trpo_component.py
