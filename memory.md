@@ -1359,3 +1359,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Lion Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset using manual backpropagation.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the Binary Cross-Entropy loss and accurately predicting the target labels, validating the mathematical mechanism of Lion.
 - **Next Steps:** Evaluate the optimizer on deeper networks or more complex reasoning tasks.
+### Experiment 0350: RAdam Optimizer Component
+- **Hypothesis:** By employing the RAdam optimizer, the network can adaptively scale learning rates with a rectified variance term, avoiding bad local optima early in training while maintaining the benefits of Adam.
+- **Action:** Implemented a RAdam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of RAdam.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
