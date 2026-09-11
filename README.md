@@ -2040,3 +2040,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: TRPO
 **Script:** `train_trpo_component.py`
 **Description:** Evaluates the mathematical core of Trust Region Policy Optimization (TRPO), specifically the conjugate gradient method for natural gradient descent and backtracking line search to satisfy a surrogate KL divergence constraint.
+
+## Component Testing: BCM Rule (Bienenstock-Cooper-Munro)
+**Script:** `train_bcm_component.py`
+**Description:** Evaluates the BCM learning rule mathematically in pure NumPy, testing its ability to implement synaptic plasticity with a sliding threshold.
