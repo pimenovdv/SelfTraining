@@ -2052,3 +2052,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: AdaBelief Optimizer
 **Script:** `train_adabelief_component.py`
 **Description:** Evaluates an AdaBelief Optimizer component mathematically in pure NumPy, testing its ability to adapt learning rates according to the variance of the prediction error, leading to fast convergence like Adam but with better generalization.
+
+## Component Testing: Lion Optimizer
+**Script:** `train_lion_component.py`
+**Description:** Evaluates a Lion (EvoLved Sign Momentum) Optimizer component mathematically in pure NumPy, testing its ability to optimize a neural network by relying on the sign of the momentum, replacing Adam's magnitude-based updates for better memory efficiency.
