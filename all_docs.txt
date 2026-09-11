@@ -320,3 +320,4 @@ docs/0344_train_dmd_component.md
 docs/0345_train_trpo_component.md
 docs/0346_train_bcm_component.md
 docs/0347_train_nesterov_momentum_component.md
+docs/0348_train_adabelief_component.md

@@ -9,6 +9,7 @@ train_a2c_component.py
 train_aco_component.py
 train_act_component
 train_actor_critic_component
+train_adabelief_component.py
 train_adaboost_component.py
 train_adadelta_component.py
 train_adagrad_component.py
