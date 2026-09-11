@@ -2056,3 +2056,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Lion Optimizer
 **Script:** `train_lion_component.py`
 **Description:** Evaluates a Lion (EvoLved Sign Momentum) Optimizer component mathematically in pure NumPy, testing its ability to optimize a neural network by relying on the sign of the momentum, replacing Adam's magnitude-based updates for better memory efficiency.
+
+## Component Testing: RAdam Optimizer Component
+**Script:** `train_radam_component.py`
+**Description:** Evaluates a Rectified Adam (RAdam) Optimizer component mathematically in pure NumPy, testing its ability to dynamically rectify the variance of the adaptive learning rate, avoiding bad local optima early in training.
