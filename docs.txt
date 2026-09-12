@@ -324,3 +324,4 @@
 0349_train_lion_component
 0351_train_lamb_component
 0352_train_novograd_component
+0353_train_isotonic_regression_component

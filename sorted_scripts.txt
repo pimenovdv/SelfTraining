@@ -132,6 +132,7 @@ train_ica_component
 train_icm_component
 train_isolation_forest_component
 train_isomap_component
+train_isotonic_regression_component
 train_jepa_component
 train_kalman_filter_component
 train_kan_component
