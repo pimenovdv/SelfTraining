@@ -324,3 +324,4 @@ docs/0348_train_adabelief_component.md
 docs/0349_train_lion_component.md
 docs/0351_train_lamb_component.md
 docs/0352_train_novograd_component.md
+docs/0353_train_isotonic_regression_component.md

@@ -2060,3 +2060,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: RAdam Optimizer Component
 **Script:** `train_radam_component.py`
 **Description:** Evaluates a Rectified Adam (RAdam) Optimizer component mathematically in pure NumPy, testing its ability to dynamically rectify the variance of the adaptive learning rate, avoiding bad local optima early in training.
+
+## Component Testing: Isotonic Regression
+**Script:** `train_isotonic_regression_component.py`
+**Description:** Evaluates an Isotonic Regression component mathematically in pure NumPy, testing its ability to fit a non-decreasing piecewise constant function to data using the Pool Adjacent Violators Algorithm (PAVA).

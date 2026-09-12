@@ -309,3 +309,4 @@
 - [x] Implement and test AdaBelief Optimizer component.
 - [x] Implement and test Lion Optimizer component.
 - [x] Implement and test RAdam Optimizer component.
+- [x] Implement and test Isotonic Regression component.
