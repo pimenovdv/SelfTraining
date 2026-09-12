@@ -48,6 +48,7 @@
 ./train_factorization_machine_component.py
 ./train_fasttext_component.py
 ./train_fno_component.py
+./train_focal_loss_component.py
 ./train_fourier_neural_operator_component.py
 ./train_fuzzy_c_means_component.py
 ./train_gae_component.py

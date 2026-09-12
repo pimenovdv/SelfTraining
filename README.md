@@ -2072,3 +2072,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Adafactor Optimizer
 **Script:** `train_adafactor_component.py`
 **Description:** Evaluates an Adafactor Optimizer component mathematically in pure NumPy, testing its ability to reduce memory usage by maintaining factored representations of squared gradients.
+
+## Component Testing: Focal Loss
+**Script:** `train_focal_loss_component.py`
+**Description:** Evaluates a Focal Loss component mathematically in pure NumPy, testing its ability to handle class imbalance by down-weighting the loss assigned to well-classified examples.
