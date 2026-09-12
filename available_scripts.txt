@@ -147,6 +147,7 @@ train_knowledge_distillation_component
 train_kpca_component.py
 train_label_propagation_component.py
 train_label_smoothing_component.py
+train_lamb_component.py
 train_laplacian_eigenmaps_component.py
 train_lasso_regression_component.py
 train_layer_norm_component.py
@@ -204,6 +205,7 @@ train_nesterov_momentum_component.py
 train_neural_architecture_search_component.py
 train_neural_ode_component
 train_nmf_component
+train_novograd_component.py
 train_ntm_component
 train_oja_rule_component.py
 train_omp_component.py

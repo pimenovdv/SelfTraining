@@ -12,6 +12,7 @@ train_hierarchical_clustering_component
 train_highway_network_component
 train_huber_regression_component
 train_label_smoothing_component
+train_lamb_component
 train_layer_norm_component
 train_leaky_relu_component
 train_lion_component
@@ -22,6 +23,7 @@ train_momentum_component
 train_nadam_component
 train_nce_component
 train_nesterov_momentum_component
+train_novograd_component
 train_oja_rule_component
 train_perceptron_component
 train_poisson_regression_component

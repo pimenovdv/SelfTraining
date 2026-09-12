@@ -12,6 +12,7 @@ train_hierarchical_clustering_component.py
 train_highway_network_component.py
 train_huber_regression_component.py
 train_label_smoothing_component.py
+train_lamb_component.py
 train_layer_norm_component.py
 train_leaky_relu_component.py
 train_lion_component.py
@@ -22,6 +23,7 @@ train_momentum_component.py
 train_nadam_component.py
 train_nce_component.py
 train_nesterov_momentum_component.py
+train_novograd_component.py
 train_oja_rule_component.py
 train_perceptron_component.py
 train_poisson_regression_component.py
