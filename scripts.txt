@@ -142,6 +142,7 @@ train_kde_component
 train_kernel_pca_component
 train_kernel_regression_component
 train_kernel_ridge_regression_component
+train_kl_divergence_component
 train_kmeans_component
 train_kmedoids_component
 train_knn_component
