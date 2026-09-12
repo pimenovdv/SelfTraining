@@ -306,3 +306,4 @@ train_wae_component.py
 train_weight_normalization_component
 train_wgan_component
 train_xgboost_component.py
+train_yogi_component.py

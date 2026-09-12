@@ -310,3 +310,4 @@
 - [x] Implement and test Lion Optimizer component.
 - [x] Implement and test RAdam Optimizer component.
 - [x] Implement and test Isotonic Regression component.
+- [x] Implement and test Yogi Optimizer component.

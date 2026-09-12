@@ -1364,3 +1364,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a RAdam Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of RAdam.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0354: Yogi Optimizer Component
+- **Hypothesis:** By employing the Yogi optimizer, the network can adaptively scale learning rates while avoiding the drastic increases in effective learning rate seen in Adam, controlling the variance update with the sign of the difference between current variance and squared gradients.
+- **Action:** Implemented a Yogi Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Yogi.
+- **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
