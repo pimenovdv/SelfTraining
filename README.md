@@ -2064,3 +2064,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Isotonic Regression
 **Script:** `train_isotonic_regression_component.py`
 **Description:** Evaluates an Isotonic Regression component mathematically in pure NumPy, testing its ability to fit a non-decreasing piecewise constant function to data using the Pool Adjacent Violators Algorithm (PAVA).
+
+## Component Testing: Yogi Optimizer Component
+**Script:** `train_yogi_component.py`
+**Description:** Evaluates a Yogi Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates while controlling the increase in effective learning rate by scaling the variance with the sign of the difference between the variance and the squared gradient.

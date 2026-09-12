@@ -37,3 +37,4 @@ train_softplus_component
 train_swish_component
 train_td_learning_component
 train_trpo_component
+train_yogi_component
