@@ -74,6 +74,7 @@
 ./train_kernel_pca_component.py
 ./train_kernel_regression_component.py
 ./train_kernel_ridge_regression_component.py
+./train_kl_divergence_component.py
 ./train_kmedoids_component.py
 ./train_kpca_component.py
 ./train_label_propagation_component.py

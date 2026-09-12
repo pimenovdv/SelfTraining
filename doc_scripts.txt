@@ -14,6 +14,7 @@ train_hierarchical_clustering_component.py
 train_highway_network_component.py
 train_huber_regression_component.py
 train_isotonic_regression_component.py
+train_kl_divergence_component.py
 train_label_smoothing_component.py
 train_lamb_component.py
 train_layer_norm_component.py

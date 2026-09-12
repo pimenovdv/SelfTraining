@@ -312,3 +312,4 @@
 - [x] Implement and test Isotonic Regression component.
 - [x] Implement and test Yogi Optimizer component.
 - [x] Explore handling class imbalance mathematically. (Implemented and verified Focal Loss component).
+- [x] Explore distribution metrics mathematically. (Implemented and verified Kullback-Leibler Divergence for measuring relative entropy).
