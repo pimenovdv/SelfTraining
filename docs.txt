@@ -326,3 +326,4 @@
 0352_train_novograd_component
 0353_train_isotonic_regression_component
 0354_train_yogi_component
+0355_train_adafactor_component

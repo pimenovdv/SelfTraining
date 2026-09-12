@@ -2068,3 +2068,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Yogi Optimizer Component
 **Script:** `train_yogi_component.py`
 **Description:** Evaluates a Yogi Optimizer component mathematically in pure NumPy, testing its ability to adaptively scale learning rates while controlling the increase in effective learning rate by scaling the variance with the sign of the difference between the variance and the squared gradient.
+
+## Component Testing: Adafactor Optimizer
+**Script:** `train_adafactor_component.py`
+**Description:** Evaluates an Adafactor Optimizer component mathematically in pure NumPy, testing its ability to reduce memory usage by maintaining factored representations of squared gradients.

@@ -1369,3 +1369,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Yogi Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Yogi.
 - **Next Steps:** Evaluate the optimizer on deeper networks or sequence modeling tasks.
+### Experiment 0355: Adafactor Optimizer Component
+- **Hypothesis:** By employing the Adafactor optimizer, the network can adaptively scale learning rates with sub-linear memory cost by maintaining row and column sums of squared gradients instead of full matrices, making it highly efficient for large matrices.
+- **Action:** Implemented an Adafactor Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adafactor.
+- **Next Steps:** Evaluate the optimizer on deeper networks or very large parameter spaces where memory efficiency is crucial.
