@@ -1395,3 +1395,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Triplet Loss component mathematically in pure NumPy, verifying the forward loss computation and analytical gradients.
 - **Outcome:** The implementation correctly computed zero loss for properly separated embeddings and non-zero loss when negative samples were too close, accurately computing the associated gradients, validating the mathematical mechanism of metric learning.
 - **Next Steps:** Evaluate the loss in conjunction with Siamese or Triplet network architectures on a metric learning dataset.
+
+### Experiment 0362: Node2Vec Component
+- **Hypothesis:** By applying the skip-gram objective to simulated random walks on a graph, continuous feature representations (embeddings) for nodes can be learned that preserve network neighborhoods and structural equivalence.
+- **Action:** Implemented a Node2Vec component mathematically in pure NumPy, generating random walks on a synthetic barbell graph and training embeddings using manual backpropagation.
+- **Outcome:** The model successfully grouped nodes belonging to the same clique closer together in the embedding space compared to nodes in different cliques, validating the structural representation learning mechanism of Node2Vec.
+- **Next Steps:** Evaluate the embeddings on downstream tasks such as node classification or link prediction.

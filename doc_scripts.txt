@@ -29,6 +29,7 @@ train_momentum_component.py
 train_nadam_component.py
 train_nce_component.py
 train_nesterov_momentum_component.py
+train_node2vec_component.py
 train_novograd_component.py
 train_oja_rule_component.py
 train_perceptron_component.py

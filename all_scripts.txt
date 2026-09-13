@@ -29,6 +29,7 @@ train_momentum_component
 train_nadam_component
 train_nce_component
 train_nesterov_momentum_component
+train_node2vec_component
 train_novograd_component
 train_oja_rule_component
 train_perceptron_component

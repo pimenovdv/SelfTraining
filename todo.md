@@ -314,3 +314,5 @@
 - [x] Explore handling class imbalance mathematically. (Implemented and verified Focal Loss component).
 - [x] Explore distribution metrics mathematically. (Implemented and verified Kullback-Leibler Divergence for measuring relative entropy).
 - [x] Explore per-sample per-channel normalization mathematically. (Implemented and verified Instance Normalization).
+
+- [x] Explore structural representation learning on graphs mathematically. (Implemented and verified Node2Vec for learning node embeddings via random walks and skip-gram).
