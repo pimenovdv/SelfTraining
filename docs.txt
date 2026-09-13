@@ -322,6 +322,7 @@
 0347_train_nesterov_momentum_component
 0348_train_adabelief_component
 0349_train_lion_component
+0350_train_radam_component
 0351_train_lamb_component
 0352_train_novograd_component
 0353_train_isotonic_regression_component
@@ -329,3 +330,4 @@
 0355_train_adafactor_component
 0356_train_focal_loss_component
 0357_train_kl_divergence_component
+0358_train_sinkhorn_component

@@ -36,6 +36,7 @@ train_prelu_component.py
 train_quantile_regression_component.py
 train_rbf_network_component.py
 train_rmsprop_component.py
+train_sinkhorn_component.py
 train_softplus_component.py
 train_swish_component.py
 train_td_learning_component.py

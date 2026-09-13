@@ -1374,3 +1374,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Adafactor Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of Adafactor.
 - **Next Steps:** Evaluate the optimizer on deeper networks or very large parameter spaces where memory efficiency is crucial.
+### Experiment 0358: Sinkhorn Optimal Transport Component
+- **Hypothesis:** By employing the Sinkhorn-Knopp algorithm, the entropy-regularized optimal transport problem can be solved efficiently through iterative matrix scaling, providing a differentiable and computationally tractable distance metric between distributions.
+- **Action:** Implemented a Sinkhorn Optimal Transport component mathematically in pure NumPy, testing it on a simple 2x2 cost matrix with uniform marginals.
+- **Outcome:** The implementation successfully converged to the optimal transport plan, accurately matching the uniform marginal distributions, validating the mathematical mechanism of the Sinkhorn-Knopp algorithm.
+- **Next Steps:** Evaluate the algorithm for aligning larger datasets or as a differentiable loss function in neural network training (e.g., Wasserstein GANs).

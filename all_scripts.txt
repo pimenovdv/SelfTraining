@@ -36,6 +36,7 @@ train_prelu_component
 train_quantile_regression_component
 train_rbf_network_component
 train_rmsprop_component
+train_sinkhorn_component
 train_softplus_component
 train_swish_component
 train_td_learning_component
