@@ -2076,3 +2076,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Focal Loss
 **Script:** `train_focal_loss_component.py`
 **Description:** Evaluates a Focal Loss component mathematically in pure NumPy, testing its ability to handle class imbalance by down-weighting the loss assigned to well-classified examples.
+
+## Component Testing: Sinkhorn Optimal Transport
+**Script:** `train_sinkhorn_component.py`
+**Description:** Evaluates a Sinkhorn Optimal Transport component mathematically in pure NumPy, testing its ability to solve the entropy-regularized optimal transport problem using the iterative Sinkhorn-Knopp algorithm, efficiently finding an optimal transport plan between two distributions given a cost matrix.

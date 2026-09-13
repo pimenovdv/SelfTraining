@@ -329,3 +329,4 @@ docs/0354_train_yogi_component.md
 docs/0355_train_adafactor_component.md
 docs/0356_train_focal_loss_component.md
 docs/0357_train_kl_divergence_component.md
+docs/0358_train_sinkhorn_component.md
