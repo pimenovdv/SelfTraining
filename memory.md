@@ -1379,3 +1379,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Sinkhorn Optimal Transport component mathematically in pure NumPy, testing it on a simple 2x2 cost matrix with uniform marginals.
 - **Outcome:** The implementation successfully converged to the optimal transport plan, accurately matching the uniform marginal distributions, validating the mathematical mechanism of the Sinkhorn-Knopp algorithm.
 - **Next Steps:** Evaluate the algorithm for aligning larger datasets or as a differentiable loss function in neural network training (e.g., Wasserstein GANs).
+### Experiment 0359: Instance Normalization Component
+- **Hypothesis:** By employing Instance Normalization, standardizing the activations of each channel independently for each sample, the network can learn representations that are invariant to the specific style or contrast of an input, which is particularly beneficial in generative tasks like style transfer.
+- **Action:** Implemented an Instance Normalization component mathematically in pure NumPy, testing its manual forward and backward passes.
+- **Outcome:** The implementation successfully learned the target mapping, minimizing the loss, validating the mathematical mechanism of Instance Normalization.
+- **Next Steps:** Evaluate the component in conjunction with convolutional architectures or generative models.
