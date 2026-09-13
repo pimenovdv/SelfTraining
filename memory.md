@@ -1401,3 +1401,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Node2Vec component mathematically in pure NumPy, generating random walks on a synthetic barbell graph and training embeddings using manual backpropagation.
 - **Outcome:** The model successfully grouped nodes belonging to the same clique closer together in the embedding space compared to nodes in different cliques, validating the structural representation learning mechanism of Node2Vec.
 - **Next Steps:** Evaluate the embeddings on downstream tasks such as node classification or link prediction.
+
+### Experiment 0363: Hamiltonian Monte Carlo Component
+- **Hypothesis:** Hamiltonian Monte Carlo (HMC) can be used to sample efficiently from continuous distributions by simulating Hamiltonian dynamics, leveraging gradient information to avoid random walk behavior.
+- **Action:** Implemented a Hamiltonian Monte Carlo component mathematically in pure NumPy, testing its ability to sample from a standard normal distribution.
+- **Outcome:** The implementation successfully sampled from the target distribution with the expected mean and variance, validating the mathematical mechanism of HMC.
+- **Next Steps:** Evaluate HMC for Bayesian inference tasks with more complex, high-dimensional distributions.
