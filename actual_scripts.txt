@@ -126,6 +126,7 @@ train_highway_component
 train_highway_network_component.py
 train_hinge_loss_component.py
 train_hits_component.py
+train_hmc_component.py
 train_hmm_component
 train_hopfield_component
 train_hopfield_network_component.py

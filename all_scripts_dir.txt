@@ -64,6 +64,7 @@
 ./train_highway_network_component.py
 ./train_hinge_loss_component.py
 ./train_hits_component.py
+./train_hmc_component.py
 ./train_hmm_component.py
 ./train_hopfield_network_component.py
 ./train_hrl_component.py

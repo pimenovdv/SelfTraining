@@ -126,6 +126,7 @@ train_highway_component
 train_highway_network_component
 train_hinge_loss_component
 train_hits_component
+train_hmc_component
 train_hopfield_component
 train_hopfield_network_component
 train_hrl_component
