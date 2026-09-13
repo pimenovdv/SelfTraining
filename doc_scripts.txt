@@ -12,6 +12,7 @@ train_elu_component.py
 train_focal_loss_component.py
 train_hierarchical_clustering_component.py
 train_highway_network_component.py
+train_hinge_loss_component.py
 train_huber_regression_component.py
 train_instance_norm_component.py
 train_isotonic_regression_component.py
@@ -41,5 +42,6 @@ train_sinkhorn_component.py
 train_softplus_component.py
 train_swish_component.py
 train_td_learning_component.py
+train_triplet_loss_component.py
 train_trpo_component.py
 train_yogi_component.py

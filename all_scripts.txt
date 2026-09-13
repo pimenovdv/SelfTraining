@@ -12,6 +12,7 @@ train_elu_component
 train_focal_loss_component
 train_hierarchical_clustering_component
 train_highway_network_component
+train_hinge_loss_component
 train_huber_regression_component
 train_instance_norm_component
 train_isotonic_regression_component
@@ -41,5 +42,6 @@ train_sinkhorn_component
 train_softplus_component
 train_swish_component
 train_td_learning_component
+train_triplet_loss_component
 train_trpo_component
 train_yogi_component
