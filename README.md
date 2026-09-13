@@ -2080,3 +2080,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Sinkhorn Optimal Transport
 **Script:** `train_sinkhorn_component.py`
 **Description:** Evaluates a Sinkhorn Optimal Transport component mathematically in pure NumPy, testing its ability to solve the entropy-regularized optimal transport problem using the iterative Sinkhorn-Knopp algorithm, efficiently finding an optimal transport plan between two distributions given a cost matrix.
+
+## Component Testing: Instance Normalization
+**Script:** `train_instance_norm_component.py`
+**Description:** Evaluates an Instance Normalization component mathematically in pure NumPy, testing its ability to standardizes activations per channel for each individual sample, often used in style transfer tasks.
