@@ -2095,3 +2095,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Node2Vec
 **Script:** `train_node2vec_component.py`
 **Description:** Evaluates a Node2Vec component mathematically in pure NumPy, testing its ability to learn continuous feature representations for nodes in networks by optimizing a neighborhood preserving objective using simulated random walks and skip-gram with negative sampling.
+
+## Component Testing: UMAP
+**Script:** `train_umap_component.py`
+**Description:** Evaluates a Uniform Manifold Approximation and Projection (UMAP) component mathematically in pure NumPy, testing its ability to project high-dimensional data into a lower-dimensional space while preserving topological structure using fuzzy simplicial sets.
