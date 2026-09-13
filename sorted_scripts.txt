@@ -210,6 +210,7 @@ train_nesterov_momentum_component
 train_neural_architecture_search_component
 train_neural_ode_component
 train_nmf_component
+train_node2vec_component
 train_novograd_component
 train_ntm_component
 train_oja_rule_component

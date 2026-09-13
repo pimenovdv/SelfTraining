@@ -2091,3 +2091,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Triplet Loss
 **Script:** train_triplet_loss_component.py
 **Description:** Pure NumPy implementation of Triplet Loss for metric learning.
+
+## Component Testing: Node2Vec
+**Script:** `train_node2vec_component.py`
+**Description:** Evaluates a Node2Vec component mathematically in pure NumPy, testing its ability to learn continuous feature representations for nodes in networks by optimizing a neighborhood preserving objective using simulated random walks and skip-gram with negative sampling.
