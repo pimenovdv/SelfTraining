@@ -1407,3 +1407,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Hamiltonian Monte Carlo component mathematically in pure NumPy, testing its ability to sample from a standard normal distribution.
 - **Outcome:** The implementation successfully sampled from the target distribution with the expected mean and variance, validating the mathematical mechanism of HMC.
 - **Next Steps:** Evaluate HMC for Bayesian inference tasks with more complex, high-dimensional distributions.
+
+### Experiment 0364: UMAP Component
+- **Hypothesis:** Uniform Manifold Approximation and Projection (UMAP) can construct a high-dimensional fuzzy topological representation and optimize a low-dimensional embedding to preserve both local and global structure by minimizing cross-entropy.
+- **Action:** Implemented a UMAP component mathematically in pure NumPy, testing its ability to separate a synthetic binary cluster dataset.
+- **Outcome:** The model successfully separated the two clusters, preserving their structure and inter-cluster distances in the low-dimensional embedding space, validating the mathematical mechanism of UMAP.
+- **Next Steps:** Evaluate UMAP on complex, high-dimensional real-world datasets like MNIST or single-cell RNA sequencing data.

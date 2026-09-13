@@ -335,3 +335,4 @@ docs/0360_train_hinge_loss_component.md
 docs/0361_train_triplet_loss_component.md
 docs/0362_train_node2vec_component.md
 docs/0363_train_hmc_component.md
+docs/0364_train_umap_component.md
