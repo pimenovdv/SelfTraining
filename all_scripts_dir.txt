@@ -62,6 +62,7 @@
 ./train_hdbscan_component.py
 ./train_hierarchical_clustering_component.py
 ./train_highway_network_component.py
+./train_hinge_loss_component.py
 ./train_hits_component.py
 ./train_hmm_component.py
 ./train_hopfield_network_component.py
@@ -156,6 +157,7 @@
 ./train_swish_component.py
 ./train_td_learning_component.py
 ./train_thompson_sampling_component.py
+./train_triplet_loss_component.py
 ./train_trpo_component.py
 ./train_tsetlin_machine_component.py
 ./train_tsne_component.py

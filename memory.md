@@ -1384,3 +1384,14 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Instance Normalization component mathematically in pure NumPy, testing its manual forward and backward passes.
 - **Outcome:** The implementation successfully learned the target mapping, minimizing the loss, validating the mathematical mechanism of Instance Normalization.
 - **Next Steps:** Evaluate the component in conjunction with convolutional architectures or generative models.
+### Experiment 0360: Hinge Loss Component
+- **Hypothesis:** Hinge loss can be used to efficiently train max-margin classifiers like SVMs, penalizing predictions that are on the wrong side of the margin and driving the weights to correctly separate classes with a robust boundary.
+- **Action:** Implemented a Hinge Loss component mathematically in pure NumPy, training a linear model using manual backpropagation.
+- **Outcome:** The model successfully separated the two synthetic classes, minimizing the Hinge loss to 0, validating the mathematical mechanism of max-margin training.
+- **Next Steps:** Evaluate the loss in conjunction with kernel methods or deeper architectures for robust classification tasks.
+
+### Experiment 0361: Triplet Loss Component
+- **Hypothesis:** Triplet loss can effectively learn meaningful embeddings by directly comparing distances between an anchor, a positive sample, and a negative sample, encouraging instances of the same class to be closer than instances of different classes by a specified margin.
+- **Action:** Implemented a Triplet Loss component mathematically in pure NumPy, verifying the forward loss computation and analytical gradients.
+- **Outcome:** The implementation correctly computed zero loss for properly separated embeddings and non-zero loss when negative samples were too close, accurately computing the associated gradients, validating the mathematical mechanism of metric learning.
+- **Next Steps:** Evaluate the loss in conjunction with Siamese or Triplet network architectures on a metric learning dataset.

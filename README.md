@@ -2084,3 +2084,10 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Instance Normalization
 **Script:** `train_instance_norm_component.py`
 **Description:** Evaluates an Instance Normalization component mathematically in pure NumPy, testing its ability to standardizes activations per channel for each individual sample, often used in style transfer tasks.
+## Component Testing: Hinge Loss
+**Script:** train_hinge_loss_component.py
+**Description:** Pure NumPy implementation of Hinge Loss, training a max-margin classifier.
+
+## Component Testing: Triplet Loss
+**Script:** train_triplet_loss_component.py
+**Description:** Pure NumPy implementation of Triplet Loss for metric learning.

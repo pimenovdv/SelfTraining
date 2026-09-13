@@ -124,6 +124,7 @@ train_hebbian_component
 train_hierarchical_clustering_component
 train_highway_component
 train_highway_network_component
+train_hinge_loss_component
 train_hits_component
 train_hopfield_component
 train_hopfield_network_component
@@ -296,6 +297,7 @@ train_td3_component
 train_td_learning_component
 train_thompson_sampling_component
 train_transformer_block_component
+train_triplet_loss_component
 train_trpo_component
 train_tsetlin_machine_component
 train_tsne_component
