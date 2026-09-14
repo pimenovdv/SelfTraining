@@ -261,6 +261,7 @@ train_rmsprop_component.py
 train_rnn_component
 train_robust_pca_component.py
 train_rope_component
+train_rprop_component.py
 train_rvm_component.py
 train_sac_component
 train_sae_component

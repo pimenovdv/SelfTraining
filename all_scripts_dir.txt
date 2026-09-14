@@ -142,6 +142,7 @@
 ./train_ridge_regression_component.py
 ./train_rmsprop_component.py
 ./train_robust_pca_component.py
+./train_rprop_component.py
 ./train_rvm_component.py
 ./train_safety_alignment_component.py
 ./train_scaling_law_projection_component.py
