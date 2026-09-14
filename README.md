@@ -2107,3 +2107,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Mixup Data Augmentation
 **Script:** `train_mixup_component.py`
 **Description:** Evaluates a Mixup Data Augmentation component mathematically in pure NumPy, testing its ability to regularize the network and improve generalization by interpolating between random pairs of training inputs and their corresponding targets.
+
+## Component Testing: Rprop Optimizer
+**Script:** `train_rprop_component.py`
+**Description:** Evaluates an Rprop Optimizer component mathematically in pure NumPy, testing its ability to dynamically adapt learning rates for each parameter based only on the sign of the gradient, independent of the gradient's magnitude.
