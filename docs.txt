@@ -341,3 +341,4 @@
 0366_train_mixup_component
 0367_train_rprop_component
 0368_train_adabound_component
+0369_train_stdp_component
