@@ -337,3 +337,4 @@ docs/0362_train_node2vec_component.md
 docs/0363_train_hmc_component.md
 docs/0364_train_umap_component.md
 docs/0365_train_group_norm_component.md
+docs/0366_train_mixup_component.md

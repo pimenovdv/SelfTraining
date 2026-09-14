@@ -2103,3 +2103,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Group Normalization
 **Script:** `train_group_norm_component.py`
 **Description:** Validates a custom implementation of Group Normalization mathematically by verifying the zero mean and unit variance per channel group, providing an alternative to Batch Normalization for small batch sizes.
+
+## Component Testing: Mixup Data Augmentation
+**Script:** `train_mixup_component.py`
+**Description:** Evaluates a Mixup Data Augmentation component mathematically in pure NumPy, testing its ability to regularize the network and improve generalization by interpolating between random pairs of training inputs and their corresponding targets.

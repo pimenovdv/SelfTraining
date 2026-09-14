@@ -1419,3 +1419,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Group Normalization component mathematically, evaluating its outputs against zero mean and unit variance per channel group.
 - **Outcome:** The implementation correctly standardized the activation layers within each defined channel group without reliance on batch size, validating the normalization mechanism.
 - **Next Steps:** Evaluate Group Normalization as an alternative to Batch Normalization in convolutional tasks where batch size is severely constrained (e.g., object detection).
+
+### Experiment 0366: Mixup Data Augmentation Component
+- **Hypothesis:** By applying the Mixup data augmentation technique, interpolating between random pairs of training inputs and their corresponding targets, the network can be regularized to encourage linear behavior between training examples, improving generalization and robustness.
+- **Action:** Implemented a Mixup Component mathematically in pure NumPy, testing its ability to train a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping with robust decision boundaries, minimizing the loss on the original unmixed data, validating the mathematical mechanism of Mixup.
+- **Next Steps:** Evaluate the component in conjunction with larger architectures and more complex classification tasks.

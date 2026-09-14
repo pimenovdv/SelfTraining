@@ -27,6 +27,7 @@ train_lion_component
 train_liquid_state_machine_component
 train_maxout_component
 train_mish_component
+train_mixup_component
 train_momentum_component
 train_nadam_component
 train_nce_component
