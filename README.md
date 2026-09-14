@@ -2119,3 +2119,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Spike-Timing-Dependent Plasticity (STDP)
 **Script:** `train_stdp_component.py`
 **Description:** Evaluates an STDP component mathematically in pure NumPy, testing its ability to calculate weight updates based on spike timing differences.
+
+## Component Testing: CELU Activation
+**Script:** `train_celu_component.py`
+**Description:** Evaluates a Continuously Differentiable Exponential Linear Units (CELU) component mathematically in pure NumPy, testing its ability to provide a continuously differentiable activation function.
