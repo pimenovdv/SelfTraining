@@ -339,3 +339,4 @@ docs/0364_train_umap_component.md
 docs/0365_train_group_norm_component.md
 docs/0366_train_mixup_component.md
 docs/0367_train_rprop_component.md
+docs/0368_train_adabound_component.md

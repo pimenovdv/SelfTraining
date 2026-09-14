@@ -2111,3 +2111,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Rprop Optimizer
 **Script:** `train_rprop_component.py`
 **Description:** Evaluates an Rprop Optimizer component mathematically in pure NumPy, testing its ability to dynamically adapt learning rates for each parameter based only on the sign of the gradient, independent of the gradient's magnitude.
+
+## Component Testing: AdaBound Optimizer
+**Script:** `train_adabound_component.py`
+**Description:** Evaluates an AdaBound Optimizer component mathematically in pure NumPy, testing its ability to dynamically adapt bounds on learning rates to achieve the convergence speed of Adam and the generalization of SGD.

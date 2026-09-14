@@ -1425,3 +1425,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Mixup Component mathematically in pure NumPy, testing its ability to train a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping with robust decision boundaries, minimizing the loss on the original unmixed data, validating the mathematical mechanism of Mixup.
 - **Next Steps:** Evaluate the component in conjunction with larger architectures and more complex classification tasks.
+
+### Experiment 0368: AdaBound Optimizer Component
+- **Hypothesis:** By employing the AdaBound optimizer, the network can achieve the fast convergence of Adam early in training while smoothly transitioning to the generalization performance of SGD by dynamically restricting the learning rate bounds.
+- **Action:** Implemented an AdaBound Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of AdaBound.
+- **Next Steps:** Evaluate the optimizer on deeper networks or complex classification tasks.

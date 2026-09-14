@@ -340,3 +340,4 @@
 0365_train_group_norm_component
 0366_train_mixup_component
 0367_train_rprop_component
+0368_train_adabound_component
