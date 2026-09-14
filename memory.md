@@ -1413,3 +1413,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a UMAP component mathematically in pure NumPy, testing its ability to separate a synthetic binary cluster dataset.
 - **Outcome:** The model successfully separated the two clusters, preserving their structure and inter-cluster distances in the low-dimensional embedding space, validating the mathematical mechanism of UMAP.
 - **Next Steps:** Evaluate UMAP on complex, high-dimensional real-world datasets like MNIST or single-cell RNA sequencing data.
+
+### Experiment 0365: Group Normalization Component
+- **Hypothesis:** Normalizing channels by grouping them computes reliable statistics even for very small batch sizes without needing to track running global stats.
+- **Action:** Implemented a Group Normalization component mathematically, evaluating its outputs against zero mean and unit variance per channel group.
+- **Outcome:** The implementation correctly standardized the activation layers within each defined channel group without reliance on batch size, validating the normalization mechanism.
+- **Next Steps:** Evaluate Group Normalization as an alternative to Batch Normalization in convolutional tasks where batch size is severely constrained (e.g., object detection).

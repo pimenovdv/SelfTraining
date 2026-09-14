@@ -2099,3 +2099,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: UMAP
 **Script:** `train_umap_component.py`
 **Description:** Evaluates a Uniform Manifold Approximation and Projection (UMAP) component mathematically in pure NumPy, testing its ability to project high-dimensional data into a lower-dimensional space while preserving topological structure using fuzzy simplicial sets.
+
+## Component Testing: Group Normalization
+**Script:** `train_group_norm_component.py`
+**Description:** Validates a custom implementation of Group Normalization mathematically by verifying the zero mean and unit variance per channel group, providing an alternative to Batch Normalization for small batch sizes.

@@ -318,3 +318,4 @@
 
 - [x] Explore structural representation learning on graphs mathematically. (Implemented and verified Node2Vec for learning node embeddings via random walks and skip-gram).
 - [x] Explore manifold learning mathematically. (Implemented and verified UMAP for non-linear dimensionality reduction).
+- [x] Explore group-based channel normalization mathematically. (Implemented and verified Group Normalization).
