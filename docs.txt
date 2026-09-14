@@ -338,3 +338,4 @@
 0363_train_hmc_component
 0364_train_umap_component
 0365_train_group_norm_component
+0366_train_mixup_component
