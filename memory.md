@@ -1431,3 +1431,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an AdaBound Optimizer component mathematically in pure NumPy, training a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation successfully learned the XOR mapping, minimizing the loss and accurately predicting target labels, validating the mathematical mechanism of AdaBound.
 - **Next Steps:** Evaluate the optimizer on deeper networks or complex classification tasks.
+
+### Experiment 0369: Spike-Timing-Dependent Plasticity (STDP) Component
+- **Hypothesis:** Spike-Timing-Dependent Plasticity (STDP) is a biological learning rule that modulates synaptic weights based on the relative timing of pre- and post-synaptic spikes.
+- **Action:** Implemented an STDP component mathematically in pure NumPy, evaluating weight changes given varying spike timing differences.
+- **Outcome:** The implementation correctly scaled synaptic weights according to the timing interval, validating the mathematical mechanism of STDP.
+- **Next Steps:** Evaluate STDP in a larger Spiking Neural Network (SNN) architecture.

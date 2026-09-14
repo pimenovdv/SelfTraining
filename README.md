@@ -2115,3 +2115,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: AdaBound Optimizer
 **Script:** `train_adabound_component.py`
 **Description:** Evaluates an AdaBound Optimizer component mathematically in pure NumPy, testing its ability to dynamically adapt bounds on learning rates to achieve the convergence speed of Adam and the generalization of SGD.
+
+## Component Testing: Spike-Timing-Dependent Plasticity (STDP)
+**Script:** `train_stdp_component.py`
+**Description:** Evaluates an STDP component mathematically in pure NumPy, testing its ability to calculate weight updates based on spike timing differences.

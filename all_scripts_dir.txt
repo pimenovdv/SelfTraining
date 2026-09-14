@@ -158,6 +158,7 @@
 ./train_sparse_pca_component.py
 ./train_spectral_clustering_component.py
 ./train_spline_regression_component.py
+./train_stdp_component.py
 ./train_svd_component.py
 ./train_svr_component.py
 ./train_swish_component.py
