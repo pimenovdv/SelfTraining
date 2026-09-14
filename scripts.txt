@@ -39,6 +39,7 @@ train_cae_component
 train_capsule_network_component
 train_cbow_component
 train_cca_component
+train_celu_component
 train_cem_component
 train_cgan_component
 train_chinchilla_optimality_component

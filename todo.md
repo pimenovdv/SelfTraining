@@ -322,3 +322,4 @@
 - [x] Explore data augmentation mathematically. (Implemented and verified Mixup Data Augmentation interpolating inputs and targets).
 - [x] Explore dynamic learning rate bounds mathematically. (Implemented and verified AdaBound Optimizer).
 - [x] Explore biological learning rules mathematically. (Implemented and verified Spike-Timing-Dependent Plasticity (STDP) component).
+- [x] Explore continuously differentiable activation functions mathematically. (Implemented and verified Continuously Differentiable Exponential Linear Units - CELU).
