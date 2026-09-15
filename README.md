@@ -2147,3 +2147,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Ridge Regression
 **Script:** `train_ridge_regression_component.py`
 **Description:** Evaluates a Ridge Regression component mathematically in pure NumPy, testing its L2 regularization mechanism for predicting continuous targets using the closed-form solution.
+
+## Component Testing: Multi-Query Attention (MQA)
+**Script:** `train_mqa_component.py`
+**Description:** Evaluates a Multi-Query Attention (MQA) component mathematically in pure NumPy, testing its ability to reduce memory bandwidth requirements by sharing a single key and value head across multiple query heads during self-attention computation.

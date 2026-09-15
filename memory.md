@@ -1473,3 +1473,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Ridge Regression component mathematically in pure NumPy using the closed-form algebraic solution, training it on synthetic linear data.
 - **Outcome:** The model correctly recovered the underlying weights, demonstrating reduced variance in parameter estimates, validating the closed-form Ridge formulation.
 - **Next Steps:** Evaluate Ridge Regression in contexts with highly correlated features to measure its stabilizing effect on coefficients.
+
+### Experiment 0377: Multi-Query Attention (MQA) Component
+- **Hypothesis:** By sharing a single key and value head across multiple query heads (Multi-Query Attention), memory bandwidth during inference can be significantly reduced while maintaining model quality comparable to standard Multi-Head Attention.
+- **Action:** Implemented an MQA component mathematically in pure NumPy, testing its forward pass on a sample sequence.
+- **Outcome:** The implementation correctly computed attention context using shared keys and values, broadcasting them across multiple query heads, validating the structural mechanism of MQA.
+- **Next Steps:** Evaluate the MQA mechanism within a larger language model architecture to measure memory savings during generation.
