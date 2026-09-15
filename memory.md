@@ -1443,3 +1443,33 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Tokenizer (BPE proxy) component in pure Python, testing it on a sample text sequence.
 - **Outcome:** The implementation correctly extracted 10 top merges from the character-level vocabulary and constructed the expected subword representations, validating the algorithmic behavior of BPE tokenization.
 - **Next Steps:** Consider integrating the vocabulary merge process directly into text embeddings or a language modeling pipeline.
+
+### Experiment 0372: Mamba Block Component
+- **Hypothesis:** By employing a Mamba Block with data-dependent state space models (Selective SSM), the network can effectively process sequence data while maintaining computational efficiency compared to standard attention mechanisms.
+- **Action:** Implemented a Mamba Block component mathematically in pure NumPy, evaluating it on a sequence of token representations.
+- **Outcome:** The implementation correctly processed the input sequence and generated the expected outputs, validating the mathematical mechanism of Selective SSMs.
+- **Next Steps:** Evaluate the Mamba Block in larger language models or sequence prediction tasks.
+
+### Experiment 0056: Bayesian Neural Network Component
+- **Hypothesis:** By optimizing the Evidence Lower Bound (ELBO) with Bayes by Backprop, a neural network can learn both accurate predictions and parameter uncertainty simultaneously.
+- **Action:** Implemented a Bayesian Neural Network (BNN) component mathematically in pure NumPy, training it on the XOR dataset.
+- **Outcome:** The implementation successfully learned the XOR mapping while maintaining probabilistic weight distributions (means and variances), validating the ELBO objective and reparameterization trick.
+- **Next Steps:** Apply BNNs to tasks requiring uncertainty estimation or active learning.
+
+### Experiment 0160: Gradient Boosting Regressor Component
+- **Hypothesis:** By iteratively fitting simple weak learners (e.g., Decision Stumps) to the residuals of previous models, a Gradient Boosting Regressor can sequentially reduce the mean squared error on complex non-linear data.
+- **Action:** Implemented a Gradient Boosting Regressor component mathematically in pure NumPy, training it on a noisy sine wave dataset.
+- **Outcome:** The model successfully fit the noisy data, significantly reducing the MSE by dynamically predicting residuals, validating the mathematical formulation of gradient boosting.
+- **Next Steps:** Expand the implementation to support deeper decision trees or classification tasks (Gradient Boosting Classifier).
+
+### Experiment 0167: Lasso Regression Component
+- **Hypothesis:** By incorporating an L1 penalty on the weights (Lasso), the regression model will inherently perform feature selection by driving less useful feature weights exactly to zero.
+- **Action:** Implemented a Lasso Regression component mathematically in pure NumPy using subgradient descent, training it on synthetic linear data with uninformative features.
+- **Outcome:** The model successfully learned the true underlying weights while correctly suppressing uninformative features toward zero, validating the L1 regularization effect.
+- **Next Steps:** Compare Lasso regularization performance against Ridge Regression on high-dimensional sparse datasets.
+
+### Experiment 0166: Ridge Regression Component
+- **Hypothesis:** By incorporating an L2 penalty on the weights (Ridge), the regression model will mitigate multicollinearity and prevent overfitting by penalizing large weight magnitudes without forcing them to zero.
+- **Action:** Implemented a Ridge Regression component mathematically in pure NumPy using the closed-form algebraic solution, training it on synthetic linear data.
+- **Outcome:** The model correctly recovered the underlying weights, demonstrating reduced variance in parameter estimates, validating the closed-form Ridge formulation.
+- **Next Steps:** Evaluate Ridge Regression in contexts with highly correlated features to measure its stabilizing effect on coefficients.

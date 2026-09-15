@@ -2127,3 +2127,23 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Tokenizer Component
 **Script:** `train_tokenizer_component.py`
 **Description:** Evaluates a Tokenizer component mathematically in pure Python, testing a proxy of Byte Pair Encoding (BPE) which builds a vocabulary by iteratively merging the most frequent character pairs.
+
+## Component Testing: Mamba Block
+**Script:** `train_mamba_component.py`
+**Description:** Evaluates a Mamba Block component mathematically in pure NumPy, testing its ability to process sequence data using data-dependent state space models (Selective SSM).
+
+## Component Testing: Bayesian Neural Network (BNN)
+**Script:** `train_bnn_component.py`
+**Description:** Evaluates a Bayesian Neural Network component mathematically in pure NumPy, testing its ability to estimate uncertainty using Bayes by Backprop for probabilistic weight distributions.
+
+## Component Testing: Gradient Boosting
+**Script:** `train_gradient_boosting_component.py`
+**Description:** Evaluates a Gradient Boosting Regressor component mathematically in pure NumPy, testing its ability to minimize residuals sequentially using Decision Stumps.
+
+## Component Testing: Lasso Regression
+**Script:** `train_lasso_regression_component.py`
+**Description:** Evaluates a Lasso Regression component mathematically in pure NumPy, testing its L1 regularization mechanism for feature selection and predicting continuous targets.
+
+## Component Testing: Ridge Regression
+**Script:** `train_ridge_regression_component.py`
+**Description:** Evaluates a Ridge Regression component mathematically in pure NumPy, testing its L2 regularization mechanism for predicting continuous targets using the closed-form solution.
