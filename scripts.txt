@@ -1,10 +1,3 @@
-test_ebm
-test_ff
-test_fgsm
-test_ltc
-test_ltc_full
-test_mcts
-test_nca
 train_a2c_component
 train_aco_component
 train_act_component
@@ -130,6 +123,7 @@ train_highway_network_component
 train_hinge_loss_component
 train_hits_component
 train_hmc_component
+train_hmm_component
 train_hopfield_component
 train_hopfield_network_component
 train_hrl_component
@@ -245,6 +239,7 @@ train_q_learning_component
 train_qda_component
 train_quantile_regression_component
 train_quantization_component
+train_radam_component
 train_random_forest_component
 train_random_forest_regression_component
 train_rbf_component
