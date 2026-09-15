@@ -1485,3 +1485,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a QLoRA component in PyTorch to test its mathematical forward pass and gradient calculation specifically on LoRA parameters while freezing simulated base parameters.
 - **Outcome:** The implementation correctly computed gradients only for the low-rank matrices and zero gradients for base weights, validating the memory-efficient fine-tuning mechanism.
 - **Next Steps:** Evaluate the QLoRA mechanism within a larger language model architecture to measure end-to-end memory savings during fine-tuning.
+
+### Experiment 0379: GRPO Component
+- **Hypothesis:** By computing advantages relative to a group of generations for the same prompt, Group Relative Policy Optimization (GRPO) can stabilize policy gradients and optimize rewards efficiently without maintaining a separate value network.
+- **Action:** Implemented a GRPO component mathematically in pure NumPy, testing its forward pass, group relative advantage calculation, and manual backpropagation with clipping.
+- **Outcome:** The implementation correctly scaled gradients based on group relative advantages and successfully shifted the policy distribution toward the optimal action while respecting KL constraints.
+- **Next Steps:** Evaluate the GRPO mechanism within a larger language model architecture to measure alignment performance without value models.

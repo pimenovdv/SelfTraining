@@ -2155,3 +2155,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: QLoRA
 **Script:** `train_qlora_component.py`
 **Description:** Evaluates a QLoRA component mathematically, testing its ability to fine-tune a model using low-rank adaptation on simulated quantized base weights to reduce memory usage during training.
+
+## Component Testing: GRPO (Group Relative Policy Optimization)
+**Script:** `train_grpo_component.py`
+**Description:** Evaluates a Group Relative Policy Optimization (GRPO) component mathematically in pure NumPy, testing its ability to optimize a policy by computing baseline advantages from a group of outputs generated for the same prompt, without requiring a value network.

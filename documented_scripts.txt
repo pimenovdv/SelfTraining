@@ -115,6 +115,7 @@ train_graphsage_component
 train_grokking_component
 train_group_norm_component
 train_groupnorm_component
+train_grpo_component.py
 train_gru_component
 train_gumbel_softmax_component
 train_hdbscan_component

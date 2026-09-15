@@ -334,3 +334,4 @@
 0376_train_ridge_regression_component
 0377_train_mqa_component
 0378_train_qlora_component
+0379_train_grpo_component
