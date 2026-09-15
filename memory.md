@@ -1479,3 +1479,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an MQA component mathematically in pure NumPy, testing its forward pass on a sample sequence.
 - **Outcome:** The implementation correctly computed attention context using shared keys and values, broadcasting them across multiple query heads, validating the structural mechanism of MQA.
 - **Next Steps:** Evaluate the MQA mechanism within a larger language model architecture to measure memory savings during generation.
+
+### Experiment 0378: QLoRA Component
+- **Hypothesis:** By applying Low-Rank Adaptation (LoRA) to simulated quantized frozen base weights, we can fine-tune representations efficiently while preserving memory and maintaining performance equivalent to full-rank updates.
+- **Action:** Implemented a QLoRA component in PyTorch to test its mathematical forward pass and gradient calculation specifically on LoRA parameters while freezing simulated base parameters.
+- **Outcome:** The implementation correctly computed gradients only for the low-rank matrices and zero gradients for base weights, validating the memory-efficient fine-tuning mechanism.
+- **Next Steps:** Evaluate the QLoRA mechanism within a larger language model architecture to measure end-to-end memory savings during fine-tuning.

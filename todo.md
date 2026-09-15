@@ -326,3 +326,4 @@
 - [x] Explore tokenization mathematically. (Implemented and verified Byte Pair Encoding - BPE proxy).
 - [x] Explore state space models with data-dependent transitions mathematically. (Implemented and verified Mamba Block component).
 - [x] Explore reducing memory bandwidth for attention mathematically. (Implemented and verified Multi-Query Attention - MQA sharing key and value heads).
+- [x] Explore quantized parameter-efficient fine-tuning mathematically. (Implemented and verified QLoRA component).
