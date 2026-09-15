@@ -2123,3 +2123,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: CELU Activation
 **Script:** `train_celu_component.py`
 **Description:** Evaluates a Continuously Differentiable Exponential Linear Units (CELU) component mathematically in pure NumPy, testing its ability to provide a continuously differentiable activation function.
+
+## Component Testing: Tokenizer Component
+**Script:** `train_tokenizer_component.py`
+**Description:** Evaluates a Tokenizer component mathematically in pure Python, testing a proxy of Byte Pair Encoding (BPE) which builds a vocabulary by iteratively merging the most frequent character pairs.

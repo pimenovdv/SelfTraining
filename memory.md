@@ -1437,3 +1437,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an STDP component mathematically in pure NumPy, evaluating weight changes given varying spike timing differences.
 - **Outcome:** The implementation correctly scaled synaptic weights according to the timing interval, validating the mathematical mechanism of STDP.
 - **Next Steps:** Evaluate STDP in a larger Spiking Neural Network (SNN) architecture.
+
+### Experiment 0371: Tokenizer Component
+- **Hypothesis:** Byte Pair Encoding (BPE) learns subword tokens that balance character-level fallback and word-level efficiency by iteratively merging the most frequent contiguous token pairs.
+- **Action:** Implemented a Tokenizer (BPE proxy) component in pure Python, testing it on a sample text sequence.
+- **Outcome:** The implementation correctly extracted 10 top merges from the character-level vocabulary and constructed the expected subword representations, validating the algorithmic behavior of BPE tokenization.
+- **Next Steps:** Consider integrating the vocabulary merge process directly into text embeddings or a language modeling pipeline.
