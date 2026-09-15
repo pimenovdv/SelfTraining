@@ -165,6 +165,7 @@
 ./train_swish_component.py
 ./train_td_learning_component.py
 ./train_thompson_sampling_component.py
+./train_tokenizer_component.py
 ./train_triplet_loss_component.py
 ./train_trpo_component.py
 ./train_tsetlin_machine_component.py

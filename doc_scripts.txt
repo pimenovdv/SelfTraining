@@ -50,6 +50,7 @@ train_softplus_component.py
 train_stdp_component.py
 train_swish_component.py
 train_td_learning_component.py
+train_tokenizer_component.py
 train_triplet_loss_component.py
 train_trpo_component.py
 train_umap_component.py
