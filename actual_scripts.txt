@@ -241,6 +241,7 @@ train_protonet_component
 train_pso_component
 train_q_learning_component
 train_qda_component
+train_qlora_component.py
 train_quantile_regression_component
 train_quantization_component
 train_radam_component

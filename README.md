@@ -2151,3 +2151,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Multi-Query Attention (MQA)
 **Script:** `train_mqa_component.py`
 **Description:** Evaluates a Multi-Query Attention (MQA) component mathematically in pure NumPy, testing its ability to reduce memory bandwidth requirements by sharing a single key and value head across multiple query heads during self-attention computation.
+
+## Component Testing: QLoRA
+**Script:** `train_qlora_component.py`
+**Description:** Evaluates a QLoRA component mathematically, testing its ability to fine-tune a model using low-rank adaptation on simulated quantized base weights to reduce memory usage during training.

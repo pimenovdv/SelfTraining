@@ -238,6 +238,7 @@ train_protonet_component.py
 train_pso_component.py
 train_q_learning_component.py
 train_qda_component.py
+train_qlora_component.py
 train_quantile_regression_component.py
 train_quantization_component.py
 train_radam_component.py
