@@ -343,3 +343,4 @@ docs/0368_train_adabound_component.md
 docs/0369_train_stdp_component.md
 docs/0370_train_celu_component.md
 docs/0371_train_tokenizer_component.md
+docs/0372_train_mamba_component.md

@@ -184,6 +184,7 @@ train_ltc_component
 train_lvq_component.py
 train_made_component.py
 train_mae_component
+train_mamba_component.py
 train_maml_component
 train_masked_attention_component
 train_matrix_factorization_component.py

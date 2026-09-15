@@ -27,6 +27,7 @@ train_layer_norm_component
 train_leaky_relu_component
 train_lion_component
 train_liquid_state_machine_component
+train_mamba_component
 train_maxout_component
 train_mish_component
 train_mixup_component

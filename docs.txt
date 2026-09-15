@@ -344,3 +344,4 @@
 0369_train_stdp_component
 0370_train_celu_component
 0371_train_tokenizer_component
+0372_train_mamba_component
