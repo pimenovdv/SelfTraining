@@ -103,6 +103,7 @@
 ./train_lsh_component.py
 ./train_lvq_component.py
 ./train_made_component.py
+./train_mamba_component.py
 ./train_matrix_factorization_component.py
 ./train_maxout_component.py
 ./train_mcmc_component.py
