@@ -100,6 +100,7 @@ train_gan_component
 train_gat_component
 train_gaussian_process_component
 train_gcn_component
+train_geglu_component.py
 train_gelu_component
 train_genetic_algorithm_component
 train_gflownet_component
