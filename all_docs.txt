@@ -339,3 +339,4 @@ docs/0380_train_lars_component.md
 docs/0381_train_lookahead_component.md
 docs/0382_train_orpo_component.md
 docs/0383_train_geglu_component.md
+docs/0384_train_logcosh_regression_component.md
