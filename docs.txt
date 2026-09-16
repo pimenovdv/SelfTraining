@@ -340,3 +340,4 @@
 0382_train_orpo_component
 0383_train_geglu_component
 0384_train_logcosh_regression_component
+0385_train_wasserstein_distance_component
