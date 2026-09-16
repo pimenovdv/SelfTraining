@@ -221,6 +221,7 @@
 ./train_omp_component.py
 ./train_ood_detection_component.py
 ./train_operational_control_transition_component.py
+./train_orpo_component.py
 ./train_orthogonal_rnn_component.py
 ./train_pagerank_component.py
 ./train_particle_filter_component.py
