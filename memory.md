@@ -1509,3 +1509,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a GEGLU component mathematically in pure NumPy, testing its forward pass and manual derivation of backpropagation on a synthetic XOR dataset.
 - **Outcome:** The implementation correctly demonstrated non-linear transformation capabilities with the GEGLU activation and converged successfully, confirming the complex gating logic and its gradient derivations.
 - **Next Steps:** Evaluate the GEGLU mechanism within larger language model architectures (like PaLM or T5) to measure performance gains on more complex tasks.
+
+### Experiment 0384: Log-Cosh Regression Component
+- **Hypothesis:** By employing the Log-Cosh loss function, which combines the benefits of MSE (smooth near zero) and MAE (robust to large errors), we can learn robust regression boundaries that are less sensitive to outliers than standard MSE.
+- **Action:** Implemented a Log-Cosh Regression component mathematically in pure NumPy, testing its forward pass and manual derivation of backpropagation using the tanh function on a synthetic dataset containing explicit outliers.
+- **Outcome:** The implementation correctly scaled the gradients using tanh, effectively reducing the impact of outliers, and converged successfully, confirming its robustness properties.
+- **Next Steps:** Evaluate the Log-Cosh loss mechanism within deep learning architectures for regression tasks to measure its impact on large-scale training with noisy labels.

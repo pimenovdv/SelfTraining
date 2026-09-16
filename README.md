@@ -2171,3 +2171,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: GEGLU
 **Script:** `train_geglu_component.py`
 **Description:** Evaluates a GEGLU (GELU-Gated Linear Unit) component mathematically in pure NumPy, testing its ability to learn non-linear reasoning boundaries with advanced gating logic using the GELU activation function.
+
+## Component Testing: Log-Cosh Regression
+**Script:** `train_logcosh_regression_component.py`
+**Description:** Evaluates a Log-Cosh Regression component mathematically in pure NumPy, testing its ability to handle outliers smoothly compared to MSE by using the log-cosh loss function, which behaves like MSE near zero but like MAE for large errors.

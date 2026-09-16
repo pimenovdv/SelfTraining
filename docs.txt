@@ -339,3 +339,4 @@
 0381_train_lookahead_component
 0382_train_orpo_component
 0383_train_geglu_component
+0384_train_logcosh_regression_component
