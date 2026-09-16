@@ -335,3 +335,4 @@
 0377_train_mqa_component
 0378_train_qlora_component
 0379_train_grpo_component
+0380_train_lars_component
