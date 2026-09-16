@@ -2167,3 +2167,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Lookahead Optimizer
 **Script:** `train_lookahead_component.py`
 **Description:** Evaluates a Lookahead Optimizer component mathematically in pure NumPy, testing its ability to improve learning stability and convergence speed by maintaining a set of slow weights that periodically interpolate with fast weights updated by a standard optimizer (SGD).
+
+## Component Testing: GEGLU
+**Script:** `train_geglu_component.py`
+**Description:** Evaluates a GEGLU (GELU-Gated Linear Unit) component mathematically in pure NumPy, testing its ability to learn non-linear reasoning boundaries with advanced gating logic using the GELU activation function.
