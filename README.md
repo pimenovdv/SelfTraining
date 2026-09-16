@@ -2163,3 +2163,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LARS Optimizer
 **Script:** `train_lars_component.py`
 **Description:** Evaluates a Layer-wise Adaptive Rate Scaling (LARS) optimizer component mathematically in pure NumPy, testing its ability to compute a local learning rate based on the ratio of weight and gradient norms to stabilize training with large batch sizes.
+
+## Component Testing: Lookahead Optimizer
+**Script:** `train_lookahead_component.py`
+**Description:** Evaluates a Lookahead Optimizer component mathematically in pure NumPy, testing its ability to improve learning stability and convergence speed by maintaining a set of slow weights that periodically interpolate with fast weights updated by a standard optimizer (SGD).

@@ -336,3 +336,4 @@ docs/0377_train_mqa_component.md
 docs/0378_train_qlora_component.md
 docs/0379_train_grpo_component.md
 docs/0380_train_lars_component.md
+docs/0381_train_lookahead_component.md
