@@ -2159,3 +2159,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: GRPO (Group Relative Policy Optimization)
 **Script:** `train_grpo_component.py`
 **Description:** Evaluates a Group Relative Policy Optimization (GRPO) component mathematically in pure NumPy, testing its ability to optimize a policy by computing baseline advantages from a group of outputs generated for the same prompt, without requiring a value network.
+
+## Component Testing: LARS Optimizer
+**Script:** `train_lars_component.py`
+**Description:** Evaluates a Layer-wise Adaptive Rate Scaling (LARS) optimizer component mathematically in pure NumPy, testing its ability to compute a local learning rate based on the ratio of weight and gradient norms to stabilize training with large batch sizes.

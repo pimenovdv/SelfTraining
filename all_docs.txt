@@ -335,3 +335,4 @@ docs/0376_train_ridge_regression_component.md
 docs/0377_train_mqa_component.md
 docs/0378_train_qlora_component.md
 docs/0379_train_grpo_component.md
+docs/0380_train_lars_component.md

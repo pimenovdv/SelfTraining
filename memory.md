@@ -1491,3 +1491,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a GRPO component mathematically in pure NumPy, testing its forward pass, group relative advantage calculation, and manual backpropagation with clipping.
 - **Outcome:** The implementation correctly scaled gradients based on group relative advantages and successfully shifted the policy distribution toward the optimal action while respecting KL constraints.
 - **Next Steps:** Evaluate the GRPO mechanism within a larger language model architecture to measure alignment performance without value models.
+
+### Experiment 0380: LARS Optimizer Component
+- **Hypothesis:** By applying Layer-wise Adaptive Rate Scaling (LARS), which calculates a local learning rate for each layer based on the ratio of weight norms to gradient norms, we can enable stable training with much larger learning rates and batch sizes without divergence.
+- **Action:** Implemented a LARS optimizer component mathematically in pure NumPy, testing its step update logic and local learning rate calculation on a synthetic linear regression dataset.
+- **Outcome:** The implementation correctly scaled the learning rate based on weight and gradient norms, converging successfully while preventing gradient explosion.
+- **Next Steps:** Evaluate the LARS optimizer mechanism within a larger deep learning architecture to measure its impact on large-batch training stability.

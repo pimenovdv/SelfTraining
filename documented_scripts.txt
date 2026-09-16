@@ -155,6 +155,7 @@ train_label_propagation_component
 train_label_smoothing_component
 train_lamb_component
 train_laplacian_eigenmaps_component
+train_lars_component.py
 train_lasso_regression_component
 train_lasso_regression_component.py
 train_layer_norm_component
