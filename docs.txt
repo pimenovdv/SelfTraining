@@ -346,3 +346,4 @@
 0388_train_dice_loss_component
 0389_train_lbfgs_component
 0390_train_ftrl_component
+0391_train_shampoo_component

@@ -285,6 +285,7 @@
 ./train_self_correction_component.py
 ./train_selu_component.py
 ./train_sfa_component.py
+./train_shampoo_component.py
 ./train_siamese_network_component.py
 ./train_simclr_component.py
 ./train_simsiam_component.py
