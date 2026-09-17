@@ -94,6 +94,7 @@
 ./train_fno_component.py
 ./train_focal_loss_component.py
 ./train_fourier_neural_operator_component.py
+./train_ftrl_component.py
 ./train_full_encoder_decoder_component.py
 ./train_fuzzy_c_means_component.py
 ./train_gae_component.py

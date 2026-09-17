@@ -345,3 +345,4 @@ docs/0386_train_madgrad_component.md
 docs/0387_train_adan_component.md
 docs/0388_train_dice_loss_component.md
 docs/0389_train_lbfgs_component.md
+docs/0390_train_ftrl_component.md
