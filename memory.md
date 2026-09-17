@@ -1527,3 +1527,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Adan Optimizer component mathematically in pure NumPy, testing its forward step logic, Nesterov momentum estimation, and decoupled weight decay on the XOR problem.
 - **Outcome:** The implementation correctly scaled the learning rate based on adaptive Nesterov momentum and gradient difference estimations, successfully converging on the XOR task and reaching zero loss very rapidly.
 - **Next Steps:** Evaluate the Adan mechanism within larger deep learning architectures (like ViTs or Transformers) to measure its impact on large-scale training efficiency and generalization compared to AdamW.
+
+### Experiment 0389: L-BFGS Optimization Component
+- **Hypothesis:** By employing the Limited-memory BFGS (L-BFGS) quasi-Newton optimization method, we can achieve significantly faster convergence on complex, poorly conditioned loss landscapes (such as the Rosenbrock "banana" function) compared to first-order methods, while maintaining low memory requirements by only storing a brief history of updates to approximate the inverse Hessian.
+- **Action:** Implemented an L-BFGS optimization test script to minimize the Rosenbrock function, evaluating the convergence behavior, final loss, and the number of iterations required to reach the global minimum.
+- **Outcome:** The L-BFGS algorithm successfully converged to the exact global minimum in a very small number of iterations and function evaluations, demonstrating its efficiency and effectiveness on difficult objective functions.
+- **Next Steps:** Consider implementing L-BFGS for deterministic full-batch optimization problems in smaller-scale networks where memory allows, and compare its convergence properties against stochastic adaptive methods like Adam.

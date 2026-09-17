@@ -2187,3 +2187,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Dice Loss Component
 **Script:** `train_dice_loss_component.py`
 **Description:** Evaluates a Dice Loss component mathematically in pure NumPy, testing its ability to handle imbalanced datasets by optimizing the Sorensen-Dice coefficient, which measures the overlap between predictions and ground truth.
+
+## Component Testing: L-BFGS Optimization Component
+**Script:** `train_lbfgs_component.py`
+**Description:** Evaluates the Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS) Optimization component mathematically using SciPy, testing its ability to efficiently navigate complex loss landscapes (like the Rosenbrock function) by approximating the inverse Hessian matrix without storing the full dense matrix.
