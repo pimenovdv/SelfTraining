@@ -330,3 +330,4 @@
 - [x] Explore adaptive optimization with dual averaging mathematically. (Implemented and verified MADGRAD Optimizer Component).
 - [x] Explore adaptive optimization with Nesterov momentum mathematically. (Implemented and verified Adan Optimizer Component).
 - [x] Explore quasi-Newton optimization mathematically. (Implemented and verified L-BFGS Optimizer Component).
+- [x] Explore adaptive optimization with sparsity mathematically. (Implemented and verified FTRL Optimizer Component).

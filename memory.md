@@ -1533,3 +1533,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an L-BFGS optimization test script to minimize the Rosenbrock function, evaluating the convergence behavior, final loss, and the number of iterations required to reach the global minimum.
 - **Outcome:** The L-BFGS algorithm successfully converged to the exact global minimum in a very small number of iterations and function evaluations, demonstrating its efficiency and effectiveness on difficult objective functions.
 - **Next Steps:** Consider implementing L-BFGS for deterministic full-batch optimization problems in smaller-scale networks where memory allows, and compare its convergence properties against stochastic adaptive methods like Adam.
+
+- Successfully implemented and tested `train_ftrl_component.py`.
+  - The Follow The Regularized Leader (FTRL) component efficiently handles sparsity.
+  - FTRL aggressively pushes uninformative or noisy feature weights exactly to zero thanks to its integrated L1 regularization penalty, without storing excessive state space.

@@ -2191,3 +2191,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: L-BFGS Optimization Component
 **Script:** `train_lbfgs_component.py`
 **Description:** Evaluates the Limited-memory Broyden-Fletcher-Goldfarb-Shanno (L-BFGS) Optimization component mathematically using SciPy, testing its ability to efficiently navigate complex loss landscapes (like the Rosenbrock function) by approximating the inverse Hessian matrix without storing the full dense matrix.
+
+## Component Testing: FTRL Optimizer Component
+**Script:** `train_ftrl_component.py`
+**Description:** Evaluates a Follow The Regularized Leader (FTRL) Optimizer component mathematically in pure NumPy, testing its ability to induce sparsity for irrelevant features by utilizing an adaptive learning rate and strong L1 regularization penalty during parameter updates.
