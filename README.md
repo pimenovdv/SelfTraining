@@ -2175,3 +2175,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Log-Cosh Regression
 **Script:** `train_logcosh_regression_component.py`
 **Description:** Evaluates a Log-Cosh Regression component mathematically in pure NumPy, testing its ability to handle outliers smoothly compared to MSE by using the log-cosh loss function, which behaves like MSE near zero but like MAE for large errors.
+
+## Component Testing: MADGRAD Optimizer Component
+**Script:** `train_madgrad_component.py`
+**Description:** Evaluates a MADGRAD (Momentumized, Adaptive, Dual Averaged Gradient) Optimizer component mathematically in pure NumPy, testing its ability to achieve both the fast convergence of adaptive methods and the superior generalization performance of SGD by using dual averaging and an adaptive learning rate schedule.
