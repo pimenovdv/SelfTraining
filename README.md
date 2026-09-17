@@ -2179,3 +2179,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: MADGRAD Optimizer Component
 **Script:** `train_madgrad_component.py`
 **Description:** Evaluates a MADGRAD (Momentumized, Adaptive, Dual Averaged Gradient) Optimizer component mathematically in pure NumPy, testing its ability to achieve both the fast convergence of adaptive methods and the superior generalization performance of SGD by using dual averaging and an adaptive learning rate schedule.
+
+## Component Testing: Adan Optimizer Component
+**Script:** `train_adan_component.py`
+**Description:** Evaluates an Adan (Adaptive Nesterov Momentum Algorithm) Optimizer component mathematically in pure NumPy, testing its ability to achieve fast convergence by incorporating Nesterov momentum and decoupled weight decay.

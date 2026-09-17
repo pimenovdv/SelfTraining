@@ -1521,3 +1521,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a MADGRAD Optimizer component mathematically in pure NumPy, testing its forward step logic and convergence properties on a 2D quadratic optimization problem.
 - **Outcome:** The implementation correctly accumulated dual averaged gradients and maintained an adaptive learning rate schedule based on the square root of iterations, successfully minimizing the quadratic objective and confirming its convergence properties.
 - **Next Steps:** Evaluate the MADGRAD mechanism within larger deep learning architectures (like ResNets or Transformers) to measure its impact on large-scale training and generalization compared to AdamW.
+
+### Experiment 0387: Adan Optimizer Component
+- **Hypothesis:** By employing the Adan (Adaptive Nesterov Momentum Algorithm) optimizer, we can achieve significantly faster convergence and better generalization by reformulating Nesterov momentum to use a heavy-ball-like update along with an adaptive learning rate based on gradient differences.
+- **Action:** Implemented an Adan Optimizer component mathematically in pure NumPy, testing its forward step logic, Nesterov momentum estimation, and decoupled weight decay on the XOR problem.
+- **Outcome:** The implementation correctly scaled the learning rate based on adaptive Nesterov momentum and gradient difference estimations, successfully converging on the XOR task and reaching zero loss very rapidly.
+- **Next Steps:** Evaluate the Adan mechanism within larger deep learning architectures (like ViTs or Transformers) to measure its impact on large-scale training efficiency and generalization compared to AdamW.
