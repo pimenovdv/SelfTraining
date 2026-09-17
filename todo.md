@@ -328,3 +328,4 @@
 - [x] Explore reducing memory bandwidth for attention mathematically. (Implemented and verified Multi-Query Attention - MQA sharing key and value heads).
 - [x] Explore quantized parameter-efficient fine-tuning mathematically. (Implemented and verified QLoRA component).
 - [x] Explore adaptive optimization with dual averaging mathematically. (Implemented and verified MADGRAD Optimizer Component).
+- [x] Explore adaptive optimization with Nesterov momentum mathematically. (Implemented and verified Adan Optimizer Component).
