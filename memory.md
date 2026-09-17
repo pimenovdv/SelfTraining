@@ -1537,3 +1537,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - Successfully implemented and tested `train_ftrl_component.py`.
   - The Follow The Regularized Leader (FTRL) component efficiently handles sparsity.
   - FTRL aggressively pushes uninformative or noisy feature weights exactly to zero thanks to its integrated L1 regularization penalty, without storing excessive state space.
+
+### Experiment 0391: Shampoo Optimizer Component
+- **Hypothesis:** By employing the Shampoo optimization method, we can achieve significantly faster convergence and better conditioning on complex loss landscapes by utilizing tensor-based preconditioning that approximates the full-matrix Adagrad without the memory overhead of storing the full inverse Hessian.
+- **Action:** Implemented a Shampoo Optimizer component mathematically in pure NumPy, testing its forward step logic, tensor matricization, eigenvalue decomposition for inverse p-th roots, and gradient preconditioning on the XOR problem.
+- **Outcome:** The implementation correctly scaled the learning rate based on tensor preconditioners computed from gradient statistics, successfully converging on the XOR task and reaching near zero loss extremely rapidly.
+- **Next Steps:** Evaluate the Shampoo mechanism within larger deep learning architectures (like deep ResNets or wide transformers) to measure its impact on large-scale training efficiency compared to AdamW or standard Adagrad.

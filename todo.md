@@ -331,3 +331,4 @@
 - [x] Explore adaptive optimization with Nesterov momentum mathematically. (Implemented and verified Adan Optimizer Component).
 - [x] Explore quasi-Newton optimization mathematically. (Implemented and verified L-BFGS Optimizer Component).
 - [x] Explore adaptive optimization with sparsity mathematically. (Implemented and verified FTRL Optimizer Component).
+- [x] Explore tensor preconditioned optimization mathematically. (Implemented and verified Shampoo Optimizer Component).

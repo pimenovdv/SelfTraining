@@ -285,6 +285,7 @@ train_selective_ssm_component
 train_self_correction_component
 train_selu_component
 train_sfa_component
+train_shampoo_component
 train_siamese_network_component
 train_simclr_component
 train_simsiam_component

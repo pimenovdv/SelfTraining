@@ -2195,3 +2195,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: FTRL Optimizer Component
 **Script:** `train_ftrl_component.py`
 **Description:** Evaluates a Follow The Regularized Leader (FTRL) Optimizer component mathematically in pure NumPy, testing its ability to induce sparsity for irrelevant features by utilizing an adaptive learning rate and strong L1 regularization penalty during parameter updates.
+
+## Component Testing: Shampoo Optimizer Component
+**Script:** `train_shampoo_component.py`
+**Description:** Evaluates a Shampoo Optimizer component mathematically in pure NumPy, testing its ability to achieve faster convergence by utilizing tensor-based preconditioning that approximates full-matrix Adagrad without the immense memory overhead of storing the full inverse Hessian.
