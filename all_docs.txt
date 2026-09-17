@@ -343,3 +343,4 @@ docs/0384_train_logcosh_regression_component.md
 docs/0385_train_wasserstein_distance_component.md
 docs/0386_train_madgrad_component.md
 docs/0387_train_adan_component.md
+docs/0388_train_dice_loss_component.md

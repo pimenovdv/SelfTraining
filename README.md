@@ -2183,3 +2183,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Adan Optimizer Component
 **Script:** `train_adan_component.py`
 **Description:** Evaluates an Adan (Adaptive Nesterov Momentum Algorithm) Optimizer component mathematically in pure NumPy, testing its ability to achieve fast convergence by incorporating Nesterov momentum and decoupled weight decay.
+
+## Component Testing: Dice Loss Component
+**Script:** `train_dice_loss_component.py`
+**Description:** Evaluates a Dice Loss component mathematically in pure NumPy, testing its ability to handle imbalanced datasets by optimizing the Sorensen-Dice coefficient, which measures the overlap between predictions and ground truth.
