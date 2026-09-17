@@ -163,6 +163,7 @@ train_lasso_regression_component
 train_lasso_regression_component.py
 train_layer_norm_component
 train_layernorm_component
+train_lbfgs_component.py
 train_lda_component
 train_lda_topic_model_component
 train_leaky_relu_component
