@@ -184,6 +184,7 @@ train_lstm_component
 train_ltc_component
 train_lvq_component
 train_made_component
+train_madgrad_component.py
 train_mae_component
 train_mamba_component
 train_maml_component

@@ -341,3 +341,4 @@
 0383_train_geglu_component
 0384_train_logcosh_regression_component
 0385_train_wasserstein_distance_component
+0386_train_madgrad_component
