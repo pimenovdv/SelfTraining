@@ -1549,3 +1549,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Sophia Optimizer component mathematically in pure NumPy, testing its forward step logic, moving averages, Hessian-based updates, and clipping mechanism on the XOR problem.
 - **Outcome:** The implementation correctly integrated the diagonal Hessian estimates to scale the updates and successfully converged on the XOR task, reaching near zero loss extremely rapidly.
 - **Next Steps:** Evaluate the Sophia mechanism within larger deep learning architectures (like ViTs or Transformers) to measure its impact on large-scale training efficiency and generalization compared to AdamW or standard second-order methods.
+
+### Experiment 0393: Kahneman-Tversky Optimization (KTO) Component
+- **Hypothesis:** By employing Kahneman-Tversky Optimization (KTO) Loss, we can efficiently align generative models using unpaired data (just binary good/bad flags) by leveraging an asymmetric logistic loss function inspired by human loss aversion, eliminating the need for strictly paired preference datasets.
+- **Action:** Implemented a Kahneman-Tversky Optimization (KTO) Loss component mathematically in pure NumPy, testing its forward logic to compute asymmetric losses on a mock dataset of log probabilities and boolean flags.
+- **Outcome:** The implementation correctly calculated the KTO loss, scaling penalties asymmetrically based on the reference model's log-probabilities and the given target labels, outputting a positive valid scalar loss.
+- **Next Steps:** Evaluate the KTO mechanism within larger transformer-based language models to measure its real-world alignment capabilities compared to standard Direct Preference Optimization (DPO) and reinforcement learning with human feedback (RLHF).

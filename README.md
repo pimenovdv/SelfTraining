@@ -2203,3 +2203,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Sophia Optimizer Component
 **Script:** `train_sophia_component.py`
 **Description:** Evaluates a Sophia Optimizer component mathematically in pure NumPy, testing its ability to achieve fast convergence by incorporating a diagonal Hessian estimate with an exponential moving average and parameter clipping, demonstrating successful minimization on the XOR problem.
+
+## Component Testing: Kahneman-Tversky Optimization (KTO) Component
+**Script:** `train_kto_component.py`
+**Description:** Evaluates a Kahneman-Tversky Optimization (KTO) Loss component mathematically in pure NumPy, testing its ability to align generation by applying an asymmetric logistic loss based on whether the output is flagged as good or bad, without requiring paired preference data.

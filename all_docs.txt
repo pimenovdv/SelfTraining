@@ -348,3 +348,4 @@ docs/0389_train_lbfgs_component.md
 docs/0390_train_ftrl_component.md
 docs/0391_train_shampoo_component.md
 docs/0392_train_sophia_component.md
+docs/0393_train_kto_component.md
