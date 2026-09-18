@@ -310,6 +310,7 @@ train_stdp_component
 train_svd_component
 train_svm_component
 train_svr_component
+train_swa_component
 train_swiglu_component
 train_swish_component
 train_target_propagation_component

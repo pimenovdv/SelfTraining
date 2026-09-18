@@ -350,3 +350,4 @@
 0392_train_sophia_component
 0393_train_kto_component
 0394_train_cross_entropy_loss_component
+0395_train_swa_component

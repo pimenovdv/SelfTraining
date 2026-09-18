@@ -350,3 +350,4 @@ docs/0391_train_shampoo_component.md
 docs/0392_train_sophia_component.md
 docs/0393_train_kto_component.md
 docs/0394_train_cross_entropy_loss_component.md
+docs/0395_train_swa_component.md
