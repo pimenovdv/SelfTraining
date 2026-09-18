@@ -2207,3 +2207,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Kahneman-Tversky Optimization (KTO) Component
 **Script:** `train_kto_component.py`
 **Description:** Evaluates a Kahneman-Tversky Optimization (KTO) Loss component mathematically in pure NumPy, testing its ability to align generation by applying an asymmetric logistic loss based on whether the output is flagged as good or bad, without requiring paired preference data.
+
+## Component Testing: Cross Entropy Loss Component
+**Script:** `train_cross_entropy_loss_component.py`
+**Description:** Evaluates a Cross Entropy Loss component mathematically in pure NumPy, testing its ability to calculate the loss between true categorical distributions and predicted probabilities, successfully matching expected mathematical outputs.

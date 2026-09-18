@@ -48,6 +48,7 @@ train_cp_decomposition_component
 train_cpc_component
 train_crf_component
 train_cross_attention_component
+train_cross_entropy_loss_component
 train_ctrnn_component
 train_cvae_component
 train_dae_component

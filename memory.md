@@ -1555,3 +1555,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Kahneman-Tversky Optimization (KTO) Loss component mathematically in pure NumPy, testing its forward logic to compute asymmetric losses on a mock dataset of log probabilities and boolean flags.
 - **Outcome:** The implementation correctly calculated the KTO loss, scaling penalties asymmetrically based on the reference model's log-probabilities and the given target labels, outputting a positive valid scalar loss.
 - **Next Steps:** Evaluate the KTO mechanism within larger transformer-based language models to measure its real-world alignment capabilities compared to standard Direct Preference Optimization (DPO) and reinforcement learning with human feedback (RLHF).
+
+### Experiment 0394: Cross Entropy Loss Component
+- **Hypothesis:** By employing Categorical Cross Entropy Loss, we can properly quantify the difference between a predicted probability distribution and the true categorical labels, establishing a foundational mathematical building block for multi-class classification networks.
+- **Action:** Implemented a Cross Entropy Loss component mathematically in pure NumPy, testing its forward logic, epsilon clipping to prevent infinite logarithms, and overall loss calculation on a mock multi-class dataset.
+- **Outcome:** The implementation correctly calculated the categorical cross entropy loss, producing a valid positive scalar that strictly matched the expected theoretical mathematical value.
+- **Next Steps:** Evaluate the Cross Entropy Loss mechanism within larger feed-forward neural networks and convolutional neural networks to measure its performance for image classification and natural language processing tasks.
