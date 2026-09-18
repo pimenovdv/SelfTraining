@@ -12,7 +12,7 @@ train_adaln_component
 train_adam_component
 train_adamax_component
 train_adamw_component
-train_adan_component.py
+train_adan_component
 train_affinity_propagation_component
 train_agglomerative_clustering_component
 train_agi_asi_component
@@ -27,7 +27,7 @@ train_bayesian_ridge_component
 train_bcm_component
 train_beta_vae_component
 train_bnn_component
-train_bnn_component.py
+train_bnn_component
 train_bpe_component
 train_byol_component
 train_cae_component
@@ -95,7 +95,7 @@ train_fnet_component
 train_fno_component
 train_focal_loss_component
 train_fourier_neural_operator_component
-train_ftrl_component.py
+train_ftrl_component
 train_full_encoder_decoder_component
 train_fuzzy_c_means_component
 train_gae_component
@@ -103,7 +103,7 @@ train_gan_component
 train_gat_component
 train_gaussian_process_component
 train_gcn_component
-train_geglu_component.py
+train_geglu_component
 train_gelu_component
 train_genetic_algorithm_component
 train_gflownet_component
@@ -113,13 +113,13 @@ train_gmm_component
 train_gpr_component
 train_gqa_component
 train_gradient_boosting_component
-train_gradient_boosting_component.py
+train_gradient_boosting_component
 train_graph_isomorphism_network_component
 train_graphsage_component
 train_grokking_component
 train_group_norm_component
 train_groupnorm_component
-train_grpo_component.py
+train_grpo_component
 train_gru_component
 train_gumbel_softmax_component
 train_hdbscan_component
@@ -159,12 +159,12 @@ train_label_propagation_component
 train_label_smoothing_component
 train_lamb_component
 train_laplacian_eigenmaps_component
-train_lars_component.py
+train_lars_component
 train_lasso_regression_component
-train_lasso_regression_component.py
+train_lasso_regression_component
 train_layer_norm_component
 train_layernorm_component
-train_lbfgs_component.py
+train_lbfgs_component
 train_lda_component
 train_lda_topic_model_component
 train_leaky_relu_component
@@ -176,9 +176,9 @@ train_liquid_state_machine_component
 train_lle_component
 train_lmu_component
 train_local_outlier_factor_component
-train_logcosh_regression_component.py
+train_logcosh_regression_component
 train_logistic_regression_component
-train_lookahead_component.py
+train_lookahead_component
 train_lora_component
 train_lottery_ticket_component
 train_lpp_component
@@ -188,7 +188,7 @@ train_lstm_component
 train_ltc_component
 train_lvq_component
 train_made_component
-train_madgrad_component.py
+train_madgrad_component
 train_mae_component
 train_mamba_component
 train_maml_component
@@ -207,7 +207,7 @@ train_mixup_component
 train_mlpmixer_component
 train_moe_component
 train_momentum_component
-train_mqa_component.py
+train_mqa_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component
@@ -231,7 +231,7 @@ train_oja_rule_component
 train_omp_component
 train_ood_detection_component
 train_operational_control_transition_component
-train_orpo_component.py
+train_orpo_component
 train_orthogonal_rnn_component
 train_pagerank_component
 train_particle_filter_component
@@ -252,7 +252,7 @@ train_protonet_component
 train_pso_component
 train_q_learning_component
 train_qda_component
-train_qlora_component.py
+train_qlora_component
 train_quantile_regression_component
 train_quantization_component
 train_radam_component
@@ -269,7 +269,7 @@ train_reptile_component
 train_retention_component
 train_revnet_component
 train_ridge_regression_component
-train_ridge_regression_component.py
+train_ridge_regression_component
 train_rmsnorm_component
 train_rmsprop_component
 train_rnn_component
@@ -289,7 +289,7 @@ train_selective_ssm_component
 train_self_correction_component
 train_selu_component
 train_sfa_component
-train_shampoo_component.py
+train_shampoo_component
 train_siamese_network_component
 train_simclr_component
 train_simsiam_component
@@ -300,6 +300,7 @@ train_skipgram_component
 train_snn_component
 train_softplus_component
 train_som_component
+train_sophia_component
 train_sparse_coding_component
 train_sparse_pca_component
 train_sparsemax_component

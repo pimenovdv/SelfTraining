@@ -1543,3 +1543,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Shampoo Optimizer component mathematically in pure NumPy, testing its forward step logic, tensor matricization, eigenvalue decomposition for inverse p-th roots, and gradient preconditioning on the XOR problem.
 - **Outcome:** The implementation correctly scaled the learning rate based on tensor preconditioners computed from gradient statistics, successfully converging on the XOR task and reaching near zero loss extremely rapidly.
 - **Next Steps:** Evaluate the Shampoo mechanism within larger deep learning architectures (like deep ResNets or wide transformers) to measure its impact on large-scale training efficiency compared to AdamW or standard Adagrad.
+
+### Experiment 0392: Sophia Optimizer Component
+- **Hypothesis:** By employing the Sophia optimization method, which utilizes a diagonal Hessian estimate alongside gradient moving averages and parameter clipping, we can achieve significantly faster convergence and better conditioning than standard adaptive methods (like Adam) while maintaining stability.
+- **Action:** Implemented a Sophia Optimizer component mathematically in pure NumPy, testing its forward step logic, moving averages, Hessian-based updates, and clipping mechanism on the XOR problem.
+- **Outcome:** The implementation correctly integrated the diagonal Hessian estimates to scale the updates and successfully converged on the XOR task, reaching near zero loss extremely rapidly.
+- **Next Steps:** Evaluate the Sophia mechanism within larger deep learning architectures (like ViTs or Transformers) to measure its impact on large-scale training efficiency and generalization compared to AdamW or standard second-order methods.

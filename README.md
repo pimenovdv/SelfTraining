@@ -2199,3 +2199,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Shampoo Optimizer Component
 **Script:** `train_shampoo_component.py`
 **Description:** Evaluates a Shampoo Optimizer component mathematically in pure NumPy, testing its ability to achieve faster convergence by utilizing tensor-based preconditioning that approximates full-matrix Adagrad without the immense memory overhead of storing the full inverse Hessian.
+
+## Component Testing: Sophia Optimizer Component
+**Script:** `train_sophia_component.py`
+**Description:** Evaluates a Sophia Optimizer component mathematically in pure NumPy, testing its ability to achieve fast convergence by incorporating a diagonal Hessian estimate with an exponential moving average and parameter clipping, demonstrating successful minimization on the XOR problem.
