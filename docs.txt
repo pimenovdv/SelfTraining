@@ -348,3 +348,4 @@
 0390_train_ftrl_component
 0391_train_shampoo_component
 0392_train_sophia_component
+0393_train_kto_component

@@ -27,7 +27,6 @@ train_bayesian_ridge_component
 train_bcm_component
 train_beta_vae_component
 train_bnn_component
-train_bnn_component
 train_bpe_component
 train_byol_component
 train_cae_component
@@ -113,7 +112,6 @@ train_gmm_component
 train_gpr_component
 train_gqa_component
 train_gradient_boosting_component
-train_gradient_boosting_component
 train_graph_isomorphism_network_component
 train_graphsage_component
 train_grokking_component
@@ -155,12 +153,12 @@ train_kmedoids_component
 train_knn_component
 train_knowledge_distillation_component
 train_kpca_component
+train_kto_component.py
 train_label_propagation_component
 train_label_smoothing_component
 train_lamb_component
 train_laplacian_eigenmaps_component
 train_lars_component
-train_lasso_regression_component
 train_lasso_regression_component
 train_layer_norm_component
 train_layernorm_component
@@ -268,7 +266,6 @@ train_relational_network_component
 train_reptile_component
 train_retention_component
 train_revnet_component
-train_ridge_regression_component
 train_ridge_regression_component
 train_rmsnorm_component
 train_rmsprop_component
