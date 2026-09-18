@@ -2219,3 +2219,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SignSGD Component
 **Script:** `train_signsgd_component.py`
 **Description:** Evaluates a SignSGD component mathematically in pure NumPy, testing its ability to optimize a linear regression problem by updating weights based solely on the sign of the stochastic gradient, rather than its magnitude.
+
+## Component Testing: diffGrad Optimizer Component
+**Script:** `train_diffgrad_component.py`
+**Description:** Evaluates a diffGrad optimization component mathematically in pure NumPy, testing its ability to dynamically apply friction to the learning rate based on gradient changes, demonstrating successful and stable convergence on a mock quadratic minimization problem by preventing overshoot.

@@ -1567,3 +1567,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a SignSGD optimizer component mathematically in pure NumPy, testing its forward step logic and convergence on a mock linear regression dataset.
 - **Outcome:** The implementation correctly scaled the updates based on the sign of the gradients and successfully converged on the linear regression task, matching expected final weights.
 - **Next Steps:** Evaluate the SignSGD mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on large-scale distributed training and resilience to adversarial perturbations compared to standard Adam or SGD.
+
+### Experiment 0397: diffGrad Optimizer Component
+- **Hypothesis:** By employing the diffGrad optimization mechanism, we can dynamically adjust the learning rate based on the rate of change of the gradient, applying a friction coefficient to slow down updates in areas of rapid change and preventing overshoot, thereby improving stability compared to standard Adam.
+- **Action:** Implemented a diffGrad optimizer component mathematically in pure NumPy, testing its forward step logic, dynamic friction coefficient calculation, and convergence on a mock quadratic minimization task.
+- **Outcome:** The implementation correctly scaled the parameter updates via the diffGrad friction mechanism based on the difference between current and previous gradients, effectively decelerating near the optima and successfully minimizing the objective.
+- **Next Steps:** Evaluate the diffGrad mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on long-term training stability and fine-tuning robustness compared to standard adaptive optimizers.
