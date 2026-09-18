@@ -351,3 +351,4 @@
 0393_train_kto_component
 0394_train_cross_entropy_loss_component
 0395_train_swa_component
+0396_train_signsgd_component

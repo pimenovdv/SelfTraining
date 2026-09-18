@@ -1561,3 +1561,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Cross Entropy Loss component mathematically in pure NumPy, testing its forward logic, epsilon clipping to prevent infinite logarithms, and overall loss calculation on a mock multi-class dataset.
 - **Outcome:** The implementation correctly calculated the categorical cross entropy loss, producing a valid positive scalar that strictly matched the expected theoretical mathematical value.
 - **Next Steps:** Evaluate the Cross Entropy Loss mechanism within larger feed-forward neural networks and convolutional neural networks to measure its performance for image classification and natural language processing tasks.
+
+### Experiment 0396: SignSGD Component
+- **Hypothesis:** By employing SignSGD, we can robustly optimize models by updating parameters based solely on the sign of the gradient, mitigating issues with vanishing or exploding gradients and reducing communication costs in distributed training.
+- **Action:** Implemented a SignSGD optimizer component mathematically in pure NumPy, testing its forward step logic and convergence on a mock linear regression dataset.
+- **Outcome:** The implementation correctly scaled the updates based on the sign of the gradients and successfully converged on the linear regression task, matching expected final weights.
+- **Next Steps:** Evaluate the SignSGD mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on large-scale distributed training and resilience to adversarial perturbations compared to standard Adam or SGD.

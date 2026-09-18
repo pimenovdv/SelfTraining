@@ -2215,3 +2215,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Stochastic Weight Averaging (SWA)
 **Script:** `train_swa_component.py`
 **Description:** Evaluates a Stochastic Weight Averaging (SWA) component mathematically in pure NumPy, testing its ability to improve generalization by maintaining a running average of the weights collected during the later stages of training on the XOR dataset.
+
+## Component Testing: SignSGD Component
+**Script:** `train_signsgd_component.py`
+**Description:** Evaluates a SignSGD component mathematically in pure NumPy, testing its ability to optimize a linear regression problem by updating weights based solely on the sign of the stochastic gradient, rather than its magnitude.
