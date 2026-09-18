@@ -66,6 +66,7 @@ train_dfa_component
 train_dice_loss_component
 train_dictionary_learning_component
 train_differential_evolution_component
+train_diffgrad_component
 train_diffusion_model_component
 train_distributed_infrastructure_component
 train_dmd_component
