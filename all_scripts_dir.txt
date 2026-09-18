@@ -310,6 +310,7 @@
 ./train_svd_component.py
 ./train_svm_component.py
 ./train_svr_component.py
+./train_swa_component.py
 ./train_swiglu_component.py
 ./train_swish_component.py
 ./train_target_propagation_component.py

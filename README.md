@@ -2211,3 +2211,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Cross Entropy Loss Component
 **Script:** `train_cross_entropy_loss_component.py`
 **Description:** Evaluates a Cross Entropy Loss component mathematically in pure NumPy, testing its ability to calculate the loss between true categorical distributions and predicted probabilities, successfully matching expected mathematical outputs.
+
+## Component Testing: Stochastic Weight Averaging (SWA)
+**Script:** `train_swa_component.py`
+**Description:** Evaluates a Stochastic Weight Averaging (SWA) component mathematically in pure NumPy, testing its ability to improve generalization by maintaining a running average of the weights collected during the later stages of training on the XOR dataset.
