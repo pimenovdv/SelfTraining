@@ -1591,3 +1591,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a GLU component mathematically in pure NumPy, testing its forward logic, dimension-splitting behavior, and gating mechanism on a mocked input tensor.
 - **Outcome:** The implementation correctly split the input tensor along the specified dimension, applied the sigmoid gating mechanism, and halved the output dimension as expected.
 - **Next Steps:** Evaluate the GLU mechanism within language models to measure its impact on controlling information flow and improving gradient propagation compared to standard activations like ReLU or GELU.
+
+### Experiment 0402: Stochastic Gradient Langevin Dynamics (SGLD) Optimizer Component
+- **Hypothesis:** By injecting Gaussian noise scaled by the learning rate into the gradient updates, SGLD transitions from standard SGD to simulating Langevin dynamics, allowing the model to escape local minima and sample from the posterior distribution of parameters.
+- **Action:** Implemented an SGLD optimizer component mathematically in pure NumPy, testing its forward step logic and convergence sampling on a mock quadratic loss function.
+- **Outcome:** The implementation correctly integrated the Gaussian noise proportional to the learning rate and successfully sampled around the minimum rather than collapsing to a single point, enabling posterior exploration.
+- **Next Steps:** Evaluate the SGLD mechanism within Bayesian neural networks to measure its impact on uncertainty quantification and posterior sampling compared to variational inference methods.
