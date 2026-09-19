@@ -2223,3 +2223,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: diffGrad Optimizer Component
 **Script:** `train_diffgrad_component.py`
 **Description:** Evaluates a diffGrad optimization component mathematically in pure NumPy, testing its ability to dynamically apply friction to the learning rate based on gradient changes, demonstrating successful and stable convergence on a mock quadratic minimization problem by preventing overshoot.
+
+## Component Testing: DropConnect Component
+**Script:** `train_dropconnect_component.py`
+**Description:** Evaluates a DropConnect component mathematically in pure NumPy, testing its ability to regularize deep neural networks by randomly dropping connections (weights) instead of activations during the forward pass, successfully demonstrating learning and generalization on the XOR dataset.
