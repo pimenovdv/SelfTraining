@@ -2227,3 +2227,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: DropConnect Component
 **Script:** `train_dropconnect_component.py`
 **Description:** Evaluates a DropConnect component mathematically in pure NumPy, testing its ability to regularize deep neural networks by randomly dropping connections (weights) instead of activations during the forward pass, successfully demonstrating learning and generalization on the XOR dataset.
+
+## Component Testing: AMSGrad Optimizer Component
+**Script:** `train_amsgrad_component.py`
+**Description:** Evaluates an AMSGrad optimizer component mathematically in pure NumPy, testing its ability to fix the convergence issues in Adam by maintaining the maximum of all past squared gradients, successfully demonstrating stable optimization on a mock linear regression problem.
