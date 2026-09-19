@@ -2231,3 +2231,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: AMSGrad Optimizer Component
 **Script:** `train_amsgrad_component.py`
 **Description:** Evaluates an AMSGrad optimizer component mathematically in pure NumPy, testing its ability to fix the convergence issues in Adam by maintaining the maximum of all past squared gradients, successfully demonstrating stable optimization on a mock linear regression problem.
+
+## Component Testing: Gated Linear Unit (GLU) Component
+**Script:** `train_glu_component.py`
+**Description:** Evaluates a Gated Linear Unit (GLU) component mathematically in pure NumPy, testing its ability to split its input, apply a linear projection gated by a sigmoid activation, and control information flow through a network layer.
