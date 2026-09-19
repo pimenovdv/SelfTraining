@@ -74,6 +74,7 @@ train_dnc_component
 train_dni_component
 train_dpo_component
 train_dqn_component
+train_dropconnect_component
 train_dropout_component
 train_ebm_component
 train_echo_state_network_component

@@ -74,6 +74,7 @@ train_dnc_component.py
 train_dni_component.py
 train_dpo_component.py
 train_dqn_component.py
+train_dropconnect_component.py
 train_dropout_component.py
 train_ebm_component.py
 train_echo_state_network_component.py
