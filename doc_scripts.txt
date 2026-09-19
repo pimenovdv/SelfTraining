@@ -297,6 +297,7 @@ train_simulated_annealing_component.py
 train_sinkhorn_component.py
 train_siren_component.py
 train_skipgram_component.py
+train_smooth_l1_loss_component.py
 train_snn_component.py
 train_softplus_component.py
 train_som_component.py

@@ -1573,3 +1573,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a diffGrad optimizer component mathematically in pure NumPy, testing its forward step logic, dynamic friction coefficient calculation, and convergence on a mock quadratic minimization task.
 - **Outcome:** The implementation correctly scaled the parameter updates via the diffGrad friction mechanism based on the difference between current and previous gradients, effectively decelerating near the optima and successfully minimizing the objective.
 - **Next Steps:** Evaluate the diffGrad mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on long-term training stability and fine-tuning robustness compared to standard adaptive optimizers.
+
+### Experiment 0398: Smooth L1 Loss Component
+- **Hypothesis:** By employing Smooth L1 Loss (Huber loss), we can combine the advantages of L1 and L2 losses, providing a robust loss function for regression tasks that is less sensitive to outliers than L2 loss while being differentiable at zero unlike L1 loss.
+- **Action:** Implemented a Smooth L1 Loss component mathematically in pure NumPy, testing its forward logic, gradient calculation, and overall loss minimization on a mock regression dataset.
+- **Outcome:** The implementation correctly calculated the Smooth L1 loss and its gradients, successfully updating parameters to minimize the loss over epochs, confirming mathematical validity.
+- **Next Steps:** Evaluate the Smooth L1 Loss mechanism within object detection networks (like Faster R-CNN or SSD) for bounding box regression tasks to measure its robustness against outliers compared to standard Mean Squared Error (L2) loss.
