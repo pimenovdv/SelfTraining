@@ -358,3 +358,4 @@
 0400_train_amsgrad_component
 0401_train_glu_component
 0402_train_sgld_component
+0403_train_kullback_leibler_divergence_component

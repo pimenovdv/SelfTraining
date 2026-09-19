@@ -358,3 +358,4 @@ docs/0399_train_dropconnect_component.md
 docs/0400_train_amsgrad_component.md
 docs/0401_train_glu_component.md
 docs/0402_train_sgld_component.md
+docs/0403_train_kullback_leibler_divergence_component.md

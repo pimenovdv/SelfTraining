@@ -2239,3 +2239,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Gated Linear Unit (GLU) Component
 **Script:** `train_glu_component.py`
 **Description:** Evaluates a Gated Linear Unit (GLU) component mathematically in pure NumPy, testing its ability to split its input, apply a linear projection gated by a sigmoid activation, and control information flow through a network layer.
+
+## Component Testing: Kullback-Leibler Divergence
+**Script:** `train_kullback_leibler_divergence_component.py`
+**Description:** Evaluates a Kullback-Leibler Divergence component mathematically in pure NumPy, testing its ability to calculate the information lost when approximating one probability distribution with another.

@@ -159,6 +159,7 @@ train_knn_component
 train_knowledge_distillation_component
 train_kpca_component
 train_kto_component
+train_kullback_leibler_divergence_component.py
 train_label_propagation_component
 train_label_smoothing_component
 train_lamb_component
