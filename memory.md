@@ -1585,3 +1585,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an AMSGrad optimizer component mathematically in pure NumPy, testing its forward step logic and convergence on a mock linear regression problem.
 - **Outcome:** The implementation correctly constrained the effective learning rates by leveraging the maximum historical squared gradients and successfully minimized the loss, closely approximating the true weights.
 - **Next Steps:** Evaluate the AMSGrad mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on long-term training stability and fine-tuning robustness compared to standard adaptive optimizers.
+
+### Experiment 0401: Gated Linear Unit (GLU) Component
+- **Hypothesis:** By employing a Gated Linear Unit (GLU) which applies a linear transformation gated by a sigmoid activation on a split of the input, we can enhance the representational power and regulate information flow through network layers effectively.
+- **Action:** Implemented a GLU component mathematically in pure NumPy, testing its forward logic, dimension-splitting behavior, and gating mechanism on a mocked input tensor.
+- **Outcome:** The implementation correctly split the input tensor along the specified dimension, applied the sigmoid gating mechanism, and halved the output dimension as expected.
+- **Next Steps:** Evaluate the GLU mechanism within language models to measure its impact on controlling information flow and improving gradient propagation compared to standard activations like ReLU or GELU.
