@@ -355,3 +355,4 @@ docs/0396_train_signsgd_component.md
 docs/0397_train_diffgrad_component.md
 docs/0398_train_smooth_l1_loss_component.md
 docs/0399_train_dropconnect_component.md
+docs/0400_train_amsgrad_component.md

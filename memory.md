@@ -1579,3 +1579,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Smooth L1 Loss component mathematically in pure NumPy, testing its forward logic, gradient calculation, and overall loss minimization on a mock regression dataset.
 - **Outcome:** The implementation correctly calculated the Smooth L1 loss and its gradients, successfully updating parameters to minimize the loss over epochs, confirming mathematical validity.
 - **Next Steps:** Evaluate the Smooth L1 Loss mechanism within object detection networks (like Faster R-CNN or SSD) for bounding box regression tasks to measure its robustness against outliers compared to standard Mean Squared Error (L2) loss.
+
+### Experiment 0400: AMSGrad Optimizer Component
+- **Hypothesis:** By modifying Adam to maintain the maximum of all past squared gradients instead of relying on the exponential moving average, we can prevent the learning rate from increasing, which leads to more stable convergence in settings where standard Adam fails to converge due to non-informative gradients.
+- **Action:** Implemented an AMSGrad optimizer component mathematically in pure NumPy, testing its forward step logic and convergence on a mock linear regression problem.
+- **Outcome:** The implementation correctly constrained the effective learning rates by leveraging the maximum historical squared gradients and successfully minimized the loss, closely approximating the true weights.
+- **Next Steps:** Evaluate the AMSGrad mechanism within larger deep learning architectures (like convolutional neural networks or transformers) to measure its impact on long-term training stability and fine-tuning robustness compared to standard adaptive optimizers.
