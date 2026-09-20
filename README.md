@@ -2243,3 +2243,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Kullback-Leibler Divergence
 **Script:** `train_kullback_leibler_divergence_component.py`
 **Description:** Evaluates a Kullback-Leibler Divergence component mathematically in pure NumPy, testing its ability to calculate the information lost when approximating one probability distribution with another.
+
+## Component Testing: Cosine Similarity Loss Component
+**Script:** `train_cosine_similarity_loss_component.py`
+**Description:** Evaluates a Cosine Similarity Loss component mathematically in pure NumPy, testing its ability to align predicted and target vectors by maximizing their cosine similarity (minimizing 1 - cosine similarity).

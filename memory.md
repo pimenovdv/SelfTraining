@@ -1597,3 +1597,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an SGLD optimizer component mathematically in pure NumPy, testing its forward step logic and convergence sampling on a mock quadratic loss function.
 - **Outcome:** The implementation correctly integrated the Gaussian noise proportional to the learning rate and successfully sampled around the minimum rather than collapsing to a single point, enabling posterior exploration.
 - **Next Steps:** Evaluate the SGLD mechanism within Bayesian neural networks to measure its impact on uncertainty quantification and posterior sampling compared to variational inference methods.
+
+### Experiment 0404: Cosine Similarity Loss Component
+- **Hypothesis:** By employing a Cosine Similarity Loss, we can train models to output vectors that are highly directionally aligned with target vectors, ignoring their magnitudes.
+- **Action:** Implemented a Cosine Similarity Loss component mathematically in pure NumPy, testing its forward logic (computing 1 - similarity) and backward logic (gradients for L2 normalized vectors), and simulated gradient descent to align random vectors with targets.
+- **Outcome:** The implementation correctly scaled the gradients based on L2 norms and successfully minimized the loss to zero, proving the predicted vectors became perfectly aligned with the target vectors.
+- **Next Steps:** Evaluate the Cosine Similarity Loss within contrastive learning frameworks or embedding models where relative angle or direction is more important than absolute vector magnitude.

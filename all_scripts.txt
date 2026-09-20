@@ -45,6 +45,7 @@ train_cnn_component
 train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component
+train_cosine_similarity_loss_component
 train_cp_decomposition_component
 train_cpc_component
 train_crf_component

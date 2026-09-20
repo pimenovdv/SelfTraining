@@ -45,6 +45,7 @@ train_cnn_component.py
 train_cnp_component.py
 train_continuous_hopfield_component.py
 train_contrastive_component.py
+train_cosine_similarity_loss_component.py
 train_cp_decomposition_component.py
 train_cpc_component.py
 train_crf_component.py
