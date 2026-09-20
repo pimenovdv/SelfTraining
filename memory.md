@@ -1615,3 +1615,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a BCE Loss component mathematically in pure NumPy, testing its forward logic (computing the mean logarithmic loss) and backward logic (gradients for predictions with epsilon clipping to avoid division by zero).
 - **Outcome:** The implementation correctly computed the loss and gradients on mock binary classification data, scaling properly with the number of elements and remaining numerically stable.
 - **Next Steps:** Evaluate the BCE Loss within larger architectures like Logistic Regression models or the final layer of binary classification neural networks.
+
+### Experiment 0407: He (Kaiming) Initialization Component
+- **Hypothesis:** By employing He (Kaiming) Initialization, we can stabilize the variance of activations and gradients across layers when using ReLU activations, accelerating convergence.
+- **Action:** Implemented a He Initialization component mathematically in pure NumPy, testing its ability to initialize a 2-layer neural network using ReLU activations for the hidden layer on the XOR dataset.
+- **Outcome:** The initialization logic successfully drew weights from a normal distribution with mean 0 and variance 2/fan_in, allowing the network to stably converge and solve the XOR problem.
+- **Next Steps:** Evaluate He Initialization within deeper networks where the cumulative product of variances across many ReLU layers makes standard initialization schemes prone to vanishing or exploding gradients.

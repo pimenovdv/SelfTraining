@@ -2255,3 +2255,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Binary Cross Entropy (BCE) Loss
 **Script:** `train_bce_loss_component.py`
 **Description:** Evaluates a Binary Cross Entropy (BCE) Loss component mathematically in pure NumPy, testing its ability to calculate the logarithmic loss between true binary labels and predicted probabilities, and its gradients for backpropagation.
+
+## Component Testing: He (Kaiming) Initialization
+**Script:** `train_he_initialization_component.py`
+**Description:** Evaluates a He (Kaiming) Initialization component mathematically in pure NumPy, testing its ability to initialize network weights drawn from a normal distribution with variance 2/fan_in to stabilize the training of a network using ReLU activations on the XOR dataset.
