@@ -363,3 +363,4 @@ docs/0404_train_cosine_similarity_loss_component.md
 docs/0405_train_mse_loss_component.md
 docs/0406_train_bce_loss_component.md
 docs/0407_train_he_initialization_component.md
+docs/0408_train_xavier_initialization_component.md
