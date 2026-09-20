@@ -1603,3 +1603,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Cosine Similarity Loss component mathematically in pure NumPy, testing its forward logic (computing 1 - similarity) and backward logic (gradients for L2 normalized vectors), and simulated gradient descent to align random vectors with targets.
 - **Outcome:** The implementation correctly scaled the gradients based on L2 norms and successfully minimized the loss to zero, proving the predicted vectors became perfectly aligned with the target vectors.
 - **Next Steps:** Evaluate the Cosine Similarity Loss within contrastive learning frameworks or embedding models where relative angle or direction is more important than absolute vector magnitude.
+
+### Experiment 0405: Mean Squared Error (MSE) Loss Component
+- **Hypothesis:** By employing a Mean Squared Error (MSE) Loss, we can train models to minimize the squared differences between predicted and target values, effectively penalizing larger errors more heavily.
+- **Action:** Implemented an MSE Loss component mathematically in pure NumPy, testing its forward logic (computing the mean of squared differences) and backward logic (gradients for predictions).
+- **Outcome:** The implementation correctly computed the loss and gradients, with gradients properly scaled by the total number of elements.
+- **Next Steps:** Evaluate the MSE Loss within regression frameworks or generative models where minimizing the squared distance between predictions and continuous targets is the objective.
