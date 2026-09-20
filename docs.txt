@@ -359,3 +359,4 @@
 0401_train_glu_component
 0402_train_sgld_component
 0403_train_kullback_leibler_divergence_component
+0404_train_cosine_similarity_loss_component
