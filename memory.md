@@ -1621,3 +1621,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a He Initialization component mathematically in pure NumPy, testing its ability to initialize a 2-layer neural network using ReLU activations for the hidden layer on the XOR dataset.
 - **Outcome:** The initialization logic successfully drew weights from a normal distribution with mean 0 and variance 2/fan_in, allowing the network to stably converge and solve the XOR problem.
 - **Next Steps:** Evaluate He Initialization within deeper networks where the cumulative product of variances across many ReLU layers makes standard initialization schemes prone to vanishing or exploding gradients.
+
+### Experiment 0408: Xavier (Glorot) Initialization Component
+- **Hypothesis:** By employing Xavier (Glorot) Initialization, we can stabilize the variance of activations and gradients across layers when using symmetric activation functions like Tanh, accelerating convergence.
+- **Action:** Implemented a Xavier Initialization component mathematically in pure NumPy, testing its ability to initialize a 2-layer neural network using Tanh activations for the hidden layer on the XOR dataset.
+- **Outcome:** The initialization logic successfully drew weights from a normal distribution with mean 0 and variance 2/(fan_in + fan_out), allowing the network to stably converge and solve the XOR problem.
+- **Next Steps:** Evaluate Xavier Initialization within deeper networks where the cumulative product of variances across many Tanh or Sigmoid layers makes standard initialization schemes prone to vanishing or exploding gradients.

@@ -348,5 +348,6 @@ train_wae_component
 train_wasserstein_distance_component
 train_weight_normalization_component
 train_wgan_component
+train_xavier_initialization_component
 train_xgboost_component
 train_yogi_component
