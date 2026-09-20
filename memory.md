@@ -1609,3 +1609,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an MSE Loss component mathematically in pure NumPy, testing its forward logic (computing the mean of squared differences) and backward logic (gradients for predictions).
 - **Outcome:** The implementation correctly computed the loss and gradients, with gradients properly scaled by the total number of elements.
 - **Next Steps:** Evaluate the MSE Loss within regression frameworks or generative models where minimizing the squared distance between predictions and continuous targets is the objective.
+
+### Experiment 0406: Binary Cross Entropy (BCE) Loss Component
+- **Hypothesis:** By employing Binary Cross Entropy (BCE) Loss, we can train models to correctly predict binary classifications by penalizing divergent probability predictions via logarithmic scaling, which heavily penalizes confident but incorrect predictions.
+- **Action:** Implemented a BCE Loss component mathematically in pure NumPy, testing its forward logic (computing the mean logarithmic loss) and backward logic (gradients for predictions with epsilon clipping to avoid division by zero).
+- **Outcome:** The implementation correctly computed the loss and gradients on mock binary classification data, scaling properly with the number of elements and remaining numerically stable.
+- **Next Steps:** Evaluate the BCE Loss within larger architectures like Logistic Regression models or the final layer of binary classification neural networks.

@@ -361,3 +361,4 @@ docs/0402_train_sgld_component.md
 docs/0403_train_kullback_leibler_divergence_component.md
 docs/0404_train_cosine_similarity_loss_component.md
 docs/0405_train_mse_loss_component.md
+docs/0406_train_bce_loss_component.md

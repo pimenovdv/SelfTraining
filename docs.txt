@@ -361,3 +361,4 @@
 0403_train_kullback_leibler_divergence_component
 0404_train_cosine_similarity_loss_component
 0405_train_mse_loss_component
+0406_train_bce_loss_component
