@@ -2247,3 +2247,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Cosine Similarity Loss Component
 **Script:** `train_cosine_similarity_loss_component.py`
 **Description:** Evaluates a Cosine Similarity Loss component mathematically in pure NumPy, testing its ability to align predicted and target vectors by maximizing their cosine similarity (minimizing 1 - cosine similarity).
+
+## Component Testing: Mean Squared Error (MSE) Loss
+**Script:** `train_mse_loss_component.py`
+**Description:** Evaluates a Mean Squared Error (MSE) Loss component mathematically in pure NumPy, testing its ability to calculate the mean of squared differences between true values and predicted values, and its gradients for backpropagation.
