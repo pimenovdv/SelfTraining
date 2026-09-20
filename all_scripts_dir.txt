@@ -128,6 +128,7 @@
 ./train_gru_component.py
 ./train_gumbel_softmax_component.py
 ./train_hdbscan_component.py
+./train_he_initialization_component.py
 ./train_hebbian_component.py
 ./train_hierarchical_clustering_component.py
 ./train_highway_component.py
