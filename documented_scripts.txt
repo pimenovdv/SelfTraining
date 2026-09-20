@@ -46,7 +46,7 @@ train_cnn_component
 train_cnp_component
 train_continuous_hopfield_component
 train_contrastive_component
-train_cosine_similarity_loss_component.py
+train_cosine_similarity_loss_component
 train_cp_decomposition_component
 train_cpc_component
 train_crf_component
@@ -113,7 +113,7 @@ train_gelu_component
 train_genetic_algorithm_component
 train_gflownet_component
 train_glove_component
-train_glu_component.py
+train_glu_component
 train_gmlp_component
 train_gmm_component
 train_gpr_component
@@ -128,7 +128,7 @@ train_grpo_component
 train_gru_component
 train_gumbel_softmax_component
 train_hdbscan_component
-train_he_initialization_component.py
+train_he_initialization_component
 train_hebbian_component
 train_hierarchical_clustering_component
 train_highway_component
@@ -145,6 +145,7 @@ train_hypernetwork_component
 train_ica_component
 train_icm_component
 train_instance_norm_component
+train_ipo_component
 train_isolation_forest_component
 train_isomap_component
 train_isotonic_regression_component
@@ -162,7 +163,7 @@ train_knn_component
 train_knowledge_distillation_component
 train_kpca_component
 train_kto_component
-train_kullback_leibler_divergence_component.py
+train_kullback_leibler_divergence_component
 train_label_propagation_component
 train_label_smoothing_component
 train_lamb_component
@@ -215,7 +216,7 @@ train_mlpmixer_component
 train_moe_component
 train_momentum_component
 train_mqa_component
-train_mse_loss_component.py
+train_mse_loss_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component
@@ -348,6 +349,6 @@ train_wae_component
 train_wasserstein_distance_component
 train_weight_normalization_component
 train_wgan_component
-train_xavier_initialization_component.py
+train_xavier_initialization_component
 train_xgboost_component
 train_yogi_component
