@@ -2263,3 +2263,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Xavier (Glorot) Initialization
 **Script:** `train_xavier_initialization_component.py`
 **Description:** Evaluates a Xavier (Glorot) Initialization component mathematically in pure NumPy, testing its ability to initialize network weights drawn from a normal distribution with variance 2/(fan_in + fan_out) to stabilize the training of a network using Tanh activations on the XOR dataset.
+
+## Component Testing: Identity Preference Optimization (IPO) Component
+**Script:** `train_ipo_component.py`
+**Description:** Evaluates an Identity Preference Optimization (IPO) component mathematically in pure NumPy, testing its ability to compute a preference learning loss that aligns model generations based on a root of a quadratic loss, theoretically preventing over-fitting on deterministic datasets unlike DPO.
