@@ -184,7 +184,7 @@ train_liquid_state_machine_component
 train_lle_component
 train_lmu_component
 train_local_outlier_factor_component
-train_log_cosh_loss_component.py
+train_log_cosh_loss_component
 train_logcosh_regression_component
 train_logistic_regression_component
 train_lookahead_component
@@ -312,6 +312,7 @@ train_skipgram_component
 train_smooth_l1_loss_component
 train_snn_component
 train_softplus_component
+train_softsign_component
 train_som_component
 train_sophia_component
 train_sparse_coding_component
