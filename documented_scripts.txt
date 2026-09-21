@@ -301,6 +301,7 @@ train_sgld_component
 train_shampoo_component
 train_siamese_network_component
 train_signsgd_component
+train_silu_component
 train_simclr_component
 train_simsiam_component
 train_simulated_annealing_component

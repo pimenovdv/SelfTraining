@@ -365,3 +365,4 @@
 0407_train_he_initialization_component
 0408_train_xavier_initialization_component
 0409_train_ipo_component
+0410_train_silu_component

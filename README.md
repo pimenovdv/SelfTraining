@@ -2267,3 +2267,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Identity Preference Optimization (IPO) Component
 **Script:** `train_ipo_component.py`
 **Description:** Evaluates an Identity Preference Optimization (IPO) component mathematically in pure NumPy, testing its ability to compute a preference learning loss that aligns model generations based on a root of a quadratic loss, theoretically preventing over-fitting on deterministic datasets unlike DPO.
+
+## Component Testing: Sigmoid Linear Unit (SiLU)
+**Script:** `train_silu_component.py`
+**Description:** Evaluates a Sigmoid Linear Unit (SiLU) activation function mathematically in pure NumPy, testing its forward and derivative computations for use in deep network architectures.

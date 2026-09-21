@@ -1633,3 +1633,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an IPO Loss component mathematically in pure NumPy, testing its forward logic and exact margin matching where loss should optimally be zero.
 - **Outcome:** The implementation correctly computed the IPO loss on mock data and produced an expected 0.0 loss when the preference margin exactly matched the target inverse temperature scaling.
 - **Next Steps:** Evaluate the IPO Loss within fine-tuning frameworks on actual preference dataset distributions to observe if it outperforms DPO over extended training.
+
+### Experiment 0410: Sigmoid Linear Unit (SiLU) Component
+- **Hypothesis:** By employing the Sigmoid Linear Unit (SiLU) activation function (also known as Swish-1), we can benefit from a smooth, non-monotonic activation that tends to work better than ReLU on deep networks by allowing a small amount of negative gradients.
+- **Action:** Implemented a SiLU component and its derivative mathematically in pure NumPy, testing its forward and backward logic on an array of input values.
+- **Outcome:** The implementation correctly computed the SiLU forward values and derivatives, exhibiting the expected non-monotonic shape around zero and linear behavior for large positive values.
+- **Next Steps:** Evaluate the SiLU activation within deeper network architectures to observe its impact on gradient flow and overall training performance compared to standard ReLU or GeLU activations.
