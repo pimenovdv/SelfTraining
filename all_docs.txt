@@ -369,3 +369,4 @@ docs/0410_train_silu_component.md
 docs/0411_train_log_cosh_loss_component.md
 docs/0412_train_softsign_component.md
 docs/0413_train_instancenorm_component.md
+docs/0414_train_nadaraya_watson_component.md
