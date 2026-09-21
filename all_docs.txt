@@ -367,3 +367,4 @@ docs/0408_train_xavier_initialization_component.md
 docs/0409_train_ipo_component.md
 docs/0410_train_silu_component.md
 docs/0411_train_log_cosh_loss_component.md
+docs/0412_train_softsign_component.md

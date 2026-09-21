@@ -1645,3 +1645,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Log-Cosh Loss component and its derivative mathematically in pure NumPy, testing its forward and backward logic within a simple linear regression task.
 - **Outcome:** The implementation correctly computed the Log-Cosh loss and its derivatives, successfully optimizing the linear layer and reducing the loss over time on the mock dataset.
 - **Next Steps:** Evaluate the Log-Cosh loss function within more complex regression tasks and observe its robustness against datasets with significant noise or outliers.
+
+### Experiment 0412: Softsign Activation Component
+- **Hypothesis:** By employing the Softsign activation function, we can benefit from a continuous and differentiable non-linearity that saturates more gently than the hyperbolic tangent (Tanh), which can help mitigate the vanishing gradient problem in deep networks.
+- **Action:** Implemented a Softsign activation component and its derivative mathematically in pure NumPy, testing its forward and backward logic within a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation correctly computed the Softsign forward values and derivatives, successfully optimizing the network and reducing the MSE loss over time on the mock dataset.
+- **Next Steps:** Evaluate the Softsign activation within deeper network architectures to observe its impact on gradient flow and overall training performance compared to standard Tanh or ReLU activations.

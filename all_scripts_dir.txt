@@ -312,6 +312,7 @@
 ./train_smooth_l1_loss_component.py
 ./train_snn_component.py
 ./train_softplus_component.py
+./train_softsign_component.py
 ./train_som_component.py
 ./train_sophia_component.py
 ./train_sparse_coding_component.py

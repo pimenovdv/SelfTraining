@@ -2275,3 +2275,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Log-Cosh Loss Component
 **Script:** `train_log_cosh_loss_component.py`
 **Description:** Evaluates a Log-Cosh Loss function mathematically in pure NumPy, testing its forward and derivative computations for use as a robust regression loss on a linear regression task.
+
+## Component Testing: Softsign Activation Component
+**Script:** `train_softsign_component.py`
+**Description:** Evaluates a Softsign activation function component mathematically in pure NumPy, testing its forward and derivative computations for use in deep network architectures on a non-linear dataset (XOR).
