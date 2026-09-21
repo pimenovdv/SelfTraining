@@ -2279,3 +2279,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Softsign Activation Component
 **Script:** `train_softsign_component.py`
 **Description:** Evaluates a Softsign activation function component mathematically in pure NumPy, testing its forward and derivative computations for use in deep network architectures on a non-linear dataset (XOR).
+
+## Component Testing: Instance Normalization Component
+**Script:** `train_instancenorm_component.py`
+**Description:** Evaluates an Instance Normalization component mathematically in pure NumPy, testing its ability to normalize feature maps across spatial dimensions independently for each channel and sample, improving stability and convergence in style transfer and generative networks.

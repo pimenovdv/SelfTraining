@@ -1651,3 +1651,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Softsign activation component and its derivative mathematically in pure NumPy, testing its forward and backward logic within a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation correctly computed the Softsign forward values and derivatives, successfully optimizing the network and reducing the MSE loss over time on the mock dataset.
 - **Next Steps:** Evaluate the Softsign activation within deeper network architectures to observe its impact on gradient flow and overall training performance compared to standard Tanh or ReLU activations.
+
+### Experiment 0413: Instance Normalization Component
+- **Hypothesis:** By employing Instance Normalization, we can normalize the features of each channel within an individual sample separately, which should stabilize training and improve performance, particularly in tasks like style transfer where contrast changes shouldn't affect the style.
+- **Action:** Implemented an Instance Normalization component and its backward pass mathematically in pure NumPy, testing its forward normalization and gradient computation for backpropagation on a mock 4D tensor.
+- **Outcome:** The implementation correctly computed the normalized values, resulting in zero mean and unit variance per channel per instance, and correctly passed the backward gradient tests.
+- **Next Steps:** Evaluate Instance Normalization within generative network architectures (e.g., GANs or Style Transfer networks) to observe its impact on training stability and generated image quality compared to Batch Normalization.
