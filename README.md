@@ -2271,3 +2271,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Sigmoid Linear Unit (SiLU)
 **Script:** `train_silu_component.py`
 **Description:** Evaluates a Sigmoid Linear Unit (SiLU) activation function mathematically in pure NumPy, testing its forward and derivative computations for use in deep network architectures.
+
+## Component Testing: Log-Cosh Loss Component
+**Script:** `train_log_cosh_loss_component.py`
+**Description:** Evaluates a Log-Cosh Loss function mathematically in pure NumPy, testing its forward and derivative computations for use as a robust regression loss on a linear regression task.
