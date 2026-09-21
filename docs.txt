@@ -366,3 +366,4 @@
 0408_train_xavier_initialization_component
 0409_train_ipo_component
 0410_train_silu_component
+0411_train_log_cosh_loss_component

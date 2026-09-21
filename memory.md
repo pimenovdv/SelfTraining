@@ -1639,3 +1639,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a SiLU component and its derivative mathematically in pure NumPy, testing its forward and backward logic on an array of input values.
 - **Outcome:** The implementation correctly computed the SiLU forward values and derivatives, exhibiting the expected non-monotonic shape around zero and linear behavior for large positive values.
 - **Next Steps:** Evaluate the SiLU activation within deeper network architectures to observe its impact on gradient flow and overall training performance compared to standard ReLU or GeLU activations.
+
+### Experiment 0411: Log-Cosh Loss Component
+- **Hypothesis:** By employing the Log-Cosh loss function, we can benefit from a smooth loss that works like MSE for small errors and like MAE for large errors, thereby being more robust to outliers than MSE without the discontinuity of MAE derivatives.
+- **Action:** Implemented a Log-Cosh Loss component and its derivative mathematically in pure NumPy, testing its forward and backward logic within a simple linear regression task.
+- **Outcome:** The implementation correctly computed the Log-Cosh loss and its derivatives, successfully optimizing the linear layer and reducing the loss over time on the mock dataset.
+- **Next Steps:** Evaluate the Log-Cosh loss function within more complex regression tasks and observe its robustness against datasets with significant noise or outliers.

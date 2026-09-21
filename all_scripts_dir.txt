@@ -184,6 +184,7 @@
 ./train_lle_component.py
 ./train_lmu_component.py
 ./train_local_outlier_factor_component.py
+./train_log_cosh_loss_component.py
 ./train_logcosh_regression_component.py
 ./train_logistic_regression_component.py
 ./train_lookahead_component.py
