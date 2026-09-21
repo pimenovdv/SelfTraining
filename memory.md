@@ -1627,3 +1627,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Xavier Initialization component mathematically in pure NumPy, testing its ability to initialize a 2-layer neural network using Tanh activations for the hidden layer on the XOR dataset.
 - **Outcome:** The initialization logic successfully drew weights from a normal distribution with mean 0 and variance 2/(fan_in + fan_out), allowing the network to stably converge and solve the XOR problem.
 - **Next Steps:** Evaluate Xavier Initialization within deeper networks where the cumulative product of variances across many Tanh or Sigmoid layers makes standard initialization schemes prone to vanishing or exploding gradients.
+
+### Experiment 0409: Identity Preference Optimization (IPO) Component
+- **Hypothesis:** By employing Identity Preference Optimization (IPO) rather than cross-entropy based DPO, we can avoid over-fitting issues on near-deterministic preference datasets by formulating the objective in terms of the root of a quadratic loss.
+- **Action:** Implemented an IPO Loss component mathematically in pure NumPy, testing its forward logic and exact margin matching where loss should optimally be zero.
+- **Outcome:** The implementation correctly computed the IPO loss on mock data and produced an expected 0.0 loss when the preference margin exactly matched the target inverse temperature scaling.
+- **Next Steps:** Evaluate the IPO Loss within fine-tuning frameworks on actual preference dataset distributions to observe if it outperforms DPO over extended training.

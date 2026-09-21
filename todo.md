@@ -335,3 +335,5 @@
 - [x] Explore fixing Adam convergence issues mathematically. (Implemented and verified AMSGrad Optimizer component).
 - [x] Explore Bayesian deep learning mathematically. (Implemented and verified Stochastic Gradient Langevin Dynamics - SGLD for posterior sampling via noisy gradients).
 - [x] Explore cosine similarity mathematically. (Implemented and verified Cosine Similarity Loss calculating directional alignment).
+
+- [x] Explore preference alignment mathematically. (Implemented and verified Identity Preference Optimization - IPO).
