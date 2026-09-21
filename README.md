@@ -2283,3 +2283,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Instance Normalization Component
 **Script:** `train_instancenorm_component.py`
 **Description:** Evaluates an Instance Normalization component mathematically in pure NumPy, testing its ability to normalize feature maps across spatial dimensions independently for each channel and sample, improving stability and convergence in style transfer and generative networks.
+
+## Component Testing: Nadaraya-Watson Kernel Regression Component
+**Script:** `train_nadaraya_watson_component.py`
+**Description:** Evaluates a Nadaraya-Watson Kernel Regression component mathematically in pure NumPy, testing its ability to estimate continuous outputs smoothly by applying a Gaussian kernel to locally weight surrounding data points on a noisy sine wave dataset.

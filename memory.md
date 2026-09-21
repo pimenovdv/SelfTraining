@@ -1657,3 +1657,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an Instance Normalization component and its backward pass mathematically in pure NumPy, testing its forward normalization and gradient computation for backpropagation on a mock 4D tensor.
 - **Outcome:** The implementation correctly computed the normalized values, resulting in zero mean and unit variance per channel per instance, and correctly passed the backward gradient tests.
 - **Next Steps:** Evaluate Instance Normalization within generative network architectures (e.g., GANs or Style Transfer networks) to observe its impact on training stability and generated image quality compared to Batch Normalization.
+
+### Experiment 0414: Nadaraya-Watson Kernel Regression Component
+- **Hypothesis:** By implementing Nadaraya-Watson kernel regression, we can build a non-parametric model that smoothly estimates values by taking a local weighted average using a Gaussian kernel, which works well for continuous, non-linear functions.
+- **Action:** Implemented a Nadaraya-Watson Regression component mathematically in pure NumPy, testing its local weighted averaging technique to fit and predict values on a noisy sine wave mock dataset.
+- **Outcome:** The model correctly applied the Gaussian kernel to weigh local points and accurately predicted continuous outputs on test points, reducing MSE significantly below the threshold.
+- **Next Steps:** Evaluate the Nadaraya-Watson regression approach with different kernel functions (e.g., Epanechnikov kernel) and bandwidths to observe their impact on smoothing and fitting capabilities on varied complex datasets.
