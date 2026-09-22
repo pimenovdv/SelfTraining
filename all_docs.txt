@@ -372,3 +372,4 @@ docs/0413_train_instancenorm_component.md
 docs/0414_train_nadaraya_watson_component.md
 docs/0415_train_asgd_component.md
 docs/0416_train_nll_loss_component.md
+docs/0417_train_tversky_loss_component.md

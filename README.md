@@ -2295,3 +2295,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Negative Log Likelihood (NLL) Loss Component
 **Script:** `train_nll_loss_component.py`
 **Description:** Evaluates the Negative Log Likelihood (NLL) Loss component mathematically in pure NumPy, testing its forward evaluation and sparse gradient computation for use in multiclass classification networks handling log-probability outputs.
+
+## Component Testing: Tversky Loss Component
+**Script:** `train_tversky_loss_component.py`
+**Description:** Evaluates the Tversky Loss component mathematically in pure NumPy, testing its ability to handle imbalanced datasets by providing alpha and beta parameters to weight false positives and false negatives distinctly during subset overlap optimization.
