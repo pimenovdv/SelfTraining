@@ -373,3 +373,4 @@
 0415_train_asgd_component
 0416_train_nll_loss_component
 0417_train_tversky_loss_component
+0418_train_jensen_shannon_divergence_component

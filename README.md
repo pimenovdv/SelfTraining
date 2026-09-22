@@ -2299,3 +2299,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Tversky Loss Component
 **Script:** `train_tversky_loss_component.py`
 **Description:** Evaluates the Tversky Loss component mathematically in pure NumPy, testing its ability to handle imbalanced datasets by providing alpha and beta parameters to weight false positives and false negatives distinctly during subset overlap optimization.
+
+## Component Testing: Jensen-Shannon Divergence Component
+**Script:** `train_jensen_shannon_divergence_component.py`
+**Description:** Evaluates a Jensen-Shannon Divergence component mathematically in pure NumPy, testing its ability to calculate a symmetric and smoothed version of the Kullback-Leibler divergence between two probability distributions and correctly compute gradients.
