@@ -215,6 +215,7 @@ train_mean_shift_component
 train_medium_scale_model_component
 train_memory_network_component
 train_mish_component
+train_mixture_of_experts_component
 train_mixup_component
 train_mlpmixer_component
 train_moe_component
