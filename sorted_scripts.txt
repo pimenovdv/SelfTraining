@@ -204,6 +204,7 @@ train_madgrad_component
 train_mae_component
 train_mamba_component
 train_maml_component
+train_margin_ranking_loss_component
 train_masked_attention_component
 train_matrix_factorization_component
 train_maxout_component

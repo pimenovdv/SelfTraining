@@ -2303,3 +2303,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Jensen-Shannon Divergence Component
 **Script:** `train_jensen_shannon_divergence_component.py`
 **Description:** Evaluates a Jensen-Shannon Divergence component mathematically in pure NumPy, testing its ability to calculate a symmetric and smoothed version of the Kullback-Leibler divergence between two probability distributions and correctly compute gradients.
+
+## Component Testing: Margin Ranking Loss Component
+**Script:** `train_margin_ranking_loss_component.py`
+**Description:** Evaluates the Margin Ranking Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly rank pairs of inputs according to a predefined margin.

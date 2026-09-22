@@ -337,3 +337,4 @@
 - [x] Explore cosine similarity mathematically. (Implemented and verified Cosine Similarity Loss calculating directional alignment).
 
 - [x] Explore preference alignment mathematically. (Implemented and verified Identity Preference Optimization - IPO).
+- [x] Explore pairwise ranking optimization mathematically. (Implemented and verified Margin Ranking Loss).

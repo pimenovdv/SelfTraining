@@ -204,6 +204,7 @@
 ./train_mae_component.py
 ./train_mamba_component.py
 ./train_maml_component.py
+./train_margin_ranking_loss_component.py
 ./train_masked_attention_component.py
 ./train_matrix_factorization_component.py
 ./train_maxout_component.py
