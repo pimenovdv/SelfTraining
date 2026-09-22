@@ -1681,3 +1681,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the Tversky Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and analytical gradient computations against numerical gradients on an imbalanced mock array.
 - **Outcome:** The Tversky loss correctly evaluated the subset similarity by weighing false negatives and false positives via alpha and beta parameters, and its analytical gradients successfully matched the numerical approximations.
 - **Next Steps:** Evaluate the Tversky Loss component within an image segmentation architecture to test its capability on dealing with severe foreground-background class imbalances.
+
+### Experiment 0418: Jensen-Shannon Divergence Component
+- **Hypothesis:** By employing the Jensen-Shannon Divergence mathematically, we can calculate a symmetric and smoothed version of the Kullback-Leibler divergence to measure the similarity between two probability distributions, providing bounded values between 0 and ln(2).
+- **Action:** Implemented a Jensen-Shannon Divergence component and its derivative mathematically in pure NumPy, testing its forward logic and gradient computation for backpropagation on a mock probability dataset.
+- **Outcome:** The implementation correctly computed the Jensen-Shannon Divergence, producing symmetrical differences and bounded values, and its gradients successfully matched numerical approximations.
+- **Next Steps:** Evaluate the Jensen-Shannon Divergence within GAN training as a loss metric to regularize generator output distribution towards the true distribution, taking advantage of its symmetry.
