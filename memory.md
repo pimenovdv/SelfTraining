@@ -1663,3 +1663,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Nadaraya-Watson Regression component mathematically in pure NumPy, testing its local weighted averaging technique to fit and predict values on a noisy sine wave mock dataset.
 - **Outcome:** The model correctly applied the Gaussian kernel to weigh local points and accurately predicted continuous outputs on test points, reducing MSE significantly below the threshold.
 - **Next Steps:** Evaluate the Nadaraya-Watson regression approach with different kernel functions (e.g., Epanechnikov kernel) and bandwidths to observe their impact on smoothing and fitting capabilities on varied complex datasets.
+
+### Experiment 0415: Averaged Stochastic Gradient Descent (ASGD) Component
+- **Hypothesis:** By employing Polyak-Ruppert weight averaging along with stochastic gradient descent (ASGD), the parameter trajectory will stabilize closer to the theoretical optimum, leading to improved testing performance and a smoother convergence path compared to standard SGD.
+- **Action:** Implemented an ASGD optimization component mathematically in pure NumPy, testing its moving average update logic and decreasing learning rate schedule within a 2-layer network on the XOR dataset.
+- **Outcome:** The implementation correctly maintained an exponential moving average of the weights over the epochs, and inference using the averaged parameters successfully mapped the XOR inputs and reduced error below the threshold.
+- **Next Steps:** Evaluate the ASGD optimizer within larger neural network architectures or language models, observing its impact on generalization when utilized in the final training stages compared to maintaining a static learning rate.

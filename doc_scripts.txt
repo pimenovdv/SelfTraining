@@ -18,6 +18,7 @@ train_agglomerative_clustering_component.py
 train_agi_asi_component.py
 train_alibi_component.py
 train_amsgrad_component.py
+train_asgd_component.py
 train_attention_component.py
 train_barlow_twins_component.py
 train_batchnorm_component.py

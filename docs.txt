@@ -370,3 +370,4 @@
 0412_train_softsign_component
 0413_train_instancenorm_component
 0414_train_nadaraya_watson_component
+0415_train_asgd_component
