@@ -2287,3 +2287,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Nadaraya-Watson Kernel Regression Component
 **Script:** `train_nadaraya_watson_component.py`
 **Description:** Evaluates a Nadaraya-Watson Kernel Regression component mathematically in pure NumPy, testing its ability to estimate continuous outputs smoothly by applying a Gaussian kernel to locally weight surrounding data points on a noisy sine wave dataset.
+
+## Component Testing: Averaged Stochastic Gradient Descent (ASGD) Component
+**Script:** `train_asgd_component.py`
+**Description:** Evaluates an Averaged Stochastic Gradient Descent (ASGD) optimizer mathematically in pure NumPy, testing its Polyak-Ruppert averaging mechanism to stabilize late-stage training trajectory for a non-linear neural network solving the XOR problem.
