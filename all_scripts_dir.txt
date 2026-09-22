@@ -345,6 +345,7 @@
 ./train_tsetlin_machine_component.py
 ./train_tsne_component.py
 ./train_tucker_decomposition_component.py
+./train_tversky_loss_component.py
 ./train_umap_component.py
 ./train_upper_confidence_bound_component.py
 ./train_vae_component.py

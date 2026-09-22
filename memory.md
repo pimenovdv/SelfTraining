@@ -1675,3 +1675,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the NLL Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and gradient computation on a mock dataset of log-probabilities.
 - **Outcome:** The implementation correctly computed the negative average of the log-probabilities of the true classes, and the backward pass successfully generated the expected sparse gradients (-1/N) for the correct class indices.
 - **Next Steps:** Evaluate the NLL Loss component coupled with a custom LogSoftmax activation function to train a fully connected classification network on standard datasets.
+
+### Experiment 0417: Tversky Loss Component
+- **Hypothesis:** By employing the Tversky Loss mathematically, we can generalize the F-beta score and Dice Loss, controlling the trade-off between false positives and false negatives to improve segmentation or imbalanced classification tasks.
+- **Action:** Implemented the Tversky Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and analytical gradient computations against numerical gradients on an imbalanced mock array.
+- **Outcome:** The Tversky loss correctly evaluated the subset similarity by weighing false negatives and false positives via alpha and beta parameters, and its analytical gradients successfully matched the numerical approximations.
+- **Next Steps:** Evaluate the Tversky Loss component within an image segmentation architecture to test its capability on dealing with severe foreground-background class imbalances.
