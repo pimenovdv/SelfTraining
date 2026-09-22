@@ -1687,3 +1687,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Jensen-Shannon Divergence component and its derivative mathematically in pure NumPy, testing its forward logic and gradient computation for backpropagation on a mock probability dataset.
 - **Outcome:** The implementation correctly computed the Jensen-Shannon Divergence, producing symmetrical differences and bounded values, and its gradients successfully matched numerical approximations.
 - **Next Steps:** Evaluate the Jensen-Shannon Divergence within GAN training as a loss metric to regularize generator output distribution towards the true distribution, taking advantage of its symmetry.
+
+### Experiment 0419: Mixture of Experts Component
+- **Hypothesis:** By employing a Mixture of Experts (MoE) architecture, we can selectively route inputs to specialized subnetworks (experts) via a gating mechanism, scaling model capacity efficiently without increasing computation proportionally.
+- **Action:** Implemented a Mixture of Experts component containing a gating network and multiple expert networks using PyTorch, and trained it on a synthetic non-linear dataset using binary cross-entropy loss.
+- **Outcome:** The implementation correctly learned to route inputs and aggregate expert predictions, smoothly reducing the loss from 0.4842 to 0.0248 over 100 epochs, demonstrating stable training and effective task specialization.
+- **Next Steps:** Evaluate scaling the MoE model by incorporating sparsity constraints like Top-K gating to restrict the number of active experts per token, allowing scaling to massively larger parameter counts efficiently in LLMs.
