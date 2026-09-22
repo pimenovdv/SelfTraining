@@ -371,3 +371,4 @@
 0413_train_instancenorm_component
 0414_train_nadaraya_watson_component
 0415_train_asgd_component
+0416_train_nll_loss_component
