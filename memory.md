@@ -1693,3 +1693,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Mixture of Experts component containing a gating network and multiple expert networks using PyTorch, and trained it on a synthetic non-linear dataset using binary cross-entropy loss.
 - **Outcome:** The implementation correctly learned to route inputs and aggregate expert predictions, smoothly reducing the loss from 0.4842 to 0.0248 over 100 epochs, demonstrating stable training and effective task specialization.
 - **Next Steps:** Evaluate scaling the MoE model by incorporating sparsity constraints like Top-K gating to restrict the number of active experts per token, allowing scaling to massively larger parameter counts efficiently in LLMs.
+
+### Experiment 0420: Margin Ranking Loss Component
+- **Hypothesis:** By employing the Margin Ranking Loss mathematically, we can optimize models to correctly rank pairs of inputs by enforcing a specified margin between their scores, pushing apart embeddings that are improperly ordered.
+- **Action:** Implemented a Margin Ranking Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and analytical gradient computations against numerical gradients and PyTorch implementations on a mock array.
+- **Outcome:** The implementation correctly enforced the ranking margin, penalizing improperly ordered pairs, and its gradients successfully matched the numerical approximations and PyTorch outputs.
+- **Next Steps:** Evaluate the Margin Ranking Loss component within a Siamese or Triplet Network architecture to test its capability in learning fine-grained ranking objectives, such as similarity or preference alignment.
