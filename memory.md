@@ -1669,3 +1669,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an ASGD optimization component mathematically in pure NumPy, testing its moving average update logic and decreasing learning rate schedule within a 2-layer network on the XOR dataset.
 - **Outcome:** The implementation correctly maintained an exponential moving average of the weights over the epochs, and inference using the averaged parameters successfully mapped the XOR inputs and reduced error below the threshold.
 - **Next Steps:** Evaluate the ASGD optimizer within larger neural network architectures or language models, observing its impact on generalization when utilized in the final training stages compared to maintaining a static learning rate.
+
+### Experiment 0416: Negative Log Likelihood (NLL) Loss Component
+- **Hypothesis:** By implementing the Negative Log Likelihood (NLL) Loss mathematically, we can properly evaluate classification predictions outputted as log-probabilities, penalizing confident incorrect predictions heavily, which works well in tandem with LogSoftmax for multiclass classification tasks.
+- **Action:** Implemented the NLL Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and gradient computation on a mock dataset of log-probabilities.
+- **Outcome:** The implementation correctly computed the negative average of the log-probabilities of the true classes, and the backward pass successfully generated the expected sparse gradients (-1/N) for the correct class indices.
+- **Next Steps:** Evaluate the NLL Loss component coupled with a custom LogSoftmax activation function to train a fully connected classification network on standard datasets.

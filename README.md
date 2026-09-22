@@ -2291,3 +2291,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Averaged Stochastic Gradient Descent (ASGD) Component
 **Script:** `train_asgd_component.py`
 **Description:** Evaluates an Averaged Stochastic Gradient Descent (ASGD) optimizer mathematically in pure NumPy, testing its Polyak-Ruppert averaging mechanism to stabilize late-stage training trajectory for a non-linear neural network solving the XOR problem.
+
+## Component Testing: Negative Log Likelihood (NLL) Loss Component
+**Script:** `train_nll_loss_component.py`
+**Description:** Evaluates the Negative Log Likelihood (NLL) Loss component mathematically in pure NumPy, testing its forward evaluation and sparse gradient computation for use in multiclass classification networks handling log-probability outputs.
