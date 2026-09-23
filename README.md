@@ -2311,3 +2311,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Hardshrink Component
 **Script:** `train_hardshrink_component.py`
 **Description:** Evaluates the Hardshrink activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure values inside the range [-lambd, lambd] are zeroed out while values outside the range flow properly.
+
+## Component Testing: QHAdam Optimizer Component
+**Script:** `train_qhadam_component.py`
+**Description:** Evaluates the Quasi-Hyperbolic Adam (QHAdam) optimizer mathematically in pure NumPy, testing its effectiveness in combining momentum dynamics and adaptive scaling to optimize a simple linear model.

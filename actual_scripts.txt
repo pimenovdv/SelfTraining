@@ -152,7 +152,7 @@ train_ipo_component
 train_isolation_forest_component
 train_isomap_component
 train_isotonic_regression_component
-train_jensen_shannon_divergence_component.py
+train_jensen_shannon_divergence_component
 train_jepa_component
 train_kalman_filter_component
 train_kan_component
@@ -270,6 +270,7 @@ train_protonet_component
 train_pso_component
 train_q_learning_component
 train_qda_component
+train_qhadam_component
 train_qlora_component
 train_quantile_regression_component
 train_quantization_component
