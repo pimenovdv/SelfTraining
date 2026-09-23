@@ -2327,3 +2327,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Contrastive Loss Component
 **Script:** `train_contrastive_loss_component.py`
 **Description:** Evaluates the Contrastive Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize pairwise similarity metrics.
+
+## Component Testing: Hardswish Component
+**Script:** `train_hardswish_component.py`
+**Description:** Evaluates the Hardswish activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations while significantly reducing computational overhead compared to the standard Swish activation.
