@@ -1729,3 +1729,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Contrastive Loss component and its backward pass mathematically in pure NumPy, testing its forward logic and gradient calculation on a mock pairwise distance dataset.
 - **Outcome:** The implementation correctly scaled gradients for positive and negative pairs according to the mathematical formulation, successfully completing evaluation and manually matching verified gradient targets.
 - **Next Steps:** Evaluate the Contrastive Loss component within a Siamese network architecture for a face verification or signature verification task where pair labeling is naturally abundant.
+
+### Experiment 0426: Hardswish Component
+- **Hypothesis:** By employing the Hardswish activation function mathematically, we can achieve similar performance to the standard Swish activation but with significantly reduced computational cost due to the piecewise linear approximations and the avoidance of the exponential function.
+- **Action:** Implemented a Hardswish activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small Multi-Layer Perceptron on the XOR dataset.
+- **Outcome:** The implementation correctly forwarded activations using the minimum and maximum scaling and propagated gradients mathematically through the distinct piecewise regions. The model successfully converged to a near-zero loss (0.0003) on the XOR dataset, with predictions correctly matching the XOR targets.
+- **Next Steps:** Evaluate the Hardswish component within MobileNet-style architectures and directly compare its training and inference speed against standard Swish on mobile or resource-constrained environments.

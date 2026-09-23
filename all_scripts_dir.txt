@@ -130,6 +130,7 @@
 ./train_gru_component.py
 ./train_gumbel_softmax_component.py
 ./train_hardshrink_component.py
+./train_hardswish_component.py
 ./train_hdbscan_component.py
 ./train_he_initialization_component.py
 ./train_hebbian_component.py
