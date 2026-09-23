@@ -2315,3 +2315,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: QHAdam Optimizer Component
 **Script:** `train_qhadam_component.py`
 **Description:** Evaluates the Quasi-Hyperbolic Adam (QHAdam) optimizer mathematically in pure NumPy, testing its effectiveness in combining momentum dynamics and adaptive scaling to optimize a simple linear model.
+
+## Component Testing: Huber Loss Component
+**Script:** `train_huber_loss_component.py`
+**Description:** Evaluates the Huber Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression objectives robustly, combining MSE for small errors and MAE for large errors (outliers).
