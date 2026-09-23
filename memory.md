@@ -1699,3 +1699,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Margin Ranking Loss component and its backward pass mathematically in pure NumPy, testing its forward evaluation and analytical gradient computations against numerical gradients and PyTorch implementations on a mock array.
 - **Outcome:** The implementation correctly enforced the ranking margin, penalizing improperly ordered pairs, and its gradients successfully matched the numerical approximations and PyTorch outputs.
 - **Next Steps:** Evaluate the Margin Ranking Loss component within a Siamese or Triplet Network architecture to test its capability in learning fine-grained ranking objectives, such as similarity or preference alignment.
+
+### Experiment 0421: Hardshrink Component
+- **Hypothesis:** By employing the Hardshrink activation function mathematically, we can introduce sparse representations during non-linear modeling by zeroes out signals whose absolute value is below a predefined threshold, while preserving larger signals unchanged.
+- **Action:** Implemented a Hardshrink component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn mappings of synthetic data targeting Hardshrink logic directly against an unconstrained mapping structure.
+- **Outcome:** The implementation correctly constrained the mapping, exhibiting valid gradient updates for outputs outside of the lambda boundary. The model trained efficiently and the final MSE loss plateaued optimally.
+- **Next Steps:** Evaluate the Hardshrink activation within a Multi-Layer Perceptron architecture on an actual real-world regression dataset to compare feature sparsification behavior against standard activations like ReLU and Softshrink.
