@@ -2307,3 +2307,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Margin Ranking Loss Component
 **Script:** `train_margin_ranking_loss_component.py`
 **Description:** Evaluates the Margin Ranking Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly rank pairs of inputs according to a predefined margin.
+
+## Component Testing: Hardshrink Component
+**Script:** `train_hardshrink_component.py`
+**Description:** Evaluates the Hardshrink activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure values inside the range [-lambd, lambd] are zeroed out while values outside the range flow properly.

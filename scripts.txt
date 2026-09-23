@@ -128,6 +128,7 @@ train_groupnorm_component
 train_grpo_component
 train_gru_component
 train_gumbel_softmax_component
+train_hardshrink_component
 train_hdbscan_component
 train_he_initialization_component
 train_hebbian_component
