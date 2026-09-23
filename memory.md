@@ -1711,3 +1711,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the QHAdam optimizer algorithm mathematically in pure NumPy. Evaluated its capacity to converge on an optimal weight mapping for a linear dataset using configurable quasi-hyperbolic discount factors.
 - **Outcome:** The implementation correctly scaled gradients and successfully converged the weights, reducing the MSE loss effectively throughout training.
 - **Next Steps:** Evaluate the QHAdam optimizer within a larger neural network training procedure and compare its validation convergence metrics against Adam and AdamW on a standardized image classification dataset.
+
+### Experiment 0423: Huber Loss Component
+- **Hypothesis:** By employing the Huber Loss function mathematically, we can optimize regression objectives while remaining robust to outliers, combining the best properties of Mean Squared Error and Mean Absolute Error based on a predefined delta threshold.
+- **Action:** Implemented a Huber Loss component and its backward pass mathematically in pure NumPy. Evaluated its capacity to calculate loss and correct gradients across predictions that include significant outliers.
+- **Outcome:** The implementation correctly scaled gradients for typical predictions via quadratic error, while applying linear error for predictions that exceeded the delta threshold. The component executed seamlessly and computed gradients manually verified.
+- **Next Steps:** Evaluate the Huber Loss component within a regression model architecture and compare its performance against standard MSE and MAE on a dataset populated with significant label noise or outliers.

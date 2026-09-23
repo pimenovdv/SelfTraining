@@ -142,6 +142,7 @@
 ./train_hopfield_component.py
 ./train_hopfield_network_component.py
 ./train_hrl_component.py
+./train_huber_loss_component.py
 ./train_huber_regression_component.py
 ./train_hypernetwork_component.py
 ./train_ica_component.py
