@@ -1705,3 +1705,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Hardshrink component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn mappings of synthetic data targeting Hardshrink logic directly against an unconstrained mapping structure.
 - **Outcome:** The implementation correctly constrained the mapping, exhibiting valid gradient updates for outputs outside of the lambda boundary. The model trained efficiently and the final MSE loss plateaued optimally.
 - **Next Steps:** Evaluate the Hardshrink activation within a Multi-Layer Perceptron architecture on an actual real-world regression dataset to compare feature sparsification behavior against standard activations like ReLU and Softshrink.
+
+### Experiment 0422: QHAdam Optimizer Component
+- **Hypothesis:** By employing the Quasi-Hyperbolic Adam (QHAdam) optimizer, we can introduce a decoupling of the momentum term from the Adam learning rate scaling, which should offer more precise tuning capabilities on a synthetic dataset than standard Adam.
+- **Action:** Implemented the QHAdam optimizer algorithm mathematically in pure NumPy. Evaluated its capacity to converge on an optimal weight mapping for a linear dataset using configurable quasi-hyperbolic discount factors.
+- **Outcome:** The implementation correctly scaled gradients and successfully converged the weights, reducing the MSE loss effectively throughout training.
+- **Next Steps:** Evaluate the QHAdam optimizer within a larger neural network training procedure and compare its validation convergence metrics against Adam and AdamW on a standardized image classification dataset.
