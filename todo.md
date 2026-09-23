@@ -338,3 +338,4 @@
 
 - [x] Explore preference alignment mathematically. (Implemented and verified Identity Preference Optimization - IPO).
 - [x] Explore pairwise ranking optimization mathematically. (Implemented and verified Margin Ranking Loss).
+- [x] Explore metric learning mathematically. (Implemented and verified Contrastive Loss).

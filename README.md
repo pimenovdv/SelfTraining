@@ -2323,3 +2323,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: L1 Loss Component
 **Script:** `train_l1_loss_component.py`
 **Description:** Evaluates the L1 Loss (Mean Absolute Error) component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression objectives robustly.
+
+## Component Testing: Contrastive Loss Component
+**Script:** `train_contrastive_loss_component.py`
+**Description:** Evaluates the Contrastive Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize pairwise similarity metrics.

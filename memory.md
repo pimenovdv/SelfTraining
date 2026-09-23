@@ -1723,3 +1723,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an L1 Loss component and its backward pass mathematically in pure NumPy. Evaluated its capacity to calculate loss and correct gradients.
 - **Outcome:** The implementation correctly scaled gradients via the sign function. The component executed seamlessly and computed gradients were manually verified.
 - **Next Steps:** Evaluate the L1 Loss component within a regression model architecture and compare its performance against standard MSE and Huber loss on a dataset populated with significant label noise or outliers.
+
+### Experiment 0425: Contrastive Loss Component
+- **Hypothesis:** By employing the Contrastive Loss mathematically, we can optimize models for representation learning by pulling similar pairs closer together and pushing dissimilar pairs further apart in the embedding space using a predefined margin.
+- **Action:** Implemented a Contrastive Loss component and its backward pass mathematically in pure NumPy, testing its forward logic and gradient calculation on a mock pairwise distance dataset.
+- **Outcome:** The implementation correctly scaled gradients for positive and negative pairs according to the mathematical formulation, successfully completing evaluation and manually matching verified gradient targets.
+- **Next Steps:** Evaluate the Contrastive Loss component within a Siamese network architecture for a face verification or signature verification task where pair labeling is naturally abundant.
