@@ -379,3 +379,4 @@ docs/0420_train_margin_ranking_loss_component.md
 docs/0421_train_hardshrink_component.md
 docs/0422_train_qhadam_component.md
 docs/0423_train_huber_loss_component.md
+docs/0424_train_l1_loss_component.md

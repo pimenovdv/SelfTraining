@@ -1717,3 +1717,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Huber Loss component and its backward pass mathematically in pure NumPy. Evaluated its capacity to calculate loss and correct gradients across predictions that include significant outliers.
 - **Outcome:** The implementation correctly scaled gradients for typical predictions via quadratic error, while applying linear error for predictions that exceeded the delta threshold. The component executed seamlessly and computed gradients manually verified.
 - **Next Steps:** Evaluate the Huber Loss component within a regression model architecture and compare its performance against standard MSE and MAE on a dataset populated with significant label noise or outliers.
+
+### Experiment 0424: L1 Loss Component
+- **Hypothesis:** By employing the L1 Loss (Mean Absolute Error) function mathematically, we can optimize regression objectives while remaining robust to outliers, producing sparser gradients compared to Mean Squared Error.
+- **Action:** Implemented an L1 Loss component and its backward pass mathematically in pure NumPy. Evaluated its capacity to calculate loss and correct gradients.
+- **Outcome:** The implementation correctly scaled gradients via the sign function. The component executed seamlessly and computed gradients were manually verified.
+- **Next Steps:** Evaluate the L1 Loss component within a regression model architecture and compare its performance against standard MSE and Huber loss on a dataset populated with significant label noise or outliers.

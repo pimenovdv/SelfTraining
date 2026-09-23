@@ -2319,3 +2319,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Huber Loss Component
 **Script:** `train_huber_loss_component.py`
 **Description:** Evaluates the Huber Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression objectives robustly, combining MSE for small errors and MAE for large errors (outliers).
+
+## Component Testing: L1 Loss Component
+**Script:** `train_l1_loss_component.py`
+**Description:** Evaluates the L1 Loss (Mean Absolute Error) component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression objectives robustly.
