@@ -93,6 +93,7 @@ train_factor_analysis_component
 train_factorization_machine_component
 train_fasttext_component
 train_feedback_alignment_component
+train_few_shot_learning_component.py
 train_ff_component
 train_ffn_component
 train_fgsm_component

@@ -2315,3 +2315,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: QHAdam Optimizer Component
 **Script:** `train_qhadam_component.py`
 **Description:** Evaluates the Quasi-Hyperbolic Adam (QHAdam) optimizer mathematically in pure NumPy, testing its effectiveness in combining momentum dynamics and adaptive scaling to optimize a simple linear model.
+
+## Component Testing: Few-Shot Learning Component
+**Script:** `train_few_shot_learning_component.py`
+**Description:** Evaluates a Prototypical Network for Few-Shot Learning, demonstrating ability to classify instances of new classes using only a small number of support examples.
