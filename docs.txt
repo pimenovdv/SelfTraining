@@ -382,3 +382,4 @@
 0424_train_l1_loss_component
 0425_train_contrastive_loss_component
 0426_train_hardswish_component
+0427_train_softshrink_component
