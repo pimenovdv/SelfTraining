@@ -1741,3 +1741,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Softshrink activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to perform forward and backward passes.
 - **Outcome:** The implementation correctly forwarded activations by applying the Softshrink threshold and propagated gradients mathematically through the non-zeroed regions.
 - **Next Steps:** Evaluate the Softshrink component within autoencoder architectures to test its sparsity-inducing properties on latent representations.
+
+### Experiment 0428: ReGLU Component
+- **Hypothesis:** By employing the ReGLU (Rectified Gated Linear Unit) activation mathematically, we can evaluate a variant of the Gated Linear Unit family that uses the simple and computationally efficient ReLU function for gating, allowing complex non-linear representations while maintaining stable gradients.
+- **Action:** Implemented a ReGLU activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small neural network on the XOR dataset using the ReGLU gating operation.
+- **Outcome:** The implementation correctly forwarded activations by scaling projected inputs using ReLU-gated features and mathematically propagated gradients through both the projection and gating branches correctly. The model successfully converged to a near-zero loss (0.0000) on the XOR dataset, with predictions correctly matching the XOR targets.
+- **Next Steps:** Evaluate the ReGLU component within larger Feed-Forward network blocks in Transformer architectures and directly compare its parameter efficiency against standard GLU and SwiGLU variants.
