@@ -2331,3 +2331,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Hardswish Component
 **Script:** `train_hardswish_component.py`
 **Description:** Evaluates the Hardswish activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations while significantly reducing computational overhead compared to the standard Swish activation.
+
+## Component Testing: Softshrink Component
+**Script:** `train_softshrink_component.py`
+**Description:** Evaluates the Softshrink activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn sparse representations by zeroing out values within a threshold range.

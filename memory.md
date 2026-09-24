@@ -1735,3 +1735,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Hardswish activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small Multi-Layer Perceptron on the XOR dataset.
 - **Outcome:** The implementation correctly forwarded activations using the minimum and maximum scaling and propagated gradients mathematically through the distinct piecewise regions. The model successfully converged to a near-zero loss (0.0003) on the XOR dataset, with predictions correctly matching the XOR targets.
 - **Next Steps:** Evaluate the Hardswish component within MobileNet-style architectures and directly compare its training and inference speed against standard Swish on mobile or resource-constrained environments.
+
+### Experiment 0427: Softshrink Component
+- **Hypothesis:** By employing the Softshrink activation function mathematically, we can induce sparsity in hidden representations by zeroing out activations that fall within a symmetric threshold, while preserving gradients outside this range.
+- **Action:** Implemented a Softshrink activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to perform forward and backward passes.
+- **Outcome:** The implementation correctly forwarded activations by applying the Softshrink threshold and propagated gradients mathematically through the non-zeroed regions.
+- **Next Steps:** Evaluate the Softshrink component within autoencoder architectures to test its sparsity-inducing properties on latent representations.
