@@ -286,6 +286,7 @@ train_rbf_network_component
 train_rbm_component
 train_realnvp_component
 train_recursive_self_improvement_component
+train_reglu_component
 train_reinforce_component
 train_relational_network_component
 train_reptile_component

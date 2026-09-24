@@ -383,3 +383,4 @@ docs/0424_train_l1_loss_component.md
 docs/0425_train_contrastive_loss_component.md
 docs/0426_train_hardswish_component.md
 docs/0427_train_softshrink_component.md
+docs/0428_train_reglu_component.md
