@@ -155,6 +155,7 @@
 ./train_isolation_forest_component.py
 ./train_isomap_component.py
 ./train_isotonic_regression_component.py
+./train_jaccard_loss_component.py
 ./train_jensen_shannon_divergence_component.py
 ./train_jepa_component.py
 ./train_kalman_filter_component.py
