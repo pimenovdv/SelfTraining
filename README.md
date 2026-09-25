@@ -2343,3 +2343,11 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LogSigmoid Component
 **Script:** `train_logsigmoid_component.py`
 **Description:** Evaluates the LogSigmoid activation component mathematically in pure NumPy, testing its forward evaluation (-logaddexp(0, -x)) and gradient computation (1 - sigmoid(x)) to ensure models can properly learn non-linear representations, commonly used in probabilistic bounding or combination with loss functions.
+
+## Component Testing: RReLU Component
+**Script:** `train_rrelu_component.py`
+**Description:** Evaluates the RReLU (Randomized Leaky Rectified Linear Unit) activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations while adding stochasticity to the negative slope during training to improve generalization.
+
+## Component Testing: Snake Activation Component
+**Script:** `train_snake_activation_component.py`
+**Description:** Evaluates the Snake activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can learn periodic representations.

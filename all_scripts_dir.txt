@@ -300,6 +300,7 @@
 ./train_robust_pca_component.py
 ./train_rope_component.py
 ./train_rprop_component.py
+./train_rrelu_component.py
 ./train_rvm_component.py
 ./train_sac_component.py
 ./train_sae_component.py
@@ -325,6 +326,7 @@
 ./train_siren_component.py
 ./train_skipgram_component.py
 ./train_smooth_l1_loss_component.py
+./train_snake_activation_component.py
 ./train_snn_component.py
 ./train_softplus_component.py
 ./train_softshrink_component.py
