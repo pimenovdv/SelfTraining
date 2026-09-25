@@ -299,6 +299,7 @@
 ./train_robust_pca_component.py
 ./train_rope_component.py
 ./train_rprop_component.py
+./train_rrelu_component.py
 ./train_rvm_component.py
 ./train_sac_component.py
 ./train_sae_component.py

@@ -2339,3 +2339,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: ReGLU Component
 **Script:** `train_reglu_component.py`
 **Description:** Evaluates the ReGLU (Rectified Gated Linear Unit) activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations using a gating mechanism over projected representations.
+
+## Component Testing: RReLU Component
+**Script:** `train_rrelu_component.py`
+**Description:** Evaluates the RReLU (Randomized Leaky Rectified Linear Unit) activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations while adding stochasticity to the negative slope during training to improve generalization.
