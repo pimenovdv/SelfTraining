@@ -387,3 +387,4 @@ docs/0428_train_reglu_component.md
 docs/0429_train_rrelu_component.md
 docs/0430_train_snake_activation_component.md
 docs/0431_train_jaccard_loss_component.md
+docs/0432_train_npair_loss_component.md

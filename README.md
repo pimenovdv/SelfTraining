@@ -2351,3 +2351,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Jaccard Loss Component
 **Script:** `train_jaccard_loss_component.py`
 **Description:** Evaluates the Jaccard Loss (1 - IoU) component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly optimize for intersection over union in segmentation or classification tasks.
+
+## Component Testing: N-Pair Loss Component
+**Script:** `train_npair_loss_component.py`
+**Description:** Evaluates the N-Pair Loss component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly optimize metric learning tasks by contrasting an anchor with one positive and multiple negative examples simultaneously.
