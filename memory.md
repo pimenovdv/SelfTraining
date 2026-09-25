@@ -1753,3 +1753,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an RReLU activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small neural network on the XOR dataset using the RReLU activation.
 - **Outcome:** The implementation correctly forwarded activations by applying a randomly sampled slope for negative inputs during training and a fixed average slope during inference, and mathematically propagated gradients correctly. The model successfully converged to a near-zero loss (0.0002) on the XOR dataset.
 - **Next Steps:** Evaluate the RReLU component within larger Convolutional Neural Networks and directly compare its regularization effects and parameter efficiency against standard ReLU and LeakyReLU variants.
+
+### Experiment 0430: Snake Activation Component
+- **Hypothesis:** By employing the Snake activation mathematically, we can evaluate a periodic activation function that can learn complex periodic patterns while maintaining a monotonic trend, which can be useful for extrapolating periodic structures.
+- **Action:** Implemented a Snake activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small neural network on the XOR dataset using the Snake activation.
+- **Outcome:** The implementation correctly forwarded activations using the periodic sine function and mathematically propagated gradients correctly. The model successfully converged to a near-zero loss (0.0000) on the XOR dataset.
+- **Next Steps:** Evaluate the Snake component on extrapolation tasks and compare its performance against other periodic activations like Sine in SIREN architectures.
