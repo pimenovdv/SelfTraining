@@ -195,6 +195,7 @@
 ./train_log_cosh_loss_component.py
 ./train_logcosh_regression_component.py
 ./train_logistic_regression_component.py
+./train_logsigmoid_component.py
 ./train_lookahead_component.py
 ./train_lora_component.py
 ./train_lottery_ticket_component.py

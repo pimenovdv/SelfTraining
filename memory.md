@@ -1747,3 +1747,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a ReGLU activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small neural network on the XOR dataset using the ReGLU gating operation.
 - **Outcome:** The implementation correctly forwarded activations by scaling projected inputs using ReLU-gated features and mathematically propagated gradients through both the projection and gating branches correctly. The model successfully converged to a near-zero loss (0.0000) on the XOR dataset, with predictions correctly matching the XOR targets.
 - **Next Steps:** Evaluate the ReGLU component within larger Feed-Forward network blocks in Transformer architectures and directly compare its parameter efficiency against standard GLU and SwiGLU variants.
+
+### Experiment 0429: LogSigmoid Component
+- **Hypothesis:** By employing the LogSigmoid activation function mathematically, we can calculate log(sigmoid(x)) with improved numerical stability, which is highly beneficial for probabilistic targets and deep log-space operations.
+- **Action:** Implemented a LogSigmoid activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small Multi-Layer Perceptron on the OR dataset.
+- **Outcome:** The implementation correctly evaluated activations using numerically stable log-add-exp calculations and propagated gradients mathematically using 1 - sigmoid(x). The model successfully converged to a near-zero loss (0.0008) on the OR dataset.
+- **Next Steps:** Evaluate the LogSigmoid component directly within multi-label classification models or probabilistic bounding mechanisms where bounded log-space is strictly required.

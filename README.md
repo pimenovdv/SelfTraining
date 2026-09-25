@@ -2339,3 +2339,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: ReGLU Component
 **Script:** `train_reglu_component.py`
 **Description:** Evaluates the ReGLU (Rectified Gated Linear Unit) activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly learn non-linear representations using a gating mechanism over projected representations.
+
+## Component Testing: LogSigmoid Component
+**Script:** `train_logsigmoid_component.py`
+**Description:** Evaluates the LogSigmoid activation component mathematically in pure NumPy, testing its forward evaluation (-logaddexp(0, -x)) and gradient computation (1 - sigmoid(x)) to ensure models can properly learn non-linear representations, commonly used in probabilistic bounding or combination with loss functions.
