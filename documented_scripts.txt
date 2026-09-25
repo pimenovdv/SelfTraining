@@ -155,6 +155,7 @@ train_ipo_component
 train_isolation_forest_component
 train_isomap_component
 train_isotonic_regression_component
+train_jaccard_loss_component
 train_jensen_shannon_divergence_component
 train_jepa_component
 train_kalman_filter_component
@@ -325,7 +326,7 @@ train_sinkhorn_component
 train_siren_component
 train_skipgram_component
 train_smooth_l1_loss_component
-train_snake_activation_component.py
+train_snake_activation_component
 train_snn_component
 train_softplus_component
 train_softshrink_component

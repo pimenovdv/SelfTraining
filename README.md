@@ -2347,3 +2347,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Snake Activation Component
 **Script:** `train_snake_activation_component.py`
 **Description:** Evaluates the Snake activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can learn periodic representations.
+
+## Component Testing: Jaccard Loss Component
+**Script:** `train_jaccard_loss_component.py`
+**Description:** Evaluates the Jaccard Loss (1 - IoU) component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly optimize for intersection over union in segmentation or classification tasks.

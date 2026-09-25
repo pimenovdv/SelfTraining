@@ -1759,3 +1759,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Snake activation component and its backward pass mathematically in pure NumPy. Evaluated its capacity to learn non-linear decision boundaries by training a small neural network on the XOR dataset using the Snake activation.
 - **Outcome:** The implementation correctly forwarded activations using the periodic sine function and mathematically propagated gradients correctly. The model successfully converged to a near-zero loss (0.0000) on the XOR dataset.
 - **Next Steps:** Evaluate the Snake component on extrapolation tasks and compare its performance against other periodic activations like Sine in SIREN architectures.
+
+### Experiment 0431: Jaccard Loss Component
+- **Hypothesis:** By employing the Jaccard Loss (1 - IoU) mathematically, we can evaluate an objective function that directly optimizes the Intersection over Union metric, which is particularly effective for binary classification and segmentation tasks with imbalanced data.
+- **Action:** Implemented a Jaccard Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss for predicting binary targets.
+- **Outcome:** The implementation correctly forwarded activations to compute the Jaccard Loss metric, taking intersection and union into account. The test passed successfully.
+- **Next Steps:** Evaluate the Jaccard loss component on image segmentation tasks and compare its performance against standard binary cross-entropy and dice loss variants.
