@@ -1765,3 +1765,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Jaccard Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss for predicting binary targets.
 - **Outcome:** The implementation correctly forwarded activations to compute the Jaccard Loss metric, taking intersection and union into account. The test passed successfully.
 - **Next Steps:** Evaluate the Jaccard loss component on image segmentation tasks and compare its performance against standard binary cross-entropy and dice loss variants.
+
+### Experiment 0432: N-Pair Loss Component
+- **Hypothesis:** By employing the N-Pair Loss mathematically, we can evaluate an objective function that efficiently optimizes deep metric learning by comparing one positive pair against multiple negative pairs simultaneously within a mini-batch, improving convergence over standard triplet loss.
+- **Action:** Implemented an N-Pair Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss for predicting pairwise similarities.
+- **Outcome:** The implementation correctly computed similarity matrices and normalized probabilities to compute the N-Pair Loss metric, taking positive and negative pairs into account. The test passed successfully.
+- **Next Steps:** Evaluate the N-pair loss component on fine-grained image retrieval tasks and compare its performance against standard triplet loss variants.

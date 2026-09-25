@@ -249,6 +249,7 @@ train_nll_loss_component
 train_nmf_component
 train_node2vec_component
 train_novograd_component
+train_npair_loss_component
 train_ntm_component
 train_oja_rule_component
 train_omp_component
