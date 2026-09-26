@@ -1807,3 +1807,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a CReLU component mathematically in pure NumPy. Constructed an XOR dataset and deployed a 2-layer neural network featuring CReLU to trace error minimization utilizing accurate gradients for its concatenated parts.
 - **Outcome:** The implementation learned the XOR dataset accurately, with loss converging to roughly ~0.0003 and achieving full 100.00% accuracy, verifying CReLU's utility and numerical precision.
 - **Next Steps:** Evaluate the CReLU activation mechanism in larger convolutional or attention-based architectures to analyze how its structural doubling of channels affects parameter efficiency and representations.
+
+### Experiment 0439: Log-Sigmoid Component
+- **Hypothesis:** By implementing a Log-Sigmoid activation component mathematically, we can retain robust probability scaling for activations while computing derivatives accurately in an analytically smooth fashion, avoiding saturation at boundaries.
+- **Action:** Implemented a Log-Sigmoid component mathematically in pure NumPy. Constructed an XOR dataset and deployed a 2-layer neural network featuring Log-Sigmoid to trace error minimization utilizing accurate numerical gradients.
+- **Outcome:** The implementation learned the XOR dataset accurately, with loss converging to roughly ~0.0001 and achieving full 100.00% accuracy, verifying Log-Sigmoid's utility.
+- **Next Steps:** Evaluate the Log-Sigmoid activation mechanism in larger deep neural models or density estimation algorithms to analyze how its structural log-probabilities affect gradient flow.

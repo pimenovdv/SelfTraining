@@ -394,3 +394,4 @@
 0436_train_meta_learning_component
 0437_train_softmax_component
 0438_train_crelu_component
+0439_train_log_sigmoid_component

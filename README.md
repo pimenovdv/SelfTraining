@@ -2379,3 +2379,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: CReLU Component
 **Script:** `train_crelu_component.py`
 **Description:** Evaluates a CReLU (Concatenated ReLU) component mathematically in pure NumPy, testing its ability to apply the standard ReLU to both the positive and negative sides of inputs by concatenating `max(0, x)` and `max(0, -x)`, and utilizing accurate gradients for a neural network on the XOR dataset.
+
+## Component Testing: Log-Sigmoid Activation Component
+**Script:** `train_log_sigmoid_component.py`
+**Description:** Evaluates a Log-Sigmoid activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly capture log-probabilities in deep neural networks efficiently and robustly.
