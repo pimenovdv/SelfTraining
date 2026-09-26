@@ -1771,3 +1771,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an N-Pair Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss for predicting pairwise similarities.
 - **Outcome:** The implementation correctly computed similarity matrices and normalized probabilities to compute the N-Pair Loss metric, taking positive and negative pairs into account. The test passed successfully.
 - **Next Steps:** Evaluate the N-pair loss component on fine-grained image retrieval tasks and compare its performance against standard triplet loss variants.
+
+### Experiment 0433: MAPE Loss Component
+- **Hypothesis:** By employing the Mean Absolute Percentage Error (MAPE) mathematically, we can evaluate an objective function that optimizes scale-independent relative errors, which is particularly effective for regression tasks where the target ranges over multiple orders of magnitude.
+- **Action:** Implemented a MAPE Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss and accurately compute its gradient with respect to predictions, verified against numerical gradients.
+- **Outcome:** The implementation correctly forwarded activations to compute the MAPE Loss metric, and the gradient check successfully passed using numerical verification.
+- **Next Steps:** Evaluate the MAPE loss component on regression tasks involving forecasting and continuous outputs, and compare its performance against standard MSE and MAE loss variants.

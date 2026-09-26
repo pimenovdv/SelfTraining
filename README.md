@@ -2355,3 +2355,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: N-Pair Loss Component
 **Script:** `train_npair_loss_component.py`
 **Description:** Evaluates the N-Pair Loss component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly optimize metric learning tasks by contrasting an anchor with one positive and multiple negative examples simultaneously.
+
+## Component Testing: MAPE Loss Component
+**Script:** `train_mape_loss_component.py`
+**Description:** Evaluates the MAPE Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks for scale-independent relative percentage errors.
