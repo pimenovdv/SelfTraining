@@ -2371,3 +2371,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Meta-Learning Component
 **Script:** `train_meta_learning_component.py`
 **Description:** Evaluates a Meta-Learning component (MAML-like) mathematically in pure NumPy, testing its capacity to adapt model parameters across different tasks via an inner loop while accumulating meta-gradients across tasks via an outer loop.
+
+## Component Testing: Softmax Component
+**Script:** `train_softmax_component.py`
+**Description:** Evaluates a Softmax component mathematically in pure NumPy, testing its ability to compute forward values as a normalized probability distribution over multiple classes, ensuring numerical stability, and accurately calculating its corresponding Jacobian matrix for gradients during backward pass.

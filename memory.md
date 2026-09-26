@@ -1795,3 +1795,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Meta-Learning component mathematically in pure NumPy. Evaluated its capacity to meta-learn an initial weight vector across varying target domains in a simple task structure.
 - **Outcome:** The implementation correctly scaled and computed task-specific gradients in the inner loop, aggregated validations to compute the outer loop meta-gradients, and successfully generalized meta-learned initialization values.
 - **Next Steps:** Evaluate the Meta-Learning component on few-shot learning and non-stationary task datasets, and compare its performance against standard single-task empirical risk minimization algorithms.
+
+### Experiment 0437: Softmax Component
+- **Hypothesis:** By employing the Softmax mathematical function, we can correctly normalize sets of unconstrained scores (logits) into a stabilized probability distribution and dynamically compute a Jacobian matrix for accurate backpropagation.
+- **Action:** Implemented a Softmax component mathematically in pure NumPy. Evaluated its capacity to process various batch scales (including large unstable logits), generate summing probability outputs, and return a proper gradient using the derivative Jacobian formula.
+- **Outcome:** The implementation successfully computed numerically stable logit exponents with sum-to-1 probabilities on all rows, alongside returning the expected gradient representations from simulated next-layer loss signals.
+- **Next Steps:** Evaluate the Softmax component integrated as an activation layer to end deeper neural network classifiers over large numbers of target outputs.

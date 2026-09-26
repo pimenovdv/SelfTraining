@@ -331,6 +331,7 @@
 ./train_smooth_l1_loss_component.py
 ./train_snake_activation_component.py
 ./train_snn_component.py
+./train_softmax_component.py
 ./train_softmin_component.py
 ./train_softplus_component.py
 ./train_softshrink_component.py
