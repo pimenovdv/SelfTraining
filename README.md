@@ -2367,3 +2367,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Squared Hinge Loss Component
 **Script:** `train_squared_hinge_loss_component.py`
 **Description:** Evaluates the Squared Hinge Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize max-margin objectives for binary classification tasks, penalizing misclassifications quadratically.
+
+## Component Testing: Meta-Learning Component
+**Script:** `train_meta_learning_component.py`
+**Description:** Evaluates a Meta-Learning component (MAML-like) mathematically in pure NumPy, testing its capacity to adapt model parameters across different tasks via an inner loop while accumulating meta-gradients across tasks via an outer loop.
