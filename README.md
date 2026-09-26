@@ -2359,3 +2359,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: MAPE Loss Component
 **Script:** `train_mape_loss_component.py`
 **Description:** Evaluates the MAPE Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks for scale-independent relative percentage errors.
+
+## Component Testing: Softmin Component
+**Script:** `train_softmin_component.py`
+**Description:** Evaluates the Softmin component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly assign probabilities inversely proportional to input values, often used in attention mechanisms focusing on smaller distances.
