@@ -331,6 +331,7 @@ train_skipgram_component
 train_smooth_l1_loss_component
 train_snake_activation_component
 train_snn_component
+train_softmax_component
 train_softmin_component
 train_softplus_component
 train_softshrink_component
