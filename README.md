@@ -2363,3 +2363,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Softmin Component
 **Script:** `train_softmin_component.py`
 **Description:** Evaluates the Softmin component mathematically in pure NumPy, testing its forward evaluation to ensure models can properly assign probabilities inversely proportional to input values, often used in attention mechanisms focusing on smaller distances.
+
+## Component Testing: Squared Hinge Loss Component
+**Script:** `train_squared_hinge_loss_component.py`
+**Description:** Evaluates the Squared Hinge Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize max-margin objectives for binary classification tasks, penalizing misclassifications quadratically.
