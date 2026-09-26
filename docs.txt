@@ -393,3 +393,4 @@
 0435_train_squared_hinge_loss_component
 0436_train_meta_learning_component
 0437_train_softmax_component
+0438_train_crelu_component
