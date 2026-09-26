@@ -1801,3 +1801,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Softmax component mathematically in pure NumPy. Evaluated its capacity to process various batch scales (including large unstable logits), generate summing probability outputs, and return a proper gradient using the derivative Jacobian formula.
 - **Outcome:** The implementation successfully computed numerically stable logit exponents with sum-to-1 probabilities on all rows, alongside returning the expected gradient representations from simulated next-layer loss signals.
 - **Next Steps:** Evaluate the Softmax component integrated as an activation layer to end deeper neural network classifiers over large numbers of target outputs.
+
+### Experiment 0438: CReLU Component
+- **Hypothesis:** By implementing a CReLU (Concatenated ReLU) activation component mathematically, we can retain both positive and negative activation responses across twice the feature dimension space and backpropagate appropriately, allowing robust learning dynamics for a model.
+- **Action:** Implemented a CReLU component mathematically in pure NumPy. Constructed an XOR dataset and deployed a 2-layer neural network featuring CReLU to trace error minimization utilizing accurate gradients for its concatenated parts.
+- **Outcome:** The implementation learned the XOR dataset accurately, with loss converging to roughly ~0.0003 and achieving full 100.00% accuracy, verifying CReLU's utility and numerical precision.
+- **Next Steps:** Evaluate the CReLU activation mechanism in larger convolutional or attention-based architectures to analyze how its structural doubling of channels affects parameter efficiency and representations.
