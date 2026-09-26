@@ -391,3 +391,4 @@ docs/0432_train_npair_loss_component.md
 docs/0433_train_mape_loss_component.md
 docs/0434_train_softmin_component.md
 docs/0435_train_squared_hinge_loss_component.md
+docs/0436_train_meta_learning_component.md
