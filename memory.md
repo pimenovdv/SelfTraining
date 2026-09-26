@@ -1777,3 +1777,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a MAPE Loss component mathematically in pure NumPy. Evaluated its capacity to calculate the loss and accurately compute its gradient with respect to predictions, verified against numerical gradients.
 - **Outcome:** The implementation correctly forwarded activations to compute the MAPE Loss metric, and the gradient check successfully passed using numerical verification.
 - **Next Steps:** Evaluate the MAPE loss component on regression tasks involving forecasting and continuous outputs, and compare its performance against standard MSE and MAE loss variants.
+
+### Experiment 0434: Softmin Component
+- **Hypothesis:** By employing the Softmin operation mathematically, we can evaluate an objective function that efficiently scales probabilities inversely to input magnitudes, which is particularly effective for distance-based attention mechanisms.
+- **Action:** Implemented a Softmin component mathematically in pure NumPy. Evaluated its capacity to calculate proper normalized probability distributions for 1D and 2D arrays.
+- **Outcome:** The implementation correctly scaled the activations using Softmin, ensuring numerically stable operations and probabilities summing up to 1. The test passed successfully.
+- **Next Steps:** Evaluate the Softmin component on routing and distance-based attention mechanisms, and compare its performance against standard Softmax.
