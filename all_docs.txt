@@ -398,3 +398,4 @@ docs/0439_train_log_sigmoid_component.md
 docs/0440_train_infonce_loss_component.md
 docs/0441_train_center_loss_component.md
 docs/0442_train_poisson_nll_loss_component.md
+docs/0443_train_sgd_component.md

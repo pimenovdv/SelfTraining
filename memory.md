@@ -1831,3 +1831,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Poisson NLL loss component mathematically in pure NumPy. Evaluated its capacity to compute the likelihood loss for a sequence of true target counts against logarithmic inputs correctly.
 - **Outcome:** The implementation correctly scaled the loss for arrays of inputs against random integer target counts, calculating a resulting empirical loss correctly (e.g. 0.3666), thereby verifying the component's numerical utility.
 - **Next Steps:** Evaluate the Poisson NLL loss mechanism in models analyzing generalized count features or specialized distributions over temporal spans.
+
+### Experiment 0443: SGD Component
+- **Objective:** Implement and test standard Stochastic Gradient Descent (SGD) for optimizing a Feed-Forward Network on the XOR dataset.
+- **Result:** The model failed to converge to a solution for the XOR problem, maintaining a loss of 0.1250 and outputting probabilities around 0.5 for all inputs.
+- **Conclusion:** Standard SGD struggles significantly with the XOR dataset in this configuration, highlighting its limitations and demonstrating the necessity of adaptive optimization algorithms or better initializations/architectures for non-linear problems like XOR.
