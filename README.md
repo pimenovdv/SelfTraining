@@ -2395,3 +2395,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Poisson NLL Loss Component
 **Script:** `train_poisson_nll_loss_component.py`
 **Description:** Evaluates a Poisson Negative Log-Likelihood (NLL) Loss component mathematically in pure NumPy, testing its effectiveness in modeling count data and computing appropriate gradients for optimization based on the Poisson distribution.
+
+## SGD Component
+**Script:** `train_sgd_component.py`
+**Description:** Implements standard Stochastic Gradient Descent (SGD) for training a Feed-Forward Network on the XOR dataset. SGD updates model parameters directly using the scaled gradients, providing a baseline optimization algorithm for comparison with adaptive methods.
