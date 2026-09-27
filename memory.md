@@ -1819,3 +1819,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented an InfoNCE loss component mathematically in pure NumPy. Evaluated its capacity to compute appropriate contrastive losses for pairs of embeddings (anchors and positives) across batches, computing similarity scores correctly.
 - **Outcome:** The implementation correctly scaled InfoNCE loss based on alignments, with perfectly aligned features scoring the lowest loss (~1.1102) and random pairs correctly scoring the highest loss (~2.7465), thereby verifying the components utility.
 - **Next Steps:** Integrate the InfoNCE loss mechanism within a self-supervised deep learning model, such as SimCLR, evaluating its feature alignment strength.
+
+### Experiment 0441: Center Loss Component
+- **Hypothesis:** By implementing Center Loss mathematically, we can optimize feature representations by penalizing the distance between samples and their corresponding class centers, effectively minimizing intra-class variance while maximizing inter-class separation.
+- **Action:** Implemented a Center Loss component mathematically in pure NumPy. Evaluated its capacity to compute appropriate gradients and update class centers to draw samples of the same class closer together in the embedding space.
+- **Outcome:** The implementation correctly scaled Center Loss, with the initial loss of ~109.8536 decreasing to ~0.1173 after optimization steps, thereby verifying the components utility.
+- **Next Steps:** Integrate the Center Loss mechanism within a classification deep learning model alongside Softmax loss to evaluate its impact on feature discriminability.

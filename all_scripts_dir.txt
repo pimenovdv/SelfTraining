@@ -38,6 +38,7 @@
 ./train_cca_component.py
 ./train_celu_component.py
 ./train_cem_component.py
+./train_center_loss_component.py
 ./train_cgan_component.py
 ./train_chinchilla_optimality_component.py
 ./train_cma_es_component.py
