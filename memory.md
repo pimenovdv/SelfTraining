@@ -1836,3 +1836,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test standard Stochastic Gradient Descent (SGD) for optimizing a Feed-Forward Network on the XOR dataset.
 - **Result:** The model failed to converge to a solution for the XOR problem, maintaining a loss of 0.1250 and outputting probabilities around 0.5 for all inputs.
 - **Conclusion:** Standard SGD struggles significantly with the XOR dataset in this configuration, highlighting its limitations and demonstrating the necessity of adaptive optimization algorithms or better initializations/architectures for non-linear problems like XOR.
+
+### Experiment 0444: QHM Optimizer Component
+- **Objective:** Implement and evaluate the Quasi-Hyperbolic Momentum (QHM) optimizer mathematically for training a neural network on the non-linear XOR problem.
+- **Action:** Developed `train_qhm_component.py` in pure NumPy. Evaluated its capacity to decouple momentum and gradient steps using a nu parameter of 0.7 and a momentum of 0.9.
+- **Outcome:** The QHM implementation successfully converged on the XOR dataset. The model achieved a final MSE loss of 0.0006 with highly accurate final predictions (e.g., 0.9650 for Target 1), verifying the optimizer's effectiveness compared to standard SGD.
+- **Next Steps:** Consider integrating the QHM optimizer strategy into larger-scale representation learning tasks to evaluate its impact on training stability and speed.
