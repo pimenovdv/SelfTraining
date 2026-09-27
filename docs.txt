@@ -395,3 +395,4 @@
 0437_train_softmax_component
 0438_train_crelu_component
 0439_train_log_sigmoid_component
+0440_train_infonce_loss_component

@@ -395,3 +395,4 @@ docs/0436_train_meta_learning_component.md
 docs/0437_train_softmax_component.md
 docs/0438_train_crelu_component.md
 docs/0439_train_log_sigmoid_component.md
+docs/0440_train_infonce_loss_component.md

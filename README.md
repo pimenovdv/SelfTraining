@@ -2383,3 +2383,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Log-Sigmoid Activation Component
 **Script:** `train_log_sigmoid_component.py`
 **Description:** Evaluates a Log-Sigmoid activation component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly capture log-probabilities in deep neural networks efficiently and robustly.
+
+## Component Testing: InfoNCE Loss Component
+**Script:** `train_infonce_loss_component.py`
+**Description:** Evaluates an InfoNCE (Information Noise-Contrastive Estimation) Loss component mathematically in pure NumPy, testing its effectiveness in drawing positive pairs closer together in the embedding space while repelling negative pairs across a batch.
