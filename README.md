@@ -2403,3 +2403,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## QHM Optimizer Component
 **Script:** `train_qhm_component.py`
 **Description:** Evaluates the Quasi-Hyperbolic Momentum (QHM) optimizer mathematically in pure NumPy, testing its ability to decouple momentum and the current gradient step through the nu parameter, effectively optimizing a Feed-Forward Network on the XOR dataset.
+
+## TanhShrink Activation Component
+**Script:** `train_tanhshrink_component.py`
+**Description:** Evaluates the TanhShrink activation function mathematically in pure NumPy, testing its effectiveness by applying the transformation $x - \tanh(x)$ on an array of test inputs and computing the appropriate forward pass.

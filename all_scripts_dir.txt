@@ -360,6 +360,7 @@
 ./train_swa_component.py
 ./train_swiglu_component.py
 ./train_swish_component.py
+./train_tanhshrink_component.py
 ./train_target_propagation_component.py
 ./train_tcn_component.py
 ./train_td3_component.py
