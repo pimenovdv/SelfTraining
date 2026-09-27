@@ -2387,3 +2387,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: InfoNCE Loss Component
 **Script:** `train_infonce_loss_component.py`
 **Description:** Evaluates an InfoNCE (Information Noise-Contrastive Estimation) Loss component mathematically in pure NumPy, testing its effectiveness in drawing positive pairs closer together in the embedding space while repelling negative pairs across a batch.
+
+## Component Testing: Center Loss Component
+**Script:** `train_center_loss_component.py`
+**Description:** Evaluates a Center Loss component mathematically in pure NumPy, testing its effectiveness in minimizing intra-class variance by penalizing the distance between deep features and their corresponding class centers.
