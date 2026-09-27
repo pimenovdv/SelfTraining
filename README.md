@@ -2399,3 +2399,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## SGD Component
 **Script:** `train_sgd_component.py`
 **Description:** Implements standard Stochastic Gradient Descent (SGD) for training a Feed-Forward Network on the XOR dataset. SGD updates model parameters directly using the scaled gradients, providing a baseline optimization algorithm for comparison with adaptive methods.
+
+## QHM Optimizer Component
+**Script:** `train_qhm_component.py`
+**Description:** Evaluates the Quasi-Hyperbolic Momentum (QHM) optimizer mathematically in pure NumPy, testing its ability to decouple momentum and the current gradient step through the nu parameter, effectively optimizing a Feed-Forward Network on the XOR dataset.
