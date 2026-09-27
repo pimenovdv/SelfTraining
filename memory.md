@@ -1825,3 +1825,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Center Loss component mathematically in pure NumPy. Evaluated its capacity to compute appropriate gradients and update class centers to draw samples of the same class closer together in the embedding space.
 - **Outcome:** The implementation correctly scaled Center Loss, with the initial loss of ~109.8536 decreasing to ~0.1173 after optimization steps, thereby verifying the components utility.
 - **Next Steps:** Integrate the Center Loss mechanism within a classification deep learning model alongside Softmax loss to evaluate its impact on feature discriminability.
+
+### Experiment 0442: Poisson NLL Loss Component
+- **Hypothesis:** By implementing a Poisson Negative Log-Likelihood (NLL) loss mathematically, we can optimize models to predict count data following a Poisson distribution, capturing exponential relationships accurately.
+- **Action:** Implemented a Poisson NLL loss component mathematically in pure NumPy. Evaluated its capacity to compute the likelihood loss for a sequence of true target counts against logarithmic inputs correctly.
+- **Outcome:** The implementation correctly scaled the loss for arrays of inputs against random integer target counts, calculating a resulting empirical loss correctly (e.g. 0.3666), thereby verifying the component's numerical utility.
+- **Next Steps:** Evaluate the Poisson NLL loss mechanism in models analyzing generalized count features or specialized distributions over temporal spans.

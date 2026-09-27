@@ -2391,3 +2391,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Center Loss Component
 **Script:** `train_center_loss_component.py`
 **Description:** Evaluates a Center Loss component mathematically in pure NumPy, testing its effectiveness in minimizing intra-class variance by penalizing the distance between deep features and their corresponding class centers.
+
+## Component Testing: Poisson NLL Loss Component
+**Script:** `train_poisson_nll_loss_component.py`
+**Description:** Evaluates a Poisson Negative Log-Likelihood (NLL) Loss component mathematically in pure NumPy, testing its effectiveness in modeling count data and computing appropriate gradients for optimization based on the Poisson distribution.
