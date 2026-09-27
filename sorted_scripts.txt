@@ -360,6 +360,7 @@ train_svr_component
 train_swa_component
 train_swiglu_component
 train_swish_component
+train_tanhshrink_component
 train_target_propagation_component
 train_tcn_component
 train_td3_component
