@@ -1813,3 +1813,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a Log-Sigmoid component mathematically in pure NumPy. Constructed an XOR dataset and deployed a 2-layer neural network featuring Log-Sigmoid to trace error minimization utilizing accurate numerical gradients.
 - **Outcome:** The implementation learned the XOR dataset accurately, with loss converging to roughly ~0.0001 and achieving full 100.00% accuracy, verifying Log-Sigmoid's utility.
 - **Next Steps:** Evaluate the Log-Sigmoid activation mechanism in larger deep neural models or density estimation algorithms to analyze how its structural log-probabilities affect gradient flow.
+
+### Experiment 0440: InfoNCE Loss Component
+- **Hypothesis:** By implementing InfoNCE (Information Noise-Contrastive Estimation) loss mathematically, we can optimize representations such that positive pairs are drawn closer together in the embedding space while simultaneously pushing negative samples apart, enabling effective contrastive learning.
+- **Action:** Implemented an InfoNCE loss component mathematically in pure NumPy. Evaluated its capacity to compute appropriate contrastive losses for pairs of embeddings (anchors and positives) across batches, computing similarity scores correctly.
+- **Outcome:** The implementation correctly scaled InfoNCE loss based on alignments, with perfectly aligned features scoring the lowest loss (~1.1102) and random pairs correctly scoring the highest loss (~2.7465), thereby verifying the components utility.
+- **Next Steps:** Integrate the InfoNCE loss mechanism within a self-supervised deep learning model, such as SimCLR, evaluating its feature alignment strength.

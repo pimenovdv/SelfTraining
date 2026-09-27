@@ -150,6 +150,7 @@ train_huber_regression_component.py
 train_hypernetwork_component.py
 train_ica_component.py
 train_icm_component.py
+train_infonce_loss_component.py
 train_instance_norm_component.py
 train_instancenorm_component.py
 train_ipo_component.py
