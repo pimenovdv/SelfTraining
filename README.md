@@ -2415,3 +2415,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## MMD Loss Component
 **Script:** `train_mmd_loss_component.py`
 **Description:** Evaluates the Maximum Mean Discrepancy (MMD) Loss mathematically, testing its ability to measure the difference between two distributions using an RBF kernel and to train a simple linear model to map a source distribution to a target distribution.
+
+## Soft Margin Loss Component
+**Script:** `train_soft_margin_loss_component.py`
+**Description:** Evaluates the Soft Margin Loss mathematically, testing its ability to optimize a linear model for binary classification where targets are {-1, 1}, measuring the logistic loss over the predictions.
