@@ -231,6 +231,7 @@ train_mish_component.py
 train_mixture_of_experts_component.py
 train_mixup_component.py
 train_mlpmixer_component.py
+train_mmd_loss_component.py
 train_moe_component.py
 train_momentum_component.py
 train_mqa_component.py
