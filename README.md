@@ -2419,3 +2419,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Soft Margin Loss Component
 **Script:** `train_soft_margin_loss_component.py`
 **Description:** Evaluates the Soft Margin Loss mathematically, testing its ability to optimize a linear model for binary classification where targets are {-1, 1}, measuring the logistic loss over the predictions.
+
+## LiSHT Component
+**Script:** `train_lisht_component.py`
+**Description:** Evaluates the Linearly Scaled Hyperbolic Tangent (LiSHT) activation function mathematically, testing its ability to solve the XOR problem using a multi-layer perceptron by computing $x \tanh(x)$ and its derivative for backpropagation.

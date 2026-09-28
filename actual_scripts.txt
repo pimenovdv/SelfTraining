@@ -193,6 +193,7 @@ train_linear_regression_component
 train_linucb_component
 train_lion_component
 train_liquid_state_machine_component
+train_lisht_component
 train_lle_component
 train_lmu_component
 train_local_outlier_factor_component
@@ -231,7 +232,7 @@ train_mish_component
 train_mixture_of_experts_component
 train_mixup_component
 train_mlpmixer_component
-train_mmd_loss_component.py
+train_mmd_loss_component
 train_moe_component
 train_momentum_component
 train_mqa_component
@@ -300,7 +301,7 @@ train_recursive_self_improvement_component
 train_reglu_component
 train_reinforce_component
 train_relational_network_component
-train_relu6_component.py
+train_relu6_component
 train_reptile_component
 train_retention_component
 train_revnet_component

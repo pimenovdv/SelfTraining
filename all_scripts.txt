@@ -193,6 +193,7 @@ train_linear_regression_component
 train_linucb_component
 train_lion_component
 train_liquid_state_machine_component
+train_lisht_component
 train_lle_component
 train_lmu_component
 train_local_outlier_factor_component
