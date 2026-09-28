@@ -28,6 +28,7 @@
 ./train_bayesian_ridge_component.py
 ./train_bce_loss_component.py
 ./train_bcm_component.py
+./train_bent_identity_component.py
 ./train_beta_vae_component.py
 ./train_bnn_component.py
 ./train_bpe_component.py

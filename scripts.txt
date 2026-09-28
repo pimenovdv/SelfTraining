@@ -28,6 +28,7 @@ train_bayesian_optimization_component
 train_bayesian_ridge_component
 train_bce_loss_component
 train_bcm_component
+train_bent_identity_component
 train_beta_vae_component
 train_bnn_component
 train_bpe_component

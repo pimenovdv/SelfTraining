@@ -1878,3 +1878,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Developed `train_elliot_component.py` to calculate the Elliot activation ($f(x) = x / (1 + |x|)$), verifying it mathematically and using it to train a small multi-layer perceptron on a synthetic dataset.
 - **Outcome:** The Elliot implementation successfully allowed the model to converge. The loss dropped to 0.5775 over 100 epochs, effectively learning the target mapping.
 - **Next Steps:** Consider comparing the Elliot activation function against bounded non-linearities like Tanh or Softsign in deeper network architectures.
+
+### Experiment 0451: Bent Identity Component
+- **Objective:** Implement and evaluate the Bent Identity activation function mathematically in pure NumPy.
+- **Action:** Developed `train_bent_identity_component.py` to calculate the Bent Identity activation (`f(x) = (np.sqrt(x**2 + 1) - 1) / 2 + x`) and its derivative, using it to optimize a simple linear model.
+- **Outcome:** The Bent Identity implementation successfully guided the optimization process. The model's loss decreased from an initial value of 12.2113 to 0.0082, effectively learning the target mapping.
+- **Next Steps:** Consider comparing the Bent Identity activation function against non-linearities like Softplus or Swish in deeper network architectures.
