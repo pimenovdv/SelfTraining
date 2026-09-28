@@ -2411,3 +2411,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## ReLU6 Activation Component
 **Script:** `train_relu6_component.py`
 **Description:** Evaluates the ReLU6 activation function mathematically in pure NumPy, testing its effectiveness by applying the transformation $\min(\max(0, x), 6)$ to bound the maximum activation value and computing the appropriate gradients for backpropagation.
+
+## MMD Loss Component
+**Script:** `train_mmd_loss_component.py`
+**Description:** Evaluates the Maximum Mean Discrepancy (MMD) Loss mathematically, testing its ability to measure the difference between two distributions using an RBF kernel and to train a simple linear model to map a source distribution to a target distribution.

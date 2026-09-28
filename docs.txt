@@ -402,3 +402,4 @@
 0444_train_qhm_component
 0445_train_tanhshrink_component
 0446_train_relu6_component
+0447_train_mmd_loss_component
