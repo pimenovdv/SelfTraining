@@ -193,6 +193,7 @@
 ./train_linucb_component.py
 ./train_lion_component.py
 ./train_liquid_state_machine_component.py
+./train_lisht_component.py
 ./train_lle_component.py
 ./train_lmu_component.py
 ./train_local_outlier_factor_component.py

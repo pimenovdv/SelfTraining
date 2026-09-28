@@ -1866,3 +1866,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Developed `train_soft_margin_loss_component.py` to calculate the soft margin loss and optimize a simple linear model for binary classification.
 - **Outcome:** The Soft Margin Loss implementation successfully guided the optimization process. The model's loss decreased from an initial value of 0.6931 to 0.3076, successfully training the linear weights.
 - **Next Steps:** Consider integrating the Soft Margin Loss into classification tasks as a continuous alternative to hinge loss for optimizing margin-based classifiers.
+
+### Experiment 0449: LiSHT Activation Function
+- **Objective:** Implement and evaluate the Linearly Scaled Hyperbolic Tangent (LiSHT) activation function mathematically.
+- **Action:** Developed `train_lisht_component.py` to calculate the LiSHT activation ($f(x) = x \tanh(x)$) and its derivative, using it to train a small multi-layer perceptron on the XOR dataset.
+- **Outcome:** The LiSHT implementation successfully allowed the model to converge. The loss dropped from 0.7592 to 0.0001 over 5000 epochs, and the final predictions accurately represented the non-linear XOR function.
+- **Next Steps:** Consider comparing LiSHT against other non-monotonic activation functions like Swish and Mish in deeper network architectures.
