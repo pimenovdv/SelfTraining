@@ -2423,3 +2423,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## LiSHT Component
 **Script:** `train_lisht_component.py`
 **Description:** Evaluates the Linearly Scaled Hyperbolic Tangent (LiSHT) activation function mathematically, testing its ability to solve the XOR problem using a multi-layer perceptron by computing $x \tanh(x)$ and its derivative for backpropagation.
+
+## Elliot Component
+**Script:** `train_elliot_component.py`
+**Description:** Evaluates the Elliot activation function mathematically (`f(x) = x / (1 + |x|)`). The Elliot activation function is a fast, differentiable alternative to the sigmoid and hyperbolic tangent functions. We verified it mathematically and trained a simple neural network.

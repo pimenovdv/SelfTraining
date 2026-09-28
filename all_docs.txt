@@ -405,3 +405,4 @@ docs/0446_train_relu6_component.md
 docs/0447_train_mmd_loss_component.md
 docs/0448_train_soft_margin_loss_component.md
 docs/0449_train_lisht_component.md
+docs/0450_train_elliot_component.md
