@@ -86,6 +86,7 @@
 ./train_ebm_component.py
 ./train_echo_state_network_component.py
 ./train_elastic_net_component.py
+./train_elliot_component.py
 ./train_elm_component.py
 ./train_elu_component.py
 ./train_es_component.py

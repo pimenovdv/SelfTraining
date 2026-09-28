@@ -1872,3 +1872,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Developed `train_lisht_component.py` to calculate the LiSHT activation ($f(x) = x \tanh(x)$) and its derivative, using it to train a small multi-layer perceptron on the XOR dataset.
 - **Outcome:** The LiSHT implementation successfully allowed the model to converge. The loss dropped from 0.7592 to 0.0001 over 5000 epochs, and the final predictions accurately represented the non-linear XOR function.
 - **Next Steps:** Consider comparing LiSHT against other non-monotonic activation functions like Swish and Mish in deeper network architectures.
+
+### Experiment 0450: Elliot Activation Function
+- **Objective:** Implement and evaluate the Elliot activation function mathematically.
+- **Action:** Developed `train_elliot_component.py` to calculate the Elliot activation ($f(x) = x / (1 + |x|)$), verifying it mathematically and using it to train a small multi-layer perceptron on a synthetic dataset.
+- **Outcome:** The Elliot implementation successfully allowed the model to converge. The loss dropped to 0.5775 over 100 epochs, effectively learning the target mapping.
+- **Next Steps:** Consider comparing the Elliot activation function against bounded non-linearities like Tanh or Softsign in deeper network architectures.
