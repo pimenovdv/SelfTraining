@@ -299,6 +299,7 @@
 ./train_reglu_component.py
 ./train_reinforce_component.py
 ./train_relational_network_component.py
+./train_relu6_component.py
 ./train_reptile_component.py
 ./train_retention_component.py
 ./train_revnet_component.py

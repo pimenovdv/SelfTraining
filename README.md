@@ -2407,3 +2407,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## TanhShrink Activation Component
 **Script:** `train_tanhshrink_component.py`
 **Description:** Evaluates the TanhShrink activation function mathematically in pure NumPy, testing its effectiveness by applying the transformation $x - \tanh(x)$ on an array of test inputs and computing the appropriate forward pass.
+
+## ReLU6 Activation Component
+**Script:** `train_relu6_component.py`
+**Description:** Evaluates the ReLU6 activation function mathematically in pure NumPy, testing its effectiveness by applying the transformation $\min(\max(0, x), 6)$ to bound the maximum activation value and computing the appropriate gradients for backpropagation.
