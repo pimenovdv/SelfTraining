@@ -2427,3 +2427,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Elliot Component
 **Script:** `train_elliot_component.py`
 **Description:** Evaluates the Elliot activation function mathematically (`f(x) = x / (1 + |x|)`). The Elliot activation function is a fast, differentiable alternative to the sigmoid and hyperbolic tangent functions. We verified it mathematically and trained a simple neural network.
+
+## Bent Identity Component
+**Script:** `train_bent_identity_component.py`
+**Description:** Evaluates the Bent Identity activation function mathematically in pure NumPy (`f(x) = (np.sqrt(x**2 + 1) - 1) / 2 + x`). The component tests its forward evaluation and gradient computation to ensure models can properly learn non-linear representations.

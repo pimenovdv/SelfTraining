@@ -406,3 +406,4 @@
 0448_train_soft_margin_loss_component
 0449_train_lisht_component
 0450_train_elliot_component
+0451_train_bent_identity_component
