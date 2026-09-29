@@ -35,6 +35,7 @@ train_bpe_component
 train_byol_component
 train_cae_component
 train_capsule_network_component
+train_cauchy_loss_component
 train_cbow_component
 train_cca_component
 train_celu_component

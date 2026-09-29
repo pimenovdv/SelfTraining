@@ -1894,3 +1894,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Hardtanh activation function and its derivative mathematically.
 - **Method**: Defined the piecewise linear `hardtanh` function and its derivative mathematically using NumPy operations (`np.clip` and `np.where`).
 - **Outcome**: The function correctly bounds outputs between -1 and 1 with linear transitions between -1 and 1. The gradients align with the expected values, passing 1 within the bounds and 0 outside.
+
+### Experiment 0454: Cauchy Loss Component
+- **Objective**: Implement and test the Cauchy loss function and its derivative mathematically in pure NumPy.
+- **Method**: Defined the Cauchy loss function as `(c^2 / 2) * ln(1 + (residual / c)^2)` and its gradient. Trained a simple linear model on data with artificial outliers.
+- **Outcome**: The implementation correctly reduced the loss and learned weights very close to the true weights, demonstrating robustness to outliers compared to MSE loss.

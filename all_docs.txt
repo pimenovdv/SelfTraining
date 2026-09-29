@@ -409,3 +409,4 @@ docs/0450_train_elliot_component.md
 docs/0451_train_bent_identity_component.md
 docs/0452_train_hardsigmoid_component.md
 docs/0453_train_hardtanh_component.md
+docs/0454_train_cauchy_loss_component.md
