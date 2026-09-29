@@ -205,6 +205,7 @@ train_lmu_component
 train_local_outlier_factor_component
 train_log_cosh_loss_component
 train_log_sigmoid_component
+train_log_softmax_component
 train_logcosh_regression_component
 train_logistic_regression_component
 train_lookahead_component

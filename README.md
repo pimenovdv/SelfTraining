@@ -2447,3 +2447,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Entmax15 Component
 **Script:** `train_entmax_component.py`
 **Description:** Implements the Entmax15 mapping (with alpha=1.5) mathematically in pure PyTorch, a differentiable sparse activation function that bridges the gap between Softmax and Sparsemax, outputting sparse probability distributions minimizing the alpha-divergence.
+
+## Component Testing: Log Softmax Component
+**Script:** `train_log_softmax_component.py`
+**Description:** Evaluates the Log Softmax activation function mathematically in pure NumPy, testing its forward evaluation (using the log-sum-exp trick for numerical stability) and backward gradient computation to ensure models can properly optimize negative log-likelihood objectives for classification tasks.
