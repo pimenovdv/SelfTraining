@@ -409,3 +409,4 @@
 0451_train_bent_identity_component
 0452_train_hardsigmoid_component
 0453_train_hardtanh_component
+0454_train_cauchy_loss_component
