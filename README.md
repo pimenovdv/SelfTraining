@@ -2435,3 +2435,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Hardsigmoid Component
 **Script:** `train_hardsigmoid_component.py`
 **Description:** Implements the Hardsigmoid activation function (`f(x) = max(0, min(1, (x + 3) / 6))`) and its derivative, which is a piecewise linear approximation of the sigmoid function. It provides a faster, computationally cheaper alternative to sigmoid, commonly used in quantized networks.
+
+## Component Testing: Hardtanh Activation
+**Script:** `train_hardtanh_component.py`
+**Description:** Implements the Hardtanh activation function (`f(x) = max(-1, min(1, x))`) and its derivative, which is a computationally cheaper, piecewise linear approximation of the hyperbolic tangent function, bounding the output between -1 and 1.

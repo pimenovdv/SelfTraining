@@ -1889,3 +1889,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Hardsigmoid activation function and its derivative.
 - **Method**: Defined the piecewise linear `hardsigmoid` function and its derivative mathematically using NumPy operations (`np.clip` and `np.where`).
 - **Outcome**: The function correctly bounds outputs between 0 and 1 with linear transitions between -3 and 3. The gradients align with the expected values.
+
+### Experiment 0453: Hardtanh Activation
+- **Objective**: Implement and test the Hardtanh activation function and its derivative mathematically.
+- **Method**: Defined the piecewise linear `hardtanh` function and its derivative mathematically using NumPy operations (`np.clip` and `np.where`).
+- **Outcome**: The function correctly bounds outputs between -1 and 1 with linear transitions between -1 and 1. The gradients align with the expected values, passing 1 within the bounds and 0 outside.
