@@ -2431,3 +2431,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Bent Identity Component
 **Script:** `train_bent_identity_component.py`
 **Description:** Evaluates the Bent Identity activation function mathematically in pure NumPy (`f(x) = (np.sqrt(x**2 + 1) - 1) / 2 + x`). The component tests its forward evaluation and gradient computation to ensure models can properly learn non-linear representations.
+
+## Hardsigmoid Component
+**Script:** `train_hardsigmoid_component.py`
+**Description:** Implements the Hardsigmoid activation function (`f(x) = max(0, min(1, (x + 3) / 6))`) and its derivative, which is a piecewise linear approximation of the sigmoid function. It provides a faster, computationally cheaper alternative to sigmoid, commonly used in quantized networks.
