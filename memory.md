@@ -1899,3 +1899,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Cauchy loss function and its derivative mathematically in pure NumPy.
 - **Method**: Defined the Cauchy loss function as `(c^2 / 2) * ln(1 + (residual / c)^2)` and its gradient. Trained a simple linear model on data with artificial outliers.
 - **Outcome**: The implementation correctly reduced the loss and learned weights very close to the true weights, demonstrating robustness to outliers compared to MSE loss.
+
+### Experiment 0455: Entmax15 Component
+- **Objective**: Implement and test the Entmax15 mapping (alpha=1.5) and its Jacobian mathematically in PyTorch.
+- **Method**: Defined the exact forward calculation for the activation function (finding the exact threshold for tau minimizing the alpha divergence) and its analytical gradients via a custom `torch.autograd.Function`. Trained a synthetic classification model.
+- **Outcome**: The implementation effectively produced sparse probabilities (averaging 33.75% sparsity), reduced loss, and achieved 80.50% test accuracy on the synthetic dataset.

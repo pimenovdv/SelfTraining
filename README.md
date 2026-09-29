@@ -2443,3 +2443,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Cauchy Loss Component
 **Script:** `train_cauchy_loss_component.py`
 **Description:** Evaluates the Cauchy Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks while maintaining robustness to outliers, avoiding the large penalty scaling of MSE for data with heavy-tailed noise.
+
+## Component Testing: Entmax15 Component
+**Script:** `train_entmax_component.py`
+**Description:** Implements the Entmax15 mapping (with alpha=1.5) mathematically in pure PyTorch, a differentiable sparse activation function that bridges the gap between Softmax and Sparsemax, outputting sparse probability distributions minimizing the alpha-divergence.

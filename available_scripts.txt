@@ -91,6 +91,7 @@ train_elastic_net_component
 train_elliot_component
 train_elm_component
 train_elu_component
+train_entmax_component.py
 train_es_component
 train_esn_component
 train_evaluation_metrics_component
