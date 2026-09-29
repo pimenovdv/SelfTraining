@@ -407,3 +407,4 @@
 0449_train_lisht_component
 0450_train_elliot_component
 0451_train_bent_identity_component
+0452_train_hardsigmoid_component

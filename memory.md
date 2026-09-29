@@ -1884,3 +1884,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Developed `train_bent_identity_component.py` to calculate the Bent Identity activation (`f(x) = (np.sqrt(x**2 + 1) - 1) / 2 + x`) and its derivative, using it to optimize a simple linear model.
 - **Outcome:** The Bent Identity implementation successfully guided the optimization process. The model's loss decreased from an initial value of 12.2113 to 0.0082, effectively learning the target mapping.
 - **Next Steps:** Consider comparing the Bent Identity activation function against non-linearities like Softplus or Swish in deeper network architectures.
+
+### Experiment 0452: Hardsigmoid Activation
+- **Objective**: Implement and test the Hardsigmoid activation function and its derivative.
+- **Method**: Defined the piecewise linear `hardsigmoid` function and its derivative mathematically using NumPy operations (`np.clip` and `np.where`).
+- **Outcome**: The function correctly bounds outputs between 0 and 1 with linear transitions between -3 and 3. The gradients align with the expected values.
