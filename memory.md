@@ -1904,3 +1904,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Entmax15 mapping (alpha=1.5) and its Jacobian mathematically in PyTorch.
 - **Method**: Defined the exact forward calculation for the activation function (finding the exact threshold for tau minimizing the alpha divergence) and its analytical gradients via a custom `torch.autograd.Function`. Trained a synthetic classification model.
 - **Outcome**: The implementation effectively produced sparse probabilities (averaging 33.75% sparsity), reduced loss, and achieved 80.50% test accuracy on the synthetic dataset.
+
+### Experiment 0456: Log Softmax Component
+- **Objective**: Implement and test the Log Softmax activation function and its gradients mathematically in pure NumPy.
+- **Method**: Defined the exact forward calculation using the log-sum-exp trick to avoid numerical underflow/overflow, and derived the exact backpropagation updates. Tested the module by optimizing a linear regression classifier with a one-hot encoding on synthetic multi-class data.
+- **Outcome**: The gradient flow correctly reduced the negative log-likelihood loss, optimizing from 1.6172 down to 0.6444.
