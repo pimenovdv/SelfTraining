@@ -1909,3 +1909,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Log Softmax activation function and its gradients mathematically in pure NumPy.
 - **Method**: Defined the exact forward calculation using the log-sum-exp trick to avoid numerical underflow/overflow, and derived the exact backpropagation updates. Tested the module by optimizing a linear regression classifier with a one-hot encoding on synthetic multi-class data.
 - **Outcome**: The gradient flow correctly reduced the negative log-likelihood loss, optimizing from 1.6172 down to 0.6444.
+
+### Experiment 0457: Log-Cosh Loss Component
+- **Objective**: Implement and test the Log-Cosh loss function and its derivative mathematically in pure NumPy.
+- **Method**: Defined the Log-Cosh loss function as `mean(log(cosh(y_pred - y_true)))` and its gradient `tanh(y_pred - y_true) / size`. Trained a simple linear regression model on data with artificial outliers.
+- **Outcome**: The implementation correctly reduced the loss and learned weights robustly despite outliers, demonstrating the loss's effectiveness for regression with heavy-tailed noise.

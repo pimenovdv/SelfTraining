@@ -206,6 +206,7 @@
 ./train_log_cosh_loss_component.py
 ./train_log_sigmoid_component.py
 ./train_log_softmax_component.py
+./train_logcosh_loss_component.py
 ./train_logcosh_regression_component.py
 ./train_logistic_regression_component.py
 ./train_lookahead_component.py
