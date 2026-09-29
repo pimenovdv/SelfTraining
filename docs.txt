@@ -412,3 +412,4 @@
 0454_train_cauchy_loss_component
 0455_train_entmax_component
 0456_train_log_softmax_component
+0457_train_logcosh_loss_component

@@ -2451,3 +2451,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Log Softmax Component
 **Script:** `train_log_softmax_component.py`
 **Description:** Evaluates the Log Softmax activation function mathematically in pure NumPy, testing its forward evaluation (using the log-sum-exp trick for numerical stability) and backward gradient computation to ensure models can properly optimize negative log-likelihood objectives for classification tasks.
+
+## Component Testing: Log-Cosh Loss Component
+**Script:** `train_logcosh_loss_component.py`
+**Description:** Evaluates the Log-Cosh Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks while maintaining robustness to outliers, providing a smoother alternative to Huber loss.
