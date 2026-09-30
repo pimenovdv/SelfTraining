@@ -32,6 +32,7 @@
 ./train_beta_vae_component.py
 ./train_bnn_component.py
 ./train_bpe_component.py
+./train_brier_score_component.py
 ./train_byol_component.py
 ./train_cae_component.py
 ./train_capsule_network_component.py
