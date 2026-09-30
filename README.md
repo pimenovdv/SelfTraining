@@ -2471,3 +2471,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Taylor Softmax Component
 **Script:** `train_taylor_softmax_component.py`
 **Description:** Evaluates the Taylor Softmax activation function mathematically, a second-order Taylor expansion of softmax for converting logits into normalized probabilities while avoiding expensive exponential operations and maintaining positive values.
+
+## Component Testing: Exponential Moving Average (EMA) Component
+**Script:** `train_ema_component.py`
+**Description:** Evaluates the Exponential Moving Average mathematically in pure NumPy, testing its ability to smoothly track moving statistics across a sequence, fundamental to techniques like momentum in optimization and target networks in RL.
