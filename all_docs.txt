@@ -414,3 +414,4 @@ docs/0455_train_entmax_component.md
 docs/0456_train_log_softmax_component.md
 docs/0457_train_logcosh_loss_component.md
 docs/0458_train_brier_score_component.md
+docs/0459_train_squareplus_component.md

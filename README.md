@@ -2459,3 +2459,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Brier Score Loss Component
 **Script:** `train_brier_score_component.py`
 **Description:** Evaluates the Brier Score Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize predicted probability outcomes for binary classification tasks, effectively measuring the calibration and accuracy of probabilistic forecasts.
+
+## Component Testing: Squareplus Activation Component
+**Script:** `train_squareplus_component.py`
+**Description:** Evaluates the Squareplus activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks with a smooth, computationally efficient approximation of ReLU.
