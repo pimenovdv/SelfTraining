@@ -1919,3 +1919,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Brier Score loss function and its derivative mathematically in pure NumPy.
 - **Method**: Defined the Brier Score loss function as `mean((y_pred - y_true)**2)` and its gradient `2 * (y_pred - y_true) / size`. Tested on sample arrays of true binary labels and predicted probabilities.
 - **Outcome**: The implementation correctly computed the Brier score loss and gradients, validating its utility as a proper scoring rule for probabilistic forecasts.
+
+### Experiment 0459: Squareplus Activation Component
+- **Objective**: Implement and test the Squareplus activation function and its derivative mathematically in pure NumPy.
+- **Method**: Defined the Squareplus activation as `0.5 * (x + np.sqrt(x**2 + b))` and its gradient `0.5 * (1 + x / np.sqrt(x**2 + b))`. Tested by training a simple neural network on a noisy synthetic dataset.
+- **Outcome**: The implementation effectively reduced the MSE loss to 0.0095, demonstrating that the smooth, algebraic formulation optimizes efficiently without exponentials.
