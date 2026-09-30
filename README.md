@@ -2463,3 +2463,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Squareplus Activation Component
 **Script:** `train_squareplus_component.py`
 **Description:** Evaluates the Squareplus activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks with a smooth, computationally efficient approximation of ReLU.
+
+## Component Testing: LogSigmoid Activation Component
+**Script:** `train_logsigmoid_component.py`
+**Description:** Evaluates the LogSigmoid activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks or robust probabilistic calculations via a log-scaled smooth activation function.
