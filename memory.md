@@ -1939,3 +1939,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Exponential Moving Average mathematically in pure NumPy.
 - **Method**: Defined EMA recursively as $EMA_t = \beta \cdot EMA_{t-1} + (1 - \beta) \cdot X_t$, iterating over a randomly generated 2D sequence. Tested the initial and next timestep states against manually derived expected values.
 - **Outcome**: The implementation accurately smooths the sequential data, perfectly matching theoretical calculations and validating its usage for stable optimization tracking and target network smoothing.
+
+### Experiment 0463: MSLE Loss Component
+- **Objective**: Implement and test the Mean Squared Logarithmic Error (MSLE) Loss component mathematically in pure NumPy.
+- **Method**: Defined MSLE computing the mean of the squared differences between the natural logarithm of `1 + y_pred` and `1 + y_true`. Calculated its analytical derivative. Trained a linear regression model with a ReLU activation over 200 epochs on a random dataset (100 samples) to optimize the loss.
+- **Outcome**: The implementation is mathematically stable and computationally correct, with the model successfully converging and reducing the MSLE Loss to 3.1907.

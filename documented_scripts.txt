@@ -92,7 +92,7 @@ train_elastic_net_component
 train_elliot_component
 train_elm_component
 train_elu_component
-train_ema_component.py
+train_ema_component
 train_entmax_component
 train_es_component
 train_esn_component
@@ -211,7 +211,7 @@ train_log_softmax_component
 train_logcosh_loss_component
 train_logcosh_regression_component
 train_logistic_regression_component
-train_logsigmoid_component.py
+train_logsigmoid_component
 train_lookahead_component
 train_lora_component
 train_lottery_ticket_component
@@ -248,6 +248,7 @@ train_moe_component
 train_momentum_component
 train_mqa_component
 train_mse_loss_component
+train_msle_loss_component
 train_multihead_attention_component
 train_multihead_transformer_block_component
 train_multimodal_component
@@ -378,7 +379,7 @@ train_swiglu_component
 train_swish_component
 train_tanhshrink_component
 train_target_propagation_component
-train_taylor_softmax_component.py
+train_taylor_softmax_component
 train_tcn_component
 train_td3_component
 train_td_learning_component
