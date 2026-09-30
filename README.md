@@ -2475,3 +2475,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Exponential Moving Average (EMA) Component
 **Script:** `train_ema_component.py`
 **Description:** Evaluates the Exponential Moving Average mathematically in pure NumPy, testing its ability to smoothly track moving statistics across a sequence, fundamental to techniques like momentum in optimization and target networks in RL.
+
+## Component Testing: MSLE Loss Component
+**Script:** `train_msle_loss_component.py`
+**Description:** Evaluates the Mean Squared Logarithmic Error (MSLE) Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks for targets with exponential trends or wide variations, effectively penalizing relative errors rather than absolute errors.
