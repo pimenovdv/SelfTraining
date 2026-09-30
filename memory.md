@@ -1924,3 +1924,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Squareplus activation function and its derivative mathematically in pure NumPy.
 - **Method**: Defined the Squareplus activation as `0.5 * (x + np.sqrt(x**2 + b))` and its gradient `0.5 * (1 + x / np.sqrt(x**2 + b))`. Tested by training a simple neural network on a noisy synthetic dataset.
 - **Outcome**: The implementation effectively reduced the MSE loss to 0.0095, demonstrating that the smooth, algebraic formulation optimizes efficiently without exponentials.
+
+### Experiment 0460: LogSigmoid Activation Component
+- **Objective**: Implement and test the LogSigmoid activation function and its derivative mathematically in pure NumPy.
+- **Method**: Defined the LogSigmoid activation as `np.where(x < 0, x - np.log1p(np.exp(x)), -np.log1p(np.exp(-x)))` and its gradient `1.0 / (1.0 + np.exp(x))`. Tested the mathematical properties over a range of test values.
+- **Outcome**: The implementation effectively maps input features and accurately computes its partial derivatives, confirming numerically stable probabilistic calculations.
