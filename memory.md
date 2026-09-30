@@ -1914,3 +1914,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Log-Cosh loss function and its derivative mathematically in pure NumPy.
 - **Method**: Defined the Log-Cosh loss function as `mean(log(cosh(y_pred - y_true)))` and its gradient `tanh(y_pred - y_true) / size`. Trained a simple linear regression model on data with artificial outliers.
 - **Outcome**: The implementation correctly reduced the loss and learned weights robustly despite outliers, demonstrating the loss's effectiveness for regression with heavy-tailed noise.
+
+### Experiment 0458: Brier Score Loss Component
+- **Objective**: Implement and test the Brier Score loss function and its derivative mathematically in pure NumPy.
+- **Method**: Defined the Brier Score loss function as `mean((y_pred - y_true)**2)` and its gradient `2 * (y_pred - y_true) / size`. Tested on sample arrays of true binary labels and predicted probabilities.
+- **Outcome**: The implementation correctly computed the Brier score loss and gradients, validating its utility as a proper scoring rule for probabilistic forecasts.

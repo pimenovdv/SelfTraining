@@ -2455,3 +2455,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Log-Cosh Loss Component
 **Script:** `train_logcosh_loss_component.py`
 **Description:** Evaluates the Log-Cosh Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks while maintaining robustness to outliers, providing a smoother alternative to Huber loss.
+
+## Component Testing: Brier Score Loss Component
+**Script:** `train_brier_score_component.py`
+**Description:** Evaluates the Brier Score Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize predicted probability outcomes for binary classification tasks, effectively measuring the calibration and accuracy of probabilistic forecasts.
