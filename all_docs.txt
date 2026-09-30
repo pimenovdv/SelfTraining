@@ -416,3 +416,4 @@ docs/0457_train_logcosh_loss_component.md
 docs/0458_train_brier_score_component.md
 docs/0459_train_squareplus_component.md
 docs/0460_train_logsigmoid_component.md
+docs/0461_train_taylor_softmax_component.md

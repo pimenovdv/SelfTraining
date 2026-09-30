@@ -2467,3 +2467,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LogSigmoid Activation Component
 **Script:** `train_logsigmoid_component.py`
 **Description:** Evaluates the LogSigmoid activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks or robust probabilistic calculations via a log-scaled smooth activation function.
+
+## Component Testing: Taylor Softmax Component
+**Script:** `train_taylor_softmax_component.py`
+**Description:** Evaluates the Taylor Softmax activation function mathematically, a second-order Taylor expansion of softmax for converting logits into normalized probabilities while avoiding expensive exponential operations and maintaining positive values.
