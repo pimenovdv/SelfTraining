@@ -1929,3 +1929,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the LogSigmoid activation function and its derivative mathematically in pure NumPy.
 - **Method**: Defined the LogSigmoid activation as `np.where(x < 0, x - np.log1p(np.exp(x)), -np.log1p(np.exp(-x)))` and its gradient `1.0 / (1.0 + np.exp(x))`. Tested the mathematical properties over a range of test values.
 - **Outcome**: The implementation effectively maps input features and accurately computes its partial derivatives, confirming numerically stable probabilistic calculations.
+
+### Experiment 0461: Taylor Softmax Component
+- **Objective**: Implement and test the Taylor Softmax activation mathematically.
+- **Method**: Defined the Taylor Softmax activation via a second-order polynomial expansion (`1 + x + 0.5 * x^2`) normalized across the required dimension, providing a computationally efficient alternative to exact exponentials.
+- **Outcome**: The implementation successfully transforms logit inputs into valid probability distributions (summing to 1) with strictly positive elements, confirming its theoretical properties and mathematical correctness.
