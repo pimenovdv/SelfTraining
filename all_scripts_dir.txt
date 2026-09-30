@@ -92,6 +92,7 @@
 ./train_elliot_component.py
 ./train_elm_component.py
 ./train_elu_component.py
+./train_ema_component.py
 ./train_entmax_component.py
 ./train_es_component.py
 ./train_esn_component.py

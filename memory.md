@@ -1934,3 +1934,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Taylor Softmax activation mathematically.
 - **Method**: Defined the Taylor Softmax activation via a second-order polynomial expansion (`1 + x + 0.5 * x^2`) normalized across the required dimension, providing a computationally efficient alternative to exact exponentials.
 - **Outcome**: The implementation successfully transforms logit inputs into valid probability distributions (summing to 1) with strictly positive elements, confirming its theoretical properties and mathematical correctness.
+
+### Experiment 0462: Exponential Moving Average (EMA) Component
+- **Objective**: Implement and test the Exponential Moving Average mathematically in pure NumPy.
+- **Method**: Defined EMA recursively as $EMA_t = \beta \cdot EMA_{t-1} + (1 - \beta) \cdot X_t$, iterating over a randomly generated 2D sequence. Tested the initial and next timestep states against manually derived expected values.
+- **Outcome**: The implementation accurately smooths the sequential data, perfectly matching theoretical calculations and validating its usage for stable optimization tracking and target network smoothing.

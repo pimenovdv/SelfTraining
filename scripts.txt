@@ -92,6 +92,7 @@ train_elastic_net_component
 train_elliot_component
 train_elm_component
 train_elu_component
+train_ema_component
 train_entmax_component
 train_es_component
 train_esn_component
