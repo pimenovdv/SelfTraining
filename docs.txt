@@ -422,3 +422,4 @@
 0464_train_optics_component
 0465_train_bilinear_component
 0466_train_isrlu_component
+0467_train_welsch_loss_component

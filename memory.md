@@ -1959,3 +1959,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Inverse Square Root Linear Unit (ISRLU) mathematically in pure NumPy.
 - **Method**: Defined the forward pass and derivative of the ISRLU activation function. Evaluated it against randomly generated sequences, validating its response to negative values.
 - **Outcome**: The implementation accurately normalizes extreme negative values while preserving positive linear behavior, providing smooth continuously differentiable gradients suitable for deep network layers.
+
+### Experiment 0467: Welsch Loss Component
+- **Objective**: Implement and test the Welsch loss mathematically in pure NumPy.
+- **Method**: Defined the forward loss computation and its gradient. Evaluated it against randomly generated regression targets to assess its response to errors.
+- **Outcome**: The implementation accurately calculates the Welsch loss, verifying its bounded error properties and demonstrating effective down-weighting of large residuals for robust regression tasks.

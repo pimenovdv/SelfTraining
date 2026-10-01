@@ -2491,3 +2491,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: ISRLU Component
 **Script:** `train_isrlu_component.py`
 **Description:** Evaluates the Inverse Square Root Linear Unit (ISRLU) mathematically in pure NumPy, a continuously differentiable activation function that approaches a constant negative value for large negative inputs, providing smooth gradients and bounded negative activations to help regularize learning.
+
+## Component Testing: Welsch Loss Component
+**Script:** `train_welsch_loss_component.py`
+**Description:** Evaluates the Welsch loss mathematically in pure NumPy, a robust regression loss function that exponentially down-weights large errors, effectively mitigating the influence of extreme outliers compared to standard squared error.
