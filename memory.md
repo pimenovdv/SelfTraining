@@ -1949,3 +1949,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Explore ordering points to identify clustering structure mathematically.
 - **Method:** Implemented OPTICS, defining core distance and reachability distance. Used a priority queue (seed list) to expand regions and calculate reachability for all points. Tested on a dataset generated with blobs of varying densities and noise.
 - **Outcome:** Successfully implemented and verified OPTICS finding density-based reachability structures in varied density clusters, successfully ordering points and identifying dense regions via low reachability distances.
+
+### Experiment 0465: Bilinear Layer Component
+- **Objective**: Implement and test a Bilinear layer mathematically in pure NumPy.
+- **Method**: Defined the bilinear forward pass computing interactions between two inputs using a 3D weight tensor. Tested the forward pass output against analytical expectations and validated output tensor shapes.
+- **Outcome**: The implementation accurately models pairwise multiplicative interactions, capturing joint relationships between separate input spaces.
