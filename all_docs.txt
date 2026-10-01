@@ -421,3 +421,4 @@ docs/0462_train_ema_component.md
 docs/0463_train_msle_loss_component.md
 docs/0464_train_optics_component.md
 docs/0465_train_bilinear_component.md
+docs/0466_train_isrlu_component.md

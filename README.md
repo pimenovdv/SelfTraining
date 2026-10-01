@@ -2487,3 +2487,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Bilinear Layer Component
 **Script:** `train_bilinear_component.py`
 **Description:** Evaluates a Bilinear layer mathematically in pure NumPy, testing its forward evaluation $y = x_1^T W x_2 + b$ to capture pairwise interactions between two input vectors.
+
+## Component Testing: ISRLU Component
+**Script:** `train_isrlu_component.py`
+**Description:** Evaluates the Inverse Square Root Linear Unit (ISRLU) mathematically in pure NumPy, a continuously differentiable activation function that approaches a constant negative value for large negative inputs, providing smooth gradients and bounded negative activations to help regularize learning.
