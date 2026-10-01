@@ -2495,3 +2495,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Welsch Loss Component
 **Script:** `train_welsch_loss_component.py`
 **Description:** Evaluates the Welsch loss mathematically in pure NumPy, a robust regression loss function that exponentially down-weights large errors, effectively mitigating the influence of extreme outliers compared to standard squared error.
+
+## Component Testing: Tukey Loss Component
+**Script:** `train_tukey_loss_component.py`
+**Description:** Evaluates Tukey's biweight loss mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, heavily down-weighting outliers and limiting their influence compared to standard squared error.
