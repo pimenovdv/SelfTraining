@@ -1954,3 +1954,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test a Bilinear layer mathematically in pure NumPy.
 - **Method**: Defined the bilinear forward pass computing interactions between two inputs using a 3D weight tensor. Tested the forward pass output against analytical expectations and validated output tensor shapes.
 - **Outcome**: The implementation accurately models pairwise multiplicative interactions, capturing joint relationships between separate input spaces.
+
+### Experiment 0466: ISRLU Component
+- **Objective**: Implement and test the Inverse Square Root Linear Unit (ISRLU) mathematically in pure NumPy.
+- **Method**: Defined the forward pass and derivative of the ISRLU activation function. Evaluated it against randomly generated sequences, validating its response to negative values.
+- **Outcome**: The implementation accurately normalizes extreme negative values while preserving positive linear behavior, providing smooth continuously differentiable gradients suitable for deep network layers.
