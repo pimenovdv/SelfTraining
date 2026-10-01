@@ -424,3 +424,4 @@
 0466_train_isrlu_component
 0467_train_welsch_loss_component
 0468_train_tukey_loss_component
+0469_train_starrelu_component

@@ -1969,3 +1969,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test Tukey's biweight loss mathematically in pure NumPy.
 - **Method**: Defined the forward loss computation using the robust biweight function and its piecewise gradient. Evaluated it against randomly generated regression targets with extreme outliers to assess its response to large errors.
 - **Outcome**: The implementation accurately calculates Tukey's biweight loss, effectively down-weighting outliers and ignoring their unbounded influence to successfully learn the target mapping.
+
+### Experiment 0469: StarReLU Activation
+- **Description:** Implemented a StarReLU activation function (`train_starrelu_component.py`), defined as `s * ReLU(x)^2 + b` where `s` and `b` are learnable scalars. It serves as a cheaper alternative to GELU/SiLU by approximating them.
+- **Outcome:** The model successfully converged on dummy data, reducing MSE loss from 1.1897 to 0.0347, verifying the learning capability of the StarReLU activation.
