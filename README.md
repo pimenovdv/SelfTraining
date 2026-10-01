@@ -2479,3 +2479,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: MSLE Loss Component
 **Script:** `train_msle_loss_component.py`
 **Description:** Evaluates the Mean Squared Logarithmic Error (MSLE) Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks for targets with exponential trends or wide variations, effectively penalizing relative errors rather than absolute errors.
+
+## Component Testing: OPTICS Component
+**Script:** `train_optics_component.py`
+**Description:** Evaluates the Ordering Points To Identify the Clustering Structure (OPTICS) mathematically in pure NumPy, testing its ability to identify density-based clustering structure and calculate reachability distances on data with varying densities.

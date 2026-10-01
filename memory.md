@@ -1944,3 +1944,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test the Mean Squared Logarithmic Error (MSLE) Loss component mathematically in pure NumPy.
 - **Method**: Defined MSLE computing the mean of the squared differences between the natural logarithm of `1 + y_pred` and `1 + y_true`. Calculated its analytical derivative. Trained a linear regression model with a ReLU activation over 200 epochs on a random dataset (100 samples) to optimize the loss.
 - **Outcome**: The implementation is mathematically stable and computationally correct, with the model successfully converging and reducing the MSLE Loss to 3.1907.
+
+### Experiment 0464: OPTICS Clustering
+- **Objective:** Explore ordering points to identify clustering structure mathematically.
+- **Method:** Implemented OPTICS, defining core distance and reachability distance. Used a priority queue (seed list) to expand regions and calculate reachability for all points. Tested on a dataset generated with blobs of varying densities and noise.
+- **Outcome:** Successfully implemented and verified OPTICS finding density-based reachability structures in varied density clusters, successfully ordering points and identifying dense regions via low reachability distances.
