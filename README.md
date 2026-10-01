@@ -2499,3 +2499,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Tukey Loss Component
 **Script:** `train_tukey_loss_component.py`
 **Description:** Evaluates Tukey's biweight loss mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, heavily down-weighting outliers and limiting their influence compared to standard squared error.
+
+## Component Testing: StarReLU Component
+**Script:** `train_starrelu_component.py`
+**Description:** Implemented a `StarReLU` activation function. This activation mathematically scales and shifts the squared ReLU output to approximate the SiLU/GELU activations while being computationally cheaper. Evaluated on a simple feedforward network, the model successfully minimized MSE loss from 1.1897 to 0.0347 over 100 epochs, demonstrating its effectiveness.

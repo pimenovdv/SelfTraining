@@ -373,6 +373,7 @@
 ./train_squared_hinge_loss_component.py
 ./train_squareplus_component.py
 ./train_ssm_component.py
+./train_starrelu_component.py
 ./train_stdp_component.py
 ./train_svd_component.py
 ./train_svm_component.py
