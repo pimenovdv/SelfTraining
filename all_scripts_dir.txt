@@ -61,6 +61,7 @@
 ./train_cross_attention_component.py
 ./train_cross_entropy_loss_component.py
 ./train_ctrnn_component.py
+./train_cutmix_component.py
 ./train_cvae_component.py
 ./train_dae_component.py
 ./train_darts_component.py

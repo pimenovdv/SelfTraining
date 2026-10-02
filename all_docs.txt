@@ -425,3 +425,4 @@ docs/0466_train_isrlu_component.md
 docs/0467_train_welsch_loss_component.md
 docs/0468_train_tukey_loss_component.md
 docs/0469_train_starrelu_component.md
+docs/0470_train_cutmix_component.md
