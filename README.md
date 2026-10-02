@@ -2507,3 +2507,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Hellinger Distance Loss Component
 **Script:** `train_hellinger_distance_component.py`
 **Description:** Evaluates the Hellinger Distance Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize predicted probability distributions for classification tasks while robustly measuring the similarity between the target and predicted distributions.
+
+## Component Testing: Ghost Batch Normalization Component
+**Script:** `train_ghost_batch_norm_component.py`
+**Description:** Evaluates the Ghost Batch Normalization component mathematically in pure NumPy, testing its forward evaluation by splitting the batch into smaller sub-batches to compute local statistics, which provides a regularizing effect without requiring cross-device communication.
