@@ -429,3 +429,4 @@
 0471_train_hellinger_distance_component
 0472_train_ghost_batch_norm_component
 0473_train_bhattacharyya_distance_component
+0474_train_gce_loss_component

@@ -120,6 +120,7 @@
 ./train_gan_component.py
 ./train_gat_component.py
 ./train_gaussian_process_component.py
+./train_gce_loss_component.py
 ./train_gcn_component.py
 ./train_geglu_component.py
 ./train_gelu_component.py

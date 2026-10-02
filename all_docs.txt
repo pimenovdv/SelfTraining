@@ -429,3 +429,4 @@ docs/0470_train_cutmix_component.md
 docs/0471_train_hellinger_distance_component.md
 docs/0472_train_ghost_batch_norm_component.md
 docs/0473_train_bhattacharyya_distance_component.md
+docs/0474_train_gce_loss_component.md

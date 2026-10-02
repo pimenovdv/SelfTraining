@@ -2515,3 +2515,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Bhattacharyya Distance Component
 **Script:** `train_bhattacharyya_distance_component.py`
 **Description:** Evaluates the Bhattacharyya distance mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize predicted probability distributions while robustly measuring the similarity between the target and predicted distributions.
+
+## Component Testing: Generalized Cross Entropy (GCE) Loss Component
+**Script:** `train_gce_loss_component.py`
+**Description:** Evaluates the Generalized Cross Entropy (GCE) Loss mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize for classification tasks with robustness against noisy labels.
