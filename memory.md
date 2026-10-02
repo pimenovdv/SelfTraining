@@ -1981,3 +1981,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Methodology:** Implemented a `cutmix_augmentation` function combining inputs `x1` and `x2` using a bounding box determined by a Beta distribution parameter `lam`. The labels are interpolated based on the exact area ratio of the bounding box. Evaluated the tensor shape compatibility and interpolation of one-hot label probabilities.
 - **Result:** Successfully combined tensors. The output shapes remained correct `(2, 3, 32, 32)` and the interpolated labels accurately reflected the area ratio of the cropped region `[0.658, 0.342]`.
 - **Conclusion:** The CutMix spatial blending is mathematically sound, providing a viable data augmentation strategy for dense prediction and classification tasks.
+
+### Experiment 0471: Hellinger Distance Loss Component
+- **Objective:** Implement and test the Hellinger Distance Loss mathematically in pure NumPy.
+- **Method:** Defined the forward loss computation using the squared Hellinger distance and its gradient. Evaluated it by training a simple linear model mapping inputs to a target probability distribution.
+- **Outcome:** The implementation correctly computes the Hellinger distance loss and its gradient. The linear model successfully learned the target mapping, reducing the loss over epochs (final loss 0.0619).
