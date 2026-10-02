@@ -430,3 +430,4 @@
 0472_train_ghost_batch_norm_component
 0473_train_bhattacharyya_distance_component
 0474_train_gce_loss_component
+0475_train_js_divergence_component

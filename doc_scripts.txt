@@ -176,6 +176,7 @@ train_isrlu_component.py
 train_jaccard_loss_component.py
 train_jensen_shannon_divergence_component.py
 train_jepa_component.py
+train_js_divergence_component.py
 train_kalman_filter_component.py
 train_kan_component.py
 train_kde_component.py
