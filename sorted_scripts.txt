@@ -176,6 +176,7 @@ train_isrlu_component
 train_jaccard_loss_component
 train_jensen_shannon_divergence_component
 train_jepa_component
+train_js_divergence_component
 train_kalman_filter_component
 train_kan_component
 train_kde_component

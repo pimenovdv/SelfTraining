@@ -2519,3 +2519,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Generalized Cross Entropy (GCE) Loss Component
 **Script:** `train_gce_loss_component.py`
 **Description:** Evaluates the Generalized Cross Entropy (GCE) Loss mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize for classification tasks with robustness against noisy labels.
+
+## Component Testing: Jensen-Shannon Divergence Component
+**Script:** `train_js_divergence_component.py`
+**Description:** Evaluates the Jensen-Shannon Divergence mathematically in pure NumPy, testing its forward evaluation and symmetric properties to ensure models can properly evaluate and optimize predicted probability distributions while robustly measuring the similarity between the target and predicted distributions.
