@@ -1995,3 +1995,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0473: Bhattacharyya Distance Component
 - **Objective:** Implement and evaluate the Bhattacharyya distance and its gradient mathematically.
 - **Outcome:** Successfully implemented the distance metric. The test passed, correctly computing the distance scalar and gradients across a batch of 16 distributions with 5 classes, yielding a mean distance of 0.1095.
+
+## Experiment 0474: Generalized Cross Entropy (GCE) Loss Component
+- **Objective:** Implement and test the Generalized Cross Entropy (GCE) Loss mathematically in PyTorch.
+- **Outcome:** Successfully implemented the loss function. The optimization successfully reduced the loss over 100 epochs (final loss 0.5897) for a simulated classification task with noisy labels.
