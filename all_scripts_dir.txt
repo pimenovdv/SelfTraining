@@ -30,6 +30,7 @@
 ./train_bcm_component.py
 ./train_bent_identity_component.py
 ./train_beta_vae_component.py
+./train_bhattacharyya_distance_component.py
 ./train_bilinear_component.py
 ./train_bnn_component.py
 ./train_bpe_component.py

@@ -1991,3 +1991,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test Ghost Batch Normalization mathematically in pure NumPy.
 - **Method:** Evaluated the forward pass by splitting a batch into multiple smaller "ghost" batches and computing mean and variance independently within each split.
 - **Outcome:** The implementation correctly regularizes the features by utilizing smaller sub-batch statistics. The output shapes remained consistent `(16, 8)` for a batch of 16 features partitioned into 4 sub-batches.
+
+## Experiment 0473: Bhattacharyya Distance Component
+- **Objective:** Implement and evaluate the Bhattacharyya distance and its gradient mathematically.
+- **Outcome:** Successfully implemented the distance metric. The test passed, correctly computing the distance scalar and gradients across a batch of 16 distributions with 5 classes, yielding a mean distance of 0.1095.
