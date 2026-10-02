@@ -427,3 +427,4 @@
 0469_train_starrelu_component
 0470_train_cutmix_component
 0471_train_hellinger_distance_component
+0472_train_ghost_batch_norm_component

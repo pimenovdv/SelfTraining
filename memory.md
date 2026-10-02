@@ -1986,3 +1986,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Hellinger Distance Loss mathematically in pure NumPy.
 - **Method:** Defined the forward loss computation using the squared Hellinger distance and its gradient. Evaluated it by training a simple linear model mapping inputs to a target probability distribution.
 - **Outcome:** The implementation correctly computes the Hellinger distance loss and its gradient. The linear model successfully learned the target mapping, reducing the loss over epochs (final loss 0.0619).
+
+## Experiment 0472: Ghost Batch Normalization Component
+- **Objective:** Implement and test Ghost Batch Normalization mathematically in pure NumPy.
+- **Method:** Evaluated the forward pass by splitting a batch into multiple smaller "ghost" batches and computing mean and variance independently within each split.
+- **Outcome:** The implementation correctly regularizes the features by utilizing smaller sub-batch statistics. The output shapes remained consistent `(16, 8)` for a batch of 16 features partitioned into 4 sub-batches.
