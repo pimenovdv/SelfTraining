@@ -146,6 +146,7 @@
 ./train_hdbscan_component.py
 ./train_he_initialization_component.py
 ./train_hebbian_component.py
+./train_hellinger_distance_component.py
 ./train_hierarchical_clustering_component.py
 ./train_highway_component.py
 ./train_highway_network_component.py
