@@ -2535,3 +2535,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Neural Tangent Kernel Component
 **Script:** `train_ntk_component.py`
 **Description:** Evaluates the Neural Tangent Kernel mathematically in PyTorch, testing its forward evaluation and kernel matrix computation to analyze the training dynamics of neural networks.
+
+## Component Testing: Fourier Series Component
+**Script:** `train_fourier_series_component.py`
+**Description:** Evaluates a Fourier Series layer mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize sum of sines and cosines representations.

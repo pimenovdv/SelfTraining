@@ -2015,3 +2015,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0478: Neural Tangent Kernel Component
 - **Objective:** Implement and test the Empirical Neural Tangent Kernel (NTK) mathematically in PyTorch.
 - **Outcome:** Successfully implemented the NTK computation. The test passed, correctly computing the kernel matrix for a pair of input data points in a two-layer neural network.
+
+## Experiment 0479: Fourier Series Component
+- **Objective:** Implement and test a Fourier Series layer mathematically in PyTorch.
+- **Outcome:** Successfully implemented the Fourier Series layer. The test passed, correctly computing the layer outputs and gradients using sine and cosine functions.

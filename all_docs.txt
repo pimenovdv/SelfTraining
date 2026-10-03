@@ -434,3 +434,4 @@ docs/0475_train_js_divergence_component.md
 docs/0476_train_smelu_component.md
 docs/0477_train_cosine_embedding_loss_component.md
 docs/0478_train_ntk_component.md
+docs/0479_train_fourier_series_component.md
