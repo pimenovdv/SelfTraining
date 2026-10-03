@@ -2007,3 +2007,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0476: SmeLU Component
 - **Objective:** Implement and test the Smooth ReLU (SmeLU) activation function mathematically in PyTorch.
 - **Outcome:** Successfully implemented the activation function. The test passed, correctly computing the piece-wise outputs for zero, quadratic transition, and linear regions.
+
+## Experiment 0477: Cosine Embedding Loss Component
+- **Objective:** Implement and test the Cosine Embedding Loss mathematically in PyTorch.
+- **Outcome:** Successfully implemented the loss function. The test passed, correctly computing the loss scalar and gradients across a batch of paired inputs and targets (similar/dissimilar labels).

@@ -2527,3 +2527,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SmeLU Component
 **Script:** `train_smelu_component.py`
 **Description:** Evaluates the Smooth ReLU (SmeLU) activation function mathematically in PyTorch, testing its forward evaluation over a range of inputs to ensure models can properly optimize with a smooth transition around the origin.
+
+## Component Testing: Cosine Embedding Loss Component
+**Script:** `train_cosine_embedding_loss_component.py`
+**Description:** Evaluates the Cosine Embedding Loss mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize similarities and dissimilarities between pairs of inputs, such as in metric learning or siamese networks.
