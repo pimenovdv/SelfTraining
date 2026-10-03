@@ -2011,3 +2011,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0477: Cosine Embedding Loss Component
 - **Objective:** Implement and test the Cosine Embedding Loss mathematically in PyTorch.
 - **Outcome:** Successfully implemented the loss function. The test passed, correctly computing the loss scalar and gradients across a batch of paired inputs and targets (similar/dissimilar labels).
+
+## Experiment 0478: Neural Tangent Kernel Component
+- **Objective:** Implement and test the Empirical Neural Tangent Kernel (NTK) mathematically in PyTorch.
+- **Outcome:** Successfully implemented the NTK computation. The test passed, correctly computing the kernel matrix for a pair of input data points in a two-layer neural network.
