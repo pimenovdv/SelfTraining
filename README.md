@@ -2531,3 +2531,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Cosine Embedding Loss Component
 **Script:** `train_cosine_embedding_loss_component.py`
 **Description:** Evaluates the Cosine Embedding Loss mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize similarities and dissimilarities between pairs of inputs, such as in metric learning or siamese networks.
+
+## Component Testing: Neural Tangent Kernel Component
+**Script:** `train_ntk_component.py`
+**Description:** Evaluates the Neural Tangent Kernel mathematically in PyTorch, testing its forward evaluation and kernel matrix computation to analyze the training dynamics of neural networks.
