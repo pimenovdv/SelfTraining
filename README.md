@@ -2523,3 +2523,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Jensen-Shannon Divergence Component
 **Script:** `train_js_divergence_component.py`
 **Description:** Evaluates the Jensen-Shannon Divergence mathematically in pure NumPy, testing its forward evaluation and symmetric properties to ensure models can properly evaluate and optimize predicted probability distributions while robustly measuring the similarity between the target and predicted distributions.
+
+## Component Testing: SmeLU Component
+**Script:** `train_smelu_component.py`
+**Description:** Evaluates the Smooth ReLU (SmeLU) activation function mathematically in PyTorch, testing its forward evaluation over a range of inputs to ensure models can properly optimize with a smooth transition around the origin.

@@ -431,3 +431,4 @@ docs/0472_train_ghost_batch_norm_component.md
 docs/0473_train_bhattacharyya_distance_component.md
 docs/0474_train_gce_loss_component.md
 docs/0475_train_js_divergence_component.md
+docs/0476_train_smelu_component.md

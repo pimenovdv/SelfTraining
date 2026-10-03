@@ -359,6 +359,7 @@ train_simulated_annealing_component
 train_sinkhorn_component
 train_siren_component
 train_skipgram_component
+train_smelu_component
 train_smooth_l1_loss_component
 train_snake_activation_component
 train_snn_component

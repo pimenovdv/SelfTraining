@@ -2003,3 +2003,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0475: Jensen-Shannon Divergence Component
 - **Objective:** Implement and test the Jensen-Shannon Divergence mathematically in pure NumPy.
 - **Outcome:** Successfully implemented the divergence metric. The test passed, correctly computing the symmetric Jensen-Shannon divergence scalar between target and predicted distributions.
+
+## Experiment 0476: SmeLU Component
+- **Objective:** Implement and test the Smooth ReLU (SmeLU) activation function mathematically in PyTorch.
+- **Outcome:** Successfully implemented the activation function. The test passed, correctly computing the piece-wise outputs for zero, quadratic transition, and linear regions.

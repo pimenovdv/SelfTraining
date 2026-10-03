@@ -431,3 +431,4 @@
 0473_train_bhattacharyya_distance_component
 0474_train_gce_loss_component
 0475_train_js_divergence_component
+0476_train_smelu_component
