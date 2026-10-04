@@ -2543,3 +2543,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: ISRU Component
 **Script:** `train_isru_component.py`
 **Description:** Evaluates the Inverse Square Root Unit (ISRU) activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it.
+
+## Component Testing: Squared ReLU Component
+**Script:** `train_squared_relu_component.py`
+**Description:** Evaluates the Squared ReLU activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it.
