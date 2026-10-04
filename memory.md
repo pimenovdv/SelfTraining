@@ -2019,3 +2019,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0479: Fourier Series Component
 - **Objective:** Implement and test a Fourier Series layer mathematically in PyTorch.
 - **Outcome:** Successfully implemented the Fourier Series layer. The test passed, correctly computing the layer outputs and gradients using sine and cosine functions.
+
+## Experiment 0480: ISRU Component
+- **Objective:** Implement and test the Inverse Square Root Unit (ISRU) activation function mathematically.
+- **Outcome:** Successfully implemented the activation function. The test passed, converging on the XOR problem with a final loss under 0.1.

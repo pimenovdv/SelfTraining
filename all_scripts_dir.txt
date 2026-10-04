@@ -175,6 +175,7 @@
 ./train_isomap_component.py
 ./train_isotonic_regression_component.py
 ./train_isrlu_component.py
+./train_isru_component.py
 ./train_jaccard_loss_component.py
 ./train_jensen_shannon_divergence_component.py
 ./train_jepa_component.py

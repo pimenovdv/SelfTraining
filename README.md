@@ -2539,3 +2539,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Fourier Series Component
 **Script:** `train_fourier_series_component.py`
 **Description:** Evaluates a Fourier Series layer mathematically in PyTorch, testing its forward evaluation and gradient computation to ensure models can properly optimize sum of sines and cosines representations.
+
+## Component Testing: ISRU Component
+**Script:** `train_isru_component.py`
+**Description:** Evaluates the Inverse Square Root Unit (ISRU) activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it.
