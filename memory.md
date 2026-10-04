@@ -2023,3 +2023,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0480: ISRU Component
 - **Objective:** Implement and test the Inverse Square Root Unit (ISRU) activation function mathematically.
 - **Outcome:** Successfully implemented the activation function. The test passed, converging on the XOR problem with a final loss under 0.1.
+
+## Experiment 0481: Squared ReLU Component
+- **Objective:** Implement and test the Squared ReLU activation function mathematically.
+- **Outcome:** Successfully implemented the activation function. The test passed, correctly computing outputs and gradients using numpy.
