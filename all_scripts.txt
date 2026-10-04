@@ -175,6 +175,7 @@ train_isolation_forest_component
 train_isomap_component
 train_isotonic_regression_component
 train_isrlu_component
+train_isru_component
 train_jaccard_loss_component
 train_jensen_shannon_divergence_component
 train_jepa_component
