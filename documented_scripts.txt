@@ -373,6 +373,7 @@ train_softmin_component
 train_softplus_component
 train_softshrink_component
 train_softsign_component
+train_solu_component
 train_som_component
 train_sophia_component
 train_sparse_coding_component

@@ -2547,3 +2547,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Squared ReLU Component
 **Script:** `train_squared_relu_component.py`
 **Description:** Evaluates the Squared ReLU activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it.
+
+## Component Testing: SoLU (Softmax Linear Unit) Activation Component
+**Script:** `train_solu_component.py`
+**Description:** Evaluates a SoLU activation component mathematically in pure NumPy, testing its forward evaluation `SoLU(x) = x * softmax(x)`. SoLU is proposed as an activation function to increase superposition and interpretability.

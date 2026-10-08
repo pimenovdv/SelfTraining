@@ -373,6 +373,7 @@
 ./train_softplus_component.py
 ./train_softshrink_component.py
 ./train_softsign_component.py
+./train_solu_component.py
 ./train_som_component.py
 ./train_sophia_component.py
 ./train_sparse_coding_component.py
