@@ -2563,3 +2563,6 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: GCU Component
 **Script:** `train_gcu_component.py`
 **Description:** Evaluates the Growing Cosine Unit (GCU) activation function mathematically in pure NumPy, testing its forward evaluation `GCU(x) = x * cos(x)` and gradient computation to ensure models can properly optimize with it. It serves as an oscillatory activation function that can facilitate learning in complex landscapes.
+
+### Sparse Attention Component
+- **Description:** Mathematically models a blocked Sparse Attention mechanism. Rather than computing the full $N \times N$ attention matrix, it restricts attention to local blocks along the diagonal and immediate off-diagonals, reducing computational complexity from quadratic to linear with respect to sequence length while maintaining local context.

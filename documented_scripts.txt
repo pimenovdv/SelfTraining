@@ -379,6 +379,7 @@ train_softsign_component
 train_solu_component
 train_som_component
 train_sophia_component
+train_sparse_attention_component
 train_sparse_coding_component
 train_sparse_pca_component
 train_sparsemax_component
