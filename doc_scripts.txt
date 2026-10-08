@@ -295,6 +295,7 @@ train_pagerank_component.py
 train_particle_filter_component.py
 train_pca_component.py
 train_pcn_component.py
+train_pelu_component.py
 train_perceiver_component.py
 train_perceptron_component.py
 train_pls_component.py

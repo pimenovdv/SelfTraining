@@ -295,6 +295,7 @@ train_pagerank_component
 train_particle_filter_component
 train_pca_component
 train_pcn_component
+train_pelu_component
 train_perceiver_component
 train_perceptron_component
 train_pls_component
