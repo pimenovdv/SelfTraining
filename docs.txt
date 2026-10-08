@@ -437,3 +437,4 @@
 0479_train_fourier_series_component
 0480_train_isru_component
 0481_train_squared_relu_component
+0482_train_solu_component

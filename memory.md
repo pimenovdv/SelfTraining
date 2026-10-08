@@ -2027,3 +2027,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0481: Squared ReLU Component
 - **Objective:** Implement and test the Squared ReLU activation function mathematically.
 - **Outcome:** Successfully implemented the activation function. The test passed, correctly computing outputs and gradients using numpy.
+
+## Experiment 0482: SoLU Component
+- **Objective:** Implement and test the SoLU (Softmax Linear Unit) activation component mathematically.
+- **Outcome:** Successfully implemented the activation function. The component correctly transformed an input array with the mathematical function `SoLU(x) = x * softmax(x)`, keeping the output shape identical to the input shape and passing the component tests.
