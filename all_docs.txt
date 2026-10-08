@@ -438,3 +438,4 @@ docs/0479_train_fourier_series_component.md
 docs/0480_train_isru_component.md
 docs/0481_train_squared_relu_component.md
 docs/0482_train_solu_component.md
+docs/0483_train_arcsinh_component.md

@@ -438,3 +438,4 @@
 0480_train_isru_component
 0481_train_squared_relu_component
 0482_train_solu_component
+0483_train_arcsinh_component

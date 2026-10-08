@@ -2551,3 +2551,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SoLU (Softmax Linear Unit) Activation Component
 **Script:** `train_solu_component.py`
 **Description:** Evaluates a SoLU activation component mathematically in pure NumPy, testing its forward evaluation `SoLU(x) = x * softmax(x)`. SoLU is proposed as an activation function to increase superposition and interpretability.
+
+## Component Testing: Arcsinh Activation Component
+**Script:** `train_arcsinh_component.py`
+**Description:** Evaluates the Arcsinh activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a continuous, differentiable approximation of the sign function, allowing for learning through values close to zero smoothly.
