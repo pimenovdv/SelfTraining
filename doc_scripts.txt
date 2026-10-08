@@ -379,6 +379,7 @@ train_softsign_component.py
 train_solu_component.py
 train_som_component.py
 train_sophia_component.py
+train_sparse_attention_component.py
 train_sparse_coding_component.py
 train_sparse_pca_component.py
 train_sparsemax_component.py

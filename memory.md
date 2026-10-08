@@ -2043,3 +2043,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0485: GCU Component
 - **Objective:** Implement and test the GCU (Growing Cosine Unit) activation component mathematically.
 - **Outcome:** Successfully implemented the activation function. The test passed, correctly computing outputs and gradients using numpy and demonstrating successful optimization of MSE loss (from 7.9171 to 0.3029) on random initialized data.
+
+### Experiment 0486: Sparse Attention Component
+- **Objective**: Implement and test a Sparse Attention mechanism mathematically.
+- **Method**: Defined a blocked sparse attention mechanism where queries only attend to keys and values within their local block and adjacent blocks. Tested the forward pass output against expected shapes using NumPy.
+- **Result**: Successfully implemented and verified Sparse Attention, successfully restricting the computation to local windows to demonstrate linear scaling context mathematically.

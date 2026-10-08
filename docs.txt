@@ -441,3 +441,4 @@
 0483_train_arcsinh_component
 0484_train_pelu_component
 0485_train_gcu_component
+0486_train_sparse_attention_component
