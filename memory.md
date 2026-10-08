@@ -2039,3 +2039,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0484: PELU Component
 - **Objective:** Implement and test the PELU (Parametric Exponential Linear Unit) activation component mathematically.
 - **Outcome:** Successfully implemented the activation function. The test passed, converging on the XOR problem with a final loss under 0.1.
+
+## Experiment 0485: GCU Component
+- **Objective:** Implement and test the GCU (Growing Cosine Unit) activation component mathematically.
+- **Outcome:** Successfully implemented the activation function. The test passed, correctly computing outputs and gradients using numpy and demonstrating successful optimization of MSE loss (from 7.9171 to 0.3029) on random initialized data.

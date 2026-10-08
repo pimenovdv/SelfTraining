@@ -2559,3 +2559,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: PELU Activation Component
 **Script:** `train_pelu_component.py`
 **Description:** Evaluates the Parametric Exponential Linear Unit (PELU) activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces learnable parameters a and b to control the scale and exponential decay for negative inputs.
+
+## Component Testing: GCU Component
+**Script:** `train_gcu_component.py`
+**Description:** Evaluates the Growing Cosine Unit (GCU) activation function mathematically in pure NumPy, testing its forward evaluation `GCU(x) = x * cos(x)` and gradient computation to ensure models can properly optimize with it. It serves as an oscillatory activation function that can facilitate learning in complex landscapes.
