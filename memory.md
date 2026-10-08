@@ -2035,3 +2035,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0483: Arcsinh Component
 - **Objective:** Implement and test the Arcsinh activation component mathematically.
 - **Outcome:** Successfully implemented the activation function. The test passed, correctly computing outputs and gradients using numpy and demonstrating successful optimization of MSE loss (from 2.6428 to 0.8370) on random initialized data.
+
+## Experiment 0484: PELU Component
+- **Objective:** Implement and test the PELU (Parametric Exponential Linear Unit) activation component mathematically.
+- **Outcome:** Successfully implemented the activation function. The test passed, converging on the XOR problem with a final loss under 0.1.

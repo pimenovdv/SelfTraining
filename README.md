@@ -2555,3 +2555,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Arcsinh Activation Component
 **Script:** `train_arcsinh_component.py`
 **Description:** Evaluates the Arcsinh activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a continuous, differentiable approximation of the sign function, allowing for learning through values close to zero smoothly.
+
+## Component Testing: PELU Activation Component
+**Script:** `train_pelu_component.py`
+**Description:** Evaluates the Parametric Exponential Linear Unit (PELU) activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces learnable parameters a and b to control the scale and exponential decay for negative inputs.
