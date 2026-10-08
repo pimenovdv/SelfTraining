@@ -125,6 +125,7 @@ train_gat_component
 train_gaussian_process_component
 train_gce_loss_component
 train_gcn_component
+train_gcu_component
 train_geglu_component
 train_gelu_component
 train_genetic_algorithm_component

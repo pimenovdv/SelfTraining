@@ -440,3 +440,4 @@ docs/0481_train_squared_relu_component.md
 docs/0482_train_solu_component.md
 docs/0483_train_arcsinh_component.md
 docs/0484_train_pelu_component.md
+docs/0485_train_gcu_component.md
