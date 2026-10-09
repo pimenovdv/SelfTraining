@@ -445,3 +445,4 @@
 0487_train_adaptive_log_softmax_component
 0488_train_xpos_component
 0489_train_sqnl_component
+0490_train_soft_exponential_component

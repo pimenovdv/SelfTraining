@@ -2060,3 +2060,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0488: Xpos Component
 - **Objective:** Run and test the Xpos component.
 - **Outcome:** The execution failed with a `ModuleNotFoundError` for `numpy`. The necessary fix is to install numpy (`pip install numpy`) before running the script or update the script to use PyTorch if applicable.
+
+## Experiment 0490: Soft Exponential Component
+- **Objective:** Implement and test the Soft Exponential activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs and gradients depending on the parameter alpha, and demonstrating successful optimization of MSE loss on synthetic data.
