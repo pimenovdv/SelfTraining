@@ -2582,3 +2582,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Soft Exponential Component
 **Script:** `train_soft_exponential_component.py`
 **Description:** Evaluates the Soft Exponential activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces a parameter alpha that transitions the function continuously between logarithmic, linear, and exponential shapes.
+
+## Component Testing: Sigmoid Component
+**Script:** `train_sigmoid_component.py`
+**Description:** Evaluates the Sigmoid activation function mathematically. It serves as a classic, smooth, non-linear activation function that squashes input values into a probability-like range between 0 and 1, facilitating gradient-based optimization in neural networks.

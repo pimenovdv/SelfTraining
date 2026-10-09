@@ -359,6 +359,7 @@ train_sgd_component.py
 train_sgld_component.py
 train_shampoo_component.py
 train_siamese_network_component.py
+train_sigmoid_component.py
 train_signsgd_component.py
 train_silu_component.py
 train_simclr_component.py
