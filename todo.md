@@ -341,3 +341,4 @@
 - [x] Explore pairwise ranking optimization mathematically. (Implemented and verified Margin Ranking Loss).
 - [x] Explore metric learning mathematically. (Implemented and verified Contrastive Loss).
 - [x] Explore computationally efficient alternatives to GELU mathematically. (Implemented and verified StarReLU component).
+- [x] Explore sparse activations mathematically. (Implemented and verified Threshold activation zeroing out values below a threshold).

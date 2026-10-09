@@ -447,3 +447,4 @@
 0489_train_sqnl_component
 0490_train_soft_exponential_component
 0491_train_sigmoid_component
+0492_train_threshold_component
