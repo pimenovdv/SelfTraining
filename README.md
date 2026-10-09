@@ -2586,3 +2586,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Sigmoid Component
 **Script:** `train_sigmoid_component.py`
 **Description:** Evaluates the Sigmoid activation function mathematically. It serves as a classic, smooth, non-linear activation function that squashes input values into a probability-like range between 0 and 1, facilitating gradient-based optimization in neural networks.
+
+## Component Testing: Threshold Component
+**Script:** `train_threshold_component.py`
+**Description:** Evaluates the Threshold activation function mathematically. It zeros out all elements below a specified threshold while keeping others unchanged, functioning as a hard gating mechanism and introducing sparsity.
