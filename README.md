@@ -2574,3 +2574,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SQNL Component
 **Script:** `train_sqnl_component.py`
 **Description:** Evaluates the Square Nonlinearity (SQNL) activation function mathematically. It serves as an efficient alternative to sigmoid or tanh, using quadratic polynomials to approximate their shape, which allows for faster computation without using exponential functions.
+
+## Component Testing: Smooth L1 Loss Component
+**Script:** `train_smooth_l1_loss_component.py`
+**Description:** Evaluates a Smooth L1 Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, providing a loss function that behaves like L1 loss when the absolute error is high, and L2 loss when it is low, effectively mitigating the influence of extreme outliers compared to standard squared error.
