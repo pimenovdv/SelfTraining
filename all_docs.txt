@@ -442,3 +442,4 @@ docs/0483_train_arcsinh_component.md
 docs/0484_train_pelu_component.md
 docs/0485_train_gcu_component.md
 docs/0486_train_sparse_attention_component.md
+docs/0487_train_adaptive_log_softmax_component.md

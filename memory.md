@@ -2048,3 +2048,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective**: Implement and test a Sparse Attention mechanism mathematically.
 - **Method**: Defined a blocked sparse attention mechanism where queries only attend to keys and values within their local block and adjacent blocks. Tested the forward pass output against expected shapes using NumPy.
 - **Result**: Successfully implemented and verified Sparse Attention, successfully restricting the computation to local windows to demonstrate linear scaling context mathematically.
+
+## Experiment 0487: Adaptive Log Softmax Component
+- **Objective:** Implement and test the Adaptive Log Softmax component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs and demonstrating its efficiency for large vocabularies.

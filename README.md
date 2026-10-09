@@ -2566,3 +2566,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 
 ### Sparse Attention Component
 - **Description:** Mathematically models a blocked Sparse Attention mechanism. Rather than computing the full $N \times N$ attention matrix, it restricts attention to local blocks along the diagonal and immediate off-diagonals, reducing computational complexity from quadratic to linear with respect to sequence length while maintaining local context.
+
+## Component Testing: Adaptive Log Softmax Component
+**Script:** `train_adaptive_log_softmax_component.py`
+**Description:** Evaluates the Adaptive Log Softmax mechanism mathematically. It serves as an efficient way to compute softmax over a very large vocabulary by assigning frequent words to a head cluster and infrequent words to tail clusters.
