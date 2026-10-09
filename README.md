@@ -2570,3 +2570,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Adaptive Log Softmax Component
 **Script:** `train_adaptive_log_softmax_component.py`
 **Description:** Evaluates the Adaptive Log Softmax mechanism mathematically. It serves as an efficient way to compute softmax over a very large vocabulary by assigning frequent words to a head cluster and infrequent words to tail clusters.
+
+## Component Testing: SQNL Component
+**Script:** `train_sqnl_component.py`
+**Description:** Evaluates the Square Nonlinearity (SQNL) activation function mathematically. It serves as an efficient alternative to sigmoid or tanh, using quadratic polynomials to approximate their shape, which allows for faster computation without using exponential functions.

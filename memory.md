@@ -2052,3 +2052,11 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0487: Adaptive Log Softmax Component
 - **Objective:** Implement and test the Adaptive Log Softmax component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs and demonstrating its efficiency for large vocabularies.
+
+## Experiment 0489: SQNL Component
+- **Objective:** Implement and test the SQNL (Square Nonlinearity) activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs bounded between -1 and 1, and demonstrating successful optimization of MSE loss on random initialized data.
+
+## Experiment 0488: Xpos Component
+- **Objective:** Run and test the Xpos component.
+- **Outcome:** The execution failed with a `ModuleNotFoundError` for `numpy`. The necessary fix is to install numpy (`pip install numpy`) before running the script or update the script to use PyTorch if applicable.

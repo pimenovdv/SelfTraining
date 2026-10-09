@@ -387,6 +387,7 @@ train_sparsemax_component
 train_spectral_clustering_component
 train_spectral_normalization_component
 train_spline_regression_component
+train_sqnl_component
 train_squared_hinge_loss_component
 train_squared_relu_component
 train_squareplus_component
@@ -429,4 +430,5 @@ train_welsch_loss_component
 train_wgan_component
 train_xavier_initialization_component
 train_xgboost_component
+train_xpos_component
 train_yogi_component
