@@ -13,6 +13,7 @@
 ./train_adamax_component.py
 ./train_adamw_component.py
 ./train_adan_component.py
+./train_adaptive_log_softmax_component.py
 ./train_affinity_propagation_component.py
 ./train_agglomerative_clustering_component.py
 ./train_agi_asi_component.py
