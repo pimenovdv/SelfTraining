@@ -2578,3 +2578,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Smooth L1 Loss Component
 **Script:** `train_smooth_l1_loss_component.py`
 **Description:** Evaluates a Smooth L1 Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, providing a loss function that behaves like L1 loss when the absolute error is high, and L2 loss when it is low, effectively mitigating the influence of extreme outliers compared to standard squared error.
+
+## Component Testing: Soft Exponential Component
+**Script:** `train_soft_exponential_component.py`
+**Description:** Evaluates the Soft Exponential activation function mathematically, testing its forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces a parameter alpha that transitions the function continuously between logarithmic, linear, and exponential shapes.

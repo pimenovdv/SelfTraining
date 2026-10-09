@@ -371,6 +371,7 @@ train_smelu_component
 train_smooth_l1_loss_component
 train_snake_activation_component
 train_snn_component
+train_soft_exponential_component
 train_soft_margin_loss_component
 train_softmax_component
 train_softmin_component
