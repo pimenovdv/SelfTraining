@@ -2064,3 +2064,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0490: Soft Exponential Component
 - **Objective:** Implement and test the Soft Exponential activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs and gradients depending on the parameter alpha, and demonstrating successful optimization of MSE loss on synthetic data.
+
+## Experiment 0491: Sigmoid Component
+- **Objective:** Implement and test the Sigmoid activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing outputs bounded between 0 and 1, and gradients.
