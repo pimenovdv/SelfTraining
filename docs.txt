@@ -443,3 +443,5 @@
 0485_train_gcu_component
 0486_train_sparse_attention_component
 0487_train_adaptive_log_softmax_component
+0488_train_xpos_component
+0489_train_sqnl_component
