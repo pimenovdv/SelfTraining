@@ -2590,3 +2590,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Threshold Component
 **Script:** `train_threshold_component.py`
 **Description:** Evaluates the Threshold activation function mathematically. It zeros out all elements below a specified threshold while keeping others unchanged, functioning as a hard gating mechanism and introducing sparsity.
+
+## Component Testing: Spherical Softmax Component
+**Script:** `train_spherical_softmax_component.py`
+**Description:** Evaluates the Spherical Softmax component mathematically, verifying its forward computation to ensure models can properly output probability distributions proportional to squared inputs instead of exponential inputs. This provides an alternative normalization technique that avoids exponentiation overhead while maintaining strictly positive probabilities summing to 1.
