@@ -452,3 +452,4 @@ docs/0493_train_spherical_softmax_component.md
 docs/0494_train_aria2_component.md
 docs/0495_train_gaussian_activation_component.md
 docs/0496_train_kl_divergence_loss_component.md
+docs/0497_train_tanhexp_component.md

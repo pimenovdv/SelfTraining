@@ -406,6 +406,7 @@
 ./train_swa_component.py
 ./train_swiglu_component.py
 ./train_swish_component.py
+./train_tanhexp_component.py
 ./train_tanhshrink_component.py
 ./train_target_propagation_component.py
 ./train_taylor_softmax_component.py

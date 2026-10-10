@@ -2089,3 +2089,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0496: KL Divergence Loss Component
 - **Objective:** Implement and test the KL Divergence Loss component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values (verifying lower loss for closer distributions) and gradients.
+
+## Experiment 0497: TanhExp Component
+- **Objective:** Implement and test the TanhExp activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the smooth, non-monotonic activation function.
