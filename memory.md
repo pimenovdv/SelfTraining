@@ -2093,3 +2093,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0497: TanhExp Component
 - **Objective:** Implement and test the TanhExp activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the smooth, non-monotonic activation function.
+
+## Experiment 0498: Elliot Activation Component
+- **Objective:** Implement and test the Elliot activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the activation function.

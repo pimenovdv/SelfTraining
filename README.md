@@ -2610,3 +2610,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: TanhExp Component
 **Script:** `train_tanhexp_component.py`
 **Description:** Evaluates the TanhExp activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a continuous, differentiable activation function defined as f(x) = x * tanh(exp(x)).
+
+## Component Testing: Elliot Activation Component
+**Script:** `train_elliot_activation_component.py`
+**Description:** Evaluates the Elliot activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as an approximation of the sigmoid function that avoids exponential computations.
