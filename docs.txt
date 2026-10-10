@@ -451,3 +451,4 @@
 0493_train_spherical_softmax_component
 0494_train_aria2_component
 0495_train_gaussian_activation_component
+0496_train_kl_divergence_loss_component

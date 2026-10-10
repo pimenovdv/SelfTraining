@@ -2602,3 +2602,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Gaussian Activation Component
 **Script:** `train_gaussian_activation_component.py`
 **Description:** Evaluates the Gaussian activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a continuous, differentiable activation function that peaks at zero and decays, useful for specific radial basis representations.
+
+## Component Testing: KL Divergence Loss Component
+**Script:** `train_kl_divergence_loss_component.py`
+**Description:** Evaluates the Kullback-Leibler Divergence Loss mathematically. It tests the forward evaluation measuring how one probability distribution diverges from a second expected distribution, and the gradient computation using numpy to ensure models can properly optimize with it. Formula: $D_{KL}(P || Q) = \sum P(x) \log\left(\frac{P(x)}{Q(x)}\right)$.
