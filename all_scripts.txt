@@ -20,6 +20,7 @@ train_agi_asi_component
 train_alibi_component
 train_amsgrad_component
 train_arcsinh_component
+train_aria2_component
 train_asgd_component
 train_attention_component
 train_barlow_twins_component

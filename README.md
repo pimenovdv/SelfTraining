@@ -2594,3 +2594,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Spherical Softmax Component
 **Script:** `train_spherical_softmax_component.py`
 **Description:** Evaluates the Spherical Softmax component mathematically, verifying its forward computation to ensure models can properly output probability distributions proportional to squared inputs instead of exponential inputs. This provides an alternative normalization technique that avoids exponentiation overhead while maintaining strictly positive probabilities summing to 1.
+
+## Component Testing: Aria-2 Component
+**Script:** `train_aria2_component.py`
+**Description:** Evaluates the Aria-2 (Adaptive ReLU-inspired Activation 2) activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces parameters alpha and beta that control the shape of the smooth, non-monotonic activation function.
