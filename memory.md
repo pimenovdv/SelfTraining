@@ -2072,3 +2072,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0492: Threshold Component
 - **Objective:** Implement and test the Threshold activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values (zeroing out below threshold) and gradients.
+
+## Experiment 0493: Spherical Softmax Component
+- **Hypothesis:** We can use the Spherical Softmax activation function (calculating probabilities proportional to squared values rather than exponents) as a computationally cheaper alternative to traditional Softmax for multi-class classification and attention mechanisms, avoiding the costly exponential operations.
+- **Results:** Implemented mathematically and successfully verified. Forward computation correctly outputs normalized probabilities (summing to 1) and scales inputs using the $P_i = x_i^2 / \sum x_j^2$ formula. Training demonstrated stable descent.
+- **Significance:** Validates a polynomial-based activation alternative, expanding the toolkit for compute-constrained environments where traditional softmax is a bottleneck.

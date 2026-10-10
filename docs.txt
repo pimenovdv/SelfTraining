@@ -448,3 +448,4 @@
 0490_train_soft_exponential_component
 0491_train_sigmoid_component
 0492_train_threshold_component
+0493_train_spherical_softmax_component
