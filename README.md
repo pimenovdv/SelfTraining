@@ -2598,3 +2598,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Aria-2 Component
 **Script:** `train_aria2_component.py`
 **Description:** Evaluates the Aria-2 (Adaptive ReLU-inspired Activation 2) activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It introduces parameters alpha and beta that control the shape of the smooth, non-monotonic activation function.
+
+## Component Testing: Gaussian Activation Component
+**Script:** `train_gaussian_activation_component.py`
+**Description:** Evaluates the Gaussian activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a continuous, differentiable activation function that peaks at zero and decays, useful for specific radial basis representations.

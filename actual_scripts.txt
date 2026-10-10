@@ -20,7 +20,7 @@ train_agi_asi_component
 train_alibi_component
 train_amsgrad_component
 train_arcsinh_component
-train_aria2_component.py
+train_aria2_component
 train_asgd_component
 train_attention_component
 train_barlow_twins_component
@@ -124,6 +124,7 @@ train_fuzzy_c_means_component
 train_gae_component
 train_gan_component
 train_gat_component
+train_gaussian_activation_component
 train_gaussian_process_component
 train_gce_loss_component
 train_gcn_component
@@ -389,7 +390,7 @@ train_sparse_pca_component
 train_sparsemax_component
 train_spectral_clustering_component
 train_spectral_normalization_component
-train_spherical_softmax_component.py
+train_spherical_softmax_component
 train_spline_regression_component
 train_sqnl_component
 train_squared_hinge_loss_component

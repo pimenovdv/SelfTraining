@@ -450,3 +450,4 @@ docs/0491_train_sigmoid_component.md
 docs/0492_train_threshold_component.md
 docs/0493_train_spherical_softmax_component.md
 docs/0494_train_aria2_component.md
+docs/0495_train_gaussian_activation_component.md
