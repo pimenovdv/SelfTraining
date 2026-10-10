@@ -2077,3 +2077,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Hypothesis:** We can use the Spherical Softmax activation function (calculating probabilities proportional to squared values rather than exponents) as a computationally cheaper alternative to traditional Softmax for multi-class classification and attention mechanisms, avoiding the costly exponential operations.
 - **Results:** Implemented mathematically and successfully verified. Forward computation correctly outputs normalized probabilities (summing to 1) and scales inputs using the $P_i = x_i^2 / \sum x_j^2$ formula. Training demonstrated stable descent.
 - **Significance:** Validates a polynomial-based activation alternative, expanding the toolkit for compute-constrained environments where traditional softmax is a bottleneck.
+
+## Experiment 0494: Aria-2 Component
+- **Objective:** Implement and test the Aria-2 activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the smooth, non-monotonic activation function depending on the parameters alpha and beta.
