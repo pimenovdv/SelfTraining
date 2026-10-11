@@ -2097,3 +2097,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0498: Elliot Activation Component
 - **Objective:** Implement and test the Elliot activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the activation function.
+
+## Experiment 0499: SReLU Component
+- **Objective:** Implement and test the SReLU activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the piecewise linear activation function.
