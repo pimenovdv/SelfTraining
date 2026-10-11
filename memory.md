@@ -2113,3 +2113,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0488: Xpos Component (Update)
 - **Objective:** Fix the missing numpy dependency and successfully execute the Xpos component.
 - **Outcome:** Successfully installed numpy and executed the Xpos component. The execution succeeded and demonstrated optimization from a loss of 0.0745 down to 0.0000 over 5000 epochs, validating the XPOS relative positional embeddings correctly match the target distribution.
+
+## Experiment 0502: Acon Component
+- **Objective:** Research and implement the ACON (Activate or Not) activation function component mathematically, focusing on its ability to learn customized activation dynamically during training.
+- **Outcome:** Successfully implemented the ACON component in PyTorch. The model successfully optimized, dropping loss from 58.4279 to 2.5243 over 100 epochs, demonstrating stable parameter learning for adaptive customized scaling.

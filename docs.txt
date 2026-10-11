@@ -457,3 +457,4 @@
 0499_train_srelu_component
 0500_train_lecun_tanh_component
 0501_train_b_spline_component
+0502_train_acon_component

@@ -1,5 +1,6 @@
 train_a2c_component
 train_aco_component
+train_acon_component
 train_act_component
 train_actor_critic_component
 train_adabelief_component
@@ -23,7 +24,7 @@ train_arcsinh_component
 train_aria2_component
 train_asgd_component
 train_attention_component
-train_b_spline_component.py
+train_b_spline_component
 train_barlow_twins_component
 train_batchnorm_component
 train_bayesian_linear_regression_component
@@ -215,7 +216,7 @@ train_lbfgs_component
 train_lda_component
 train_lda_topic_model_component
 train_leaky_relu_component
-train_lecun_tanh_component.py
+train_lecun_tanh_component
 train_linear_attention_component
 train_linear_regression_component
 train_linucb_component
@@ -400,7 +401,7 @@ train_sqnl_component
 train_squared_hinge_loss_component
 train_squared_relu_component
 train_squareplus_component
-train_srelu_component.py
+train_srelu_component
 train_ssm_component
 train_starrelu_component
 train_stdp_component
