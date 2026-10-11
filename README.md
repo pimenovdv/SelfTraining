@@ -2630,3 +2630,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: XPOS (Extrapolatable Position Embedding)
 **Script:** `train_xpos_component.py`
 **Description:** Evaluates the XPOS component mathematically in pure NumPy, testing its ability to improve long-context extrapolation in attention mechanisms by applying an exponential decay scale to Rotary Positional Embeddings (RoPE), dampening the impact of distant tokens.
+
+## Component Testing: ACON (Activate or Not)
+**Script:** `train_acon_component.py`
+**Description:** Evaluates the ACON activation function mathematically, learning customized activation dynamically during training through scaling and shifting parameters, serving as a unified formulation for ReLU-family activations.
