@@ -2101,3 +2101,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0499: SReLU Component
 - **Objective:** Implement and test the SReLU activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the piecewise linear activation function.
+
+## Experiment 0500: LeCun Tanh Component
+- **Objective:** Implement and test the LeCun Tanh activation component mathematically.
+- **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the scaled tanh activation function, and successfully optimizing MSE loss (from ~0.22 to 0.08) on a simple dataset.

@@ -214,6 +214,7 @@ train_lbfgs_component
 train_lda_component
 train_lda_topic_model_component
 train_leaky_relu_component
+train_lecun_tanh_component.py
 train_linear_attention_component
 train_linear_regression_component
 train_linucb_component

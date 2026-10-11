@@ -2618,3 +2618,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SReLU Component
 **Script:** `train_srelu_component.py`
 **Description:** Evaluates the S-shaped Rectified Linear Unit (SReLU) activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as an activation function consisting of three piecewise linear functions to learn both convex and non-convex functions.
+
+## Component Testing: LeCun Tanh Component
+**Script:** `train_lecun_tanh_component.py`
+**Description:** Evaluates the LeCun Tanh activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a scaled tanh function f(x) = 1.7159 * tanh(2/3 * x) designed to keep the variance of the output close to 1, aiding in faster convergence during training.

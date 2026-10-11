@@ -455,3 +455,4 @@
 0497_train_tanhexp_component
 0498_train_elliot_activation_component
 0499_train_srelu_component
+0500_train_lecun_tanh_component
