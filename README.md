@@ -2626,3 +2626,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: B-Spline Component
 **Script:** `train_b_spline_component.py`
 **Description:** Evaluates true B-splines mathematically for continuous representation and evaluating Kolgomorov-Arnold Network architectures, replacing RBFs on grid edges.
+
+## Component Testing: XPOS (Extrapolatable Position Embedding)
+**Script:** `train_xpos_component.py`
+**Description:** Evaluates the XPOS component mathematically in pure NumPy, testing its ability to improve long-context extrapolation in attention mechanisms by applying an exponential decay scale to Rotary Positional Embeddings (RoPE), dampening the impact of distant tokens.
