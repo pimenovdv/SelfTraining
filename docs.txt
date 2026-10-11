@@ -458,3 +458,4 @@
 0500_train_lecun_tanh_component
 0501_train_b_spline_component
 0502_train_acon_component
+0503_train_symlog_component

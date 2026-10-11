@@ -411,6 +411,7 @@ train_svr_component
 train_swa_component
 train_swiglu_component
 train_swish_component
+train_symlog_component
 train_tanhexp_component
 train_tanhshrink_component
 train_target_propagation_component

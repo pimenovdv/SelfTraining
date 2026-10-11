@@ -2634,3 +2634,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: ACON (Activate or Not)
 **Script:** `train_acon_component.py`
 **Description:** Evaluates the ACON activation function mathematically, learning customized activation dynamically during training through scaling and shifting parameters, serving as a unified formulation for ReLU-family activations.
+
+## Component Testing: SymLog Component
+**Script:** `train_symlog_component.py`
+**Description:** Evaluates the Symmetric Logarithmic (SymLog) activation function mathematically. It tests the forward evaluation and gradient computation using PyTorch to ensure models can properly optimize with it. SymLog computes `f(x) = sign(x) * ln(|x| + 1)`, which acts linearly near zero and logarithmically for large values, squashing outliers without bounding them.
