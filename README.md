@@ -2614,3 +2614,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Elliot Activation Component
 **Script:** `train_elliot_activation_component.py`
 **Description:** Evaluates the Elliot activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as an approximation of the sigmoid function that avoids exponential computations.
+
+## Component Testing: SReLU Component
+**Script:** `train_srelu_component.py`
+**Description:** Evaluates the S-shaped Rectified Linear Unit (SReLU) activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as an activation function consisting of three piecewise linear functions to learn both convex and non-convex functions.

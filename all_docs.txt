@@ -454,3 +454,4 @@ docs/0495_train_gaussian_activation_component.md
 docs/0496_train_kl_divergence_loss_component.md
 docs/0497_train_tanhexp_component.md
 docs/0498_train_elliot_activation_component.md
+docs/0499_train_srelu_component.md

@@ -454,3 +454,4 @@
 0496_train_kl_divergence_loss_component
 0497_train_tanhexp_component
 0498_train_elliot_activation_component
+0499_train_srelu_component

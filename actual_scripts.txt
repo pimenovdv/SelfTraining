@@ -398,6 +398,7 @@ train_sqnl_component
 train_squared_hinge_loss_component
 train_squared_relu_component
 train_squareplus_component
+train_srelu_component.py
 train_ssm_component
 train_starrelu_component
 train_stdp_component
