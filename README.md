@@ -2622,3 +2622,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: LeCun Tanh Component
 **Script:** `train_lecun_tanh_component.py`
 **Description:** Evaluates the LeCun Tanh activation function mathematically. It tests the forward evaluation and gradient computation using numpy to ensure models can properly optimize with it. It serves as a scaled tanh function f(x) = 1.7159 * tanh(2/3 * x) designed to keep the variance of the output close to 1, aiding in faster convergence during training.
+
+## Component Testing: B-Spline Component
+**Script:** `train_b_spline_component.py`
+**Description:** Evaluates true B-splines mathematically for continuous representation and evaluating Kolgomorov-Arnold Network architectures, replacing RBFs on grid edges.

@@ -2105,3 +2105,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0500: LeCun Tanh Component
 - **Objective:** Implement and test the LeCun Tanh activation component mathematically.
 - **Outcome:** Successfully implemented the component. The test passed, correctly computing forward values and gradients for the scaled tanh activation function, and successfully optimizing MSE loss (from ~0.22 to 0.08) on a simple dataset.
+
+## Experiment 0501: B-Spline Component
+- **Objective:** Implement and test a B-Spline component mathematically.
+- **Outcome:** Successfully implemented the component in pure NumPy. Confirmed that by recursively evaluating basis degree polynomials using local control grids, it computes correct interpolations without relying on full multi-layer perceptrons, validating continuous functional basis formulation.
