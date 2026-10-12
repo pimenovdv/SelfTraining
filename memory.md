@@ -2126,3 +2126,7 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Charbonnier loss function and its derivative mathematically in pure NumPy.
 - **Method:** Defined the Charbonnier loss function as `mean(sqrt(square(y_pred - y_true) + eps^2))` and its gradient. Trained a simple linear regression model.
 - **Outcome:** The implementation correctly reduced the loss and learned weights, demonstrating its effectiveness as a smooth alternative to L1 loss.
+
+## Experiment 0505: Signum Optimizer Component
+- **Objective:** Implement and test the Signum (SignSGD with Momentum) Optimizer component mathematically in pure NumPy.
+- **Outcome:** Successfully implemented the Signum optimizer. The model successfully minimized the loss from 18.4637 to 0.1172 in 200 epochs, demonstrating its ability to optimize the parameters correctly using the sign of the momentum.

@@ -2643,3 +2643,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Charbonnier Loss Component
 **Script:** `train_charbonnier_loss_component.py`
 **Description:** Evaluates a Charbonnier Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, providing a smooth, differentiable approximation of the L1 loss that is more stable near zero.
+
+## Component Testing: Signum Optimizer Component
+**Script:** `train_signum_component.py`
+**Description:** Evaluates a Signum Optimizer component mathematically in pure NumPy, testing its ability to optimize a neural network by relying on the sign of the momentum instead of the exact gradient magnitude, improving memory efficiency and communication costs.
