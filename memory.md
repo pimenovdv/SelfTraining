@@ -2121,3 +2121,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0503: SymLog Component
 - **Objective:** Implement and test the Symmetric Logarithmic (SymLog) activation component mathematically.
 - **Outcome:** Successfully implemented the component in PyTorch. The test passed, correctly computing forward values (applying logarithmic squashing for high variance data while acting linearly near zero) and gradients, and successfully optimizing MSE loss (from ~1068 to ~66) on a highly variant dataset.
+
+### Experiment 0504: Charbonnier Loss Component
+- **Objective:** Implement and test the Charbonnier loss function and its derivative mathematically in pure NumPy.
+- **Method:** Defined the Charbonnier loss function as `mean(sqrt(square(y_pred - y_true) + eps^2))` and its gradient. Trained a simple linear regression model.
+- **Outcome:** The implementation correctly reduced the loss and learned weights, demonstrating its effectiveness as a smooth alternative to L1 loss.
