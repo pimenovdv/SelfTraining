@@ -50,7 +50,7 @@ train_celu_component
 train_cem_component
 train_center_loss_component
 train_cgan_component
-train_charbonnier_loss_component.py
+train_charbonnier_loss_component
 train_chinchilla_optimality_component
 train_cma_es_component
 train_cmaes_component
@@ -366,10 +366,11 @@ train_sfa_component
 train_sgd_component
 train_sgld_component
 train_shampoo_component
+train_shifted_softplus_component
 train_siamese_network_component
 train_sigmoid_component
 train_signsgd_component
-train_signum_component.py
+train_signum_component
 train_silu_component
 train_simclr_component
 train_simsiam_component
@@ -413,7 +414,7 @@ train_svr_component
 train_swa_component
 train_swiglu_component
 train_swish_component
-train_symlog_component.py
+train_symlog_component
 train_tanhexp_component
 train_tanhshrink_component
 train_target_propagation_component

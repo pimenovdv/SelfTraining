@@ -2647,3 +2647,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Signum Optimizer Component
 **Script:** `train_signum_component.py`
 **Description:** Evaluates a Signum Optimizer component mathematically in pure NumPy, testing its ability to optimize a neural network by relying on the sign of the momentum instead of the exact gradient magnitude, improving memory efficiency and communication costs.
+
+## Component Testing: Shifted Softplus Component
+**Script:** `train_shifted_softplus_component.py`
+**Description:** Evaluates the Shifted Softplus activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize with it. It serves as an activation function where f(x) = ln(1 + e^x) - ln(2), ensuring f(0) = 0.
