@@ -2140,3 +2140,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Piecewise Linear Unit (PLU) activation function and its derivative mathematically in pure NumPy.
 - **Method:** Defined the PLU function as `max(alpha * (x + c) - c, min(alpha * (x - c) + c, x))` and its gradient. Tested the forward pass and derivative with predefined inputs.
 - **Outcome:** The implementation correctly computed the outputs and derivatives, demonstrating its ability to evaluate piece-wise linear bounds.
+
+### Experiment 0509: PMU Component
+- **Objective:** Implement and test the Parametric Mish Unit (PMU) activation function and its derivative mathematically in pure NumPy.
+- **Method:** Defined the PMU function as `x * tanh(ln(1 + e^(a*x)))` and its gradient. Tested the forward pass and derivative with predefined inputs.
+- **Outcome:** The implementation correctly computed the outputs and derivatives, demonstrating its capability as a continuous, differentiable non-monotonic activation function.

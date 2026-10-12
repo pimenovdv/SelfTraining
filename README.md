@@ -2655,3 +2655,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Piecewise Linear Unit Component
 **Script:** `train_plu_component.py`
 **Description:** Evaluates the Piecewise Linear Unit (PLU) activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation. It serves as an activation function where f(x) = max(alpha * (x + c) - c, min(alpha * (x - c) + c, x)).
+
+## Component Testing: PMU Activation Component
+**Script:** `train_pmu_component.py`
+**Description:** Evaluates the Parametric Mish Unit (PMU) activation function mathematically. Tests the forward evaluation and gradient computation in numpy. It introduces a parameter controlling the scale in the softplus expression to allow models to learn custom non-monotonic shapes.

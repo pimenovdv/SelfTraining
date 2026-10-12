@@ -311,6 +311,7 @@ train_perceiver_component.py
 train_perceptron_component.py
 train_pls_component.py
 train_plu_component.py
+train_pmu_component.py
 train_pointer_network_component.py
 train_poisson_nll_loss_component.py
 train_poisson_regression_component.py
