@@ -2130,3 +2130,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 ## Experiment 0505: Signum Optimizer Component
 - **Objective:** Implement and test the Signum (SignSGD with Momentum) Optimizer component mathematically in pure NumPy.
 - **Outcome:** Successfully implemented the Signum optimizer. The model successfully minimized the loss from 18.4637 to 0.1172 in 200 epochs, demonstrating its ability to optimize the parameters correctly using the sign of the momentum.
+
+### Experiment 0506: Shifted Softplus Component
+- **Objective:** Implement and test the Shifted Softplus activation function and its derivative mathematically in pure NumPy.
+- **Method:** Defined the Shifted Softplus function as `ln(1 + e^x) - ln(2)` and its gradient as the sigmoid function. Trained a single linear layer model with this activation.
+- **Outcome:** The implementation correctly reduced the mean squared error from 3.5922 to 0.0084 over 1000 epochs, demonstrating its ability to optimize models effectively while ensuring the activation is zero when the input is zero.

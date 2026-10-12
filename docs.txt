@@ -461,3 +461,4 @@
 0503_train_symlog_component
 0504_train_charbonnier_loss_component
 0505_train_signum_component
+0506_train_shifted_softplus_component
