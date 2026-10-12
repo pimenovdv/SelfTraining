@@ -2651,3 +2651,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Shifted Softplus Component
 **Script:** `train_shifted_softplus_component.py`
 **Description:** Evaluates the Shifted Softplus activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize with it. It serves as an activation function where f(x) = ln(1 + e^x) - ln(2), ensuring f(0) = 0.
+
+## Component Testing: Piecewise Linear Unit Component
+**Script:** `train_plu_component.py`
+**Description:** Evaluates the Piecewise Linear Unit (PLU) activation function mathematically in pure NumPy, testing its forward evaluation and gradient computation. It serves as an activation function where f(x) = max(alpha * (x + c) - c, min(alpha * (x - c) + c, x)).

@@ -2135,3 +2135,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Shifted Softplus activation function and its derivative mathematically in pure NumPy.
 - **Method:** Defined the Shifted Softplus function as `ln(1 + e^x) - ln(2)` and its gradient as the sigmoid function. Trained a single linear layer model with this activation.
 - **Outcome:** The implementation correctly reduced the mean squared error from 3.5922 to 0.0084 over 1000 epochs, demonstrating its ability to optimize models effectively while ensuring the activation is zero when the input is zero.
+
+### Experiment 0507: Piecewise Linear Unit Component
+- **Objective:** Implement and test the Piecewise Linear Unit (PLU) activation function and its derivative mathematically in pure NumPy.
+- **Method:** Defined the PLU function as `max(alpha * (x + c) - c, min(alpha * (x - c) + c, x))` and its gradient. Tested the forward pass and derivative with predefined inputs.
+- **Outcome:** The implementation correctly computed the outputs and derivatives, demonstrating its ability to evaluate piece-wise linear bounds.
