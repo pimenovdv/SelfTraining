@@ -459,3 +459,4 @@ docs/0500_train_lecun_tanh_component.md
 docs/0501_train_b_spline_component.md
 docs/0502_train_acon_component.md
 docs/0503_train_symlog_component.md
+docs/0504_train_charbonnier_loss_component.md

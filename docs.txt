@@ -459,3 +459,4 @@
 0501_train_b_spline_component
 0502_train_acon_component
 0503_train_symlog_component
+0504_train_charbonnier_loss_component

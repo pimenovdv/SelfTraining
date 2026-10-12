@@ -2638,3 +2638,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: SymLog Component
 **Script:** `train_symlog_component.py`
 **Description:** Evaluates the Symmetric Logarithmic (SymLog) activation function mathematically. It tests the forward evaluation and gradient computation using PyTorch to ensure models can properly optimize with it. SymLog computes `f(x) = sign(x) * ln(|x| + 1)`, which acts linearly near zero and logarithmically for large values, squashing outliers without bounding them.
+
+
+## Component Testing: Charbonnier Loss Component
+**Script:** `train_charbonnier_loss_component.py`
+**Description:** Evaluates a Charbonnier Loss component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly optimize regression tasks robustly, providing a smooth, differentiable approximation of the L1 loss that is more stable near zero.
