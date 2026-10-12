@@ -460,3 +460,4 @@
 0502_train_acon_component
 0503_train_symlog_component
 0504_train_charbonnier_loss_component
+0505_train_signum_component
