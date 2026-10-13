@@ -2145,3 +2145,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Parametric Mish Unit (PMU) activation function and its derivative mathematically in pure NumPy.
 - **Method:** Defined the PMU function as `x * tanh(ln(1 + e^(a*x)))` and its gradient. Tested the forward pass and derivative with predefined inputs.
 - **Outcome:** The implementation correctly computed the outputs and derivatives, demonstrating its capability as a continuous, differentiable non-monotonic activation function.
+
+### Experiment 0510: FReLU Component
+- **Objective:** Implement and test the Funnel Activation (FReLU) function and its derivative mathematically in pure NumPy.
+- **Method:** Defined the FReLU function as `max(x, b)` where `b` is a learned parameter, and its gradient. Tested the forward pass and derivative by learning a synthetic dataset.
+- **Outcome:** The implementation correctly computed the outputs and derivatives, learning the `b` parameter successfully.
