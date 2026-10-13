@@ -154,6 +154,7 @@
 ./train_grpo_component.py
 ./train_gru_component.py
 ./train_gumbel_softmax_component.py
+./train_hardmish_component.py
 ./train_hardshrink_component.py
 ./train_hardsigmoid_component.py
 ./train_hardswish_component.py

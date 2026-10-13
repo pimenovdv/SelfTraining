@@ -154,6 +154,7 @@ train_groupnorm_component
 train_grpo_component
 train_gru_component
 train_gumbel_softmax_component
+train_hardmish_component
 train_hardshrink_component
 train_hardsigmoid_component
 train_hardswish_component
@@ -400,7 +401,7 @@ train_sparse_attention_component
 train_sparse_coding_component
 train_sparse_pca_component
 train_sparsemax_component
-train_spatial_dropout_component.py
+train_spatial_dropout_component
 train_spectral_clustering_component
 train_spectral_normalization_component
 train_spherical_softmax_component

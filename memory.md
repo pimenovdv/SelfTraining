@@ -2155,3 +2155,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Spatial Dropout 2D component mathematically in pure NumPy.
 - **Method:** Defined the Spatial Dropout function to drop entire channels using a broadcasted binomial mask. Tested the forward pass and derivative.
 - **Outcome:** The implementation correctly dropped entire feature maps and scaled the remaining channels during training, successfully validating its mathematical properties.
+
+### Experiment 0512: HardMish Component Training
+**Objective:** Research and implement the HardMish activation function mathematically.
+**Methodology:** Implemented HardMish using PyTorch condition operations (`torch.where`) to avoid exponential computations, and trained a SimpleNet.
+**Results:** The mathematical validation verified the correct non-linear piecewise application. The training achieved successful convergence with the loss decreasing to 0.1425 at epoch 100.
+**Conclusion:** HardMish provides an effective, robust, computationally cheaper alternative to Mish.
