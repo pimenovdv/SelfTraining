@@ -400,6 +400,7 @@
 ./train_sparse_coding_component.py
 ./train_sparse_pca_component.py
 ./train_sparsemax_component.py
+./train_spatial_dropout_component.py
 ./train_spectral_clustering_component.py
 ./train_spectral_normalization_component.py
 ./train_spherical_softmax_component.py

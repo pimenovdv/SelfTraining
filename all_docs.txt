@@ -466,3 +466,4 @@ docs/0507_train_plu_component.md
 docs/0508_train_mgu_component.md
 docs/0509_train_pmu_component.md
 docs/0510_train_frelu_component.md
+docs/0511_train_spatial_dropout_component.md
