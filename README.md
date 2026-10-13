@@ -2674,3 +2674,8 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 HardMish(x) = x if x >= 0
 HardMish(x) = x^2 / 2 + x if -2 <= x < 0
 HardMish(x) = 0 if x < -2
+
+### SERF Component (train_serf_component.py)
+**Description:** Implements the SERF (SElu-eRF) activation function. SERF is a self-regularized, continuously differentiable, non-monotonic activation function that acts as a robust substitute for Swish or Mish, leveraging the error function (erf) and softplus to handle gradient vanishing.
+**Mathematical formulation:**
+SERF(x) = x * erf(ln(1 + e^x))

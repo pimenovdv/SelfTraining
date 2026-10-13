@@ -367,6 +367,7 @@ train_se_block_component
 train_selective_ssm_component
 train_self_correction_component
 train_selu_component
+train_serf_component
 train_sfa_component
 train_sgd_component
 train_sgld_component
