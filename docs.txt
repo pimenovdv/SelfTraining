@@ -470,3 +470,4 @@
 0512_train_hardmish_component
 0513_train_serf_component
 0514_train_quick_gelu_component
+0515_train_renyi_divergence_component

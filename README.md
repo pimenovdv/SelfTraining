@@ -2684,3 +2684,8 @@ SERF(x) = x * erf(ln(1 + e^x))
 **Description:** Implements the QuickGELU activation function. QuickGELU is a computationally efficient approximation of the GELU activation function using a scaled sigmoid, commonly used in transformer architectures for faster inference.
 **Mathematical formulation:**
 QuickGELU(x) = x * \sigma(1.702 * x)
+
+### Renyi Divergence Component (train_renyi_divergence_component.py)
+**Description:** Implements the Renyi Divergence loss function. It generalizes KL Divergence using an alpha parameter, allowing for controlling the sensitivity of the divergence measure.
+**Mathematical formulation:**
+D_alpha(P || Q) = \frac{1}{\alpha - 1} \log \sum_{i} P(i)^{\alpha} Q(i)^{1 - \alpha}

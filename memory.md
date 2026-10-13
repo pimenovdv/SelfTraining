@@ -2173,3 +2173,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented the QuickGELU activation function using a scaled sigmoid approximation to GELU, evaluating its forward and backward propagation mathematically using NumPy.
 **Results:** The mathematical implementation successfully processed inputs and computed gradients without numerical instability.
 **Conclusion:** QuickGELU provides an efficient and numerically stable approximation to GELU.
+
+### Experiment 0515: Renyi Divergence Component Testing
+**Objective:** Research and implement the Renyi Divergence loss function mathematically.
+**Methodology:** Implemented Renyi Divergence using an alpha parameter to generalize KL Divergence and evaluated it through an optimization task matching probability distributions.
+**Results:** The mathematical implementation successfully evaluated divergence and optimized distributions. Initial Loss: 0.8561, Final Loss: 0.1259.
+**Conclusion:** Renyi Divergence (alpha=2.0) effectively guides probability distribution optimization and generalises traditional divergence measures.
