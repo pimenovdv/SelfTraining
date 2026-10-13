@@ -2167,3 +2167,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented the SERF activation function combining the Error function (erf) and the Softplus approximation in a self-regularized non-monotonic formulation, and trained a Feed Forward Network on XOR data.
 **Results:** The mathematical implementation successfully approximated non-linear logic logic and converged to a final MSE loss of 0.249952 over 1000 epochs.
 **Conclusion:** SERF functions as a numerically stable, robust, and continuous activation formulation.
+
+### Experiment 0514: QuickGELU Component Testing
+**Objective:** Research and implement the QuickGELU activation function mathematically.
+**Methodology:** Implemented the QuickGELU activation function using a scaled sigmoid approximation to GELU, evaluating its forward and backward propagation mathematically using NumPy.
+**Results:** The mathematical implementation successfully processed inputs and computed gradients without numerical instability.
+**Conclusion:** QuickGELU provides an efficient and numerically stable approximation to GELU.

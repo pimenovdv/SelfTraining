@@ -469,3 +469,4 @@
 0511_train_spatial_dropout_component
 0512_train_hardmish_component
 0513_train_serf_component
+0514_train_quick_gelu_component
