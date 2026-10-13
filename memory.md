@@ -2150,3 +2150,8 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Implement and test the Funnel Activation (FReLU) function and its derivative mathematically in pure NumPy.
 - **Method:** Defined the FReLU function as `max(x, b)` where `b` is a learned parameter, and its gradient. Tested the forward pass and derivative by learning a synthetic dataset.
 - **Outcome:** The implementation correctly computed the outputs and derivatives, learning the `b` parameter successfully.
+
+### Experiment 0511: Spatial Dropout 2D Component
+- **Objective:** Implement and test the Spatial Dropout 2D component mathematically in pure NumPy.
+- **Method:** Defined the Spatial Dropout function to drop entire channels using a broadcasted binomial mask. Tested the forward pass and derivative.
+- **Outcome:** The implementation correctly dropped entire feature maps and scaled the remaining channels during training, successfully validating its mathematical properties.

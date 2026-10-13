@@ -2663,3 +2663,7 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: FReLU Activation Component
 **Script:** `train_frelu_component.py`
 **Description:** Evaluates the Funnel Activation (FReLU) function mathematically in pure NumPy, testing its forward evaluation and gradient computation. It serves as an activation function where f(x) = max(x, b) and b is a learned parameter.
+
+## Component Testing: Spatial Dropout 2D Component
+**Script:** `train_spatial_dropout_component.py`
+**Description:** Evaluates a Spatial Dropout 2D component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly drop entire feature maps (channels) instead of individual elements to promote independence between feature maps.
