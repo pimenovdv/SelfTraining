@@ -367,6 +367,7 @@
 ./train_selective_ssm_component.py
 ./train_self_correction_component.py
 ./train_selu_component.py
+./train_serf_component.py
 ./train_sfa_component.py
 ./train_sgd_component.py
 ./train_sgld_component.py

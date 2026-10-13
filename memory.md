@@ -2161,3 +2161,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented HardMish using PyTorch condition operations (`torch.where`) to avoid exponential computations, and trained a SimpleNet.
 **Results:** The mathematical validation verified the correct non-linear piecewise application. The training achieved successful convergence with the loss decreasing to 0.1425 at epoch 100.
 **Conclusion:** HardMish provides an effective, robust, computationally cheaper alternative to Mish.
+
+### Experiment 0513: SERF Component Training
+**Objective:** Research and implement the SERF (SElu-eRF) activation function mathematically.
+**Methodology:** Implemented the SERF activation function combining the Error function (erf) and the Softplus approximation in a self-regularized non-monotonic formulation, and trained a Feed Forward Network on XOR data.
+**Results:** The mathematical implementation successfully approximated non-linear logic logic and converged to a final MSE loss of 0.249952 over 1000 epochs.
+**Conclusion:** SERF functions as a numerically stable, robust, and continuous activation formulation.
