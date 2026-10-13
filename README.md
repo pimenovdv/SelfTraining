@@ -2667,3 +2667,10 @@ This script evaluates the meta-learning component mathematically using NumPy to 
 ## Component Testing: Spatial Dropout 2D Component
 **Script:** `train_spatial_dropout_component.py`
 **Description:** Evaluates a Spatial Dropout 2D component mathematically in pure NumPy, testing its forward evaluation and gradient computation to ensure models can properly drop entire feature maps (channels) instead of individual elements to promote independence between feature maps.
+
+### HardMish Component
+**Description:** Implements the HardMish activation function. HardMish is a computationally efficient approximation of the Mish activation function, avoiding costly exponential and logarithmic operations while retaining similar non-linear properties and continuous differentiability up to the first derivative.
+**Mathematical formulation:**
+HardMish(x) = x if x >= 0
+HardMish(x) = x^2 / 2 + x if -2 <= x < 0
+HardMish(x) = 0 if x < -2

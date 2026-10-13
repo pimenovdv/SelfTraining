@@ -467,3 +467,4 @@
 0509_train_pmu_component
 0510_train_frelu_component
 0511_train_spatial_dropout_component
+0512_train_hardmish_component
