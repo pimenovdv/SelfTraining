@@ -2679,3 +2679,8 @@ HardMish(x) = 0 if x < -2
 **Description:** Implements the SERF (SElu-eRF) activation function. SERF is a self-regularized, continuously differentiable, non-monotonic activation function that acts as a robust substitute for Swish or Mish, leveraging the error function (erf) and softplus to handle gradient vanishing.
 **Mathematical formulation:**
 SERF(x) = x * erf(ln(1 + e^x))
+
+### QuickGELU Component (train_quick_gelu_component.py)
+**Description:** Implements the QuickGELU activation function. QuickGELU is a computationally efficient approximation of the GELU activation function using a scaled sigmoid, commonly used in transformer architectures for faster inference.
+**Mathematical formulation:**
+QuickGELU(x) = x * \sigma(1.702 * x)
