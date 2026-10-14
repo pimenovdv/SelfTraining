@@ -100,6 +100,7 @@
 ./train_ebm_component.py
 ./train_echo_state_network_component.py
 ./train_elastic_net_component.py
+./train_elish_component.py
 ./train_elliot_activation_component.py
 ./train_elliot_component.py
 ./train_elliott_component.py

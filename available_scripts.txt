@@ -100,6 +100,7 @@ train_dropout_component
 train_ebm_component
 train_echo_state_network_component
 train_elastic_net_component
+train_elish_component
 train_elliot_activation_component
 train_elliot_component
 train_elliott_component

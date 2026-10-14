@@ -2215,3 +2215,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented Elliott mathematically using PyTorch.
 **Results:** The mathematical validation verified the correct forward values and gradients. The training achieved successful convergence with the loss decreasing over epochs.
 **Conclusion:** Elliott provides an effective, continuously differentiable activation function.
+
+### Experiment 0522: Elish Component Training
+**Objective:** Research and implement the Elish activation function mathematically.
+**Methodology:** Implemented Elish mathematically using pure NumPy.
+**Results:** The mathematical validation verified the correct forward values and gradients. The training achieved successful convergence with the loss decreasing to 2.3482.
+**Conclusion:** Elish provides an effective, continuously differentiable activation function.
