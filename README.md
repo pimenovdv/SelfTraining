@@ -2694,3 +2694,13 @@ D_alpha(P || Q) = \frac{1}{\alpha - 1} \log \sum_{i} P(i)^{\alpha} Q(i)^{1 - \al
 **Description:** Implements the Smish activation function. Smish is a continuously differentiable activation function that combines properties of hyperbolic tangent and sigmoid.
 **Mathematical formulation:**
 Smish(x) = x \cdot \tanh(\log(1 + \text{sigmoid}(x)))
+
+### MishGLU Component (train_mishglu_component.py)
+**Description:** Implements the Mish-Gated Linear Unit (MishGLU). It extends the Gated Linear Unit by replacing the sigmoid activation with the Mish activation function, improving gradient flow.
+**Mathematical formulation:**
+MishGLU(x) = \text{Mish}(x W_1 + b_1) \otimes (x W_2 + b_2)
+
+### SwishGLU Component (train_swish_glu_component.py)
+**Description:** Implements the Swish-Gated Linear Unit (SwishGLU). It uses the Swish activation function instead of the standard sigmoid in the gated linear unit, offering a smoother and non-monotonic alternative.
+**Mathematical formulation:**
+SwishGLU(x) = \text{Swish}(x W_1 + b_1) \otimes (x W_2 + b_2)

@@ -265,6 +265,7 @@ train_memory_network_component.py
 train_meta_learning_component.py
 train_mgu_component.py
 train_mish_component.py
+train_mishglu_component.py
 train_mixture_of_experts_component.py
 train_mixup_component.py
 train_mlpmixer_component.py
@@ -424,6 +425,7 @@ train_svr_component.py
 train_swa_component.py
 train_swiglu_component.py
 train_swish_component.py
+train_swish_glu_component.py
 train_symlog_component.py
 train_tanhexp_component.py
 train_tanhshrink_component.py

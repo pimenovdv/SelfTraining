@@ -2185,3 +2185,15 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented Smish using PyTorch operations (`torch.tanh` and `torch.log(1 + torch.sigmoid(x))`) and trained a SimpleNet.
 **Results:** The mathematical validation verified the correct forward and backward propagation. The training achieved successful convergence with the loss decreasing to 0.0684 at epoch 100.
 **Conclusion:** Smish provides an effective, continuously differentiable activation function.
+
+### Experiment 0517: MishGLU Component Training
+**Objective:** Research and implement the Mish-Gated Linear Unit (MishGLU) mathematically.
+**Methodology:** Implemented MishGLU by applying the Mish activation to one half of the linear output and performing an element-wise multiplication with the other half.
+**Results:** The mathematical validation verified the correct output shape. The training achieved successful convergence with the loss decreasing over epochs.
+**Conclusion:** MishGLU provides an effective alternative to standard GLUs using the Mish activation function.
+
+### Experiment 0518: SwishGLU Component Training
+**Objective:** Research and implement the Swish-Gated Linear Unit (SwishGLU) mathematically.
+**Methodology:** Implemented SwishGLU using a learned beta parameter for the Swish activation applied to one half of the linear output and performing an element-wise multiplication with the other half.
+**Results:** The mathematical validation verified the correct output shape. The training achieved successful convergence with the loss decreasing over epochs.
+**Conclusion:** SwishGLU offers a smooth and non-monotonic gating mechanism for neural networks.
