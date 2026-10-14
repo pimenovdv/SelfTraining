@@ -2179,3 +2179,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented Renyi Divergence using an alpha parameter to generalize KL Divergence and evaluated it through an optimization task matching probability distributions.
 **Results:** The mathematical implementation successfully evaluated divergence and optimized distributions. Initial Loss: 0.8561, Final Loss: 0.1259.
 **Conclusion:** Renyi Divergence (alpha=2.0) effectively guides probability distribution optimization and generalises traditional divergence measures.
+
+### Experiment 0516: Smish Component Training
+**Objective:** Research and implement the Smish activation function mathematically.
+**Methodology:** Implemented Smish using PyTorch operations (`torch.tanh` and `torch.log(1 + torch.sigmoid(x))`) and trained a SimpleNet.
+**Results:** The mathematical validation verified the correct forward and backward propagation. The training achieved successful convergence with the loss decreasing to 0.0684 at epoch 100.
+**Conclusion:** Smish provides an effective, continuously differentiable activation function.

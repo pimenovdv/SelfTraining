@@ -471,3 +471,4 @@ docs/0512_train_hardmish_component.md
 docs/0513_train_serf_component.md
 docs/0514_train_quick_gelu_component.md
 docs/0515_train_renyi_divergence_component.md
+docs/0516_train_smish_component.md

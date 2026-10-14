@@ -2689,3 +2689,8 @@ QuickGELU(x) = x * \sigma(1.702 * x)
 **Description:** Implements the Renyi Divergence loss function. It generalizes KL Divergence using an alpha parameter, allowing for controlling the sensitivity of the divergence measure.
 **Mathematical formulation:**
 D_alpha(P || Q) = \frac{1}{\alpha - 1} \log \sum_{i} P(i)^{\alpha} Q(i)^{1 - \alpha}
+
+### Smish Component (train_smish_component.py)
+**Description:** Implements the Smish activation function. Smish is a continuously differentiable activation function that combines properties of hyperbolic tangent and sigmoid.
+**Mathematical formulation:**
+Smish(x) = x \cdot \tanh(\log(1 + \text{sigmoid}(x)))
