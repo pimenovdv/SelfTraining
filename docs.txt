@@ -472,3 +472,5 @@
 0514_train_quick_gelu_component
 0515_train_renyi_divergence_component
 0516_train_smish_component
+0517_train_mishglu_component
+0518_train_swish_glu_component
