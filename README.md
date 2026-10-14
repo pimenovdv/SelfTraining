@@ -2719,3 +2719,9 @@ Arctan(x) = \arctan(x)
 **Description:** Implements the Elliott activation function mathematically. It serves as a continuous, differentiable bounding activation function similar to tanh or sigmoid but computationally cheaper.
 **Mathematical formulation:**
 Elliott(x) = x / (1 + \alpha |x|)
+
+### Elish Component (train_elish_component.py)
+**Description:** Implements the Elish activation function mathematically. It serves as a continuously differentiable non-monotonic activation function that acts linearly for positive values and is bounded for negative values.
+**Mathematical formulation:**
+Elish(x) = x / (1 + e^{-x}) if x >= 0
+Elish(x) = (e^x - 1) / (1 + e^{-x}) if x < 0
