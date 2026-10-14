@@ -2709,3 +2709,8 @@ SwishGLU(x) = \text{Swish}(x W_1 + b_1) \otimes (x W_2 + b_2)
 **Description:** Implements the Sinc activation function mathematically. It serves as a continuous, differentiable non-monotonic activation function centered at zero.
 **Mathematical formulation:**
 Sinc(x) = \sin(x) / x \text{ if } x \neq 0 \text{ else } 1
+
+### Arctan Component (train_arctan_component.py)
+**Description:** Implements the Arctan activation function mathematically. It serves as a continuous, differentiable monotonic activation function bounded between -pi/2 and pi/2.
+**Mathematical formulation:**
+Arctan(x) = \arctan(x)
