@@ -102,6 +102,7 @@ train_echo_state_network_component
 train_elastic_net_component
 train_elliot_activation_component
 train_elliot_component
+train_elliott_component
 train_elm_component
 train_elu_component
 train_ema_component

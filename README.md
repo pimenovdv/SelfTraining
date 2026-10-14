@@ -2714,3 +2714,8 @@ Sinc(x) = \sin(x) / x \text{ if } x \neq 0 \text{ else } 1
 **Description:** Implements the Arctan activation function mathematically. It serves as a continuous, differentiable monotonic activation function bounded between -pi/2 and pi/2.
 **Mathematical formulation:**
 Arctan(x) = \arctan(x)
+
+### Elliott Component (train_elliott_component.py)
+**Description:** Implements the Elliott activation function mathematically. It serves as a continuous, differentiable bounding activation function similar to tanh or sigmoid but computationally cheaper.
+**Mathematical formulation:**
+Elliott(x) = x / (1 + \alpha |x|)
