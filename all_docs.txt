@@ -476,3 +476,4 @@ docs/0517_train_mishglu_component.md
 docs/0518_train_swish_glu_component.md
 docs/0519_train_sinc_component.md
 docs/0520_train_arctan_component.md
+docs/0521_train_elliott_component.md
