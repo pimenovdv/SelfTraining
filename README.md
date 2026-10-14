@@ -2704,3 +2704,8 @@ MishGLU(x) = \text{Mish}(x W_1 + b_1) \otimes (x W_2 + b_2)
 **Description:** Implements the Swish-Gated Linear Unit (SwishGLU). It uses the Swish activation function instead of the standard sigmoid in the gated linear unit, offering a smoother and non-monotonic alternative.
 **Mathematical formulation:**
 SwishGLU(x) = \text{Swish}(x W_1 + b_1) \otimes (x W_2 + b_2)
+
+### Sinc Component (train_sinc_component.py)
+**Description:** Implements the Sinc activation function mathematically. It serves as a continuous, differentiable non-monotonic activation function centered at zero.
+**Mathematical formulation:**
+Sinc(x) = \sin(x) / x \text{ if } x \neq 0 \text{ else } 1
