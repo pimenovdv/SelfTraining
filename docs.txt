@@ -474,3 +474,4 @@
 0516_train_smish_component
 0517_train_mishglu_component
 0518_train_swish_glu_component
+0519_train_sinc_component
