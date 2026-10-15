@@ -2746,3 +2746,8 @@ where y_i^t is the most recent gradient of the i-th example.
 **Description:** Implements the SAGA optimizer mathematically. SAGA is a variant of SAG that improves upon it by using an unbiased gradient estimator, which allows for faster convergence on strongly convex problems while supporting non-strongly convex objectives better.
 **Mathematical formulation:**
 w_{t+1} = w_t - \eta \left( \nabla f_{i_t}(w_t) - \nabla f_{i_t}(\tilde{w}_{i_t}) + \frac{1}{n} \sum_{j=1}^n \nabla f_j(\tilde{w}_j) \right)
+
+### Pseudo-Huber Loss Component (train_pseudo_huber_loss_component.py)
+**Description:** Implements the Pseudo-Huber Loss function mathematically. It serves as a smooth approximation of the Huber loss, ensuring continuous differentiability at all points, which is beneficial for gradient-based optimization algorithms. It combines the best properties of L1 and L2 losses.
+**Mathematical formulation:**
+L(y, \hat{y}) = \delta^2 \left( \sqrt{1 + \left(\frac{y - \hat{y}}{\delta}\right)^2} - 1 \right)

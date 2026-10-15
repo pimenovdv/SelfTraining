@@ -329,6 +329,7 @@ train_ppo_component.py
 train_prelu_component.py
 train_probabilistic_pca_component.py
 train_protonet_component.py
+train_pseudo_huber_loss_component.py
 train_pso_component.py
 train_q_learning_component.py
 train_qda_component.py
