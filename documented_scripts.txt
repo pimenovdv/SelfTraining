@@ -315,6 +315,7 @@ train_pcn_component
 train_pelu_component
 train_perceiver_component
 train_perceptron_component
+train_phish_component
 train_pls_component
 train_plu_component
 train_pmu_component

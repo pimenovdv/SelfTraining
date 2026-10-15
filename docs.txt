@@ -478,3 +478,4 @@
 0520_train_arctan_component
 0521_train_elliott_component
 0522_train_elish_component
+0523_train_phish_component
