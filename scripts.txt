@@ -329,6 +329,7 @@ train_ppo_component
 train_prelu_component
 train_probabilistic_pca_component
 train_protonet_component
+train_pseudo_huber_loss_component
 train_pso_component
 train_q_learning_component
 train_qda_component

@@ -482,3 +482,4 @@
 0524_train_svrg_component
 0525_train_sag_component
 0526_train_saga_component
+0527_train_pseudo_huber_loss_component
