@@ -2735,3 +2735,9 @@ Phish(x) = x * \tanh(\text{GELU}(x))
 **Description:** Implements the Stochastic Variance Reduced Gradient (SVRG) optimizer mathematically. It maintains a snapshot of parameters and periodically computes the full gradient to reduce the variance of stochastic gradients, improving convergence rates for convex and non-convex optimization problems.
 **Mathematical formulation:**
 w_{t+1} = w_t - \eta (\nabla f_i(w_t) - \nabla f_i(\tilde{w}) + \nabla f(\tilde{w}))
+
+### SAG Optimizer Component (train_sag_component.py)
+**Description:** Implements the Stochastic Average Gradient (SAG) optimizer mathematically. It maintains a memory of previous gradients for each example to reduce variance, allowing for faster linear convergence rates on strongly convex problems compared to standard SGD.
+**Mathematical formulation:**
+w_{t+1} = w_t - \frac{\eta}{n} \sum_{i=1}^n y_i^t
+where y_i^t is the most recent gradient of the i-th example.
