@@ -479,3 +479,4 @@
 0521_train_elliott_component
 0522_train_elish_component
 0523_train_phish_component
+0524_train_svrg_component
