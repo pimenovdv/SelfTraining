@@ -479,3 +479,4 @@ docs/0520_train_arctan_component.md
 docs/0521_train_elliott_component.md
 docs/0522_train_elish_component.md
 docs/0523_train_phish_component.md
+docs/0524_train_svrg_component.md

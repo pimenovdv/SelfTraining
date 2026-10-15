@@ -2730,3 +2730,8 @@ Elish(x) = (e^x - 1) / (1 + e^{-x}) if x < 0
 **Description:** Implements the Phish activation function mathematically. It serves as a continuously differentiable, non-monotonic activation function defined as `f(x) = x * tanh(GELU(x))`, which aims to combine the benefits of GELU's probabilistic regularization and Mish's self-gating properties.
 **Mathematical formulation:**
 Phish(x) = x * \tanh(\text{GELU}(x))
+
+### SVRG Optimizer Component (train_svrg_component.py)
+**Description:** Implements the Stochastic Variance Reduced Gradient (SVRG) optimizer mathematically. It maintains a snapshot of parameters and periodically computes the full gradient to reduce the variance of stochastic gradients, improving convergence rates for convex and non-convex optimization problems.
+**Mathematical formulation:**
+w_{t+1} = w_t - \eta (\nabla f_i(w_t) - \nabla f_i(\tilde{w}) + \nabla f(\tilde{w}))
