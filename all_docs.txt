@@ -481,3 +481,4 @@ docs/0522_train_elish_component.md
 docs/0523_train_phish_component.md
 docs/0524_train_svrg_component.md
 docs/0525_train_sag_component.md
+docs/0526_train_saga_component.md
