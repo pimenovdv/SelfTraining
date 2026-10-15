@@ -2741,3 +2741,8 @@ w_{t+1} = w_t - \eta (\nabla f_i(w_t) - \nabla f_i(\tilde{w}) + \nabla f(\tilde{
 **Mathematical formulation:**
 w_{t+1} = w_t - \frac{\eta}{n} \sum_{i=1}^n y_i^t
 where y_i^t is the most recent gradient of the i-th example.
+
+### SAGA Optimizer Component (train_saga_component.py)
+**Description:** Implements the SAGA optimizer mathematically. SAGA is a variant of SAG that improves upon it by using an unbiased gradient estimator, which allows for faster convergence on strongly convex problems while supporting non-strongly convex objectives better.
+**Mathematical formulation:**
+w_{t+1} = w_t - \eta \left( \nabla f_{i_t}(w_t) - \nabla f_{i_t}(\tilde{w}_{i_t}) + \frac{1}{n} \sum_{j=1}^n \nabla f_j(\tilde{w}_j) \right)
