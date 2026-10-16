@@ -2766,3 +2766,7 @@ where W is a complex unitary matrix such that W^* W = I.
 ## Component Testing: Temporal Difference (TD(0)) Learning
 **Script:** `train_td_learning_component.py`
 **Description:** Evaluates a Temporal Difference (TD(0)) Learning component mathematically in pure NumPy, testing its ability to estimate the expected returns (state values) by iteratively bootstrapping from the value of the next state, without requiring a complete model of the environment dynamics.
+
+## Component Testing: Temporal Difference (TD(lambda)) Learning
+**Script:** `train_td_lambda_component.py`
+**Description:** Evaluates a Temporal Difference (TD(lambda)) Learning component mathematically in pure NumPy, testing its ability to estimate expected returns (state values) more efficiently by utilizing eligibility traces to bridge the gap between Monte Carlo methods and TD(0) learning, spreading credit to recently visited states.

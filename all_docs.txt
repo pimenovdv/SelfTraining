@@ -485,3 +485,4 @@ docs/0526_train_saga_component.md
 docs/0527_train_pseudo_huber_loss_component.md
 docs/0528_train_bglu_component.md
 docs/0529_train_unitary_rnn_component.md
+docs/0530_train_td_lambda_component.md
