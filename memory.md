@@ -2250,3 +2250,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented the Pseudo-Huber Loss mathematically using pure NumPy, computing the continuously differentiable forward loss and its corresponding gradient.
 **Results:** The mathematical validation verified the correct forward values and analytical gradients against numerical approximations. The verification passed successfully.
 **Conclusion:** Pseudo-Huber Loss provides an effective, continuously differentiable robust loss function.
+
+### Experiment 0528: Bilinear Gated Linear Unit (BGLU) Component Training
+**Objective:** Research and implement the Bilinear Gated Linear Unit (BGLU) component mathematically.
+**Methodology:** Implemented the BGLU mathematically using pure NumPy, computing the forward pass with bilinear gating and backpropagating gradients through both linear pathways.
+**Results:** The mathematical validation verified the correct forward and gradient computation. The training achieved successful convergence, with the loss decreasing effectively.
+**Conclusion:** BGLU provides a mathematically rigorous approach to controlling information flow and improving gradient propagation using simple multiplicative interactions.

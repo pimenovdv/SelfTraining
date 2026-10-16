@@ -2751,3 +2751,8 @@ w_{t+1} = w_t - \eta \left( \nabla f_{i_t}(w_t) - \nabla f_{i_t}(\tilde{w}_{i_t}
 **Description:** Implements the Pseudo-Huber Loss function mathematically. It serves as a smooth approximation of the Huber loss, ensuring continuous differentiability at all points, which is beneficial for gradient-based optimization algorithms. It combines the best properties of L1 and L2 losses.
 **Mathematical formulation:**
 L(y, \hat{y}) = \delta^2 \left( \sqrt{1 + \left(\frac{y - \hat{y}}{\delta}\right)^2} - 1 \right)
+
+### Bilinear Gated Linear Unit (BGLU) Component (train_bglu_component.py)
+**Description:** Implements the Bilinear Gated Linear Unit (BGLU) mathematically. BGLU applies a linear transformation gated by another linear transformation of the input without any non-linear activation like sigmoid, effectively regulating information flow using a multiplicative interaction.
+**Mathematical formulation:**
+BGLU(x) = (xW + b) \otimes (xV + c)
