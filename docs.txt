@@ -484,3 +484,4 @@
 0526_train_saga_component
 0527_train_pseudo_huber_loss_component
 0528_train_bglu_component
+0529_train_unitary_rnn_component

@@ -456,6 +456,7 @@
 ./train_tukey_loss_component.py
 ./train_tversky_loss_component.py
 ./train_umap_component.py
+./train_unitary_rnn_component.py
 ./train_upper_confidence_bound_component.py
 ./train_vae_component.py
 ./train_value_iter_component.py

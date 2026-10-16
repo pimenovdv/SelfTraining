@@ -2756,3 +2756,9 @@ L(y, \hat{y}) = \delta^2 \left( \sqrt{1 + \left(\frac{y - \hat{y}}{\delta}\right
 **Description:** Implements the Bilinear Gated Linear Unit (BGLU) mathematically. BGLU applies a linear transformation gated by another linear transformation of the input without any non-linear activation like sigmoid, effectively regulating information flow using a multiplicative interaction.
 **Mathematical formulation:**
 BGLU(x) = (xW + b) \otimes (xV + c)
+
+### Unitary RNN Component (train_unitary_rnn_component.py)
+**Description:** Implements a Unitary RNN component mathematically using complex-valued parameterization. It initializes a unitary matrix via QR decomposition of a random complex matrix to govern the hidden-to-hidden transitions, aiming to preserve gradient norms over long sequences by bounding eigenvalues.
+**Mathematical formulation:**
+h_t = \sigma(U x_t + W h_{t-1} + b)
+where W is a complex unitary matrix such that W^* W = I.
