@@ -2770,3 +2770,7 @@ where W is a complex unitary matrix such that W^* W = I.
 ## Component Testing: Temporal Difference (TD(lambda)) Learning
 **Script:** `train_td_lambda_component.py`
 **Description:** Evaluates a Temporal Difference (TD(lambda)) Learning component mathematically in pure NumPy, testing its ability to estimate expected returns (state values) more efficiently by utilizing eligibility traces to bridge the gap between Monte Carlo methods and TD(0) learning, spreading credit to recently visited states.
+
+## Component Testing: Independent Recurrent Neural Network (IndRNN)
+**Script:** `train_indrnn_component.py`
+**Description:** Evaluates an Independent Recurrent Neural Network (IndRNN) component mathematically in pure NumPy, testing its ability to solve long-term dependencies by replacing the dense recurrent weight matrix with a diagonal matrix (element-wise multiplication), making neurons in the same layer independent of each other and allowing for mathematically sound gradient propagation through deeper networks without exploding or vanishing gradients.
