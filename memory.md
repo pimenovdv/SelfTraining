@@ -2256,3 +2256,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 **Methodology:** Implemented the BGLU mathematically using pure NumPy, computing the forward pass with bilinear gating and backpropagating gradients through both linear pathways.
 **Results:** The mathematical validation verified the correct forward and gradient computation. The training achieved successful convergence, with the loss decreasing effectively.
 **Conclusion:** BGLU provides a mathematically rigorous approach to controlling information flow and improving gradient propagation using simple multiplicative interactions.
+
+### Experiment 0529: Unitary RNN Component Training
+**Objective:** Research and implement a Unitary RNN component mathematically to compare with orthogonal parameterizations.
+**Methodology:** Implemented the Unitary RNN mathematically using pure NumPy with complex numbers. The hidden state transition matrix was initialized as a unitary matrix via QR decomposition, and a complex ReLU was used for activation.
+**Results:** The mathematical validation verified the correct forward computation and unitarity preservation. The forward pass completed successfully, maintaining the unitary property of the transition matrix.
+**Conclusion:** Unitary RNNs provide a mathematically rigorous approach using complex-valued domains to ensure stable gradient propagation over long sequences by enforcing strict unitary constraints.
