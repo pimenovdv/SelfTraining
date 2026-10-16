@@ -2762,3 +2762,7 @@ BGLU(x) = (xW + b) \otimes (xV + c)
 **Mathematical formulation:**
 h_t = \sigma(U x_t + W h_{t-1} + b)
 where W is a complex unitary matrix such that W^* W = I.
+
+## Component Testing: Temporal Difference (TD(0)) Learning
+**Script:** `train_td_learning_component.py`
+**Description:** Evaluates a Temporal Difference (TD(0)) Learning component mathematically in pure NumPy, testing its ability to estimate the expected returns (state values) by iteratively bootstrapping from the value of the next state, without requiring a complete model of the environment dynamics.
