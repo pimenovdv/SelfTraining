@@ -487,3 +487,4 @@ docs/0528_train_bglu_component.md
 docs/0529_train_unitary_rnn_component.md
 docs/0530_train_td_lambda_component.md
 docs/0531_train_indrnn_component.md
+docs/0532_train_reinforce_with_baseline_component.md

@@ -2280,3 +2280,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a TD(lambda) Learning component mathematically in pure NumPy, evaluating it on a simple 1D Random Walk environment with random actions.
 - **Outcome:** The implementation successfully converged, correctly estimating the true state values with a low Mean Squared Error (0.0014), validating the mathematical mechanism of eligibility traces for credit assignment.
 - **Next Steps:** Consider scaling the method with function approximation for larger continuous state spaces.
+
+### Experiment 0532: REINFORCE with Baseline Component
+- **Hypothesis:** By subtracting a state-value baseline from the observed return, we can significantly reduce the variance of the policy gradient estimates in the REINFORCE algorithm, leading to faster and more stable convergence.
+- **Action:** Implemented the REINFORCE with Baseline component mathematically in pure NumPy, training a policy network (actor) and a value network (critic/baseline) on a continuous state space environment.
+- **Outcome:** The implementation successfully converged, with the agent learning to maintain its state near the origin, demonstrating the mathematical effectiveness of advantage-based policy updates.
+- **Next Steps:** Evaluate Actor-Critic architectures that bootstrap state values (TD error) instead of using full Monte Carlo returns.

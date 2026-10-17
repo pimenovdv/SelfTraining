@@ -487,3 +487,4 @@
 0529_train_unitary_rnn_component
 0530_train_td_lambda_component
 0531_train_indrnn_component
+0532_train_reinforce_with_baseline_component
