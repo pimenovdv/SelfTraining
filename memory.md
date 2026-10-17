@@ -2286,3 +2286,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the REINFORCE with Baseline component mathematically in pure NumPy, training a policy network (actor) and a value network (critic/baseline) on a continuous state space environment.
 - **Outcome:** The implementation successfully converged, with the agent learning to maintain its state near the origin, demonstrating the mathematical effectiveness of advantage-based policy updates.
 - **Next Steps:** Evaluate Actor-Critic architectures that bootstrap state values (TD error) instead of using full Monte Carlo returns.
+
+### Experiment 0533: Expected SARSA Component
+- **Hypothesis:** By calculating the expected value of the next state across all possible actions weighted by their probabilities under the current policy, Expected SARSA can significantly reduce the variance of temporal difference updates compared to standard SARSA, leading to more stable and reliable value estimation.
+- **Action:** Implemented the Expected SARSA component mathematically in pure NumPy, training a Q-learning agent on a 1D gridworld environment using an epsilon-greedy policy.
+- **Outcome:** The implementation successfully converged, learning robust Q-values that guide the agent to the optimal goal state while avoiding the pit, effectively validating the mathematical variance-reduction properties of expected updates.
+- **Next Steps:** Compare the convergence rate and sample efficiency of Expected SARSA against Q-learning in more stochastic environments.

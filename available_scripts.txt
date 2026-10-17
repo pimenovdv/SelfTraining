@@ -113,6 +113,7 @@ train_es_component
 train_esn_component
 train_evaluation_metrics_component
 train_ewc_component
+train_expected_sarsa_component
 train_factor_analysis_component
 train_factorization_machine_component
 train_fasttext_component
@@ -352,7 +353,6 @@ train_recursive_self_improvement_component
 train_reglu_component
 train_reinforce_component
 train_reinforce_with_baseline_component
-
 train_relational_network_component
 train_relu6_component
 train_renyi_divergence_component
