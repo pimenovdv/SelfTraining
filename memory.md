@@ -2310,3 +2310,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented TRPO in `train_trpo_component.py` mathematically in pure NumPy, using Conjugate Gradient to compute the natural gradient direction via Fisher Vector Products, and a backtracking line search.
 - **Outcome:** The model successfully converged on a 1D gridworld environment, achieving stable and optimal performance while satisfying the trust region constraint.
 - **Next Steps:** Evaluate algorithms that approximate TRPO's stability with first-order methods, such as Proximal Policy Optimization (PPO).
+
+### Experiment 0535: NT-Xent Loss Component Training
+**Objective:** Research and implement the Normalized Temperature-scaled Cross Entropy (NT-Xent) Loss component mathematically.
+**Methodology:** Implemented NT-Xent mathematically using pure NumPy, computing the pairwise cosine similarities with a temperature parameter and penalizing the log probability of the positive pairs.
+**Results:** The mathematical validation verified the correct forward computation of the cross entropy over softmax normalized similarities. The loss correctly distinguished highly similar positive pairs from random negative pairs.
+**Conclusion:** NT-Xent provides an effective, parameter-free contrastive loss suitable for self-supervised representation learning.
