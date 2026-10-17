@@ -2778,3 +2778,11 @@ where W is a complex unitary matrix such that W^* W = I.
 ## Component Testing: Expected SARSA Component
 **Script:** `train_expected_sarsa_component.py`
 **Description:** Evaluates the Expected SARSA reinforcement learning algorithm mathematically in pure NumPy, testing its ability to estimate Q-values by calculating the expected value of the next state over all possible actions under the current policy, effectively reducing variance compared to standard SARSA.
+
+### SQNL Component (train_sqnl_component.py)
+**Description:** Implements the Square Nonlinearity (SQNL) activation function mathematically. It serves as a computationally efficient alternative to sigmoid by avoiding costly exponential operations while maintaining similar continuous and bounded properties.
+**Mathematical formulation:**
+SQNL(x) = 1 if x > 2.0
+SQNL(x) = x - x^2/4 if 0 <= x <= 2.0
+SQNL(x) = x + x^2/4 if -2.0 <= x < 0
+SQNL(x) = -1 if x < -2.0
