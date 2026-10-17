@@ -489,3 +489,4 @@
 0531_train_indrnn_component
 0532_train_reinforce_with_baseline_component
 0533_train_expected_sarsa_component
+0534_train_double_q_learning_component
