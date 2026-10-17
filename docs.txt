@@ -490,3 +490,4 @@
 0532_train_reinforce_with_baseline_component
 0533_train_expected_sarsa_component
 0534_train_double_q_learning_component
+0535_train_nt_xent_loss_component

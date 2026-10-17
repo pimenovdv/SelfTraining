@@ -2791,3 +2791,8 @@ SQNL(x) = -1 if x < -2.0
 
 **Script:** `train_double_q_learning_component.py`
 **Description:** Evaluates the Double Q-Learning component mathematically in pure NumPy, testing its ability to decouple action selection from action evaluation using two separate value estimates to prevent overestimation bias during Temporal Difference learning.
+
+### NT-Xent Loss Component (train_nt_xent_loss_component.py)
+**Description:** Implements the Normalized Temperature-scaled Cross Entropy (NT-Xent) Loss mathematically. It aims to maximize the similarity between positive pairs while minimizing similarity among negative pairs in a batch, primarily used in self-supervised frameworks like SimCLR.
+**Mathematical formulation:**
+L_{i, j} = - \log \frac{\exp(\text{sim}(z_i, z_j) / \tau)}{\sum_{k=1}^{2N} 1_{[k \neq i]} \exp(\text{sim}(z_i, z_k) / \tau)}
