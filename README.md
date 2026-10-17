@@ -2774,3 +2774,7 @@ where W is a complex unitary matrix such that W^* W = I.
 ## Component Testing: Independent Recurrent Neural Network (IndRNN)
 **Script:** `train_indrnn_component.py`
 **Description:** Evaluates an Independent Recurrent Neural Network (IndRNN) component mathematically in pure NumPy, testing its ability to solve long-term dependencies by replacing the dense recurrent weight matrix with a diagonal matrix (element-wise multiplication), making neurons in the same layer independent of each other and allowing for mathematically sound gradient propagation through deeper networks without exploding or vanishing gradients.
+
+## Component Testing: Expected SARSA Component
+**Script:** `train_expected_sarsa_component.py`
+**Description:** Evaluates the Expected SARSA reinforcement learning algorithm mathematically in pure NumPy, testing its ability to estimate Q-values by calculating the expected value of the next state over all possible actions under the current policy, effectively reducing variance compared to standard SARSA.

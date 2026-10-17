@@ -345,3 +345,4 @@
 - [x] Explore sparse activations mathematically. (Implemented and verified Threshold activation zeroing out values below a threshold).
 - [x] Explore robust regression mathematically. (Implemented and verified Charbonnier Loss component).
 - [x] Explore temporal difference learning mathematically. (Implemented and verified TD(0) Learning for value estimation).
+- [x] Explore variance reduction in on-policy TD control mathematically. (Implemented and verified Expected SARSA component).
