@@ -2292,3 +2292,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the Expected SARSA component mathematically in pure NumPy, training a Q-learning agent on a 1D gridworld environment using an epsilon-greedy policy.
 - **Outcome:** The implementation successfully converged, learning robust Q-values that guide the agent to the optimal goal state while avoiding the pit, effectively validating the mathematical variance-reduction properties of expected updates.
 - **Next Steps:** Compare the convergence rate and sample efficiency of Expected SARSA against Q-learning in more stochastic environments.
+
+### Experiment 0489: SQNL Component Training
+**Objective:** Research and implement the Square Nonlinearity (SQNL) activation function mathematically.
+**Methodology:** Implemented SQNL mathematically using PyTorch, computing the forward pass as a piecewise function avoiding exponentials. Tested it within a simple feedforward network.
+**Results:** The mathematical validation verified the correct forward computation across the domain boundaries. The network successfully converged, indicating valid gradient flow.
+**Conclusion:** SQNL provides an effective, computationally efficient, continuously differentiable activation function.
