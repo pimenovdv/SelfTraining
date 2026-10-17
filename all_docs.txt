@@ -489,3 +489,4 @@ docs/0530_train_td_lambda_component.md
 docs/0531_train_indrnn_component.md
 docs/0532_train_reinforce_with_baseline_component.md
 docs/0533_train_expected_sarsa_component.md
+docs/0534_train_double_q_learning_component.md

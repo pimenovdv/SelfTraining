@@ -94,6 +94,7 @@ train_distributed_infrastructure_component
 train_dmd_component
 train_dnc_component
 train_dni_component
+train_double_q_learning_component
 train_dpo_component
 train_dqn_component
 train_dropconnect_component

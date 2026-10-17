@@ -2786,3 +2786,8 @@ SQNL(x) = 1 if x > 2.0
 SQNL(x) = x - x^2/4 if 0 <= x <= 2.0
 SQNL(x) = x + x^2/4 if -2.0 <= x < 0
 SQNL(x) = -1 if x < -2.0
+
+## Component Testing: Double Q-Learning
+
+**Script:** `train_double_q_learning_component.py`
+**Description:** Evaluates the Double Q-Learning component mathematically in pure NumPy, testing its ability to decouple action selection from action evaluation using two separate value estimates to prevent overestimation bias during Temporal Difference learning.
