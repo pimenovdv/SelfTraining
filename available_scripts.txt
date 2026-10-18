@@ -372,6 +372,7 @@ train_rope_component
 train_rprop_component
 train_rrelu_component
 train_rvm_component
+train_rwkv_component
 train_sac_component
 train_sae_component
 train_safety_alignment_component

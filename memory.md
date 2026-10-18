@@ -2340,3 +2340,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the SimPO loss mathematically in pure NumPy, computing the length-normalized rewards and the log-sigmoid margin contrastive loss.
 - **Outcome:** The implementation successfully computed the preference loss, correctly assigning higher length-normalized reward to chosen responses and properly generating the gradient-friendly contrastive objective, validating the mathematical mechanism of SimPO.
 - **Next Steps:** Evaluate SimPO on a conversational dataset to compare its length-normalized reward formulation against Direct Preference Optimization (DPO).
+
+### Experiment 0540: RWKV Component Training
+- **Hypothesis:** By employing the Receptance Weighted Key Value (RWKV) time-mixing mechanism, we can achieve linear-time sequence modeling with an exponential decay formulation, combining the efficiency of RNNs during inference with parallelizable training.
+- **Action:** Implemented the RWKV time-mixing component mathematically in pure NumPy, explicitly calculating the state recurrence with the wkv state variables.
+- **Outcome:** The implementation successfully computed the time-mixing outputs, validating the mathematical mechanism of RWKV.
+- **Next Steps:** Evaluate RWKV scaling laws to compare its parameter efficiency against standard self-attention mechanisms.
