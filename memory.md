@@ -2334,3 +2334,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the AdaCos loss mathematically in pure NumPy, computing the softmax probabilities with a dynamic scale parameter.
 - **Outcome:** The implementation successfully computed the loss and gradients, validating the mathematical mechanism of AdaCos.
 - **Next Steps:** Evaluate AdaCos loss within a face recognition or fine-grained classification framework.
+
+### Experiment 0539: SimPO Component Training
+- **Hypothesis:** By employing the Simple Preference Optimization (SimPO) loss, we can align language models with human preferences directly using a length-normalized margin-based contrastive loss, without needing an explicit reward model or reference model.
+- **Action:** Implemented the SimPO loss mathematically in pure NumPy, computing the length-normalized rewards and the log-sigmoid margin contrastive loss.
+- **Outcome:** The implementation successfully computed the preference loss, correctly assigning higher length-normalized reward to chosen responses and properly generating the gradient-friendly contrastive objective, validating the mathematical mechanism of SimPO.
+- **Next Steps:** Evaluate SimPO on a conversational dataset to compare its length-normalized reward formulation against Direct Preference Optimization (DPO).

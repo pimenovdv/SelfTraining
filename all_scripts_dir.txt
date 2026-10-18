@@ -397,6 +397,7 @@
 ./train_signum_component.py
 ./train_silu_component.py
 ./train_simclr_component.py
+./train_simpo_component.py
 ./train_simsiam_component.py
 ./train_simulated_annealing_component.py
 ./train_sinc_component.py

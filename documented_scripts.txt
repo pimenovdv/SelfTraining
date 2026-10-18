@@ -397,6 +397,7 @@ train_signsgd_component
 train_signum_component
 train_silu_component
 train_simclr_component
+train_simpo_component
 train_simsiam_component
 train_simulated_annealing_component
 train_sinc_component

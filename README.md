@@ -2811,3 +2811,8 @@ L = \sum_{i \in I} \frac{-1}{|P(i)|} \sum_{p \in P(i)} \log \frac{\exp(\text{sim
 **Description:** Implements the AdaCos loss mathematically in pure NumPy. It aims to improve upon cosine-based softmax losses by dynamically adapting the scaling factor, eliminating the need for hyperparameter tuning.
 **Mathematical formulation:**
 L_{AdaCos} = -\log \frac{e^{\tilde{s} \cdot \cos(\theta_{y_i})}}{e^{\tilde{s} \cdot \cos(\theta_{y_i})} + \sum_{j \neq y_i} e^{\tilde{s} \cdot \cos(\theta_j)}}
+
+### SimPO Loss Component (train_simpo_component.py)
+**Description:** Implements the Simple Preference Optimization (SimPO) loss mathematically. It aligns models with human preferences using a length-normalized margin-based contrastive loss, eliminating the need for a reference model as required in DPO.
+**Mathematical formulation:**
+L = -\log \sigma \left( \beta \left( \frac{\log p_{\theta}(y_w|x)}{|y_w|} - \frac{\log p_{\theta}(y_l|x)}{|y_l|} - \gamma \right) \right)
