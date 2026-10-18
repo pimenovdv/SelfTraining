@@ -493,3 +493,4 @@
 0535_train_nt_xent_loss_component
 0536_train_info_nce_loss_component
 0537_train_supcon_loss_component
+0538_train_adacos_loss_component
