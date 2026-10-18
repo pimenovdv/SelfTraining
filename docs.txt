@@ -494,3 +494,4 @@
 0536_train_info_nce_loss_component
 0537_train_supcon_loss_component
 0538_train_adacos_loss_component
+0539_train_simpo_component
