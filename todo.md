@@ -348,3 +348,4 @@
 - [x] Explore variance reduction in on-policy TD control mathematically. (Implemented and verified Expected SARSA component).
 - [x] Explore self-supervised contrastive loss mathematically. (Implemented and verified NT-Xent Loss component).
 - [x] Explore adaptive cosine-based softmax losses mathematically. (Implemented and verified AdaCos Loss component).
+- [x] Explore linear attention alternatives mathematically. (Implemented and verified RWKV Component replacing standard self-attention with linear-time exponential decay mechanism).

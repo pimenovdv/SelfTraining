@@ -2816,3 +2816,8 @@ L_{AdaCos} = -\log \frac{e^{\tilde{s} \cdot \cos(\theta_{y_i})}}{e^{\tilde{s} \c
 **Description:** Implements the Simple Preference Optimization (SimPO) loss mathematically. It aligns models with human preferences using a length-normalized margin-based contrastive loss, eliminating the need for a reference model as required in DPO.
 **Mathematical formulation:**
 L = -\log \sigma \left( \beta \left( \frac{\log p_{\theta}(y_w|x)}{|y_w|} - \frac{\log p_{\theta}(y_l|x)}{|y_l|} - \gamma \right) \right)
+
+### RWKV Component (train_rwkv_component.py)
+**Description:** Implements the Receptance Weighted Key Value (RWKV) component mathematically in pure NumPy. It combines the efficient parallelizable training of Transformers with the efficient inference of RNNs by using a linear-time time-mixing mechanism with an exponential decay formulation.
+**Mathematical formulation:**
+wkv_t = \frac{\sum_{i=1}^t e^{-(t-i)w + k_i} v_i}{\sum_{i=1}^t e^{-(t-i)w + k_i}}
