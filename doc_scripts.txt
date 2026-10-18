@@ -434,6 +434,7 @@ train_srelu_component.py
 train_ssm_component.py
 train_starrelu_component.py
 train_stdp_component.py
+train_supcon_loss_component.py
 train_svd_component.py
 train_svm_component.py
 train_svr_component.py
