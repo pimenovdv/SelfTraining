@@ -347,3 +347,4 @@
 - [x] Explore temporal difference learning mathematically. (Implemented and verified TD(0) Learning for value estimation).
 - [x] Explore variance reduction in on-policy TD control mathematically. (Implemented and verified Expected SARSA component).
 - [x] Explore self-supervised contrastive loss mathematically. (Implemented and verified NT-Xent Loss component).
+- [x] Explore adaptive cosine-based softmax losses mathematically. (Implemented and verified AdaCos Loss component).

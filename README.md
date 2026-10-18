@@ -2806,3 +2806,8 @@ L_{i, j} = - \log \frac{\exp(\text{sim}(z_i, z_j) / \tau)}{\sum_{k=1}^{2N} 1_{[k
 **Description:** Implements the Supervised Contrastive (SupCon) Loss mathematically. It aims to maximize the similarity between features of the same class (positive pairs) while minimizing similarity among features of different classes (negative pairs) in a batch, extending self-supervised contrastive loss to the fully supervised setting.
 **Mathematical formulation:**
 L = \sum_{i \in I} \frac{-1}{|P(i)|} \sum_{p \in P(i)} \log \frac{\exp(\text{sim}(z_i, z_p) / \tau)}{\sum_{a \in A(i)} \exp(\text{sim}(z_i, z_a) / \tau)}
+
+### AdaCos Loss Component (train_adacos_loss_component.py)
+**Description:** Implements the AdaCos loss mathematically in pure NumPy. It aims to improve upon cosine-based softmax losses by dynamically adapting the scaling factor, eliminating the need for hyperparameter tuning.
+**Mathematical formulation:**
+L_{AdaCos} = -\log \frac{e^{\tilde{s} \cdot \cos(\theta_{y_i})}}{e^{\tilde{s} \cdot \cos(\theta_{y_i})} + \sum_{j \neq y_i} e^{\tilde{s} \cdot \cos(\theta_j)}}
