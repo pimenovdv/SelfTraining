@@ -2792,6 +2792,11 @@ SQNL(x) = -1 if x < -2.0
 **Script:** `train_double_q_learning_component.py`
 **Description:** Evaluates the Double Q-Learning component mathematically in pure NumPy, testing its ability to decouple action selection from action evaluation using two separate value estimates to prevent overestimation bias during Temporal Difference learning.
 
+### InfoNCE Loss Component (train_info_nce_loss_component.py)
+**Description:** Implements the InfoNCE (Information Noise-Contrastive Estimation) loss mathematically in pure NumPy. It aims to learn robust representations by maximizing the mutual information between representations of the same underlying entity while minimizing it for different entities, heavily used in contrastive learning.
+**Mathematical formulation:**
+L = - \log \frac{\exp(\text{sim}(q, k_+) / \tau)}{\exp(\text{sim}(q, k_+) / \tau) + \sum_{i=1}^K \exp(\text{sim}(q, k_{-,i}) / \tau)}
+
 ### NT-Xent Loss Component (train_nt_xent_loss_component.py)
 **Description:** Implements the Normalized Temperature-scaled Cross Entropy (NT-Xent) Loss mathematically. It aims to maximize the similarity between positive pairs while minimizing similarity among negative pairs in a batch, primarily used in self-supervised frameworks like SimCLR.
 **Mathematical formulation:**
