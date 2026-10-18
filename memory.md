@@ -2322,3 +2322,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the InfoNCE loss mathematically in pure NumPy, using cosine similarity and a temperature parameter. Evaluated it with synthetic positive and negative query-key pairs.
 - **Outcome:** The implementation successfully computed the contrastive loss, correctly assigning lower loss values to matching pairs and significantly higher loss to non-matching pairs, validating the mathematical mechanism of contrastive learning.
 - **Next Steps:** Evaluate InfoNCE within a contrastive representation learning framework (e.g., MoCo) involving momentum encoders and negative queues.
+
+### Experiment 0537: SupCon Loss Component Training
+- **Hypothesis:** By employing the Supervised Contrastive (SupCon) loss, we can learn robust representations by maximizing the mutual information between representations of the same class while minimizing it for different classes, extending contrastive learning to fully supervised datasets.
+- **Action:** Implemented the SupCon loss mathematically in pure NumPy, using cosine similarity, a temperature parameter, and a label mask. Evaluated it with synthetic clustered and mixed feature-label pairs.
+- **Outcome:** The implementation successfully computed the contrastive loss, correctly assigning lower loss values to properly clustered features by class and significantly higher loss to mixed features, validating the mathematical mechanism of supervised contrastive learning.
+- **Next Steps:** Evaluate SupCon loss within a supervised representation learning framework to compare its performance against standard cross-entropy loss.

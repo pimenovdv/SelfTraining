@@ -434,6 +434,7 @@ train_srelu_component
 train_ssm_component
 train_starrelu_component
 train_stdp_component
+train_supcon_loss_component
 train_svd_component
 train_svm_component
 train_svr_component
