@@ -2346,3 +2346,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the RWKV time-mixing component mathematically in pure NumPy, explicitly calculating the state recurrence with the wkv state variables.
 - **Outcome:** The implementation successfully computed the time-mixing outputs, validating the mathematical mechanism of RWKV.
 - **Next Steps:** Evaluate RWKV scaling laws to compare its parameter efficiency against standard self-attention mechanisms.
+
+### Experiment 0541: NovoGrad Optimizer Component
+- **Hypothesis**: Adapting learning rates using layer-wise gradient normalization, which significantly reduces the memory footprint compared to Adam, can successfully optimize a neural network.
+- **Method**: Train a 2-layer Feed-Forward Network on the XOR dataset utilizing NovoGrad with layer-wise gradient tracking.
+- **Results**: The network successfully converged to a near-zero loss.
+- **Insights**: NovoGrad's layer-wise approach effectively guides learning, providing a memory-efficient alternative to full parameter tracking without compromising performance on non-linear tasks.

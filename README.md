@@ -2821,3 +2821,7 @@ L = -\log \sigma \left( \beta \left( \frac{\log p_{\theta}(y_w|x)}{|y_w|} - \fra
 **Description:** Implements the Receptance Weighted Key Value (RWKV) component mathematically in pure NumPy. It combines the efficient parallelizable training of Transformers with the efficient inference of RNNs by using a linear-time time-mixing mechanism with an exponential decay formulation.
 **Mathematical formulation:**
 wkv_t = \frac{\sum_{i=1}^t e^{-(t-i)w + k_i} v_i}{\sum_{i=1}^t e^{-(t-i)w + k_i}}
+
+## Component Testing: NovoGrad Optimizer
+**Script:** `train_novograd_component.py`
+**Description:** Evaluates a NovoGrad Optimizer component mathematically in pure NumPy, testing its ability to decouple weight decay and adapt learning rates using layer-wise gradient normalization, which reduces memory footprint compared to Adam.
