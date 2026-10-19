@@ -2825,3 +2825,7 @@ wkv_t = \frac{\sum_{i=1}^t e^{-(t-i)w + k_i} v_i}{\sum_{i=1}^t e^{-(t-i)w + k_i}
 ## Component Testing: NovoGrad Optimizer
 **Script:** `train_novograd_component.py`
 **Description:** Evaluates a NovoGrad Optimizer component mathematically in pure NumPy, testing its ability to decouple weight decay and adapt learning rates using layer-wise gradient normalization, which reduces memory footprint compared to Adam.
+
+## Component Testing: ArcFace Loss
+**Script:** `train_arcface_loss_component.py`
+**Description:** Evaluates the ArcFace (Additive Angular Margin Loss) component mathematically in pure NumPy, testing its ability to improve discriminative power in face recognition and fine-grained classification by adding an angular margin to the target logits.

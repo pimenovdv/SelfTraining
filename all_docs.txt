@@ -496,3 +496,4 @@ docs/0537_train_supcon_loss_component.md
 docs/0538_train_adacos_loss_component.md
 docs/0539_train_simpo_component.md
 docs/0540_train_rwkv_component.md
+docs/0542_train_arcface_loss_component.md
