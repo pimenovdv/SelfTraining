@@ -1,21 +1,13 @@
-# Experiment: Hits Component Training
+# Experiment: 0278_train_hits_component
 
-**Script:** `train_hits_component.py`
-**Status:** Success
+## Overview
+This experiment evaluates the mathematical implementation of the HITS (Hyperlink-Induced Topic Search) Component.
 
-## Objective
-Automatically generated report for the training and evaluation of the Hits component.
+## Execution Result
+- **Status**: SUCCESS
 
-## Methodology
-The component was executed via the automated pipeline.
+## Observations
+The component successfully demonstrated the capability to estimate hub and authority scores in a directed network. The iterative algorithm successfully converged and correctly separated hub and authority nodes.
 
-## Results
-```text
-Testing HITS Algorithm...
-Hub scores: [8.50650808e-01 5.25731112e-01 1.49161435e-07]
-Authority scores: [2.41348272e-07 5.25731112e-01 8.50650808e-01]
-HITS algorithm mathematical verification passed successfully.
-```
-
-## Conclusion
-The component execution finished with status: Success.
+## Next Steps
+Continue evaluating and integrating advanced network analysis components.
