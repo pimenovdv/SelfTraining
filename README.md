@@ -2829,3 +2829,12 @@ wkv_t = \frac{\sum_{i=1}^t e^{-(t-i)w + k_i} v_i}{\sum_{i=1}^t e^{-(t-i)w + k_i}
 ## Component Testing: ArcFace Loss
 **Script:** `train_arcface_loss_component.py`
 **Description:** Evaluates the ArcFace (Additive Angular Margin Loss) component mathematically in pure NumPy, testing its ability to improve discriminative power in face recognition and fine-grained classification by adding an angular margin to the target logits.
+
+### Predictive Coding Network (PCN) Component (train_pcn_component.py)
+**Description:** Implements a Predictive Coding Network mathematically. It serves as a biologically plausible alternative to backpropagation, utilizing local learning rules and an iterative inference phase to minimize local prediction errors instead of a global backward pass.
+**Mathematical formulation:**
+Inference Phase: $\Delta v_i \propto -\frac{\partial E}{\partial v_i} = -e_i + (W_i^T e_{i+1}) \odot \sigma'(v_i)$
+Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \sigma(v_i)^T$
+
+### PCN vs Backpropagation Comparison (train_pcn_comparison_component.py)
+**Description:** Evaluates and compares the Predictive Coding Network against a standard Multi-Layer Perceptron trained with Backpropagation on image classification. Demonstrates that while PCN successfully learns deep representations using local rules, its iterative inference phase incurs significant computational overhead compared to the standard global backward pass.

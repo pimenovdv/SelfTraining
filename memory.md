@@ -2370,3 +2370,15 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the HITS algorithm mathematically in pure NumPy, calculating hub and authority vectors.
 - **Outcome:** The implementation successfully computed and separated the hub and authority scores, validating the mathematical mechanism of HITS.
 - **Next Steps:** Evaluate the HITS algorithm within larger graph neural networks to compare against static PageRank centrality.
+
+### Experiment 0082: Predictive Coding Network (PCN) Component Training
+- **Hypothesis:** By employing local learning rules and iterative inference to minimize prediction errors, a Predictive Coding Network can learn non-linear functions without the biologically implausible global error transport required by standard backpropagation.
+- **Action:** Implemented the Predictive Coding Network mathematically in pure NumPy, maintaining state and error nodes, and iteratively updating states via gradient descent on local errors before applying local Hebbian weight updates. Tested it on a sine wave regression task.
+- **Outcome:** The implementation successfully learned to approximate the non-linear function, achieving a low final mean squared error. This validates the mathematical mechanism of predictive coding as an effective alternative to backpropagation for representation learning.
+- **Next Steps:** Evaluate the PCN on deeper architectures and image classification tasks to compare its scalability and convergence speed against standard backpropagation.
+
+### Experiment 0083: PCN vs Standard Backpropagation Comparison
+- **Hypothesis:** A Predictive Coding Network can achieve comparable accuracy to standard Backpropagation on deeper networks and image classification tasks, though its iterative inference mechanism will likely require more computational time per update.
+- **Action:** Implemented a pure NumPy comparison between PCN and an MLP using standard Backpropagation. Trained both on a 4-layer architecture for 20 epochs using the digits dataset.
+- **Outcome:** The PCN successfully learned the image classification task with >90% accuracy, validating the efficacy of local learning rules for deeper networks. However, the MLP achieved slightly higher accuracy (~97%) and ran significantly faster (~6x) due to the absence of the iterative inference phase required by the PCN.
+- **Next Steps:** Explore methods to accelerate the inference phase of predictive coding or adapt it to continuous-time dynamic environments where iterative settling can occur concurrently with input streams.
