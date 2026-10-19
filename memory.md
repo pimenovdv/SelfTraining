@@ -2352,3 +2352,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Method**: Train a 2-layer Feed-Forward Network on the XOR dataset utilizing NovoGrad with layer-wise gradient tracking.
 - **Results**: The network successfully converged to a near-zero loss.
 - **Insights**: NovoGrad's layer-wise approach effectively guides learning, providing a memory-efficient alternative to full parameter tracking without compromising performance on non-linear tasks.
+
+### Experiment 0542: ArcFace Loss Component Training
+- **Hypothesis:** By employing the ArcFace (Additive Angular Margin Loss) formulation, we can enhance the discriminative power of features by enforcing an angular margin penalty between the embedding and the target class center.
+- **Action:** Implemented the ArcFace Loss component mathematically in pure NumPy, explicitly calculating L2 normalization, angular margin addition, and scaled softmax cross-entropy.
+- **Outcome:** The implementation successfully computed the margin-penalized loss, validating the mathematical mechanism of ArcFace.
+- **Next Steps:** Evaluate ArcFace loss within a deep learning framework for highly discriminative feature learning on complex datasets.
