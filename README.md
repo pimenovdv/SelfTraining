@@ -2842,3 +2842,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Dueling DQN
 **Script:** `train_dueling_dqn_component.py`
 **Description:** Evaluates the Dueling DQN component mathematically in pure NumPy, testing its ability to improve Q-learning by separately estimating state values and action advantages, using a centered advantage formulation for identifiability.
+
+## Component Testing: Sammon Mapping
+**Script:** `train_sammon_mapping_component.py`
+**Description:** Evaluates the Sammon Mapping component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by preserving local neighborhood structure via a specialized stress function that penalizes changes in shorter pairwise distances more heavily than longer ones.
