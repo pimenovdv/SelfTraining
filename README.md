@@ -2846,3 +2846,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Sammon Mapping
 **Script:** `train_sammon_mapping_component.py`
 **Description:** Evaluates the Sammon Mapping component mathematically in pure NumPy, testing its ability to perform non-linear dimensionality reduction by preserving local neighborhood structure via a specialized stress function that penalizes changes in shorter pairwise distances more heavily than longer ones.
+
+## Component Testing: Independent Q-Learning
+**Script:** `train_independent_q_learning_component.py`
+**Description:** Evaluates the Independent Q-Learning (IQL) component mathematically in pure NumPy, testing its ability to enable multi-agent coordination by maintaining independent Q-tables for each agent in a shared environment.
