@@ -497,3 +497,5 @@ docs/0539_train_simpo_component.md
 docs/0540_train_rwkv_component.md
 docs/0542_train_arcface_loss_component.md
 docs/0543_train_dueling_dqn_component.md
+docs/0544_train_pcn_comparison_component.md
+docs/0545_train_irl_component.md

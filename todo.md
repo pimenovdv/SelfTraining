@@ -349,3 +349,5 @@
 - [x] Explore self-supervised contrastive loss mathematically. (Implemented and verified NT-Xent Loss component).
 - [x] Explore adaptive cosine-based softmax losses mathematically. (Implemented and verified AdaCos Loss component).
 - [x] Explore linear attention alternatives mathematically. (Implemented and verified RWKV Component replacing standard self-attention with linear-time exponential decay mechanism).
+
+- [x] Explore robust reward recovery for alignment mathematically. (Implemented and verified Inverse Reinforcement Learning - IRL mapping expert feature expectations to reward structures).

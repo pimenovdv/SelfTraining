@@ -193,6 +193,7 @@ train_infonce_loss_component
 train_instance_norm_component
 train_instancenorm_component
 train_ipo_component
+train_irl_component
 train_isolation_forest_component
 train_isomap_component
 train_isotonic_regression_component
@@ -320,6 +321,7 @@ train_orthogonal_rnn_component
 train_pagerank_component
 train_particle_filter_component
 train_pca_component
+train_pcn_comparison_component
 train_pcn_component
 train_pelu_component
 train_perceiver_component

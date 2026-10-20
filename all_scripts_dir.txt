@@ -193,6 +193,7 @@
 ./train_instance_norm_component.py
 ./train_instancenorm_component.py
 ./train_ipo_component.py
+./train_irl_component.py
 ./train_isolation_forest_component.py
 ./train_isomap_component.py
 ./train_isotonic_regression_component.py
@@ -320,6 +321,7 @@
 ./train_pagerank_component.py
 ./train_particle_filter_component.py
 ./train_pca_component.py
+./train_pcn_comparison_component.py
 ./train_pcn_component.py
 ./train_pelu_component.py
 ./train_perceiver_component.py
