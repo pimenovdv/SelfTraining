@@ -2382,3 +2382,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented a pure NumPy comparison between PCN and an MLP using standard Backpropagation. Trained both on a 4-layer architecture for 20 epochs using the digits dataset.
 - **Outcome:** The PCN successfully learned the image classification task with >90% accuracy, validating the efficacy of local learning rules for deeper networks. However, the MLP achieved slightly higher accuracy (~97%) and ran significantly faster (~6x) due to the absence of the iterative inference phase required by the PCN.
 - **Next Steps:** Explore methods to accelerate the inference phase of predictive coding or adapt it to continuous-time dynamic environments where iterative settling can occur concurrently with input streams.
+
+### Experiment 0543: Dueling DQN Component Training
+- **Hypothesis:** Dueling DQN separates the representation of state values and (state-dependent) action advantages, leading to better policy evaluation particularly in states where the choice of action has little effect on the environment.
+- **Action:** Implemented the Dueling DQN forward and backward passes mathematically in pure NumPy. Evaluated on a simple 1D Grid environment, updating the state-value branch and advantage branch using the standard DQN loss.
+- **Outcome:** The implementation successfully learned the optimal policy to navigate to the goal, validating the mathematical mechanism of separating Value and Advantage streams and centering the advantage function for identifiability.
+- **Next Steps:** Evaluate Dueling DQN on more complex environments to observe the sample efficiency improvements over standard DQN.

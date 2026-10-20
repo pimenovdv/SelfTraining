@@ -2838,3 +2838,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 
 ### PCN vs Backpropagation Comparison (train_pcn_comparison_component.py)
 **Description:** Evaluates and compares the Predictive Coding Network against a standard Multi-Layer Perceptron trained with Backpropagation on image classification. Demonstrates that while PCN successfully learns deep representations using local rules, its iterative inference phase incurs significant computational overhead compared to the standard global backward pass.
+
+## Component Testing: Dueling DQN
+**Script:** `train_dueling_dqn_component.py`
+**Description:** Evaluates the Dueling DQN component mathematically in pure NumPy, testing its ability to improve Q-learning by separately estimating state values and action advantages, using a centered advantage formulation for identifiability.
