@@ -383,6 +383,7 @@
 ./train_sag_component.py
 ./train_saga_component.py
 ./train_sam_component.py
+./train_sammon_mapping_component.py
 ./train_sarsa_component.py
 ./train_scaling_law_projection_component.py
 ./train_scaling_laws_component.py
