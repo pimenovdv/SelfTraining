@@ -2850,3 +2850,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Independent Q-Learning
 **Script:** `train_independent_q_learning_component.py`
 **Description:** Evaluates the Independent Q-Learning (IQL) component mathematically in pure NumPy, testing its ability to enable multi-agent coordination by maintaining independent Q-tables for each agent in a shared environment.
+
+## Component Testing: AdaIN (Adaptive Instance Normalization)
+**Script:** `train_adain_component.py`
+**Description:** Evaluates the Adaptive Instance Normalization (AdaIN) component mathematically in pure NumPy, testing its ability to align the mean and variance of content features with those of style features, a technique widely used in arbitrary style transfer models.
