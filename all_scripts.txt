@@ -10,6 +10,7 @@ train_adacos_loss_component
 train_adadelta_component
 train_adafactor_component
 train_adagrad_component
+train_adain_component
 train_adaln_component
 train_adam_component
 train_adamax_component
