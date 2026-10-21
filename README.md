@@ -2858,3 +2858,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: MADDPG (Multi-Agent DDPG)
 **Script:** `train_maddpg_component.py`
 **Description:** Evaluates a Multi-Agent Deep Deterministic Policy Gradient (MADDPG) component mathematically in pure NumPy, testing its ability to enable multi-agent coordination using centralized training with decentralized execution, allowing actors to learn policies using gradients provided by a centralized critic.
+
+## Component Testing: Regret Matching Component
+**Script:** `train_regret_matching_component.py`
+**Description:** Evaluates a Regret Matching component mathematically in pure NumPy, testing its ability to find the Nash Equilibrium in a zero-sum game (Rock-Paper-Scissors) by updating strategies proportionally to the positive accumulated regrets for not having taken other actions in the past.

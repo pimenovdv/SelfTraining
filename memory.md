@@ -2426,3 +2426,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the MADDPG algorithm mathematically in pure NumPy and evaluated it on a synthetic multi-agent environment where agents must learn complementary continuous actions to minimize a joint cost.
 - **Outcome:** The implementation successfully reduced the critic loss to a near-zero value, verifying the mathematical mechanism of centralized action-value estimation guiding decentralized policy gradient updates.
 - **Next Steps:** Evaluate MADDPG in more complex mixed cooperative-competitive environments with sparse rewards to test scalability.
+
+### Experiment 0550: Regret Matching Component Training
+- **Hypothesis:** By updating strategies proportionally to the positive accumulated regrets for not having taken other actions in the past, the Regret Matching algorithm can converge to the Nash Equilibrium in a normal-form zero-sum game.
+- **Action:** Implemented the Regret Matching algorithm mathematically in pure NumPy and evaluated it on the Rock-Paper-Scissors game by having two agents play iteratively against each other.
+- **Outcome:** The implementation successfully converged, with the average strategies of both players matching the expected Nash Equilibrium (1/3, 1/3, 1/3), validating the mathematical mechanism of regret-based learning.
+- **Next Steps:** Explore more advanced multi-agent reinforcement learning techniques based on regret, such as Counterfactual Regret Minimization (CFR) for extensive-form games.
