@@ -2854,3 +2854,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: AdaIN (Adaptive Instance Normalization)
 **Script:** `train_adain_component.py`
 **Description:** Evaluates the Adaptive Instance Normalization (AdaIN) component mathematically in pure NumPy, testing its ability to align the mean and variance of content features with those of style features, a technique widely used in arbitrary style transfer models.
+
+## Component Testing: MADDPG (Multi-Agent DDPG)
+**Script:** `train_maddpg_component.py`
+**Description:** Evaluates a Multi-Agent Deep Deterministic Policy Gradient (MADDPG) component mathematically in pure NumPy, testing its ability to enable multi-agent coordination using centralized training with decentralized execution, allowing actors to learn policies using gradients provided by a centralized critic.
