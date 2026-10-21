@@ -10,6 +10,7 @@ train_adacos_loss_component
 train_adadelta_component
 train_adafactor_component
 train_adagrad_component
+train_adain_component
 train_adaln_component
 train_adam_component
 train_adamax_component
@@ -45,6 +46,7 @@ train_bnn_component
 train_bpe_component
 train_brier_score_component
 train_byol_component
+train_c51_component
 train_cae_component
 train_capsule_network_component
 train_cauchy_loss_component
@@ -491,4 +493,3 @@ train_xavier_initialization_component
 train_xgboost_component
 train_xpos_component
 train_yogi_component
-train_c51_component

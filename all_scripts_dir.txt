@@ -10,6 +10,7 @@
 ./train_adadelta_component.py
 ./train_adafactor_component.py
 ./train_adagrad_component.py
+./train_adain_component.py
 ./train_adaln_component.py
 ./train_adam_component.py
 ./train_adamax_component.py
