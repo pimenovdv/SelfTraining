@@ -2432,3 +2432,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the Regret Matching algorithm mathematically in pure NumPy and evaluated it on the Rock-Paper-Scissors game by having two agents play iteratively against each other.
 - **Outcome:** The implementation successfully converged, with the average strategies of both players matching the expected Nash Equilibrium (1/3, 1/3, 1/3), validating the mathematical mechanism of regret-based learning.
 - **Next Steps:** Explore more advanced multi-agent reinforcement learning techniques based on regret, such as Counterfactual Regret Minimization (CFR) for extensive-form games.
+
+### Experiment 0551: C51 (Categorical DQN) Component Training
+- **Hypothesis:** By modeling the full probability distribution of returns using a discrete set of supports (atoms) rather than just the expected value, the C51 algorithm can learn more stable and expressive value representations, mitigating instability in DQN.
+- **Action:** Implemented the C51 algorithm mathematically in pure NumPy, consisting of a categorical projection step for Bellman updates and cross-entropy loss minimization. Evaluated it on a synthetic discrete choice environment.
+- **Outcome:** The implementation successfully reduced the cross-entropy loss and learned the optimal discrete policy for varying state configurations, validating the mathematical formulation of distributional reinforcement learning.
+- **Next Steps:** Evaluate C51 in stochastic environments where learning the return distribution provides a clearer advantage over estimating the mean.
