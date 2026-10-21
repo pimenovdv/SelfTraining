@@ -1,5 +1,6 @@
-# Component: Adain
+# Experiment: AdaIN Component Training
 
+**Script:** `train_adain_component.py`
 **Status:** Success
 
 ## Objective
