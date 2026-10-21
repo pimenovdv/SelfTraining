@@ -45,6 +45,7 @@
 ./train_bpe_component.py
 ./train_brier_score_component.py
 ./train_byol_component.py
+./train_c51_component.py
 ./train_cae_component.py
 ./train_capsule_network_component.py
 ./train_cauchy_loss_component.py

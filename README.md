@@ -2862,3 +2862,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Regret Matching Component
 **Script:** `train_regret_matching_component.py`
 **Description:** Evaluates a Regret Matching component mathematically in pure NumPy, testing its ability to find the Nash Equilibrium in a zero-sum game (Rock-Paper-Scissors) by updating strategies proportionally to the positive accumulated regrets for not having taken other actions in the past.
+
+## Component Testing: Categorical DQN (C51)
+**Script:** `train_c51_component.py`
+**Description:** Evaluates the Categorical Deep Q-Network (C51) component mathematically in pure NumPy, testing its ability to model the full distribution of expected returns over discrete support atoms instead of merely estimating the expected value, which provides richer learning signals and improved stability in reinforcement learning.
