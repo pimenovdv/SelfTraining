@@ -258,6 +258,7 @@ train_lsh_component
 train_lstm_component
 train_ltc_component
 train_lvq_component
+train_maddpg_component
 train_made_component
 train_madgrad_component
 train_mae_component

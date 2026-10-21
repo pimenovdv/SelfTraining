@@ -501,3 +501,4 @@ docs/0544_train_pcn_comparison_component.md
 docs/0545_train_irl_component.md
 docs/0546_train_sammon_mapping_component.md
 docs/0547_train_independent_q_learning_component.md
+docs/0549_train_maddpg_component.md
