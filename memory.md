@@ -2450,3 +2450,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the mathematical formulation of Prioritized Experience Replay (PER) in pure NumPy, utilizing probability normalization $p_i = \frac{p_i^\alpha}{\sum_k p_k^\alpha}$ and IS weight calculation $w_i = \left( \frac{1}{N} \cdot \frac{1}{P(i)} \right)^\beta$. Evaluated on a synthetic buffer containing transitions with distinct errors.
 - **Outcome:** The implementation successfully sampled transitions biased towards higher priority and computed the necessary importance weights, verifying the mathematical mechanism of prioritized replay.
 - **Next Steps:** Evaluate the PER mechanism in an end-to-end DQN training loop to observe accelerated convergence over uniform sampling.
+
+### Experiment 0554: Counterfactual Regret Minimization (CFR) Component Training
+- **Hypothesis:** By iteratively minimizing the counterfactual regret—the regret for not having taken a specific action at an information set, assuming the player played to reach that set—an agent can converge to a Nash equilibrium in extensive-form games with imperfect information, like Kuhn Poker.
+- **Action:** Implemented Counterfactual Regret Minimization mathematically in pure NumPy for Kuhn Poker. The algorithm traverses the game tree, computes counterfactual values for each action, updates cumulative regrets, and derives an average strategy over self-play iterations.
+- **Outcome:** The implementation successfully learned strategies for each information set, achieving an average game value close to the theoretical value of -1/18 for the first player, validating the mathematical mechanism of CFR.
+- **Next Steps:** Explore extending CFR with deep learning (Deep CFR) to scale the algorithm to games with large state spaces without requiring tabular representations.

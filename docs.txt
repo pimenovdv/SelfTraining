@@ -507,3 +507,4 @@
 0551_train_c51_component
 0552_train_qmix_component
 0553_train_per_component
+0554_train_cfr_component

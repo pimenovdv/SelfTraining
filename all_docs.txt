@@ -506,3 +506,4 @@ docs/0549_train_maddpg_component.md
 docs/0550_train_regret_matching_component.md
 docs/0551_train_c51_component.md
 docs/0553_train_per_component.md
+docs/0554_train_cfr_component.md

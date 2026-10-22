@@ -2874,3 +2874,6 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Prioritized Experience Replay (PER)
 **Script:** `train_per_component.py`
 **Description:** Evaluates the Prioritized Experience Replay (PER) component mathematically in pure NumPy, testing its ability to sample replay buffer transitions non-uniformly based on the magnitude of their Temporal Difference (TD) errors, accelerating learning on unexpected transitions while correcting bias via importance sampling.
+
+### Counterfactual Regret Minimization Component
+The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`) implements a regret-matching algorithm for extensive-form games with imperfect information. By iteratively playing the game against itself and minimizing the counterfactual regret for each action at every information set, the algorithm converges to a Nash equilibrium in two-player zero-sum games.
