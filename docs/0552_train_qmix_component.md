@@ -1,0 +1,5 @@
+### Experiment 0552: QMIX Component Training
+- **Hypothesis:** QMIX allows centralized training with decentralized execution for cooperative multi-agent tasks by enforcing a monotonicity constraint on the joint action-value function, which factors the joint value into agent-specific values using hypernetworks that produce strictly positive mixing weights.
+- **Action:** Implemented the QMIX algorithm mathematically in pure NumPy, consisting of individual agent networks and a hypernetwork generating absolute mixing weights, and evaluated its ability to optimize a joint Q-value target.
+- **Outcome:** The implementation successfully learned to match the target Q_tot, rapidly reducing the loss to 0.0000, validating the mathematical formulation of monotonic value factorization and hypernetwork gradient flow.
+- **Next Steps:** Evaluate QMIX on a complex cooperative multi-agent environment where agents observe local state rather than global state, to verify decentralized execution capabilities.
