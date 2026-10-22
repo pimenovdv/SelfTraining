@@ -81,6 +81,7 @@
 0081_train_fnet_component
 0082_train_pcn_component
 0083_train_capsule_network_component
+0083_train_pcn_comparison_component
 0084_train_deepsets_component
 0085_train_spectral_normalization_component
 0086_train_weight_normalization_component
@@ -495,6 +496,7 @@
 0538_train_adacos_loss_component
 0539_train_simpo_component
 0540_train_rwkv_component
+0541_train_novograd_component
 0542_train_arcface_loss_component
 0543_train_dueling_dqn_component
 0544_train_pcn_comparison_component
@@ -508,3 +510,4 @@
 0552_train_qmix_component
 0553_train_per_component
 0554_train_cfr_component
+0555_train_her_component
