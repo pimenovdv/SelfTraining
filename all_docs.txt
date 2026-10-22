@@ -82,6 +82,7 @@ docs/0080_train_perceiver_component.md
 docs/0081_train_fnet_component.md
 docs/0082_train_pcn_component.md
 docs/0083_train_capsule_network_component.md
+docs/0083_train_pcn_comparison_component.md
 docs/0084_train_deepsets_component.md
 docs/0085_train_spectral_normalization_component.md
 docs/0086_train_weight_normalization_component.md
@@ -496,14 +497,18 @@ docs/0537_train_supcon_loss_component.md
 docs/0538_train_adacos_loss_component.md
 docs/0539_train_simpo_component.md
 docs/0540_train_rwkv_component.md
+docs/0541_train_novograd_component.md
 docs/0542_train_arcface_loss_component.md
 docs/0543_train_dueling_dqn_component.md
 docs/0544_train_pcn_comparison_component.md
 docs/0545_train_irl_component.md
 docs/0546_train_sammon_mapping_component.md
 docs/0547_train_independent_q_learning_component.md
+docs/0548_train_adain_component.md
 docs/0549_train_maddpg_component.md
 docs/0550_train_regret_matching_component.md
 docs/0551_train_c51_component.md
+docs/0552_train_qmix_component.md
 docs/0553_train_per_component.md
 docs/0554_train_cfr_component.md
+docs/0555_train_her_component.md
