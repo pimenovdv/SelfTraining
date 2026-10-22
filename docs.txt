@@ -506,3 +506,4 @@
 0550_train_regret_matching_component
 0551_train_c51_component
 0552_train_qmix_component
+0553_train_per_component

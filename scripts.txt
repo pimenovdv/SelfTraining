@@ -328,6 +328,7 @@ train_pca_component
 train_pcn_comparison_component
 train_pcn_component
 train_pelu_component
+train_per_component
 train_perceiver_component
 train_perceptron_component
 train_phish_component

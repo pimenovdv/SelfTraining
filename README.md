@@ -2870,3 +2870,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: QMIX (Multi-Agent RL)
 **Script:** `train_qmix_component.py`
 **Description:** Evaluates the QMIX component mathematically in pure NumPy, testing its ability to enable cooperative multi-agent reinforcement learning by estimating a joint action-value function as a monotonic combination of per-agent values using a hypernetwork.
+
+## Component Testing: Prioritized Experience Replay (PER)
+**Script:** `train_per_component.py`
+**Description:** Evaluates the Prioritized Experience Replay (PER) component mathematically in pure NumPy, testing its ability to sample replay buffer transitions non-uniformly based on the magnitude of their Temporal Difference (TD) errors, accelerating learning on unexpected transitions while correcting bias via importance sampling.
