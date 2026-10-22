@@ -2866,3 +2866,7 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 ## Component Testing: Categorical DQN (C51)
 **Script:** `train_c51_component.py`
 **Description:** Evaluates the Categorical Deep Q-Network (C51) component mathematically in pure NumPy, testing its ability to model the full distribution of expected returns over discrete support atoms instead of merely estimating the expected value, which provides richer learning signals and improved stability in reinforcement learning.
+
+## Component Testing: QMIX (Multi-Agent RL)
+**Script:** `train_qmix_component.py`
+**Description:** Evaluates the QMIX component mathematically in pure NumPy, testing its ability to enable cooperative multi-agent reinforcement learning by estimating a joint action-value function as a monotonic combination of per-agent values using a hypernetwork.

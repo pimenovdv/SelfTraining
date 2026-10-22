@@ -349,6 +349,7 @@ train_qda_component.py
 train_qhadam_component.py
 train_qhm_component.py
 train_qlora_component.py
+train_qmix_component
 train_quantile_regression_component.py
 train_quantization_component.py
 train_quick_gelu_component.py

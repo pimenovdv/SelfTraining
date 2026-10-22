@@ -505,3 +505,4 @@
 0549_train_maddpg_component
 0550_train_regret_matching_component
 0551_train_c51_component
+0552_train_qmix_component
