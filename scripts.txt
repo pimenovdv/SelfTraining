@@ -55,6 +55,7 @@ train_cca_component
 train_celu_component
 train_cem_component
 train_center_loss_component
+train_cfr_component
 train_cgan_component
 train_charbonnier_loss_component
 train_chinchilla_optimality_component
