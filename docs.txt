@@ -511,3 +511,4 @@
 0553_train_per_component
 0554_train_cfr_component
 0555_train_her_component
+0556_train_agi_safety_alignment_v2_component

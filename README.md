@@ -2879,3 +2879,8 @@ Weight Update: $\Delta W_i \propto -\frac{\partial E}{\partial W_i} = e_{i+1} \s
 The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`) implements a regret-matching algorithm for extensive-form games with imperfect information. By iteratively playing the game against itself and minimizing the counterfactual regret for each action at every information set, the algorithm converges to a Nash equilibrium in two-player zero-sum games.
 ## Component Testing: Hindsight Experience Replay (HER)
 **Description:** Evaluates a Hindsight Experience Replay (HER) component mathematically in pure NumPy, testing its ability to augment transitions with achieved goals to learn from failures in sparse reward environments.
+
+### Experiment 0556: AGI Safety Alignment V2 (MaxEnt IRL) Component
+- **Objective**: Implement and evaluate Maximum Entropy Inverse Reinforcement Learning on a Gridworld environment mathematically.
+- **Method**: Defined a Gridworld MDP, Soft Value Iteration for policy generation, and state visitation frequency computation to recover the expert reward function via gradient descent matching feature expectations.
+- **Outcome**: The agent successfully learned to recover the reward signal corresponding to the expert's goal state, validating the mechanism for safety and preference alignment without hard-coded rewards.
