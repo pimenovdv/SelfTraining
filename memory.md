@@ -2462,3 +2462,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented Hindsight Experience Replay mathematically in pure NumPy, defining a sparse reward function and generating augmented transitions using a "future" goal strategy.
 - **Outcome:** The implementation successfully demonstrated that HER transitions yield positive reward signals (reward = 0) where the original trajectory yielded only negative rewards (reward = -1), validating the mathematical mechanism of HER.
 - **Next Steps:** Evaluate the HER mechanism in combination with an off-policy RL algorithm (like DDPG or DQN) to observe its effect on learning complex manipulation tasks.
+
+### Experiment 0556: AGI Safety Alignment V2 (MaxEnt IRL) Component
+- **Hypothesis:** By employing Maximum Entropy Inverse Reinforcement Learning (MaxEnt IRL) on a fully defined MDP, an agent can safely recover the underlying reward function of an expert by matching feature expectations, offering a rigorous approach to preference alignment.
+- **Action:** Implemented MaxEnt IRL mathematically in pure NumPy on a 5x5 Gridworld MDP. Calculated Soft Value Iteration and state visitation frequencies to perform gradient descent on the reward weights.
+- **Outcome:** The implementation successfully minimized the gradient norm between the expert and model feature expectations, accurately inferring higher relative rewards for the expert's goal state compared to the starting state, validating the reward recovery mechanism.
+- **Next Steps:** Evaluate MaxEnt IRL in environments with more complex, non-linear feature representations and unknown transition dynamics.

@@ -512,3 +512,4 @@ docs/0552_train_qmix_component.md
 docs/0553_train_per_component.md
 docs/0554_train_cfr_component.md
 docs/0555_train_her_component.md
+docs/0556_train_agi_safety_alignment_v2_component.md
