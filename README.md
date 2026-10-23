@@ -2884,3 +2884,6 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 - **Objective**: Implement and evaluate Maximum Entropy Inverse Reinforcement Learning on a Gridworld environment mathematically.
 - **Method**: Defined a Gridworld MDP, Soft Value Iteration for policy generation, and state visitation frequency computation to recover the expert reward function via gradient descent matching feature expectations.
 - **Outcome**: The agent successfully learned to recover the reward signal corresponding to the expert's goal state, validating the mechanism for safety and preference alignment without hard-coded rewards.
+## Component Testing: Hyperdimensional Computing
+**Script:** train_hyperdimensional_computing_component.py
+**Description:** Evaluates a Hyperdimensional Computing (HDC) component mathematically in pure NumPy, testing its ability to form robust, distributed representations using high-dimensional random hypervectors and operations like binding and bundling for efficient classification.
