@@ -514,3 +514,4 @@
 0556_train_agi_safety_alignment_v2_component
 0557_train_hyperdimensional_computing_component
 0558_train_evolutionary_strategies_component
+0559_train_vicreg_component
