@@ -1,4 +1,3 @@
-0552_train_qmix_component
 docs/0001_train_bpe_component.md
 docs/0002_train_ffn_component.md
 docs/0003_train_attention_component.md
@@ -516,3 +515,4 @@ docs/0556_train_agi_safety_alignment_v2_component.md
 docs/0557_train_hyperdimensional_computing_component.md
 docs/0558_train_evolutionary_strategies_component.md
 docs/0559_train_vicreg_component.md
+docs/0560_train_cql_component.md
