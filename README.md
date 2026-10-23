@@ -2891,3 +2891,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ### Evolutionary Strategies (ES) Component (`train_evolutionary_strategies_component.py`)
 - **Mathematical Formulation:** $\theta \leftarrow \theta + \frac{\alpha}{N \sigma} \sum_{i=1}^N F(\theta + \sigma \epsilon_i) \epsilon_i$
 - **Description:** Explores evolutionary reinforcement learning. Optimizes a policy via random perturbations scaled by rewards.
+
+## Component Testing: VICReg Component
+**Script:** `train_vicreg_component.py`
+**Description:** Evaluates the VICReg (Variance-Invariance-Covariance Regularization) component mathematically in pure NumPy, testing its ability to prevent representation collapse in self-supervised learning without negative samples or asymmetric architectures by explicitly penalizing low variance and correlated features.

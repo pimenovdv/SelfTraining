@@ -120,6 +120,7 @@
 ./train_es_component.py
 ./train_esn_component.py
 ./train_evaluation_metrics_component.py
+./train_evolutionary_strategies_component.py
 ./train_ewc_component.py
 ./train_expected_sarsa_component.py
 ./train_factor_analysis_component.py
@@ -488,6 +489,7 @@
 ./train_vae_component.py
 ./train_value_iter_component.py
 ./train_vib_component.py
+./train_vicreg_component.py
 ./train_vit_component.py
 ./train_vqvae_component.py
 ./train_wae_component.py
@@ -499,5 +501,4 @@
 ./train_xgboost_component.py
 ./train_xpos_component.py
 ./train_yogi_component.py
-train_qmix_component
-./train_evolutionary_strategies_component.py
+./train_qmix_component.py
