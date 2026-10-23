@@ -2895,3 +2895,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: VICReg Component
 **Script:** `train_vicreg_component.py`
 **Description:** Evaluates the VICReg (Variance-Invariance-Covariance Regularization) component mathematically in pure NumPy, testing its ability to prevent representation collapse in self-supervised learning without negative samples or asymmetric architectures by explicitly penalizing low variance and correlated features.
+
+## Component Testing: Conservative Q-Learning (CQL)
+**Script:** `train_cql_component.py`
+**Description:** Evaluates the Conservative Q-Learning (CQL) component mathematically in pure NumPy, testing its ability to mitigate overestimation in offline RL by explicitly penalizing Q-values of out-of-distribution actions while maximizing those in the dataset.

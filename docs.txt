@@ -515,3 +515,4 @@
 0557_train_hyperdimensional_computing_component
 0558_train_evolutionary_strategies_component
 0559_train_vicreg_component
+0560_train_cql_component

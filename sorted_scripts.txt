@@ -72,6 +72,7 @@ train_cosine_embedding_loss_component
 train_cosine_similarity_loss_component
 train_cp_decomposition_component
 train_cpc_component
+train_cql_component
 train_crelu_component
 train_crf_component
 train_cross_attention_component
