@@ -2887,3 +2887,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Hyperdimensional Computing
 **Script:** train_hyperdimensional_computing_component.py
 **Description:** Evaluates a Hyperdimensional Computing (HDC) component mathematically in pure NumPy, testing its ability to form robust, distributed representations using high-dimensional random hypervectors and operations like binding and bundling for efficient classification.
+
+### Evolutionary Strategies (ES) Component (`train_evolutionary_strategies_component.py`)
+- **Mathematical Formulation:** $\theta \leftarrow \theta + \frac{\alpha}{N \sigma} \sum_{i=1}^N F(\theta + \sigma \epsilon_i) \epsilon_i$
+- **Description:** Explores evolutionary reinforcement learning. Optimizes a policy via random perturbations scaled by rewards.

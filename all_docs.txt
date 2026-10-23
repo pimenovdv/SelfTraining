@@ -514,3 +514,4 @@ docs/0554_train_cfr_component.md
 docs/0555_train_her_component.md
 docs/0556_train_agi_safety_alignment_v2_component.md
 docs/0557_train_hyperdimensional_computing_component.md
+docs/0558_train_evolutionary_strategies_component.md

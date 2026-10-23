@@ -500,3 +500,4 @@
 ./train_xpos_component.py
 ./train_yogi_component.py
 train_qmix_component
+./train_evolutionary_strategies_component.py
