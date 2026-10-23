@@ -516,3 +516,4 @@
 0558_train_evolutionary_strategies_component
 0559_train_vicreg_component
 0560_train_cql_component
+0561_train_bam_component

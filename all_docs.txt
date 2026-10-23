@@ -516,3 +516,4 @@ docs/0557_train_hyperdimensional_computing_component.md
 docs/0558_train_evolutionary_strategies_component.md
 docs/0559_train_vicreg_component.md
 docs/0560_train_cql_component.md
+docs/0561_train_bam_component.md
