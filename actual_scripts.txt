@@ -499,3 +499,4 @@ train_xavier_initialization_component.py
 train_xgboost_component.py
 train_xpos_component.py
 train_yogi_component.py
+train_evolutionary_strategies_component.py

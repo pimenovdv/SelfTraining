@@ -100,6 +100,7 @@
 - [x] Explore arithmetic reasoning and systematic generalization mathematically. (Implemented and verified Neural Arithmetic Logic Unit - NALU).
 
 ## Phase 3: Integration and Capability Emergence
+- [x] Explore evolutionary reinforcement learning mathematically. (Implemented and verified Evolutionary Strategies - ES for policy optimization).
 
 - [x] Explore sequence tagging mathematically. (Implemented and verified Conditional Random Field - CRF using the forward-backward algorithm for exact inference).
 

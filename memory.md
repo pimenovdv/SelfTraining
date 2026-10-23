@@ -2480,3 +2480,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Action:** Implemented the QMIX algorithm mathematically in pure NumPy, consisting of individual agent networks and a hypernetwork generating absolute mixing weights, and evaluated its ability to optimize a joint Q-value target.
 - **Outcome:** The implementation successfully learned to match the target Q_tot, rapidly reducing the loss to 0.0000, validating the mathematical formulation of monotonic value factorization and hypernetwork gradient flow.
 - **Next Steps:** Evaluate QMIX on a complex cooperative multi-agent environment where agents observe local state rather than global state, to verify decentralized execution capabilities.
+
+### Experiment 0558: Evolutionary Strategies (ES) Component Training
+- **Hypothesis:** By perturbing a policy's parameters with random noise and updating the parameters in the direction of the perturbations weighted by the resulting episodic returns, Evolutionary Strategies (ES) can optimize non-differentiable reward functions as an alternative to standard reinforcement learning gradients.
+- **Action:** Implemented an Evolutionary Strategies (ES) algorithm mathematically in pure NumPy. Designed a synthetic optimization task where the goal is to maximize a continuous reward landscape, applying standardized rewards to update the population.
+- **Outcome:** The implementation successfully iteratively maximized the reward, starting at -12.2392 and converging to -0.0310 within 150 epochs, validating the mathematical formulation of evolutionary-based gradient estimation.
+- **Next Steps:** Evaluate ES in environments with longer horizons and higher variance to explore scaling behavior and compare against policy gradients.
