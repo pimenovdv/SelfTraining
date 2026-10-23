@@ -2899,3 +2899,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Conservative Q-Learning (CQL)
 **Script:** `train_cql_component.py`
 **Description:** Evaluates the Conservative Q-Learning (CQL) component mathematically in pure NumPy, testing its ability to mitigate overestimation in offline RL by explicitly penalizing Q-values of out-of-distribution actions while maximizing those in the dataset.
+
+## Component Testing: Bidirectional Associative Memory (BAM)
+**Script:** `train_bam_component.py`
+**Description:** Evaluates a Bidirectional Associative Memory (BAM) component mathematically in pure NumPy, testing its ability to store and robustly recall associations between pairs of bipolar patterns bidirectionally.

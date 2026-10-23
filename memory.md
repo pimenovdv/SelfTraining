@@ -2496,3 +2496,6 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 - **Objective:** Evaluate the Conservative Q-Learning (CQL) component mathematically in pure NumPy, testing its ability to mitigate overestimation in offline RL by explicitly penalizing Q-values of out-of-distribution actions.
 - **Method:** We formulated a continuous CQL agent based on Soft Actor-Critic (SAC). The Q-network loss was augmented with a conservative penalty term that minimizes the LogSumExp of Q-values for uniformly sampled actions and maximizes the Q-values for actions present in the dataset.
 - **Outcome:** The agent successfully computed the CQL penalty alongside the standard MSE loss, validating the mechanism for penalizing out-of-distribution actions and maintaining a lower-bound estimate of the Q-function. The implementation successfully converged and correctly calculated the conservative terms.
+
+## Experiment: Bidirectional Associative Memory (BAM)
+Successfully implemented and verified the Bidirectional Associative Memory (BAM) model in pure NumPy. The mathematical verification confirmed that the model is able to correctly recall both X and Y representations bidirectionally and robustly against noise, which contributes to understanding memory mechanisms in AI components.

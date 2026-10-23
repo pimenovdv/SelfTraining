@@ -30,6 +30,7 @@
 ./train_asgd_component.py
 ./train_attention_component.py
 ./train_b_spline_component.py
+./train_bam_component.py
 ./train_barlow_twins_component.py
 ./train_batchnorm_component.py
 ./train_bayesian_linear_regression_component.py
