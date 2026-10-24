@@ -518,3 +518,4 @@ docs/0559_train_vicreg_component.md
 docs/0560_train_cql_component.md
 docs/0561_train_bam_component.md
 docs/0562_train_wavelet_transform_component.md
+docs/0563_train_multi_agent_communication_component.md

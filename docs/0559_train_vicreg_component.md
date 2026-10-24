@@ -1,3 +1,5 @@
+**Script:** `train_vicreg_component.py`
+
 # VICReg Component Testing
 
 ## Objective

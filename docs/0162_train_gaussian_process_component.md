@@ -1,3 +1,5 @@
+**Script:** `train_gaussian_process_component.py`
+
 # Gaussian Process Component
 
 **Status:** Success
