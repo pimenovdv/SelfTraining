@@ -2511,3 +2511,8 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Action:** Implemented a Multi-Agent Communication component mathematically in pure NumPy, pairing a Sender agent (parameterized by a weight matrix) and a Receiver agent. Trained the joint system to minimize Cross-Entropy loss via manual backpropagation.
 - **Outcome:** The implementation successfully converged. The Sender learned an effective encoding strategy, and the Receiver learned a corresponding decoding strategy, driving the classification loss down to near zero (0.0125).
 - **Next Steps:** Evaluate integrating this mechanism into sequential environments (e.g., using RNNs for Sender and Receiver) where agents must communicate over multiple time steps to solve partially observable Markov decision processes (POMDPs).
+
+### Experiment: Hidden Markov Model (HMM) Log-Space Upgrade
+- **Objective:** Improve numerical stability of the HMM training using the log-space forward-backward algorithm and Baum-Welch updates.
+- **Action:** Upgraded `train_hmm_component.py` to use `scipy.special.logsumexp` for computing log-alpha, log-beta, log-gamma, and log-xi variables instead of scaled probabilities.
+- **Outcome:** The model successfully executed and converged to learn the expected parameters while preventing underflow issues.
