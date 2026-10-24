@@ -432,6 +432,7 @@ train_snake_activation_component.py
 train_snn_component.py
 train_soft_exponential_component.py
 train_soft_margin_loss_component.py
+train_soft_q_learning_component.py
 train_softmax_component.py
 train_softmin_component.py
 train_softplus_component.py

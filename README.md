@@ -2908,3 +2908,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 
 **Script:** `train_multi_agent_communication_component.py`
 **Description:** Evaluates a Multi-Agent Communication component mathematically in pure NumPy, testing its ability to learn an emergent continuous communication protocol. A Sender agent learns to encode discrete concepts into continuous message vectors, and a Receiver agent learns to decode them, jointly optimized end-to-end via manual backpropagation on a cooperative classification task.
+
+## Component Testing: Soft Q-Learning
+**Script:** `train_soft_q_learning_component.py`
+**Description:** Evaluates the Soft Q-Learning component mathematically in pure NumPy, testing its ability to learn robust, maximum-entropy policies by explicitly incorporating an entropy regularization term into the Q-learning objective. The soft value function is computed using a numerically stable LogSumExp approximation.

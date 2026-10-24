@@ -2516,3 +2516,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Objective:** Improve numerical stability of the HMM training using the log-space forward-backward algorithm and Baum-Welch updates.
 - **Action:** Upgraded `train_hmm_component.py` to use `scipy.special.logsumexp` for computing log-alpha, log-beta, log-gamma, and log-xi variables instead of scaled probabilities.
 - **Outcome:** The model successfully executed and converged to learn the expected parameters while preventing underflow issues.
+
+### Experiment 0564: Soft Q-Learning Component Training
+- **Hypothesis:** By incorporating an entropy regularization term into the Q-learning objective, an agent can learn robust policies that explore multiple near-optimal paths while converging to the optimal solution in environments with stochasticity or multiple optimal paths.
+- **Action:** Implemented Soft Q-Learning mathematically in pure NumPy, using LogSumExp for numerical stability of the soft value computation and a temperature annealing schedule.
+- **Outcome:** The implementation successfully converged to the optimal path in the GridWorld environment, navigating from the start state (0) to the goal state (15) within 7 steps. The temperature annealing allowed robust exploration initially while exploiting the optimal path later, validating the mathematical mechanism of maximum entropy reinforcement learning.
+- **Next Steps:** Evaluate Soft Q-Learning with continuous state spaces by integrating neural network function approximators (Soft Actor-Critic).
