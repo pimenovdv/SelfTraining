@@ -517,3 +517,4 @@
 0559_train_vicreg_component
 0560_train_cql_component
 0561_train_bam_component
+0562_train_wavelet_transform_component
