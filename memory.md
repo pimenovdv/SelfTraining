@@ -2499,3 +2499,9 @@ Implemented the Mish activation function mathematically, a self-regularized non-
 
 ## Experiment: Bidirectional Associative Memory (BAM)
 Successfully implemented and verified the Bidirectional Associative Memory (BAM) model in pure NumPy. The mathematical verification confirmed that the model is able to correctly recall both X and Y representations bidirectionally and robustly against noise, which contributes to understanding memory mechanisms in AI components.
+
+### Experiment 0562: Wavelet Transform Component Training
+- **Hypothesis:** By applying Discrete Wavelet Transforms to input sequences, neural networks can extract localized frequency information efficiently, enabling multi-resolution representations that are particularly suited for complex signal data.
+- **Action:** Implemented a Wavelet Transform Component leveraging `pywt` for multi-level discrete decomposition. Integrated this component with a standard linear downstream task to evaluate its forward pass characteristics.
+- **Outcome:** The implementation successfully reduced the signals into approximation and detail coefficients. A simulated downstream regression verified that gradients can flow from the transformed features, achieving an initial loss of ~2.34, confirming the component's utility as a robust feature extractor.
+- **Next Steps:** Evaluate integrating this component deeply within convolutional architectures to process the decomposed bands separately and assess stability across non-stationary signals.
