@@ -2903,3 +2903,8 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Bidirectional Associative Memory (BAM)
 **Script:** `train_bam_component.py`
 **Description:** Evaluates a Bidirectional Associative Memory (BAM) component mathematically in pure NumPy, testing its ability to store and robustly recall associations between pairs of bipolar patterns bidirectionally.
+
+## Component Testing: Multi-Agent Communication
+
+**Script:** `train_multi_agent_communication_component.py`
+**Description:** Evaluates a Multi-Agent Communication component mathematically in pure NumPy, testing its ability to learn an emergent continuous communication protocol. A Sender agent learns to encode discrete concepts into continuous message vectors, and a Receiver agent learns to decode them, jointly optimized end-to-end via manual backpropagation on a cooperative classification task.

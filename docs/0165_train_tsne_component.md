@@ -1,3 +1,5 @@
+**Script:** `train_tsne_component.py`
+
 # t-SNE Component
 
 **Status:** Success

@@ -1,3 +1,5 @@
+**Script:** `train_bayesian_optimization_component.py`
+
 # Bayesian Optimization Component
 
 ## Objective

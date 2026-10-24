@@ -1,3 +1,5 @@
+**Script:** `train_dictionary_learning_component.py`
+
 # Dictionary Learning Component
 
 **Status:** Success

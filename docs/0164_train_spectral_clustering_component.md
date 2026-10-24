@@ -1,3 +1,5 @@
+**Script:** `train_spectral_clustering_component.py`
+
 # Spectral Clustering Component
 
 **Status:** Success

@@ -1,3 +1,5 @@
+**Script:** `train_hmm_component.py`
+
 # Hidden Markov Model Component
 
 ## Objective

@@ -518,3 +518,4 @@
 0560_train_cql_component
 0561_train_bam_component
 0562_train_wavelet_transform_component
+0563_train_multi_agent_communication_component

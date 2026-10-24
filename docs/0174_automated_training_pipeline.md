@@ -1,3 +1,5 @@
+**Script:** `automated_training_pipeline.py`
+
 # Experiment: Automated Training Pipeline
 
 **Script:** `automate_pipeline.py`
