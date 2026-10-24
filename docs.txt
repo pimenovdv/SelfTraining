@@ -520,3 +520,4 @@
 0562_train_wavelet_transform_component
 0563_train_multi_agent_communication_component
 0564_train_soft_q_learning_component
+0565_train_gail_component

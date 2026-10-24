@@ -143,6 +143,7 @@ train_ftrl_component.py
 train_full_encoder_decoder_component.py
 train_fuzzy_c_means_component.py
 train_gae_component.py
+train_gail_component.py
 train_gan_component.py
 train_gat_component.py
 train_gaussian_activation_component.py
