@@ -334,6 +334,7 @@ train_omp_component
 train_ood_detection_component
 train_operational_control_transition_component
 train_optics_component
+train_optnet_component
 train_orpo_component
 train_orthogonal_rnn_component
 train_pagerank_component
