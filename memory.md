@@ -2528,3 +2528,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Action:** Implemented Generative Adversarial Imitation Learning (GAIL) mathematically in pure NumPy. Formulated a 2-layer MLP Discriminator and a Linear Policy. The policy was trained using differentiable gradients backpropagated through the discriminator, and exploration noise was added during discriminator training to expand the state-action support.
 - **Outcome:** The implementation successfully converged. The discriminator loss stabilized, and the policy learned to accurately match the expert weights, reducing the policy weight error from 0.98 to near zero (0.0103) over 4000 epochs. This confirms that the adversarial objective successfully guides the policy to imitate the expert behavior.
 - **Next Steps:** Evaluate GAIL on continuous control environments with more complex dynamics and larger neural network policies to assess its scalability and robustness in recovering multi-modal expert behaviors.
+
+### Experiment 0566: Dyna-Q Component Training
+- **Hypothesis:** By combining direct reinforcement learning (Q-learning) with model-based planning using simulated experiences from an internal model, Dyna-Q can achieve significantly higher sample efficiency and faster convergence than standard model-free methods.
+- **Action:** Implemented the Dyna-Q algorithm mathematically in pure NumPy, maintaining a deterministic dictionary model of observed transitions and performing planning steps per real interaction.
+- **Outcome:** The implementation successfully learned an optimal policy, rapidly propagating value estimates back to the start state, validating the mathematical mechanism of integrated learning and planning.
+- **Next Steps:** Evaluate Dyna-Q with priority sweeping to focus planning updates on states with the largest prediction errors.

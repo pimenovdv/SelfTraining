@@ -108,6 +108,7 @@ train_dqn_component
 train_dropconnect_component
 train_dropout_component
 train_dueling_dqn_component
+train_dyna_q_component
 train_ebm_component
 train_echo_state_network_component
 train_elastic_net_component
