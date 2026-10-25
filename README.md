@@ -2912,3 +2912,6 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Soft Q-Learning
 **Script:** `train_soft_q_learning_component.py`
 **Description:** Evaluates the Soft Q-Learning component mathematically in pure NumPy, testing its ability to learn robust, maximum-entropy policies by explicitly incorporating an entropy regularization term into the Q-learning objective. The soft value function is computed using a numerically stable LogSumExp approximation.
+
+- **Natural Gradient Descent (NGD)**: `train_natural_gradient_descent_component.py`
+  - Explored natural gradient methods mathematically. Implemented and verified NGD modifying Euclidean gradients via the Fisher Information Matrix (FIM), enabling invariant parameterization and faster convergence on ill-conditioned data.

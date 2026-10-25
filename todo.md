@@ -11,6 +11,7 @@
 - [x] Establish rigorous evaluation metrics for component performance.
 
 ## Phase 2: Component Engineering and Optimization
+- [x] Explore natural gradient methods mathematically. (Implemented and verified Natural Gradient Descent - NGD modifying Euclidean gradients via Fisher Information Matrix).
 - [x] Explore CutMix augmentation mathematically. (Implemented and verified CutMix spatial combination technique).
 - [x] Explore dynamic computation depth and ponder mechanisms mathematically. (Implemented and verified Adaptive Computation Time - ACT).
 - [x] Explore masked autoencoding for self-supervised representation learning mathematically. (Implemented and verified Masked Autoencoder - MAE with asymmetric encoder-decoder).

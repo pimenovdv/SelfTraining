@@ -525,3 +525,4 @@ docs/0566_train_dyna_q_component.md
 docs/0567_train_conjugate_gradient_component.md
 docs/0568_train_levenberg_marquardt_component.md
 docs/0569_train_nystrom_component.md
+docs/0570_train_natural_gradient_descent_component.md

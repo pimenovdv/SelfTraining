@@ -311,6 +311,7 @@ train_nadaraya_watson_component.py
 train_nade_component.py
 train_naive_bayes_component.py
 train_nalu_component.py
+train_natural_gradient_descent_component.py
 train_nca_component.py
 train_nce_component.py
 train_ncf_component.py
