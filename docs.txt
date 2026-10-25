@@ -524,3 +524,4 @@
 0566_train_dyna_q_component
 0567_train_conjugate_gradient_component
 0568_train_levenberg_marquardt_component
+0569_train_nystrom_component

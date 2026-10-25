@@ -327,6 +327,7 @@ train_npair_loss_component
 train_nt_xent_loss_component
 train_ntk_component
 train_ntm_component
+train_nystrom_component
 train_oja_rule_component
 train_omp_component
 train_ood_detection_component
