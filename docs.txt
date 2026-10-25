@@ -522,3 +522,4 @@
 0564_train_soft_q_learning_component
 0565_train_gail_component
 0566_train_dyna_q_component
+0567_train_conjugate_gradient_component

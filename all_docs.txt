@@ -522,3 +522,4 @@ docs/0563_train_multi_agent_communication_component.md
 docs/0564_train_soft_q_learning_component.md
 docs/0565_train_gail_component.md
 docs/0566_train_dyna_q_component.md
+docs/0567_train_conjugate_gradient_component.md

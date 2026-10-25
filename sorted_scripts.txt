@@ -66,6 +66,7 @@ train_cmaes_component
 train_cnf_component
 train_cnn_component
 train_cnp_component
+train_conjugate_gradient_component
 train_continuous_hopfield_component
 train_contrastive_component
 train_contrastive_loss_component
