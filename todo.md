@@ -1,15 +1,12 @@
 # AGI/ASI Roadmap & To-Do
 
 *This document outlines the strategic roadmap for achieving Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI). The plan progresses from fundamental mathematical research to large-scale system integration.*
-
 ## Phase 1: Foundations and Mathematical Modeling (Current)
 - [x] Explore unitary parameterization for recurrent architectures mathematically. (Implemented and verified Unitary RNN Component using complex-valued QR decomposition).
-
 - [x] Define the core theoretical framework for intelligence modeling.
 - [x] Investigate and mathematically formalize memory and reasoning structures. (Verified FFN for reasoning structures, implemented Self-Attention, Multi-Head Attention, Layer Normalization, Masked Attention, Cross-Attention, sequential RNN state memory, GRU gating mechanisms, LSTM cell states and gating mechanisms, continuous State Space Model (SSM) discretizations, Hopfield Network associative memory, and End-To-End Memory Network).
 - [x] Design and conduct initial small-scale experiments to test architectural hypotheses.
 - [x] Establish rigorous evaluation metrics for component performance.
-
 ## Phase 2: Component Engineering and Optimization
 - [x] Explore natural gradient methods mathematically. (Implemented and verified Natural Gradient Descent - NGD modifying Euclidean gradients via Fisher Information Matrix).
 - [x] Explore CutMix augmentation mathematically. (Implemented and verified CutMix spatial combination technique).
@@ -40,7 +37,6 @@
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Spectral Normalization using power iteration for Lipschitz continuity, and Weight Normalization for decoupling weight length from direction).
 - [x] Investigate generalization dynamics (Grokking) and structural representation learning mathematically. (Implemented Grokking MLP for modular arithmetic to observe memorization vs generalization phases).
 - [x] Explore decoupled neural updates mathematically. (Implemented and verified Decoupled Neural Interfaces (DNI) with Synthetic Gradients).
-
 - [x] Explore and implement generative models mathematically. (Implemented and verified Denoising Diffusion Probabilistic Model (DDPM) reverse process).
 - [x] Explore and implement discrete generative representation models mathematically. (Implemented and verified VQ-VAE with Straight-Through Estimator).
 - [x] Explore and implement adversarial generative models mathematically. (Implemented and verified Generative Adversarial Network - GAN).
@@ -48,9 +44,7 @@
 - [x] Explore and implement continuous energy-based generative models mathematically. (Implemented and verified Energy-Based Model - EBM using Langevin Dynamics).
 - [x] Explore and implement autoregressive generative models mathematically. (Implemented and verified Neural Autoregressive Distribution Estimator - NADE).
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Linear Attention using ELU+1 feature map to reduce $O(N^2)$ complexity to $O(N)$).
-
 - [x] Develop optimized implementations of successful theoretical models. (Implemented Retention mechanism bridging Transformer parallelization with RNN $O(1)$ recurrent inference).
-
 - [x] Develop optimized implementations of successful theoretical models. (Implemented RMSNorm as an optimized alternative to LayerNorm, SwiGLU for enhanced capacity, RoPE for enhanced positional embeddings, Mixture of Experts for specialized routing, Grouped-Query Attention for optimized attention scaling, ALiBi for positional bias injection, AdamW optimizer for accelerated convergence, QAT for memory optimization, and Kolmogorov-Arnold Networks (KAN) for edge-based activation learning).
 - [x] Investigate mechanistic interpretability of representations. (Implemented Sparse Autoencoder (SAE) to extract disentangled, sparse features from dense representations).
 - [x] Develop memory-efficient continuous architectures. (Implemented Reversible Residual Networks (RevNet) to allow $O(1)$ memory backpropagation).
@@ -85,38 +79,23 @@
 - [x] Explore non-contrastive self-supervised learning with cross-correlation mathematically. (Implemented and verified Barlow Twins component).
 - [x] Automate the pipeline for training, evaluation, and documentation generation.
 - [x] Implement and evaluate Soft Actor-Critic (SAC) component mathematically.
-
 - [x] Explore self-organizing pattern generation mathematically. (Implemented and verified Neural Cellular Automata (NCA) growing a pattern from a seed).
-
 - [x] Explore continuous normalizing flows via vector field regression mathematically. (Implemented and verified Flow Matching).
 - [x] Explore Vision Transformer tokenization mathematically. (Implemented and verified Vision Transformer - ViT parsing images as patches and processing via self-attention).
-
 - [x] Explore unsupervised representation learning for non-Gaussian signals mathematically. (Implemented and verified Independent Component Analysis - ICA using FastICA algorithm).
 - [x] Explore non-contrastive self-supervised learning with momentum networks mathematically. (Implemented and verified Bootstrap Your Own Latent - BYOL component).
-
 - [x] Explore predictive representation architectures mathematically. (Implemented and verified Joint Embedding Predictive Architecture - JEPA).
-
 - [x] Explore adversarial robustness mathematically. (Implemented and verified Fast Gradient Sign Method - FGSM to generate adversarial examples and train robust models).
-
 - [x] Explore arithmetic reasoning and systematic generalization mathematically. (Implemented and verified Neural Arithmetic Logic Unit - NALU).
-
 ## Phase 3: Integration and Capability Emergence
 - [x] Explore evolutionary reinforcement learning mathematically. (Implemented and verified Evolutionary Strategies - ES for policy optimization).
-
 - [x] Explore sequence tagging mathematically. (Implemented and verified Conditional Random Field - CRF using the forward-backward algorithm for exact inference).
-
 - [x] Explore advanced gradient-free optimization strategies mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy - CMA-ES).
-
 - [x] Explore pointer mechanisms for sequence tasks mathematically. (Implemented and verified Pointer Network for predicting sequence order via input attention).
-
 - [x] Explore unsupervised clustering mathematically. (Implemented and verified K-Means clustering algorithm, and extended to soft assignments via Gaussian Mixture Models - GMM).
-
 - [x] Explore network pruning and sparse subnetworks mathematically (Lottery Ticket Hypothesis). (Implemented and verified Iterative Magnitude Pruning - IMP).
-
 - [x] Explore continuous deterministic policy gradients mathematically. (Implemented and verified Deep Deterministic Policy Gradient - DDPG component for continuous action spaces).
-
 - [x] Explore biologically plausible credit assignment mathematically. (Implemented and verified Difference Target Propagation - DTP using local inverse models).
-
 - [x] Integrate optimized components into unified architectures. (Implemented and verified single Transformer Block, Decoder Block combining components, and a full end-to-end Encoder-Decoder architecture).
 - [x] Develop mathematical models for preference alignment and safety. (Implemented and verified Direct Preference Optimization - DPO).
 - [x] Explore continual learning and mitigate catastrophic forgetting mathematically. (Implemented and verified Elastic Weight Consolidation (EWC) using the Fisher Information Matrix to anchor parameters across sequential tasks).
@@ -134,31 +113,22 @@
 - [x] Train medium-scale models to observe emergent capabilities. (Implemented and verified training a medium-scale MLP on a 10-bit parity task).
 - [x] Analyze failure modes, alignment issues, and out-of-distribution generalization. (Implemented and verified Out-of-Distribution Detection via Mahalanobis Distance for generalization analysis).
 - [x] Refine the architecture based on empirical results from integrated systems. (Implemented and verified Neural Architecture Search (NAS) for automated architecture refinement).
-
 - [x] Explore more advanced clustering techniques such as Density-Based Spatial Clustering (DBSCAN) or spectral clustering for non-convex shapes. (Implemented and verified DBSCAN and Spectral Clustering mathematically clustering non-convex two-moons data).
 - [x] Explore non-negative representation learning mathematically. (Implemented and verified Non-negative Matrix Factorization - NMF using multiplicative update rules).
 - [x] Explore structure-preserving dimensionality reduction mathematically. (Implemented and verified t-Distributed Stochastic Neighbor Embedding - t-SNE using Student-t distribution and KL divergence minimization).
-
 - [x] Explore non-parametric probabilistic modeling mathematically. (Implemented and verified Gaussian Process Regression - GPR providing exact inference and predictive uncertainties via RBF kernel).
-
 ## Phase 4: Scaling to AGI
-
 - [x] Secure infrastructure for large-scale training. (Implemented and verified Distributed Infrastructure Component simulating Ring All-Reduce mathematically).
 - [x] Apply empirical scaling laws to project resource requirements for AGI-level performance. (Implemented and verified Scaling Law Projection mathematically).
 - [x] Train a unified model on multi-modal, diverse data streams. (Implemented and verified Multimodal Component training using CLIP-like contrastive loss mathematically).
 - [x] Conduct rigorous safety and alignment testing on the general model. (Implemented and verified Safety Alignment Component via constrained optimization mathematically).
-
 ## Phase 5: Transition to ASI
 - [x] Explore structured sequential modeling mathematically. (Implemented and verified Hidden Markov Model - HMM).
-
 - [x] Implement self-improvement and self-correction loops within the AGI architecture. (Implemented and verified Self-Correction Component using a learned critic to guide actor updates).
 - [x] Monitor capability takeoff and ensure alignment mechanisms hold under recursive self-improvement. (Implemented and verified Recursive Self Improvement Component mathematically).
 - [x] Transition operational control to the aligned ASI system. (Implemented and verified Operational Control Transition Component mathematically).
-
 - [x] Explore state estimation and linear quadratic Gaussian control mathematically. (Implemented and verified Kalman Filter estimating hidden states from noisy observations recursively).
 - [x] Explore Bayesian Optimization mathematically. (Implemented and verified Bayesian Optimization component using Gaussian Process and Expected Improvement).
-
-
 - [x] Explore dictionary learning and sparse coding mathematically. (Implemented and verified Dictionary Learning with FISTA for sparse representations).
 - [x] Explore Particle Swarm Optimization mathematically. (Implemented and verified Particle Swarm Optimization - PSO component optimizing non-convex functions).
 - [x] Explore Simulated Annealing mathematically. (Implemented and verified Simulated Annealing for function minimization)
@@ -169,7 +139,6 @@
 - [x] Explore supervised dimensionality reduction mathematically. (Implemented and verified Linear Discriminant Analysis - LDA finding axes that maximize class separation).
 - [x] Explore non-parametric classification mathematically. (Implemented and verified K-Nearest Neighbors - KNN classifying based on majority vote of nearest neighbors).
 - [x] Explore probabilistic classification mathematically. (Implemented and verified Gaussian Naive Bayes using Bayes' theorem with conditional independence assumption).
-
 - [x] Explore linear classification mathematically. (Implemented and verified Logistic Regression with binary cross-entropy and gradient descent).
 - [x] Explore non-parametric decision models mathematically. (Implemented and verified Decision Tree classifier splitting on Gini impurity).
 - [x] Explore ensemble learning mathematically. (Implemented and verified Random Forest using bootstrap aggregation and random feature subsets).
@@ -178,13 +147,11 @@
 - [x] Explore gradient boosting mathematically. (Implemented and verified Gradient Boosting Regressor using decision stumps on a noisy sine wave).
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Ridge Regression with L2 penalty).
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Lasso Regression with L1 penalty).
-
 - [x] Explore regularized linear regression mathematically. (Implemented and verified Elastic Net combining L1 and L2 penalties).
 - [x] Explore ensemble regression mathematically. (Implemented and verified Random Forest Regression reducing variance on non-linear data).
 - [x] Explore advanced gradient boosting regression mathematically. (Implemented and verified XGBoost Regressor using second-order approximation).
 - [x] Explore robust regression mathematically. (Implemented and verified Support Vector Regression using subgradient descent and epsilon-insensitive loss).
 - [x] Explore probabilistic regression mathematically. (Implemented and verified Bayesian Linear Regression computing full posterior distributions over weights).
-
 - [x] Explore hierarchical decision-making mathematically. (Implement and verify Hierarchical Reinforcement Learning - HRL).
 - [x] Explore classical multidimensional scaling mathematically. (Implemented and verified Multidimensional Scaling - MDS preserving pairwise distances).
 - [x] Explore nonlinear dimensionality reduction mathematically. (Implemented and verified Locally Linear Embedding - LLE preserving local neighborhoods).
@@ -192,37 +159,28 @@
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA using an RBF kernel).
 - [x] Explore Canonical Correlation Analysis mathematically. (Implemented and verified Canonical Correlation Analysis - CCA finding linear projections that maximize cross-covariance).
 - [x] Explore representation learning via subwords mathematically. (Implemented and verified FastText).
-
 - [x] Explore hierarchical clustering mathematically. (Implemented and verified Agglomerative Clustering using single linkage to merge clusters bottom-up).
 - [x] Explore centroid-based clustering mathematically. (Implemented and verified Mean Shift clustering iteratively updating centroids using a Gaussian RBF kernel).
 - [x] Explore medoid-based clustering mathematically. (Implemented and verified K-Medoids clustering algorithm in pure NumPy, minimizing intra-cluster distances to actual data points).
 - [x] Explore semi-supervised learning mathematically. (Implemented and verified Label Propagation using an RBF affinity graph to propagate labels).
-
 - [x] Explore anomaly detection mathematically. (Implemented and verified Isolation Forest isolating anomalies via random feature splitting and path lengths).
-
 - [x] Explore generative models with conditional priors mathematically. (Implemented and verified Conditional Variational Autoencoder - CVAE with conditional generation).
 - [x] Explore latent variable modeling mathematically. (Implemented and verified Factor Analysis using the Expectation-Maximization algorithm).
 - [x] Explore probabilistic continuous dimensionality reduction mathematically. (Implemented and verified Probabilistic PCA using EM).
 - [x] Explore partial least squares mathematically. (Implemented and verified Partial Least Squares - PLS Regression finding latent variables modeling covariance between independent and dependent variables).
-
 - [x] Explore quadratic classification mathematically. (Implemented and verified Quadratic Discriminant Analysis - QDA finding class-specific covariances for classification).
-
 - [x] Explore non-parametric probabilistic density estimation mathematically. (Implemented and verified Kernel Density Estimation - KDE estimating probability density function using a Gaussian kernel).
 - [x] Explore temporal feature extraction mathematically. (Implemented and verified Slow Feature Analysis - SFA extracting slowly varying features from a rapidly varying signal).
 - [x] Explore Deep Belief Networks mathematically. (Implemented and verified Deep Belief Networks using stacked RBMs greedily trained layer-by-layer with CD-1).
-
 - [x] Explore exploration-exploitation trade-offs mathematically. (Implemented and verified Upper Confidence Bound (UCB) for multi-armed bandits).
 - [x] Explore maximally expressive graph neural networks mathematically. (Implemented and verified Graph Isomorphism Network (GIN) layer).
 - [x] Explore soft clustering techniques mathematically. (Implemented and verified Fuzzy C-Means clustering).
-
 - [x] Explore non-linear regularized regression mathematically. (Implemented and verified Kernel Ridge Regression learning non-linear relationships using the dual formulation and RBF kernel).
-
 - [x] Explore density-based outlier detection mathematically. (Implemented and verified Local Outlier Factor identifying anomalies by comparing local densities).
 - [x] Explore contractive representation learning mathematically. (Implemented and verified Contractive Autoencoder - CAE).
 - [x] Explore structural representation learning mathematically with GraphSAGE. (Implemented and verified GraphSAGE).
 - [x] Explore state estimation and non-linear tracking mathematically. (Implemented and verified Particle Filter using Sequential Monte Carlo).
 - [x] Explore Markov Decision Processes mathematically. (Implement Value Iteration and Policy Iteration). (Implemented and verified Value Iteration and Policy Iteration finding optimal policies via Bellman equations).
-
 - [x] Explore sparse principal component analysis mathematically. (Implemented and verified Sparse PCA using L1-regularized power iteration).
 - [x] Explore tensor decomposition mathematically. (Implemented and verified CP Decomposition via simulated Alternating Least Squares).
 - [x] Explore tensor decomposition mathematically. (Implemented and verified Tucker Decomposition via simulated Higher-Order Orthogonal Iteration).
@@ -242,7 +200,6 @@
 - [x] Explore Differentiable Neural Computers mathematically. (Implemented and verified DNC learning to store and retrieve representations from memory.)
 - [x] Explore NEAT algorithm mathematically. (Implemented and verified NeuroEvolution of Augmenting Topologies.)
 - [x] Explore CMA-ES algorithm mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy.)
-
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Kernel PCA finding non-linear principal components using the kernel trick).
 - [x] Explore contextual multi-armed bandits mathematically. (Implemented and verified LinUCB for contextual bandit problems).
 - [x] Explore collaborative filtering mathematically. (Implemented and verified Matrix Factorization using Stochastic Gradient Descent).
@@ -251,7 +208,6 @@
 - [x] Explore message-passing clustering mathematically. (Implemented and verified Affinity Propagation clustering).
 - [x] Explore topic modeling mathematically using Latent Dirichlet Allocation (LDA) via Gibbs Sampling. (Implemented and verified LDA Topic Model).
 - [x] Explore self-supervised learning mathematically. (Implemented and verified SimCLR for contrastive representation learning).
-
 - [x] Explore reservoir computing mathematically. (Implemented and verified Echo State Network using a sparse, randomly connected reservoir with a trained linear readout).
 - [x] Explore associative memory mathematically. (Implemented and verified Hopfield Network learning pattern representations via Hebbian learning and recalling them through asynchronous updates).
 - [x] Explore pairwise feature interactions mathematically. (Implemented and verified Factorization Machine for collaborative filtering, modeling sparse data using latent vectors for feature interactions).
@@ -262,22 +218,17 @@
 - [x] Explore sparse coding mathematically. (Implemented and verified Sparse Coding finding sparse representations via ISTA-like gradient descent).
 - [x] Explore sparse low-rank decomposition mathematically. (Implemented and verified Robust PCA using ADMM).
 - [x] Explore locality sensitive hashing mathematically. (Implemented and verified Locality Sensitive Hashing - LSH using Random Projections for cosine similarity).
-
 - [x] Implement and verify `train_bayesian_ridge_component.py`
 - [x] Explore first-order meta-learning algorithm mathematically. (Implemented and verified Reptile algorithm for few-shot learning).
 - [x] Explore generative adversarial networks with conditions mathematically. (Implemented and verified Conditional Generative Adversarial Network - CGAN).
-
 - [x] Implement and verify train_fourier_neural_operator_component.py
 - [x] Explore non-linear regression using piecewise polynomials mathematically. (Implemented and verified Spline Regression using cubic basis functions).
 - [x] Explore non-linear relationships using polynomial expansion mathematically. (Implemented and verified Polynomial Regression).
-
 - [x] Implement and test Singular Value Decomposition (SVD) component.
-
 - [x] Implement and test Orthogonal Matching Pursuit (OMP) component.
 - [x] Implement and test Locality Preserving Projections (LPP) component.
 - [x] Implement and test Relevance Vector Machine (RVM) component.
 - [x] Explore prototype-based classification mathematically. (Implemented and verified Learning Vector Quantization - LVQ finding class prototypes).
-
 - [x] Explore non-parametric regression mathematically. (Implemented and verified Nadaraya-Watson Kernel Regression predicting continuous targets using distance-weighted averaging).
 - [x] Implement and verify `train_bayesian_network_component.py`
 - [x] Explore structural representation learning mathematically. (Implemented and verified Graph Autoencoder - GAE reconstructing adjacency matrix).
@@ -289,7 +240,6 @@
 - [x] Explore Radial Basis Function Networks mathematically. (Implemented and verified RBF Network).
 - [x] Explore generalized linear models for count data mathematically. (Implemented and verified Poisson Regression).
 - [x] Explore Hebbian Learning mathematically. (Implemented and verified Oja's Rule finding principal components).
-
 - [x] Explore learnable piecewise linear activations mathematically. (Implemented and verified Maxout Network).
 - [x] Explore agglomerative clustering mathematically. (Implemented and verified Hierarchical Clustering using single linkage to merge clusters based on minimum inter-cluster distances).
 - [x] Explore continuous normalizing flow for generative modeling mathematically. (Implemented and verified Continuous Normalizing Flow - CNF).
@@ -320,7 +270,6 @@
 - [x] Explore handling class imbalance mathematically. (Implemented and verified Focal Loss component).
 - [x] Explore distribution metrics mathematically. (Implemented and verified Kullback-Leibler Divergence for measuring relative entropy).
 - [x] Explore per-sample per-channel normalization mathematically. (Implemented and verified Instance Normalization).
-
 - [x] Explore structural representation learning on graphs mathematically. (Implemented and verified Node2Vec for learning node embeddings via random walks and skip-gram).
 - [x] Explore manifold learning mathematically. (Implemented and verified UMAP for non-linear dimensionality reduction).
 - [x] Explore group-based channel normalization mathematically. (Implemented and verified Group Normalization).
@@ -340,7 +289,6 @@
 - [x] Explore fixing Adam convergence issues mathematically. (Implemented and verified AMSGrad Optimizer component).
 - [x] Explore Bayesian deep learning mathematically. (Implemented and verified Stochastic Gradient Langevin Dynamics - SGLD for posterior sampling via noisy gradients).
 - [x] Explore cosine similarity mathematically. (Implemented and verified Cosine Similarity Loss calculating directional alignment).
-
 - [x] Explore preference alignment mathematically. (Implemented and verified Identity Preference Optimization - IPO).
 - [x] Explore pairwise ranking optimization mathematically. (Implemented and verified Margin Ranking Loss).
 - [x] Explore metric learning mathematically. (Implemented and verified Contrastive Loss).
@@ -352,8 +300,8 @@
 - [x] Explore self-supervised contrastive loss mathematically. (Implemented and verified NT-Xent Loss component).
 - [x] Explore adaptive cosine-based softmax losses mathematically. (Implemented and verified AdaCos Loss component).
 - [x] Explore linear attention alternatives mathematically. (Implemented and verified RWKV Component replacing standard self-attention with linear-time exponential decay mechanism).
-
 - [x] Explore robust reward recovery for alignment mathematically. (Implemented and verified Inverse Reinforcement Learning - IRL mapping expert feature expectations to reward structures).
 - [x] Explore robust reward recovery for alignment mathematically. (Implemented and verified Generative Adversarial Imitation Learning - GAIL matching expert state-action distributions).
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Sammon Mapping component).
 - [x] Explore bidirectional associative memory mathematically. (Implemented and verified BAM for bidirectional pattern recall).
+- [x] Explore differentiable optimization problems as layers mathematically. (Implemented and verified OptNet component).

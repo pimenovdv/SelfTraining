@@ -2550,3 +2550,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Conclusion**: The Levenberg-Marquardt component acts as a robust and efficient non-linear least squares solver and is verified for usage.
 - **0569_train_nystrom_component.md**: Implemented and verified the Nyström Method mathematically. Nyström provides an efficient approximation of the kernel matrix, reducing the computational complexity of kernel methods from $O(N^3)$ to $O(N m^2)$.
 *   **0570\_train\_natural\_gradient\_descent\_component**: Explored natural gradient methods mathematically. Implemented and verified Natural Gradient Descent (NGD) which modifies Euclidean gradients using the inverse of the Fisher Information Matrix (FIM) to optimize over the Riemannian manifold of probability distributions. Verified its invariance to feature scaling and faster convergence on ill-conditioned data compared to standard Gradient Descent.
+
+### Experiment 0571: OptNet Component Training
+- **Hypothesis:** By embedding differentiable quadratic programming solvers within neural networks using the implicit function theorem on KKT conditions, a network can learn constrained representations and optimization structures directly end-to-end.
+- **Action:** Implemented the OptNet backward pass mathematically in pure NumPy for equality-constrained quadratic programming. Verified the analytical gradients derived from the KKT matrix against finite-difference gradients.
+- **Outcome:** The implementation successfully computed the exact implicit gradients. The error between the analytical gradients and finite difference approximations was ~6e-05, well within tolerance, proving the validity of backpropagating through the optimization problem.
+- **Next Steps:** Evaluate integrating OptNet into policy networks for reinforcement learning to strictly enforce safety constraints on action outputs.
