@@ -305,3 +305,4 @@
 - [x] Explore non-linear dimensionality reduction mathematically. (Implemented and verified Sammon Mapping component).
 - [x] Explore bidirectional associative memory mathematically. (Implemented and verified BAM for bidirectional pattern recall).
 - [x] Explore differentiable optimization problems as layers mathematically. (Implemented and verified OptNet component).
+- [x] Explore adversarial multi-armed bandits mathematically. (Implemented and verified EXP3 algorithm).

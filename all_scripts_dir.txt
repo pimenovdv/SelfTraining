@@ -126,6 +126,7 @@
 ./train_evaluation_metrics_component.py
 ./train_evolutionary_strategies_component.py
 ./train_ewc_component.py
+./train_exp3_component.py
 ./train_expected_sarsa_component.py
 ./train_factor_analysis_component.py
 ./train_factorization_machine_component.py
