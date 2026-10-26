@@ -532,3 +532,4 @@ docs/0573_train_exp3_component.md
 docs/0574_train_nnls_component.md
 docs/0575_train_als_component.md
 docs/0576_train_restricted_boltzmann_machine_component.md
+docs/0577_train_svgd_component.md

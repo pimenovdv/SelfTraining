@@ -472,6 +472,7 @@
 ./train_stdp_component.py
 ./train_supcon_loss_component.py
 ./train_svd_component.py
+./train_svgd_component.py
 ./train_svm_component.py
 ./train_svr_component.py
 ./train_svrg_component.py
