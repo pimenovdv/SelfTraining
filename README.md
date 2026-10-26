@@ -2919,3 +2919,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: One-Class SVM
 **Script:** `train_one_class_svm_component.py`
 **Description:** Evaluates the One-Class SVM component mathematically in pure NumPy, testing its ability to perform semi-supervised outlier detection by mapping normal data to a high-dimensional feature space via an RBF kernel and bounding it closely, thereby isolating anomalies.
+
+## Component Testing: Alternating Least Squares (ALS)
+**Script:** `train_als_component.py`
+**Description:** Evaluates the Alternating Least Squares (ALS) component mathematically in pure NumPy, testing its ability to perform collaborative filtering and matrix factorization by iteratively alternating between fixing user features to optimize item features and vice versa.

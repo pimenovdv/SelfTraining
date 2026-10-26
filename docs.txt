@@ -530,3 +530,4 @@
 0572_train_one_class_svm_component
 0573_train_exp3_component
 0574_train_nnls_component
+0575_train_als_component

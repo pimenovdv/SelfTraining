@@ -22,6 +22,7 @@ train_agglomerative_clustering_component
 train_agi_asi_component
 train_agi_safety_alignment_v2_component
 train_alibi_component
+train_als_component
 train_amsgrad_component
 train_arcface_loss_component
 train_arcsinh_component
