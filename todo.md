@@ -306,3 +306,5 @@
 - [x] Explore bidirectional associative memory mathematically. (Implemented and verified BAM for bidirectional pattern recall).
 - [x] Explore differentiable optimization problems as layers mathematically. (Implemented and verified OptNet component).
 - [x] Explore adversarial multi-armed bandits mathematically. (Implemented and verified EXP3 algorithm).
+## Phase 6: Advanced Mathematical Components
+- [x] Explore non-negative least squares mathematically. (Implemented and verified Non-Negative Least Squares via Lawson-Hanson active set method).

@@ -20,6 +20,7 @@ train_adaptive_log_softmax_component.py
 train_affinity_propagation_component.py
 train_agglomerative_clustering_component.py
 train_agi_asi_component.py
+train_agi_safety_alignment_v2_component.py
 train_alibi_component.py
 train_amsgrad_component.py
 train_arcface_loss_component.py
@@ -29,6 +30,7 @@ train_aria2_component.py
 train_asgd_component.py
 train_attention_component.py
 train_b_spline_component.py
+train_bam_component.py
 train_barlow_twins_component.py
 train_batchnorm_component.py
 train_bayesian_linear_regression_component.py
@@ -46,6 +48,7 @@ train_bnn_component.py
 train_bpe_component.py
 train_brier_score_component.py
 train_byol_component.py
+train_c51_component.py
 train_cae_component.py
 train_capsule_network_component.py
 train_cauchy_loss_component.py
@@ -54,6 +57,7 @@ train_cca_component.py
 train_celu_component.py
 train_cem_component.py
 train_center_loss_component.py
+train_cfr_component.py
 train_cgan_component.py
 train_charbonnier_loss_component.py
 train_chinchilla_optimality_component.py
@@ -62,6 +66,7 @@ train_cmaes_component.py
 train_cnf_component.py
 train_cnn_component.py
 train_cnp_component.py
+train_conjugate_gradient_component.py
 train_continuous_hopfield_component.py
 train_contrastive_component.py
 train_contrastive_loss_component.py
@@ -69,6 +74,7 @@ train_cosine_embedding_loss_component.py
 train_cosine_similarity_loss_component.py
 train_cp_decomposition_component.py
 train_cpc_component.py
+train_cql_component.py
 train_crelu_component.py
 train_crf_component.py
 train_cross_attention_component.py
@@ -103,6 +109,7 @@ train_dqn_component.py
 train_dropconnect_component.py
 train_dropout_component.py
 train_dueling_dqn_component.py
+train_dyna_q_component.py
 train_ebm_component.py
 train_echo_state_network_component.py
 train_elastic_net_component.py
@@ -117,7 +124,9 @@ train_entmax_component.py
 train_es_component.py
 train_esn_component.py
 train_evaluation_metrics_component.py
+train_evolutionary_strategies_component.py
 train_ewc_component.py
+train_exp3_component.py
 train_expected_sarsa_component.py
 train_factor_analysis_component.py
 train_factorization_machine_component.py
@@ -137,6 +146,7 @@ train_ftrl_component.py
 train_full_encoder_decoder_component.py
 train_fuzzy_c_means_component.py
 train_gae_component.py
+train_gail_component.py
 train_gan_component.py
 train_gat_component.py
 train_gaussian_activation_component.py
@@ -173,6 +183,7 @@ train_hdbscan_component.py
 train_he_initialization_component.py
 train_hebbian_component.py
 train_hellinger_distance_component.py
+train_her_component.py
 train_hierarchical_clustering_component.py
 train_highway_component.py
 train_highway_network_component.py
@@ -185,6 +196,7 @@ train_hopfield_network_component.py
 train_hrl_component.py
 train_huber_loss_component.py
 train_huber_regression_component.py
+train_hyperdimensional_computing_component.py
 train_hypernetwork_component.py
 train_ica_component.py
 train_icm_component.py
@@ -234,6 +246,7 @@ train_lda_component.py
 train_lda_topic_model_component.py
 train_leaky_relu_component.py
 train_lecun_tanh_component.py
+train_levenberg_marquardt_component.py
 train_linear_attention_component.py
 train_linear_regression_component.py
 train_linucb_component.py
@@ -259,6 +272,7 @@ train_lsh_component.py
 train_lstm_component.py
 train_ltc_component.py
 train_lvq_component.py
+train_maddpg_component.py
 train_made_component.py
 train_madgrad_component.py
 train_mae_component.py
@@ -289,6 +303,7 @@ train_momentum_component.py
 train_mqa_component.py
 train_mse_loss_component.py
 train_msle_loss_component.py
+train_multi_agent_communication_component.py
 train_multihead_attention_component.py
 train_multihead_transformer_block_component.py
 train_multimodal_component.py
@@ -297,6 +312,7 @@ train_nadaraya_watson_component.py
 train_nade_component.py
 train_naive_bayes_component.py
 train_nalu_component.py
+train_natural_gradient_descent_component.py
 train_nca_component.py
 train_nce_component.py
 train_ncf_component.py
@@ -307,17 +323,21 @@ train_neural_architecture_search_component.py
 train_neural_ode_component.py
 train_nll_loss_component.py
 train_nmf_component.py
+train_nnls_component.py
 train_node2vec_component.py
 train_novograd_component.py
 train_npair_loss_component.py
 train_nt_xent_loss_component.py
 train_ntk_component.py
 train_ntm_component.py
+train_nystrom_component.py
 train_oja_rule_component.py
 train_omp_component.py
+train_one_class_svm_component.py
 train_ood_detection_component.py
 train_operational_control_transition_component.py
 train_optics_component.py
+train_optnet_component.py
 train_orpo_component.py
 train_orthogonal_rnn_component.py
 train_pagerank_component.py
@@ -326,6 +346,7 @@ train_pca_component.py
 train_pcn_comparison_component.py
 train_pcn_component.py
 train_pelu_component.py
+train_per_component.py
 train_perceiver_component.py
 train_perceptron_component.py
 train_phish_component.py
@@ -362,6 +383,7 @@ train_rbm_component.py
 train_realnvp_component.py
 train_recursive_self_improvement_component.py
 train_reglu_component.py
+train_regret_matching_component.py
 train_reinforce_component.py
 train_reinforce_with_baseline_component.py
 train_relational_network_component.py
@@ -420,6 +442,7 @@ train_snake_activation_component.py
 train_snn_component.py
 train_soft_exponential_component.py
 train_soft_margin_loss_component.py
+train_soft_q_learning_component.py
 train_softmax_component.py
 train_softmin_component.py
 train_softplus_component.py
@@ -480,10 +503,12 @@ train_upper_confidence_bound_component.py
 train_vae_component.py
 train_value_iter_component.py
 train_vib_component.py
+train_vicreg_component.py
 train_vit_component.py
 train_vqvae_component.py
 train_wae_component.py
 train_wasserstein_distance_component.py
+train_wavelet_transform_component.py
 train_weight_normalization_component.py
 train_welsch_loss_component.py
 train_wgan_component.py

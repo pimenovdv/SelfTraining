@@ -323,6 +323,7 @@ train_neural_architecture_search_component
 train_neural_ode_component
 train_nll_loss_component
 train_nmf_component
+train_nnls_component
 train_node2vec_component
 train_novograd_component
 train_npair_loss_component

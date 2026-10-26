@@ -2562,3 +2562,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Methodology**: Modeled a multi-armed bandit where the environment changes the reward distribution adversarially. Implemented the EXP3 algorithm to dynamically adjust action probabilities based on estimated rewards and an exploration parameter (gamma).
 - **Results**: The component successfully balanced exploration and exploitation, identifying the new optimal arm after the environment shifted, adapting its action probabilities significantly.
 - **Conclusion**: EXP3 component mathematically verified.
+
+### Experiment 0574: Train Non-Negative Least Squares (NNLS) Component
+*   **Objective:** To implement and mathematically verify the Non-Negative Least Squares (NNLS) algorithm, solving constrained optimization problems of the form $\min_x ||Ax - b||_2^2$ subject to $x \ge 0$.
+*   **Method:** Implemented the Lawson-Hanson active set algorithm. It iteratively moves variables between an active set (constrained to zero) and a passive set (strictly positive), solving unconstrained least squares on the passive set and scaling steps to maintain non-negativity.
+*   **Results:** The implementation successfully found a sparse, strictly non-negative solution. The minimum value in the solution was 0.000000, and the residual error was minimized, yielding an exact zero loss (0.000000) for the non-negativity constraint violation.
+*   **Next Steps:** This component provides a robust mathematical foundation for exploring Non-Negative Matrix Factorization (NMF) or enforcing physical constraints in constrained linear modeling.
