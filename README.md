@@ -2915,3 +2915,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 
 - **Natural Gradient Descent (NGD)**: `train_natural_gradient_descent_component.py`
   - Explored natural gradient methods mathematically. Implemented and verified NGD modifying Euclidean gradients via the Fisher Information Matrix (FIM), enabling invariant parameterization and faster convergence on ill-conditioned data.
+
+## Component Testing: One-Class SVM
+**Script:** `train_one_class_svm_component.py`
+**Description:** Evaluates the One-Class SVM component mathematically in pure NumPy, testing its ability to perform semi-supervised outlier detection by mapping normal data to a high-dimensional feature space via an RBF kernel and bounding it closely, thereby isolating anomalies.
