@@ -472,6 +472,7 @@ train_starrelu_component
 train_stdp_component
 train_supcon_loss_component
 train_svd_component
+train_svgd_component
 train_svm_component
 train_svr_component
 train_svrg_component

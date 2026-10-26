@@ -532,3 +532,4 @@
 0574_train_nnls_component
 0575_train_als_component
 0576_train_restricted_boltzmann_machine_component
+0577_train_svgd_component

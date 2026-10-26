@@ -308,3 +308,4 @@
 - [x] Explore adversarial multi-armed bandits mathematically. (Implemented and verified EXP3 algorithm).
 ## Phase 6: Advanced Mathematical Components
 - [x] Explore non-negative least squares mathematically. (Implemented and verified Non-Negative Least Squares via Lawson-Hanson active set method).
+- [x] Explore Stein Variational Gradient Descent mathematically. (Implemented and verified SVGD algorithm for deterministic sampling via interacting particles).
