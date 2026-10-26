@@ -528,3 +528,4 @@ docs/0569_train_nystrom_component.md
 docs/0570_train_natural_gradient_descent_component.md
 docs/0571_train_optnet_component.md
 docs/0572_train_one_class_svm_component.md
+docs/0573_train_exp3_component.md

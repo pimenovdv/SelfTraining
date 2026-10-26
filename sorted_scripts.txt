@@ -126,6 +126,7 @@ train_esn_component
 train_evaluation_metrics_component
 train_evolutionary_strategies_component
 train_ewc_component
+train_exp3_component
 train_expected_sarsa_component
 train_factor_analysis_component
 train_factorization_machine_component

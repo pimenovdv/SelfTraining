@@ -528,3 +528,4 @@
 0570_train_natural_gradient_descent_component
 0571_train_optnet_component
 0572_train_one_class_svm_component
+0573_train_exp3_component

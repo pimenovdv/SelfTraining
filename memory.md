@@ -2556,3 +2556,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Action:** Implemented the OptNet backward pass mathematically in pure NumPy for equality-constrained quadratic programming. Verified the analytical gradients derived from the KKT matrix against finite-difference gradients.
 - **Outcome:** The implementation successfully computed the exact implicit gradients. The error between the analytical gradients and finite difference approximations was ~6e-05, well within tolerance, proving the validity of backpropagating through the optimization problem.
 - **Next Steps:** Evaluate integrating OptNet into policy networks for reinforcement learning to strictly enforce safety constraints on action outputs.
+
+## Experiment 573: EXP3 (Exponential-weight algorithm for Exploration and Exploitation)
+- **Objective**: Implement and verify the EXP3 algorithm for adversarial multi-armed bandits.
+- **Methodology**: Modeled a multi-armed bandit where the environment changes the reward distribution adversarially. Implemented the EXP3 algorithm to dynamically adjust action probabilities based on estimated rewards and an exploration parameter (gamma).
+- **Results**: The component successfully balanced exploration and exploitation, identifying the new optimal arm after the environment shifted, adapting its action probabilities significantly.
+- **Conclusion**: EXP3 component mathematically verified.
