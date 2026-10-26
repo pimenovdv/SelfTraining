@@ -22,6 +22,7 @@ train_agglomerative_clustering_component.py
 train_agi_asi_component.py
 train_agi_safety_alignment_v2_component.py
 train_alibi_component.py
+train_als_component.py
 train_amsgrad_component.py
 train_arcface_loss_component.py
 train_arcsinh_component.py

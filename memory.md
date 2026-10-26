@@ -2568,3 +2568,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented the Lawson-Hanson active set algorithm. It iteratively moves variables between an active set (constrained to zero) and a passive set (strictly positive), solving unconstrained least squares on the passive set and scaling steps to maintain non-negativity.
 *   **Results:** The implementation successfully found a sparse, strictly non-negative solution. The minimum value in the solution was 0.000000, and the residual error was minimized, yielding an exact zero loss (0.000000) for the non-negativity constraint violation.
 *   **Next Steps:** This component provides a robust mathematical foundation for exploring Non-Negative Matrix Factorization (NMF) or enforcing physical constraints in constrained linear modeling.
+
+### Experiment 0575: Train Alternating Least Squares (ALS) Component
+*   **Objective:** To implement and mathematically verify the Alternating Least Squares (ALS) algorithm for collaborative filtering and matrix factorization.
+*   **Method:** Implemented ALS in pure NumPy. The algorithm iteratively fixes the user factors matrix to solve for item factors using regularized least squares, and then fixes the item factors to solve for user factors. Tested on a synthetic sparse rating matrix.
+*   **Results:** The implementation successfully generalized to missing ratings, converging from a sparse matrix to accurately infer underlying low-rank factors. The test RMSE on unobserved ratings was robustly reduced below the 0.5 threshold.
+*   **Next Steps:** This verified implementation serves as a strong component for recommendation systems and learning embeddings from implicit or explicit feedback matrix data.
