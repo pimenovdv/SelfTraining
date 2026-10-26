@@ -2574,3 +2574,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented ALS in pure NumPy. The algorithm iteratively fixes the user factors matrix to solve for item factors using regularized least squares, and then fixes the item factors to solve for user factors. Tested on a synthetic sparse rating matrix.
 *   **Results:** The implementation successfully generalized to missing ratings, converging from a sparse matrix to accurately infer underlying low-rank factors. The test RMSE on unobserved ratings was robustly reduced below the 0.5 threshold.
 *   **Next Steps:** This verified implementation serves as a strong component for recommendation systems and learning embeddings from implicit or explicit feedback matrix data.
+
+### Experiment 0576: Train Restricted Boltzmann Machine (RBM) Component
+*   **Objective:** To implement and mathematically verify the Restricted Boltzmann Machine (RBM) algorithm for unsupervised learning of feature representations.
+*   **Method:** Implemented an RBM with binary visible and hidden units. The model is trained using Contrastive Divergence (CD-1) to approximate the log-likelihood gradient. The network was tested on reconstructing simple distinct bit patterns (e.g., [1 1 1 0 0 0]).
+*   **Results:** The implementation successfully learned the underlying distribution of the patterns. The reconstructed probability vector for Pattern 1 was [0.98, 0.96, 0.98, 0.04, 0.02, 0.03], perfectly matching the original thresholded pattern, with a final reconstruction error of 0.2400 across the batched dataset.
+*   **Next Steps:** This component is foundational for energy-based modeling and pre-training Deep Belief Networks (DBNs).

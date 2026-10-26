@@ -531,3 +531,4 @@
 0573_train_exp3_component
 0574_train_nnls_component
 0575_train_als_component
+0576_train_restricted_boltzmann_machine_component
