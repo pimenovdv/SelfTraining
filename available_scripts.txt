@@ -137,6 +137,7 @@ train_feedback_alignment_component.py
 train_ff_component.py
 train_ffn_component.py
 train_fgsm_component.py
+train_fista_component.py
 train_flow_matching_component.py
 train_fnet_component.py
 train_fno_component.py

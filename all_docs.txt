@@ -536,3 +536,4 @@ docs/0577_train_svgd_component.md
 docs/0578_train_frank_wolfe_component.md
 docs/0579_train_admm_component.md
 docs/0580_train_proximal_gradient_descent_component.md
+docs/0581_train_fista_component.md
