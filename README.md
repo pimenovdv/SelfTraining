@@ -2923,3 +2923,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Alternating Least Squares (ALS)
 **Script:** `train_als_component.py`
 **Description:** Evaluates the Alternating Least Squares (ALS) component mathematically in pure NumPy, testing its ability to perform collaborative filtering and matrix factorization by iteratively alternating between fixing user features to optimize item features and vice versa.
+
+## Component Testing: Proximal Gradient Descent
+**Script:** `train_proximal_gradient_descent_component.py`
+**Description:** Evaluates the Proximal Gradient Descent component mathematically in pure NumPy, testing its ability to solve non-smooth optimization problems like Lasso Regression by applying a soft-thresholding proximal operator after a standard gradient descent step on the differentiable part of the objective.

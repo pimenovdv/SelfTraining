@@ -2600,3 +2600,8 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
   - Final Loss was 0.464959 and Execution Time was 0.0292 seconds, demonstrating computational efficiency due to the projection-free nature.
 - **Next Steps**: We can explore related mathematical algorithms such as generalized conditional gradient for matrix completion or optimization over the nuclear norm ball.
 - **Alternating Direction Method of Multipliers (ADMM):** Successfully implemented and verified ADMM for Lasso Regression, demonstrating its capability to solve convex optimization problems by breaking them into smaller, easier-to-solve subproblems. The model achieved a Mean Squared Error of 0.0067 and identified 14/50 zero coefficients, converging in 452 iterations within 0.0097 seconds.
+
+### Experiment 0580: Proximal Gradient Descent Component
+- **Objective**: Implement and evaluate Proximal Gradient Descent mathematically for non-smooth optimization (Lasso).
+- **Method**: Split the objective into a smooth least-squares part and a non-smooth L1 penalty, using standard gradient steps on the former and a soft-thresholding proximal operator on the latter.
+- **Outcome**: Successfully implemented proximal gradient descent, achieving a Mean Squared Error of 1.2628 and correctly enforcing sparsity (46/50 zero coefficients), demonstrating its efficacy in handling non-differentiable regularization terms.
