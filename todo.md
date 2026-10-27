@@ -312,3 +312,4 @@
 - [x] Explore constraint optimization and sparse representation mathematically. (Implemented and verified Frank-Wolfe algorithm for L1-constrained least squares).
 - [x] Explore Alternating Direction Method of Multipliers mathematically. (Implemented and verified ADMM for Lasso Optimization).
 - [x] Explore proximal methods for non-smooth optimization mathematically. (Implemented and verified Proximal Gradient Descent for Lasso using soft thresholding).
+- [x] Explore accelerated proximal methods for non-smooth optimization mathematically. (Implemented and verified Fast Iterative Shrinkage-Thresholding Algorithm - FISTA for sparse representations).

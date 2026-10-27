@@ -574,4 +574,5 @@
 0579_train_admm_component
 0580_train_proximal_gradient_descent_component
 0581_train_l_bfgs_b_component
+0582_train_fista_component
 chinchilla_analysis

@@ -2605,3 +2605,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Objective**: Implement and evaluate Proximal Gradient Descent mathematically for non-smooth optimization (Lasso).
 - **Method**: Split the objective into a smooth least-squares part and a non-smooth L1 penalty, using standard gradient steps on the former and a soft-thresholding proximal operator on the latter.
 - **Outcome**: Successfully implemented proximal gradient descent, achieving a Mean Squared Error of 1.2628 and correctly enforcing sparsity (46/50 zero coefficients), demonstrating its efficacy in handling non-differentiable regularization terms.
+
+### Experiment 0582: Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)
+- **Objective:** Implement and verify the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) for L1-regularized optimization (Lasso).
+- **Architecture:** Mathematical implementation of the FISTA algorithm, which improves upon Proximal Gradient Descent (ISTA) by incorporating Nesterov-style momentum acceleration. It applies a proximal step (soft thresholding) followed by a momentum update.
+- **Results:** The algorithm successfully optimized an L1-regularized least squares objective, yielding a sparse solution with a Mean Squared Error of 0.000149 and reducing the dense 100-dimensional vector to 22 non-zero elements.
+- **Significance:** This confirms the efficacy of accelerated proximal gradient methods in achieving fast convergence for non-smooth, convex optimization problems, a critical mechanism for discovering sparse and interpretable feature representations.
