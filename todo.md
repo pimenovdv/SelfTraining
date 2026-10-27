@@ -310,3 +310,4 @@
 - [x] Explore non-negative least squares mathematically. (Implemented and verified Non-Negative Least Squares via Lawson-Hanson active set method).
 - [x] Explore Stein Variational Gradient Descent mathematically. (Implemented and verified SVGD algorithm for deterministic sampling via interacting particles).
 - [x] Explore constraint optimization and sparse representation mathematically. (Implemented and verified Frank-Wolfe algorithm for L1-constrained least squares).
+- [x] Explore Alternating Direction Method of Multipliers mathematically. (Implemented and verified ADMM for Lasso Optimization).
