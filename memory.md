@@ -2611,3 +2611,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Architecture:** Mathematical implementation of the FISTA algorithm, which improves upon Proximal Gradient Descent (ISTA) by incorporating Nesterov-style momentum acceleration. It applies a proximal step (soft thresholding) followed by a momentum update.
 - **Results:** The algorithm successfully optimized an L1-regularized least squares objective, yielding a sparse solution with a Mean Squared Error of 0.000149 and reducing the dense 100-dimensional vector to 22 non-zero elements.
 - **Significance:** This confirms the efficacy of accelerated proximal gradient methods in achieving fast convergence for non-smooth, convex optimization problems, a critical mechanism for discovering sparse and interpretable feature representations.
+
+### Experiment 0583: Train Natural Gradient Descent Component
+*   **Objective:** To implement and mathematically verify Natural Gradient Descent (NGD). Unlike standard Gradient Descent which follows the steepest descent in Euclidean space, NGD follows the steepest descent in the Riemannian manifold of probability distributions, using the Fisher Information Matrix (FIM) as a local metric.
+*   **Method:** Implemented NGD for linear regression with Gaussian noise (MSE loss), approximating the FIM by the covariance of the inputs ($E[X^T X]$). Tested on synthetic data with features having widely different scales to demonstrate the algorithm's invariance to feature scaling.
+*   **Results:** NGD successfully optimized the weights, converging to a final loss of 0.1322 after 50 epochs, while standard gradient descent struggled on the ill-conditioned input matrix and only reached a loss of 0.3876.
+*   **Next Steps:** This component is critical for optimizing over probability spaces and is highly relevant to optimization in policy gradient methods like TRPO and natural Actor-Critic, making them invariant to parameter transformations.
