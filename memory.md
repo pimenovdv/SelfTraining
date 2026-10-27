@@ -2599,3 +2599,4 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
   - It recovered a highly sparse solution (8 non-zeros out of 50 features) closely approximating the true sparse signal.
   - Final Loss was 0.464959 and Execution Time was 0.0292 seconds, demonstrating computational efficiency due to the projection-free nature.
 - **Next Steps**: We can explore related mathematical algorithms such as generalized conditional gradient for matrix completion or optimization over the nuclear norm ball.
+- **Alternating Direction Method of Multipliers (ADMM):** Successfully implemented and verified ADMM for Lasso Regression, demonstrating its capability to solve convex optimization problems by breaking them into smaller, easier-to-solve subproblems. The model achieved a Mean Squared Error of 0.0067 and identified 14/50 zero coefficients, converging in 452 iterations within 0.0097 seconds.
