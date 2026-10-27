@@ -533,3 +533,4 @@
 0575_train_als_component
 0576_train_restricted_boltzmann_machine_component
 0577_train_svgd_component
+0578_train_frank_wolfe_component
