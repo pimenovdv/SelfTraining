@@ -535,3 +535,4 @@
 0577_train_svgd_component
 0578_train_frank_wolfe_component
 0579_train_admm_component
+0580_train_proximal_gradient_descent_component
