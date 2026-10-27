@@ -142,6 +142,7 @@ train_fno_component
 train_focal_loss_component
 train_fourier_neural_operator_component
 train_fourier_series_component
+train_frank_wolfe_component
 train_frelu_component
 train_ftrl_component
 train_full_encoder_decoder_component

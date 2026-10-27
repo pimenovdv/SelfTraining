@@ -2586,3 +2586,16 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented SVGD where a set of particles are initialized randomly and iteratively updated to match a 1D target Gaussian distribution ($\mathcal{N}(\mu=2, \sigma=0.5)$). The update direction is determined by an RBF kernel which repels particles to ensure diverse exploration, driven by the score function (gradient of the log PDF) of the target distribution.
 *   **Results:** The SVGD implementation successfully approximated the target Gaussian distribution. With 100 particles, the estimated mean converged to 1.9999 (target 2.0) and the standard deviation converged to 0.4908 (target 0.5), perfectly capturing the underlying distribution.
 *   **Next Steps:** This component is useful for Bayesian inference tasks as a deterministic alternative to MCMC, efficiently approximating complex posteriors.
+
+### Experiment 578: Frank-Wolfe Algorithm for Constrained Optimization
+- **Hypothesis**: The Frank-Wolfe algorithm (conditional gradient method) can effectively solve L1-constrained least squares problems by iteratively minimizing a linear approximation over the feasible set, finding sparse solutions without requiring computationally expensive projection steps.
+- **Methodology**:
+  - Implemented the Frank-Wolfe algorithm to minimize $0.5 \|Ax - b\|_2^2$ subject to an L1 norm constraint $\|x\|_1 \le \tau$.
+  - Used a Linear Minimization Oracle (LMO) over the L1 ball, which selects the dimension with the largest absolute gradient and sets the step direction to its boundary.
+  - Updated the solution via a convex combination of the current point and the LMO output, with a diminishing step size $\gamma = \frac{2}{t+2}$.
+  - Evaluated on a synthetic least squares problem where the true underlying signal is highly sparse.
+- **Results**:
+  - The algorithm successfully converged, effectively optimizing the constrained problem.
+  - It recovered a highly sparse solution (8 non-zeros out of 50 features) closely approximating the true sparse signal.
+  - Final Loss was 0.464959 and Execution Time was 0.0292 seconds, demonstrating computational efficiency due to the projection-free nature.
+- **Next Steps**: We can explore related mathematical algorithms such as generalized conditional gradient for matrix completion or optimization over the nuclear norm ball.
