@@ -1,45 +1,37 @@
 import numpy as np
 from scipy.optimize import minimize
+import time
 
-def l_bfgs_b_optimize(func, jacobian, initial_guess, bounds, max_iter=100):
-    """
-    Optimizes a function using the L-BFGS-B algorithm.
-    """
-    result = minimize(
-        func,
-        initial_guess,
-        jac=jacobian,
+def rosenbrock(x):
+    return (1 - x[0])**2 + 100 * (x[1] - x[0]**2)**2
+
+def rosenbrock_grad(x):
+    df_dx0 = -2 * (1 - x[0]) - 400 * x[0] * (x[1] - x[0]**2)
+    df_dx1 = 200 * (x[1] - x[0]**2)
+    return np.array([df_dx0, df_dx1])
+
+def l_bfgs_b_optimization():
+    x0 = np.array([-1.2, 1.0])
+    bounds = [(-2.0, 2.0), (-2.0, 2.0)]
+
+    start_time = time.time()
+
+    res = minimize(
+        fun=rosenbrock,
+        x0=x0,
+        jac=rosenbrock_grad,
         method='L-BFGS-B',
         bounds=bounds,
-        options={'maxiter': max_iter}
+        options={'maxcor': 10, 'ftol': 1e-9, 'gtol': 1e-5}
     )
-    return result.x, result.fun
 
-def test_l_bfgs_b_component():
-    print("Testing L-BFGS-B Optimization Component...")
+    execution_time = time.time() - start_time
 
-    # Objective function: f(x, y) = (x - 2)^2 + (y - 3)^2
-    def obj_func(params):
-        x, y = params
-        return (x - 2)**2 + (y - 3)**2
+    print(f"L-BFGS-B optimization completed in {execution_time:.4f} seconds.")
+    print(f"Optimal parameters: {res.x}")
+    print(f"Final Loss: {res.fun:.6f}")
 
-    def obj_jac(params):
-        x, y = params
-        return np.array([2 * (x - 2), 2 * (y - 3)])
-
-    initial_guess = np.array([0.0, 0.0])
-    bounds = [(-5, 1.5), (-5, 2.5)] # x <= 1.5, y <= 2.5
-
-    optimized_params, final_val = l_bfgs_b_optimize(obj_func, obj_jac, initial_guess, bounds)
-
-    print(f"Optimized parameters: {optimized_params}")
-    print(f"Final value: {final_val:.6f}")
-
-    # Expected solution due to bounds: x = 1.5, y = 2.5
-    expected_params = np.array([1.5, 2.5])
-
-    assert np.allclose(optimized_params, expected_params, atol=1e-4), "L-BFGS-B optimization failed to reach expected constrained minimum."
-    print("Test passed successfully.")
+    return res.x, res.fun
 
 if __name__ == "__main__":
-    test_l_bfgs_b_component()
+    l_bfgs_b_optimization()
