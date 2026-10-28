@@ -2623,3 +2623,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Goal**: Implement and evaluate the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm for unconstrained mathematical optimization.
 - **Results**: The pure NumPy implementation successfully optimized both a 10-dimensional quadratic function (converging in 18 iterations with an error norm of 4.879500e-06) and the non-convex Rosenbrock function (converging in 52 iterations to the exact minimum).
 - **Conclusions**: BFGS proves to be a highly efficient quasi-Newton method for unconstrained continuous optimization tasks, requiring only first-order gradients while building a robust approximation of the Hessian matrix iteratively.
+
+### Experiment 0584: Train Nelder-Mead Component
+*   **Objective:** To implement and mathematically verify the Nelder-Mead algorithm for derivative-free optimization.
+*   **Method:** Implemented Nelder-Mead to minimize the non-convex Rosenbrock function. The algorithm uses a simplex (a polytope of $N+1$ vertices in $N$ dimensions) and dynamically adapts its shape via reflection, expansion, contraction, and reduction steps without requiring gradient information.
+*   **Results:** The algorithm successfully converged to the global minimum of the Rosenbrock function. Starting from `[-1.0, 2.0]`, it found the optimal parameters `[0.99929515, 0.99863917]` with a minimum value of 0.000001, executing in 0.0017 seconds.
+*   **Next Steps:** This verified implementation provides a robust baseline for optimization scenarios where objective functions are noisy, discontinuous, or lack explicit derivatives.

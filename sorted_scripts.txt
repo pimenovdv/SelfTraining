@@ -323,6 +323,7 @@ train_nca_component
 train_nce_component
 train_ncf_component
 train_neat_component
+train_nelder_mead_component
 train_nerf_component
 train_nesterov_momentum_component
 train_neural_architecture_search_component

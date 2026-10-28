@@ -323,6 +323,7 @@ train_nca_component.py
 train_nce_component.py
 train_ncf_component.py
 train_neat_component.py
+train_nelder_mead_component.py
 train_nerf_component.py
 train_nesterov_momentum_component.py
 train_neural_architecture_search_component.py

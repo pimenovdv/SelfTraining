@@ -2928,3 +2928,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 **Script:** `train_proximal_gradient_descent_component.py`
 **Description:** Evaluates the Proximal Gradient Descent component mathematically in pure NumPy, testing its ability to solve non-smooth optimization problems like Lasso Regression by applying a soft-thresholding proximal operator after a standard gradient descent step on the differentiable part of the objective.
 - **BFGS Algorithm**: Implemented a pure NumPy BFGS optimizer demonstrating rapid convergence on both convex quadratic and non-convex Rosenbrock functions without requiring explicit Hessian computation.
+
+## Component Testing: Nelder-Mead Optimization
+**Script:** `train_nelder_mead_component.py`
+**Description:** Evaluates the Nelder-Mead algorithm mathematically in pure NumPy, testing its ability to perform derivative-free continuous optimization by iteratively adjusting a simplex of points based on function evaluations, successfully finding the minimum of the Rosenbrock function.

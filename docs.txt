@@ -576,4 +576,5 @@
 0581_train_l_bfgs_b_component
 0582_train_fista_component
 0583_train_bfgs_component
+0584_train_nelder_mead_component
 chinchilla_analysis
