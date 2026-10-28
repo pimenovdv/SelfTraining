@@ -2629,3 +2629,7 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented Nelder-Mead to minimize the non-convex Rosenbrock function. The algorithm uses a simplex (a polytope of $N+1$ vertices in $N$ dimensions) and dynamically adapts its shape via reflection, expansion, contraction, and reduction steps without requiring gradient information.
 *   **Results:** The algorithm successfully converged to the global minimum of the Rosenbrock function. Starting from `[-1.0, 2.0]`, it found the optimal parameters `[0.99929515, 0.99863917]` with a minimum value of 0.000001, executing in 0.0017 seconds.
 *   **Next Steps:** This verified implementation provides a robust baseline for optimization scenarios where objective functions are noisy, discontinuous, or lack explicit derivatives.
+
+## Component Testing: Coordinate Descent
+**Script:** `train_coordinate_descent_component.py`
+**Description:** Evaluates the Coordinate Descent algorithm mathematically in pure NumPy, testing its ability to solve the Lasso Optimization problem by sequentially optimizing each parameter while holding others fixed, utilizing a soft-thresholding operator for the L1 penalty, demonstrating convergence on synthetic sparse data.

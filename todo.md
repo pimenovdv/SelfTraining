@@ -315,3 +315,4 @@
 - [x] Explore accelerated proximal methods for non-smooth optimization mathematically. (Implemented and verified Fast Iterative Shrinkage-Thresholding Algorithm - FISTA for sparse representations).
 - [x] Explore unconstrained optimization mathematically. (Implemented and verified BFGS algorithm for unconstrained optimization).
 - [x] Explore derivative-free optimization mathematically. (Implemented and verified Nelder-Mead component).
+- [x] Explore coordinate descent mathematically. (Implemented and verified Coordinate Descent for Lasso Optimization).
