@@ -2617,3 +2617,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented NGD for linear regression with Gaussian noise (MSE loss), approximating the FIM by the covariance of the inputs ($E[X^T X]$). Tested on synthetic data with features having widely different scales to demonstrate the algorithm's invariance to feature scaling.
 *   **Results:** NGD successfully optimized the weights, converging to a final loss of 0.1322 after 50 epochs, while standard gradient descent struggled on the ill-conditioned input matrix and only reached a loss of 0.3876.
 *   **Next Steps:** This component is critical for optimizing over probability spaces and is highly relevant to optimization in policy gradient methods like TRPO and natural Actor-Critic, making them invariant to parameter transformations.
+
+### Experiment 583: BFGS Optimization
+- **Date**: 2024-10-28
+- **Goal**: Implement and evaluate the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm for unconstrained mathematical optimization.
+- **Results**: The pure NumPy implementation successfully optimized both a 10-dimensional quadratic function (converging in 18 iterations with an error norm of 4.879500e-06) and the non-convex Rosenbrock function (converging in 52 iterations to the exact minimum).
+- **Conclusions**: BFGS proves to be a highly efficient quasi-Newton method for unconstrained continuous optimization tasks, requiring only first-order gradients while building a robust approximation of the Hessian matrix iteratively.
