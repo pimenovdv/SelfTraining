@@ -329,6 +329,7 @@ train_nerf_component.py
 train_nesterov_momentum_component.py
 train_neural_architecture_search_component.py
 train_neural_ode_component.py
+train_newton_cg_component.py
 train_nll_loss_component.py
 train_nmf_component.py
 train_nnls_component.py
