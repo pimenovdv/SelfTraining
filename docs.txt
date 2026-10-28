@@ -577,4 +577,5 @@
 0582_train_fista_component
 0583_train_bfgs_component
 0584_train_nelder_mead_component
+0585_train_coordinate_descent_component
 chinchilla_analysis

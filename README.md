@@ -2932,3 +2932,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Nelder-Mead Optimization
 **Script:** `train_nelder_mead_component.py`
 **Description:** Evaluates the Nelder-Mead algorithm mathematically in pure NumPy, testing its ability to perform derivative-free continuous optimization by iteratively adjusting a simplex of points based on function evaluations, successfully finding the minimum of the Rosenbrock function.
+
+## Component Testing: Coordinate Descent
+**Script:** `train_coordinate_descent_component.py`
+**Description:** Evaluates the Coordinate Descent algorithm mathematically in pure NumPy, testing its ability to solve the Lasso Optimization problem by sequentially optimizing each parameter while holding others fixed, utilizing a soft-thresholding operator for the L1 penalty, demonstrating convergence on synthetic sparse data.
