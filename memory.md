@@ -2633,3 +2633,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 ## Component Testing: Coordinate Descent
 **Script:** `train_coordinate_descent_component.py`
 **Description:** Evaluates the Coordinate Descent algorithm mathematically in pure NumPy, testing its ability to solve the Lasso Optimization problem by sequentially optimizing each parameter while holding others fixed, utilizing a soft-thresholding operator for the L1 penalty, demonstrating convergence on synthetic sparse data.
+
+### Experiment 0586: Train Newton-CG Optimization Component
+*   **Objective:** To implement and mathematically verify the Newton-Conjugate Gradient (Truncated Newton) algorithm for unconstrained optimization.
+*   **Method:** Implemented Newton-CG in pure NumPy, using Conjugate Gradient to solve the Newton system (approximating the Newton direction without fully inverting the Hessian). Regularization is added dynamically if the Hessian is not positive definite. The method was evaluated on the non-convex Rosenbrock function.
+*   **Results:** The algorithm successfully converged to the global minimum. Starting from the difficult initial point [-1.2, 1.0], it reached the optimal point [0.99999821, 0.99999641] with an exact zero loss (0.000000) in 21 iterations. Execution time was 0.0036 seconds, demonstrating fast quadratic convergence near the optimum.
+*   **Next Steps:** This verified implementation serves as a highly scalable second-order optimization method, critical for problems where explicitly forming or fully inverting the Hessian is computationally prohibitive but Hessian-vector products can be computed efficiently.

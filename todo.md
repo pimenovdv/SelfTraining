@@ -316,3 +316,4 @@
 - [x] Explore unconstrained optimization mathematically. (Implemented and verified BFGS algorithm for unconstrained optimization).
 - [x] Explore derivative-free optimization mathematically. (Implemented and verified Nelder-Mead component).
 - [x] Explore coordinate descent mathematically. (Implemented and verified Coordinate Descent for Lasso Optimization).
+- [x] Explore truncated Newton methods mathematically. (Implemented and verified Newton-CG algorithm for large-scale unconstrained optimization).
