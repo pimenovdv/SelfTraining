@@ -313,3 +313,4 @@
 - [x] Explore Alternating Direction Method of Multipliers mathematically. (Implemented and verified ADMM for Lasso Optimization).
 - [x] Explore proximal methods for non-smooth optimization mathematically. (Implemented and verified Proximal Gradient Descent for Lasso using soft thresholding).
 - [x] Explore accelerated proximal methods for non-smooth optimization mathematically. (Implemented and verified Fast Iterative Shrinkage-Thresholding Algorithm - FISTA for sparse representations).
+- [x] Explore unconstrained optimization mathematically. (Implemented and verified BFGS algorithm for unconstrained optimization).

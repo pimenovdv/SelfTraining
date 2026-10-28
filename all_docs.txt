@@ -538,3 +538,4 @@ docs/0579_train_admm_component.md
 docs/0580_train_proximal_gradient_descent_component.md
 docs/0581_train_l_bfgs_b_component.md
 docs/0582_train_fista_component.md
+docs/0583_train_bfgs_component.md

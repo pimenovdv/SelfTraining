@@ -43,6 +43,7 @@ train_bce_loss_component.py
 train_bcm_component.py
 train_bent_identity_component.py
 train_beta_vae_component.py
+train_bfgs_component.py
 train_bglu_component.py
 train_bhattacharyya_distance_component.py
 train_bilinear_component.py
