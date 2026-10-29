@@ -2662,3 +2662,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 - **Implementation**: I implemented a component utilizing `scipy.optimize.minimize` with the 'dogleg' method, evaluating it on the Rosenbrock function. The gradient and Hessian were computed analytically.
 - **Verification**: The Dogleg optimizer ran successfully in 0.0049 seconds. The optimization terminated with parameters converged to `[0.99999997 0.99999994 0.99999987 0.99999974 0.99999949]`, and a final loss of `0.000000`.
 - **Conclusion**: The Dogleg component works efficiently as an unconstrained optimizer by interpolating between the gradient descent and Gauss-Newton directions, utilizing trust regions. It is verified for usage.
+
+### Experiment 0590: Train SLSQP Optimization Component
+*   **Objective:** To implement and mathematically verify Sequential Least Squares Programming (SLSQP) for constrained optimization.
+*   **Method:** Implemented SLSQP using `scipy.optimize.minimize` to optimize the non-convex Rosenbrock function with an inequality constraint (`x[0] + 2*x[1] <= 1`) and bounds (`[-1.5, 1.5]`).
+*   **Results:** The algorithm successfully found the constrained minimum. It reached the optimal parameters `[0.50221582, 0.24889209]` with a final loss of `0.248897` in 20 iterations and 0.0076 seconds.
+*   **Next Steps:** This verified implementation serves as a reliable method for mathematical models requiring optimization with non-linear constraints.

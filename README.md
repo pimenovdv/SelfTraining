@@ -2940,3 +2940,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Gauss-Newton Optimization on Rosenbrock Function
 **Script:** `train_gauss_newton_rosenbrock_component.py`
 **Description:** Evaluates the Gauss-Newton algorithm mathematically in pure NumPy, testing its ability to efficiently solve non-linear least squares problems by iteratively approximating the Hessian using the cross-product of the Jacobian, demonstrating extremely fast quadratic-like convergence on the non-convex Rosenbrock function.
+
+## Component Testing: Sequential Least Squares Programming (SLSQP)
+**Script:** `train_slsqp_component.py`
+**Description:** Evaluates Sequential Least Squares Programming (SLSQP) mathematically, testing its ability to solve non-linear optimization problems with inequality constraints and bounds, successfully optimizing the Rosenbrock function under a linear inequality constraint.
