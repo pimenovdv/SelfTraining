@@ -2936,3 +2936,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Coordinate Descent
 **Script:** `train_coordinate_descent_component.py`
 **Description:** Evaluates the Coordinate Descent algorithm mathematically in pure NumPy, testing its ability to solve the Lasso Optimization problem by sequentially optimizing each parameter while holding others fixed, utilizing a soft-thresholding operator for the L1 penalty, demonstrating convergence on synthetic sparse data.
+
+## Component Testing: Gauss-Newton Optimization on Rosenbrock Function
+**Script:** `train_gauss_newton_rosenbrock_component.py`
+**Description:** Evaluates the Gauss-Newton algorithm mathematically in pure NumPy, testing its ability to efficiently solve non-linear least squares problems by iteratively approximating the Hessian using the cross-product of the Jacobian, demonstrating extremely fast quadratic-like convergence on the non-convex Rosenbrock function.

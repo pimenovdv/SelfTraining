@@ -580,4 +580,5 @@
 0585_train_coordinate_descent_component
 0586_train_newton_cg_component
 0587_train_levenberg_marquardt_rosenbrock_component
+0588_train_gauss_newton_rosenbrock_component
 chinchilla_analysis
