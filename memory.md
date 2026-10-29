@@ -2649,3 +2649,9 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 ## Component Testing: Levenberg-Marquardt Optimization on Rosenbrock Function
 **Script:** `train_levenberg_marquardt_rosenbrock_component.py`
 **Description:** Evaluates the Levenberg-Marquardt (LM) algorithm mathematically in pure NumPy, testing its ability to solve non-linear least squares problems by robustly interpolating between the Gauss-Newton algorithm and the method of gradient descent using a dynamically adjusted damping parameter.
+
+### Experiment 0588: Train Gauss-Newton Optimization Component
+*   **Objective:** To implement and mathematically verify the Gauss-Newton algorithm for non-linear least squares optimization problems.
+*   **Method:** Implemented Gauss-Newton to minimize the non-convex Rosenbrock function by splitting it into two residuals. The algorithm iteratively approximates the Hessian using the cross-product of the Jacobian ($J^T J$) and solves the normal equations for the descent direction.
+*   **Results:** The algorithm successfully converged to the global minimum of the Rosenbrock function. Starting from the initial point `[-1.0, 2.0]`, it found the optimal parameters `[1. 1.]` with a final loss of `1.0170487828175047e-26` in just 3 iterations.
+*   **Next Steps:** This verified implementation provides a fast-converging optimization baseline for non-linear least squares problems, especially useful when the residuals are small, avoiding the need for explicitly computing second derivatives.

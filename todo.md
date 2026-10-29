@@ -318,3 +318,4 @@
 - [x] Explore coordinate descent mathematically. (Implemented and verified Coordinate Descent for Lasso Optimization).
 - [x] Explore truncated Newton methods mathematically. (Implemented and verified Newton-CG algorithm for large-scale unconstrained optimization).
 - [x] Explore Quasi-Newton methods mathematically. (Implemented and verified L-BFGS-B algorithm for bound constrained optimization).
+- [x] Explore Gauss-Newton optimization mathematically. (Implemented and verified Gauss-Newton algorithm for non-linear least squares).

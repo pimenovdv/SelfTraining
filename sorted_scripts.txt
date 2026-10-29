@@ -155,6 +155,7 @@ train_gae_component
 train_gail_component
 train_gan_component
 train_gat_component
+train_gauss_newton_rosenbrock_component
 train_gaussian_activation_component
 train_gaussian_process_component
 train_gce_loss_component
