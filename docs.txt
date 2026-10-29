@@ -584,4 +584,5 @@
 0589_train_dogleg_optimization_component
 0590_train_slsqp_component
 0591_train_powells_method_component
+0592_train_broyden_component
 chinchilla_analysis
