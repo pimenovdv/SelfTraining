@@ -585,4 +585,5 @@
 0590_train_slsqp_component
 0591_train_powells_method_component
 0592_train_broyden_component
+0593_train_trust_region_reflective_component
 chinchilla_analysis

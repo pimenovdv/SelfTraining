@@ -510,6 +510,7 @@ train_tokenizer_component.py
 train_transformer_block_component.py
 train_triplet_loss_component.py
 train_trpo_component.py
+train_trust_region_reflective_component.py
 train_tsetlin_machine_component.py
 train_tsne_component.py
 train_tucker_decomposition_component.py
