@@ -323,3 +323,4 @@
 - [x] Explore Sequential Least Squares Programming mathematically. (Implemented and verified SLSQP for constrained optimization).
 - [x] Explore direction set methods for derivative-free optimization mathematically. (Implemented and verified Powell's method on the Rosenbrock function).
 - [x] Explore root finding methods for optimization mathematically. (Implemented and verified Broyden's method on the Rosenbrock function).
+- [x] Explore bound constrained optimization mathematically. (Implemented and verified Trust Region Reflective algorithm for constrained optimization).

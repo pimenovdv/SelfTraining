@@ -510,6 +510,7 @@ train_tokenizer_component
 train_transformer_block_component
 train_triplet_loss_component
 train_trpo_component
+train_trust_region_reflective_component
 train_tsetlin_machine_component
 train_tsne_component
 train_tucker_decomposition_component
