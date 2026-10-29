@@ -2669,3 +2669,16 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Results:** The algorithm successfully found the constrained minimum. It reached the optimal parameters `[0.50221582, 0.24889209]` with a final loss of `0.248897` in 20 iterations and 0.0076 seconds.
 *   **Next Steps:** This verified implementation serves as a reliable method for mathematical models requiring optimization with non-linear constraints.
 - **Powell's Method Component**: Developed `train_powells_method_component.py` to evaluate the derivative-free Powell's method optimization on the non-convex Rosenbrock function. Verified it converged perfectly to `[1.0, 1.0]` with a final loss of `9.023089641531086e-28` after 23 iterations. Documented in `0591_train_powells_method_component.md`.
+
+
+
+### Broyden's Method
+
+Broyden's method is a quasi-Newton method for finding roots in $k$ variables. Originally described by C. G. Broyden in 1965, it is a generalization of the secant method to multiple dimensions. The secant method replaces the first derivative $f'(x_n)$ with a finite difference approximation:
+$f'(x_n) \simeq \frac{f(x_n) - f(x_{n-1})}{x_n - x_{n-1}}$
+In multiple dimensions, we replace the derivative with the Jacobian $J$. The secant equation is:
+$J_n (x_n - x_{n-1}) \simeq F(x_n) - F(x_{n-1})$
+However, this does not uniquely determine $J_n$ when $k > 1$. Broyden's "good" method updates the Jacobian estimate $J_n$ such that:
+$J_n = J_{n-1} + \frac{\Delta F_n - J_{n-1} \Delta x_n}{\|\Delta x_n\|^2} \Delta x_n^T$
+where $\Delta x_n = x_n - x_{n-1}$ and $\Delta F_n = F(x_n) - F(x_{n-1})$. This method minimizes $\|J_n - J_{n-1}\|_F$ subject to the secant equation constraint.
+For optimization, finding the minimum of a function is equivalent to finding the root of its gradient. We can apply Broyden's method to find the root of the gradient (or function directly if structured as non-linear equations), making it a useful derivative-free (if applied directly) or first-order (if applied to gradient) optimization technique. The implementation used `scipy.optimize.broyden1` to find the minimum of the Rosenbrock function by solving it as a root-finding problem. Execution completed in ~0.0087 seconds, reaching a final solution of `[1.00000004 1.00000014]` with an objective function value of `6.495112451291881e-07`.

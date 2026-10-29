@@ -50,6 +50,7 @@ train_bilinear_component
 train_bnn_component
 train_bpe_component
 train_brier_score_component
+train_broyden_component
 train_byol_component
 train_c51_component
 train_cae_component
