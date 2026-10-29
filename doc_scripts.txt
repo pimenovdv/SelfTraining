@@ -107,6 +107,7 @@ train_distributed_infrastructure_component.py
 train_dmd_component.py
 train_dnc_component.py
 train_dni_component.py
+train_dogleg_optimization_component.py
 train_double_q_learning_component.py
 train_dpo_component.py
 train_dqn_component.py

@@ -2655,3 +2655,10 @@ Successfully implemented and verified the Bidirectional Associative Memory (BAM)
 *   **Method:** Implemented Gauss-Newton to minimize the non-convex Rosenbrock function by splitting it into two residuals. The algorithm iteratively approximates the Hessian using the cross-product of the Jacobian ($J^T J$) and solves the normal equations for the descent direction.
 *   **Results:** The algorithm successfully converged to the global minimum of the Rosenbrock function. Starting from the initial point `[-1.0, 2.0]`, it found the optimal parameters `[1. 1.]` with a final loss of `1.0170487828175047e-26` in just 3 iterations.
 *   **Next Steps:** This verified implementation provides a fast-converging optimization baseline for non-linear least squares problems, especially useful when the residuals are small, avoiding the need for explicitly computing second derivatives.
+
+## Experiment 589: Dogleg Optimization Component
+- **Component**: Dogleg Algorithm.
+- **Objective**: Implement and verify the Dogleg optimization method mathematically for unconstrained optimization with trust regions.
+- **Implementation**: I implemented a component utilizing `scipy.optimize.minimize` with the 'dogleg' method, evaluating it on the Rosenbrock function. The gradient and Hessian were computed analytically.
+- **Verification**: The Dogleg optimizer ran successfully in 0.0049 seconds. The optimization terminated with parameters converged to `[0.99999997 0.99999994 0.99999987 0.99999974 0.99999949]`, and a final loss of `0.000000`.
+- **Conclusion**: The Dogleg component works efficiently as an unconstrained optimizer by interpolating between the gradient descent and Gauss-Newton directions, utilizing trust regions. It is verified for usage.

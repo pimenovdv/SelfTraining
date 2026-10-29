@@ -544,3 +544,4 @@ docs/0585_train_coordinate_descent_component.md
 docs/0586_train_newton_cg_component.md
 docs/0587_train_levenberg_marquardt_rosenbrock_component.md
 docs/0588_train_gauss_newton_rosenbrock_component.md
+docs/0589_train_dogleg_optimization_component.md
