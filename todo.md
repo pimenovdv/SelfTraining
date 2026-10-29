@@ -320,3 +320,4 @@
 - [x] Explore Quasi-Newton methods mathematically. (Implemented and verified L-BFGS-B algorithm for bound constrained optimization).
 - [x] Explore Gauss-Newton optimization mathematically. (Implemented and verified Gauss-Newton algorithm for non-linear least squares).
 - [x] Explore trust region methods mathematically. (Implemented and verified Dogleg algorithm for unconstrained optimization).
+- [x] Explore Sequential Least Squares Programming mathematically. (Implemented and verified SLSQP for constrained optimization).

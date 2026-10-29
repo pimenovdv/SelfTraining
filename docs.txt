@@ -582,4 +582,5 @@
 0587_train_levenberg_marquardt_rosenbrock_component
 0588_train_gauss_newton_rosenbrock_component
 0589_train_dogleg_optimization_component
+0590_train_slsqp_component
 chinchilla_analysis

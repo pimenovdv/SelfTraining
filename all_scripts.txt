@@ -449,6 +449,7 @@ train_sinc_component
 train_sinkhorn_component
 train_siren_component
 train_skipgram_component
+train_slsqp_component
 train_smelu_component
 train_smish_component
 train_smooth_l1_loss_component
