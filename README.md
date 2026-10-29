@@ -2944,3 +2944,6 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Sequential Least Squares Programming (SLSQP)
 **Script:** `train_slsqp_component.py`
 **Description:** Evaluates Sequential Least Squares Programming (SLSQP) mathematically, testing its ability to solve non-linear optimization problems with inequality constraints and bounds, successfully optimizing the Rosenbrock function under a linear inequality constraint.
+## Component Testing: Powell's Method Optimization
+**Script:** `train_powells_method_component.py`
+**Description:** Evaluates Powell's conjugate direction method mathematically in pure NumPy, testing its ability to solve derivative-free unconstrained optimization problems by performing sequential line searches along a set of directions, successfully optimizing the non-convex Rosenbrock function.

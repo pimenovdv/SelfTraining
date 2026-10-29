@@ -371,6 +371,7 @@
 ./train_policy_iteration_component.py
 ./train_polynomial_regression_component.py
 ./train_positional_encoding_component.py
+./train_powells_method_component.py
 ./train_ppo_component.py
 ./train_prelu_component.py
 ./train_probabilistic_pca_component.py
