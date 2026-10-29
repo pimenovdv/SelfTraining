@@ -583,4 +583,5 @@
 0588_train_gauss_newton_rosenbrock_component
 0589_train_dogleg_optimization_component
 0590_train_slsqp_component
+0591_train_powells_method_component
 chinchilla_analysis

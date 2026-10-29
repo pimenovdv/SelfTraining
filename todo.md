@@ -321,3 +321,4 @@
 - [x] Explore Gauss-Newton optimization mathematically. (Implemented and verified Gauss-Newton algorithm for non-linear least squares).
 - [x] Explore trust region methods mathematically. (Implemented and verified Dogleg algorithm for unconstrained optimization).
 - [x] Explore Sequential Least Squares Programming mathematically. (Implemented and verified SLSQP for constrained optimization).
+- [x] Explore direction set methods for derivative-free optimization mathematically. (Implemented and verified Powell's method on the Rosenbrock function).
