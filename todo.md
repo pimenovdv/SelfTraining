@@ -328,3 +328,4 @@
 - [x] Explore global optimization with local minimization mathematically. (Implemented and verified Basinhopping algorithm for global optimization).
 - [x] Explore simplicial homology global optimization mathematically. (Implemented and verified SHGO algorithm for global optimization).
 - [x] Explore multi-objective optimization mathematically. (Implemented and verified NSGA-II algorithm for multi-objective optimization).
+- [x] Explore non-convex optimization mathematically. (Implement and verify TNC algorithm for unconstrained optimization).

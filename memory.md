@@ -2710,3 +2710,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Goal:** Explore and implement the Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.
 - **Method:** Implemented NSGA-II from scratch using NumPy. Included fast non-dominated sorting and crowding distance assignment to maintain a diverse Pareto front. Fixed a logical bug in the fast non-dominated sort algorithm to properly evaluate the combined population of parents and offspring. Evaluated the algorithm on the ZDT1 benchmark function.
 - **Result:** Successfully trained and evaluated. The algorithm identified 35 solutions in the Pareto front within 50 generations for a 30-variable ZDT1 problem, demonstrating effective multi-objective optimization.
+### Experiment 0598: TNC Optimization Component
+- **Component:** Truncated Newton (TNC) algorithm.
+- **Objective:** Evaluate the Truncated Newton method mathematically for non-convex, unconstrained optimization.
+- **Methodology:** Implemented TNC using `scipy.optimize.minimize` on the 5-dimensional Rosenbrock function, providing the exact Jacobian (`rosenbrock_der`). The start point was the origin `[0,0,0,0,0]`.
+- **Results:** TNC successfully found the global minimum. The optimization converged to the parameters `[1.00000027, 1.00000083, 1.00000189, 1.00000388, 1.00000775]` in 22 iterations in ~0.0063 seconds, achieving a final loss of `3.4175507503021923e-11`.
+- **Conclusion:** TNC converges reliably for the non-convex Rosenbrock function, acting efficiently as a Newton conjugate-gradient method for unconstrained optimization on problems with thousands of variables.
