@@ -2692,3 +2692,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Action**: Implemented the Dual Annealing optimizer computationally in `train_dual_annealing_component.py` using `scipy.optimize.dual_annealing` and evaluated it on the non-convex Rosenbrock function.
 - **Result**: The algorithm successfully converged to the global minimum with an optimal `f(x)` of 9.032756e-12.
 - **Conclusion**: The Dual Annealing component works effectively for unconstrained and bound-constrained global non-linear optimization problems, significantly improving over standard simulated annealing.
+### Experiment 0595: Basinhopping Component Training
+- **Component:** Basinhopping global optimization algorithm
+- **Objective:** Evaluate Basinhopping for function minimization mathematically.
+- **Methodology:** Implemented Basinhopping using `scipy.optimize.basinhopping` on the 5-dimensional Rosenbrock function, starting from origin `(0,0,0,0,0)`. Set local minimizer to `BFGS` and configured parameters `niter=100`, `stepsize=0.5`, `T=1.0`. Evaluated closeness of the solution to the global minimum `(1,1,1,1,1)`.
+- **Results:** Basinhopping successfully converged to the global minimum, achieving a solution error of 0.000014 and a value error of 0.000000 after 100 iterations.
+- **Conclusion:** Basinhopping effectively navigates the complex landscape of the Rosenbrock function, demonstrating the utility of combining random steps with local minimization.

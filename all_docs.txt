@@ -550,3 +550,4 @@ docs/0591_train_powells_method_component.md
 docs/0592_train_broyden_component.md
 docs/0593_train_trust_region_reflective_component.md
 docs/0594_train_dual_annealing_component.md
+docs/0595_train_basinhopping_component.md
