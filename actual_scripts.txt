@@ -71,6 +71,7 @@ train_cmaes_component.py
 train_cnf_component.py
 train_cnn_component.py
 train_cnp_component.py
+train_cobyla_component.py
 train_conjugate_gradient_component.py
 train_continuous_hopfield_component.py
 train_contrastive_component.py
