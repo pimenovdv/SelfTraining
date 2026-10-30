@@ -439,6 +439,7 @@ train_sfa_component
 train_sgd_component
 train_sgld_component
 train_shampoo_component
+train_shgo_component
 train_shifted_softplus_component
 train_siamese_network_component
 train_sigmoid_component
