@@ -325,3 +325,4 @@
 - [x] Explore root finding methods for optimization mathematically. (Implemented and verified Broyden's method on the Rosenbrock function).
 - [x] Explore bound constrained optimization mathematically. (Implemented and verified Trust Region Reflective algorithm for constrained optimization).
 - [x] Explore global optimization mathematically. (Implemented and verified Dual Annealing algorithm for bound constrained global optimization).
+- [x] Explore global optimization with local minimization mathematically. (Implemented and verified Basinhopping algorithm for global optimization).
