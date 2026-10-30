@@ -2698,3 +2698,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Methodology:** Implemented Basinhopping using `scipy.optimize.basinhopping` on the 5-dimensional Rosenbrock function, starting from origin `(0,0,0,0,0)`. Set local minimizer to `BFGS` and configured parameters `niter=100`, `stepsize=0.5`, `T=1.0`. Evaluated closeness of the solution to the global minimum `(1,1,1,1,1)`.
 - **Results:** Basinhopping successfully converged to the global minimum, achieving a solution error of 0.000014 and a value error of 0.000000 after 100 iterations.
 - **Conclusion:** Basinhopping effectively navigates the complex landscape of the Rosenbrock function, demonstrating the utility of combining random steps with local minimization.
+### Experiment 0596: SHGO Component Training
+- **Component:** Simplicial Homology Global Optimization (SHGO) algorithm
+- **Objective:** Evaluate SHGO for function minimization mathematically.
+- **Methodology:** Implemented SHGO using `scipy.optimize.shgo` on the 5-dimensional Rosenbrock function. Defined bounds between -2.0 and 2.0 for all dimensions. Evaluated closeness of the solution to the global minimum `(1,1,1,1,1)`.
+- **Results:** SHGO successfully converged to the global minimum, achieving a final parameter set of `[0.99999921, 0.99999842, 0.99999686, 0.99999373, 0.99998745]` and a function value of `0.000000` after 0.6401 seconds.
+- **Conclusion:** SHGO effectively navigates the complex landscape of the Rosenbrock function, demonstrating the utility of simplicial homology for global optimization.

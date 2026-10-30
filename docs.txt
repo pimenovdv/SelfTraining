@@ -588,4 +588,5 @@
 0593_train_trust_region_reflective_component
 0594_train_dual_annealing_component
 0595_train_basinhopping_component
+0596_train_shgo_component
 chinchilla_analysis
