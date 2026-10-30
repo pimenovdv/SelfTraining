@@ -510,6 +510,7 @@ train_td_lambda_component
 train_td_learning_component
 train_thompson_sampling_component
 train_threshold_component
+train_tnc_component
 train_tokenizer_component
 train_transformer_block_component
 train_triplet_loss_component
