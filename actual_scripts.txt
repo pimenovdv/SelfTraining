@@ -342,6 +342,7 @@ train_nnls_component.py
 train_node2vec_component.py
 train_novograd_component.py
 train_npair_loss_component.py
+train_nsga2_component.py
 train_nt_xent_loss_component.py
 train_ntk_component.py
 train_ntm_component.py

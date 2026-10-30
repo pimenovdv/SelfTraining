@@ -1,0 +1,186 @@
+import numpy as np
+import random
+
+class NSGA2:
+    def __init__(self, objective_functions, bounds, pop_size=50, max_gen=100, mutation_rate=0.1):
+        self.objective_functions = objective_functions
+        self.bounds = bounds
+        self.pop_size = pop_size
+        self.max_gen = max_gen
+        self.mutation_rate = mutation_rate
+        self.num_vars = len(bounds)
+        self.num_objs = len(objective_functions)
+
+    def _initialize_population(self):
+        pop = []
+        for _ in range(self.pop_size):
+            ind = [random.uniform(b[0], b[1]) for b in self.bounds]
+            pop.append(ind)
+        return pop
+
+    def _evaluate(self, pop):
+        fitness = []
+        for ind in pop:
+            fit = [f(ind) for f in self.objective_functions]
+            fitness.append(fit)
+        return fitness
+
+    def _fast_non_dominated_sort(self, fitness):
+        current_pop_size = len(fitness)
+        fronts = [[]]
+        S = [[] for _ in range(current_pop_size)]
+        n = [0] * current_pop_size
+        rank = [0] * current_pop_size
+
+        for p in range(current_pop_size):
+            for q in range(current_pop_size):
+                if self._dominates(fitness[p], fitness[q]):
+                    S[p].append(q)
+                elif self._dominates(fitness[q], fitness[p]):
+                    n[p] += 1
+            if n[p] == 0:
+                rank[p] = 0
+                fronts[0].append(p)
+
+        i = 0
+        while fronts[i]:
+            next_front = []
+            for p in fronts[i]:
+                for q in S[p]:
+                    n[q] -= 1
+                    if n[q] == 0:
+                        rank[q] = i + 1
+                        next_front.append(q)
+            i += 1
+            if next_front:
+                fronts.append(next_front)
+            else:
+                break
+        return fronts
+
+    def _dominates(self, p, q):
+        and_condition = True
+        or_condition = False
+        for i in range(self.num_objs):
+            if p[i] > q[i]:
+                and_condition = False
+            if p[i] < q[i]:
+                or_condition = True
+        return and_condition and or_condition
+
+    def _crowding_distance_assignment(self, front, fitness):
+        length = len(front)
+        if length == 0:
+            return []
+
+        distances = {p: 0.0 for p in front}
+
+        for i in range(self.num_objs):
+            front.sort(key=lambda x: fitness[x][i])
+            distances[front[0]] = float('inf')
+            distances[front[-1]] = float('inf')
+
+            f_min = fitness[front[0]][i]
+            f_max = fitness[front[-1]][i]
+
+            if f_max == f_min:
+                continue
+
+            for j in range(1, length - 1):
+                distances[front[j]] += (fitness[front[j+1]][i] - fitness[front[j-1]][i]) / (f_max - f_min)
+
+        return [distances[p] for p in front]
+
+    def _crossover(self, parent1, parent2):
+        alpha = random.random()
+        child1 = [alpha * p1 + (1 - alpha) * p2 for p1, p2 in zip(parent1, parent2)]
+        child2 = [(1 - alpha) * p1 + alpha * p2 for p1, p2 in zip(parent1, parent2)]
+        return child1, child2
+
+    def _mutate(self, ind):
+        for i in range(self.num_vars):
+            if random.random() < self.mutation_rate:
+                ind[i] += random.gauss(0, 0.1) * (self.bounds[i][1] - self.bounds[i][0])
+                ind[i] = max(self.bounds[i][0], min(ind[i], self.bounds[i][1]))
+        return ind
+
+    def optimize(self):
+        pop = self._initialize_population()
+        fitness = self._evaluate(pop)
+
+        for gen in range(self.max_gen):
+            fronts = self._fast_non_dominated_sort(fitness)
+
+            offspring = []
+            while len(offspring) < self.pop_size:
+                # Tournament selection based on rank and crowding distance
+                # Simplified for this implementation by randomly selecting from top fronts
+                p1, p2 = random.sample(fronts[0] if fronts[0] else range(self.pop_size), 2) if len(fronts[0]) >=2 else random.sample(range(self.pop_size), 2)
+                parent1, parent2 = pop[p1], pop[p2]
+
+                child1, child2 = self._crossover(parent1, parent2)
+                offspring.extend([self._mutate(child1), self._mutate(child2)])
+
+            offspring = offspring[:self.pop_size]
+
+            combined_pop = pop + offspring
+            combined_fitness = self._evaluate(combined_pop)
+
+            fronts = self._fast_non_dominated_sort(combined_fitness)
+
+            next_pop = []
+            next_fitness = []
+
+            i = 0
+            while len(next_pop) + len(fronts[i]) <= self.pop_size:
+                for p in fronts[i]:
+                    next_pop.append(combined_pop[p])
+                    next_fitness.append(combined_fitness[p])
+                i += 1
+                if i >= len(fronts):
+                    break
+
+            if len(next_pop) < self.pop_size and i < len(fronts):
+                distances = self._crowding_distance_assignment(fronts[i], combined_fitness)
+                front_with_distances = list(zip(fronts[i], distances))
+                front_with_distances.sort(key=lambda x: x[1], reverse=True)
+
+                for p, _ in front_with_distances[:self.pop_size - len(next_pop)]:
+                    next_pop.append(combined_pop[p])
+                    next_fitness.append(combined_fitness[p])
+
+            pop = next_pop
+            fitness = next_fitness
+
+        fronts = self._fast_non_dominated_sort(fitness)
+        pareto_front = [pop[p] for p in fronts[0]]
+        pareto_fitness = [fitness[p] for p in fronts[0]]
+
+        return pareto_front, pareto_fitness
+
+if __name__ == "__main__":
+    # Test case: ZDT1 function
+    def f1(x):
+        return x[0]
+
+    def f2(x):
+        g = 1 + 9 * sum(x[1:]) / (len(x) - 1)
+        h = 1 - np.sqrt(f1(x) / g)
+        return g * h
+
+    bounds = [(0, 1) for _ in range(30)] # 30 variables
+
+    print("Testing NSGA-II on ZDT1 Problem...")
+    nsga2 = NSGA2([f1, f2], bounds, pop_size=100, max_gen=50)
+    pareto_front, pareto_fitness = nsga2.optimize()
+
+    print(f"Found {len(pareto_front)} solutions in the Pareto front.")
+    print("Sample of Pareto optimal objective values (f1, f2):")
+
+    # Print 5 solutions sorted by f1
+    pareto_fitness.sort(key=lambda x: x[0])
+    for i in range(min(5, len(pareto_fitness))):
+        idx = i * (len(pareto_fitness) - 1) // (min(5, len(pareto_fitness)) - 1) if len(pareto_fitness) > 1 else 0
+        print(f"Solution {idx}: f1={pareto_fitness[idx][0]:.4f}, f2={pareto_fitness[idx][1]:.4f}")
+
+    print("\nNSGA-II training component executed successfully.")

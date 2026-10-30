@@ -2704,3 +2704,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Methodology:** Implemented SHGO using `scipy.optimize.shgo` on the 5-dimensional Rosenbrock function. Defined bounds between -2.0 and 2.0 for all dimensions. Evaluated closeness of the solution to the global minimum `(1,1,1,1,1)`.
 - **Results:** SHGO successfully converged to the global minimum, achieving a final parameter set of `[0.99999921, 0.99999842, 0.99999686, 0.99999373, 0.99998745]` and a function value of `0.000000` after 0.6401 seconds.
 - **Conclusion:** SHGO effectively navigates the complex landscape of the Rosenbrock function, demonstrating the utility of simplicial homology for global optimization.
+
+
+### Experiment 0597: NSGA-II for Multi-Objective Optimization
+- **Goal:** Explore and implement the Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.
+- **Method:** Implemented NSGA-II from scratch using NumPy. Included fast non-dominated sorting and crowding distance assignment to maintain a diverse Pareto front. Fixed a logical bug in the fast non-dominated sort algorithm to properly evaluate the combined population of parents and offspring. Evaluated the algorithm on the ZDT1 benchmark function.
+- **Result:** Successfully trained and evaluated. The algorithm identified 35 solutions in the Pareto front within 50 generations for a 30-variable ZDT1 problem, demonstrating effective multi-objective optimization.
