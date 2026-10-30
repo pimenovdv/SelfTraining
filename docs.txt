@@ -586,4 +586,5 @@
 0591_train_powells_method_component
 0592_train_broyden_component
 0593_train_trust_region_reflective_component
+0594_train_dual_annealing_component
 chinchilla_analysis
