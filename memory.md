@@ -2716,3 +2716,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Methodology:** Implemented TNC using `scipy.optimize.minimize` on the 5-dimensional Rosenbrock function, providing the exact Jacobian (`rosenbrock_der`). The start point was the origin `[0,0,0,0,0]`.
 - **Results:** TNC successfully found the global minimum. The optimization converged to the parameters `[1.00000027, 1.00000083, 1.00000189, 1.00000388, 1.00000775]` in 22 iterations in ~0.0063 seconds, achieving a final loss of `3.4175507503021923e-11`.
 - **Conclusion:** TNC converges reliably for the non-convex Rosenbrock function, acting efficiently as a Newton conjugate-gradient method for unconstrained optimization on problems with thousands of variables.
+
+### COBYLA Optimization
+- **Goal:** Explore constrained optimization without derivatives mathematically.
+- **Component:** `train_cobyla_component.py`
+- **Method:** Uses scipy.optimize.minimize with method='COBYLA'.
+- **Result:** Successfully optimized a simple constrained quadratic problem. Final value: 0.500000, Execution time: 0.09s, Function evaluations: 37.
