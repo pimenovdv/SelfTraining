@@ -555,3 +555,4 @@ docs/0596_train_shgo_component.md
 docs/0597_train_nsga2_component.md
 docs/0598_train_tnc_component.md
 docs/0599_train_cobyla_component.md
+docs/0600_train_particle_swarm_optimization_component.md

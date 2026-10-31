@@ -359,6 +359,7 @@
 ./train_orthogonal_rnn_component.py
 ./train_pagerank_component.py
 ./train_particle_filter_component.py
+./train_particle_swarm_optimization_component.py
 ./train_pca_component.py
 ./train_pcn_comparison_component.py
 ./train_pcn_component.py

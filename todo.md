@@ -330,3 +330,4 @@
 - [x] Explore multi-objective optimization mathematically. (Implemented and verified NSGA-II algorithm for multi-objective optimization).
 - [x] Explore non-convex optimization mathematically. (Implement and verify TNC algorithm for unconstrained optimization).
 - [x] Explore constrained optimization without derivatives mathematically. (Implemented and verified COBYLA algorithm for derivative-free constrained optimization).
+- [x] Explore and implement Particle Swarm Optimization for multi-dimensional non-convex optimization mathematically.

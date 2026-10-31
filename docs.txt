@@ -592,4 +592,5 @@
 0597_train_nsga2_component
 0598_train_tnc_component
 0599_train_cobyla_component
+0600_train_particle_swarm_optimization_component
 chinchilla_analysis
