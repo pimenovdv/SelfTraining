@@ -2733,3 +2733,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Objective**: Implement and verify the Firefly Algorithm for derivative-free global optimization mathematically.
 - **Method**: Developed a pure NumPy implementation modeling attraction proportional to brightness (fitness) which decays exponentially with distance. Validated on the 3D Rosenbrock function.
 - **Outcome**: The algorithm converged to a final loss of 0.000000 in 9.0382 seconds, confirming its capability for non-convex global optimization.
+### Experiment 0602: Train Cuckoo Search Component
+- **Component:** Cuckoo Search algorithm.
+- **Objective:** Evaluate the Cuckoo Search method mathematically for non-convex, unconstrained global optimization.
+- **Methodology:** Implemented Cuckoo Search from scratch in pure NumPy using Levy flights on the 3-dimensional Rosenbrock function. Evaluated on the bounded region `[-5, 5]`. Used 50 nests and trained for 25000 iterations.
+- **Results:** Cuckoo Search successfully found the global minimum. The optimization converged perfectly to the parameters `[1. 1. 1.]`, achieving a final loss of `0.000000`.
+- **Conclusion:** Cuckoo Search converges reliably for the non-convex Rosenbrock function, demonstrating the utility of Levy flight-based random walks and population-based algorithms for multi-dimensional global optimization.
