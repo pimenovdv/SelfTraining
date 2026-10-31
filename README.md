@@ -2957,3 +2957,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Bat Algorithm
 **Script:** `train_bat_algorithm_component.py`
 **Description:** Evaluates the Bat Algorithm mathematically in pure NumPy, testing its ability to solve derivative-free unconstrained optimization problems by performing sequential echolocation-based search, successfully optimizing the non-convex Rosenbrock function.
+
+## Component Testing: Differential Evolution
+**Script:** `train_differential_evolution_component.py`
+**Description:** Evaluates the Differential Evolution method mathematically for non-convex, unconstrained global optimization on the Rosenbrock function.
