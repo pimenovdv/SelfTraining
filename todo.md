@@ -332,3 +332,4 @@
 - [x] Explore constrained optimization without derivatives mathematically. (Implemented and verified COBYLA algorithm for derivative-free constrained optimization).
 - [x] Explore and implement Particle Swarm Optimization for multi-dimensional non-convex optimization mathematically.
 - [x] Explore Firefly Algorithm mathematically. (Implement and verify Firefly Algorithm for derivative-free global optimization).
+- [x] Explore Cuckoo Search mathematically. (Implement and verify Cuckoo Search for derivative-free global optimization).
