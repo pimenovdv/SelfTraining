@@ -35,6 +35,7 @@ train_b_spline_component
 train_bam_component
 train_barlow_twins_component
 train_basinhopping_component
+train_bat_algorithm_component
 train_batchnorm_component
 train_bayesian_linear_regression_component
 train_bayesian_network_component

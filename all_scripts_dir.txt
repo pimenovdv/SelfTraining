@@ -35,6 +35,7 @@
 ./train_bam_component.py
 ./train_barlow_twins_component.py
 ./train_basinhopping_component.py
+./train_bat_algorithm_component.py
 ./train_batchnorm_component.py
 ./train_bayesian_linear_regression_component.py
 ./train_bayesian_network_component.py
