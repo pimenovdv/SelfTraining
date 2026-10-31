@@ -359,6 +359,7 @@ train_orpo_component
 train_orthogonal_rnn_component
 train_pagerank_component
 train_particle_filter_component
+train_particle_swarm_optimization_component
 train_pca_component
 train_pcn_comparison_component
 train_pcn_component

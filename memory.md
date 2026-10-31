@@ -2722,3 +2722,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Component:** `train_cobyla_component.py`
 - **Method:** Uses scipy.optimize.minimize with method='COBYLA'.
 - **Result:** Successfully optimized a simple constrained quadratic problem. Final value: 0.500000, Execution time: 0.09s, Function evaluations: 37.
+### Experiment 0600: Train Particle Swarm Optimization Component
+- **Component:** Particle Swarm Optimization (PSO) algorithm.
+- **Objective:** Evaluate the PSO method mathematically for non-convex, unconstrained global optimization.
+- **Methodology:** Implemented PSO from scratch in pure NumPy on the 3-dimensional Rosenbrock function. Evaluated on the bounded region `[-5, 5]`. Used a swarm size of 50 particles and trained for 500 iterations.
+- **Results:** PSO successfully found the global minimum. The optimization converged perfectly to the parameters `[1. 1. 1.]`, achieving a final loss of `0.000000`.
+- **Conclusion:** PSO converges reliably for the non-convex Rosenbrock function, demonstrating the utility of population-based algorithms for multi-dimensional optimization.
