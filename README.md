@@ -2951,3 +2951,9 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Dual Annealing Optimization
 **Script:** `train_dual_annealing_component.py`
 **Description:** Evaluates the Dual Annealing global optimization algorithm mathematically, testing its ability to solve bound-constrained global non-linear optimization problems by combining generalized simulated annealing with a local search method, successfully optimizing the non-convex Rosenbrock function.
+
+
+
+## Component Testing: Bat Algorithm
+**Script:** `train_bat_algorithm_component.py`
+**Description:** Evaluates the Bat Algorithm mathematically in pure NumPy, testing its ability to solve derivative-free unconstrained optimization problems by performing sequential echolocation-based search, successfully optimizing the non-convex Rosenbrock function.
