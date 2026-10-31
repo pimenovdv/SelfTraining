@@ -593,4 +593,5 @@
 0598_train_tnc_component
 0599_train_cobyla_component
 0600_train_particle_swarm_optimization_component
+0601_train_firefly_algorithm_component
 chinchilla_analysis
