@@ -2728,3 +2728,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Methodology:** Implemented PSO from scratch in pure NumPy on the 3-dimensional Rosenbrock function. Evaluated on the bounded region `[-5, 5]`. Used a swarm size of 50 particles and trained for 500 iterations.
 - **Results:** PSO successfully found the global minimum. The optimization converged perfectly to the parameters `[1. 1. 1.]`, achieving a final loss of `0.000000`.
 - **Conclusion:** PSO converges reliably for the non-convex Rosenbrock function, demonstrating the utility of population-based algorithms for multi-dimensional optimization.
+
+### Experiment 0601: Firefly Algorithm Component
+- **Objective**: Implement and verify the Firefly Algorithm for derivative-free global optimization mathematically.
+- **Method**: Developed a pure NumPy implementation modeling attraction proportional to brightness (fitness) which decays exponentially with distance. Validated on the 3D Rosenbrock function.
+- **Outcome**: The algorithm converged to a final loss of 0.000000 in 9.0382 seconds, confirming its capability for non-convex global optimization.
