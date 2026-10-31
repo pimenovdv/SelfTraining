@@ -2751,3 +2751,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Methodology:** Implemented Differential Evolution from scratch in pure NumPy on the 3-dimensional Rosenbrock function. Evaluated on the bounded region `[-5.0, 5.0]`. Used a population size of 50 and trained for up to 2000 iterations.
 - **Results:** Differential Evolution successfully found the global minimum. The optimization converged to the parameters `[1.00001976 1.00003956 1.00007016]`, achieving a final loss of `0.000000`.
 - **Conclusion:** Differential Evolution converges reliably for the non-convex Rosenbrock function, demonstrating the utility of evolutionary algorithms for multi-dimensional global optimization.
+
+### Harmony Search Algorithm (train_harmony_search_component.py)
+- **Concept**: A meta-heuristic optimization algorithm inspired by the improvisation process of musicians seeking perfect harmony.
+- **Mechanism**: The algorithm uses a Harmony Memory (HM) to store the best solutions. In each iteration, it improvises a new harmony by either choosing a value from HM (with probability HMCR - Harmony Memory Considering Rate), applying pitch adjustment (with probability PAR - Pitch Adjusting Rate) by a bandwidth (BW), or picking a random value. If the new harmony is better than the worst in HM, it replaces it.
+- **Results**: Tested on a 5-dimensional Rosenbrock function, the algorithm reached a best fitness of 1.505466 at position `[0.88554089 0.84769628 0.78960977 0.68280778 0.44081697]`.
+- **Status**: Implemented and verified successfully.

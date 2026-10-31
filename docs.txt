@@ -596,4 +596,4 @@
 0601_train_firefly_algorithm_component
 0602_train_cuckoo_search_component
 0603_train_bat_algorithm_component
-chinchilla_analysis
+0605_train_harmony_search_component

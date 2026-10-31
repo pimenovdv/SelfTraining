@@ -559,3 +559,4 @@ docs/0600_train_particle_swarm_optimization_component.md
 docs/0601_train_firefly_algorithm_component.md
 docs/0602_train_cuckoo_search_component.md
 docs/0603_train_bat_algorithm_component.md
+docs/0605_train_harmony_search_component.md
