@@ -334,3 +334,4 @@
 - [x] Explore Firefly Algorithm mathematically. (Implement and verify Firefly Algorithm for derivative-free global optimization).
 - [x] Explore Cuckoo Search mathematically. (Implement and verify Cuckoo Search for derivative-free global optimization).
 - [x] Explore Bat Algorithm mathematically. (Implement and verify Bat Algorithm for derivative-free global optimization).
+- [x] Explore gradient-free global optimization mathematically. (Implement and verify Differential Evolution for continuous function minimization).
