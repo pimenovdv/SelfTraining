@@ -29,6 +29,7 @@ train_arcface_loss_component.py
 train_arcsinh_component.py
 train_arctan_component.py
 train_aria2_component.py
+train_artificial_bee_colony_component.py
 train_asgd_component.py
 train_attention_component.py
 train_b_spline_component.py
