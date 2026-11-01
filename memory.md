@@ -2782,3 +2782,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - 0611_train_natural_evolution_strategies_component.md: Implemented Natural Evolution Strategies (NES) component.
   - Demonstrated a black-box optimization algorithm that updates a search distribution (here, a multivariate Gaussian) in the direction of the natural gradient of expected fitness.
   - Successfully minimized the Rastrigin function. Best fitness: 0.0338.
+
+### Experiment 0612: Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+- **Action:** Implemented Covariance Matrix Adaptation Evolution Strategy mathematically in pure NumPy in `train_cma_es_optimization_component.py`, updating the mean, covariance matrix, and step size rules to optimize a test function.
+- **Hypothesis:** By evaluating the fitness of sampled candidates, CMA-ES can dynamically adapt a multivariate normal distribution's mean and covariance matrix to effectively optimize complex, non-convex functions like the Rosenbrock function without computing analytical gradients.
+- **Outcome:** The algorithm successfully minimized the Rosenbrock function, converging precisely to the global minimum (fitness: 0.000000, parameters: [1., 1.]) by adapting the covariance matrix to follow the valley of the function.

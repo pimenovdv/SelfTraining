@@ -127,7 +127,6 @@ docs/0128_train_pointer_network_component.md
 docs/0129_train_td3_component.md
 docs/0130_train_nerf_component.md
 docs/0131_train_sac_component.md
-docs/0132_train_cmaes_component.md
 docs/0133_train_decision_transformer_component.md
 docs/0134_train_kmeans_component.md
 docs/0135_train_selu_component.md
@@ -231,7 +230,6 @@ docs/0257_train_se_block_component.md
 docs/0258_train_thompson_sampling_component.md
 docs/0259_train_neat_component.md
 docs/0260_train_dnc_component.md
-docs/0261_train_cma_es_component.md
 docs/0262_train_kpca_component.md
 docs/0263_train_linucb_component.md
 docs/0264_train_matrix_factorization_component.md
@@ -564,3 +562,4 @@ docs/0606_train_artificial_bee_colony_component.md
 docs/0607_train_grey_wolf_optimizer_component.md
 docs/0608_train_ant_colony_optimization_component.md
 docs/0611_train_natural_evolution_strategies_component.md
+docs/0612_train_cma_es_optimization_component.md

@@ -2961,3 +2961,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Differential Evolution
 **Script:** `train_differential_evolution_component.py`
 **Description:** Evaluates the Differential Evolution method mathematically for non-convex, unconstrained global optimization on the Rosenbrock function.
+
+## Component Testing: Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+**Script:** `train_cma_es_optimization_component.py`
+**Description:** Evaluates a CMA-ES component mathematically in pure NumPy, testing its ability to optimize parameters without gradients by dynamically adapting a multivariate normal distribution's mean and covariance matrix based on sample fitness on the Rosenbrock function.
