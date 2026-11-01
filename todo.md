@@ -341,4 +341,6 @@
 - [x] Explore Ant Colony Optimization mathematically. (Implement and verify Ant Colony Optimization algorithm for continuous optimization).
 - [x] Explore Simulated Annealing mathematically for continuous domains. (Implemented and verified Simulated Annealing algorithm for continuous optimization).
 - [x] Explore Cross-Entropy Method mathematically. (Implemented and verified Cross-Entropy Method algorithm for continuous optimization).
-- [ ] Explore Natural Evolution Strategies mathematically.
+- [x] Explore Natural Evolution Strategies mathematically. (Implemented and verified Natural Evolution Strategies component).
+
+- [ ] Explore Covariance Matrix Adaptation Evolution Strategy mathematically.
