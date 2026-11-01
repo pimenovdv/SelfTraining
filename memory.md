@@ -2778,3 +2778,7 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - Successfully implemented and verified Cross-Entropy Method (CEM) for continuous optimization.
 - The algorithm successfully converged towards the global minimum (1, 1) on a 2D Rosenbrock function.
 - Final best evaluation: 0.050295.
+
+- 0611_train_natural_evolution_strategies_component.md: Implemented Natural Evolution Strategies (NES) component.
+  - Demonstrated a black-box optimization algorithm that updates a search distribution (here, a multivariate Gaussian) in the direction of the natural gradient of expected fitness.
+  - Successfully minimized the Rastrigin function. Best fitness: 0.0338.

@@ -333,6 +333,7 @@ train_nadaraya_watson_component
 train_nade_component
 train_naive_bayes_component
 train_nalu_component
+train_natural_evolution_strategies_component
 train_natural_gradient_descent_component
 train_nca_component
 train_nce_component
