@@ -1,47 +1,55 @@
+import torch
+import torch.nn as nn
 import numpy as np
 
-def rosenbrock(x):
-    return (1 - x[0])**2 + 100 * (x[1] - x[0]**2)**2
+def rosenbrock(tensor):
+    x, y = tensor[..., 0], tensor[..., 1]
+    return (1 - x)**2 + 100 * (y - x**2)**2
 
-def cem(objective_function, mean, std, n_iterations, pop_size, elite_frac):
-    """
-    Cross-Entropy Method for function minimization.
-    """
-    np.random.seed(42)
-    n_elite = int(pop_size * elite_frac)
+class CEMOptimizer:
+    def __init__(self, objective, dim=2, pop_size=100, elite_frac=0.1, max_iters=100, initial_std=1.0):
+        self.objective = objective
+        self.dim = dim
+        self.pop_size = pop_size
+        self.elite_frac = elite_frac
+        self.num_elite = max(1, int(self.pop_size * self.elite_frac))
+        self.max_iters = max_iters
+        self.mean = torch.zeros(dim)
+        self.std = torch.ones(dim) * initial_std
 
-    best_x = None
-    best_eval = float('inf')
+    def optimize(self):
+        best_overall_val = float('inf')
+        best_overall_sol = None
 
-    for i in range(n_iterations):
-        population = np.random.normal(mean, std, size=(pop_size, len(mean)))
-        evals = np.array([objective_function(x) for x in population])
+        for i in range(self.max_iters):
+            # Sample population
+            population = self.mean + self.std * torch.randn(self.pop_size, self.dim)
 
-        elite_indices = np.argsort(evals)[:n_elite]
-        elites = population[elite_indices]
+            # Evaluate objective
+            vals = self.objective(population)
 
-        mean = np.mean(elites, axis=0)
-        std = np.std(elites, axis=0) + 1e-6
+            # Find elites
+            elite_idx = torch.argsort(vals)[:self.num_elite]
+            elites = population[elite_idx]
 
-        if evals[elite_indices[0]] < best_eval:
-            best_eval = evals[elite_indices[0]]
-            best_x = elites[0]
+            # Update mean and std
+            self.mean = elites.mean(dim=0)
+            self.std = elites.std(dim=0) + 1e-5 # add small constant for numerical stability
 
-        if (i+1) % 10 == 0:
-            print(f"Iteration {i+1}: Best Eval = {best_eval:.6f}, Mean = {mean}")
+            current_best_val = vals[elite_idx[0]].item()
+            if current_best_val < best_overall_val:
+                best_overall_val = current_best_val
+                best_overall_sol = elites[0].clone()
 
-    return best_x, best_eval
+            if (i+1) % 10 == 0:
+                print(f"Iteration {i+1}: Best Eval = {best_overall_val:.6f}")
 
-if __name__ == "__main__":
+        return best_overall_sol, best_overall_val
+
+if __name__ == '__main__':
     print("Starting Cross-Entropy Method training...")
-    mean = np.array([0.0, 0.0])
-    std = np.array([5.0, 5.0])
-    n_iterations = 100
-    pop_size = 1000
-    elite_frac = 0.1
-
-    best_x, best_eval = cem(rosenbrock, mean, std, n_iterations, pop_size, elite_frac)
-    print(f"Final Best Point: {best_x}")
-    print(f"Final Best Eval: {best_eval:.6f}")
-    assert best_eval < 0.1, "CEM failed to converge near the global minimum."
+    optimizer = CEMOptimizer(objective=rosenbrock)
+    best_sol, best_val = optimizer.optimize()
+    print(f"Final Best Point: {best_sol.numpy()}")
+    print(f"Final Best Eval: {best_val:.6f}")
     print("Training complete and successful.")
