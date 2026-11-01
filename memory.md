@@ -2762,3 +2762,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Component**: Artificial Bee Colony Optimization
 - **Purpose**: Implement and verify the Artificial Bee Colony algorithm for derivative-free continuous function minimization.
 - **Results**: Successfully optimized the 3D Rosenbrock function, finding a best cost of 0.017344. The implementation demonstrated effective exploration and exploitation capabilities through the employed, onlooker, and scout bee phases, avoiding local minima.
+### Experiment 0607: Grey Wolf Optimizer (GWO)
+- **Goal:** Implement and evaluate the Grey Wolf Optimizer algorithm for continuous global optimization.
+- **Method:** Implemented GWO and tested it on the 5-dimensional Rosenbrock function with 50 wolves and 200 iterations. The algorithm maintains an alpha, beta, and delta wolf to guide the search process of the pack towards the global minimum.
+- **Result:** The algorithm converged to a best score of 1.2681251478710458, showing reasonable performance for a gradient-free method on this challenging non-convex function.
+- **Conclusion:** GWO is a feasible population-based metaheuristic algorithm for optimization problems without derivative information.

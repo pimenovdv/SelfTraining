@@ -561,3 +561,4 @@ docs/0602_train_cuckoo_search_component.md
 docs/0603_train_bat_algorithm_component.md
 docs/0605_train_harmony_search_component.md
 docs/0606_train_artificial_bee_colony_component.md
+docs/0607_train_grey_wolf_optimizer_component.md

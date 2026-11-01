@@ -337,3 +337,4 @@
 - [x] Explore gradient-free global optimization mathematically. (Implement and verify Differential Evolution for continuous function minimization).
 - [x] Explore Harmony Search mathematically. (Implement and verify Harmony Search algorithm for continuous optimization).
 - [x] Explore Artificial Bee Colony algorithm mathematically. (Implement and verify Artificial Bee Colony algorithm for continuous optimization).
+- [x] Explore Grey Wolf Optimizer mathematically. (Implement and verify Grey Wolf Optimizer algorithm for continuous optimization).

@@ -184,6 +184,7 @@ train_gqa_component
 train_gradient_boosting_component
 train_graph_isomorphism_network_component
 train_graphsage_component
+train_grey_wolf_optimizer_component
 train_grokking_component
 train_group_norm_component
 train_groupnorm_component
