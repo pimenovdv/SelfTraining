@@ -339,4 +339,6 @@
 - [x] Explore Artificial Bee Colony algorithm mathematically. (Implement and verify Artificial Bee Colony algorithm for continuous optimization).
 - [x] Explore Grey Wolf Optimizer mathematically. (Implement and verify Grey Wolf Optimizer algorithm for continuous optimization).
 - [x] Explore Ant Colony Optimization mathematically. (Implement and verify Ant Colony Optimization algorithm for continuous optimization).
-- [ ] Explore Simulated Annealing mathematically for continuous domains.
+- [x] Explore Simulated Annealing mathematically for continuous domains. (Implemented and verified Simulated Annealing algorithm for continuous optimization).
+- [x] Explore Cross-Entropy Method mathematically. (Implemented and verified Cross-Entropy Method algorithm for continuous optimization).
+- [ ] Explore Natural Evolution Strategies mathematically.

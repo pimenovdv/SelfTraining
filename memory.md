@@ -2768,3 +2768,13 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Result:** The algorithm converged to a best score of 1.2681251478710458, showing reasonable performance for a gradient-free method on this challenging non-convex function.
 - **Conclusion:** GWO is a feasible population-based metaheuristic algorithm for optimization problems without derivative information.
 - Explored and implemented Ant Colony Optimization for continuous domain optimization. Successfully optimized the Rosenbrock function achieving a best cost of 0.000017 with Best Position at [1.00253625 1.00539846] after 100 iterations.
+
+## Simulated Annealing
+- Successfully implemented and verified Simulated Annealing for continuous optimization.
+- The algorithm successfully converged to the global minimum (1, 1) on a 2D Rosenbrock function.
+- Final best evaluation: 0.000162.
+
+## Cross-Entropy Method
+- Successfully implemented and verified Cross-Entropy Method (CEM) for continuous optimization.
+- The algorithm successfully converged towards the global minimum (1, 1) on a 2D Rosenbrock function.
+- Final best evaluation: 0.050295.
