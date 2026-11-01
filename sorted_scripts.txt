@@ -25,6 +25,7 @@ train_agi_safety_alignment_v2_component
 train_alibi_component
 train_als_component
 train_amsgrad_component
+train_ant_colony_optimization_component
 train_arcface_loss_component
 train_arcsinh_component
 train_arctan_component

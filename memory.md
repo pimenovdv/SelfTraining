@@ -2767,3 +2767,4 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Method:** Implemented GWO and tested it on the 5-dimensional Rosenbrock function with 50 wolves and 200 iterations. The algorithm maintains an alpha, beta, and delta wolf to guide the search process of the pack towards the global minimum.
 - **Result:** The algorithm converged to a best score of 1.2681251478710458, showing reasonable performance for a gradient-free method on this challenging non-convex function.
 - **Conclusion:** GWO is a feasible population-based metaheuristic algorithm for optimization problems without derivative information.
+- Explored and implemented Ant Colony Optimization for continuous domain optimization. Successfully optimized the Rosenbrock function achieving a best cost of 0.000017 with Best Position at [1.00253625 1.00539846] after 100 iterations.

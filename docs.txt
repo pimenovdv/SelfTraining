@@ -599,3 +599,4 @@
 0605_train_harmony_search_component
 0606_train_artificial_bee_colony_component
 0607_train_grey_wolf_optimizer_component
+0608_train_ant_colony_optimization_component
