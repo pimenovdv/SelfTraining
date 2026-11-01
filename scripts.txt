@@ -29,6 +29,7 @@ train_arcface_loss_component
 train_arcsinh_component
 train_arctan_component
 train_aria2_component
+train_artificial_bee_colony_component
 train_asgd_component
 train_attention_component
 train_b_spline_component

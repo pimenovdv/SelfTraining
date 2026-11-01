@@ -2757,3 +2757,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Mechanism**: The algorithm uses a Harmony Memory (HM) to store the best solutions. In each iteration, it improvises a new harmony by either choosing a value from HM (with probability HMCR - Harmony Memory Considering Rate), applying pitch adjustment (with probability PAR - Pitch Adjusting Rate) by a bandwidth (BW), or picking a random value. If the new harmony is better than the worst in HM, it replaces it.
 - **Results**: Tested on a 5-dimensional Rosenbrock function, the algorithm reached a best fitness of 1.505466 at position `[0.88554089 0.84769628 0.78960977 0.68280778 0.44081697]`.
 - **Status**: Implemented and verified successfully.
+
+### Experiment 606: Artificial Bee Colony Algorithm
+- **Component**: Artificial Bee Colony Optimization
+- **Purpose**: Implement and verify the Artificial Bee Colony algorithm for derivative-free continuous function minimization.
+- **Results**: Successfully optimized the 3D Rosenbrock function, finding a best cost of 0.017344. The implementation demonstrated effective exploration and exploitation capabilities through the employed, onlooker, and scout bee phases, avoiding local minima.
