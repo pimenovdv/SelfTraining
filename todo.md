@@ -338,3 +338,5 @@
 - [x] Explore Harmony Search mathematically. (Implement and verify Harmony Search algorithm for continuous optimization).
 - [x] Explore Artificial Bee Colony algorithm mathematically. (Implement and verify Artificial Bee Colony algorithm for continuous optimization).
 - [x] Explore Grey Wolf Optimizer mathematically. (Implement and verify Grey Wolf Optimizer algorithm for continuous optimization).
+- [x] Explore Ant Colony Optimization mathematically. (Implement and verify Ant Colony Optimization algorithm for continuous optimization).
+- [ ] Explore Simulated Annealing mathematically for continuous domains.
