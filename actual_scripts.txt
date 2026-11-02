@@ -509,6 +509,7 @@ train_swiglu_component.py
 train_swish_component.py
 train_swish_glu_component.py
 train_symlog_component.py
+train_tabu_search_component.py
 train_tanhexp_component.py
 train_tanhshrink_component.py
 train_target_propagation_component.py

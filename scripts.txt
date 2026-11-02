@@ -509,6 +509,7 @@ train_swiglu_component
 train_swish_component
 train_swish_glu_component
 train_symlog_component
+train_tabu_search_component
 train_tanhexp_component
 train_tanhshrink_component
 train_target_propagation_component

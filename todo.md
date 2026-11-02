@@ -345,4 +345,6 @@
 
 - [x] Explore Covariance Matrix Adaptation Evolution Strategy mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy algorithm for continuous optimization).
 - [x] Explore Trust Region Policy Optimization mathematically. (Implemented and verified TRPO algorithm for constrained policy updates).
-- [ ] Explore Deep Deterministic Policy Gradient (DDPG) mathematically.
+- [x] Explore Deep Deterministic Policy Gradient (DDPG) mathematically. (Implemented and verified DDPG component for continuous control).
+- [x] Explore Tabu Search mathematically. (Implemented and verified Tabu Search component for continuous optimization).
+- [ ] Explore Soft Actor-Critic (SAC) mathematically.
