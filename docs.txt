@@ -612,5 +612,6 @@
 0617_train_natural_actor_critic_component
 0618_train_snes_component
 0619_train_xnes_component
-chinchilla_analysis
 0620_train_mirror_descent_component
+0621_train_subgradient_method_component
+chinchilla_analysis

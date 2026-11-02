@@ -312,6 +312,7 @@ train_medium_scale_model_component.py
 train_memory_network_component.py
 train_meta_learning_component.py
 train_mgu_component.py
+train_mirror_descent_component.py
 train_mish_component.py
 train_mishglu_component.py
 train_mixture_of_experts_component.py
@@ -501,6 +502,7 @@ train_srelu_component.py
 train_ssm_component.py
 train_starrelu_component.py
 train_stdp_component.py
+train_subgradient_method_component.py
 train_supcon_loss_component.py
 train_svd_component.py
 train_svgd_component.py
@@ -555,4 +557,3 @@ train_xgboost_component.py
 train_xnes_component.py
 train_xpos_component.py
 train_yogi_component.py
-train_mirror_descent_component.py

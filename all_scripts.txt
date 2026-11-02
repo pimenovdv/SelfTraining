@@ -312,6 +312,7 @@ train_medium_scale_model_component
 train_memory_network_component
 train_meta_learning_component
 train_mgu_component
+train_mirror_descent_component
 train_mish_component
 train_mishglu_component
 train_mixture_of_experts_component
@@ -501,6 +502,7 @@ train_srelu_component
 train_ssm_component
 train_starrelu_component
 train_stdp_component
+train_subgradient_method_component
 train_supcon_loss_component
 train_svd_component
 train_svgd_component
@@ -555,4 +557,3 @@ train_xgboost_component
 train_xnes_component
 train_xpos_component
 train_yogi_component
-train_mirror_descent_component
