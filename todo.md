@@ -361,4 +361,5 @@
 - [x] Explore Natural Evolution Strategies for exact methods mathematically. (Implemented and verified xNES component).
 - [x] Explore Mirror Descent mathematically. (Implemented and verified MD component).
 - [x] Explore Subgradient Method mathematically. (Implemented and verified Subgradient Method component for non-smooth optimization).
-- [ ] Explore Accelerated Gradient Methods (Nesterov/FISTA) mathematically for fast convex optimization.
+- [x] Explore Accelerated Gradient Methods (Nesterov/FISTA) mathematically for fast convex optimization. (Implemented and verified FISTA component).
+- [x] Explore Alternating Direction Method of Multipliers (ADMM) mathematically for distributed optimization. (Implemented and verified ADMM component).
