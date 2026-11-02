@@ -600,3 +600,4 @@
 0608_train_ant_colony_optimization_component
 0611_train_natural_evolution_strategies_component
 0612_train_cma_es_optimization_component
+0614_train_tabu_search_component

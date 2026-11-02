@@ -563,3 +563,4 @@ docs/0607_train_grey_wolf_optimizer_component.md
 docs/0608_train_ant_colony_optimization_component.md
 docs/0611_train_natural_evolution_strategies_component.md
 docs/0612_train_cma_es_optimization_component.md
+docs/0614_train_tabu_search_component.md
