@@ -1,75 +1,61 @@
 import numpy as np
-import time
 
-def soft_thresholding(a, kappa):
-    return np.sign(a) * np.maximum(np.abs(a) - kappa, 0)
+def admm_lasso(A, b, rho, alpha, max_iters=100, tol=1e-4):
+    """
+    Alternating Direction Method of Multipliers (ADMM) for Lasso:
+    min 1/2 * ||Ax - b||_2^2 + alpha * ||z||_1
+    s.t. x - z = 0
+    """
+    m, n = A.shape
+    x = np.zeros(n)
+    z = np.zeros(n)
+    u = np.zeros(n)
 
-class ADMMLasso:
-    def __init__(self, rho=1.0, alpha=0.1, max_iter=1000, tol=1e-4):
-        self.rho = rho
-        self.alpha = alpha # this is lambda
-        self.max_iter = max_iter
-        self.tol = tol
+    # Precompute A^T A and A^T b for the x-update
+    AtA = A.T @ A
+    Atb = A.T @ b
 
-    def fit(self, A, b):
-        m, n = A.shape
-        x = np.zeros(n)
-        z = np.zeros(n)
-        u = np.zeros(n)
+    # Cache the matrix factorization for efficiency
+    inv_mat = np.linalg.inv(AtA + rho * np.eye(n))
 
-        AtA = A.T @ A
-        Atb = A.T @ b
-        inv_mat = np.linalg.inv(AtA + self.rho * np.eye(n))
+    for i in range(max_iters):
+        # x-update: x = (A^T A + rho * I)^(-1) * (A^T b + rho * (z - u))
+        x = inv_mat @ (Atb + rho * (z - u))
 
-        for i in range(self.max_iter):
-            x_new = inv_mat @ (Atb + self.rho * (z - u))
-            z_new = soft_thresholding(x_new + u, self.alpha / self.rho)
-            u_new = u + x_new - z_new
+        # z-update: soft-thresholding
+        kappa = alpha / rho
+        v = x + u
+        z_new = np.sign(v) * np.maximum(0, np.abs(v) - kappa)
 
-            # Convergence check
-            if np.linalg.norm(x_new - z_new) < self.tol and np.linalg.norm(self.rho * (z_new - z)) < self.tol:
-                break
+        # u-update
+        u = u + x - z_new
 
-            x = x_new
+        # Convergence check
+        if np.linalg.norm(z_new - z) < tol and np.linalg.norm(x - z_new) < tol:
             z = z_new
-            u = u_new
+            break
 
-        self.coef_ = z
-        self.iterations_ = i + 1
+        z = z_new
 
-    def predict(self, A):
-        return A @ self.coef_
+    return z
 
 if __name__ == "__main__":
-    print("Initializing ADMM for Lasso Optimization...")
+    # Generate synthetic data for Lasso
     np.random.seed(42)
-
-    # Generate synthetic data
-    m, n = 100, 50
+    m, n = 50, 100
     A = np.random.randn(m, n)
-    # True weights with sparsity
-    true_weights = np.zeros(n)
-    true_weights[:10] = np.random.randn(10)
-    b = A @ true_weights + np.random.randn(m) * 0.1
+    x_true = np.zeros(n)
+    # create sparse x
+    x_true[np.random.choice(n, 10, replace=False)] = np.random.randn(10)
+    b = A @ x_true + 0.1 * np.random.randn(m)
 
-    print("Training ADMM Model...")
-    start_time = time.time()
+    rho = 1.0
+    alpha = 0.5
 
-    model = ADMMLasso(rho=1.0, alpha=0.5, max_iter=500)
-    model.fit(A, b)
+    x_pred = admm_lasso(A, b, rho, alpha)
 
-    end_time = time.time()
+    mse = np.mean((x_pred - x_true)**2)
+    sparsity = np.sum(np.abs(x_pred) > 1e-5)
 
-    # Calculate Mean Squared Error
-    predictions = model.predict(A)
-    mse = np.mean((predictions - b) ** 2)
-
-    # Calculate Sparsity (number of zeros in coefficients)
-    sparsity = np.sum(np.abs(model.coef_) < 1e-5)
-
-    print(f"ADMM Lasso Training Completed in {end_time - start_time:.4f} seconds.")
-    print(f"Final Mean Squared Error: {mse:.4f}")
-    print(f"Iterations: {model.iterations_}")
-    print(f"Sparsity: {sparsity}/{n} zero coefficients.")
-
-    print("\nVerification successful. ADMM Component is mathematically sound.")
+    print(f"ADMM Lasso MSE: {mse:.6f}")
+    print(f"Sparsity: {sparsity} non-zero elements")

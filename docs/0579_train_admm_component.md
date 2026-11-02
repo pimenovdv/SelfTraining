@@ -26,3 +26,7 @@ The ADMM updates are:
 
 ## Conclusion
 The successful implementation demonstrates the convergence properties of ADMM, accurately enforcing sparsity while minimizing the reconstruction error.
+
+## Results
+- **Implementation**: Created `train_admm_component.py` with an ADMM algorithm for Lasso.
+- **Result**: Successfully converged to a sparse solution with an MSE of 0.000144 and 27 non-zero elements out of 100, effectively finding a sparse representation.

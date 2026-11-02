@@ -2856,3 +2856,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - The subgradient method is used to minimize non-differentiable convex functions (e.g., L1 loss) by moving in the opposite direction of a subgradient.
 - Implemented `train_subgradient_method_component.py` simulating training with L1 Loss and SGD with learning rate decay, demonstrating subgradient steps.
 - Verification achieved through successful training loop showing steady loss reduction (Final Loss: 0.3642).
+
+### Alternating Direction Method of Multipliers (ADMM)
+- **Concept**: Explored Alternating Direction Method of Multipliers (ADMM) for distributed optimization, specifically applied to Lasso regression. It breaks down a large optimization problem into smaller pieces, each of which is easier to solve.
+- **Implementation**: Created `train_admm_component.py` with an ADMM algorithm for Lasso.
+- **Result**: Successfully converged to a sparse solution with an MSE of 0.000144 and 27 non-zero elements out of 100, effectively finding a sparse representation.
