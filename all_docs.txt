@@ -1,3 +1,4 @@
+0620_train_mirror_descent_component
 docs/0001_train_bpe_component.md
 docs/0002_train_ffn_component.md
 docs/0003_train_attention_component.md
@@ -569,4 +570,4 @@ docs/0616_train_trust_region_conjugate_gradient_component.md
 docs/0617_train_natural_actor_critic_component.md
 docs/0618_train_snes_component.md
 docs/0619_train_xnes_component.md
-0620_train_mirror_descent_component
+docs/0621_train_subgradient_method_component.md

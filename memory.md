@@ -2850,3 +2850,9 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - Successfully ran Mirror Descent component (`train_mirror_descent_component.py`)
 - Evaluated optimal output for Sphere function yielding optimal parameters near 0.
 - Recorded outcome in `docs/0620_train_mirror_descent_component.md`
+
+## Subgradient Method Component
+- Explored Subgradient Method for non-differentiable continuous optimization.
+- The subgradient method is used to minimize non-differentiable convex functions (e.g., L1 loss) by moving in the opposite direction of a subgradient.
+- Implemented `train_subgradient_method_component.py` simulating training with L1 Loss and SGD with learning rate decay, demonstrating subgradient steps.
+- Verification achieved through successful training loop showing steady loss reduction (Final Loss: 0.3642).
