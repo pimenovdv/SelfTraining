@@ -344,4 +344,5 @@
 - [x] Explore Natural Evolution Strategies mathematically. (Implemented and verified Natural Evolution Strategies component).
 
 - [x] Explore Covariance Matrix Adaptation Evolution Strategy mathematically. (Implemented and verified Covariance Matrix Adaptation Evolution Strategy algorithm for continuous optimization).
-- [ ] Explore Trust Region Policy Optimization mathematically.
+- [x] Explore Trust Region Policy Optimization mathematically. (Implemented and verified TRPO algorithm for constrained policy updates).
+- [ ] Explore Deep Deterministic Policy Gradient (DDPG) mathematically.
