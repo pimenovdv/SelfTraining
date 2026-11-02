@@ -555,3 +555,4 @@ train_xgboost_component.py
 train_xnes_component.py
 train_xpos_component.py
 train_yogi_component.py
+train_mirror_descent_component.py

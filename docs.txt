@@ -613,3 +613,4 @@
 0618_train_snes_component
 0619_train_xnes_component
 chinchilla_analysis
+0620_train_mirror_descent_component

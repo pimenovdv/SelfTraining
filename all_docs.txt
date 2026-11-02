@@ -569,3 +569,4 @@ docs/0616_train_trust_region_conjugate_gradient_component.md
 docs/0617_train_natural_actor_critic_component.md
 docs/0618_train_snes_component.md
 docs/0619_train_xnes_component.md
+0620_train_mirror_descent_component
