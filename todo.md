@@ -357,4 +357,6 @@
 - [x] Explore Trust Region Conjugate Gradient (TRCG) mathematically. (Implemented and verified TRCG component).
 - [x] Explore Natural Actor-Critic (NAC) mathematically. (Implemented and verified NAC component).
 - [x] Explore Deep Q-Network extensions (Double DQN, Dueling DQN, PER) mathematically. (Implemented and verified Dueling DQN component).
-- [x] Explore Natural Evolution Strategies for discrete spaces. (Implemented and verified SNES component).- [x] Explore Natural Evolution Strategies for exact methods mathematically. (Implemented and verified xNES component).
+- [x] Explore Natural Evolution Strategies for discrete spaces. (Implemented and verified SNES component).
+- [x] Explore Natural Evolution Strategies for exact methods mathematically. (Implemented and verified xNES component).
+- [x] Explore Mirror Descent mathematically. (Implemented and verified MD component).

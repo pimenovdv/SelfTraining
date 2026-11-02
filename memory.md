@@ -2845,3 +2845,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - Successfully ran Exponential Natural Evolution Strategies (xNES) component (`train_xnes_component.py`)
 - Evaluated optimal output yielding `Optimal parameters: [0.9992862  0.99851087]` and `Minimum value: 8.905025379614305e-07`.
 - Recorded outcome in `docs/0619_train_xnes_component.md`
+
+## 0620_train_mirror_descent_component
+- Successfully ran Mirror Descent component (`train_mirror_descent_component.py`)
+- Evaluated optimal output for Sphere function yielding optimal parameters near 0.
+- Recorded outcome in `docs/0620_train_mirror_descent_component.md`
