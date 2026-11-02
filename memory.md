@@ -2790,3 +2790,58 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **TRPO Component Exploration:** Successfully implemented and evaluated Trust Region Policy Optimization (TRPO) mathematically in `train_trpo_component.py`. The algorithm enforces a KL divergence constraint on policy updates to ensure monotonic improvement. The evaluation verified the effectiveness of the conjugate gradient and line search approach, reaching a total reward of 0.90 in the environment.
 
 - Implemented and verified Tabu Search component (`train_tabu_search_component.py`) for continuous optimization on the Ackley function. Explored gradient-free heuristic search using tabu lists to escape local minima. Optimization succeeded with best fitness 0.027518088266728302.
+
+## 0131_train_sac_component
+- Successfully ran Soft Actor-Critic (SAC) component (`train_sac_component.py`)
+- Evaluated final policy yielding State: [4.9997465] -> Action: [1.]
+- Recorded outcome in `docs/0131_train_sac_component.md`
+
+## 0064_train_dqn_component
+- Successfully ran Deep Q-Network (DQN) component (`train_dqn_component.py`)
+- The agent was evaluated successfully with Q-values reaching approximately [0.78 1.00] for State 3.
+- Recorded outcome in `docs/0064_train_dqn_component.md`
+
+## 0593_train_trust_region_reflective_component
+- Successfully ran Trust Region Reflective component (`train_trust_region_reflective_component.py`)
+- Evaluated optimal output for bounded Rosenbrock function yielding `Optimal x: [0.99999996 0.99999992]` and `Optimal f(x): 1.605133642268598e-15`.
+- Recorded outcome in `docs/0593_train_trust_region_reflective_component.md`
+
+## 0615_train_natural_policy_gradient_component
+- Successfully ran Natural Policy Gradient component (`train_natural_policy_gradient_component.py`)
+- Evaluated final policy yielding State: [0. 0.] -> Action Mean: [0.99890953 0.9999368]
+- Recorded outcome in `docs/0615_train_natural_policy_gradient_component.md`
+
+## 0611_train_natural_evolution_strategies_component
+- Successfully ran Natural Evolution Strategies (NES) component (`train_natural_evolution_strategies_component.py`)
+- Evaluated optimal output yielding `Best solution: [-0.00543096  0.00374732]` and `Best fitness: 0.0086`.
+- Recorded outcome in `docs/0611_train_natural_evolution_strategies_component.md`
+
+## 0584_train_nelder_mead_component
+- Successfully ran Nelder-Mead component (`train_nelder_mead_component.py`)
+- Evaluated optimal output yielding `Optimal parameters: [0.99929515 0.99863917]` and `Minimum value: 0.000001`.
+- Recorded outcome in `docs/0584_train_nelder_mead_component.md`
+
+## 0616_train_trust_region_conjugate_gradient_component
+- Successfully ran Trust Region Conjugate Gradient (TRCG) component (`train_trust_region_conjugate_gradient_component.py`)
+- Evaluated optimal output yielding `Optimal parameters: [1. 1.]` and `Minimum value: 3.4475083319198344e-23`.
+- Recorded outcome in `docs/0616_train_trust_region_conjugate_gradient_component.md`
+
+## 0617_train_natural_actor_critic_component
+- Successfully ran Natural Actor-Critic (NAC) component (`train_natural_actor_critic_component.py`)
+- Evaluated final policy yielding `State: [0. 0.] -> Action Mean: [0.9652122 0.9450619]`.
+- Recorded outcome in `docs/0617_train_natural_actor_critic_component.md`
+
+## 0543_train_dueling_dqn_component
+- Successfully ran Dueling DQN component (`train_dueling_dqn_component.py`)
+- Evaluated final policy yielding `State: 3 -> Action: 1 (Q-values: [0.78418453 0.99995988])`.
+- Recorded outcome in `docs/0543_train_dueling_dqn_component.md`
+
+## 0618_train_snes_component
+- Successfully ran Separable Natural Evolution Strategies (SNES) component (`train_snes_component.py`)
+- Evaluated optimal output yielding `Optimal parameters: [0.7141481  0.50894514]` and `Minimum value: 0.06335283786803196`.
+- Recorded outcome in `docs/0618_train_snes_component.md`
+
+## 0619_train_xnes_component
+- Successfully ran Exponential Natural Evolution Strategies (xNES) component (`train_xnes_component.py`)
+- Evaluated optimal output yielding `Optimal parameters: [0.9992862  0.99851087]` and `Minimum value: 8.905025379614305e-07`.
+- Recorded outcome in `docs/0619_train_xnes_component.md`

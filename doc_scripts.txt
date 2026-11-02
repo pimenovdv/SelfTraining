@@ -332,8 +332,10 @@ train_nadaraya_watson_component.py
 train_nade_component.py
 train_naive_bayes_component.py
 train_nalu_component.py
+train_natural_actor_critic_component.py
 train_natural_evolution_strategies_component.py
 train_natural_gradient_descent_component.py
+train_natural_policy_gradient_component.py
 train_nca_component.py
 train_nce_component.py
 train_ncf_component.py
@@ -469,6 +471,7 @@ train_smelu_component.py
 train_smish_component.py
 train_smooth_l1_loss_component.py
 train_snake_activation_component.py
+train_snes_component.py
 train_snn_component.py
 train_soft_exponential_component.py
 train_soft_margin_loss_component.py
@@ -525,6 +528,7 @@ train_tokenizer_component.py
 train_transformer_block_component.py
 train_triplet_loss_component.py
 train_trpo_component.py
+train_trust_region_conjugate_gradient_component.py
 train_trust_region_reflective_component.py
 train_tsetlin_machine_component.py
 train_tsne_component.py
@@ -548,5 +552,6 @@ train_welsch_loss_component.py
 train_wgan_component.py
 train_xavier_initialization_component.py
 train_xgboost_component.py
+train_xnes_component.py
 train_xpos_component.py
 train_yogi_component.py

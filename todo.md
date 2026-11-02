@@ -347,4 +347,14 @@
 - [x] Explore Trust Region Policy Optimization mathematically. (Implemented and verified TRPO algorithm for constrained policy updates).
 - [x] Explore Deep Deterministic Policy Gradient (DDPG) mathematically. (Implemented and verified DDPG component for continuous control).
 - [x] Explore Tabu Search mathematically. (Implemented and verified Tabu Search component for continuous optimization).
-- [ ] Explore Soft Actor-Critic (SAC) mathematically.
+- [x] Explore Soft Actor-Critic (SAC) mathematically. (Implemented and verified SAC component).
+- [x] Explore Deep Q-Network (DQN) mathematically. (Implemented and verified DQN component).
+- [x] Explore Trust Region Reflective optimization mathematically. (Implemented and verified Trust Region Reflective component).
+- [x] Explore Natural Policy Gradient (NPG) mathematically. (Implemented and verified NPG component).
+- [x] Explore Natural Evolution Strategies mathematically for continuous optimization. (Implemented and verified NES component).
+- [x] Explore Covariance Matrix Adaptation Evolution Strategy (CMA-ES) mathematically for continuous optimization. (Already implemented and verified as CMA-ES component).
+- [x] Explore Nelder-Mead mathematically for continuous optimization. (Implemented and verified Nelder-Mead component).
+- [x] Explore Trust Region Conjugate Gradient (TRCG) mathematically. (Implemented and verified TRCG component).
+- [x] Explore Natural Actor-Critic (NAC) mathematically. (Implemented and verified NAC component).
+- [x] Explore Deep Q-Network extensions (Double DQN, Dueling DQN, PER) mathematically. (Implemented and verified Dueling DQN component).
+- [x] Explore Natural Evolution Strategies for discrete spaces. (Implemented and verified SNES component).- [x] Explore Natural Evolution Strategies for exact methods mathematically. (Implemented and verified xNES component).
