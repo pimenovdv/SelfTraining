@@ -67,6 +67,7 @@ train_cem_component
 train_center_loss_component
 train_cfr_component
 train_cgan_component
+train_chambolle_pock_component
 train_charbonnier_loss_component
 train_chinchilla_optimality_component
 train_cma_es_optimization_component

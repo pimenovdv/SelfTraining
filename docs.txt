@@ -615,4 +615,5 @@
 0620_train_mirror_descent_component
 0621_train_subgradient_method_component
 0622_train_douglas_rachford_component
+0623_train_chambolle_pock_component
 chinchilla_analysis
