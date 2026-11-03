@@ -573,3 +573,4 @@ docs/0619_train_xnes_component.md
 docs/0621_train_subgradient_method_component.md
 docs/0622_train_douglas_rachford_component.md
 docs/0623_train_chambolle_pock_component.md
+docs/0624_train_proximal_point_component.md
