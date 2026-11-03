@@ -617,4 +617,5 @@
 0622_train_douglas_rachford_component
 0623_train_chambolle_pock_component
 0624_train_proximal_point_component
+0625_train_augmented_lagrangian_component
 chinchilla_analysis

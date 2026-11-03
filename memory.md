@@ -2871,3 +2871,4 @@ For optimization, finding the minimum of a function is equivalent to finding the
 **Script:** `train_chambolle_pock_component.py`
 **Description:** Evaluates the Chambolle-Pock algorithm mathematically in pure NumPy, testing its ability to solve primal-dual saddle point problems, such as L1-regularized least squares, by alternating between proximal steps in the primal and dual spaces with an extrapolation step to ensure convergence.
 - **0624_train_proximal_point_component**: Implemented and verified the Proximal Point Algorithm mathematically for non-smooth convex optimization.
+- Explored and implemented Augmented Lagrangian Method for constrained optimization.

@@ -366,3 +366,4 @@
 - [x] Explore Douglas-Rachford Splitting mathematically for distributed optimization. (Implemented and verified Douglas-Rachford Splitting component).
 - [x] Explore primal-dual optimization mathematically. (Implemented and verified Chambolle-Pock algorithm for saddle-point problems).
 - [x] Explore Proximal Point Algorithm mathematically for non-smooth convex optimization.
+- [x] Explore Augmented Lagrangian Method mathematically for constrained optimization. (Implemented and verified Augmented Lagrangian Method algorithm for constrained optimization).
