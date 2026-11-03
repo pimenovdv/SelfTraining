@@ -2873,3 +2873,4 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **0624_train_proximal_point_component**: Implemented and verified the Proximal Point Algorithm mathematically for non-smooth convex optimization.
 - Explored and implemented Augmented Lagrangian Method for constrained optimization.
 - Explored and implemented Kelley's Cutting Plane Method for convex optimization in `train_cutting_plane_component.py`.
+- **0627_train_bundle_method_component**: Implemented and verified the Bundle Method algorithm mathematically for non-smooth convex optimization.
