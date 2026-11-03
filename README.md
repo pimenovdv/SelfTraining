@@ -2965,3 +2965,7 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
 **Script:** `train_cma_es_optimization_component.py`
 **Description:** Evaluates a CMA-ES component mathematically in pure NumPy, testing its ability to optimize parameters without gradients by dynamically adapting a multivariate normal distribution's mean and covariance matrix based on sample fitness on the Rosenbrock function.
+
+## Component Testing: Bundle Method Optimization
+**Script:** `train_bundle_method_component.py`
+**Description:** Evaluates the Bundle Method mathematically in pure NumPy, testing its ability to solve non-smooth convex optimization problems by accumulating subgradients into a bundle to construct a cutting-plane model of the objective, regularized with a proximal term.
