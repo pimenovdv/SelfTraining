@@ -363,3 +363,4 @@
 - [x] Explore Subgradient Method mathematically. (Implemented and verified Subgradient Method component for non-smooth optimization).
 - [x] Explore Accelerated Gradient Methods (Nesterov/FISTA) mathematically for fast convex optimization. (Implemented and verified FISTA component).
 - [x] Explore Alternating Direction Method of Multipliers (ADMM) mathematically for distributed optimization. (Implemented and verified ADMM component).
+- [x] Explore Douglas-Rachford Splitting mathematically for distributed optimization. (Implemented and verified Douglas-Rachford Splitting component).

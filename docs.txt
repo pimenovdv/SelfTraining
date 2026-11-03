@@ -614,4 +614,5 @@
 0619_train_xnes_component
 0620_train_mirror_descent_component
 0621_train_subgradient_method_component
+0622_train_douglas_rachford_component
 chinchilla_analysis
