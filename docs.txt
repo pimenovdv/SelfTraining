@@ -618,4 +618,5 @@
 0623_train_chambolle_pock_component
 0624_train_proximal_point_component
 0625_train_augmented_lagrangian_component
+0626_train_cutting_plane_component
 chinchilla_analysis
