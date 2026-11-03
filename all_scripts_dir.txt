@@ -67,6 +67,7 @@
 ./train_center_loss_component.py
 ./train_cfr_component.py
 ./train_cgan_component.py
+./train_chambolle_pock_component.py
 ./train_charbonnier_loss_component.py
 ./train_chinchilla_optimality_component.py
 ./train_cma_es_optimization_component.py

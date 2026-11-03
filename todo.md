@@ -364,3 +364,4 @@
 - [x] Explore Accelerated Gradient Methods (Nesterov/FISTA) mathematically for fast convex optimization. (Implemented and verified FISTA component).
 - [x] Explore Alternating Direction Method of Multipliers (ADMM) mathematically for distributed optimization. (Implemented and verified ADMM component).
 - [x] Explore Douglas-Rachford Splitting mathematically for distributed optimization. (Implemented and verified Douglas-Rachford Splitting component).
+- [x] Explore primal-dual optimization mathematically. (Implemented and verified Chambolle-Pock algorithm for saddle-point problems).

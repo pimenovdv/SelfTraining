@@ -2866,3 +2866,7 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Concept**: Explored Douglas-Rachford Splitting mathematically for distributed optimization, specifically applied to Lasso regression. It's a splitting method to minimize the sum of two convex functions.
 - **Implementation**: Created `train_douglas_rachford_component.py` with Douglas-Rachford algorithm.
 - **Result**: Successfully converged to a sparse solution with an MSE of 0.005468 and 41 non-zero elements out of 50.
+
+## Component Testing: Chambolle-Pock Optimization
+**Script:** `train_chambolle_pock_component.py`
+**Description:** Evaluates the Chambolle-Pock algorithm mathematically in pure NumPy, testing its ability to solve primal-dual saddle point problems, such as L1-regularized least squares, by alternating between proximal steps in the primal and dual spaces with an extrapolation step to ensure convergence.
