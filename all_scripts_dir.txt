@@ -93,6 +93,7 @@
 ./train_ctrnn_component.py
 ./train_cuckoo_search_component.py
 ./train_cutmix_component.py
+./train_cutting_plane_component.py
 ./train_cvae_component.py
 ./train_dae_component.py
 ./train_darts_component.py
