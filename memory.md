@@ -2861,3 +2861,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Concept**: Explored Alternating Direction Method of Multipliers (ADMM) for distributed optimization, specifically applied to Lasso regression. It breaks down a large optimization problem into smaller pieces, each of which is easier to solve.
 - **Implementation**: Created `train_admm_component.py` with an ADMM algorithm for Lasso.
 - **Result**: Successfully converged to a sparse solution with an MSE of 0.000144 and 27 non-zero elements out of 100, effectively finding a sparse representation.
+
+### Douglas-Rachford Splitting
+- **Concept**: Explored Douglas-Rachford Splitting mathematically for distributed optimization, specifically applied to Lasso regression. It's a splitting method to minimize the sum of two convex functions.
+- **Implementation**: Created `train_douglas_rachford_component.py` with Douglas-Rachford algorithm.
+- **Result**: Successfully converged to a sparse solution with an MSE of 0.005468 and 41 non-zero elements out of 50.
