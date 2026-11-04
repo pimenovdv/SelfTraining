@@ -2878,3 +2878,5 @@ For optimization, finding the minimum of a function is equivalent to finding the
 ### Ellipsoid Method Component Test
 - **Status**: Implemented and verified `train_ellipsoid_method_component.py`.
 - **Details**: Built an implementation of the Ellipsoid Method, testing it successfully on a simple strongly convex quadratic function to verify algorithmic validity for optimization routines. Passed convergence test successfully.
+
+* *(Date: Current)* - Successfully implemented and tested the Gauss-Newton optimization algorithm mathematically. Confirmed that approximating the Hessian via the Jacobian ($J^T J$) effectively solves non-linear least squares problems, validating convergence on a non-linear exponential model without needing full second-order derivatives.
