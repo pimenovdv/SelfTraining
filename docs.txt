@@ -622,4 +622,5 @@
 0627_train_bundle_method_component
 0629_train_ellipsoid_method_component
 0633_train_gauss_newton_optimization_component
+0634_train_levenberg_marquardt_beale_component
 chinchilla_analysis
