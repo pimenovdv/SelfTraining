@@ -1,4 +1,6 @@
+
 0620_train_mirror_descent_component
+0628_train_dual_averaging_component
 docs/0001_train_bpe_component.md
 docs/0002_train_ffn_component.md
 docs/0003_train_attention_component.md

@@ -2969,3 +2969,8 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Bundle Method Optimization
 **Script:** `train_bundle_method_component.py`
 **Description:** Evaluates the Bundle Method mathematically in pure NumPy, testing its ability to solve non-smooth convex optimization problems by accumulating subgradients into a bundle to construct a cutting-plane model of the objective, regularized with a proximal term.
+
+
+## Component Testing: Dual Averaging
+**Script:** `train_dual_averaging_component.py`
+**Description:** Evaluates the Dual Averaging algorithm mathematically in pure NumPy, testing its ability to perform online learning and optimization by averaging past gradients and mapping to a primal solution, successfully minimizing mean squared error on synthetic data.
