@@ -369,3 +369,5 @@
 - [x] Explore Augmented Lagrangian Method mathematically for constrained optimization. (Implemented and verified Augmented Lagrangian Method algorithm for constrained optimization).
 - [x] Explore Kelley's Cutting Plane Method mathematically for convex optimization. (Implemented and verified Cutting Plane method).
 - [x] Explore Bundle Method mathematically for non-smooth convex optimization. (Implemented and verified Bundle Method component)
+
+- [x] Explore Dual Averaging mathematically for sparse online optimization. (Implemented and verified Dual Averaging component).
