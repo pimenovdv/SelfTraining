@@ -134,6 +134,7 @@
 ./train_elliot_activation_component.py
 ./train_elliot_component.py
 ./train_elliott_component.py
+./train_ellipsoid_method_component.py
 ./train_elm_component.py
 ./train_elu_component.py
 ./train_ema_component.py

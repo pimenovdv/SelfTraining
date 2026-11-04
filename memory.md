@@ -2874,3 +2874,7 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - Explored and implemented Augmented Lagrangian Method for constrained optimization.
 - Explored and implemented Kelley's Cutting Plane Method for convex optimization in `train_cutting_plane_component.py`.
 - **0627_train_bundle_method_component**: Implemented and verified the Bundle Method algorithm mathematically for non-smooth convex optimization.
+
+### Ellipsoid Method Component Test
+- **Status**: Implemented and verified `train_ellipsoid_method_component.py`.
+- **Details**: Built an implementation of the Ellipsoid Method, testing it successfully on a simple strongly convex quadratic function to verify algorithmic validity for optimization routines. Passed convergence test successfully.

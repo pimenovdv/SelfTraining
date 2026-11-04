@@ -371,3 +371,4 @@
 - [x] Explore Bundle Method mathematically for non-smooth convex optimization. (Implemented and verified Bundle Method component)
 
 - [x] Explore Dual Averaging mathematically for sparse online optimization. (Implemented and verified Dual Averaging component).
+- [x] Explore Ellipsoid Method mathematically for convex optimization. (Implemented and verified Ellipsoid Method component).
