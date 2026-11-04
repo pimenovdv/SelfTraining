@@ -365,10 +365,11 @@
 - [x] Explore Alternating Direction Method of Multipliers (ADMM) mathematically for distributed optimization. (Implemented and verified ADMM component).
 - [x] Explore Douglas-Rachford Splitting mathematically for distributed optimization. (Implemented and verified Douglas-Rachford Splitting component).
 - [x] Explore primal-dual optimization mathematically. (Implemented and verified Chambolle-Pock algorithm for saddle-point problems).
-- [x] Explore Proximal Point Algorithm mathematically for non-smooth convex optimization.
+- [x] Explore Proximal Point Algorithm mathematically for non-smooth convex optimization. (Implemented and verified Proximal Point Algorithm component).
 - [x] Explore Augmented Lagrangian Method mathematically for constrained optimization. (Implemented and verified Augmented Lagrangian Method algorithm for constrained optimization).
 - [x] Explore Kelley's Cutting Plane Method mathematically for convex optimization. (Implemented and verified Cutting Plane method).
 - [x] Explore Bundle Method mathematically for non-smooth convex optimization. (Implemented and verified Bundle Method component)
 
 - [x] Explore Dual Averaging mathematically for sparse online optimization. (Implemented and verified Dual Averaging component).
 - [x] Explore Ellipsoid Method mathematically for convex optimization. (Implemented and verified Ellipsoid Method component).
+- [x] Explore Non-linear Conjugate Gradient Method mathematically for optimization. (Implemented and verified Non-linear Conjugate Gradient component).
