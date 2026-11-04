@@ -373,3 +373,4 @@
 - [x] Explore Dual Averaging mathematically for sparse online optimization. (Implemented and verified Dual Averaging component).
 - [x] Explore Ellipsoid Method mathematically for convex optimization. (Implemented and verified Ellipsoid Method component).
 - [x] Explore Non-linear Conjugate Gradient Method mathematically for optimization. (Implemented and verified Non-linear Conjugate Gradient component).
+- [x] Explore Gauss-Newton optimization mathematically. (Implement and verify Gauss-Newton algorithm for non-linear least squares).

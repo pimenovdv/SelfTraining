@@ -621,4 +621,5 @@
 0626_train_cutting_plane_component
 0627_train_bundle_method_component
 0629_train_ellipsoid_method_component
+0633_train_gauss_newton_optimization_component
 chinchilla_analysis
