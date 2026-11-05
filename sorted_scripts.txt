@@ -165,6 +165,7 @@ train_frank_wolfe_component
 train_frelu_component
 train_ftrl_component
 train_full_encoder_decoder_component
+train_full_model
 train_fuzzy_c_means_component
 train_gae_component
 train_gail_component
