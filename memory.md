@@ -2884,3 +2884,7 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Dual Averaging:** Successfully verified and added `train_dual_averaging_component.py` tests. Optimization works and shows reduction in loss. Documented output in `docs/0802_train_dual_averaging_component.md`.
 - **Non-linear Conjugate Gradient:** Successfully verified and added `train_nonlinear_conjugate_gradient_component.py`. The algorithm found an optimal `x` effectively. Documented output in `docs/0801_train_nonlinear_conjugate_gradient_component.md`.
 - **Continuous Differential Memory**: Investigated alternative memory structures where the memory state evolves according to a continuous differential equation ($dm/dt = -m + W_{mem} \tanh(m) + W_{in} x$). Implemented and verified that this structure can successfully learn and minimize reconstruction error when integrated using Euler's method, offering a continuous dynamic approach to memory in neural architectures.
+## Riemannian Gradient Descent
+- Implemented and verified Riemannian Gradient Descent for optimization on the Stiefel manifold. Used to solve the Rayleigh quotient maximization problem by projecting the Euclidean gradient onto the tangent space and using QR decomposition as a retraction.
+## First-Order MAML (FOMAML)
+- Implemented and verified FOMAML for fast meta-learning adaptation. Demonstrated that dropping second-order derivative calculations still allows convergence to a useful prior parameter vector for rapid task-specific fine-tuning in linear regression tasks.
