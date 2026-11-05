@@ -583,3 +583,5 @@ docs/0634_train_levenberg_marquardt_beale_component.md
 docs/0801_train_nonlinear_conjugate_gradient_component.md
 docs/0802_train_dual_averaging_component.md
 docs/0803_train_continuous_differential_memory_component.md
+docs/0804_train_riemannian_gradient_descent_component.md
+docs/0805_train_fomaml_component.md

@@ -78,6 +78,7 @@
 ./train_cnp_component.py
 ./train_cobyla_component.py
 ./train_conjugate_gradient_component.py
+./train_continuous_differential_memory_component.py
 ./train_continuous_hopfield_component.py
 ./train_contrastive_component.py
 ./train_contrastive_loss_component.py
@@ -160,6 +161,7 @@
 ./train_fnet_component.py
 ./train_fno_component.py
 ./train_focal_loss_component.py
+./train_fomaml_component.py
 ./train_fourier_neural_operator_component.py
 ./train_fourier_series_component.py
 ./train_frank_wolfe_component.py
@@ -436,6 +438,7 @@
 ./train_retention_component.py
 ./train_revnet_component.py
 ./train_ridge_regression_component.py
+./train_riemannian_gradient_descent_component.py
 ./train_rmsnorm_component.py
 ./train_rmsprop_component.py
 ./train_rnn_component.py
@@ -569,4 +572,3 @@
 ./train_xnes_component.py
 ./train_xpos_component.py
 ./train_yogi_component.py
-./train_continuous_differential_memory_component.py
