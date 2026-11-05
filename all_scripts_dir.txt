@@ -125,6 +125,7 @@
 ./train_dropconnect_component.py
 ./train_dropout_component.py
 ./train_dual_annealing_component.py
+./train_dual_averaging_component.py
 ./train_dueling_dqn_component.py
 ./train_dyna_q_component.py
 ./train_ebm_component.py
@@ -360,6 +361,7 @@
 ./train_nmf_component.py
 ./train_nnls_component.py
 ./train_node2vec_component.py
+./train_nonlinear_conjugate_gradient_component.py
 ./train_novograd_component.py
 ./train_npair_loss_component.py
 ./train_nsga2_component.py

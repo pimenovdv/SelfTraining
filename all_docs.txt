@@ -580,3 +580,5 @@ docs/0629_train_ellipsoid_method_component.md
 docs/0629_train_full_model.md
 docs/0633_train_gauss_newton_optimization_component.md
 docs/0634_train_levenberg_marquardt_beale_component.md
+docs/0801_train_nonlinear_conjugate_gradient_component.md
+docs/0802_train_dual_averaging_component.md
