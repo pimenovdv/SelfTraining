@@ -627,3 +627,4 @@
 0801_train_nonlinear_conjugate_gradient_component
 0802_train_dual_averaging_component
 chinchilla_analysis
+0803_train_continuous_differential_memory_component
