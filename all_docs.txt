@@ -577,5 +577,6 @@ docs/0625_train_augmented_lagrangian_component.md
 docs/0626_train_cutting_plane_component.md
 docs/0627_train_bundle_method_component.md
 docs/0629_train_ellipsoid_method_component.md
+docs/0629_train_full_model.md
 docs/0633_train_gauss_newton_optimization_component.md
 docs/0634_train_levenberg_marquardt_beale_component.md

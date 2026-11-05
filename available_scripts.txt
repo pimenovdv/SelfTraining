@@ -165,6 +165,7 @@ train_frank_wolfe_component.py
 train_frelu_component.py
 train_ftrl_component.py
 train_full_encoder_decoder_component.py
+train_full_model.py
 train_fuzzy_c_means_component.py
 train_gae_component.py
 train_gail_component.py
