@@ -2881,3 +2881,5 @@ For optimization, finding the minimum of a function is equivalent to finding the
 
 * *(Date: Current)* - Successfully implemented and tested the Gauss-Newton optimization algorithm mathematically. Confirmed that approximating the Hessian via the Jacobian ($J^T J$) effectively solves non-linear least squares problems, validating convergence on a non-linear exponential model without needing full second-order derivatives.
 - **0634_train_levenberg_marquardt_beale_component**: Implemented and verified the Levenberg-Marquardt algorithm mathematically for non-linear optimization on the Beale function. Successfully converged to the optimal point [3.0, 0.5].
+- **Dual Averaging:** Successfully verified and added `train_dual_averaging_component.py` tests. Optimization works and shows reduction in loss. Documented output in `docs/0802_train_dual_averaging_component.md`.
+- **Non-linear Conjugate Gradient:** Successfully verified and added `train_nonlinear_conjugate_gradient_component.py`. The algorithm found an optimal `x` effectively. Documented output in `docs/0801_train_nonlinear_conjugate_gradient_component.md`.

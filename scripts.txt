@@ -125,6 +125,7 @@ train_dqn_component
 train_dropconnect_component
 train_dropout_component
 train_dual_annealing_component
+train_dual_averaging_component
 train_dueling_dqn_component
 train_dyna_q_component
 train_ebm_component
@@ -360,6 +361,7 @@ train_nll_loss_component
 train_nmf_component
 train_nnls_component
 train_node2vec_component
+train_nonlinear_conjugate_gradient_component
 train_novograd_component
 train_npair_loss_component
 train_nsga2_component
