@@ -301,6 +301,7 @@ train_lottery_ticket_component
 train_lpp_component
 train_lsa_component
 train_lsh_component
+train_lsm_component
 train_lstm_component
 train_ltc_component
 train_lvq_component

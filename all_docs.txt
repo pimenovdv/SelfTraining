@@ -590,3 +590,4 @@ docs/0808_train_meta_sgd_component.md
 docs/0809_train_reptile_component.md
 docs/0810_train_reptile_component.md
 docs/0811_train_reptile_component.md
+docs/0812_train_lsm_component.md
