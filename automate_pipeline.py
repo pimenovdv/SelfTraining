@@ -89,6 +89,10 @@ def main():
 
     unrun_scripts = [s for s in scripts if s not in documented_scripts]
 
+    # Force running train_reptile_component.py since it wasn't tracked properly
+    if "train_reptile_component.py" not in unrun_scripts:
+        unrun_scripts.append("train_reptile_component.py")
+
     if not unrun_scripts:
         print("All scripts have been documented.")
         return
