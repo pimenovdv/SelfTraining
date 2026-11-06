@@ -630,4 +630,6 @@
 0804_train_riemannian_gradient_descent_component
 0805_train_fomaml_component
 0807_train_reptile_component
+0808_train_meta_sgd_component
+0809_train_reptile_component
 chinchilla_analysis

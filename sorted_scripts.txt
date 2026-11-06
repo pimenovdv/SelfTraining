@@ -323,6 +323,7 @@ train_mean_shift_component
 train_medium_scale_model_component
 train_memory_network_component
 train_meta_learning_component
+train_meta_sgd_component
 train_mgu_component
 train_mirror_descent_component
 train_mish_component
