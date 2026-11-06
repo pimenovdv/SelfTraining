@@ -2888,3 +2888,7 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - Implemented and verified Riemannian Gradient Descent for optimization on the Stiefel manifold. Used to solve the Rayleigh quotient maximization problem by projecting the Euclidean gradient onto the tangent space and using QR decomposition as a retraction.
 ## First-Order MAML (FOMAML)
 - Implemented and verified FOMAML for fast meta-learning adaptation. Demonstrated that dropping second-order derivative calculations still allows convergence to a useful prior parameter vector for rapid task-specific fine-tuning in linear regression tasks.
+
+## Component Testing: Meta-SGD Component
+**Script:** `train_meta_sgd_component.py`
+**Description:** Evaluates the Meta-SGD component mathematically, testing its ability to extend MAML by learning both the initial parameters and the learning rates for each parameter, enabling faster and more flexible adaptation to new tasks on a simple regression problem.

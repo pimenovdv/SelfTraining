@@ -586,3 +586,5 @@ docs/0803_train_continuous_differential_memory_component.md
 docs/0804_train_riemannian_gradient_descent_component.md
 docs/0805_train_fomaml_component.md
 docs/0807_train_reptile_component.md
+docs/0808_train_meta_sgd_component.md
+docs/0809_train_reptile_component.md
