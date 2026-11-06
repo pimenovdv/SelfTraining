@@ -301,6 +301,7 @@ train_lottery_ticket_component.py
 train_lpp_component.py
 train_lsa_component.py
 train_lsh_component.py
+train_lsm_component.py
 train_lstm_component.py
 train_ltc_component.py
 train_lvq_component.py

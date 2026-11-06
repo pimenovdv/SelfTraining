@@ -634,4 +634,6 @@
 0809_train_reptile_component
 0810_train_reptile_component
 0811_train_reptile_component
+0812_train_lsm_component
+0813_train_reptile_component
 chinchilla_analysis
