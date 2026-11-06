@@ -632,4 +632,6 @@
 0807_train_reptile_component
 0808_train_meta_sgd_component
 0809_train_reptile_component
+0810_train_reptile_component
+0811_train_reptile_component
 chinchilla_analysis
