@@ -64,7 +64,6 @@ docs/0063_train_ppo_component.md
 docs/0064_train_dqn_component.md
 docs/0065_train_maml_component.md
 docs/0066_train_tcn_component.md
-docs/0067_train_ewc_component.md
 docs/0068_train_ctrnn_component.md
 docs/0069_train_feedback_alignment_component.md
 docs/0070_train_dfa_component.md
@@ -599,3 +598,5 @@ docs/0818_train_reptile_component.md
 docs/0819_train_reptile_component.md
 docs/0820_train_reptile_component.md
 docs/0821_train_sdm_component.md
+docs/0822_train_ewc_component.md
+docs/0824_train_reptile_component.md
