@@ -102,20 +102,3 @@ if __name__ == "__main__":
 
     assert t1_ewc_err < t1_ft_err - 0.5, "EWC should significantly reduce forgetting compared to standard FT."
     print("\nEWC successfully mitigated catastrophic forgetting.")
-
-    os.makedirs("docs", exist_ok=True)
-    with open("docs/0067_train_ewc_component.md", "w") as f:
-        f.write("# 0067_train_ewc_component\n\n")
-        f.write("## Status\nSuccess\n\n")
-        f.write("## Component\nElastic Weight Consolidation (EWC)\n\n")
-        f.write("## Description\n")
-        f.write("Implemented Elastic Weight Consolidation (EWC) to mitigate catastrophic forgetting when learning sequential tasks. ")
-        f.write("The algorithm computes the Fisher Information Matrix (FIM) after training on Task 1, which acts as a proxy for parameter importance. ")
-        f.write("When fine-tuning on Task 2, an L2 penalty weighted by the Fisher information is applied, anchoring important parameters to their Task 1 optimum.\n\n")
-        f.write("## Results\n")
-        f.write(f"- Task 1 Base Error: {t1_base_err:.6f}\n")
-        f.write(f"- Task 1 Error after Naive FT: {t1_ft_err:.6f}\n")
-        f.write(f"- Task 2 Error after Naive FT: {t2_ft_err:.6f}\n")
-        f.write(f"- Task 1 Error after EWC: {t1_ewc_err:.6f}\n")
-        f.write(f"- Task 2 Error after EWC: {t2_ewc_err:.6f}\n\n")
-        f.write("EWC significantly reduced catastrophic forgetting on Task 1 while allowing adequate learning on Task 2.\n")
