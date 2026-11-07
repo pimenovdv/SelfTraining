@@ -388,3 +388,4 @@
 - [x] Explore Liquid State Machines mathematically. (Implemented and verified LSM component).
 - [x] Explore Holographic Reduced Representations (HRR) mathematically. (Implemented and verified HRR component).
 - [x] Explore Extreme Learning Machines (ELM) mathematically. (Implemented and verified ELM component).
+- [x] Explore Sparse Distributed Memory (SDM) mathematically. (Implemented and verified SDM component).
