@@ -223,6 +223,7 @@
 ./train_hopfield_component.py
 ./train_hopfield_network_component.py
 ./train_hrl_component.py
+./train_hrr_component.py
 ./train_huber_loss_component.py
 ./train_huber_regression_component.py
 ./train_hyperdimensional_computing_component.py
@@ -435,7 +436,6 @@
 ./train_relational_network_component.py
 ./train_relu6_component.py
 ./train_renyi_divergence_component.py
-./train_reptile_component.py
 ./train_restricted_boltzmann_machine_component.py
 ./train_retention_component.py
 ./train_revnet_component.py

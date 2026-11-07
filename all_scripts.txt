@@ -223,6 +223,7 @@ train_hmm_component
 train_hopfield_component
 train_hopfield_network_component
 train_hrl_component
+train_hrr_component
 train_huber_loss_component
 train_huber_regression_component
 train_hyperdimensional_computing_component
@@ -435,7 +436,6 @@ train_reinforce_with_baseline_component
 train_relational_network_component
 train_relu6_component
 train_renyi_divergence_component
-train_reptile_component
 train_restricted_boltzmann_machine_component
 train_retention_component
 train_revnet_component
