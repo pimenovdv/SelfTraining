@@ -646,4 +646,5 @@
 0821_train_sdm_component
 0822_train_ewc_component
 0824_train_reptile_component
+0825_train_meta_sgd_component
 chinchilla_analysis
