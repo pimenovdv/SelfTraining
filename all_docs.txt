@@ -593,3 +593,9 @@ docs/0811_train_reptile_component.md
 docs/0812_train_lsm_component.md
 docs/0814_train_reptile_component.md
 docs/0815_train_reptile_component.md
+docs/0816_train_reptile_component.md
+docs/0817_train_reptile_component.md
+docs/0818_train_reptile_component.md
+docs/0819_train_reptile_component.md
+docs/0820_train_reptile_component.md
+docs/0821_train_sdm_component.md

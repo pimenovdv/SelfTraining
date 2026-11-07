@@ -2911,3 +2911,8 @@ For optimization, finding the minimum of a function is equivalent to finding the
 - **Goal**: Explore and verify the ELM component.
 - **Action**: Ran `train_elm_component.py` after writing it.
 - **Result**: Succeeded. Documented in `docs/0071_train_elm_component.md`.
+
+## Sparse Distributed Memory (SDM)
+Sparse Distributed Memory (Kanerva, 1988) is a mathematical model for human long-term memory.
+It stores high-dimensional binary patterns distributively across a small random subset of 'hard locations' using Hamming distance for activation.
+Successfully implemented and verified the SDM component for storing and retrieving binary vectors.
