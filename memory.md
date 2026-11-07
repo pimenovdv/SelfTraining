@@ -2902,3 +2902,12 @@ For optimization, finding the minimum of a function is equivalent to finding the
 
 ## Holographic Reduced Representations (HRR)
 - Implemented and verified Holographic Reduced Representations mathematically. Evaluated binding (via circular convolution) and unbinding (via circular correlation) operations for high-dimensional vectors, verifying proper similarity structure for distributed representations.
+
+## Component Testing: Extreme Learning Machines (ELM) Component
+**Script:** `train_elm_component.py`
+**Description:** Evaluates the Extreme Learning Machine mathematically, testing its ability to solve non-linear mapping problems rapidly using randomly initialized hidden layer features and analytical pseudoinverse output weight calculations without backpropagation.
+
+### Extreme Learning Machines Exploration
+- **Goal**: Explore and verify the ELM component.
+- **Action**: Ran `train_elm_component.py` after writing it.
+- **Result**: Succeeded. Documented in `docs/0071_train_elm_component.md`.
