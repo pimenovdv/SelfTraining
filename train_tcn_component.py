@@ -1,31 +1,14 @@
 import numpy as np
-import os
-import argparse
 
-# Activation functions and their derivatives
-def relu(x):
-    return np.maximum(0, x)
-
-def relu_deriv(x):
-    return (x > 0).astype(float)
-
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
-
-def sigmoid_deriv(x):
-    s = sigmoid(x)
-    return s * (1 - s)
-
-# TCN Component Module (Causal Dilated Convolution)
-class CausalDilatedConv1D:
-    def __init__(self, in_channels, out_channels, kernel_size, dilation):
+class CausalConv1d:
+    def __init__(self, in_channels, out_channels, kernel_size, dilation=1):
         self.in_channels = in_channels
         self.out_channels = out_channels
         self.kernel_size = kernel_size
         self.dilation = dilation
 
-        # Initialize weights (Xavier/He initialization)
-        limit = np.sqrt(6 / (in_channels * kernel_size + out_channels))
+        # Initialize weights (Xavier/Glorot style)
+        limit = np.sqrt(6 / (in_channels + out_channels * kernel_size))
         self.W = np.random.uniform(-limit, limit, size=(out_channels, in_channels, kernel_size))
         self.b = np.zeros(out_channels)
 
@@ -36,161 +19,235 @@ class CausalDilatedConv1D:
 
     def forward(self, x):
         """
-        x shape: (batch_size, seq_len, in_channels)
-        output shape: (batch_size, seq_len, out_channels)
+        x shape: (batch_size, in_channels, seq_len)
+        output shape: (batch_size, out_channels, seq_len)
         """
         self.x = x
-        batch_size, seq_len, in_channels = x.shape
-        out = np.zeros((batch_size, seq_len, self.out_channels))
+        batch_size, in_channels, seq_len = x.shape
+        out = np.zeros((batch_size, self.out_channels, seq_len))
 
-        # Causal dilated convolution
+        # Pad with zeros at the beginning for causal convolution
+        padding = (self.kernel_size - 1) * self.dilation
+        x_pad = np.pad(x, ((0, 0), (0, 0), (padding, 0)), mode='constant')
+
         for t in range(seq_len):
             for k in range(self.kernel_size):
-                # Calculate the source time index considering dilation
-                t_src = t - (self.kernel_size - 1 - k) * self.dilation
-                if t_src >= 0:
-                    # x[:, t_src, :]: (batch_size, in_channels)
-                    # W[:, :, k]: (out_channels, in_channels)
-                    # out[:, t, :]: (batch_size, out_channels)
-                    out[:, t, :] += np.dot(x[:, t_src, :], self.W[:, :, k].T)
+                # Calculate the source time index in padded input
+                t_src = t + k * self.dilation
 
-            out[:, t, :] += self.b
+                # out[:, :, t] += W[:, :, k] * x_pad[:, :, t_src]
+                # (batch_size, out_channels) += (out_channels, in_channels) @ (batch_size, in_channels).T
+                out[:, :, t] += np.dot(x_pad[:, :, t_src], self.W[:, :, k].T)
+
+            out[:, :, t] += self.b
 
         return out
 
     def backward(self, dout):
         """
-        dout shape: (batch_size, seq_len, out_channels)
-        return dx shape: (batch_size, seq_len, in_channels)
+        dout shape: (batch_size, out_channels, seq_len)
+        return dx shape: (batch_size, in_channels, seq_len)
         """
-        batch_size, seq_len, out_channels = dout.shape
-        dx = np.zeros_like(self.x)
+        batch_size, out_channels, seq_len = dout.shape
+        padding = (self.kernel_size - 1) * self.dilation
+
+        x_pad = np.pad(self.x, ((0, 0), (0, 0), (padding, 0)), mode='constant')
+        dx_pad = np.zeros_like(x_pad)
 
         self.dW.fill(0)
         self.db.fill(0)
 
         for t in range(seq_len):
-            self.db += np.sum(dout[:, t, :], axis=0)
+            self.db += np.sum(dout[:, :, t], axis=0)
+
             for k in range(self.kernel_size):
-                t_src = t - (self.kernel_size - 1 - k) * self.dilation
-                if t_src >= 0:
-                    # dW[:, :, k] += dout[:, t, :] (batch_size, out_channels) . x[:, t_src, :] (batch_size, in_channels)
-                    self.dW[:, :, k] += np.dot(dout[:, t, :].T, self.x[:, t_src, :])
+                t_src = t + k * self.dilation
 
-                    # dx[:, t_src, :] += dout[:, t, :] (batch, out) . W[:, :, k] (out, in)
-                    dx[:, t_src, :] += np.dot(dout[:, t, :], self.W[:, :, k])
+                # dW[:, :, k] += dout[:, :, t]^T @ x_pad[:, :, t_src]
+                self.dW[:, :, k] += np.dot(dout[:, :, t].T, x_pad[:, :, t_src])
 
+                # dx_pad[:, :, t_src] += dout[:, :, t] @ W[:, :, k]
+                dx_pad[:, :, t_src] += np.dot(dout[:, :, t], self.W[:, :, k])
+
+        # Remove padding to get original sequence length
+        dx = dx_pad[:, :, padding:]
         return dx
 
     def update(self, lr):
         self.W -= lr * self.dW
         self.b -= lr * self.db
 
+
 class ResidualBlock:
-    def __init__(self, channels, kernel_size, dilation):
-        self.conv1 = CausalDilatedConv1D(channels, channels, kernel_size, dilation)
-        self.conv2 = CausalDilatedConv1D(channels, channels, kernel_size, dilation)
-        self.out1 = None
-        self.out1_relu = None
-        self.out2 = None
-        self.out2_relu = None
+    def __init__(self, in_channels, out_channels, kernel_size, dilation, dropout=0.2):
+        self.conv1 = CausalConv1d(in_channels, out_channels, kernel_size, dilation)
+        self.conv2 = CausalConv1d(out_channels, out_channels, kernel_size, dilation)
+        self.dropout = dropout
+
+        if in_channels != out_channels:
+            self.downsample = CausalConv1d(in_channels, out_channels, 1, 1)
+        else:
+            self.downsample = None
+
+        self.training = True
+
+    def relu(self, x):
+        return np.maximum(0, x)
+
+    def relu_backward(self, dout, x):
+        return dout * (x > 0)
+
+    def apply_dropout(self, x):
+        if self.training:
+            mask = (np.random.rand(*x.shape) > self.dropout) / (1.0 - self.dropout)
+            return x * mask, mask
+        return x, None
+
+    def backward_dropout(self, dout, mask):
+        if mask is not None:
+            return dout * mask
+        return dout
 
     def forward(self, x):
         self.x = x
-        self.out1 = self.conv1.forward(x)
-        self.out1_relu = relu(self.out1)
-        self.out2 = self.conv2.forward(self.out1_relu)
-        self.out2_relu = relu(self.out2)
-        # Residual connection
-        return self.out2_relu + x
+
+        # Conv 1
+        self.out1_pre = self.conv1.forward(x)
+        self.out1_relu = self.relu(self.out1_pre)
+        self.out1_drop, self.mask1 = self.apply_dropout(self.out1_relu)
+
+        # Conv 2
+        self.out2_pre = self.conv2.forward(self.out1_drop)
+        self.out2_relu = self.relu(self.out2_pre)
+        self.out2_drop, self.mask2 = self.apply_dropout(self.out2_relu)
+
+        # Downsample
+        if self.downsample is not None:
+            self.res = self.downsample.forward(x)
+        else:
+            self.res = x
+
+        # Add residual and final ReLU
+        self.out_pre = self.out2_drop + self.res
+        self.out = self.relu(self.out_pre)
+
+        return self.out
 
     def backward(self, dout):
-        # The gradient splits equally into the residual and the block path
-        # Gradient of relu + x: dx = dout + dx_block
-        # dx_block = d(out2_relu)/d(out2) * dout
-        dout2 = dout * relu_deriv(self.out2)
-        dout1_relu = self.conv2.backward(dout2)
-        dout1 = dout1_relu * relu_deriv(self.out1)
-        dx_conv = self.conv1.backward(dout1)
+        dout_pre = self.relu_backward(dout, self.out_pre)
 
-        return dout + dx_conv
+        # Split gradient: one part goes through block, one through residual
+        dout_block = dout_pre
+        dout_res = dout_pre
+
+        # Backward through block
+        dout2_drop = self.backward_dropout(dout_block, self.mask2)
+        dout2_relu = self.relu_backward(dout2_drop, self.out2_pre)
+        dout1_drop = self.conv2.backward(dout2_relu)
+
+        dout1_relu = self.backward_dropout(dout1_drop, self.mask1)
+        dout1_pre = self.relu_backward(dout1_relu, self.out1_pre)
+        dx_conv = self.conv1.backward(dout1_pre)
+
+        # Backward through residual
+        if self.downsample is not None:
+            dx_res = self.downsample.backward(dout_res)
+        else:
+            dx_res = dout_res
+
+        return dx_conv + dx_res
 
     def update(self, lr):
         self.conv1.update(lr)
         self.conv2.update(lr)
+        if self.downsample is not None:
+            self.downsample.update(lr)
 
-class TemporalConvNet:
-    def __init__(self, in_channels, hidden_channels, out_channels, levels, kernel_size=2):
-        self.levels = levels
+class TCN:
+    def __init__(self, num_inputs, num_channels, kernel_size=2, dropout=0.2):
         self.blocks = []
+        num_levels = len(num_channels)
 
-        # Initial projection if in_channels != hidden_channels
-        self.init_proj_W = np.random.randn(in_channels, hidden_channels) * 0.1
-        self.init_proj_b = np.zeros(hidden_channels)
-
-        for i in range(levels):
+        for i in range(num_levels):
             dilation = 2 ** i
-            self.blocks.append(ResidualBlock(hidden_channels, kernel_size, dilation))
+            in_channels = num_inputs if i == 0 else num_channels[i-1]
+            out_channels = num_channels[i]
 
-        # Final projection to output
-        self.final_proj_W = np.random.randn(hidden_channels, out_channels) * 0.1
-        self.final_proj_b = np.zeros(out_channels)
+            block = ResidualBlock(in_channels, out_channels, kernel_size, dilation, dropout)
+            self.blocks.append(block)
 
-        self.dW_init = np.zeros_like(self.init_proj_W)
-        self.db_init = np.zeros_like(self.init_proj_b)
-        self.dW_final = np.zeros_like(self.final_proj_W)
-        self.db_final = np.zeros_like(self.final_proj_b)
+        # Final linear layer
+        self.fc_W = np.random.randn(num_channels[-1], 1) * 0.1
+        self.fc_b = np.zeros(1)
+
+        self.dfc_W = np.zeros_like(self.fc_W)
+        self.dfc_b = np.zeros_like(self.fc_b)
+
+    def set_training(self, training):
+        for block in self.blocks:
+            block.training = training
 
     def forward(self, x):
-        # x shape: (batch, seq_len, in_channels)
-        self.x = x
+        # x shape: (batch_size, seq_len, in_channels)
+        # Convert to (batch_size, in_channels, seq_len)
+        out = np.transpose(x, (0, 2, 1))
 
-        # Initial projection over sequence
-        # (batch, seq, in) * (in, hidden) -> (batch, seq, hidden)
-        self.proj = np.dot(x, self.init_proj_W) + self.init_proj_b
-
-        h = self.proj
         for block in self.blocks:
-            h = block.forward(h)
+            out = block.forward(out)
 
-        self.final_h = h
-        # Final projection
-        out = np.dot(h, self.final_proj_W) + self.final_proj_b
-        return out
+        self.final_features = out
+
+        # Convert back to (batch_size, seq_len, out_channels)
+        out_transposed = np.transpose(out, (0, 2, 1))
+
+        # Linear layer over sequence
+        # (batch_size, seq_len, channels) @ (channels, 1) -> (batch_size, seq_len, 1)
+        batch_size, seq_len, channels = out_transposed.shape
+        out_flat = out_transposed.reshape(-1, channels)
+        preds_flat = np.dot(out_flat, self.fc_W) + self.fc_b
+
+        self.preds = preds_flat.reshape(batch_size, seq_len, 1)
+        return self.preds
 
     def backward(self, dout):
-        # dout shape: (batch, seq_len, out_channels)
-        batch_size, seq_len, out_channels = dout.shape
+        # dout shape: (batch_size, seq_len, 1)
+        batch_size, seq_len, _ = dout.shape
+        channels = self.fc_W.shape[0]
 
-        self.dW_final = np.dot(self.final_h.reshape(-1, self.final_h.shape[-1]).T, dout.reshape(-1, out_channels))
-        self.db_final = np.sum(dout, axis=(0, 1))
+        # Backward through linear layer
+        dout_flat = dout.reshape(-1, 1)
+        out_flat = np.transpose(self.final_features, (0, 2, 1)).reshape(-1, channels)
 
-        dh = np.dot(dout, self.final_proj_W.T)
+        self.dfc_W = np.dot(out_flat.T, dout_flat)
+        self.dfc_b = np.sum(dout_flat, axis=0)
+
+        dfeatures_flat = np.dot(dout_flat, self.fc_W.T)
+        dfeatures = dfeatures_flat.reshape(batch_size, seq_len, channels)
+
+        # Convert back to (batch_size, channels, seq_len)
+        dx = np.transpose(dfeatures, (0, 2, 1))
 
         for block in reversed(self.blocks):
-            dh = block.backward(dh)
+            dx = block.backward(dx)
 
-        self.dW_init = np.dot(self.x.reshape(-1, self.x.shape[-1]).T, dh.reshape(-1, dh.shape[-1]))
-        self.db_init = np.sum(dh, axis=(0, 1))
+        return dx
 
     def update(self, lr):
-        self.init_proj_W -= lr * self.dW_init
-        self.init_proj_b -= lr * self.db_init
         for block in self.blocks:
             block.update(lr)
-        self.final_proj_W -= lr * self.dW_final
-        self.final_proj_b -= lr * self.db_final
 
-def generate_sequence_data(num_samples, seq_len):
-    # Task: sequence copying/delay
-    # Input is random sequence of 1D values, target is input delayed by 3 steps
+        self.fc_W -= lr * self.dfc_W
+        self.fc_b -= lr * self.dfc_b
+
+def generate_sequence_data(num_samples, seq_len, delay=3):
     X = np.random.randn(num_samples, seq_len, 1)
     y = np.zeros_like(X)
-    delay = 3
     y[:, delay:, :] = X[:, :-delay, :]
     return X, y
 
-def train_tcn():
+def main():
+    import argparse
+    import os
     parser = argparse.ArgumentParser(description="Train Temporal Convolutional Network (TCN)")
     parser.add_argument("--epochs", type=int, default=1000, help="Number of training epochs")
     parser.add_argument("--lr", type=float, default=0.01, help="Learning rate")
@@ -201,33 +258,38 @@ def train_tcn():
     args = parser.parse_args()
 
     np.random.seed(42)
-    X, y = generate_sequence_data(200, args.seq_len)
 
-    model = TemporalConvNet(in_channels=1, hidden_channels=args.hidden_dim, out_channels=1, levels=args.levels)
+    # Task: Sequence Copying (delay by 3 steps)
+    X_train, y_train = generate_sequence_data(200, args.seq_len)
+    X_test, y_test = generate_sequence_data(50, args.seq_len)
 
-    print("Training Temporal Convolutional Network (TCN) Component...")
+    # Model
+    num_channels = [args.hidden_dim] * args.levels
+    model = TCN(num_inputs=1, num_channels=num_channels, kernel_size=2, dropout=0.0)
+
+    print("Training Temporal Convolutional Network (TCN)...")
 
     for epoch in range(args.epochs):
         # Forward
-        preds = model.forward(X)
+        preds = model.forward(X_train)
 
         # Loss (MSE)
-        loss = np.mean((preds - y) ** 2)
+        loss = np.mean((preds - y_train) ** 2)
 
         if epoch % (args.epochs // 10) == 0 or epoch == args.epochs - 1:
             print(f"Epoch {epoch}: Loss = {loss:.4f}")
 
         # Backward
-        # dL/dpred = 2 * (preds - y) / (batch * seq_len)
-        dout = 2 * (preds - y) / (X.shape[0] * X.shape[1])
+        dout = 2 * (preds - y_train) / (X_train.shape[0] * X_train.shape[1])
         model.backward(dout)
         model.update(args.lr)
 
-    # Verification
-    X_test, y_test = generate_sequence_data(10, args.seq_len)
+    # Evaluation
+    model.set_training(False)
     preds_test = model.forward(X_test)
     test_loss = np.mean((preds_test - y_test) ** 2)
-    print(f"Test Loss: {test_loss:.4f}")
+
+    print(f"\nTest Loss: {test_loss:.4f}")
 
     success = test_loss < 0.1
     status = "Success" if success else "Failure"
@@ -268,4 +330,4 @@ The script was executed to train the TCN on the synthetic sequence task.
         exit(1)
 
 if __name__ == "__main__":
-    train_tcn()
+    main()

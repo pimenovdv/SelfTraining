@@ -14,8 +14,8 @@ The script was executed to train the TCN on the synthetic sequence task.
 
 ## Results
 *   **Status:** Success
-*   **Final Training Loss:** 0.0140
-*   **Final Test Loss:** 0.0187
+*   **Final Training Loss:** 0.0137
+*   **Final Test Loss:** 0.0173
 
 ## Observations & Insights
 *   The TCN successfully learned to model the temporal dependencies required for the sequence delay task.

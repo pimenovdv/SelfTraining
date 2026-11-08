@@ -392,3 +392,7 @@
 
 - [x] Test `train_reptile_component.py` component and document results.
 - [x] Explore non-linear conjugate gradient mathematically. (Implemented and verified Non-linear Conjugate Gradient component).
+- [x] Explore Temporal Convolutional Network (TCN) mathematically. (Implement and verify TCN component).
+
+## Phase 9: Probabilistic and Generative Models
+- [x] Explore Restricted Boltzmann Machines (RBM) mathematically. (Implement and verify RBM component).
