@@ -2974,3 +2974,4 @@ The Counterfactual Regret Minimization (CFR) Component (`train_cfr_component.py`
 ## Component Testing: Dual Averaging
 **Script:** `train_dual_averaging_component.py`
 **Description:** Evaluates the Dual Averaging algorithm mathematically in pure NumPy, testing its ability to perform online learning and optimization by averaging past gradients and mapping to a primal solution, successfully minimizing mean squared error on synthetic data.
+- **Autoregressive Models:** Explored Autoregressive Models mathematically. Implemented an AR model solving for weights and bias using Ordinary Least Squares for prediction of time series data.
