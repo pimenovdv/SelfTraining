@@ -397,3 +397,6 @@
 ## Phase 9: Probabilistic and Generative Models
 - [x] Explore Restricted Boltzmann Machines (RBM) mathematically. (Implement and verify RBM component).
 - [x] Explore Autoregressive Models mathematically. (Implement and verify Autoregressive Model component).
+
+## Phase 10: Information Theory and Compression
+- [x] Explore Information Bottleneck mathematically. (Implement and verify Information Bottleneck component).
