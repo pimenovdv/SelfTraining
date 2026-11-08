@@ -336,6 +336,7 @@ train_mixture_of_experts_component
 train_mixup_component
 train_mlpmixer_component
 train_mmd_loss_component
+train_model_predictive_control_component
 train_moe_component
 train_momentum_component
 train_mqa_component

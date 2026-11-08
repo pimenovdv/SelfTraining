@@ -400,3 +400,6 @@
 
 ## Phase 10: Information Theory and Compression
 - [x] Explore Information Bottleneck mathematically. (Implement and verify Information Bottleneck component).
+
+## Phase 11: Advanced Control and Planning
+- [x] Explore Model Predictive Control mathematically. (Implemented and verified Model Predictive Control component).
