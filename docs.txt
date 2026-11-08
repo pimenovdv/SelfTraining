@@ -650,4 +650,6 @@
 0826_train_reptile_component
 0827_train_non_linear_conjugate_gradient_component
 0828_train_reptile_component
+0829_train_reptile_component
+0830_train_reptile_component
 chinchilla_analysis
