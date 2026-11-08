@@ -389,3 +389,6 @@
 - [x] Explore Holographic Reduced Representations (HRR) mathematically. (Implemented and verified HRR component).
 - [x] Explore Extreme Learning Machines (ELM) mathematically. (Implemented and verified ELM component).
 - [x] Explore Sparse Distributed Memory (SDM) mathematically. (Implemented and verified SDM component).
+
+- [x] Test `train_reptile_component.py` component and document results.
+- [ ] Explore non-linear conjugate gradient.
