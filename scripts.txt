@@ -34,6 +34,7 @@ train_artificial_bee_colony_component
 train_asgd_component
 train_attention_component
 train_augmented_lagrangian_component
+train_autoregressive_model_component
 train_b_spline_component
 train_bam_component
 train_barlow_twins_component
