@@ -2922,3 +2922,7 @@ Successfully implemented and verified the SDM component for storing and retrievi
 - Tested `train_reptile_component.py` component.
 - The execution completed successfully.
 - Output metrics and logs were captured in `docs/0826_train_reptile_component.md`.
+
+## Component Testing: Non-linear Conjugate Gradient
+**Script:** `train_non_linear_conjugate_gradient_component.py`
+**Description:** Evaluates the Non-linear Conjugate Gradient method mathematically in pure NumPy, testing its ability to solve unconstrained optimization problems by finding conjugate directions without requiring explicit Hessian computation.
