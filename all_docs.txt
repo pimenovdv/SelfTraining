@@ -602,3 +602,5 @@ docs/0822_train_ewc_component.md
 docs/0824_train_reptile_component.md
 docs/0825_train_meta_sgd_component.md
 docs/0826_train_reptile_component.md
+docs/0827_train_non_linear_conjugate_gradient_component.md
+docs/0828_train_reptile_component.md

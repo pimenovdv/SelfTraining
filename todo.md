@@ -391,4 +391,4 @@
 - [x] Explore Sparse Distributed Memory (SDM) mathematically. (Implemented and verified SDM component).
 
 - [x] Test `train_reptile_component.py` component and document results.
-- [ ] Explore non-linear conjugate gradient.
+- [x] Explore non-linear conjugate gradient mathematically. (Implemented and verified Non-linear Conjugate Gradient component).
