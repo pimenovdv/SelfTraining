@@ -653,4 +653,5 @@
 0829_train_reptile_component
 0830_train_autoregressive_model_component
 0830_train_reptile_component
+0831_train_information_bottleneck_component
 chinchilla_analysis

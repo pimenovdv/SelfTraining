@@ -235,6 +235,7 @@ train_independent_q_learning_component
 train_indrnn_component
 train_info_nce_loss_component
 train_infonce_loss_component
+train_information_bottleneck_component
 train_instance_norm_component
 train_instancenorm_component
 train_ipo_component
