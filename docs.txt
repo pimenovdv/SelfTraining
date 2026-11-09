@@ -659,4 +659,5 @@
 0834_train_rbm_component
 0835_train_metaplasticity_component
 0836_train_neurosymbolic_component
+0837_train_new_natural_gradient_descent_component
 chinchilla_analysis

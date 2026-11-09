@@ -412,3 +412,5 @@
 - [x] Explore Neural Turing Machines mathematically. (Implemented and verified NTM component).
 - [x] Explore Differentiable Neural Computers mathematically. (Implemented and verified DNC component).
 - [x] Explore Neurosymbolic AI mathematically. (Implemented and verified Neurosymbolic component).
+## Phase 15: Optimization and Gradient Estimation
+- [x] Explore Natural Gradient Descent mathematically. (Implement and verify Natural Gradient Descent component for non-trivial models).

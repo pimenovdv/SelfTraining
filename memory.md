@@ -2935,3 +2935,7 @@ Successfully implemented and verified the SDM component for storing and retrievi
 - **Global Workspace Theory**: Successfully explored and implemented a component reflecting Global Workspace Theory. Verified successful training on synthetic data and documented in `docs/0315_train_global_workspace_theory_component.md`.
 ## 2024-05-18
 - Created and verified Metaplasticity component.
+
+## New Natural Gradient Descent Component
+- Successfully implemented and tested `train_new_natural_gradient_descent_component.py`.
+- Explored Natural Gradient Descent mathematically for non-trivial models.
