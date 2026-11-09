@@ -406,3 +406,5 @@
 
 ## Phase 12: Cognitive Architectures
 - [x] Explore Global Workspace Theory mathematically. (Implemented and verified Global Workspace Theory component).
+## Phase 13: Continual Learning and Metaplasticity
+- [x] Explore Metaplasticity mathematically. (Implement and verify Metaplasticity component).

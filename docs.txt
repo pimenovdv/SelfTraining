@@ -657,4 +657,5 @@
 0832_train_model_predictive_control_component
 0833_train_global_workspace_theory_component
 0834_train_rbm_component
+0835_train_metaplasticity_component
 chinchilla_analysis

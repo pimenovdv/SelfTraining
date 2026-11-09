@@ -328,6 +328,7 @@ train_medium_scale_model_component.py
 train_memory_network_component.py
 train_meta_learning_component.py
 train_meta_sgd_component.py
+train_metaplasticity_component.py
 train_mgu_component.py
 train_mirror_descent_component.py
 train_mish_component.py
