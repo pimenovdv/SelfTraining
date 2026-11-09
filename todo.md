@@ -408,3 +408,7 @@
 - [x] Explore Global Workspace Theory mathematically. (Implemented and verified Global Workspace Theory component).
 ## Phase 13: Continual Learning and Metaplasticity
 - [x] Explore Metaplasticity mathematically. (Implement and verify Metaplasticity component).
+## Phase 14: Neural Turing Machines and Differentiable Neural Computers
+- [x] Explore Neural Turing Machines mathematically. (Implemented and verified NTM component).
+- [x] Explore Differentiable Neural Computers mathematically. (Implemented and verified DNC component).
+- [x] Explore Neurosymbolic AI mathematically. (Implemented and verified Neurosymbolic component).
