@@ -403,3 +403,6 @@
 
 ## Phase 11: Advanced Control and Planning
 - [x] Explore Model Predictive Control mathematically. (Implemented and verified Model Predictive Control component).
+
+## Phase 12: Cognitive Architectures
+- [x] Explore Global Workspace Theory mathematically. (Implemented and verified Global Workspace Theory component).
