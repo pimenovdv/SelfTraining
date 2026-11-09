@@ -610,3 +610,4 @@ docs/0830_train_reptile_component.md
 docs/0831_train_information_bottleneck_component.md
 docs/0832_train_model_predictive_control_component.md
 docs/0833_train_global_workspace_theory_component.md
+docs/0834_train_rbm_component.md
