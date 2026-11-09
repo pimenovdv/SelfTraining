@@ -2932,3 +2932,4 @@ Successfully implemented and verified the SDM component for storing and retrievi
 - **Information Bottleneck:** Explored Information Bottleneck mathematically. Implemented `train_information_bottleneck_component.py` utilizing a VAE-like structure to bound mutual information. Verified its successful training and generated documentation via `automate_pipeline.py`.
 
 - **Model Predictive Control (MPC):** Explored MPC mathematically. Implemented `train_model_predictive_control_component.py` utilizing optimization to find the best action sequence over a horizon for a linear system. Verified its successful training and generated documentation via `automate_pipeline.py`.
+- **Global Workspace Theory**: Successfully explored and implemented a component reflecting Global Workspace Theory. Verified successful training on synthetic data and documented in `docs/0315_train_global_workspace_theory_component.md`.
