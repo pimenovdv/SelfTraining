@@ -417,3 +417,6 @@
 ## Phase 16: Advanced Probabilistic Models
 - [x] Explore Hamiltonian Monte Carlo mathematically. (Implement and verify HMC component).
 - [x] Explore Normalizing Flows mathematically. (Implemented and verified Normalizing Flows component for density estimation).
+
+## Phase 17: Active Inference
+- [x] Explore Active Inference mathematically. (Implemented and verified Active Inference component).

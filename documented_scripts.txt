@@ -2,6 +2,7 @@ train_a2c_component.py
 train_aco_component.py
 train_acon_component.py
 train_act_component.py
+train_active_inference_component.py
 train_actor_critic_component.py
 train_adabelief_component.py
 train_adaboost_component.py
