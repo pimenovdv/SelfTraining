@@ -616,3 +616,4 @@ docs/0836_train_neurosymbolic_component.md
 docs/0837_train_new_natural_gradient_descent_component.md
 docs/0838_train_normalizing_flows_component.md
 docs/0839_train_active_inference_component.md
+docs/0840_train_growing_neural_gas_component.md

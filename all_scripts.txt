@@ -201,6 +201,7 @@ train_grey_wolf_optimizer_component
 train_grokking_component
 train_group_norm_component
 train_groupnorm_component
+train_growing_neural_gas_component
 train_grpo_component
 train_gru_component
 train_gumbel_softmax_component

@@ -420,3 +420,5 @@
 
 ## Phase 17: Active Inference
 - [x] Explore Active Inference mathematically. (Implemented and verified Active Inference component).
+## Phase 18: Unsupervised Learning and Clustering
+- [x] Explore Growing Neural Gas mathematically. (Implemented and verified Growing Neural Gas component).

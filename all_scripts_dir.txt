@@ -201,6 +201,7 @@
 ./train_grokking_component.py
 ./train_group_norm_component.py
 ./train_groupnorm_component.py
+./train_growing_neural_gas_component.py
 ./train_grpo_component.py
 ./train_gru_component.py
 ./train_gumbel_softmax_component.py
