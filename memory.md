@@ -2939,3 +2939,9 @@ Successfully implemented and verified the SDM component for storing and retrievi
 ## New Natural Gradient Descent Component
 - Successfully implemented and tested `train_new_natural_gradient_descent_component.py`.
 - Explored Natural Gradient Descent mathematically for non-trivial models.
+
+### Experiment 572: Hamiltonian Monte Carlo Component
+* **Goal**: Implement and verify Hamiltonian Monte Carlo for sampling.
+* **Component**: `train_hamiltonian_monte_carlo_component.py`
+* **Status**: Success.
+* **Notes**: Successfully implemented leapfrog integration for physical system simulation. Saved model to `results/hmc_model.pt`.
