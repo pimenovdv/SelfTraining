@@ -414,3 +414,5 @@
 - [x] Explore Neurosymbolic AI mathematically. (Implemented and verified Neurosymbolic component).
 ## Phase 15: Optimization and Gradient Estimation
 - [x] Explore Natural Gradient Descent mathematically. (Implement and verify Natural Gradient Descent component for non-trivial models).
+## Phase 16: Advanced Probabilistic Models
+- [x] Explore Hamiltonian Monte Carlo mathematically. (Implement and verify HMC component).

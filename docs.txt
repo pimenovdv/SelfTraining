@@ -661,3 +661,4 @@
 0836_train_neurosymbolic_component
 0837_train_new_natural_gradient_descent_component
 chinchilla_analysis
+0572_train_hamiltonian_monte_carlo_component
