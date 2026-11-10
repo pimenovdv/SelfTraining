@@ -374,6 +374,7 @@ train_nnls_component.py
 train_node2vec_component.py
 train_non_linear_conjugate_gradient_component.py
 train_nonlinear_conjugate_gradient_component.py
+train_normalizing_flows_component.py
 train_novograd_component.py
 train_npair_loss_component.py
 train_nsga2_component.py

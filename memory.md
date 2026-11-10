@@ -2945,3 +2945,4 @@ Successfully implemented and verified the SDM component for storing and retrievi
 * **Component**: `train_hamiltonian_monte_carlo_component.py`
 * **Status**: Success.
 * **Notes**: Successfully implemented leapfrog integration for physical system simulation. Saved model to `results/hmc_model.pt`.
+- **Normalizing Flows:** Explored Normalizing Flows mathematically. Implemented `train_normalizing_flows_component.py` simulating Planar Flows to estimate a complex 2D target density via transforming a simple base distribution and optimizing KL divergence. Generated documentation via `automate_pipeline.py`.
