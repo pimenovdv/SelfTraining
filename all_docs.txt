@@ -614,3 +614,4 @@ docs/0834_train_rbm_component.md
 docs/0835_train_metaplasticity_component.md
 docs/0836_train_neurosymbolic_component.md
 docs/0837_train_new_natural_gradient_descent_component.md
+docs/0838_train_normalizing_flows_component.md

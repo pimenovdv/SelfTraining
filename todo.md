@@ -416,3 +416,4 @@
 - [x] Explore Natural Gradient Descent mathematically. (Implement and verify Natural Gradient Descent component for non-trivial models).
 ## Phase 16: Advanced Probabilistic Models
 - [x] Explore Hamiltonian Monte Carlo mathematically. (Implement and verify HMC component).
+- [x] Explore Normalizing Flows mathematically. (Implemented and verified Normalizing Flows component for density estimation).
