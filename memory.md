@@ -2946,3 +2946,4 @@ Successfully implemented and verified the SDM component for storing and retrievi
 * **Status**: Success.
 * **Notes**: Successfully implemented leapfrog integration for physical system simulation. Saved model to `results/hmc_model.pt`.
 - **Normalizing Flows:** Explored Normalizing Flows mathematically. Implemented `train_normalizing_flows_component.py` simulating Planar Flows to estimate a complex 2D target density via transforming a simple base distribution and optimizing KL divergence. Generated documentation via `automate_pipeline.py`.
+- Explored Active Inference mathematically. Evaluated the Active Inference component mathematically in pure NumPy, testing its ability to perform perception via Bayesian state inference and planning via minimizing Expected Free Energy (balancing risk and ambiguity) for an agent.
