@@ -622,3 +622,4 @@ docs/0842_train_contrastive_predictive_coding_component.md
 docs/0843_train_moco_component.md
 docs/0844_train_new_simclr_component.md
 docs/0845_train_dino_component.md
+docs/0846_train_pinn_component.md

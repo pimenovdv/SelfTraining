@@ -669,4 +669,5 @@
 0843_train_moco_component
 0844_train_new_simclr_component
 0845_train_dino_component
+0846_train_pinn_component
 chinchilla_analysis
