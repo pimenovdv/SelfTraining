@@ -3389,3 +3389,6 @@ The LRP component was successfully implemented and verified. It acts as an expla
 - **Action:** Implemented a Physics-Informed Neural Network component mathematically in pure NumPy, testing its forward and backward passes on a simple ODE.
 - **Outcome:** The implementation successfully learned the dynamics, validating the mathematical formulation of physics-informed learning.
 - **Next Steps:** Evaluate on more complex physical systems and PDEs.
+
+### Hyperdimensional Computing
+- Explored and verified Hyperdimensional Computing component manually.

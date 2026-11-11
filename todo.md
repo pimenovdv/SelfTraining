@@ -433,3 +433,6 @@
 
 ## Phase 21: Physics-Informed Neural Networks
 - [x] Explore Physics-Informed Neural Networks mathematically. (Implemented and verified PINN component).
+
+## Phase 22: Novel Computing Architectures
+- [x] Explore Hyperdimensional Computing mathematically. (Implemented and verified Hyperdimensional Computing component).
