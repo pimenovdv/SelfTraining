@@ -304,6 +304,7 @@
 ./train_lora_component.py
 ./train_lottery_ticket_component.py
 ./train_lpp_component.py
+./train_lrp_component.py
 ./train_lsa_component.py
 ./train_lsh_component.py
 ./train_lsm_component.py
