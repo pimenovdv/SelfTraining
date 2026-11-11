@@ -427,3 +427,5 @@
 - [x] Explore Layer-wise Relevance Propagation mathematically. (Implemented and verified LRP component).
 ## Phase 20: Self-Supervised Learning
 - [x] Explore Contrastive Predictive Coding mathematically. (Implemented and verified CPC component).
+- [x] Explore Momentum Contrast (MoCo) mathematically. (Implement and verify MoCo component).
+- [x] Explore SimCLR mathematically. (Implement and verify SimCLR component).

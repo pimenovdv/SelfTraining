@@ -3380,3 +3380,5 @@ The LRP component was successfully implemented and verified. It acts as an expla
 ## Phase 19: Explainable AI and Interpretability
 - [x] Explore Layer-wise Relevance Propagation mathematically. (Implemented and verified LRP component).
 - **Contrastive Predictive Coding:** Explored and implemented Contrastive Predictive Coding (CPC) component, utilizing InfoNCE loss to learn representations by predicting the future in latent space. The model successfully trained and decreased loss over epochs.
+- **Momentum Contrast (MoCo):** Explored and implemented MoCo component, utilizing a momentum encoder to maintain a consistent dictionary of negative samples for contrastive learning.
+- **SimCLR:** Explored and implemented SimCLR component, evaluating its contrastive representation learning capability without memory banks.

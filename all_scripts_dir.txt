@@ -341,6 +341,7 @@
 ./train_mixup_component.py
 ./train_mlpmixer_component.py
 ./train_mmd_loss_component.py
+./train_moco_component.py
 ./train_model_predictive_control_component.py
 ./train_moe_component.py
 ./train_momentum_component.py
@@ -371,6 +372,7 @@
 ./train_neural_ode_component.py
 ./train_neurosymbolic_component.py
 ./train_new_natural_gradient_descent_component.py
+./train_new_simclr_component.py
 ./train_newton_cg_component.py
 ./train_nll_loss_component.py
 ./train_nmf_component.py
