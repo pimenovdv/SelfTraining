@@ -3382,3 +3382,4 @@ The LRP component was successfully implemented and verified. It acts as an expla
 - **Contrastive Predictive Coding:** Explored and implemented Contrastive Predictive Coding (CPC) component, utilizing InfoNCE loss to learn representations by predicting the future in latent space. The model successfully trained and decreased loss over epochs.
 - **Momentum Contrast (MoCo):** Explored and implemented MoCo component, utilizing a momentum encoder to maintain a consistent dictionary of negative samples for contrastive learning.
 - **SimCLR:** Explored and implemented SimCLR component, evaluating its contrastive representation learning capability without memory banks.
+- **DINO (Self-Distillation with No Labels):** Explored and implemented DINO component, evaluating its self-supervised visual representation learning through self-distillation without requiring labeled data.

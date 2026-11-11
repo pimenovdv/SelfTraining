@@ -668,4 +668,5 @@
 0842_train_contrastive_predictive_coding_component
 0843_train_moco_component
 0844_train_new_simclr_component
+0845_train_dino_component
 chinchilla_analysis
