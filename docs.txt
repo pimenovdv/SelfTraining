@@ -665,4 +665,5 @@
 0839_train_active_inference_component
 0840_train_growing_neural_gas_component
 0841_train_lrp_component
+0842_train_contrastive_predictive_coding_component
 chinchilla_analysis

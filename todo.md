@@ -425,3 +425,5 @@
 
 ## Phase 19: Explainable AI and Interpretability
 - [x] Explore Layer-wise Relevance Propagation mathematically. (Implemented and verified LRP component).
+## Phase 20: Self-Supervised Learning
+- [x] Explore Contrastive Predictive Coding mathematically. (Implemented and verified CPC component).
