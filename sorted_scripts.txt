@@ -341,6 +341,7 @@ train_mixture_of_experts_component
 train_mixup_component
 train_mlpmixer_component
 train_mmd_loss_component
+train_moco_component
 train_model_predictive_control_component
 train_moe_component
 train_momentum_component
@@ -371,6 +372,7 @@ train_neural_architecture_search_component
 train_neural_ode_component
 train_neurosymbolic_component
 train_new_natural_gradient_descent_component
+train_new_simclr_component
 train_newton_cg_component
 train_nll_loss_component
 train_nmf_component

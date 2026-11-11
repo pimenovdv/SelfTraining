@@ -619,3 +619,5 @@ docs/0839_train_active_inference_component.md
 docs/0840_train_growing_neural_gas_component.md
 docs/0841_train_lrp_component.md
 docs/0842_train_contrastive_predictive_coding_component.md
+docs/0843_train_moco_component.md
+docs/0844_train_new_simclr_component.md
