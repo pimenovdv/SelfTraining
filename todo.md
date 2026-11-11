@@ -430,3 +430,6 @@
 - [x] Explore Momentum Contrast (MoCo) mathematically. (Implement and verify MoCo component).
 - [x] Explore SimCLR mathematically. (Implement and verify SimCLR component).
 - [x] Explore DINO mathematically. (Implemented and verified DINO component).
+
+## Phase 21: Physics-Informed Neural Networks
+- [x] Explore Physics-Informed Neural Networks mathematically. (Implemented and verified PINN component).
