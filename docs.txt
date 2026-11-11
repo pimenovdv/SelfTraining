@@ -671,3 +671,4 @@
 0845_train_dino_component
 0846_train_pinn_component
 chinchilla_analysis
+0847_train_hyperdimensional_computing_component
