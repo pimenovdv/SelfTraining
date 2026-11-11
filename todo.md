@@ -429,3 +429,4 @@
 - [x] Explore Contrastive Predictive Coding mathematically. (Implemented and verified CPC component).
 - [x] Explore Momentum Contrast (MoCo) mathematically. (Implement and verify MoCo component).
 - [x] Explore SimCLR mathematically. (Implement and verify SimCLR component).
+- [x] Explore DINO mathematically. (Implemented and verified DINO component).
