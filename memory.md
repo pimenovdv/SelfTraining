@@ -2948,3 +2948,7 @@ Successfully implemented and verified the SDM component for storing and retrievi
 - **Normalizing Flows:** Explored Normalizing Flows mathematically. Implemented `train_normalizing_flows_component.py` simulating Planar Flows to estimate a complex 2D target density via transforming a simple base distribution and optimizing KL divergence. Generated documentation via `automate_pipeline.py`.
 - Explored Active Inference mathematically. Evaluated the Active Inference component mathematically in pure NumPy, testing its ability to perform perception via Bayesian state inference and planning via minimizing Expected Free Energy (balancing risk and ambiguity) for an agent.
 - **Growing Neural Gas:** Explored Growing Neural Gas mathematically. Implemented `train_growing_neural_gas_component.py` which dynamically adds nodes to topology in order to learn the shape of an input distribution. Verified its successful training and generated documentation via `automate_pipeline.py`.
+
+## Layer-wise Relevance Propagation (LRP)
+
+The LRP component was successfully implemented and verified. It acts as an explainable AI tool that propagates prediction scores backward through the neural network layers using the epsilon-rule.

@@ -304,6 +304,7 @@ train_lookahead_component
 train_lora_component
 train_lottery_ticket_component
 train_lpp_component
+train_lrp_component
 train_lsa_component
 train_lsh_component
 train_lsm_component

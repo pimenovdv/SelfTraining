@@ -422,3 +422,6 @@
 - [x] Explore Active Inference mathematically. (Implemented and verified Active Inference component).
 ## Phase 18: Unsupervised Learning and Clustering
 - [x] Explore Growing Neural Gas mathematically. (Implemented and verified Growing Neural Gas component).
+
+## Phase 19: Explainable AI and Interpretability
+- [x] Explore Layer-wise Relevance Propagation mathematically. (Implemented and verified LRP component).
